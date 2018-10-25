@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  /* Fallback for when there is no custom background color defined. */
+  --breakpoint: 'xsmall';
+  background: $color__background-body;
+
+  @include breakpoint('small') {
+    --breakpoint: 'small';
+  }
+
+  @include breakpoint('medium') {
+    --breakpoint: 'medium';
+  }
+
+  @include breakpoint('large') {
+    --breakpoint: 'large';
+  }
+}
+
+
+
+

@@ -1,0 +1,157 @@
+body,
+button,
+input,
+select,
+textarea {
+  @include font-size(16px);
+  color: $color__text-main;
+  font-family: $font__main;
+  line-height: $font__line-height-body;
+}
+
+/*================================
+=            Headings            =
+================================*/
+
+// %h1 {}
+
+// %h2 {}
+
+// %h3 {}
+
+// %h4 {}
+
+// %h5 {}
+
+// %h6 {}
+
+// h1 { @extend %h1 }
+// h2 { @extend %h2 }
+// h3 { @extend %h3 }
+// h4 { @extend %h4 }
+// h5 { @extend %h5 }
+
+/*============================
+=            Copy            =
+============================*/
+
+p {
+  margin: 0 0 1rem;
+  line-height: $font__line-height-body;
+}
+
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6 {
+  margin-top: 2rem;
+}
+
+hr {
+  height: 0.5px;
+  margin: 2rem 0;
+  background-color: $color__background-hr;
+  border: 0;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  p {
+    margin-bottom: 0;
+  }
+
+  // cite {}
+}
+
+blockquote,
+q {
+  quotes: '' '';
+
+  &::before,
+  &::after {
+    content: '';
+  }
+}
+
+address {
+  margin: 0 0 1rem;
+  font-style: normal;
+}
+
+pre {
+  @include font-size(14px);
+  max-width: 100%;
+  margin-bottom: 1.6em;
+  padding: 1.6em;
+  overflow: auto;
+  font-family: $font__pre;
+  line-height: $font__line-height-pre;
+  background: $color__background-pre;
+}
+
+code,
+kbd,
+tt,
+var {
+  @include font-size(14px);
+  font-family: $font__code;
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted $color__border-abbr;
+  cursor: help;
+}
+
+mark,
+ins {
+  text-decoration: none;
+  background: $color__background-ins;
+}
+
+big {
+  font-size: 125%;
+}
+
+
+/*=============================
+=            Links            =
+=============================*/
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  &:visited {
+    color: $color__link-visited;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color__link-hover;
+    border: 0;
+  }
+
+  &:focus {
+    outline: thin dotted;
+  }
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
