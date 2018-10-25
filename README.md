@@ -66,6 +66,7 @@ For more information on what is included and modifying the default configuration
 When modifying the code base, always make a new branch. Unless it's necessary to do otherwise, all branches should be created off of `master`.
 
 Branches should use the following naming conventions:
+
 | Branch type | Name       | Example                     |
 |--------------------------|------------|-----------------------------|
 | New Feature | `feature/<short description of feature>` | `feature/header-navigation` |
