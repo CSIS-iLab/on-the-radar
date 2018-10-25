@@ -5,18 +5,18 @@ node_js:
 cache:
   bundler: true
   directories:
-  - $TRAVIS_BUILD_DIR/tmp/.htmlproofer #https://github.com/gjtorikian/html-proofer/issues/381
-  - node_modules
- env:
+    - $TRAVIS_BUILD_DIR/tmp/.htmlproofer #https://github.com/gjtorikian/html-proofer/issues/381
+    - node_modules
+env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
- before_install:
+before_install:
   - rvm install 2.5.0
- install:
+install:
   - npm install
   - gem install html-proofer
- script:
+script:
   - npm build
   - npm test
   - htmlproofer --url-ignore ./_site
- sudo: false
+sudo: false
