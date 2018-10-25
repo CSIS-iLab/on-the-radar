@@ -64,6 +64,7 @@ DEPENDENCIES
   jekyll (~> 3.8.4)
   jekyll-feed
   jekyll-seo-tag (>= 2.4.0)
+  public_suffix (= 3.0.3)
   tzinfo-data
 
 BUNDLED WITH
