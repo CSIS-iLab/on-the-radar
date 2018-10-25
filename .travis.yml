@@ -4,7 +4,6 @@ cache:
   bundler: true
   directories:
     - $TRAVIS_BUILD_DIR/tmp/.htmlproofer #https://github.com/gjtorikian/html-proofer/issues/381
-    - node_modules
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
