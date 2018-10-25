@@ -1,0 +1,70 @@
+{
+  "name": "on-the-radar",
+  "version": "0.0.0",
+  "description": "The website for the On the Radar study by the CSIS Project on Nuclear Issues (PONI) program.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "preinstall": "bundle install --path vendor/bundle",
+    "start": "bundle exec gulp",
+    "test": "bundle exec gulp test",
+    "browsersync": "bundle exec gulp browsersync",
+    "browsersync-production": "bundle exec gulp browsersync --jekyllEnv='production'",
+    "build": "bundle exec gulp build --jekyllEnv='production'",
+    "eslint": "bundle exec gulp eslint",
+    "imagemin": "bundle exec gulp imagemin",
+    "production": "bundle exec gulp --jekyllEnv='production'",
+    "sass": "bundle exec gulp sass",
+    "stylelint": "bundle exec gulp styleLint",
+    "stylelint-fix": "bundle exec gulp styleLint --fix",
+    "watch": "bundle exec gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSIS-iLab/csis-jekyll-starter.git"
+  },
+  "keywords": [
+    "Autoprefixer",
+    "Browsersync",
+    "gulp",
+    "imagemin",
+    "Jekyll",
+    "PostCSS",
+    "Sass",
+    "Webpack"
+  ],
+  "author": "CSIS iDeas Lab",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "autoprefixer": "^9.3.1",
+    "browser-sync": "^2.26.3",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-prettier": "^2.7.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-stylelint": "^8.0.0",
+    "gulp-watch": "^5.0.1",
+    "imagemin-pngquant": "^6.0.0",
+    "prettier": "^1.14.3",
+    "require-dir": "^1.1.0",
+    "stylelint": "^9.6.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^1.0.0",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^4.23.0",
+    "webpack-stream": "^5.1.1",
+    "yargs": "^12.0.2"
+  },
+  "dependencies": {
+    "stylelint-config-sass-guidelines": "^5.2.0",
+    "stylelint-scss": "^3.3.2"
+  }
+}

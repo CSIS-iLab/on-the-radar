@@ -1,0 +1,36 @@
+title: "CSIS Jekyll Starter Project"
+email: csisideaslab@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Quick starter project for Jekyll including full setup for gulp, Sass, Autoprefixer, Bourbon/Neat/Bitters, Browserify, imagemin, Browsersync, PostCSS etc. Built on top of Frasco
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: 
+
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - frasco.config.js
+  - Gemfile
+  - Gemfile.lock
+  - gulp_tasks
+  - gulpfile.js
+  - LICENSE
+  - node_modules
+  - npm-debug.log
+  - package.json
+  - package-lock.json
+  - prettier.config.js
+  - README.md
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - yarn.lock
