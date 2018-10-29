@@ -4,24 +4,41 @@
 
 /*----------  Colors  ----------*/
 
-$black: #000;
-$white: #fff;
+$color__black: #000;
+$color__white: #fff;
+$color__orange: #f05e39;
+$color__orange-lighter: #fff1ed;
+$color__orange-light: #ffbfaf;
+$color__orange-dark: #ca3813;
+$color__blue: #163a59;
+$color__blue-dark: #0f283e;
+$color__astral: #247590;
+$color__astral-dark: #1a576b;
+$color__astral-darkest: #185062;
+$color__bluegray: #8a9dab;
+$color__bluegray-light: #b4bcc8;
+$color__off-white: #f2f2f2;
+$color__gray-lighter: #e5e5e5;
+$color__gray-light: #ccc;
+$color__gray: #b2b2b2;
+$color__gray-dark: #6d6d6d;
+$color__gray-darker: #555;
 
-$color__background-body: $white;
-$color__background-screen: $white;
-$color__background-hr: $black;
+$color__background-body: $color__white;
+$color__background-screen: $color__white;
+$color__background-hr: $color__black;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 
-$color__text-screen: $black;
-$color__text-input: $black;
-$color__text-input-focus: $black;
-$color__link: $black;
-$color__link-visited: $black;
-$color__link-hover: $black;
-$color__text-main: $black;
+$color__text-screen: $color__black;
+$color__text-input: $color__black;
+$color__text-input-focus: $color__black;
+$color__link: $color__black;
+$color__link-visited: $color__black;
+$color__link-hover: $color__black;
+$color__text-main: $color__black;
 
-$color__border-input: $black;
+$color__border-input: $color__black;
 $color__border-abbr: #666;
 
 /*----------  Typography  ----------*/
