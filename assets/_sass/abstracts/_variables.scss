@@ -42,8 +42,10 @@ $color__border-input: $color__black;
 $color__border-abbr: #666;
 
 /*----------  Typography  ----------*/
+$font__ptsans: pt-sans, sans-serif;
+$font__lato: lato, sans-serif;
 
-$font__main: sans-serif;
+$font__main: $font__ptsans;
 $font__code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
 $font__pre: 'Courier 10 Pitch', Courier, monospace;
 $font__line-height-body: 1.67;
