@@ -1,0 +1,51 @@
+---
+label: Posts
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: Title
+  name: title
+- type: datetime
+  name: date
+  label: Date
+- type: textarea
+  name: excerpt
+  label: Excerpt
+- type: list
+  name: authors
+  label: Authors
+  config:
+    use_select: true
+    source:
+      type: documents
+- type: list
+  name: categories
+  label: Categories
+  config:
+    use_select: true
+    source:
+      type: documents
+- type: list
+  name: keywords
+  label: Keywords
+  config:
+    use_select: true
+    source:
+      type: documents
+- type: list
+  name: related_briefs
+  label: Related Briefs
+  config:
+    use_select: true
+    source:
+      type: documents
+- type: file
+  name: post_image
+  label: post image
+- type: text
+  label: Post Image Caption
+  name: post_image_caption
+- type: text
+  name: post_image_source
+  label: Post Image Source
