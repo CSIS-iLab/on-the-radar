@@ -42,8 +42,10 @@ $color__border-input: $color__black;
 $color__border-abbr: #666;
 
 /*----------  Typography  ----------*/
+
 $font__ptsans: pt-sans, Arial, sans-serif;
 $font__lato: lato, Helvetica, Tahoma, sans-serif;
+$fontello_url: '../fonts/';
 
 $font__main: $font__ptsans;
 $font__code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
