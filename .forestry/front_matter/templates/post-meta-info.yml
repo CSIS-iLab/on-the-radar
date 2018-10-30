@@ -2,4 +2,24 @@
 label: Post Meta Info
 hide_body: false
 is_partial: false
-fields: []
+fields:
+- type: text
+  name: title
+  label: Title
+- type: datetime
+  name: date
+  label: Date
+- type: textarea
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Excerpt
+  name: excerpt
+- type: list
+  name: authors
+  label: Authors
+  config:
+    use_select: true
+    source:
+      type: documents
