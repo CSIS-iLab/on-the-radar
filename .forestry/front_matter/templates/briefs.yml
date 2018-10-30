@@ -12,3 +12,51 @@ fields:
     source:
       type: documents
   label: Brief Type
+- type: datetime
+  name: date
+  label: Date
+- type: textarea
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Excerpt
+  name: excerpt
+- type: file
+  name: image
+  label: Image
+- type: text
+  name: image_caption
+  label: Image Caption
+- type: text
+  name: image_source
+  label: Image Source
+- type: field_group
+  name: details
+  label: Details
+  fields:
+  - type: list
+    config:
+      use_select: true
+      source:
+        type: documents
+  - type: list
+    config:
+      use_select: true
+      source:
+        type: documents
+  - type: list
+    config:
+      use_select: true
+      source:
+        type: documents
+  - type: list
+    config:
+      use_select: true
+      source:
+        type: documents
+  - type: list
+    config:
+      use_select: true
+      source:
+        type: documents
