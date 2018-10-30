@@ -10,6 +10,9 @@ cloudinary_url: https://res.cloudinary.com/csisideaslab/image/upload/
 
 # Content types will be defined here
 collections:
+  posts:
+    title: Analysis
+    output: true
   briefs:
     title: Issue Briefs
     output: true
@@ -25,6 +28,12 @@ collections:
 
 # Default front matter values for a collection will be defined here
 defaults:
+- scope:
+    path: ''
+    type: 'posts'
+  values:
+    layout: post
+    permalink: "/analysis/:slug/"
 - scope:
     path: ''
     type: 'briefs'
