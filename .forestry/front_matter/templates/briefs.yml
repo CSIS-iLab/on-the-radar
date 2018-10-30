@@ -2,4 +2,13 @@
 label: Briefs
 hide_body: false
 is_partial: false
-fields: []
+fields:
+- type: text
+  name: title
+  label: Title
+- type: select
+  name: brief_type
+  config:
+    source:
+      type: documents
+  label: Brief Type
