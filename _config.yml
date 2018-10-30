@@ -4,9 +4,45 @@ description: >- # this means to ignore newlines until "baseurl:"
   The website for the On the Radar study by the CSIS Project on Nuclear Issues (PONI) program.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
+twitter_username:
 
 cloudinary_url: https://res.cloudinary.com/csisideaslab/image/upload/
+
+# Content types will be defined here
+collections:
+  briefs:
+    title: Issue Briefs
+    output: true
+  workshops:
+    title: Workshops
+    output: true
+  resources:
+    title: Resources
+    output: false
+  authors:
+    title: Authors
+    output: true
+
+# Default front matter values for a collection will be defined here
+defaults:
+- scope:
+    path: ''
+    type: 'briefs'
+  values:
+    layout: post
+    permalink: "/issue-briefs/:slug/"
+- scope:
+    path: ''
+    type: 'workshops'
+  values:
+    layout: post
+    permalink: "/workshops/:slug/"
+- scope:
+    path: ''
+    type: 'authors'
+  values:
+    layout: archive
+    permalink: "/authors/:slug/"
 
 # Build settings
 markdown: kramdown
