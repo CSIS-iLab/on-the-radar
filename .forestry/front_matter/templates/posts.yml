@@ -3,15 +3,8 @@ label: Posts
 hide_body: false
 is_partial: false
 fields:
-- type: text
-  label: Title
-  name: title
-- type: datetime
-  name: date
-  label: Date
-- type: textarea
-  name: excerpt
-  label: Excerpt
+- type: include
+  template: post-meta-info
 - type: list
   name: authors
   label: Authors
