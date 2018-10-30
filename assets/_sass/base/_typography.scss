@@ -136,13 +136,13 @@ a {
   transition: all 0.3s ease-in-out;
 
   &:visited {
-    color: $color__link-visited;
+    color: inherit;
   }
 
   &:hover,
   &:focus,
   &:active {
-    color: $color__link-hover;
+    color: inherit;
     border: 0;
   }
 
@@ -153,5 +153,19 @@ a {
   &:hover,
   &:active {
     outline: 0;
+  }
+
+  .post__content &:not(.btn) {
+    @include box-shadow(0, -2px, 0, 0, $color__orange, true);
+    color: inherit;
+
+    &:visited {
+      color: $color__gray-darker;
+    }
+
+    &:hover {
+      color: $color__astral;
+      box-shadow: none;
+    }
   }
 }
