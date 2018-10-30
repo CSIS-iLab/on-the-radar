@@ -41,11 +41,11 @@ fields:
     source:
       type: documents
 - type: file
-  name: post_image
-  label: post image
+  name: image
+  label: image
 - type: text
-  label: Post Image Caption
-  name: post_image_caption
+  label: Image Caption
+  name: image_caption
 - type: text
-  name: post_image_source
-  label: Post Image Source
+  name: image_source
+  label: Image Source
