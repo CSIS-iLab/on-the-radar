@@ -1,43 +1,43 @@
 ---
 - tech:
   - type:
-      - Unmanned Vehicles
-      - Platform Control and Information Support
-      - Sensors
-      - Cyber
-      - Electronic Warfare
-      - Space Platforms
-      - Miscellaneous
+    - Unmanned Vehicles
+    - Platform Control and Information Support
+    - Sensors
+    - Cyber
+    - Electronic Warfare
+    - Space Platforms
+    - Miscellaneous
   - characteristics:
-      - Vantage/range
-      - Speed
-      - Resiliency
-      - Detectability
-      - Precision
-      - Persistence
+    - Vantage/range
+    - Speed
+    - Resiliency
+    - Detectability
+    - Precision
+    - Persistence
   - risk_factors:
-      - Intrusive
-      - Destructive
-      - Predictive
-      - Preemptive
-      - Dual-use
-      - Clandestine
-      - Vulnerable
-      - Action-enabling
+    - Intrusive
+    - Destructive
+    - Predictive
+    - Preemptive
+    - Dual-use
+    - Clandestine
+    - Vulnerable
+    - Action-enabling
   - domain:
-      - Land
-      - Air
-      - Sea
-      - Space
-      - Cyberspace
-      - Multidomain
+    - Land
+    - Air
+    - Sea
+    - Space
+    - Cyberspace
+    - Multidomain
   - country:
-      - United States
-      - Russia
-      - China
-      - North Korea
+    - United States
+    - Russia
+    - China
+    - North Korea
 
 - countries:
-  - United States
-  - China
-  - North Korea
+    - United States
+    - China
+    - North Korea
