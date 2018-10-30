@@ -24,6 +24,10 @@ body {
   @include breakpoint('large') {
     --breakpoint: 'large';
   }
+
+  @include breakpoint('xlarge') {
+    --breakpoint: 'xlarge';
+  }
 }
 
 
