@@ -7,3 +7,12 @@ $browser-context: 16px;
   $rem-size: $size / $browser-context;
   @return #{$rem-size}rem;
 }
+
+@function size($map, $breakpoint) {
+  @if not map-has-key($map, $breakpoint) {
+    @warn "'#{$breakpoint}' is not a valid size";
+  }
+  @else {
+    @return map-get($map, $breakpoint);
+  } 
+}

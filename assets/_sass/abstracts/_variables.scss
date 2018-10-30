@@ -42,8 +42,8 @@ $color__border-input: $color__black;
 $color__border-abbr: #666;
 
 /*----------  Typography  ----------*/
-$font__ptsans: pt-sans, sans-serif;
-$font__lato: lato, sans-serif;
+$font__ptsans: pt-sans, Arial, sans-serif;
+$font__lato: lato, Helvetica, Tahoma, sans-serif;
 
 $font__main: $font__ptsans;
 $font__code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
@@ -52,3 +52,29 @@ $font__line-height-body: 1.67;
 $font__line-height-pre: 1.6;
 
 /*----------  Structure  ----------*/
+
+$size__wrapper-max-width: (
+  'small': 100%,
+  'medium': calc(100% - (32px * 2)),
+  'large': calc(100% - (56px * 2)),
+  'xlarge': calc(1312px - (56px * 2))
+);
+
+$size__wrapper-padding: (
+  'small': 20px,
+  'medium': 5vw,
+  'large': 6vw,
+  'xlarge': 32px
+);
+
+$size__sidebar-max-width: (
+  'medium': 224px,
+  'large': 240px
+);
+
+$size__content-max-width: (
+  'small': 100%,
+  'medium': calc(100% - (size($size__wrapper-padding, 'medium') * 2)),
+  'large': calc(100% - (size($size__wrapper-padding, 'large') * 2)),
+  'xlarge': 680px
+);

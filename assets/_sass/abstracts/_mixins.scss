@@ -24,11 +24,11 @@
 }
 
 // Breakpoints
-$breakpoint-xlarge: 90em;
-$breakpoint-large: 62em;
-$breakpoint-medium: 48em;
-$breakpoint-small: 36em;
-$breakpoint-xsmall: 25em;
+$breakpoint-xlarge: 82em;
+$breakpoint-large: 48em;
+$breakpoint-medium: 33.75em;
+$breakpoint-small: 26em;
+$breakpoint-xsmall: 26em;
 
 @mixin breakpoint($break) {
   @if $break==xlarge {
@@ -65,7 +65,6 @@ $breakpoint-xsmall: 25em;
 
 // Box Shadow
 /* @include box-shadow(1px,1px,1px,0, #fff, true); */
-
 @mixin box-shadow($top, $left, $blur, $size, $color, $inset: false) {
   @if $inset {
     box-shadow: inset $top $left $blur $size $color;
@@ -76,23 +75,43 @@ $breakpoint-xsmall: 25em;
 }
 
 // Extend Background to full width of window
-@mixin full-width-background ( $background ) {
+@mixin full-width-background ( $background, $direction: '' ) {
+  $width_forumula: calc((100vw - 100%) / 2);
+
   &::before,
   &::after {
     content: '';
     position: absolute;
     top: 0;
     display: block;
-    width: 100vw;
+    width: $width_forumula;
     height: 100%;
     background-color: $background;
   }
 
   &::before {
-    right: calc(100% - 1px);
+    right: 100%;
   }
 
   &::after {
-    left: calc(100% - 1px);
+    left: 100%;
+  }
+
+  @if $direction == left {
+    &::before {
+      width: calc(#{$width_forumula} - 50%);
+    }
+
+    &::after {
+      display: none;
+    }
+  } @else if $direction == right {
+    &::after {
+      width: calc(#{$width_forumula} - 50%);
+    }
+
+    &::before {
+      display: none;
+    }
   }
 }
