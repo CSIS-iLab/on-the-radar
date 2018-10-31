@@ -39,5 +39,4 @@ fields:
   label: ''
   template: photo
 pages:
-- _posts/tech-primer-test.md
 - _posts/2018-10-31-test-jekyll-post.md
