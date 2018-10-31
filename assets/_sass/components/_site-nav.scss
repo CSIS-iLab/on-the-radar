@@ -2,14 +2,14 @@
 =            Site Navigation            =
 =======================================*/
 
-.site-nav__menu {
+.site-nav {
   @extend %button;
   display: flex;
   flex-direction: column;
   padding-left: 0;
   list-style: none;
 
-  &.inHeader {
+  .header__nav & {
     @include breakpoint($breakpoint-medium) {
       flex-direction: row;
     }
@@ -20,20 +20,20 @@
       text-transform: uppercase;
     }
   }
+}
 
-  &.inFooter {
-    a {
-      color: $color__bluegray-light;
-      transition: all 0.3s ease-in-out;
+.footer__nav .site-nav {
+  a {
+    color: $color__bluegray-light;
+    transition: all 0.3s ease-in-out;
 
-      &:hover {
-        color: $color__white;
-      }
+    &:hover {
+      color: $color__white;
     }
   }
 }
 
-.site-nav__menu.inHeader li {
+.header__nav li {
   @include breakpoint($breakpoint-medium) {
     &:not(:last-of-type) {
       margin-right: 0.5rem;
