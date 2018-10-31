@@ -1,0 +1,90 @@
+/*============================
+=            Post            =
+============================*/
+
+.post {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'image'
+    'sidebar'
+    'content'
+    'footer';
+  
+  @include breakpoint('large') {
+    grid-template-areas:
+      'image header'
+      'sidebar content'
+      'footer footer';
+    grid-template-columns: size($size__sidebar-max-width, 'large') auto;
+  }
+
+  &__header,
+  &__image,
+  &__sidebar,
+  &__content,
+  &__footer {
+    padding: 0 size($size__content-padding, 'small');
+  }
+  
+  &__header {
+    grid-area: header;
+    background-color: $color__white;
+
+    @include breakpoint('medium') {
+      padding: 0 size($size__content-padding, 'medium');
+    }
+
+    @include breakpoint('large') {
+      padding: 0 size($size__content-padding, 'large');
+    }
+
+    @include breakpoint('xlarge') {
+      $max-width: size($size__content-max-width, 'xlarge');
+      padding: 0 calc((100% - #{$max-width}) / 2);
+    }
+  }
+
+  &__image {
+    grid-area: image;
+    background-color: $color__blue;
+
+    @include breakpoint('large') {
+      margin-right: -3vw;
+    }
+
+    @include breakpoint('xlarge') {
+      margin-right: -96px;
+    }
+  }
+
+  &__sidebar {
+    grid-area: sidebar;
+    background-color: $color__off-white;
+  }
+
+  &__content {
+    grid-area: content;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 size($size__content-padding, 'small');
+    background-color: $color__white;
+
+    @include breakpoint('medium') {
+      padding: 0 size($size__content-padding, 'medium');
+    }
+
+    @include breakpoint('large') {
+      padding: 0 size($size__content-padding, 'large');
+    }
+
+    @include breakpoint('xlarge') {
+      padding: 0 size($size__content-padding, 'xlarge');
+    }
+  }
+
+  &__footer {
+    grid-area: footer;
+    background-color: $color__off-white;
+  }
+}
