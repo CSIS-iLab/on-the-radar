@@ -33,3 +33,5 @@ fields:
   fields:
   - type: include
     template: download-media
+pages:
+- _workshops/workshop-for-workshopping.md
