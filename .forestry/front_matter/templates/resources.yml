@@ -18,6 +18,10 @@ fields:
 - type: list
   name: topics
   label: Topics
+  config:
+    use_select: true
+    source:
+      type: documents
 - type: text
   name: optional
   label: Optional
