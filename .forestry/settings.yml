@@ -15,10 +15,20 @@ sections:
 - type: document
   path: _data/categories.yml
   label: Categories
-  match: "**/*"
 - type: document
   path: _data/glossary.yml
   label: Glossary
+- type: document
+  path: _data/issue_briefs.yml
+  label: Issue Briefs
+  match: "**/*"
+- type: document
+  path: _data/keywords.yml
+  label: Keywords
+  match: "**/*"
+- type: document
+  path: _data/language.yml
+  label: Language
   match: "**/*"
 upload_dir: on-the-radar
 public_path: https://res.cloudinary.com/csisideaslab/image/upload
