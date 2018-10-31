@@ -18,6 +18,11 @@ sections:
   match: "**/*"
   templates:
   - briefs
+- type: jekyll-posts
+  label: Posts
+  create: all
+  templates:
+  - posts
 - type: directory
   path: _resources
   label: Resources
@@ -32,11 +37,6 @@ sections:
   match: "**/*"
   templates:
   - workshops
-- type: jekyll-posts
-  label: Posts
-  create: all
-  templates:
-  - posts
 - type: jekyll-pages
   label: Pages
   create: all
