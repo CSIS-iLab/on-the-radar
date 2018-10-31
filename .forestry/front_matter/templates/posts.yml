@@ -30,6 +30,9 @@ fields:
     use_select: true
     source:
       type: documents
+      section: keywords
+      file: _data/keywords.yml
+      path: Keywords
 - type: list
   name: related_briefs
   label: Related Briefs
