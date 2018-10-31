@@ -3,34 +3,18 @@ label: Briefs
 hide_body: false
 is_partial: false
 fields:
-- type: text
-  name: title
-  label: Title
+- type: include
+  template: post-meta-info
 - type: select
   name: brief_type
   config:
     source:
       type: documents
   label: Brief Type
-- type: datetime
-  name: date
-  label: Date
-- type: textarea
-  config:
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: Excerpt
-  name: excerpt
-- type: file
-  name: image
-  label: Image
-- type: text
-  name: image_caption
-  label: Image Caption
-- type: text
-  name: image_source
-  label: Image Source
+- type: include
+  name: ''
+  label: ''
+  template: photo
 - type: field_group
   name: details
   label: Details
