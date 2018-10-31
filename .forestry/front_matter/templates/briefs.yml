@@ -47,3 +47,6 @@ fields:
 - type: field_group_list
   name: downloads
   label: Downloads
+  fields:
+  - type: include
+    template: download-media
