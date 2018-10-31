@@ -66,3 +66,5 @@ fields:
   fields:
   - type: include
     template: download-media
+pages:
+- _briefs/test-tech-primer.md
