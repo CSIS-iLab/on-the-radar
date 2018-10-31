@@ -67,5 +67,5 @@ fields:
   - type: include
     template: download-media
 pages:
-- _briefs/country-profile.md
 - _briefs/test-tech-primer.md
+- _briefs/country-profile.md

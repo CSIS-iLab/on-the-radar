@@ -1,7 +1,8 @@
 ---
 title: Test Tech Primer
 details:
-  Type: []
+  Type:
+  - Issue briefs
   characteristics: []
   risk_factors: []
   domain: []
