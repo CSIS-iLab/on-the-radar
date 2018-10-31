@@ -45,3 +45,5 @@ fields:
   name: ''
   label: ''
   template: photo
+pages:
+- _posts/test-jekyll-post.md
