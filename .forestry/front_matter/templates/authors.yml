@@ -2,4 +2,10 @@
 label: Authors
 hide_body: false
 is_partial: false
-fields: []
+fields:
+- type: text
+  name: title
+  label: Name
+- type: text
+  name: role
+  label: Title
