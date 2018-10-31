@@ -15,6 +15,7 @@ fields:
       section: categories-be4794dd-bb36-4ed1-8e20-757dfdb035f4
       file: _data/categories.yml
       path: Categories
+  default: []
 - type: list
   name: keywords
   label: Keywords
