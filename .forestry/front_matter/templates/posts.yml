@@ -6,14 +6,6 @@ fields:
 - type: include
   template: post-meta-info
 - type: list
-  name: authors
-  label: Authors
-  config:
-    use_select: true
-    source:
-      type: pages
-      section: authors
-- type: list
   name: categories
   label: Categories
   config:
