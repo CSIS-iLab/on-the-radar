@@ -20,6 +20,9 @@ fields:
     use_select: true
     source:
       type: documents
+      section: categories-be4794dd-bb36-4ed1-8e20-757dfdb035f4
+      file: _data/categories.yml
+      path: Categories
 - type: list
   name: keywords
   label: Keywords
