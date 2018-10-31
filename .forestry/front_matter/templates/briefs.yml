@@ -9,7 +9,10 @@ fields:
   name: brief_type
   config:
     source:
-      type: documents
+      type: simple
+    options:
+    - Tech Primer
+    - Country Profile
   label: Brief Type
 - type: include
   name: ''
