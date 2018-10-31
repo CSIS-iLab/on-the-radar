@@ -1,0 +1,24 @@
+{% if site.url.size > 0 %}
+{% assign shareLink = site.url | append: page.url %}
+{% else %}
+{% assign shareLink = "https://healthcommission.csis.org" | append: page.url %}
+{% endif %}
+
+
+<div class="share">
+  <span class="share__text">{{ site.data.language.share | escape }}</span>
+  <ul>
+    <li>
+      <a href="https://www.facebook.com/sharer.php?u={{ shareLink }}" rel="nofollow" target="_blank" title="Share on Facebook"><i class="icon icon-facebook"></i></a>
+    </li>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text={{ page.title | escape }}&url={{ shareLink }}&via=CSIS&related=CSIS" rel="nofollow" target="_blank" title="Share on Twitter"><i class="icon icon-twitter"></i></a>
+    </li>
+    <li>
+      <a href="mailto:?subject={{ site.title | escape }}: {{ page.title | escape }}&amp;body={{ shareLink }}"><i class="icon icon-email"></i></a>
+    </li>
+    <li>
+      <a href="javascript:window.print()"><i class="icon-print"></i></a>
+    </li>
+  </ul>
+</div>
