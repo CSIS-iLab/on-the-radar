@@ -22,4 +22,5 @@ fields:
   config:
     use_select: true
     source:
-      type: documents
+      type: pages
+      section: authors
