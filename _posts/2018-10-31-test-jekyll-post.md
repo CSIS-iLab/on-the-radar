@@ -18,7 +18,7 @@ keywords:
 - Keyword 2
 related_briefs: []
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
-image_caption: ''
-image_source: ''
+image_caption: Sample caption for image
+image_source: Getty Images
 
 ---
