@@ -1,0 +1,33 @@
+{% assign authors = post.authors %}
+{% if include.authors.size > 0 %}
+  {% assign authors = page.authors %}
+{% endif %}
+
+{% if authors.size > 0 %}
+<div class="post-meta post-meta__authors">
+  {% if post %}
+    {{ site.data.language.author_list }}
+  {% endif %}
+
+  {% if authors.size == 2 %}
+    {%- assign list_break = ' and ' -%}
+  {% elsif authors.size >= 3 %}
+    {%- assign list_break = ', ' -%}
+    {%- assign end_break = ' and ' -%}
+  {% endif %}
+
+  {% assign penultimate = authors.size | minus: 1 %}
+
+    {%- for author in authors -%}
+      {%- assign author_info = site.authors | where: "relative_path", author | first -%}
+      {%- assign author_list = author_info.title -%}
+      <a href="{{ author_info.url | relative_url }}" class="post-meta__author-name post-meta__link">{{ author_list }}</a>
+      {%- if forloop.last == false -%}
+        {{- list_break -}}
+      {%- endif -%}
+      {% if forloop.index == penultimate %}
+        {{- end_break -}}
+      {% endif %}
+    {%- endfor -%}
+</div>
+{% endif %}
