@@ -27,26 +27,39 @@ fields:
       use_select: true
       source:
         type: documents
+        section: issue-briefs
+        file: _data/issue_briefs.yml
+    name: Type
+    default: []
+    label: Type
   - type: list
     config:
       use_select: true
       source:
         type: documents
+    label: Characteristics
+    name: characteristics
   - type: list
     config:
       use_select: true
       source:
         type: documents
+    label: Risk Factors
+    name: risk_factors
   - type: list
     config:
       use_select: true
       source:
         type: documents
+    label: Domain
+    name: domain
   - type: list
     config:
       use_select: true
       source:
         type: documents
+    label: Country
+    name: country
 - type: field_group_list
   name: downloads
   label: Downloads
