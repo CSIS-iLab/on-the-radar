@@ -44,3 +44,6 @@ fields:
       use_select: true
       source:
         type: documents
+- type: field_group_list
+  name: downloads
+  label: Downloads
