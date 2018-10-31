@@ -11,6 +11,13 @@ sections:
   match: "**/*"
   templates:
   - authors
+- type: directory
+  path: _briefs
+  label: Briefs
+  create: all
+  match: "**/*"
+  templates:
+  - briefs
 - type: jekyll-pages
   label: Pages
   create: all
