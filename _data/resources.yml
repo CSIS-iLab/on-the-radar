@@ -1,12 +1,12 @@
 ---
-- types:
+types:
   - Website
   - Book
   - Paper
   - Working Paper
   - Article
   - Report
-- topics:
+topics:
   - Artificial Intelligence
   - Capabilities
   - Clandestine Capabilities
