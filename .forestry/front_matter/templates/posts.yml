@@ -40,12 +40,8 @@ fields:
     use_select: true
     source:
       type: documents
-- type: file
-  name: image
-  label: image
-- type: text
-  label: Image Caption
-  name: image_caption
-- type: text
-  name: image_source
-  label: Image Source
+      section: briefs
+- type: include
+  name: ''
+  label: ''
+  template: photo
