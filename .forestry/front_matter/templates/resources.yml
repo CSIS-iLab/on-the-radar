@@ -2,4 +2,22 @@
 label: Resources
 hide_body: false
 is_partial: false
-fields: []
+fields:
+- type: text
+  name: title
+  label: Title
+- type: select
+  name: type
+  config:
+    source:
+      type: documents
+  label: Type
+- type: textarea
+  name: authors
+  label: Authors
+- type: list
+  name: topics
+  label: Topics
+- type: text
+  name: optional
+  label: Optional
