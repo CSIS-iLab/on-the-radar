@@ -1,0 +1,12 @@
+---
+label: Download Media
+hide_body: false
+is_partial: true
+fields:
+- type: file
+  label: Media Upload
+  name: media_upload
+- type: text
+  name: label
+  label: Label
+  description: Short label for upload
