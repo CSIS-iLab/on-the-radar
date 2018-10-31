@@ -21,19 +21,15 @@ sections:
 - type: document
   path: _data/issue_briefs.yml
   label: Issue Briefs
-  match: "**/*"
 - type: document
   path: _data/keywords.yml
   label: Keywords
-  match: "**/*"
 - type: document
   path: _data/language.yml
   label: Language
-  match: "**/*"
 - type: document
   path: _data/resources.yml
   label: Resources
-  match: "**/*"
 upload_dir: on-the-radar
 public_path: https://res.cloudinary.com/csisideaslab/image/upload
 front_matter_path: https://res.cloudinary.com/csisideaslab/image/upload
