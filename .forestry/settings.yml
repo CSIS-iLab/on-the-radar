@@ -12,15 +12,9 @@ sections:
   create: all
 - type: heading
   label: DATA
-- type: directory
+- type: document
   path: _data/categories.yml
   label: Categories
-  create: documents
-  match: "**/*"
-- type: directory
-  path: _data/glossary.yml
-  label: Glossary
-  create: documents
   match: "**/*"
 upload_dir: on-the-radar
 public_path: https://res.cloudinary.com/csisideaslab/image/upload
