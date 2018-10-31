@@ -1,0 +1,69 @@
+.definition {
+  position: relative;
+  display: none;
+  max-width: 290px;
+
+  .icon-arrow-down {
+    position: absolute;
+    top: calc(100% - 12px);
+    right: calc(50% - 16px);
+    z-index: 1;
+    line-height: 0;
+
+    &::before {
+      margin: 0;
+      color: $color__white;
+      font-size: 32px;
+      transform: scaleX(2);
+    }
+  }
+
+  &__box {
+    @include box-shadow(0, 4px, 24px, -1px, rgba(0, 0, 0, 0.5), false);
+    position: relative;
+    display: block;
+    padding: 1.4rem 1rem 1rem;
+
+    .icon-close {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      color: $color__bluegray;
+      cursor: pointer;
+    }
+
+    &__title {
+      @extend %post__content-tooltip-title;
+      display: block;
+    }
+
+    &__entry {
+      @extend %body-text;
+      display: block;
+    }
+
+    a {
+      @include font-size(14px);
+      display: block;
+      color: $color__bluegray !important;
+      font-family: $font__ptsans;
+      font-style: italic;
+      line-height: 1.53;
+      text-align: right;
+      box-shadow: none !important;
+    }
+  }
+}
+
+.term {
+  border-bottom: 2px dotted $color__astral;
+  cursor: pointer;
+
+  &:hover {
+    color: $color__astral;
+  }
+
+  &.active + .definition {
+    display: block;
+  }
+}
