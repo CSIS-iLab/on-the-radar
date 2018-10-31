@@ -18,8 +18,8 @@ hr {box-sizing: content-box;
   height: 0;}
 
 code,kbd,pre,samp {
-  font-size: 1em;
-  font-family: monospace,monospace;}a {background-color: transparent;}
+  font-family: monospace,monospace;
+  font-size: 1em;}a {background-color: transparent;}
 
 abbr[title] {
   text-decoration: underline;
@@ -33,8 +33,8 @@ sub,sup {
 
 button,input,optgroup,select,textarea {
   margin: 0;
-  font-size: 100%;
   font-family: inherit;
+  font-size: 100%;
   line-height: 1.15;}button,select {text-transform: none;}[type=button],[type=reset],[type=submit],button {-webkit-appearance: button;}
 
 [type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner {

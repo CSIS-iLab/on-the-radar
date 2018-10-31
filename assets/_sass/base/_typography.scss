@@ -1,55 +1,90 @@
+/*==================================
+=            Typography            =
+==================================*/
+
 body,
 button,
 input,
 select,
 textarea {
-  @include font-size(16px);
-  color: $color__text-main;
-  font-family: $font__main;
-  line-height: $font__line-height-body;
+  @extend %body-text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*================================
 =            Headings            =
 ================================*/
 
-// %h1 {}
+h1 {
+  margin: 0;
+}
 
-// %h2 {}
+h2 {
+  @extend %h2;
+  margin: 0;
+}
 
-// %h3 {}
+h3 {
+  @extend %h3;
+  margin: 0;
+}
 
-// %h4 {}
+h4 {
+  @extend %h4;
+  margin: 0;
+}
 
-// %h5 {}
+h5 {
+  @extend %h5;
+  margin: 0;
+}
 
-// %h6 {}
+.heading--thin {
+  @extend %h2--thin;
+}
 
-// h1 { @extend %h1 }
-// h2 { @extend %h2 }
-// h3 { @extend %h3 }
-// h4 { @extend %h4 }
-// h5 { @extend %h5 }
 
 /*============================
 =            Copy            =
 ============================*/
 
-p {
-  margin: 0 0.5px 1rem;
-  line-height: $font__line-height-body;
+.post__content {
+  p {
+    @extend %post__content-paragraph;
+  }
+
+  h2 {
+    @extend %post__content-h2;
+  }
+
+  h3 {
+    @extend %post__content-h3;
+  }
+
+  h4 {
+    @extend %post__content-h4;
+  }
+
+  h5 {
+    @extend %post__content-h5;
+  }
 }
 
-p + h2,
-p + h3,
-p + h4,
-p + h5,
-p + h6 {
-  margin-top: 2rem;
+p {
+  margin: 0 0 1rem;
+}
+
+@for $i from 2 through 6 {
+  p + h#{$i},
+  ul + h#{$i},
+  ol + h#{$i} {
+    margin-top: 2rem;
+  }
 }
 
 hr {
-  height: 0.5px;
+  height: 1px;
   margin: 2rem 0;
   background-color: $color__background-hr;
   border: 0;
@@ -68,8 +103,15 @@ i {
 }
 
 blockquote {
+  @extend %post__content-blockquote;
+
   p {
     margin-bottom: 0;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
   }
 
   // cite {}
@@ -77,7 +119,7 @@ blockquote {
 
 blockquote,
 q {
-  quotes: '' '';
+  quotes: '" "';
 
   &::before,
   &::after {
@@ -125,6 +167,13 @@ big {
   font-size: 125%;
 }
 
+.post__content {
+  ul,
+  ol {
+    @extend %post__content-list;
+  }
+}
+
 
 /*=============================
 =            Links            =
@@ -156,10 +205,11 @@ a {
   }
 
   .post__content &:not(.btn) {
-    @include box-shadow(0, -2px, 0, 0, $color__orange, true);
+    @include box-shadow(0, -2px, 0, 0, $color__astral, true);
     color: inherit;
 
     &:visited {
+      @include box-shadow(0, -2px, 0, 0, $color__gray, true);
       color: $color__gray-darker;
     }
 
