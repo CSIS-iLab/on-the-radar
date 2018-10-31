@@ -7,3 +7,23 @@ fields:
   template: post-meta-info
 - type: include
   template: photo
+- type: field_group
+  name: details
+  label: Details
+  fields:
+  - type: datetime
+    name: event_date
+    label: Event Date
+  - type: text
+    name: location
+    label: Location
+  - type: field_group_list
+    name: downloads
+    label: Downloads
+    fields:
+    - type: file
+      name: media_upload
+      label: Media Upload
+    - type: text
+      name: media_label
+      label: media label
