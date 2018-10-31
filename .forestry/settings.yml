@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: _data/resources.yml
-  label: Resources
-  match: "**/*"
 - type: jekyll-pages
   label: Pages
   create: all
@@ -33,6 +29,10 @@ sections:
 - type: document
   path: _data/language.yml
   label: Language
+  match: "**/*"
+- type: document
+  path: _data/resources.yml
+  label: Resources
   match: "**/*"
 upload_dir: on-the-radar
 public_path: https://res.cloudinary.com/csisideaslab/image/upload
