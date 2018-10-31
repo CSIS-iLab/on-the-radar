@@ -11,6 +11,8 @@ fields:
   config:
     source:
       type: documents
+      section: resources
+      file: _data/resources.yml
   label: Type
 - type: textarea
   name: authors
