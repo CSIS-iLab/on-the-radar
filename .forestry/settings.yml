@@ -17,6 +17,11 @@ sections:
   label: Categories
   create: documents
   match: "**/*"
+- type: directory
+  path: _data/glossary.yml
+  label: Glossary
+  create: documents
+  match: "**/*"
 upload_dir: on-the-radar
 public_path: https://res.cloudinary.com/csisideaslab/image/upload
 front_matter_path: https://res.cloudinary.com/csisideaslab/image/upload
