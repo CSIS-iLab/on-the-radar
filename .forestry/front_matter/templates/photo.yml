@@ -1,0 +1,14 @@
+---
+label: Photo
+hide_body: false
+is_partial: false
+fields:
+- type: file
+  name: image
+  label: Image
+- type: text
+  name: image_caption
+  label: Image Caption
+- type: text
+  name: image_source
+  label: Image Source
