@@ -16,6 +16,10 @@ sections:
   path: _data/categories.yml
   label: Categories
   match: "**/*"
+- type: document
+  path: _data/glossary.yml
+  label: Glossary
+  match: "**/*"
 upload_dir: on-the-radar
 public_path: https://res.cloudinary.com/csisideaslab/image/upload
 front_matter_path: https://res.cloudinary.com/csisideaslab/image/upload
