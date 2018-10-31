@@ -26,8 +26,10 @@
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+        {% include site-nav.html class="inFooter" %}
+
       </div>
+      <p>{{- site.description | escape -}}</p>
     </div>
 
   </div>

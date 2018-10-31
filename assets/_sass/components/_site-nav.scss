@@ -1,0 +1,73 @@
+/*=======================================
+=            Site Navigation            =
+=======================================*/
+
+.site-nav__menu {
+  @extend %button;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  list-style: none;
+
+  &.inHeader {
+    @include breakpoint($breakpoint-medium) {
+      flex-direction: row;
+    }
+
+    a {
+      color: $color__white;
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+  }
+
+  &.inFooter {
+    a {
+      color: $color__bluegray-light;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: $color__white;
+      }
+    }
+  }
+}
+
+.site-nav__menu.inHeader li {
+  @include breakpoint($breakpoint-medium) {
+    &:not(:last-of-type) {
+      margin-right: 0.5rem;
+    }
+
+    a {
+      display: inline-block;
+      margin-left: 1.8rem;
+      padding: 0.9rem 0;
+      border-bottom: solid 0 $color__orange;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        border-bottom: solid 10px $color__orange;
+      }
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-medium) {
+    padding: 0.9rem;
+
+    &:hover {
+      padding: 0.9rem calc(0.9rem - 8px);
+      background-color: $color__blue-dark;
+      border-left: solid 8px $color__orange;
+    }
+
+    &:not(:last-of-type) {
+      border-bottom: solid 1px $color__bluegray;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+    }
+  }
+}
