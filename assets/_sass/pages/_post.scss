@@ -43,7 +43,7 @@
       @extend %page__title;
       margin: 0 0 0.5rem;
 
-      @include breakpoint($breakpoint-medium, $breakpoint-large) {
+      @include breakpoint($break: 'medium', $until: 'large') {
         padding: 0;
       }
     }
