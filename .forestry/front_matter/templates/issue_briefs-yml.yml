@@ -1,8 +1,19 @@
 ---
 label: issue_briefs.yml
-hide_body: 
-is_partial: 
+hide_body: false
+is_partial: false
 fields:
+- type: list
+  label: Tech Type
+  name: tech_type
+- type: list
+  name: tech_characteristics
+  label: Tech Characteristics
+- name: countries
+  label: Countries
+  type: list
+  hidden: false
+  default: ''
 - name: tech
   label: Tech
   type: field_group
@@ -32,10 +43,5 @@ fields:
     type: list
     hidden: false
     default: ''
-  hidden: false
-  default: ''
-- name: countries
-  label: Countries
-  type: list
   hidden: false
   default: ''
