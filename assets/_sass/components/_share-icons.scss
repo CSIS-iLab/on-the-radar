@@ -2,6 +2,9 @@
 =           Share Icons            =
 ==================================*/
 .share {
+  margin: 0;
+  padding: 0;
+
   ul {
     justify-content: space-between;
     margin: 0;
@@ -20,10 +23,12 @@
 
   .post__header & {
     display: none;
-    margin-top: -0.5em 0.1em -0.1em 0em;
-    @include breakpoint('medium') {
+
+    @include breakpoint('large') {
       display: grid;
       float: right;
+      margin-top: -1em;
+      margin-right: -1em;
     }
 
     li {
