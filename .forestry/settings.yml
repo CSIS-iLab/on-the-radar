@@ -43,14 +43,17 @@ sections:
 - type: heading
   label: DATA
 - type: document
+  path: _data/brief-tech.yml
+  label: Tech Primer
+- type: document
+  path: _data/brief-countries.yml
+  label: Country Brief
+- type: document
   path: _data/categories.yml
   label: Categories
 - type: document
   path: _data/glossary.yml
   label: Glossary
-- type: document
-  path: _data/issue_briefs.yml
-  label: Issue Briefs
 - type: document
   path: _data/keywords.yml
   label: Keywords

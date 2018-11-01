@@ -13,6 +13,7 @@ fields:
       type: documents
       section: resources
       file: _data/resources.yml
+      path: types
   label: Type
 - type: textarea
   name: authors
@@ -24,6 +25,11 @@ fields:
     use_select: true
     source:
       type: documents
+      section: resources
+      file: _data/resources.yml
+      path: topics
 - type: text
   name: optional
   label: Optional
+pages:
+- _resources/test-resource-still-fixing-front-matter.md

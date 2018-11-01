@@ -27,3 +27,11 @@ fields:
     - type: text
       name: media_label
       label: media label
+- type: field_group_list
+  label: Downloads
+  name: downloads
+  fields:
+  - type: include
+    template: download-media
+pages:
+- _workshops/workshop-for-workshopping.md
