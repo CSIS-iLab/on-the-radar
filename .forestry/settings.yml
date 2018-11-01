@@ -44,7 +44,7 @@ sections:
   label: DATA
 - type: document
   path: _data/brief-tech.yml
-  label: Tech Briefs
+  label: Tech Primer
 - type: document
   path: _data/brief-countries.yml
   label: Country Briefs
