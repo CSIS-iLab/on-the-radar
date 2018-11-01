@@ -1,0 +1,136 @@
+/*============================
+=            Post            =
+============================*/
+
+.post {
+  @include breakpoint('medium') {
+    display: grid;
+    grid-template-areas:
+      'header header'
+      'meta image'
+      'sidebar sidebar'
+      'content content'
+      'footer footer';
+    grid-template-columns: auto 33%;
+  }
+  
+  @include breakpoint('large') {
+    grid-template-areas:
+      'sidebar header'
+      'sidebar meta'
+      'sidebar content'
+      '. footer';
+    grid-template-columns: size($size__sidebar-max-width, 'large') auto;
+  }
+  
+  &__header {
+    grid-area: header;
+    padding: 0 size($size__content-padding, 'small');
+    color: $color__white;
+
+    @include breakpoint('medium') {
+      padding: 0;
+    }
+
+    @include breakpoint('large') {
+      padding: 0 size($size__content-padding, 'large');
+    }
+  }
+
+  &__meta {
+    grid-area: meta;
+    padding: size($size__content-padding, 'small');
+    background-color: $color__white;
+
+    @include breakpoint('medium') {
+      padding: 1rem size($size__content-padding, 'medium');
+    }
+
+    @include breakpoint('large') {
+      padding: 1rem size($size__content-padding, 'large');
+    }
+  }
+
+  &__header,
+  &__meta {
+    @include breakpoint('xlarge') {
+      $max-width: size($size__content-max-width, 'xlarge');
+      padding: 1rem calc((100% - #{$max-width}) / 2);
+    }
+  }
+
+  &__img-container {
+    grid-area: image;
+    padding: 0;
+
+    @include breakpoint('large') {
+      display: none;
+    }
+
+    &--large {
+      display: none;
+
+      @include breakpoint('large') {
+        display: block;
+        margin-right: -3vw;
+      }
+
+      @include breakpoint('xlarge') {
+        margin-right: -96px;
+      }
+
+    }
+  }
+
+  &__img {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    line-height: 1;
+  }
+
+  &__sidebar {
+    grid-area: sidebar;
+    align-self: start;
+    background-color: $color__off-white;
+  }
+
+  &__details {
+    padding: size($size__content-padding, 'small');
+
+    @include breakpoint('medium') {
+      padding: size($size__content-padding, 'small') size($size__content-padding, 'medium');
+    }
+
+    @include breakpoint('large') {
+      padding: size($size__content-padding, 'small');
+    }
+  }
+
+  &__content {
+    grid-area: content;
+    width: 100%;
+    margin: 0 auto;
+    padding: size($size__content-padding, 'small');
+    background-color: $color__white;
+
+    @include breakpoint('medium') {
+      padding-right: size($size__content-padding, 'medium');
+      padding-left: size($size__content-padding, 'medium');
+    }
+
+    @include breakpoint('large') {
+      padding: 0 size($size__content-padding, 'large');
+    }
+
+    @include breakpoint('xlarge') {
+      padding: 0 size($size__content-padding, 'xlarge');
+    }
+  }
+
+  &__footer {
+    grid-area: footer;
+    padding: size($size__content-padding, 'small');
+    background-color: $color__off-white;
+  }
+}

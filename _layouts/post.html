@@ -6,20 +6,27 @@ layout: default
   <header class="post__header">
     <h1 class="post__title" itemprop="name headline">{{ page.title | escape }}</h1>
     Content Type<br />
-    <section class="post__meta">
-      Authors<br />
-      Published<br />
-      Last Updated: {{ page.last-modified-date | date: '%B %d, %Y' }}<br />
-      Last Updated: {{ page.last-modified-date }}<br />
-      Photo Caption
-    </section>
-    Social Share
   </header>
-  <section class="post__image">Post Image</section>
+  <section class="post__meta">
+    Authors<br />
+    Published<br />
+    Last Updated: {{ page.last-modified-date | date: '%B %d, %Y' }}<br />
+    Last Updated: {{ page.last-modified-date }}<br />
+    Photo Caption
+    Social Share
+  </section>
+  <section class="post__img-container">
+    {% include post-image.html %}
+  </section>
   <aside class="post__sidebar">
-    Details<br />
-    Download<br />
-    Related Briefs<br />
+    <section class="post__img-container--large">
+      {% include post-image.html %}
+    </section>
+    <section class="post__details">
+      Details<br />
+      Download<br />
+      Related Briefs<br />
+    </section>
   </aside>
 
   <section class="post__content e-content" itemprop="articleBody">
@@ -33,6 +40,6 @@ layout: default
     - Tags<br />
     - Related Posts
   </section>
-  {% include page-footer.html %}
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+{% include page-footer.html %}

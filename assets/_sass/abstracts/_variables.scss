@@ -25,7 +25,7 @@ $color__gray-dark: #6d6d6d;
 $color__gray-darker: #555;
 $color__off-black: #333;
 
-$color__background-body: $color__white;
+$color__background-body: $color__blue-dark;
 $color__background-screen: $color__white;
 $color__background-hr: $color__black;
 $color__background-pre: #eee;
@@ -63,11 +63,11 @@ $size__wrapper-max-width: (
   'xlarge': calc(1312px - (56px * 2))
 );
 
-$size__wrapper-padding: (
+$size__content-padding: (
   'small': 20px,
   'medium': 5vw,
   'large': 6vw,
-  'xlarge': 0
+  'xlarge': calc((100% - 680px) / 2)
 );
 
 $size__sidebar-max-width: (
@@ -77,7 +77,7 @@ $size__sidebar-max-width: (
 
 $size__content-max-width: (
   'small': 100%,
-  'medium': calc(100% - (size($size__wrapper-padding, 'medium') * 2)),
-  'large': calc(100% - (size($size__wrapper-padding, 'large') * 2)),
+  'medium': calc(100% - (5vw * 2)),
+  'large': calc(100% - (6vw * 2)),
   'xlarge': 680px
 );

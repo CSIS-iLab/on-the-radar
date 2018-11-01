@@ -33,7 +33,6 @@ body {
 .wrapper {
   max-width: size($size__wrapper-max-width, 'small');
   margin: 0 auto;
-  padding: 0 size($size__wrapper-padding, 'small');
 
   @include breakpoint('medium') {
     max-width: size($size__wrapper-max-width, 'medium');
