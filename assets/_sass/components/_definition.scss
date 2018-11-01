@@ -1,0 +1,42 @@
+.definition {
+  padding: 1.4rem 1rem 1rem;
+
+  .icon-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: $color__bluegray;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  &__title {
+    display: block;
+    @extend %post__content-tooltip-title;
+  }
+
+  &__entry {
+    display: block;
+    @extend %body-text;
+  }
+
+  a {
+    display: block;
+    color: $color__bluegray !important;
+    font-family: $font__ptsans;
+    font-style: italic;
+    line-height: 1.53;
+    text-align: right;
+    box-shadow: none !important;
+    @include font-size(14px);
+  }
+}
+
+.define {
+  border-bottom: 2px dotted $color__astral;
+  cursor: pointer;
+
+  &:hover {
+    color: $color__astral;
+  }
+}
