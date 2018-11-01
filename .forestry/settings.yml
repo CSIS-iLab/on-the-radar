@@ -43,6 +43,14 @@ sections:
 - type: heading
   label: DATA
 - type: document
+  path: _data/brief-tech.yml
+  label: Tech Briefs
+  match: "**/*"
+- type: document
+  path: _data/brief-countries.yml
+  label: Country Briefs
+  match: "**/*"
+- type: document
   path: _data/categories.yml
   label: Categories
 - type: document
