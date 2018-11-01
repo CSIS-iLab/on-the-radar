@@ -1,0 +1,58 @@
+/*==================================
+=           Share Icons            =
+==================================*/
+
+.share {
+  $s: &;
+  display: grid;
+  align-items: center;
+  padding: 0.5rem;
+
+  ul {
+    // display: grid;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      display: inherit;
+      margin: 0;
+      line-height: 1;
+      text-align: center;
+
+      i {
+        font-size: 1.2rem;
+        transition: inherit;
+      }
+    }
+  }
+
+  .post__header & {
+    display: none;
+    padding: 0;
+
+    @include breakpoint('large') {
+      display: grid;
+      grid-column: 15;
+    }
+
+    i {
+      color: $color__blue;
+    }
+  }
+
+  .post__footer & {
+    padding: 1em;
+    border-bottom: 0.1em solid $color__gray-light;
+
+    li {
+      padding-right: 0.3rem;
+      display: inline-grid;
+
+      i {
+        color: $color__orange;
+      }
+    }
+  }
+}
