@@ -8,10 +8,12 @@
 
 @import 'vendors/normalize';
 @import 'vendors/fontello/fontello';
+@import 'vendors/tippy';
 
 @import 'base/typography';
 @import 'base/base';
 
 @import 'components/buttons';
+@import 'components/definition';
 
 @import 'pages/post';

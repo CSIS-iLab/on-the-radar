@@ -65,6 +65,7 @@
   },
   "dependencies": {
     "stylelint-config-sass-guidelines": "^5.2.0",
-    "stylelint-scss": "^3.3.2"
+    "stylelint-scss": "^3.3.2",
+    "tippy.js": "^3.1.1"
   }
 }
