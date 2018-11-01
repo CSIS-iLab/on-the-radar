@@ -1,1 +1,4 @@
-<img src="https://via.placeholder.com/400x400" class="post__img" alt="Placeholder" title="Placeholder" />
+{%- if page.layout == 'post' -%}
+  {%- assign post = page -%}
+{%- endif -%}
+<img src="{{ post.image }}" class="post__img" alt="{{ post.image_caption }}" title="{{ post.image_caption }}" />
