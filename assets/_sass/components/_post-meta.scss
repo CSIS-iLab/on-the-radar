@@ -3,6 +3,8 @@
 ===============================*/
 
 .post-meta {
+  @extend %post__meta;
+  
   &__authors {
     &-label {
       @extend %labeltext__label;
