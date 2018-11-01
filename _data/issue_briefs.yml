@@ -1,5 +1,5 @@
 ---
-- tech:
+tech:
   type:
     - Unmanned Vehicles
     - Platform Control and Information Support
@@ -36,7 +36,7 @@
     - Russia
     - China
     - North Korea
-- countries:
+countries:
     - United States
     - China
     - North Korea
