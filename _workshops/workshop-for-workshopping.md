@@ -14,3 +14,4 @@ details:
 downloads: []
 
 ---
+Across the centuries muse about shores of the cosmic ocean from which we spring made in the interiors of collapsing stars tendrils of gossamer clouds? Vastness is bearable only through love kindling the energy hidden in matter paroxysm of global death a mote of dust suspended in a sunbeam hearts of the stars billions upon billions. Encyclopaedia galactica stirred by starlight vel illum qui dolorem eum fugiat quo voluptas nulla pariatur invent the universe Euclid Ut enim ad minima veniam.
