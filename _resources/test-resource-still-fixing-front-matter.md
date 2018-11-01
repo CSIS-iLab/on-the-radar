@@ -13,4 +13,4 @@ topics:
 optional: ''
 
 ---
-Link to [http://saganipsum.com/](http://saganipsum.com/ "http://saganipsum.com/")
+This is [http://saganipsum.com/](http://saganipsum.com/ "http://saganipsum.com/")
