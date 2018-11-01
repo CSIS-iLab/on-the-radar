@@ -49,9 +49,6 @@ sections:
   path: _data/glossary.yml
   label: Glossary
 - type: document
-  path: _data/issue_briefs.yml
-  label: Issue Briefs
-- type: document
   path: _data/keywords.yml
   label: Keywords
 - type: document
