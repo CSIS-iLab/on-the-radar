@@ -1,5 +1,5 @@
 ---
-title: Test Tech Primer
+title: Tech Primer Test
 details:
   Type:
   - Platform Control and Information Support
