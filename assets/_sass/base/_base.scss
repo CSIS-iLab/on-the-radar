@@ -11,39 +11,23 @@ html {
 body {
   /* Fallback for when there is no custom background color defined. */
   --breakpoint: 'xsmall';
+  $sizes: ('small', 'medium', 'large', 'xlarge');
+  @each $size in $sizes {
+    @include breakpoint($size) {
+      --breakpoint: '#{$size}';
+    }
+  }
   background: $color__background-body;
-
-  @include breakpoint('small') {
-    --breakpoint: 'small';
-  }
-
-  @include breakpoint('medium') {
-    --breakpoint: 'medium';
-  }
-
-  @include breakpoint('large') {
-    --breakpoint: 'large';
-  }
-
-  @include breakpoint('xlarge') {
-    --breakpoint: 'xlarge';
-  }
 }
 
 .wrapper {
-  max-width: size($size__wrapper-max-width, 'small');
+  $sizes: ('small', 'medium', 'large', 'xlarge');
   margin: 0 auto;
 
-  @include breakpoint('medium') {
-    max-width: size($size__wrapper-max-width, 'medium');
-    padding: 0;
-  }
-
-  @include breakpoint('large') {
-    max-width: size($size__wrapper-max-width, 'large');
-  }
-
-  @include breakpoint('xlarge') {
-    max-width: size($size__wrapper-max-width, 'xlarge');
+  @each $size in $sizes {
+    @include breakpoint($size) {
+      max-width: size($size__wrapper-max-width, $size);
+      padding: 0;
+    }
   }
 }

@@ -56,6 +56,14 @@ $font__line-height-pre: 1.6;
 
 /*----------  Structure  ----------*/
 
+$breakpoints: (
+  'xlarge': 82em,
+  'large': 48em,
+  'medium': 33.75em,
+  'small': 26em,
+  'xsmall': 26em
+);
+
 $size__wrapper-max-width: (
   'small': 100%,
   'medium': calc(100% - (32px * 2)),
