@@ -1,0 +1,41 @@
+---
+label: issue_briefs.yml
+hide_body: 
+is_partial: 
+fields:
+- name: tech
+  label: Tech
+  type: field_group
+  fields:
+  - name: type
+    label: Type
+    type: list
+    hidden: false
+    default: ''
+  - name: characteristics
+    label: Characteristics
+    type: list
+    hidden: false
+    default: ''
+  - name: risk_factors
+    label: Risk factors
+    type: list
+    hidden: false
+    default: ''
+  - name: domain
+    label: Domain
+    type: list
+    hidden: false
+    default: ''
+  - name: country
+    label: Country
+    type: list
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+- name: countries
+  label: Countries
+  type: list
+  hidden: false
+  default: ''
