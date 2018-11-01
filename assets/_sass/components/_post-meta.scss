@@ -3,14 +3,19 @@
 ===============================*/
 
 .post-meta {
-  width: 16px;
-  height: 22px;
-  font-family: PTSans;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: italic;
-  font-stretch: normal;
-  line-height: 1.34;
-  letter-spacing: normal;
-  color: var(--color__gray-dark);
+
+  &__authors {
+    &-label {
+      @extend %labeltext__label;
+      color: $color__gray-dark;
+    }
+
+    &-text{
+      @extend %labeltext__text;
+      color: $color__off-black;
+    }
+  }
+
+
+
 }
