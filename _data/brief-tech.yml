@@ -1,0 +1,37 @@
+---
+type:
+  - Unmanned Vehicles
+  - Platform Control and Information Support
+  - Sensors
+  - Cyber
+  - Electronic Warfare
+  - Space Platforms
+  - Miscellaneous
+characteristics:
+  - Vantage/range
+  - Speed
+  - Resiliency
+  - Detectability
+  - Precision
+  - Persistence
+risk_factors:
+  - Intrusive
+  - Destructive
+  - Predictive
+  - Preemptive
+  - Dual-use
+  - Clandestine
+  - Vulnerable
+  - Action-enabling
+domain:
+  - Land
+  - Air
+  - Sea
+  - Space
+  - Cyberspace
+  - Multidomain
+country:
+  - United States
+  - Russia
+  - China
+  - North Korea
