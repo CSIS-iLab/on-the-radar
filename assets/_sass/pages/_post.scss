@@ -3,6 +3,8 @@
 ============================*/
 
 .post {
+  $post: &;
+
   @include breakpoint('medium') {
     display: grid;
     grid-template-areas:
@@ -35,6 +37,12 @@
     @include breakpoint('large') {
       padding: 0 size($size__content-padding, 'large');
     }
+
+    #{$post}__title {
+      @extend %page__title;
+      margin: 0 0 0.5rem 0;
+    }
+
   }
 
   &__meta {
