@@ -1,4 +1,10 @@
 .header__nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  list-style: none;
+  @extend %button;
+
   @include breakpoint($breakpoint-medium) {
     flex-direction: row;
   }
@@ -21,7 +27,6 @@
       margin-left: 1.8rem;
       padding: 0.9rem 0;
       box-shadow: none;
-      transition: all 0.3s ease-in-out;
 
       &:hover {
         @include box-shadow(0, -10px, 0, 0, $color__orange, true);

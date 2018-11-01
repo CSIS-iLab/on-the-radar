@@ -1,10 +1,31 @@
 .footer__nav {
-  a {
-    color: $color__bluegray-light;
-    transition: all 0.3s ease-in-out;
+  display: none;
+  padding-left: 0;
+  list-style: none;
+  @extend %footer__link;
 
-    &:hover {
-      color: $color__white;
+  @include breakpoint($breakpoint-medium) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include breakpoint($breakpoint-large) {
+    flex-direction: column;
+  }
+
+  li {
+    &:not(:last-of-type) {
+      margin-right: 1.5rem;
+    }
+
+    a {
+      color: $color__bluegray-light;
+      line-height: 2.31;
+      white-space: nowrap;
+
+      &:hover {
+        color: $color__white;
+      }
     }
   }
 }
