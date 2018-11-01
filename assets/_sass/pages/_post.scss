@@ -3,8 +3,6 @@
 ============================*/
 
 .post {
-  $post: &;
-  
   @include breakpoint('medium') {
     display: grid;
     grid-template-areas:
