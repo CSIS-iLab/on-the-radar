@@ -1,11 +1,22 @@
 ---
 layout: post
-title: Welcome to Jekyll!
+title: Test Post with Sagan Ipsum
 date: 2018-02-13 15:56:34 +0000
 categories: jekyll update
 excerpt: 'Lorem ipsum dolor sit amet, ante rutrum in, eu ligula sem scelerisque eu
   mollis, porttitor integer nam diam pellentesque in, wisi quisque suscipit feugiat
   donec. '
+authors:
+- _authors/ruth-barking-ginsberg.md
+- _authors/author-2.md
+related_briefs:
+- _briefs/country-profile.md
+keywords:
+- Keyword 2
+- Keyword 1
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
+image_source: Getty Images
+image_caption: Test Image
 
 ---
 Tunguska event worldlets dream of the mind's eye hundreds of thousands tingling of the spine light years. Circumnavigated finite but unbounded bits of moving fluff vanquish the impossible something incredible is waiting to be known a mote of dust suspended in a sunbeam. Vastness is bearable only through love hearts of the stars Sea of Tranquility across the centuries network of wormholes paroxysm of global death. Concept of the number one extraordinary claims require extraordinary evidence finite but unbounded a still more glorious dawn awaits a mote of dust suspended in a sunbeam across the centuries.
