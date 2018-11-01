@@ -1,5 +1,5 @@
 ---
-title: Test Country Profile
+title: Country Profile Test
 details:
   Type: []
   characteristics: []
