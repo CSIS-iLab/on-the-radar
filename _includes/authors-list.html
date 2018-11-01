@@ -1,4 +1,7 @@
 {% assign authors = page.authors %}
+{% if post.authors.size > 0 %}
+  {% assign authors = post.authors %}
+{% endif %}
 
 {% if authors.size > 0 %}
 <div class="post-meta__authors">
