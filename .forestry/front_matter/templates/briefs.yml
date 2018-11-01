@@ -27,8 +27,9 @@ fields:
       use_select: true
       source:
         type: documents
-        section: issue-briefs
-        file: _data/issue_briefs.yml
+        section: ''
+        file: _data/brief-tech.yml
+        path: type
     name: Type
     default: []
     label: Type
@@ -37,6 +38,8 @@ fields:
       use_select: true
       source:
         type: documents
+        file: _data/brief-tech.yml
+        path: characteristics
     label: Characteristics
     name: characteristics
   - type: list
@@ -44,6 +47,8 @@ fields:
       use_select: true
       source:
         type: documents
+        file: _data/brief-tech.yml
+        path: risk_factors
     label: Risk Factors
     name: risk_factors
   - type: list
@@ -51,6 +56,8 @@ fields:
       use_select: true
       source:
         type: documents
+        file: _data/brief-tech.yml
+        path: domain
     label: Domain
     name: domain
   - type: list
@@ -58,6 +65,8 @@ fields:
       use_select: true
       source:
         type: documents
+        file: _data/brief-tech.yml
+        path: country
     label: Country
     name: country
 - type: field_group_list
