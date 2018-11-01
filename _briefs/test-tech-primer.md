@@ -2,11 +2,17 @@
 title: Test Tech Primer
 details:
   Type:
+  - Platform Control and Information Support
   - Issue briefs
-  characteristics: []
-  risk_factors: []
-  domain: []
-  country: []
+  characteristics:
+  - Speed
+  risk_factors:
+  - Destructive
+  domain:
+  - Air
+  - Sea
+  country:
+  - North Korea
 date: 2018-10-31 17:02:17 +0000
 excerpt: or sit amet, ante rutrum in, eu ligula sem scelerisque eu mollis, porttitor
   integer nam diam pellentesque in, wisi quisque suscipit feugiat donec. Sed integer
