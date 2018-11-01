@@ -6,6 +6,13 @@ layout: default
   <header class="post__header">
     <h1 class="post__title" itemprop="name headline">{{ page.title | escape }}</h1>
     Content Type<br />
+    <section class="post__meta">
+      {% include share-icons.html %}
+      Authors<br />
+      Published<br />
+      Last Updated<br />
+      Photo Caption
+    </section>
   </header>
   <section class="post__meta">
     Authors<br />
@@ -13,7 +20,6 @@ layout: default
     Last Updated: {{ page.last-modified-date | date: '%B %d, %Y' }}<br />
     Last Updated: {{ page.last-modified-date }}<br />
     Photo Caption
-    Social Share
   </section>
   <section class="post__img-container">
     {% include post-image.html %}
@@ -34,7 +40,7 @@ layout: default
   </section>
 
   <section class="post__footer">
-    Social Share<br />
+    {% include share-icons.html %}
     Authors Block<br />
     Related Reading<br />
     - Tags<br />

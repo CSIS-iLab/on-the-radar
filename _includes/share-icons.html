@@ -4,9 +4,7 @@
 {% assign shareLink = "https://ontheradar.csis.org" | append: page.url %}
 {% endif %}
 
-
 <div class="share">
-  <span class="share__text">{{ site.data.language.share | escape }}</span>
   <ul>
     <li>
       <a href="https://www.facebook.com/sharer.php?u={{ shareLink }}" rel="nofollow" target="_blank" title="Share on Facebook"><i class="icon icon-facebook"></i></a>
@@ -21,7 +19,7 @@
       <a href="mailto:?subject={{ site.title | escape }}: {{ page.title | escape }}&amp;body={{ shareLink }}"><i class="icon icon-email-plane"></i></a>
     </li>
     <li>
-      <a href="mailto:?subject={{ site.title | escape }}: {{ page.title | escape }}&amp;body={{ shareLink }}"><i class="icon icon-link"></i></a>
+      <a href="javascript:shareLink('https://nuclearnetwork.csis.org/wrong-response-russias-inf-treaty-violation/')"><i class="icon icon-link"></i></a>
     </li>
   </ul>
 </div>
