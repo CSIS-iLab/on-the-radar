@@ -4,17 +4,9 @@
 
 .post {
   $post: &;
-
-  display: grid;
-  grid-template-areas:
-    'header'
-    'meta'
-    'image'
-    'sidebar'
-    'content'
-    'footer';
   
   @include breakpoint('medium') {
+    display: grid;
     grid-template-areas:
       'header header'
       'meta image'
@@ -32,26 +24,26 @@
       '. footer';
     grid-template-columns: size($size__sidebar-max-width, 'large') auto;
   }
-
-  &__header,
-  &__meta,
-  &__content,
-  &__footer {
-    padding: 0 size($size__content-padding, 'small');
-  }
   
   &__header {
     grid-area: header;
+    padding: 0 size($size__content-padding, 'small');
     color: $color__white;
+
+    @include breakpoint('medium') {
+      padding: 0;
+    }
+
+    @include breakpoint('large') {
+      padding: 0 size($size__content-padding, 'large');
+    }
   }
 
   &__meta {
     grid-area: meta;
+    padding: size($size__content-padding, 'small');
     background-color: $color__white;
-  }
 
-  &__header,
-  &__meta {
     @include breakpoint('medium') {
       padding: 1rem size($size__content-padding, 'medium');
     }
@@ -59,7 +51,10 @@
     @include breakpoint('large') {
       padding: 1rem size($size__content-padding, 'large');
     }
+  }
 
+  &__header,
+  &__meta {
     @include breakpoint('xlarge') {
       $max-width: size($size__content-max-width, 'xlarge');
       padding: 1rem calc((100% - #{$max-width}) / 2);
@@ -69,7 +64,6 @@
   &__img-container {
     grid-area: image;
     padding: 0;
-    background-color: $color__blue;
 
     @include breakpoint('large') {
       display: none;
@@ -106,17 +100,26 @@
 
   &__details {
     padding: size($size__content-padding, 'small');
+
+    @include breakpoint('medium') {
+      padding: size($size__content-padding, 'small') size($size__content-padding, 'medium');
+    }
+
+    @include breakpoint('large') {
+      padding: size($size__content-padding, 'small');
+    }
   }
 
   &__content {
     grid-area: content;
     width: 100%;
     margin: 0 auto;
-    padding: 0 size($size__content-padding, 'small');
+    padding: size($size__content-padding, 'small');
     background-color: $color__white;
 
     @include breakpoint('medium') {
-      padding: 0 size($size__content-padding, 'medium');
+      padding-right: size($size__content-padding, 'medium');
+      padding-left: size($size__content-padding, 'medium');
     }
 
     @include breakpoint('large') {
@@ -130,6 +133,7 @@
 
   &__footer {
     grid-area: footer;
+    padding: size($size__content-padding, 'small');
     background-color: $color__off-white;
   }
 }
