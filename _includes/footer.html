@@ -25,9 +25,7 @@
         {%- include social.html -%}
       </div>
 
-      <div class="footer__nav footer-col footer-col-3">
-        {% include site-nav.html class="inFooter" %}
-      </div>
+      {% include site-nav.html class="footer__nav" location="inFooter" %}
 
       <p>{{- site.description | escape -}}</p>
     </div>

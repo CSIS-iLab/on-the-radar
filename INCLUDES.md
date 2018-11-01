@@ -3,6 +3,8 @@ Documentation on parameters used for includes throughout the site. For informati
 
 ## site-nav
 Displays a list of navigation menu items
-`{%- includesite-nav.html class="inHeader inFooter" -%}`
+`{%- include site-nav.html class="header__nav [or] footer__nav" location="inHeader [or] inFooter" -%}`
 
-- `class`: References menu item attribute that determines whether the item should be rendered. Determins type style differentiation between header and footer. 
+- `class`: Determines style differentiation between header and footer. 
+
+- `location`: References menu item attribute that determines whether the item should be rendered.
