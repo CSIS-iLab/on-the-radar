@@ -1,0 +1,10 @@
+.footer__nav {
+  a {
+    color: $color__bluegray-light;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $color__white;
+    }
+  }
+}

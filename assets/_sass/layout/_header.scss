@@ -1,0 +1,49 @@
+.header__nav {
+  @include breakpoint($breakpoint-medium) {
+    flex-direction: row;
+  }
+
+  li a {
+    color: $color__white;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+}
+
+.header__nav li {
+  @include breakpoint($breakpoint-medium) {
+    &:not(:last-of-type) {
+      margin-right: 0.5rem;
+    }
+
+    a {
+      display: inline-block;
+      margin-left: 1.8rem;
+      padding: 0.9rem 0;
+      box-shadow: none;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        @include box-shadow(0, -10px, 0, 0, $color__orange, true);
+      }
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-medium) {
+    padding: 0.9rem;
+
+    &:hover {
+      background-color: $color__blue-dark;
+      @include box-shadow(8px, 0, 0, 0, $color__orange, true);
+    }
+
+    &:not(:last-of-type) {
+      border-bottom: solid 1px $color__bluegray;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+    }
+  }
+}
