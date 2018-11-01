@@ -1,7 +1,7 @@
 {% if site.url.size > 0 %}
 {% assign shareLink = site.url | append: page.url %}
 {% else %}
-{% assign shareLink = "https://healthcommission.csis.org" | append: page.url %}
+{% assign shareLink = "https://ontheradar.csis.org" | append: page.url %}
 {% endif %}
 
 
@@ -15,10 +15,13 @@
       <a href="https://twitter.com/intent/tweet?text={{ page.title | escape }}&url={{ shareLink }}&via=CSIS&related=CSIS" rel="nofollow" target="_blank" title="Share on Twitter"><i class="icon icon-twitter"></i></a>
     </li>
     <li>
-      <a href="mailto:?subject={{ site.title | escape }}: {{ page.title | escape }}&amp;body={{ shareLink }}"><i class="icon icon-email"></i></a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ include.shareLink | absolute_url }}" rel="nofollow" target="_blank" title="Share on LinkedIn"><i class="icon icon-linkedin"></i></a>
     </li>
     <li>
-      <a href="javascript:window.print()"><i class="icon-print"></i></a>
+      <a href="mailto:?subject={{ site.title | escape }}: {{ page.title | escape }}&amp;body={{ shareLink }}"><i class="icon icon-email-plane"></i></a>
+    </li>
+    <li>
+      <a href="mailto:?subject={{ site.title | escape }}: {{ page.title | escape }}&amp;body={{ shareLink }}"><i class="icon icon-link"></i></a>
     </li>
   </ul>
 </div>
