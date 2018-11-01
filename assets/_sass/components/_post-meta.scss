@@ -3,14 +3,13 @@
 ===============================*/
 
 .post-meta {
-
   &__authors {
     &-label {
       @extend %labeltext__label;
       color: $color__gray-dark;
     }
 
-    &-text{
+    &-text {
       @extend %labeltext__text;
       color: $color__off-black;
     }
