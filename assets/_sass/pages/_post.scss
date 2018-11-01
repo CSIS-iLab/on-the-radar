@@ -3,25 +3,38 @@
 ============================*/
 
 .post {
+  $post: &;
+
   display: grid;
   grid-template-areas:
     'header'
+    'meta'
     'image'
     'sidebar'
     'content'
     'footer';
   
+  @include breakpoint('medium') {
+    grid-template-areas:
+      'header header'
+      'meta image'
+      'sidebar sidebar'
+      'content content'
+      'footer footer';
+    grid-template-columns: auto 33%;
+  }
+  
   @include breakpoint('large') {
     grid-template-areas:
-      'image header'
+      'sidebar header'
+      'sidebar meta'
       'sidebar content'
-      'footer footer';
+      '. footer';
     grid-template-columns: size($size__sidebar-max-width, 'large') auto;
   }
 
   &__header,
-  &__image,
-  &__sidebar,
+  &__meta,
   &__content,
   &__footer {
     padding: 0 size($size__content-padding, 'small');
@@ -29,38 +42,70 @@
   
   &__header {
     grid-area: header;
-    background-color: $color__white;
+    color: $color__white;
+  }
 
+  &__meta {
+    grid-area: meta;
+    background-color: $color__white;
+  }
+
+  &__header,
+  &__meta {
     @include breakpoint('medium') {
-      padding: 0 size($size__content-padding, 'medium');
+      padding: 1rem size($size__content-padding, 'medium');
     }
 
     @include breakpoint('large') {
-      padding: 0 size($size__content-padding, 'large');
+      padding: 1rem size($size__content-padding, 'large');
     }
 
     @include breakpoint('xlarge') {
       $max-width: size($size__content-max-width, 'xlarge');
-      padding: 0 calc((100% - #{$max-width}) / 2);
+      padding: 1rem calc((100% - #{$max-width}) / 2);
     }
   }
 
-  &__image {
+  &__img-container {
     grid-area: image;
+    padding: 0;
     background-color: $color__blue;
 
     @include breakpoint('large') {
-      margin-right: -3vw;
+      display: none;
     }
 
-    @include breakpoint('xlarge') {
-      margin-right: -96px;
+    &--large {
+      display: none;
+
+      @include breakpoint('large') {
+        display: block;
+        margin-right: -3vw;
+      }
+
+      @include breakpoint('xlarge') {
+        margin-right: -96px;
+      }
+
     }
+  }
+
+  &__img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: 1;
   }
 
   &__sidebar {
     grid-area: sidebar;
+    align-self: start;
     background-color: $color__off-white;
+  }
+
+  &__details {
+    padding: size($size__content-padding, 'small');
   }
 
   &__content {
