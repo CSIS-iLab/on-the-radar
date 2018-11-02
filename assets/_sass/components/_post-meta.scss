@@ -1,10 +1,10 @@
 /*===============================
-=           Post Meta           =
+=           Post Meta           =f
 ===============================*/
 
 .post-meta {
-  @extend %post__meta;
-  
+  @extend %labeltext__text;
+
   &__authors {
     &-label {
       @extend %labeltext__label;
