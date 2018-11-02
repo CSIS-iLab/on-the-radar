@@ -1,13 +1,14 @@
 ---
 footer:
-  about_this_study: The Project on Nuclear Issues (PONI) at the Center for Strategic and International Studies (CSIS) aims to build and sustain a networked community of young nuclear experts from the miltiary, national labratories, industry, academia, and policy communities. For this project, PONI has partnered with the Nuclear Policy Working Group (NPWG) at the University of California-Berkeley to study how rapid technology developments—including artificial intelligence, robotics, and advanced sensing—are expected to reshape situational awareness, crisis management, and strategic warning on the conventional battlefield, introducing new and complex risks to strategic stability in the nuclear domain.
+  about_heading: About this study
+  about_description: The Project on Nuclear Issues (PONI) at the Center for Strategic and International Studies (CSIS) aims to build and sustain a networked community of young nuclear experts from the miltiary, national labratories, industry, academia, and policy communities. For this project, PONI has partnered with the Nuclear Policy Working Group (NPWG) at the University of California-Berkeley to study how rapid technology developments—including artificial intelligence, robotics, and advanced sensing—are expected to reshape situational awareness, crisis management, and strategic warning on the conventional battlefield, introducing new and complex risks to strategic stability in the nuclear domain.
   address: '1616 Rhode Island Avenue, NW<br>     Washington, DC 20036'
   email: poni@csis.org
   tech_primers_description: Read brief explainers of different types of emerging situational awareness technologies and analysis of potential impacts on stability.
   country_profiles_description: Improve your understanding of situational awareness capabilities by country.
   analysis_description: Read research and analysis on the changing situational awareness environment and its implications for stability.
   resources_description: Learn more about emerging technology and stability using our list of recommended readings, podcasts, websites, and more.
-  glossery_description: Unsure of what something means or confused about how we are defining a certain term? Check out our glossary.
+  glossary_description: Unsure of what something means or confused about how we are defining a certain term? Check out our glossary.
   visit_other_projects: Visit Our Other Projects
   copyright: by the Center for Strategic and International Studies. All rights reserved.
 author_list: 'By '

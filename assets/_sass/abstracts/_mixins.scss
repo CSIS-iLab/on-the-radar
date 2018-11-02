@@ -33,24 +33,21 @@
 @mixin breakpoint($break, $dir: 'min-width', $until: null) {
   @if not map-has-key($breakpoints, $break) {
     $break: $break;
-  }
-  @else {
+  } @else {
     $break: map-get($breakpoints, $break);
   }
 
   @if $break and $until {
     @if not map-has-key($breakpoints, $until) {
       $until: $until;
-    }
-    @else {
+    } @else {
       $until: map-get($breakpoints, $until);
     }
 
     @media screen and (min-width: $break) and (max-width: $until) {
       @content;
     }
-  }
-  @else {
+  } @else {
     @media screen and ($dir: $break) {
       @content;
     }
@@ -62,15 +59,16 @@
 @mixin box-shadow($top, $left, $blur, $size, $color, $inset: false) {
   @if $inset {
     box-shadow: inset $top $left $blur $size $color;
-  }
-  @else {
+  } @else {
     box-shadow: $top $left $blur $size $color;
   }
 }
 
 // Extend Background to full width of window
-@mixin full-width-background ( $background, $direction: '' ) {
+@mixin full-width-background($background, $direction: '') {
   $width_forumula: calc((100vw - 100%) / 2);
+  position: relative;
+  margin: 0 auto;
 
   &::before,
   &::after {

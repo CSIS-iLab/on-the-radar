@@ -1,4 +1,4 @@
-.header__nav {
+.site-header__nav {
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -10,7 +10,7 @@
   }
 }
 
-.header__nav .nav-trigger {
+.site-header__nav .nav-trigger {
   position: absolute;
   visibility: hidden;
   opacity: 0;
@@ -32,7 +32,7 @@
   }
 }
 
-.header__nav .menu-icon {
+.site-header__nav .menu-icon {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -45,7 +45,7 @@
   }
 }
 
-.header__nav li {
+.site-header__nav li {
   a {
     color: $color__white;
     white-space: nowrap;
