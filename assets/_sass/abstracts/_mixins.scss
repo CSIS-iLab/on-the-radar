@@ -24,40 +24,34 @@
 }
 
 // Breakpoints
-$breakpoint-xlarge: 82em;
-$breakpoint-large: 48em;
-$breakpoint-medium: 33.75em;
-$breakpoint-small: 26em;
-$breakpoint-xsmall: 26em;
+// $break: Breakpoint to use
+// $dir: 'min-width' or 'max-width'
+// $until: Maximum width
+// @include breakpoint('medium');
+// @include breakpoint($break: 'medium', $until: 'large');
+// @include breakpoint($break: 'medium', $dir: 'max-width');
+@mixin breakpoint($break, $dir: 'min-width', $until: null) {
+  @if not map-has-key($breakpoints, $break) {
+    $break: $break;
+  }
+  @else {
+    $break: map-get($breakpoints, $break);
+  }
 
-@mixin breakpoint($break) {
-  @if $break==xlarge {
-    @media screen and (min-width: $breakpoint-xlarge) {
-      @content;
+  @if $break and $until {
+    @if not map-has-key($breakpoints, $until) {
+      $until: $until;
     }
-  }
-  @else if $break==large {
-    @media screen and (min-width: $breakpoint-large) {
-      @content;
+    @else {
+      $until: map-get($breakpoints, $until);
     }
-  }
-  @else if $break==medium {
-    @media screen and (min-width: $breakpoint-medium) {
-      @content;
-    }
-  }
-  @else if $break==small {
-    @media screen and (min-width: $breakpoint-small) {
-      @content;
-    }
-  }
-  @else if $break==xsmall {
-    @media screen and (max-width: $breakpoint-xsmall) {
+
+    @media screen and (min-width: $break) and (max-width: $until) {
       @content;
     }
   }
   @else {
-    @media screen and (min-width: $break) {
+    @media screen and ($dir: $break) {
       @content;
     }
   }
@@ -114,4 +108,16 @@ $breakpoint-xsmall: 26em;
       display: none;
     }
   }
+}
+
+// Displays the dark orange sidebar in header and page footer
+@mixin orange-side-bar($direction: right, $width: 20px, $height: 200px) {
+  content: '';
+  position: absolute;
+  top: 0;
+  #{$direction}: -#{$width};
+  display: block;
+  width: $width;
+  height: $height;
+  background-color: $color__orange-dark;
 }

@@ -12,9 +12,8 @@ gulp.task('sass', ['styleLint'], function() {
     )
     .pipe(
       postcss([
-        autoprefixer({
-          browsers: config.sass.autoprefixer.browsers
-        })
+        autoprefixer(config.sass.autoprefixer),
+        require('postcss-object-fit-images')
       ])
     )
     .pipe(gulp.dest(config.assets + '/' + config.sass.dest))
