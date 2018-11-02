@@ -8,11 +8,23 @@ $browser-context: 16px;
   @return #{$rem-size}rem;
 }
 
-@function size($map, $breakpoint) {
+@function return-map-value($map, $breakpoint) {
   @if not map-has-key($map, $breakpoint) {
     @warn "'#{$breakpoint}' is not a valid size";
   }
   @else {
     @return map-get($map, $breakpoint);
   } 
+}
+
+@function wrapper-width($breakpoint) {
+  @return return-map-value($size__wrapper-max-width, $breakpoint);
+}
+
+@function sidebar-width($breakpoint) {
+  @return return-map-value($size__sidebar-max-width, $breakpoint);
+}
+
+@function content-padding($breakpoint) {
+  @return return-map-value($size__content-padding, $breakpoint);
 }
