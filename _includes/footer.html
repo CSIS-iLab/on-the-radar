@@ -35,3 +35,6 @@
 </footer>
 
 <script src="{{ "/assets/js/bundle.js" | relative_url }}" type="text/javascript"></script>
+{% if page.layout == 'post' %}
+<script src="{{ "/assets/js/posts.js" | relative_url }}" type="text/javascript"></script>
+{% endif %}
