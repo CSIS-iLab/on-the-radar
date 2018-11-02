@@ -1,0 +1,31 @@
+.footer__nav {
+  display: none;
+  padding-left: 0;
+  list-style: none;
+  @extend %footer__link;
+
+  @include breakpoint('medium') {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include breakpoint('large') {
+    flex-direction: column;
+  }
+
+  li {
+    &:not(:last-of-type) {
+      margin-right: 1.5rem;
+    }
+
+    a {
+      color: $color__bluegray-light;
+      line-height: 2.31;
+      white-space: nowrap;
+
+      &:hover {
+        color: $color__white;
+      }
+    }
+  }
+}
