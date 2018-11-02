@@ -4,12 +4,12 @@
   list-style: none;
   @extend %footer__link;
 
-  @include breakpoint($breakpoint-medium) {
+  @include breakpoint('medium') {
     display: flex;
     justify-content: center;
   }
 
-  @include breakpoint($breakpoint-large) {
+  @include breakpoint('large') {
     flex-direction: column;
   }
 

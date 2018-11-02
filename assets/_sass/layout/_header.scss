@@ -5,19 +5,54 @@
   list-style: none;
   @extend %button;
 
-  @include breakpoint($breakpoint-medium) {
+  @include breakpoint('large') {
     flex-direction: row;
   }
+}
 
-  li a {
-    color: $color__white;
-    white-space: nowrap;
-    text-transform: uppercase;
+.header__nav .nav-trigger {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+
+  + label {
+    cursor: pointer;
+
+    @include breakpoint('large') {
+      display: none;
+    }
+  }
+
+  &:not(:checked) ~ .trigger {
+    display: none;
+
+    @include breakpoint('large') {
+      display: block;
+    }
+  }
+}
+
+.header__nav .menu-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 0.35rem 0.7rem;
+  background-color: $color__blue-dark;
+  border-radius: 50%;
+
+  svg {
+    fill: $color__gray-lighter;
   }
 }
 
 .header__nav li {
-  @include breakpoint($breakpoint-medium) {
+  a {
+    color: $color__white;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+
+  @include breakpoint('large') {
     &:not(:last-of-type) {
       margin-right: 0.5rem;
     }
@@ -34,7 +69,7 @@
     }
   }
 
-  @media screen and (max-width: $breakpoint-medium) {
+  @include breakpoint($break: 'large', $dir: 'max-width') {
     padding: 0.9rem;
 
     &:hover {
