@@ -9,7 +9,7 @@
 {%- endif -%}
 {%- assign glossary_entry = glossary_entry | first -%}
 {%- if glossary_entry.size >0 -%}
-  <span data-content='{"title":{{ include.term | jsonify }},"entry":{{ glossary_entry.description | jsonify }}}' class="define">{{ include.term }}</span>
+  <span data-content='{"title":{{ include.term | jsonify }},"entry":{{ glossary_entry.description | jsonify }}, "slug":{{ include.term | slugify | jsonify }}}' class="define">{{ include.term }}</span>
 {%- else -%}
   {{ include.term }}
 {%- endif -%}

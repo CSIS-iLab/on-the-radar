@@ -19,7 +19,7 @@ const formatContent = tip => {
   let content = JSON.parse(tip.reference.dataset.content)
   let title = `<div class="definition__title">${content.title}</div>`
   let entry = `<span class="definition__entry">${content.entry}</span>`
-  let slug = content.title.toLowerCase().replace(' ', '_')
+  let slug = content.slug
 
   let textContent = `<div class="definition"><i class="icon-close"></i>${title}${entry}<a href="/glossary#${slug}">View in glossary</a></div>`
 
