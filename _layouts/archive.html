@@ -19,8 +19,9 @@ layout: default
     Featured Post
   </section>
   <section class="archive__content">
-    Post List<br />
-    {{ content }}
+    {% for post in site.posts %}
+    {% include post-block.html %}
+    {% endfor %}
   </section>
   {% include page-footer.html %}
 </article>

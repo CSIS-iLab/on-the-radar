@@ -31,10 +31,14 @@
 
     #{$post}__title,
     #{$post}__content-type {
-      $sizes: ('small', 'large', 'xlarge');
+      $sizes: ('large', 'xlarge');
+      padding-right: content-padding('small');
+      padding-left: content-padding('small');
+
       @each $size in $sizes {
         @include breakpoint($size) {
-          padding: 0 content-padding($size);
+          padding-right: content-padding($size);
+          padding-left: content-padding($size);
         }
       }
     }

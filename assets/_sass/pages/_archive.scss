@@ -51,6 +51,12 @@
     grid-area: results;
     @extend %orange-top-bar;
     @include archive-padding;
+
+    &::before {
+      @include breakpoint('medium') {
+        @include orange-side-bar($direction: left, $height: 100px);
+      }
+    }
   }
 
   &__sidebar {
@@ -61,6 +67,7 @@
 
   &__featured {
     grid-area: featured;
+    border-bottom: 1px solid $color__gray;
   }
 
   &__content {
