@@ -22,19 +22,20 @@
 
   a {
     display: block;
-    color: $color__bluegray !important;
+    color: $color__bluegray;
     font-family: $font__ptsans;
+    @include font-size(14px);
     font-style: italic;
     line-height: 1.53;
     text-align: right;
-    box-shadow: none !important;
-    @include font-size(14px);
+    box-shadow: none;
   }
 }
 
 .define {
   border-bottom: 2px dotted $color__astral;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     color: $color__astral;
