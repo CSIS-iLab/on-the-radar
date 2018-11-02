@@ -240,6 +240,14 @@
   }
 }
 
+%orange-top-bar {
+  position: relative;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: $color__orange;
+  @include box-shadow(0,2px,11px,3px, rgba($color__black, 0.16), false);
+}
+
 %page__desc {
   @include font-size(16px);
   color: $color__off-white;
