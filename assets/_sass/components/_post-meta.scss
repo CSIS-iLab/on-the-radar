@@ -5,15 +5,10 @@
 .post-meta {
   @extend %labeltext__text;
 
-  &__authors {
-    &-label {
+  .authors & {
+    &__label {
       @extend %labeltext__label;
       color: $color__gray-dark;
-    }
-
-    &-text {
-      @extend %labeltext__text;
-      color: $color__off-black;
     }
   }
 }
