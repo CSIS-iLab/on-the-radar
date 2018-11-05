@@ -6,7 +6,7 @@
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
     {%- if page_paths -%}
-      <nav class="header__nav">
+      <nav>
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -15,11 +15,7 @@
             </svg>
           </span>
         </label>
-
-
-        <div class="trigger">
           {% include site-nav.html class="header__nav" location="inHeader" %}
-        </div>
       </nav>
     {%- endif -%}
   </div>
