@@ -49,7 +49,7 @@ h5 {
 =            Copy            =
 ============================*/
 
-.post__content {
+.post-content {
   p {
     @extend %post__content-paragraph;
   }
@@ -167,7 +167,7 @@ big {
   font-size: 125%;
 }
 
-.post__content {
+.post-content {
   ul,
   ol {
     @extend %post__content-list;
@@ -204,7 +204,7 @@ a {
     outline: 0;
   }
 
-  .post__content &:not(.btn) {
+  .post-content &:not(.btn) {
     @include box-shadow(0, -2px, 0, 0, $color__astral, true);
     color: inherit;
 
