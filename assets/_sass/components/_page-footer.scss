@@ -45,5 +45,12 @@
   &-link {
     display: block;
   }
+
+  // Creates the "cut-out" look without interfering with the site's footer
+  &.page__footer--empty {
+    height: 4rem;
+    margin-top: -4rem;
+    background-color: transparent;
+  }
 }
 

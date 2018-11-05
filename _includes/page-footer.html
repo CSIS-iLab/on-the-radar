@@ -9,6 +9,8 @@
 
   {%- capture footer_content -%}<a href="{{ view_all_url | relative_url }}" class="page__footer-link"><i class="icon-docs"></i> {{
     site.data.language.page_footer[post.collection] }}</a>{%- endcapture -%}
+{% else %}
+  {% assign class = 'page__footer--empty' %}
 {%- endif -%}
 
 <section class="page__footer {{ class }}">
