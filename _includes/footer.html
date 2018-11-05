@@ -4,20 +4,21 @@
     <img class="site-footer__csis-logo" src="{{ 'assets/images/logos/csis_logo_white.svg' | relative_url }}" alt="{{ Center for Strategic and International Studies }}" title="{{ Center for Strategic and International Studies }}" />
 
     <section class="site-footer__info">
-      <div class="site-footer__desc">
-        <p class="">
-          <span class="site-footer__section-title"> {{site.data.language.footer.about_heading }}</span> {{site.data.language.footer.about_description }}
-        </p>
+      <div class="site-footer__about">
+        <div class="site-footer__about-description">
+          <h5 class="site-footer__section-title"> {{site.data.language.footer.about_heading }}</h5>
+            <p>{{site.data.language.footer.about_description }}</p>
+        </div>
 
 
         <div class="site-footer__related">
-          <div class="site-footer__section-title">
+          <h5 class="site-footer__section-title">
             {{ site.data.language.footer.visit_other_projects }} &mdash;
-          </div>
+          </h5>
 
           <ul>
             <li>
-              <a href="https://nuclearnetwork.csis.org"><img src="{{ 'assets/images/logos/ngnn/NGNN-logo-dark.svg' | relative_url }}" alt="{{ Next Generation Nuclear Network Logo }}" title="{{ Next Generation Nuclear Network }}" /></a>
+              <a href="https://nuclearnetwork.csis.org" target="_blank"><img src="{{ 'assets/images/logos/ngnn/NGNN-logo-dark.svg' | relative_url }}" alt="{{ Next Generation Nuclear Network Logo }}" title="{{ Next Generation Nuclear Network }}" /></a>
             </li>
           </ul>
 
@@ -36,7 +37,7 @@
 
         <li>
           <p>Email</p>
-          <div>{{site.data.language.footer.email }}</div>
+          <div><a href="mailto:{{ site.data.language.email }}?Subject={{ site.title }}">{{site.data.language.email }}</a></div>
         </li>
       </ul>
 
