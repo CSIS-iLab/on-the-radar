@@ -5,12 +5,23 @@ layout: default
 
   {% include page-header.html %}
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
-  </div>
-
+  <section class="archive__filter-type">
+    Filter by Type
+  </section>
+  <section class="archive__results">
+    Filter Results<br />
+    Sort
+  </section>
+  <section class="archive__sidebar">
+    Refine Results
+  </section>
+  <section class="archive__featured">
+    Featured Post
+  </section>
+  <section class="archive__content">
+    {% for post in site.posts %}
+    {% include post-block.html %}
+    {% endfor %}
+  </section>
+  {% include page-footer.html %}
 </article>

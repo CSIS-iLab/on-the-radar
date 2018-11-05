@@ -31,10 +31,14 @@
 
     #{$post}__title,
     #{$post}__content-type {
-      $sizes: ('small', 'large', 'xlarge');
+      $sizes: ('large', 'xlarge');
+      padding-right: content-padding('small');
+      padding-left: content-padding('small');
+
       @each $size in $sizes {
         @include breakpoint($size) {
-          padding: 0 content-padding($size);
+          padding-right: content-padding($size);
+          padding-left: content-padding($size);
         }
       }
     }
@@ -49,11 +53,7 @@
     }
 
     #{$post}__content-type {
-      position: relative;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      background-color: $color__orange;
-      @include box-shadow(0,2px,11px,3px, rgba($color__black, 0.16), false);
+      @extend %orange-top-bar;
 
       &::after {
         @include breakpoint('medium') {

@@ -1,0 +1,96 @@
+
+/*===============================
+=            Archive            =
+===============================*/
+
+.layout-archive .wrapper {
+  @include breakpoint($break: 'medium', $until: 'large') {
+    max-width: 100%;
+  }
+}
+
+.archive {
+  display: grid;
+  grid-template-areas:
+    'page-header'
+    'filter-type'
+    'sidebar'
+    'results'
+    'featured'
+    'content'
+    'page-footer';
+  
+  @include breakpoint('medium') {
+    grid-template-areas:
+      'page-header page-header'
+      'filter-type filter-type'
+      'results results'
+      'featured featured'
+      'sidebar content'
+      'page-footer page-footer';
+    grid-template-columns: sidebar-width('large') auto;
+  }
+
+  .page__header {
+    grid-area: page-header;
+    @include archive-padding;
+
+    @include breakpoint('large') {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  &__filter-type {
+    grid-area: filter-type;
+    @include archive-padding;
+    background-color: $color__gray-lighter;
+  }
+
+  &__results {
+    grid-area: results;
+    @extend %orange-top-bar;
+    @include archive-padding;
+
+    &::before {
+      @include breakpoint('medium') {
+        @include orange-side-bar($direction: left, $height: 100px);
+      }
+    }
+  }
+
+  &__sidebar {
+    grid-area: sidebar;
+    @include archive-padding;
+    background-color: $color__gray-lighter;
+  }
+
+  &__featured {
+    grid-area: featured;
+    border-bottom: 1px solid $color__gray;
+  }
+
+  &__content {
+    grid-area: content;
+  }
+
+  &__featured,
+  &__content {
+    $sizes: ('large', 'xlarge');
+    @include archive-padding;
+    background-color: $color__white;
+
+    @each $size in $sizes {
+      @include breakpoint($size) {
+        padding-right: content-padding($size);
+        padding-left: content-padding($size);
+      }
+    }
+  }
+
+  .page__footer {
+    grid-area: page-footer;
+    @include archive-padding;
+  }
+}
+
