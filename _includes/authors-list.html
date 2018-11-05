@@ -7,7 +7,6 @@
 <div class="authors">
   <span class="authors__label">{{ site.data.language.author_list }}</span>
 
-  <span class="authors__list">
     {% if authors.size == 2 %}
       {%- assign list_break = ' and ' -%}
     {% elsif authors.size >= 3 %}
@@ -28,6 +27,5 @@
           {{- end_break -}}
         {% endif %}
       {%- endfor -%}
-  </span>
 </div>
 {% endif %}

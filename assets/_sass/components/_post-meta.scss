@@ -2,13 +2,13 @@
 =           Post Meta           =f
 ===============================*/
 
-.post-meta {
+.post__meta {
   @extend %labeltext__text;
+}
 
-  .authors & {
-    &__label {
-      @extend %labeltext__label;
-      color: $color__gray-dark;
-    }
+.authors {
+  &__label {
+    @extend %labeltext__label;
+    color: $color__gray-dark;
   }
 }
