@@ -69,17 +69,11 @@
     padding: content-padding('small');
     color: $color__off-black;
     background-color: $color__white;
-    @extend %labeltext__text;
 
     @each $size in $sizes {
       @include breakpoint($size) {
         padding: 1rem content-padding($size);
       }
-    }
-
-    &-label {
-      @extend %labeltext__label;
-      color: $color__gray-dark;
     }
   }
 

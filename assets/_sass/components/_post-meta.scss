@@ -1,0 +1,12 @@
+/*============================
+=        Post Meta           =
+============================*/
+
+.post__meta {
+  @extend %labeltext__text;
+
+  &-label {
+    @extend %labeltext__label;
+    color: $color__gray-dark;
+  }
+}
