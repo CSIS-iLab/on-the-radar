@@ -4,6 +4,14 @@
 =============================*/
 
 .page {
+  &__header {
+    padding: 0 content-padding('small');
+    
+    @include breakpoint('medium') {
+      padding: 0;
+    }
+  }
+
   &__content {
     $bp-large-medium: 850px;
     width: 100%;
