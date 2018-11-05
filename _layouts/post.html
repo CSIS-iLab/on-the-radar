@@ -6,14 +6,15 @@ layout: default
   <header class="post__header">
     <h1 class="post__title" itemprop="name headline">{{ page.title | escape }}</h1>
     <div class="post__content-type">Content Type</div>
-    <section class="post__meta">
-      {%- include authors-list.html -%}
-      Published<br />
-      Last Updated<br />
-      Photo Caption
-    </section>
-    Social Share
   </header>
+  <section class="post__meta">
+    {%- include authors-list.html -%}
+    Published<br />
+    <span class="post__meta-label">Last Updated:</span> {{ page.last-modified-date | date: '%B %d, %Y' }}<br />
+    <span class="post__meta-label">Last Updated:</span> {{ page.last-modified-date }}<br />
+    Photo Caption
+    Social Share
+  </section>
   <section class="post__img-container">
     {% include post-image.html %}
   </section>
