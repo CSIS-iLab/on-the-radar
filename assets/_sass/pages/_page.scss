@@ -1,0 +1,28 @@
+
+/*=============================
+=            Pages            =
+=============================*/
+
+.page {
+  &__content {
+    $bp-large-medium: 850px;
+    width: 100%;
+    margin: 0 auto;
+    padding: content-padding('small');
+    background-color: $color__white;
+
+    @include breakpoint('medium') {
+      padding-right: content-padding('medium');
+      padding-left: content-padding('medium');
+    }
+
+    @include breakpoint($break: 'large', $until: $bp-large-medium) {
+      padding: 0 content-padding('large');
+    }
+
+    @include breakpoint($bp-large-medium) {
+      padding: 0 content-padding('xlarge');
+    }
+  }
+}
+
