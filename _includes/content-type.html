@@ -5,11 +5,11 @@
   {% assign content_type_primary = 'Analysis' %}
   {% assign content_type_secondary = null %}
 {% elsif page.collection == 'briefs' %}
-  {% assign content_type_primary = 'Issue Brief' %}
+  {% assign content_type_primary = 'Info Brief' %}
   {% assign content_type_secondary = 'Tech Brief' | where: "brief_type", "Tech Primer" %}
   {% assign content_type_secondary = 'Country Profile' | where: "brief_type", "Country Profile" %}
   {% unless page.layout == 'page' %}
-    {% assign content_type_primary = 'Info Brief' %}
+    {% assign content_type_primary = 'Issue Brief' %}
     {% assign content_type_secondary = page.brief_type %}
   {% endunless %}
 {% elsif page.collection == 'workshops' %}
