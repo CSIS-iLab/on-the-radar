@@ -72,6 +72,8 @@ $size__wrapper-max-width: (
   'xlarge': calc(1312px - (56px * 2))
 );
 
+$size__content-max-width: 680px;
+
 $size__content-padding: (
   'small': 20px,
   'medium': 5vw,
