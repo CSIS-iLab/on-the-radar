@@ -1,0 +1,28 @@
+
+/*====================================
+=            Page Header            =
+====================================*/
+
+.page__header {
+  margin-bottom: 1.5rem;
+
+  .page__title {
+    margin: 0;
+    @extend %page__title;
+  }
+
+  .page__desc {
+    max-width: 680px;
+    margin-top: 0.5rem;
+    @extend %page__desc;
+
+    @include breakpoint('medium') {
+      margin-top: 1rem;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
