@@ -22,7 +22,7 @@
     transition: background-color 0.3s ease-in-out;
     
     @include breakpoint('medium') {
-      width: $size__page-footer-width;
+      max-width: $size__page-footer-width;
       margin: 0 0 0 auto;
       text-align: right;
     }
