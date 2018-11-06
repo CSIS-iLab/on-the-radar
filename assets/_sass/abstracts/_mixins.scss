@@ -109,10 +109,10 @@
 }
 
 // Displays the dark orange sidebar in header and page footer
-@mixin orange-side-bar($direction: right, $width: 20px, $height: 200px) {
+@mixin orange-side-bar($direction: right, $width: 20px, $height: 200px, $vertical: top) {
   content: '';
   position: absolute;
-  top: 0;
+  #{$vertical}: 0;
   #{$direction}: -#{$width};
   display: block;
   width: $width;

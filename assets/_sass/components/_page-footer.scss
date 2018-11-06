@@ -1,0 +1,56 @@
+/*====================================
+=            Page Footer            =
+====================================*/
+
+.page__footer {
+  position: relative;
+  background-color: $color__blue-dark;
+
+  @include breakpoint('medium') {
+    @include full-width-background($color__blue-dark);
+  }
+
+  &-content {
+    position: relative;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    @include archive-padding;
+    @extend %button;
+    color: $color__white;
+    text-transform: uppercase;
+    background-color: $color__orange;
+    transition: background-color 0.3s ease-in-out;
+    
+    @include breakpoint('medium') {
+      max-width: $size__page-footer-width;
+      margin: 0 0 0 auto;
+      text-align: right;
+    }
+
+    @include breakpoint('large') {
+      padding-right: 1rem;
+      padding-left: 1rem;
+      
+      &::after {
+        @include orange-side-bar($direction: right, $height: 150px, $vertical: bottom);
+        z-index: 1;
+      }
+    }
+
+    .page__footer:not(.pagination) &:hover {
+      background-color: $color__orange-dark;
+    }
+  }
+
+  &-link {
+    display: block;
+  }
+
+  // Creates the "cut-out" look without interfering with the site's footer
+  &.page__footer--empty {
+    height: 4rem;
+    margin-top: -4rem;
+    background-color: transparent;
+  }
+}
+

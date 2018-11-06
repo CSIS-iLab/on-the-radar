@@ -1,3 +1,20 @@
-<section class="page__footer">
-Page Footer
+{%- if include.pagination -%}
+  {%- assign footer_content = 'Pagination' -%}
+  {%- assign class = 'pagination' %}
+{%- elsif page.layout == 'post' -%}
+  {% assign view_all_url = page.view_all_url %}
+  {% if page.collection == 'briefs' %}
+    {% assign view_all_url = page.view_all_url | append: page.slug %}
+  {% endif %}
+
+  {%- capture footer_content -%}<a href="{{ view_all_url | relative_url }}" class="page__footer-link"><i class="icon-docs"></i> {{
+    site.data.language.page_footer[page.collection] }}</a>{%- endcapture -%}
+{% else %}
+  {% assign class = 'page__footer--empty' %}
+{%- endif -%}
+
+<section class="page__footer {{ class }}">
+  {%- if footer_content -%}
+  <div class="page__footer-content">{{ footer_content }}</div>
+  {%- endif -%}
 </section>
