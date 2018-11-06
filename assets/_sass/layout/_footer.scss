@@ -113,7 +113,7 @@
   }
 
   @include breakpoint('large') {
-    flex-basis: 18%;
+    flex-basis: 20%;
   }
 
   > * {
@@ -156,7 +156,7 @@
   }
 
   @include breakpoint('large') {
-    flex-basis: 20%;
+    flex-basis: 15%;
     flex-direction: column;
   }
 
