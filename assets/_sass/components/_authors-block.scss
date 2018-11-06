@@ -3,12 +3,15 @@
 ===============================*/
 
 .authors-block {
+  padding-bottom: 1rem;
+
   &__title {
-    @extend %h2--thin;
+    @extend %h2;
+    padding-bottom: 0.5rem;
     text-transform: uppercase;
   }
 
-  &__name {
+  &__name, &__name:visited {
     @extend %about-person__name--base;
     display: block;
     color: $color__astral;
@@ -21,10 +24,11 @@
 
   &__role {
     @extend %about-person__title;
-    margin-bottom: 0.5rem;
+    color: $color__gray-darker;
   }
 
   &__bio {
     @extend %body-text;
+    padding-top: 0.5rem;
   }
 }
