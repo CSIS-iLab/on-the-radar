@@ -1,36 +1,59 @@
 <footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  <data class="u-url" href="{{ " / " | relative_url }}"></data>
 
-  <div class="wrapper">
+    <img class="site-footer__csis-logo" src="{{ 'assets/images/logos/csis_logo_white.svg' | relative_url }}" alt="{{ Center for Strategic and International Studies }}" title="{{ Center for Strategic and International Studies }}" />
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    <section class="site-footer__info">
+      <div class="site-footer__about">
+        <div class="site-footer__about-description">
+          <h5 class="site-footer__section-title">{{site.data.language.footer.about_heading }}</h5>
+            <p>{{site.data.language.footer.about_description }}</p>
+        </div>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
+
+        <div class="site-footer__related">
+          <h5 class="site-footer__section-title">{{ site.data.language.footer.visit_other_projects }} &mdash;</h5>
+
+          <ul>
+            <li>
+              <a href="https://nuclearnetwork.csis.org" target="_blank"><img src="{{ 'assets/images/logos/ngnn/NGNN-logo-dark.svg' | relative_url }}" alt="{{ Next Generation Nuclear Network Logo }}" title="{{ Next Generation Nuclear Network }}" /></a>
             </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
+          </ul>
+
+        </div>
       </div>
 
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
+
+
+
+
+      <ul class="site-footer__contact">
+        <li>
+          <p>Address</p>
+          <address>{{site.data.language.footer.address }}</address>
+        </li>
+
+        <li>
+          <p>Email</p>
+          <div><a href="mailto:{{ site.data.language.email }}?Subject={{ site.title }}">{{site.data.language.email }}</a></div>
+        </li>
+      </ul>
+
 
       {% include site-nav.html class="footer__nav" location="inFooter" %}
 
-      <p>{{- site.description | escape -}}</p>
-    </div>
+    </section>
 
-  </div>
+
+
+
+
+
+  <section class="site-footer__copyright">
+    <div>
+      &copy;{{ site.time | date: '%Y' }} {{ site.data.language.footer.copyright }} | <a href="https://www.csis.org/privacy-policy" target="_blank">Privacy Policy</a>
+    </div>
+  </section>
 
 </footer>
 

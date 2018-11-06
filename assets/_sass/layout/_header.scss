@@ -1,16 +1,17 @@
-.header__nav {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
-  list-style: none;
-  @extend %button;
+.site-header .menu-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 0.7rem;
+  background-color: $color__blue-dark;
+  border-radius: 50%;
 
-  @include breakpoint('large') {
-    flex-direction: row;
+  svg {
+    fill: $color__gray-lighter;
   }
 }
 
-.header__nav .nav-trigger {
+.site-header .nav-trigger {
   position: absolute;
   visibility: hidden;
   opacity: 0;
@@ -23,29 +24,27 @@
     }
   }
 
-  &:not(:checked) ~ .trigger {
+  &:not(:checked) ~ .site-header__nav {
     display: none;
 
     @include breakpoint('large') {
-      display: block;
+      display: flex;
     }
   }
 }
 
-.header__nav .menu-icon {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  padding: 0.35rem 0.7rem;
-  background-color: $color__blue-dark;
-  border-radius: 50%;
+.site-header__nav {
+  flex-direction: column;
+  padding-left: 0;
+  list-style: none;
+  @extend %button;
 
-  svg {
-    fill: $color__gray-lighter;
+  @include breakpoint('large') {
+    flex-direction: row;
   }
 }
 
-.header__nav li {
+.site-header__nav li {
   a {
     color: $color__white;
     white-space: nowrap;

@@ -1,4 +1,144 @@
-.footer__nav {
+.site-footer {
+  $sizes: ('medium', 'large', 'xlarge');
+  padding-top: 2rem;
+  background-color: $color__blue-dark;
+  @include full-width-background($color__blue-dark);
+
+  @each $size in $sizes {
+    @include breakpoint($size) {
+      max-width: wrapper-width($size);
+    }
+  }
+
+  @include breakpoint($break: 'medium', $dir: 'max-width') {
+    max-width: calc(100% - #{content-padding('small')} * 2);
+  }
+
+  @include breakpoint('medium') {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+    color: $color__bluegray-light;
+  }
+
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  &__section-title {
+    @extend %h5;
+    padding-right: 0.8rem;
+    color: $color__white;
+    text-transform: uppercase;
+  }
+
+  &__csis-logo {
+    max-width: 350px;
+  }
+}
+
+.site-footer__info {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+
+  @include breakpoint($break: 'large', $dir: 'max-width') {
+    flex-wrap: wrap;
+  }
+}
+
+.site-footer__about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include breakpoint($break: 'medium', $dir: 'max-width') {
+    flex-basis: 100%;
+  }
+
+  @include breakpoint('large') {
+    flex-basis: 46%;
+  }
+
+  .site-footer__about-description {
+    @include breakpoint($break: 'medium', $until: 'large') {
+      flex-basis: calc(60% - 6vw);
+      margin-bottom: 2rem;
+    }
+
+    @include breakpoint('large') {
+      flex-basis: 100%;
+    }
+
+    .site-footer__section-title,
+    p {
+      display: inline;
+    }
+  }
+}
+
+.site-footer__related {
+  @include breakpoint($break: 'medium', $dir: 'max-width') {
+    margin: 2rem 0;
+  }
+
+  @include breakpoint($break: 'medium', $until: 'large') {
+    flex-basis: 40%;
+  }
+
+  @include breakpoint('large') {
+    margin-top: 3rem;
+  }
+
+  ul {
+    list-style: none;
+
+    img {
+      max-width: 275px;
+    }
+  }
+}
+
+.site-footer__contact {
+  padding-left: 0;
+  list-style: none;
+
+  @include breakpoint($break: 'medium', $until: 'large') {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include breakpoint('large') {
+    flex-basis: 20%;
+  }
+
+  > * {
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      flex-basis: 100%;
+    }
+  }
+
+  > *:not(:first-child) {
+    @include breakpoint($break: 'medium', $until: 'large') {
+      margin-left: 4rem;
+    }
+  }
+
+  p {
+    @extend %labeltext__label;
+    margin-bottom: 0;
+
+    + * {
+      color: $color__white;
+    }
+  }
+}
+
+.site-footer__nav {
   display: none;
   padding-left: 0;
   list-style: none;
@@ -6,10 +146,17 @@
 
   @include breakpoint('medium') {
     display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include breakpoint($break: 'small', $until: 'large') {
+    flex-basis: 100%;
     justify-content: center;
+    padding: 1rem 0;
   }
 
   @include breakpoint('large') {
+    flex-basis: 15%;
     flex-direction: column;
   }
 
@@ -28,4 +175,14 @@
       }
     }
   }
+}
+
+.site-footer__copyright {
+  z-index: 1;
+  padding: 1rem 0;
+  color: $color__bluegray;
+  line-height: 1.53;
+  background-color: $color__blue;
+  @include full-width-background($color__blue);
+  @include font-size(14px);
 }
