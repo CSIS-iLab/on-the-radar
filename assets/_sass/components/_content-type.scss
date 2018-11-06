@@ -1,0 +1,20 @@
+/*===============================
+=         Content Type          =
+===============================*/
+
+.content-type {
+  $type: &;
+  text-transform: uppercase;
+
+  .post__header & {
+    @extend %page__type;
+  }
+
+  .post-list & {
+    @extend %post-block__type;
+
+    #{$type}__secondary {
+      color: $color__black;
+    }
+  }
+}
