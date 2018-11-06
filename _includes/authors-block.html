@@ -1,21 +1,16 @@
 {% assign authors_list = page.authors %}
-{% if post.authors.size > 0%}
+{% if post.authors.size > 0 %}
   {% assign authors_list = post.authors %}
 {% endif %}
 
 {% if authors_list.size > 0 %}
-<div class="post__authors-full">
-{% for author in authors_list %}
-  {%- assign author_info = site.authors | where: "relative_path", author | first -%}
-
-  <div class="authors-block">
-    {% include author-photo-tint.html image_url=author_info.image %}
-    <div class="authors-block__info">
-      <span class="authors-block__name"><a href="{{ author_info.url | relative_url }}" class="authors-block__name">{{author_info.title}}</a></span>
-      <span class="authors-block__title">{{author_info.short_title}}</span>
-      <p class="authors-block__bio">{{author_info.content}}</p>
-    </div>
-  </div>
-{% endfor %}
+<div class="authors-block">
+  <span class="authors-block__title">{{ site.data.language.about_authors }}</div>
+  {% for author in authors_list %}
+    {%- assign author_info = site.authors | where: "relative_path", author | first -%}
+    <span class="authors-block__name"><a href="{{ author_info.url | relative_url }}" class="authors-block__name">{{author_info.title}}</a></span>
+    <span class="authors-block__role">{{ author_info.role }}</span>
+    <p class="authors-block__bio">{{ author_info.content }}</p>
+  {% endfor %}
 </div>
 {% endif %}
