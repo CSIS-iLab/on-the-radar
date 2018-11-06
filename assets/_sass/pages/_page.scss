@@ -13,7 +13,6 @@
   }
 
   &__content {
-    $bp-large-medium: 53.125em;
     width: 100%;
     margin: 0 auto;
     padding: content-padding('small');
@@ -25,11 +24,11 @@
     }
 
     // Special breakpoint to ensure there is padding when the content area is less than the content-max-width value wide.
-    @include breakpoint($break: 'large', $until: $bp-large-medium) {
+    @include breakpoint($break: 'large', $until: 'large-2') {
       padding: 0 content-padding('large');
     }
 
-    @include breakpoint($bp-large-medium) {
+    @include breakpoint('large-2') {
       padding: 0 content-padding('xlarge');
     }
   }
