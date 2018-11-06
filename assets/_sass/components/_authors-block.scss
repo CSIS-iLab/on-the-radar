@@ -13,7 +13,7 @@
 
   &__name, &__name:visited {
     @extend %about-person__name--base;
-    display: block;
+    display: inline-block;
     color: $color__astral;
     transition: all 0.3s ease-in-out;
 
@@ -25,6 +25,7 @@
   &__role {
     @extend %about-person__title;
     color: $color__gray-darker;
+    display: block;
   }
 
   &__bio {
