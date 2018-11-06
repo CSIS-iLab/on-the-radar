@@ -72,6 +72,8 @@ $size__wrapper-max-width: (
   'xlarge': calc(1312px - (56px * 2))
 );
 
+$size__content-max-width: 680px;
+
 $size__content-padding: (
   'small': 20px,
   'medium': 5vw,
@@ -84,11 +86,4 @@ $size__archive-content-padding: 32px;
 $size__sidebar-max-width: (
   'medium': 224px,
   'large': 240px
-);
-
-$size__content-max-width: (
-  'small': 100%,
-  'medium': calc(100% - (5vw * 2)),
-  'large': calc(100% - (6vw * 2)),
-  'xlarge': 680px
 );

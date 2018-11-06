@@ -1,0 +1,36 @@
+
+/*=============================
+=            Pages            =
+=============================*/
+
+.page {
+  &__header {
+    padding: 0 content-padding('small');
+    
+    @include breakpoint('medium') {
+      padding: 0;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    margin: 0 auto;
+    padding: content-padding('small');
+    background-color: $color__white;
+
+    @include breakpoint('medium') {
+      padding-right: content-padding('medium');
+      padding-left: content-padding('medium');
+    }
+
+    // Special breakpoint to ensure there is padding when the content area is less than the content-max-width value wide.
+    @include breakpoint($break: 'large', $until: 'large-2') {
+      padding: 0 content-padding('large');
+    }
+
+    @include breakpoint('large-2') {
+      padding: 0 content-padding('xlarge');
+    }
+  }
+}
+
