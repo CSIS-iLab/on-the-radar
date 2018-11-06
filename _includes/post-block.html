@@ -3,7 +3,7 @@
   <a href="{{ post.url | relative_url }}" class="post-block__img"><img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}" title="{{ post.title | escape }}" /></a>
   {% endif %}
   <header class="post-block__header" role="header">
-      Featured &mdash; Content Type
+      {%- include content-type.html -%}
     <h2 class="post-block__title"><a href="{{ post.url | relative_url }}">
       {{ post.title | escape }}
     </a></h2>
