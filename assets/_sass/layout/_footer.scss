@@ -35,7 +35,7 @@ body {
 
   &__section-title {
     @extend %h5;
-    padding-right: 1rem;
+    padding-right: 0.8rem;
     color: $color__white;
     text-transform: uppercase;
   }
@@ -69,7 +69,7 @@ body {
   }
 
   .site-footer__about-description {
-    @include breakpoint($break: 'medium', $until: 47.9em) {
+    @include breakpoint($break: 'medium', $until: 'large') {
       flex-basis: calc(60% - 6vw);
       margin-bottom: 2rem;
     }
@@ -90,7 +90,7 @@ body {
     margin: 2rem 0;
   }
 
-  @include breakpoint($break: 'medium', $until: 47.9em) {
+  @include breakpoint($break: 'medium', $until: 'large') {
     flex-basis: 40%;
   }
 
@@ -111,7 +111,7 @@ body {
   padding-left: 0;
   list-style: none;
 
-  @include breakpoint($break: 'medium', $until: 47.9em) {
+  @include breakpoint($break: 'medium', $until: 'large') {
     display: flex;
     flex-wrap: wrap;
   }
@@ -127,7 +127,7 @@ body {
   }
 
   > *:not(:first-child) {
-    @include breakpoint($break: 'medium', $until: 47.9em) {
+    @include breakpoint($break: 'medium', $until: 'large') {
       margin-left: 4rem;
     }
   }
@@ -153,9 +153,10 @@ body {
     flex-wrap: wrap;
   }
 
-  @include breakpoint($break: 'small', $until: 47.9em) {
+  @include breakpoint($break: 'small', $until: 'large') {
     flex-basis: 100%;
     justify-content: center;
+    padding: 1rem 0;
   }
 
   @include breakpoint('large') {
