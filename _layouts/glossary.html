@@ -1,0 +1,47 @@
+---
+layout: default
+---
+{% assign class = page.layout | slugify | prepend: 'layout-' %}
+
+<article class="page">
+  {% include page-header.html %}
+
+
+  {% assign glossary_letters = '' | split: ',' %}
+  {% assign glossary_list = site.data.glossary | sort:'title' %}
+
+  {% capture glossary_content %}
+    {% assign letter = 'A' %}
+    {% for item in glossary_list %}
+      {% assign this_letter = item.title | slice: 0 %}
+      {% assign glossary_letters = glossary_letters | push: this_letter %}
+
+        {% assign this_letter = item.title | slice: 0 %}
+
+        {% if letter != this_letter %}
+            </section>
+            <a name="{{ this_letter }}"></a>
+          <div class="{{ class }}__section-header">
+            <h2>{{ this_letter }}</h2>
+            <a href="#" class="back-to-top">Back to Top</a>
+          </div>
+          <section>
+
+        {% endif %}
+
+        {% include glossary-post-block.html item=item %}
+
+        {% assign letter = this_letter %}
+
+    {% endfor %}
+  {% endcapture %}
+
+  {% include glossary-jump-menu.html glossary_letters=glossary_letters %}
+
+  <div class="page__content post-content">
+  {{ glossary_content }}
+  </div>
+
+</article>
+
+{% include page-footer.html %}
