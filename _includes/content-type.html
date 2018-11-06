@@ -1,13 +1,13 @@
 {% if post.collection.size > 0 %}
   {% assign page = post %}
 {% endif %}
+
 {% if page.collection == 'posts' %}
   {% assign content_type_primary = 'Analysis' %}
   {% assign content_type_secondary = null %}
 {% elsif page.collection == 'briefs' %}
   {% assign content_type_primary = 'Issue Brief' %}
-  {% assign content_type_secondary = 'Tech Primer' | where: "brief_type", "Tech Brief" %}
-  {% assign content_type_secondary = 'Country Profile' | where: "brief_type", "Country Profile" %}
+  {% assign content_type_secondary = page.brief_type %}
   {% unless page.layout == 'page' %}
       {% assign content_type_primary = page.brief_type %}
       {% assign content_type_secondary = page.brief.details.type[0] %}
@@ -26,7 +26,9 @@
 <span class="content-type">
   {{ content_type_primary }}
   {% if content_type_secondary.size > 0 %}
-    {{ site.data.language.dash }}
-    {{ content_type_secondary }}
+    <span class="content-type__secondary">
+      {{ site.data.language.dash }}
+      {{ content_type_secondary }}
+    </span>
   {% endif %}
 </span>
