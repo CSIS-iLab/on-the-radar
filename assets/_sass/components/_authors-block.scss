@@ -11,10 +11,11 @@
     text-transform: uppercase;
   }
 
-  &__name, &__name:visited {
+  &__name,
+  &__name:visited {
     @extend %about-person__name--base;
-    color: $color__astral;
     display: inline-block;
+    color: $color__astral;
     transition: all 0.3s ease-in-out;
 
     &:hover {
