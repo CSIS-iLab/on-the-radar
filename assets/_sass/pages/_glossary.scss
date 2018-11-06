@@ -1,0 +1,216 @@
+/*===============================
+=            Glossary            =
+===============================*/
+.layout-glossary {
+  &__jump-menu {
+    padding: 0 content-padding('small');
+    text-transform: uppercase;
+    background-color: $color__gray-lighter;
+
+    @include breakpoint($break: 'large', $dir: 'max-width') {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @include breakpoint('large') {
+      padding-top: 20px;
+      padding-bottom: 16px;
+    }
+
+    &-trigger {
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+
+      @include breakpoint($break: 'large', $dir: 'max-width') {
+        &:not(:checked) {
+          ~ .layout-glossary__jump-menu {
+            padding-bottom: 0;
+          }
+
+          ~ label .icon-angle-lg-down::before {
+            content: '\f006';
+          }
+
+          ~ .layout-glossary__jump-menu-letters {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .header-label {
+      display: inline-block;
+      @extend %facets__header-label;
+
+      @include breakpoint($break: 'large', $dir: 'max-width') {
+        display: flex;
+        flex-basis: calc(100% + #{content-padding('small')} * 2);
+        justify-content: space-between;
+        margin: 0 -#{content-padding('small')};
+        padding: 24px content-padding('small') content-padding('small');
+        border-bottom: 1px solid $color__gray;
+        cursor: pointer;
+      }
+
+      @include breakpoint('large') {
+        position: relative;
+        padding-right: 20px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: calc(100% - 10px);
+          height: calc(100% + 20px);
+          border-right: 1px solid $color__gray-light;
+        }
+
+        i {
+          display: none;
+        }
+      }
+    }
+
+    &-letters {
+      display: grid;
+      flex-basis: 260px;
+      grid-gap: 2vw;
+      grid-template-columns: repeat(7, 20px);
+      margin: 20px 0;
+
+      @include breakpoint('large') {
+        display: inline;
+      }
+    }
+
+    &-letters a {
+      @extend %facets__link-item--base;
+      margin-right: 0.2rem;
+
+      &:not(.enabled) {
+        color: $color__gray;
+        cursor: default;
+      }
+    }
+  }
+
+  .page__content {
+    padding-top: 0;
+  }
+
+  .layout-glossary {
+    $sizes: ('small', 'medium', 'large');
+
+    &__section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: -20px;
+      padding-right: 20px;
+      background-color: $color__off-white;
+
+      @each $size in $sizes {
+        @include breakpoint($size) {
+          margin-right: -#{content-padding($size)};
+        }
+      }
+
+      @include breakpoint('large-2') {
+        margin-right: calc(((100vw - 124px) - 680px) / -2);
+      }
+
+      @include breakpoint('xlarge') {
+        margin-right: calc(((100vw - 16vw) - 680px) / -2);
+      }
+    }
+
+    &__section-header h2 {
+      position: relative;
+      padding: 0.5rem 1.5rem 0.5rem 0;
+      color: $color__white;
+      background-color: $color__orange;
+      border-radius: 0 50% 50% 0;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 100%;
+        display: block;
+        width: 20px;
+        height: 100%;
+
+        @each $size in $sizes {
+          @include breakpoint($size) {
+            width: content-padding($size);
+          }
+        }
+
+        @include breakpoint('large-2') {
+          width: calc(((100vw - 124px) - 680px) / 2);
+        }
+
+        @include breakpoint('xlarge') {
+          width: calc(((100vw - 16vw) - 680px) / 2);
+        }
+
+        background-color: $color__orange;
+      }
+    }
+
+    &__section-header .back-to-top {
+      @include breakpoint($break: 'small', $dir: 'max-width') {
+        display: none;
+      }
+    }
+
+    &__item {
+      position: relative;
+      margin: 0;
+      padding: 1.5rem 0;
+
+      &:not(:last-of-type)::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        width: 96px;
+        border-bottom: 1px solid $color__gray;
+      }
+
+      &:last-of-type {
+        padding-bottom: 2rem;
+
+        @include breakpoint('large') {
+          padding-bottom: 4rem;
+        }
+      }
+    }
+
+    &__item-title {
+      @extend %post-block__title;
+
+      @include breakpoint('medium') {
+        @include font-size(20px);
+      }
+    }
+
+    &__item-acronym {
+      margin-left: 0;
+
+      .label {
+        @extend %labeltext__label;
+        color: $color__gray-dark;
+      }
+
+      .text {
+        @extend %labeltext__text;
+      }
+    }
+
+    &__item-description {
+      margin-top: 0.5rem;
+      margin-left: 0;
+    }
+  }
+}
