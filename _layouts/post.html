@@ -8,10 +8,10 @@ layout: default
     <div class="post__content-type">Content Type</div>
   </header>
   <section class="post__meta">
-    Authors<br />
+    {%- include authors-list.html -%}
     Published<br />
-    Last Updated: {{ page.last-modified-date | date: '%B %d, %Y' }}<br />
-    Last Updated: {{ page.last-modified-date }}<br />
+    <span class="post__meta-label">Last Updated:</span> {{ page.last-modified-date | date: '%B %d, %Y' }}<br />
+    <span class="post__meta-label">Last Updated:</span> {{ page.last-modified-date }}<br />
     Photo Caption
     Social Share
   </section>

@@ -15,7 +15,7 @@
       'footer footer';
     grid-template-columns: auto minmax(33%, 50%);
   }
-  
+
   @include breakpoint('large') {
     grid-template-areas:
       'sidebar header'
@@ -24,7 +24,7 @@
       '. footer';
     grid-template-columns: sidebar-width('large') auto;
   }
-  
+
   &__header {
     grid-area: header;
     color: $color__white;
@@ -67,6 +67,7 @@
     $sizes: ('medium', 'large', 'xlarge');
     grid-area: meta;
     padding: content-padding('small');
+    color: $color__off-black;
     background-color: $color__white;
 
     @each $size in $sizes {
