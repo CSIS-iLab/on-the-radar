@@ -14,9 +14,7 @@
   &__name,
   &__name:visited {
     @extend %about-person__name--base;
-    display: inline-block;
     color: $color__astral;
-    transition: all 0.3s ease-in-out;
 
     &:hover {
       color: $color__orange;
