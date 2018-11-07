@@ -1,0 +1,19 @@
+---
+---
+[{%- for post in site.resources -%}
+{%- capture post_html -%}{%- include post-block.html -%}{%- endcapture -%}
+{%- capture topics -%}[{%- for topic in post.topics -%}"{{ topic }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{
+    "objectID": "{{ post.title | slugify }}",
+    "title": "{{ post.title | escape }}",
+    "url": "{{ post.url }}",
+    "collection_type": "{{ post.collection_type }}",
+    "type": "{{ post.type }}",
+    "topics": {{ topics }},
+    "authors": "{{post.authors }}",
+    "date": "{{ post.date | date: site.date_format }}",
+    "updated_at": "{{ post.last-modified-date }}",
+    "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
+    "post_html": {{ post_html | jsonify | normalize_whitespace }}
+    }{%- unless forloop.last -%},{%- endunless -%}
+  {%- endfor -%}]
