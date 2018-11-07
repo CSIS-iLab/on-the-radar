@@ -10,7 +10,8 @@
     @extend %page__type;
   }
 
-  .post-list & {
+  .post-list &,
+  .post-block & {
     @extend %post-block__type;
 
     #{$type}__secondary {
