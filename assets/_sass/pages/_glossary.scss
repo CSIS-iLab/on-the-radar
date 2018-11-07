@@ -95,33 +95,26 @@
     }
   }
 
-  .page__content {
-    padding-top: 0;
-  }
-
   .layout-glossary {
-    $sizes: ('small', 'medium', 'large');
-
     &__section-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-right: -20px;
-      padding-right: 20px;
-      background-color: $color__off-white;
+      background-color: $color__orange;
 
-      @each $size in $sizes {
-        @include breakpoint($size) {
-          margin-right: -#{content-padding($size)};
-        }
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        padding-left: content-padding('small');
       }
 
-      @include breakpoint('large-2') {
-        margin-right: calc(((100vw - 124px) - 680px) / -2);
+      @include breakpoint($break: 'large-2', $dir: 'max-width') {
+        padding-left: content-padding('large');
       }
 
-      @include breakpoint('xlarge') {
-        margin-right: calc(((100vw - 16vw) - 680px) / -2);
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: calc(50% + 680px / 2);
+        margin: 0 0 0 auto;
+        padding-right: 20px;
+        background-color: $color__off-white;
       }
     }
 
@@ -131,32 +124,6 @@
       color: $color__white;
       background-color: $color__orange;
       border-radius: 0 50% 50% 0;
-
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 100%;
-        display: block;
-        width: 20px;
-        height: 100%;
-
-        @each $size in $sizes {
-          @include breakpoint($size) {
-            width: content-padding($size);
-          }
-        }
-
-        @include breakpoint('large-2') {
-          width: calc(((100vw - 124px) - 680px) / 2);
-        }
-
-        @include breakpoint('xlarge') {
-          width: calc(((100vw - 16vw) - 680px) / 2);
-        }
-
-        background-color: $color__orange;
-      }
     }
 
     &__section-header .back-to-top {

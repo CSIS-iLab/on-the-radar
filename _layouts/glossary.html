@@ -11,7 +11,7 @@ layout: default
   {% assign glossary_list = site.data.glossary | sort:'title' %}
 
   {% capture glossary_content %}
-    {% assign letter = 'A' %}
+    {% assign letter = '' %}
     {% for item in glossary_list %}
       {% assign this_letter = item.title | slice: 0 %}
       {% assign glossary_letters = glossary_letters | push: this_letter %}
@@ -22,10 +22,12 @@ layout: default
             </section>
             <a name="{{ this_letter }}"></a>
           <div class="{{ class }}__section-header">
+            <div class="container">
             <h2>{{ this_letter }}</h2>
-            <a href="#" class="back-to-top">Back to Top</a>
+              <a href="#" class="back-to-top">Back to Top</a>
+            </div>
           </div>
-          <section>
+          <section class="page__content">
 
         {% endif %}
 
@@ -38,7 +40,7 @@ layout: default
 
   {% include glossary-jump-menu.html glossary_letters=glossary_letters %}
 
-  <div class="page__content post-content">
+  <div class="post-content">
   {{ glossary_content }}
   </div>
 
