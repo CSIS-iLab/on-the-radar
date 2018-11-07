@@ -4,10 +4,10 @@
 
 {% assign content_type_primary = site.collections | where: "label", page.collection | first %}
 
-{% if page.details.type.size > 0 %}
-  {% assign content_type_secondary == page.brief_type %}
+{% if page.brief_type.size > 0 %}
+  {% assign content_type_secondary = page.brief_type %}
 {% elsif page.type.size > 0 %}
-  {% assign content_type_secondary ==  %}
+  {% assign content_type_secondary = page.type %}
 {% else %}
   {% assign content_type_primary = null %}
   {% assign content_type_secondary = null %}
