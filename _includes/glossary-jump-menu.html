@@ -5,7 +5,7 @@
   {% if glossary_letters contains letter %}
     {% assign has_content = has_content | push: "enabled" %}
   {% else %}
-    {% assign has_content = has_content | push: "" %}
+    {% assign has_content = has_content | push: "disable" %}
   {% endif %}
 {% endfor %}
 <div  class="{{ class }}__jump-menu active">

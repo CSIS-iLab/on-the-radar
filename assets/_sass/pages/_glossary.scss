@@ -98,6 +98,10 @@
         color: $color__gray;
         cursor: default;
       }
+
+      &:not(.disabled):hover {
+        color: $color__astral;
+      }
     }
   }
 
