@@ -2,7 +2,8 @@
   {% assign page = post %}
 {% endif %}
 
-{% assign content_type_primary == site.collections | append: post.collection %}
+
+{% assign content_type_primary == site.collections | append: post.collection + '.title'%}
 
 {% if page.collection %}
   {% assign content_type_secondary == 'Secondary' %}
