@@ -1,7 +1,6 @@
 ---
 ---
-{
-"posts":[
+[
 {%- for post in site.posts -%}
 {%- capture authors_list -%}[{%- for author in post.authors -%}{%- assign author_info = site.authors | where: 'relative_path', author | first -%}"{{author_info.title | slugify}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
 {%- capture categories -%}[{%- for tag in post.categories -%}"{{tag}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
@@ -21,8 +20,7 @@
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
   }{%- unless forloop.last -%},{%- endunless -%}
 {%- endfor -%}
-],
-"country_profiles":[
+,
 {%- assign country_profiles = site.briefs | where: 'brief_type','Country Profile' -%}
 {%- for post in country_profiles -%}
 {%- capture authors_list -%}[{%- for author in post.authors -%}{%- assign author_info = site.authors | where: 'relative_path', author | first -%}"{{author_info.title | slugify}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
@@ -40,8 +38,7 @@
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
   }{%- unless forloop.last -%},{%- endunless -%}
 {%- endfor -%}
-],
-"tech_primers":[
+,
 {%- assign tech_primers = site.briefs | where: 'brief_type','Tech Primer' -%}
 {%- for post in tech_primers -%}
 {%- capture authors_list -%}[{%- for author in post.authors -%}{%- assign author_info = site.authors | where: 'relative_path', author | first -%}"{{author_info.title | slugify}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
@@ -71,8 +68,7 @@
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
   }{%- unless forloop.last -%},{%- endunless -%}
 {%- endfor -%}
-],
-"workshops":[
+,
 {%- for post in site.workshops -%}
 {%- capture authors_list -%}[{%- for author in post.authors -%}{%- assign author_info = site.authors | where: 'relative_path', author | first -%}"{{author_info.title | slugify}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
 {%- capture post_html -%}{%- include post-block.html -%}{%- endcapture -%}
@@ -93,4 +89,3 @@
   }{%- unless forloop.last -%},{%- endunless -%}
 {%- endfor -%}
 ]
-}

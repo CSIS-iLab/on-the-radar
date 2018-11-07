@@ -7,7 +7,7 @@
     "objectID": "{{ post.title | slugify }}",
     "title": "{{ post.title | escape }}",
     "url": "{{ post.url }}",
-    "collection_type": "{{ post.collection_type }}",
+    "collection": "{{ post.collection }}",
     "type": "{{ post.type }}",
     "topics": {{ topics }},
     "authors": "{{post.authors }}",
