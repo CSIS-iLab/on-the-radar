@@ -1,0 +1,6 @@
+.post-content .back-to-top:not(.btn) {
+  @extend %button;
+  color: $color__gray-dark;
+  text-transform: uppercase;
+  box-shadow: none;
+}
