@@ -20,8 +20,7 @@ layout: default
 
         {% if letter != this_letter %}
             </section>
-            <a name="{{ this_letter }}"></a>
-          <div class="{{ class }}__section-header">
+          <div class="{{ class }}__section-header" id="{{ this_letter }}">
             <div class="container">
             <h2>{{ this_letter }}</h2>
               <a href="#" class="back-to-top">Back to Top</a>
