@@ -1,0 +1,21 @@
+{% if post.collection.size > 0 %}
+{% assign page = post %}
+{% endif %}
+
+{% assign breadcrumb_past = site.collections | where: "label", page.collection | first %}
+{% assign breadcrumb_current = %}
+{% unless %}
+<!-- {% if page.brief_type.size > 0 %}
+  {% assign content_type_secondary = page.brief_type %}
+{% elsif page.type.size > 0 %}
+  {% assign content_type_secondary = page.type %}
+{% else %}
+  {% assign content_type_secondary = null %}
+{% endif %}  -->
+
+<span class="breadcrumbs">
+  TEST / TEST / TEST
+  <a class="post-breadcrumbs" href="{{ page.url | replace:'/',' ' | truncatewords: 1,"" | prepend: '/' | relative_url }}">
+    <i class="icon-angle-left"></i>{{ site.data.language[page.breadcrumbs_text] }}</a>
+  <span class="breadcrumb__past">{{ breadcrumb_past.title }}</span> |
+</span>

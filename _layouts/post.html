@@ -2,12 +2,12 @@
 layout: default
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
   <header class="post__header">
     <h1 class="post__title" itemprop="name headline">{{ page.title | escape }}</h1>
     <div class="post__content-type">{%- include content-type.html -%}</div>
   </header>
   <section class="post__meta">
+    {% include breadcrumbs.html %}
     {%- include authors-list.html -%}
     {%- include date.html -%}
     {%- include last-updated.html -%}
