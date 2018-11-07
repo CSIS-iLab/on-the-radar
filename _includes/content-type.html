@@ -2,20 +2,23 @@
   {% assign page = post %}
 {% endif %}
 
+{% assign content_type_primary = site.collections | where: "label", page.collection | first %}
 
-{% assign content_type_primary == site.collections | append: post.collection + '.title'%}
-
-{% if page.collection %}
-  {% assign content_type_secondary == 'Secondary' %}
+{% if page.details.type.size > 0 %}
+  {% assign content_type_secondary == page.brief_type %}
+{% elsif page.type.size > 0 %}
+  {% assign content_type_secondary ==  %}
 {% else %}
   {% assign content_type_primary = null %}
   {% assign content_type_secondary = null %}
 {% endif %}
 
 <span class="content-type">
-  {{ content_type_primary }}
+  {{ content_type_primary.title }}
   {% if content_type_secondary.size > 0 %}
-    {{ site.data.language.dash }}
-    {{ content_type_secondary }}
+    <span class="content-type__secondary">
+      {{ site.data.language.dash }}
+      {{ content_type_secondary }}
+    </span>
   {% endif %}
 </span>
