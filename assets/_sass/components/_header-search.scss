@@ -1,0 +1,13 @@
+
+/*======================================
+=            Header: Search            =
+======================================*/
+
+.site-header__search {
+  flex: 1 0 auto;
+  order: 3;
+  max-width: fit-content;
+  text-align: right;
+  color: $color__white;
+}
+

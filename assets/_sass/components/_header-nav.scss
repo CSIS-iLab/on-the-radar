@@ -1,0 +1,150 @@
+/*====================================
+=            Header: Nav            =
+===================================*/
+
+$site-nav: '.site-header__nav';
+
+#{$site-nav} {
+  flex: 1 0 auto;
+  order: 1;
+
+  @include breakpoint('large') {
+    order: 2;
+  }
+}
+
+#{$site-nav}-label {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: $color__blue-dark;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+
+  @include breakpoint('large') {
+    display: none;
+  }
+
+  span {
+    position: absolute;
+    left: 25%;
+    display: block;
+    width: 100%;
+    max-width: 20px;
+    height: 2px;
+    background: $color__white;
+    border-radius: 9px;
+    transform: rotate(0deg);
+    opacity: 1;
+    transition: 0.25s ease-in-out;
+
+    &:nth-child(1) {
+      top: 35%;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      top: 50%;
+    }
+
+    &:nth-child(4) {
+      top: 65%;
+    }
+  }
+}
+
+#{$site-nav}-trigger {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+
+  @include breakpoint('large') {
+    display: none;
+  }
+
+  &:checked + #{$site-nav}-label span {
+    &:nth-child(1),
+    &:nth-child(4) {
+      top: 50%;
+      left: 50%;
+      width: 0%;
+    }
+
+    &:nth-child(2) {
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &:checked ~ #{$site-nav}-menu {
+    transform: translateY(0);
+
+    @include breakpoint('large') {
+      display: none;
+    }
+  }
+}
+
+#{$site-nav}-menu {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: $color__white;
+  @extend %button;
+  text-transform: uppercase;
+  list-style: none;
+
+  @include breakpoint($break: 'large', $dir: 'max-width') {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    z-index: -1;
+    flex-direction: column;
+    background-color: $color__blue;
+    transform: translateY(-150%);
+    transition: transform 0.5s linear;
+  }
+
+  @include breakpoint('large') {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+#{$site-nav}-menu li {
+  border-bottom: 1px solid $color__bluegray-dark;
+
+  @include breakpoint('large') {
+    margin: 0 1.5rem;
+    border-bottom: 0;
+  }
+
+  a {
+    @include breakpoint($break: 'large', $dir: 'max-width') {
+      display: block;
+      padding: 0.5rem content-padding('small');
+    }
+
+    @include breakpoint('large') {
+      padding: 0 0 1rem;
+    }
+
+    &:hover {
+      @include breakpoint($break: 'large', $dir: 'max-width') {
+        background-color: $color__blue-dark;
+        border-left: 5px solid $color__orange;
+      }
+
+      @include breakpoint('large') {
+        @include box-shadow(0, -5px, 0, 0, $color__orange, true);
+      }
+    }
+  }
+}

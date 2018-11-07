@@ -21,13 +21,31 @@ body {
 }
 
 .wrapper {
-  $sizes: ('small', 'medium', 'large', 'xlarge');
+  $sizes: ('medium', 'large', 'xlarge');
+  max-width: wrapper-width('small');
   margin: 0 auto;
 
   @each $size in $sizes {
     @include breakpoint($size) {
-      max-width: wrapper-width($size);
+      max-width: #{wrapper-width($size)};
       padding: 0;
+    }
+  }
+
+  &--expanded {
+    $padding-small: wrapper-padding('small') / 2;
+    margin: 0 auto;
+    padding-right: $padding-small;
+    padding-left: $padding-small;
+
+    @each $size in $sizes {
+      @include breakpoint($size) {
+        $width: wrapper-width($size);
+        $padding-half: wrapper-padding($size) / 2;
+        $padding: calc(((100% - #{$width}) / 2) - #{$padding-half});
+        padding-right: $padding;
+        padding-left: $padding;
+      }
     }
   }
 }
