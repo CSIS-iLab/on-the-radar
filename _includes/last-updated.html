@@ -1,0 +1,9 @@
+
+{% if page.last-modified-date %}
+  <div class="last-modified">
+    <span class="post__meta-label">
+      {{ site.data.language.last_updated }}
+    </span>
+      {{ page.last-modified-date | date: site.date_format }}
+  </div>
+{% endif %}

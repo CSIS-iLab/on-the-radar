@@ -6,6 +6,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 
+date_format: '%B %d, %Y'
+
 cloudinary_url: https://res.cloudinary.com/csisideaslab/image/upload/
 
 # Content types will be defined here
