@@ -1,13 +1,13 @@
-{% assign last_updated_date = post.last-modified-date %}
-{% if page.last-updated-date %}
-  {% assign last_updated_date = page.last-modified-date %}
+{% assign last_updated = page.last-modified-date %}
+{% if post.last-modified-date %}
+  {% assign last_updated = post.last-modified-date %}
 {% endif %}
 
-{% if last_updated_date %}
+<!-- {% if page.last-modified-date %} -->
   <div class="last-modified">
     <span class="post__meta-label">
       {{ site.data.language.last_updated }}
     </span>
-      {{ last_updated_date | date: site.date_format }}
+      {{ last_updated | date: site.date_format }}
   </div>
-{% endif %}
+<!-- {% endif %} -->
