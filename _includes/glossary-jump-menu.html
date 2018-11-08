@@ -1,0 +1,21 @@
+{% assign alphabet = 'A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z' | split: ',' %}
+{% assign has_content = '' | split: ',' %}
+
+{% for letter in alphabet %}
+  {% if glossary_letters contains letter %}
+    {% assign has_content = has_content | push: "enabled" %}
+  {% else %}
+    {% assign has_content = has_content | push: "disable" %}
+  {% endif %}
+{% endfor %}
+<div  class="{{ class }}__jump-menu active">
+  <input class="{{ class }}__jump-menu-trigger" id="glossary_trigger" type="checkbox" />
+  <label for="glossary_trigger" class="header-label">
+    {{ site.data.language.jump_to }} <i class="icon-angle-lg-down"></i>
+  </label>
+    <div class="{{ class }}__jump-menu-letters">
+      {% for letter in alphabet %}
+        <a href="#{{ letter }}" class="{{ has_content[forloop.index0] }}">{{ letter }}</a>
+      {% endfor %}
+  </div>
+</div>
