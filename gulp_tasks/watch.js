@@ -31,6 +31,7 @@ gulp.task('watch', function() {
         '*.html',
         './**/*.md',
         './**/*.markdown',
+        '*.json',
         config.jekyll.includes + '/**/*',
         config.jekyll.layouts + '/**/*',
         config.jekyll.posts + '/**/*',
