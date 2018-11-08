@@ -2,6 +2,8 @@
 ---
 [
 {%- for post in site.posts -%}
+{%- assign collection = site.collections | where: "label", post.collection | first -%}
+{%- assign collection_name = collection.title -%}
 {%- capture authors_list -%}[{%- for author in post.authors -%}{%- assign author_info = site.authors | where: 'relative_path', author | first -%}"{{author_info.title | slugify}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
 {%- capture categories -%}[{%- for tag in post.categories -%}"{{tag}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
 {%- capture keywords -%}[{%- for tag in post.keywords -%}"{{tag}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
@@ -10,7 +12,7 @@
     "objectID": "{{ post.title | slugify }}",
     "title": "{{ post.title | escape }}",
     "url": "{{ post.url }}",
-    "collection": "{{ post.collection }}",
+    "collection": "{{ collection_name }}",
     "authors": {{ authors_list }},
     "categories": {{ categories }},
     "keywords": {{ keywords }},
@@ -23,13 +25,15 @@
 ,
 {%- assign country_profiles = site.briefs | where: 'brief_type','Country Profile' -%}
 {%- for post in country_profiles -%}
+{%- assign collection = site.collections | where: "label", post.collection | first -%}
+{%- assign collection_name = collection.title -%}
 {%- capture authors_list -%}[{%- for author in post.authors -%}{%- assign author_info = site.authors | where: 'relative_path', author | first -%}"{{author_info.title | slugify}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
 {%- capture post_html -%}{%- include post-block.html -%}{%- endcapture -%}
 {
     "objectID": "{{ post.title | slugify }}",
     "title": "{{ post.title | escape }}",
     "url": "{{ post.url }}",
-    "collection": "{{ post.collection }}",
+    "collection": "{{ collection_name }}",
     "brief_type": "{{ post.brief_type }}",
     "authors": {{ authors_list }},
     "date": "{{ post.date | date: site.date_format }}",
@@ -41,6 +45,8 @@
 ,
 {%- assign tech_primers = site.briefs | where: 'brief_type','Tech Primer' -%}
 {%- for post in tech_primers -%}
+{%- assign collection = site.collections | where: "label", post.collection | first -%}
+{%- assign collection_name = collection.title -%}
 {%- capture authors_list -%}[{%- for author in post.authors -%}{%- assign author_info = site.authors | where: 'relative_path', author | first -%}"{{author_info.title | slugify}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
 {%- capture post_html -%}{%- include post-block.html -%}{%- endcapture -%}
 {%- capture types -%}[{%- for type in post.details.Type -%}"{{ type }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
@@ -52,7 +58,7 @@
     "objectID": "{{ post.title | slugify }}",
     "title": "{{ post.title | escape }}",
     "url": "{{ post.url }}",
-    "collection": "{{ post.collection }}",
+    "collection": "{{ collection_name }}",
     "brief_type": "{{ post.brief_type }}",
     "details": {
       "type": {{ types }},
@@ -70,13 +76,15 @@
 {%- endfor -%}
 ,
 {%- for post in site.workshops -%}
+{%- assign collection = site.collections | where: "label", post.collection | first -%}
+{%- assign collection_name = collection.title -%}
 {%- capture authors_list -%}[{%- for author in post.authors -%}{%- assign author_info = site.authors | where: 'relative_path', author | first -%}"{{author_info.title | slugify}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
 {%- capture post_html -%}{%- include post-block.html -%}{%- endcapture -%}
 {
     "objectID": "{{ post.title | slugify }}",
     "title": "{{ post.title | escape }}",
     "url": "{{ post.url }}",
-    "collection": "{{ post.collection }}",
+    "collection": "{{ collection_name }}",
     "details": {
       "event_date": "{{ post.details.event_date }}",
       "location": "{{ post.details.location }}"
