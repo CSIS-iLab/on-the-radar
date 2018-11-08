@@ -1,0 +1,16 @@
+{% assign authors_list = page.authors %}
+{% if post.authors.size > 0 %}
+  {% assign authors_list = post.authors %}
+{% endif %}
+
+{% if authors_list.size > 0 %}
+<div class="authors-block">
+  <h2 class="authors-block__title">{{ site.data.language.about_authors }}</h2>
+  {% for author in authors_list %}
+    {%- assign author_info = site.authors | where: "relative_path", author | first -%}
+    <a href="{{ author_info.url | relative_url }}" class="authors-block__name">{{ author_info.title }}</a>
+    <span class="authors-block__role">{{ author_info.role }}</span>
+    <p class="authors-block__bio">{{ author_info.content }}</p>
+  {% endfor %}
+</div>
+{% endif %}

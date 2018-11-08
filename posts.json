@@ -1,0 +1,91 @@
+---
+---
+[
+{%- for post in site.posts -%}
+{%- capture authors_list -%}[{%- for author in post.authors -%}{%- assign author_info = site.authors | where: 'relative_path', author | first -%}"{{author_info.title | slugify}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{%- capture categories -%}[{%- for tag in post.categories -%}"{{tag}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{%- capture keywords -%}[{%- for tag in post.keywords -%}"{{tag}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{%- capture post_html -%}{%- include post-block.html -%}{%- endcapture -%}
+{
+    "objectID": "{{ post.title | slugify }}",
+    "title": "{{ post.title | escape }}",
+    "url": "{{ post.url }}",
+    "collection": "{{ post.collection }}",
+    "authors": {{ authors_list }},
+    "categories": {{ categories }},
+    "keywords": {{ keywords }},
+    "date": "{{ post.date | date: site.date_format }}",
+    "updated_at": "{{ post.last-modified-date }}",
+    "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
+    "post_html": {{ post_html | jsonify | normalize_whitespace }}
+  }{%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}
+,
+{%- assign country_profiles = site.briefs | where: 'brief_type','Country Profile' -%}
+{%- for post in country_profiles -%}
+{%- capture authors_list -%}[{%- for author in post.authors -%}{%- assign author_info = site.authors | where: 'relative_path', author | first -%}"{{author_info.title | slugify}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{%- capture post_html -%}{%- include post-block.html -%}{%- endcapture -%}
+{
+    "objectID": "{{ post.title | slugify }}",
+    "title": "{{ post.title | escape }}",
+    "url": "{{ post.url }}",
+    "collection": "{{ post.collection }}",
+    "brief_type": "{{ post.brief_type }}",
+    "authors": {{ authors_list }},
+    "date": "{{ post.date | date: site.date_format }}",
+    "updated_at": "{{ post.last-modified-date }}",
+    "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
+    "post_html": {{ post_html | jsonify | normalize_whitespace }}
+  }{%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}
+,
+{%- assign tech_primers = site.briefs | where: 'brief_type','Tech Primer' -%}
+{%- for post in tech_primers -%}
+{%- capture authors_list -%}[{%- for author in post.authors -%}{%- assign author_info = site.authors | where: 'relative_path', author | first -%}"{{author_info.title | slugify}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{%- capture post_html -%}{%- include post-block.html -%}{%- endcapture -%}
+{%- capture types -%}[{%- for type in post.details.Type -%}"{{ type }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{%- capture characteristics -%}[{%- for characteristic in post.details.characteristics -%}"{{ characteristic }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{%- capture risk_factors -%}[{%- for risk_factor in post.details.risk_factors -%}"{{ risk_factor }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{%- capture domain -%}[{%- for domain in post.details.domain -%}"{{ domain }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{%- capture country -%}[{%- for country in post.details.country -%}"{{ country }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{
+    "objectID": "{{ post.title | slugify }}",
+    "title": "{{ post.title | escape }}",
+    "url": "{{ post.url }}",
+    "collection": "{{ post.collection }}",
+    "brief_type": "{{ post.brief_type }}",
+    "details": {
+      "type": {{ types }},
+      "characteristics": {{ characteristics }},
+      "risk_factors": {{ risk_factors }},
+      "domain": {{ domain }},
+      "country": {{ country }}
+    },
+    "authors": {{ authors_list }},
+    "date": "{{ post.date | date: site.date_format }}",
+    "updated_at": "{{ post.last-modified-date }}",
+    "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
+    "post_html": {{ post_html | jsonify | normalize_whitespace }}
+  }{%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}
+,
+{%- for post in site.workshops -%}
+{%- capture authors_list -%}[{%- for author in post.authors -%}{%- assign author_info = site.authors | where: 'relative_path', author | first -%}"{{author_info.title | slugify}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{%- capture post_html -%}{%- include post-block.html -%}{%- endcapture -%}
+{
+    "objectID": "{{ post.title | slugify }}",
+    "title": "{{ post.title | escape }}",
+    "url": "{{ post.url }}",
+    "collection": "{{ post.collection }}",
+    "details": {
+      "event_date": "{{ post.details.event_date }}",
+      "location": "{{ post.details.location }}"
+    },
+    "authors": {{ authors_list }},
+    "date": "{{ post.date | date: site.date_format }}",
+    "updated_at": "{{ post.last-modified-date }}",
+    "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
+    "post_html": {{ post_html | jsonify | normalize_whitespace }}
+  }{%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}
+]

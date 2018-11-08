@@ -1,0 +1,34 @@
+/*===============================
+=         Authors Block         =
+===============================*/
+
+.authors-block {
+  padding-bottom: 1rem;
+
+  &__title {
+    @extend %h2--thin;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  &__name,
+  &__name:visited {
+    @extend %about-person__name--base;
+    color: $color__astral;
+
+    &:hover {
+      color: $color__orange;
+    }
+  }
+
+  &__role {
+    @extend %about-person__title;
+    display: block;
+    color: $color__gray-darker;
+  }
+
+  &__bio {
+    @extend %body-text;
+    padding-top: 0.5rem;
+  }
+}
