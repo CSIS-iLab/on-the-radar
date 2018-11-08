@@ -1,0 +1,17 @@
+{% assign details = page.details %}
+{% unless page.collection == 'posts' %}
+  {% assign details = page.categories %}
+{% endunless %}
+
+
+<div class="details">
+  <span class="details__title">{{ site.data.language.details.title }}</span>
+  <span class="details__subtitle">{{ detail.category }}</span>
+  <!-- {% for detail in details %} -->
+    <span class="details__subtitle">{{ detail.category }}</span>
+      <span class="details__title">{{ site.data.language.details.title }}</span>
+      {{ detail }}
+      {{ detail[0] }}
+    </div>
+  <!-- {% endfor %} -->
+</div>

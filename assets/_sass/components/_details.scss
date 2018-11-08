@@ -1,0 +1,13 @@
+
+
+.details {
+  &__title {
+    @extend %facets__section-title;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    @extend %labeltext__subheading;
+    text-transform: uppercase;
+  }
+}
