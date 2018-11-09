@@ -15,8 +15,8 @@
       "type": "{{ post.type }}",
       "topics": {{ topics }},
       "authors": "{{post.authors }}",
-      "date": "{{ post.date | date: site.date_format }}",
-      "updated_at": "{{ post.last-modified-date }}",
+      "date": "{{ post.date | date: site.date_format | date: '%s' }}",
+      "updated_at": "{{ post.last-modified-date | date: '%s' }}",
       "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
       "post_html": {{ post_html | jsonify | normalize_whitespace }}
       }{%- unless forloop.last -%},{%- endunless -%}
@@ -28,6 +28,7 @@
 {%- capture authors_list -%}[{%- for author in post.authors -%}{%- assign author_info = site.authors | where: 'relative_path', author | first -%}"{{author_info.title | slugify}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
 {%- capture categories -%}[{%- for tag in post.categories -%}"{{tag}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
 {%- capture keywords -%}[{%- for tag in post.keywords -%}"{{tag}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{%- capture related -%}[{%- for brief in post.related_briefs -%}{%- assign brief_info = site.briefs | where: 'relative_path', brief | first -%}"{{brief_info.title}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
 {%- capture post_html -%}{%- include post-block.html -%}{%- endcapture -%}
 {
     "objectID": "{{ post.title | slugify }}",
@@ -38,8 +39,9 @@
     "authors": {{ authors_list }},
     "categories": {{ categories }},
     "keywords": {{ keywords }},
-    "date": "{{ post.date | date: site.date_format }}",
-    "updated_at": "{{ post.last-modified-date }}",
+    "related_briefs": {{ related }},
+    "date": "{{ post.date | date: site.date_format | date: '%s' }}",
+    "updated_at": "{{ post.last-modified-date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
   }{%- unless forloop.last -%},{%- endunless -%}
@@ -59,8 +61,8 @@
     "collection_label": "{{ post.collection }}",
     "brief_type": "{{ post.brief_type }}",
     "authors": {{ authors_list }},
-    "date": "{{ post.date | date: site.date_format }}",
-    "updated_at": "{{ post.last-modified-date }}",
+    "date": "{{ post.date | date: site.date_format | date: '%s' }}",
+    "updated_at": "{{ post.last-modified-date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
   }{%- unless forloop.last -%},{%- endunless -%}
@@ -92,8 +94,8 @@
       "country": {{ country }}
     },
     "authors": {{ authors_list }},
-    "date": "{{ post.date | date: site.date_format }}",
-    "updated_at": "{{ post.last-modified-date }}",
+    "date": "{{ post.date | date: site.date_format | date: '%s' }}",
+    "updated_at": "{{ post.last-modified-date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
   }{%- unless forloop.last -%},{%- endunless -%}
@@ -111,12 +113,12 @@
     "collection_title": "{{ collection_title }}",
     "collection_label": "{{ post.collection }}",
     "details": {
-      "event_date": "{{ post.details.event_date | date: '%b %-d, %Y' }}",
+      "event_date": "{{ post.details.event_date | date: '%s' }}",
       "location": "{{ post.details.location }}"
     },
     "authors": {{ authors_list }},
-    "date": "{{ post.date | date: site.date_format }}",
-    "updated_at": "{{ post.last-modified-date }}",
+    "date": "{{ post.date | date: site.date_format | date: '%s' }}",
+    "updated_at": "{{ post.last-modified-date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
   }{%- unless forloop.last -%},{%- endunless -%}
