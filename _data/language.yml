@@ -15,4 +15,11 @@ jump_to: Jump to
 about_authors: 'About the Authors'
 published: Published
 last_updated: Last Updated
-search_placeholder: Search
+archive:
+  search_placeholder: Search
+  oldest: Oldest
+  newest: Newest
+  resource_name: Name
+  filter_entries: Filter Entries
+  refine_results: Refine Results
+  featured_post: Featured Post

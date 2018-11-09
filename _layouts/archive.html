@@ -26,18 +26,18 @@ layout: default
       <div id="results__summary_count"></div>
     {% if page.permalink != '/resources/' %}
       <div id="results__sort">
-        <span class="sort-oldest">OLDEST</span>
-        <span class="sort-newest selected">NEWEST</span>
+        <span class="sort-oldest">{{ site.data.language.archive.oldest }}</span>
+        <span class="sort-newest selected">{{ site.data.language.archive.newest }}</span>
       </div>
     {% endif %}
   </section>
 
   <section class="archive__sidebar">
     {% if page.filter_entries %}
-      <div class="section-title pagination--hide-no-results">Filter Entries</div>
+      <div class="section-title pagination--hide-no-results">{{ site.data.language.archive.filter_entries }}</div>
 
       {% if page.permalink == '/resources/' %}
-        <div class="ais-header">Name</div>
+        <div class="ais-header">{{ site.data.language.archive.resource_name }}</div>
         <div id="filter__name"></div>
       {% endif %}
 
@@ -51,7 +51,7 @@ layout: default
 
       {% if page.refine_results %}
         <div class="pagination--hide-no-results">
-        <div class="section-title">Refine Results</div>
+        <div class="section-title">{{ site.data.language.archive.refine_results }}</div>
 
         {% for detail in site[collection.label][0].details %}
           {% if detail[0] != "event_date" %}
@@ -68,7 +68,7 @@ layout: default
 
   {% if page.permalink == '/analysis/' %}
   <section class="archive__featured">
-    Featured Post
+    {{ site.data.language.archive.feature_post }}
   </section>
   {% endif %}
 
