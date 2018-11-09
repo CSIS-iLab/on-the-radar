@@ -241,19 +241,16 @@ const AlgoliaSearch = function() {
     })
   }
 
-  ////////// RESULTS SUMMARY
   search.addWidget(
     stats({
-      container: '#results__summary',
+      container: '#results__summary_count',
       templates: {
         body: data => {
           let results_text = 'Items'
           if (data.hasOneResult) {
             results_text = 'Item'
           }
-          let page = data.page + 1
           return `
-            <span class="pages">Page ${page} of ${data.nbPages}</span>
             <span class="items">${data.nbHits} ${results_text}</span>
           `
         },
@@ -262,44 +259,62 @@ const AlgoliaSearch = function() {
     })
   )
 
-  ////////// RESULTS SORT
-  search.addWidget({
-    init: function({ helper }) {
-      document
-        .querySelector('#results__sort .sort-oldest')
-        .addEventListener('click', function() {
-          helper.setIndex('on_the_radar_asc').search()
-          this.classList.add('selected')
-          document.querySelector('.sort-newest').classList.remove('selected')
-        })
-    }
-  })
+  if (dataset.collection !== 'Resources') {
+    ////////// RESULTS SUMMARY
+    search.addWidget(
+      stats({
+        container: '#results__summary_page',
+        templates: {
+          body: data => {
+            let page = data.page + 1
+            return `
+              <span class="pages">Page ${page} of ${data.nbPages}</span>
+            `
+          },
+          autoHideContainer: false
+        }
+      })
+    )
 
-  search.addWidget({
-    init: function({ helper }) {
-      document
-        .querySelector('#results__sort .sort-newest')
-        .addEventListener('click', function() {
-          helper.setIndex('on_the_radar_desc').search()
-          this.classList.add('selected')
-          document.querySelector('.sort-oldest').classList.remove('selected')
-        })
-    }
-  })
-
-  ////////// PAGINATION
-  search.addWidget(
-    pagination({
-      container: '#pagination',
-      showFirstLast: false,
-      labels: {
-        previous:
-          '<button aria-label="previous"><i class="icon-angle-lg-left"></i></button>',
-        next:
-          '<button aria-label="next"><i class="icon-angle-lg-right"></i></button>'
+    ////////// RESULTS SORT
+    search.addWidget({
+      init: function({ helper }) {
+        document
+          .querySelector('#results__sort .sort-oldest')
+          .addEventListener('click', function() {
+            helper.setIndex('on_the_radar_asc').search()
+            this.classList.add('selected')
+            document.querySelector('.sort-newest').classList.remove('selected')
+          })
       }
     })
-  )
+
+    search.addWidget({
+      init: function({ helper }) {
+        document
+          .querySelector('#results__sort .sort-newest')
+          .addEventListener('click', function() {
+            helper.setIndex('on_the_radar_desc').search()
+            this.classList.add('selected')
+            document.querySelector('.sort-oldest').classList.remove('selected')
+          })
+      }
+    })
+
+    ////////// PAGINATION
+    search.addWidget(
+      pagination({
+        container: '#pagination',
+        showFirstLast: false,
+        labels: {
+          previous:
+            '<button aria-label="previous"><i class="icon-angle-lg-left"></i></button>',
+          next:
+            '<button aria-label="next"><i class="icon-angle-lg-right"></i></button>'
+        }
+      })
+    )
+  }
 
   ////////// CLEAR DETAILS REFINEMENT
   search.addWidget(

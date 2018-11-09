@@ -11,18 +11,22 @@ layout: default
   <section class="archive__filter-type">
 
     {% if page.permalink == '/issue-briefs/' %}
-      <div id="filter__brief-clear"></div>
+      <div id="filter__content-brief-clear"></div>
       <div class="all-result-count-placeholder"> </div>
       <div id="filter__content-brief"></div>
     {% endif %}
   </section>
-
   <section class="archive__results">
-    <div id="results__summary"></div>
-    <div id="results__sort">
-      <span class="sort-oldest">OLDEST</span>
-      <span class="sort-newest selected">NEWEST</span>
-    </div>
+    {% if page.permalink != '/resources/' %}
+      <div id="results__summary_page"></div>
+    {% endif %}
+      <div id="results__summary_count"></div>
+    {% if page.permalink != '/resources/' %}
+      <div id="results__sort">
+        <span class="sort-oldest">OLDEST</span>
+        <span class="sort-newest selected">NEWEST</span>
+      </div>
+    {% endif %}
   </section>
 
   <section class="archive__sidebar">
@@ -66,5 +70,7 @@ layout: default
      {%- endfor -%}
    </section>
 
-  {% include page-footer.html pagination = true %}
+  {% if page.permalink != '/resources/' %}
+    {% include page-footer.html pagination = true %}
+  {% endif %}
 </article>
