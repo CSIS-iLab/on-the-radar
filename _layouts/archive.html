@@ -61,13 +61,24 @@ layout: default
 
    <section id="hits" class="archive__content">
      {% if page.post_list_collection == 'all' %}
-     {% assign posts = site.posts | concat: site.workshops | concat: site.briefs %}
+       {% assign posts = site.posts | concat: site.workshops | concat: site.briefs %}
+     {% elsif page.post_list_collection == 'resources'  %}
+       {% assign posts = site.resources %}
      {% else %}
-     {% assign posts = site[collection.label] %}
+       {% assign posts = site[collection.label] %}
      {% endif %}
-     {%- for post in posts -%}
-       {% include post-block.html %}
-     {%- endfor -%}
+
+
+    {% if page.permalink != '/resources/' %}
+      {%- for post in posts -%}
+        {% include post-block.html %}
+      {%- endfor -%}
+    {% else %}
+      {%- for post in site.resources -%}
+        {% include post-block.html %}
+      {%- endfor -%}
+    {% endif %}
+
    </section>
 
   {% if page.permalink != '/resources/' %}
