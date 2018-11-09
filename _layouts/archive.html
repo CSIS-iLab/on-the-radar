@@ -8,7 +8,7 @@ layout: default
   {% assign refinement = 'data-filter_entries="true"' %}
 {% endif %}
 
-<article class="archive archive--{{ page.title | slugify }}" {{ refinement }} data-collection-label="{{ collection.label }}" data-collection-title="{{ collection.title }}"  role="content" itemscope itemtype="http://schema.org/BlogPosting" {{ data_facet }} {{ data_facet_value }}>
+<article class="archive archive--{{ page.title | slugify }}" {{ refinement }} data-collection-label="{{ collection.label }}" role="content" itemscope itemtype="http://schema.org/BlogPosting" {{ data_facet }} {{ data_facet_value }}>
 
   {% include page-header.html %}
 

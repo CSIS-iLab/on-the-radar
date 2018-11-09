@@ -16,9 +16,13 @@ const mapStatetoKeys = (uiState, urlKeyDivs, dataset) => {
       let param
       if (dataset.collectionLabel === 'resources') {
         param = f === 'type' ? 'type' : f === 'topic' ? 'topics' : f
+      } else if (dataset.collectionLabel === 'posts') {
+        param = f === 'type' ? 'categories' : f === 'topic' ? 'keywords' : f
+      } else if (dataset.refine_results) {
+        console.log(f === 'brief')
+        param = f === 'brief ' ? 'brief_type' : `details.${f}`
       } else {
-        param =
-          f === 'type' ? 'collection_title' : f === 'topic' ? 'keywords' : f
+        param = f
       }
 
       if (uiState.refinementList) {
