@@ -4,7 +4,7 @@ layout: default
 
 {% assign collection = site.collections | where: "title", page.title | first %}
 
-<article class="archive archive--{{ page.title | slugify }}" data-collection="{{ collection.title }}"  role="content" itemscope itemtype="http://schema.org/BlogPosting" {{ data_facet }} {{ data_facet_value }}>
+<article class="archive archive--{{ page.title | slugify }}" data-collection-label="{{ collection.label }}" data-collection="{{ collection.title }}"  role="content" itemscope itemtype="http://schema.org/BlogPosting" {{ data_facet }} {{ data_facet_value }}>
 
   {% include page-header.html %}
 
@@ -30,8 +30,7 @@ layout: default
   </section>
 
   <section class="archive__sidebar">
-      {% if page.permalink == '/search/' or page.permalink == '/resources/' or page.permalink == '/analysis/' %}
-        <div>
+      {% if page.filter_entries %}
             <div class="section-title pagination--hide-no-results">Filter Entries</div>
           {% if page.permalink == '/resources/' %}
             <div class="ais-header">Name</div>
@@ -40,8 +39,9 @@ layout: default
 
           <div id="filter__content-type" class="pagination--hide-no-results"></div>
           <div id="filter__content-topic" class="pagination--hide-no-results"></div>
-        </div>
-      {% else %}
+      {% endif %}
+
+      {% if page.refine_results %}
       <div class="pagination--hide-no-results">
         <div class="section-title">Refine Results</div>
         {% for detail in site[collection.label][0].details %}
