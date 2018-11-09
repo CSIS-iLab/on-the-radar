@@ -14,10 +14,11 @@ const mapStatetoKeys = (uiState, urlKeyDivs, dataset) => {
     .map(f => f.replace('filter__details-', '').replace('filter__content-', ''))
     .map(f => {
       let param
-      if (dataset.collection === 'Resources') {
+      if (dataset.collectionLabel === 'resources') {
         param = f === 'type' ? 'type' : f === 'topic' ? 'topics' : f
       } else {
-        param = f === 'type' ? 'collection' : f === 'topic' ? 'keywords' : f
+        param =
+          f === 'type' ? 'collection_title' : f === 'topic' ? 'keywords' : f
       }
 
       if (uiState.refinementList) {
@@ -76,9 +77,9 @@ const AlgoliaSearch = function() {
     hitsPerPage: 3
   }
 
-  searchParameters.filters = dataset.collection
-    ? `collection:'${dataset.collection}'`
-    : `NOT collection:Resources`
+  searchParameters.filters = dataset.collectionLabel
+    ? `collection_label:'${dataset.collectionLabel}'`
+    : `NOT collection_label:Resources`
 
   const search = instantsearch({
     indexName: 'on_the_radar_posts',
@@ -101,17 +102,17 @@ const AlgoliaSearch = function() {
       }
     })
   )
-  if (
-    !dataset.collection ||
-    dataset.collection === 'Resources' ||
-    dataset.collection === 'Analysis'
-  ) {
+  if (dataset.filter_entries) {
     //////////  TOPIC/TYPE REFINEMENT (Search)
     search.addWidget(
       refinementList({
         container: '#filter__content-type',
         attributeName:
-          dataset.collection === 'Resources' ? 'type' : 'collection',
+          dataset.collectionLabel === 'resources'
+            ? 'type'
+            : dataset.collectionLabel === 'posts'
+              ? 'categories'
+              : 'collection_title',
         operator: 'or',
         sortBy: ['name:asc'],
         collapsible: {
@@ -128,7 +129,7 @@ const AlgoliaSearch = function() {
       refinementList({
         container: '#filter__content-topic',
         attributeName:
-          dataset.collection === 'Resources' ? 'topics' : 'keywords',
+          dataset.collectionLabel === 'resources' ? 'topics' : 'keywords',
         operator: 'or',
         sortBy: ['name:asc'],
         collapsible: {
@@ -140,7 +141,8 @@ const AlgoliaSearch = function() {
         }
       })
     )
-    if (!dataset.collection) {
+
+    if (!dataset.collectionLabel) {
       ////////// SEARCH
       search.addWidget(
         searchBox({
@@ -151,7 +153,7 @@ const AlgoliaSearch = function() {
           magnifier: false
         })
       )
-    } else if (dataset.collection === 'Resources') {
+    } else if (dataset.collectionLabel === 'resources') {
       ////////// RESOURCES Search
       search.addWidget(
         searchBox({
@@ -164,12 +166,8 @@ const AlgoliaSearch = function() {
       )
     }
   }
-
-  if (
-    dataset.collection === 'Issue Briefs' ||
-    dataset.collection === 'Workshops'
-  ) {
-    if (dataset.collection === 'Issue Briefs') {
+  if (dataset.refine_results) {
+    if (dataset.collectionLabel === 'briefs') {
       ////////// ISSUE BRIEF TYPE
       search.addWidget(
         refinementList({
@@ -259,7 +257,7 @@ const AlgoliaSearch = function() {
     })
   )
 
-  if (dataset.collection !== 'Resources') {
+  if (dataset.collectionLabel !== 'resources') {
     ////////// RESULTS SUMMARY
     search.addWidget(
       stats({

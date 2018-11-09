@@ -1,15 +1,18 @@
 ---
 layout: default
 ---
-
 {% assign collection = site.collections | where: "title", page.title | first %}
+{% if page.refine_results %}
+  {% assign refinement = 'data-refine_results="true"' %}
+{% elsif page.filter_entries %}
+  {% assign refinement = 'data-filter_entries="true"' %}
+{% endif %}
 
-<article class="archive archive--{{ page.title | slugify }}" data-collection-label="{{ collection.label }}" data-collection="{{ collection.title }}"  role="content" itemscope itemtype="http://schema.org/BlogPosting" {{ data_facet }} {{ data_facet_value }}>
+<article class="archive archive--{{ page.title | slugify }}" {{ refinement }} data-collection-label="{{ collection.label }}" data-collection-title="{{ collection.title }}"  role="content" itemscope itemtype="http://schema.org/BlogPosting" {{ data_facet }} {{ data_facet_value }}>
 
   {% include page-header.html %}
 
   <section class="archive__filter-type">
-
     {% if page.permalink == '/issue-briefs/' %}
       <div id="filter__content-brief-clear"></div>
       <div class="all-result-count-placeholder"> </div>
