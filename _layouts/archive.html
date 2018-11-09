@@ -1,27 +1,70 @@
 ---
 layout: default
 ---
-<article class="archive">
+
+{% assign collection = site.collections | where: "title", page.title | first %}
+
+<article class="archive archive--{{ page.title | slugify }}" data-collection="{{ collection.title }}"  role="content" itemscope itemtype="http://schema.org/BlogPosting" {{ data_facet }} {{ data_facet_value }}>
 
   {% include page-header.html %}
 
   <section class="archive__filter-type">
-    Filter by Type
+
+    {% if page.permalink == '/issue-briefs/' %}
+      <div id="filter__brief-clear"></div>
+      <div class="all-result-count-placeholder"> </div>
+      <div id="filter__content-brief"></div>
+    {% endif %}
   </section>
+
   <section class="archive__results">
-    Filter Results<br />
-    Sort
+    <div id="results__summary"></div>
+    <div id="results__sort">
+      <span class="sort-oldest">OLDEST</span>
+      <span class="sort-newest selected">NEWEST</span>
+    </div>
   </section>
+
   <section class="archive__sidebar">
-    Refine Results
+      {% if page.permalink == '/search/' or page.permalink == '/resources/' or page.permalink == '/analysis/' %}
+        <div>
+            <div class="section-title pagination--hide-no-results">Filter Entries</div>
+          {% if page.permalink == '/resources/' %}
+            <div class="ais-header">Name</div>
+            <div id="filter__name"></div>
+          {% endif %}
+
+          <div id="filter__content-type" class="pagination--hide-no-results"></div>
+          <div id="filter__content-topic" class="pagination--hide-no-results"></div>
+        </div>
+      {% endif %}
+      {% if page.permalink != '/search/' %}
+      <div class="pagination--hide-no-results">
+        <div class="section-title">Refine Results</div>
+        {% for detail in site[collection.label][0].details %}
+          <div id="filter__details-{{ detail[0] }}" class="pagination__details">{{ detail[0] }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+    <div id="filter__clear-all" class="pagination--hide-no-results"></div>
   </section>
+
+  {% if page.permalink == '/analysis/' %}
   <section class="archive__featured">
     Featured Post
   </section>
-  <section class="archive__content">
-    {% for post in site.posts %}
-    {% include post-block.html %}
-    {% endfor %}
-  </section>
+  {% endif %}
+
+   <section id="hits" class="archive__content">
+     {% if page.post_list_collection == 'all' %}
+     {% assign posts = site.posts | concat: site.workshops | concat: site.briefs %}
+     {% else %}
+     {% assign posts = site[collection.label] %}
+     {% endif %}
+     {%- for post in posts -%}
+       {% include post-block.html %}
+     {%- endfor -%}
+   </section>
+
   {% include page-footer.html pagination = true %}
 </article>

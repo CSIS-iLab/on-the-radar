@@ -1,0 +1,36 @@
+.ais-root__collapsed .ais-body {
+  display: none;
+}
+
+.ais-root {
+  .icon-angle-sm-right::before {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:not(.ais-root__collapsed) .icon-angle-sm-right::before {
+    transform: rotate(90deg);
+  }
+}
+
+.ais-pagination--item {
+  display: inline-block;
+  margin: 0 1rem 0 0;
+
+  &__disabled {
+    display: none;
+  }
+}
+
+.selected {
+  font-weight: bold;
+  cursor: default;
+}
+
+.pagination--is-hidden {
+  display: none;
+}
+
+.ais-search-box--reset {
+  max-width: 30px;
+  background-color: transparent;
+}
