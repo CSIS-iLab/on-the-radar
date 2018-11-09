@@ -283,6 +283,20 @@
   }
 }
 
+%page__type {
+  @include font-size(13px);
+  font-family: $font__lato;
+  font-weight: bold;
+  line-height: 1.65;
+  letter-spacing: 1.2px;
+
+  @include breakpoint('medium') {
+    @include font-size(14px);
+    line-height: 1.53;
+    letter-spacing: 1.3px;
+  }
+}
+
 %pagination__item {
   @include font-size(16px);
   color: $color__white;
@@ -391,14 +405,6 @@
   letter-spacing: 1.3px;
 }
 
-%post-block__subtype {
-  @include font-size(14px);
-  color: $color__black;
-  font-family: $font__lato;
-  line-height: 1.53;
-  letter-spacing: 1.3px;
-}
-
 %post-block__title {
   @include font-size(18px);
   color: $color__black;
@@ -445,7 +451,6 @@
 %post-block__type {
   @include font-size(14px);
   font-family: $font__lato;
-  font-weight: 600;
   line-height: 1.53;
   letter-spacing: 1.3px;
 }

@@ -7,7 +7,7 @@
   text-transform: uppercase;
 
   .post__header & {
-    @extend %post-block__type;
+    @extend %page__type;
     color: $color__white;
   }
 
@@ -15,10 +15,11 @@
   .post-block & {
     @extend %post-block__type;
     color: $color__orange;
+    font-weight: 600;
 
     #{$type}__secondary {
-      @extend %post-block__subtype;
       color: $color__black;
+      font-weight: normal;
     }
   }
 }
