@@ -1,8 +1,8 @@
 const Navigation = () => {
-  const toggle = document.querySelector('.site-header__nav-trigger')
+  const trigger = document.querySelector('.site-header__nav-trigger')
   const menu = document.querySelector('.site-header__nav-menu')
 
-  toggle.addEventListener('click', function() {
+  trigger.addEventListener('click', function() {
     if (menu.classList.contains('is-active')) {
       this.setAttribute('aria-expanded', 'false')
       this.classList.remove('is-active')

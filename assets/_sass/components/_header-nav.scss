@@ -81,41 +81,6 @@ $site-nav: '.site-header__nav';
   }
 }
 
-// #{$site-nav}-trigger {
-//   position: absolute;
-//   visibility: hidden;
-//   opacity: 0;
-
-//   @include breakpoint('large') {
-//     display: none;
-//   }
-
-//   &:checked + #{$site-nav}-label span {
-//     &:nth-child(1),
-//     &:nth-child(4) {
-//       top: 50%;
-//       left: 50%;
-//       width: 0%;
-//     }
-
-//     &:nth-child(2) {
-//       transform: rotate(45deg);
-//     }
-
-//     &:nth-child(3) {
-//       transform: rotate(-45deg);
-//     }
-//   }
-
-//   &:checked ~ #{$site-nav}-menu {
-//     transform: translateY(0);
-
-//     @include breakpoint('large') {
-//       display: none;
-//     }
-//   }
-// }
-
 #{$site-nav}-menu {
   display: flex;
   width: 100%;

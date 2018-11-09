@@ -7,12 +7,12 @@
   font-family: 'radar';
   font-weight: normal;
   font-style: normal;
-  src: url('#{$fontello_url}radar.eot?9262190');
-  src: url('#{$fontello_url}radar.eot?9262190#iefix') format('embedded-opentype'),
-    url('#{$fontello_url}radar.woff2?9262190') format('woff2'),
-    url('#{$fontello_url}radar.woff?9262190') format('woff'),
-    url('#{$fontello_url}radar.ttf?9262190') format('truetype'),
-    url('#{$fontello_url}radar.svg?9262190#radar') format('svg');
+  src: url('#{$fontello_url}radar.eot?46127661');
+  src: url('#{$fontello_url}radar.eot?46127661#iefix') format('embedded-opentype'),
+    url('#{$fontello_url}radar.woff2?46127661') format('woff2'),
+    url('#{$fontello_url}radar.woff?46127661') format('woff'),
+    url('#{$fontello_url}radar.ttf?46127661') format('truetype'),
+    url('#{$fontello_url}radar.svg?46127661#radar') format('svg');
 }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
@@ -20,7 +20,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'radar';
-    src: url('#{$fontello_url}radar.svg?9262190#radar') format('svg');
+    src: url('#{$fontello_url}radar.svg?46127661#radar') format('svg');
   }
 }
 */
@@ -61,27 +61,28 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-facebook::before { content: '\e800'; } /* '' */
-.icon-twitter::before { content: '\e802'; } /* '' */
-.icon-linkedin::before { content: '\e803'; } /* '' */
-.icon-help::before { content: '\e822'; } /* '' */
-.icon-checkbox-selected::before { content: '\e84b'; } /* '' */
-.icon-checkbox-empty::before { content: '\e84d'; } /* '' */
-.icon-close::before { content: '\e869'; } /* '' */
-.icon-docs::before { content: '\e885'; } /* '' */
-.icon-arrow-down::before { content: '\e88e'; } /* '' */
-.icon-arrow-left::before { content: '\e88f'; } /* '' */
-.icon-arrow-right::before { content: '\e890'; } /* '' */
-.icon-arrow-up::before { content: '\e891'; } /* '' */
-.icon-email-plane::before { content: '\e8c4'; } /* '' */
-.icon-link::before { content: '\ea18'; } /* '' */
-.icon-eternal-link::before { content: '\ebb4'; } /* '' */
-.icon-download::before { content: '\ed34'; } /* '' */
-.icon-angle-lg-down::before { content: '\f004'; } /* '' */
-.icon-angle-lg-up::before { content: '\f005'; } /* '' */
-.icon-angle-lg-right::before { content: '\f006'; } /* '' */
-.icon-angle-lg-left::before { content: '\f007'; } /* '' */
-.icon-angle-sm-left::before { content: '\f104'; } /* '' */
-.icon-angle-sm-right::before { content: '\f105'; } /* '' */
-.icon-angle-sm-up::before { content: '\f106'; } /* '' */
-.icon-angle-sm-down::before { content: '\f107'; } /* '' */
+.icon-facebook:before { content: '\e800'; } /* '' */
+.icon-twitter:before { content: '\e802'; } /* '' */
+.icon-linkedin:before { content: '\e803'; } /* '' */
+.icon-help:before { content: '\e822'; } /* '' */
+.icon-checkbox-selected:before { content: '\e84b'; } /* '' */
+.icon-checkbox-empty:before { content: '\e84d'; } /* '' */
+.icon-close:before { content: '\e869'; } /* '' */
+.icon-docs:before { content: '\e885'; } /* '' */
+.icon-arrow-down:before { content: '\e88e'; } /* '' */
+.icon-arrow-left:before { content: '\e88f'; } /* '' */
+.icon-arrow-right:before { content: '\e890'; } /* '' */
+.icon-arrow-up:before { content: '\e891'; } /* '' */
+.icon-email-plane:before { content: '\e8c4'; } /* '' */
+.icon-link:before { content: '\ea18'; } /* '' */
+.icon-eternal-link:before { content: '\ebb4'; } /* '' */
+.icon-search:before { content: '\ed2f'; } /* '' */
+.icon-download:before { content: '\ed34'; } /* '' */
+.icon-angle-lg-down:before { content: '\f004'; } /* '' */
+.icon-angle-lg-up:before { content: '\f005'; } /* '' */
+.icon-angle-lg-right:before { content: '\f006'; } /* '' */
+.icon-angle-lg-left:before { content: '\f007'; } /* '' */
+.icon-angle-sm-left:before { content: '\f104'; } /* '' */
+.icon-angle-sm-right:before { content: '\f105'; } /* '' */
+.icon-angle-sm-up:before { content: '\f106'; } /* '' */
+.icon-angle-sm-down:before { content: '\f107'; } /* '' */

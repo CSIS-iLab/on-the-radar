@@ -3,11 +3,110 @@
 =            Header: Search            =
 ======================================*/
 
+%search-btn {
+  width: 40px;
+  height: 40px;
+  @include font-size(20px);
+  line-height: 2rem;
+  border: 0;
+}
+
 .site-header__search {
+  position: relative;
+  display: flex;
   flex: 1 0 auto;
   order: 3;
   max-width: fit-content;
   text-align: right;
-  color: $color__white;
+
+  &-open {
+    flex: 1;
+    @extend %search-btn;
+    color: $color__gray-lighter;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      color: $color__white;
+      background-color: $color__blue-dark;
+      border-radius: 50%;
+    }
+
+    .icon-close {
+      display: none;
+    }
+
+    &.is-active {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+
+      .icon-search { display: none; }
+      .icon-close { display: inline-block; }
+    }
+  }
+
+  &-form {
+    display: flex;
+    justify-content: flex-end;
+    // position: absolute;
+    // top: 3px;
+    // right: 0;
+    // display: flex;
+    // justify-content: flex-end;
+    // width: calc(100vw - 20px);
+    // visibility: hidden;
+    // opacity: 0;
+    // transition: visibility 0s, opacity 0s;
+
+    &.is-active {
+      // visibility: visible;
+      // opacity: 1;
+
+      .input-wrapper {
+        transform: scaleX(1);
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .site-header__search-submit {
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    .input-wrapper {
+      position: absolute;
+      top: 0;
+      right: 20px;
+      bottom: 0;
+      width: calc(100vw - 40px);
+      background-color: $color__orange;
+      border: 0;
+      border-radius: 40px 0 0 40px;
+      transform: scaleX(0);
+      transform-origin: 100% 50%;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0s, transform 0.3s 0.3s linear;
+    }
+
+    .input--search {
+      
+    }
+  }
+
+  &-submit {
+    position: absolute;
+    z-index: 10;
+    padding: 0;
+    @extend %search-btn;
+    background-color: $color__white;
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0s;
+  }
 }
 

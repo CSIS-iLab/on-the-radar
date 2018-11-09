@@ -1,0 +1,37 @@
+<!-- <div class="site-header__search">
+  <button class="btn btn--transparent site-header__search-trigger" aria-expanded="false" aria-label="Search the Site">
+    <i class="icon-search"></i>
+    <i class="icon-close"></i>
+  </button>
+  <form class="site-header__search-form" method="get" action="/search/" role="search">
+    <fieldset>
+      <input type="search" class="input input--search" id="header-search" placeholder="{{ site.data.language.search_placeholder }}"
+        autocomplete="off" name="q" />
+    </fieldset>
+    <button class="btn site-header__search-submit" aria-label="Perform search" type="submit">
+      <i class="icon-search"></i>
+    </button>
+  </form>
+</div> -->
+
+<div class="site-header__search">
+  <!-- <button class="btn btn--transparent site-header__search-trigger" aria-expanded="false" aria-label="Search the Site">
+    <i class="icon-search"></i>
+    <i class="icon-close"></i>
+  </button> -->
+  <form class="site-header__search-form" method="get" action="/search/" role="search">
+    <label for="header-search" class="btn btn--transparent site-header__search-open js-search-trigger" aria-label="Search the Site" role="button" tabindex="0">
+      <i class="icon-search"></i>
+    </label>
+    <div class="input-wrapper">
+      <button class="btn btn--transparent site-header__search-close js-search-trigger" aria-label="Close Search">
+        <i class="icon-close"></i>
+      </button>
+      <input type="search" class="input input--search" id="header-search" placeholder="{{ site.data.language.search_placeholder }}"
+          autocomplete="off" name="q" />
+    </div>
+    <button class="btn site-header__search-submit" aria-label="Perform search" type="submit">
+      <i class="icon-search"></i>
+    </button>
+  </form>
+</div>
