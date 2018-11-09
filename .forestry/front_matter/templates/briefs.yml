@@ -30,7 +30,7 @@ fields:
         section: ''
         file: _data/brief-tech.yml
         path: type
-    name: Type
+    name: type
     default: []
     label: Type
   - type: list
