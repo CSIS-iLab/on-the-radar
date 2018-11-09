@@ -33,25 +33,36 @@ layout: default
   </section>
 
   <section class="archive__sidebar">
-      {% if page.filter_entries %}
-            <div class="section-title pagination--hide-no-results">Filter Entries</div>
-          {% if page.permalink == '/resources/' %}
-            <div class="ais-header">Name</div>
-            <div id="filter__name"></div>
-          {% endif %}
+    {% if page.filter_entries %}
+      <div class="section-title pagination--hide-no-results">Filter Entries</div>
 
-          <div id="filter__content-type" class="pagination--hide-no-results"></div>
-          <div id="filter__content-topic" class="pagination--hide-no-results"></div>
+      {% if page.permalink == '/resources/' %}
+        <div class="ais-header">Name</div>
+        <div id="filter__name"></div>
       {% endif %}
 
-      {% if page.refine_results %}
-      <div class="pagination--hide-no-results">
-        <div class="section-title">Refine Results</div>
-        {% for detail in site[collection.label][0].details %}
-          <div id="filter__details-{{ detail[0] }}" class="pagination__details">{{ detail[0] }}</div>
-        {% endfor %}
-      </div>
+      <div id="filter__content-type" class="pagination--hide-no-results"></div>
+      <div id="filter__content-topic" class="pagination--hide-no-results"></div>
+
+      {% if page.permalink == '/analysis/' %}
+        <div id="filter__content-related" class="pagination--hide-no-results"></div>
+      {% endif %}
     {% endif %}
+
+      {% if page.refine_results %}
+        <div class="pagination--hide-no-results">
+        <div class="section-title">Refine Results</div>
+
+        {% for detail in site[collection.label][0].details %}
+          {% if detail[0] != "event_date" %}
+            <div id="filter__details-{{ detail[0] }}" class="pagination__details">{{ detail[0] }}</div>
+          {% endif %}
+        {% endfor %}
+
+
+        </div>
+    {% endif %}
+
     <div id="filter__clear-all" class="pagination--hide-no-results"></div>
   </section>
 
