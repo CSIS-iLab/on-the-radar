@@ -7,14 +7,17 @@
   text-transform: uppercase;
 
   .post__header & {
-    @extend %page__type;
+    @extend %post-block__type;
+    color: $color__white;
   }
 
   .post-list &,
   .post-block & {
     @extend %post-block__type;
+    color: $color__orange;
 
     #{$type}__secondary {
+      @extend %post-block__subtype;
       color: $color__black;
     }
   }
