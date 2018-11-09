@@ -41,8 +41,7 @@ layout: default
           <div id="filter__content-type" class="pagination--hide-no-results"></div>
           <div id="filter__content-topic" class="pagination--hide-no-results"></div>
         </div>
-      {% endif %}
-      {% if page.permalink != '/search/' %}
+      {% else %}
       <div class="pagination--hide-no-results">
         <div class="section-title">Refine Results</div>
         {% for detail in site[collection.label][0].details %}
