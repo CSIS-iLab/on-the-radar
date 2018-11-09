@@ -23,8 +23,10 @@ layout: default
           <div class="{{ class }}__section-header" id="{{ this_letter }}">
             <div class="container">
             <h2>{{ this_letter }}</h2>
-              {% include back-to-top.html %}
-            </div>
+               {% if forloop.index !=1 %}
+                 {% include back-to-top.html %}
+               {% endif %}
+           </div>
           </div>
           <section class="page__content">
 
