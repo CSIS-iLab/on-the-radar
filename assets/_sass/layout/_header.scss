@@ -11,6 +11,7 @@
     position: relative;
     z-index: initial;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     height: header-height('mobile');
     padding-top: 1rem;
@@ -32,6 +33,7 @@
   &__title {
     flex: 1 0 auto;
     order: 2;
+    max-width: fit-content;
     text-align: center;
 
     @include breakpoint('large') {

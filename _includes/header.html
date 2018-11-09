@@ -6,14 +6,14 @@
       <img src="{{ 'assets/images/logos/otr/otr-logo_sm_full_light.svg' | relative_url }}" alt="{{ site.title }}" title="{{ site.title }}" class="site-header__logo site-header__logo--full" />
       <img src="{{ 'assets/images/logos/otr/otr-logo_lg_half_light.svg' | relative_url }}" alt="{{ site.title }}" title="{{ site.title }}" class="site-header__logo site-header__logo--half" />
     </a>
-    <nav class="site-header__nav">
-      <input type="checkbox" id="site-header__nav-trigger" class="site-header__nav-trigger" />
-      <label for="site-header__nav-trigger" class="site-header__nav-label" aria-label="Toggle Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
+    <nav class="site-header__nav" role="navigation">
+      <button class="site-header__nav-trigger" aria-expanded="false" aria-label="Toggle Menu">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
       {% include site-nav.html class="header__nav-menu" location="inHeader" %}
     </nav>
     <div class="site-header__search">S</div>
