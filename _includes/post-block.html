@@ -8,8 +8,8 @@
       {{ post.title | escape }}
     </a></h2>
       {%- include authors-list.html authors=post.authors -%}
-      {{page.authors}}
-      Date<br />
+      {%- include date.html -%}
+      {%- include last-updated.html -%}
   </header>
   {% if include.hide_excerpt != true %}
     <section class="post-block__content">
