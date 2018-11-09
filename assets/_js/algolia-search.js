@@ -9,37 +9,6 @@ import {
   clearAll
 } from 'instantsearch.js/es/widgets'
 
-const mapStatetoKeys = (uiState, urlKeyDivs, dataset) => {
-  let keyArray = urlKeyDivs
-    .map(f => f.replace('filter__details-', '').replace('filter__content-', ''))
-    .map(f => {
-      let param
-      if (dataset.collectionLabel === 'resources') {
-        param = f === 'type' ? 'type' : f === 'topic' ? 'topics' : f
-      } else if (dataset.collectionLabel === 'posts') {
-        param = f === 'type' ? 'categories' : f === 'topic' ? 'keywords' : f
-      } else if (dataset.refine_results) {
-        console.log(f === 'brief')
-        param = f === 'brief ' ? 'brief_type' : `details.${f}`
-      } else {
-        param = f
-      }
-
-      if (uiState.refinementList) {
-        let queries = uiState.refinementList[param]
-        if (queries) return { [param]: queries.join('~') }
-      }
-    })
-    .filter(k => k)
-
-  let keys = {}
-  keyArray.forEach(k => {
-    let key = Object.keys(k)[0]
-    keys[key] = k[key]
-  })
-  return keys
-}
-
 const AlgoliaSearch = function() {
   const dataset = document.querySelector('.archive').dataset
 
@@ -48,10 +17,14 @@ const AlgoliaSearch = function() {
   )
   const client = algoliasearch('7UNKAH6RMH', 'b9011cf7f49e60630161fcacf0e37d02')
 
-  let facetDivs = document.querySelectorAll("[id^='filter__details-']")
-  let typeDivs = document.querySelectorAll("[id^='filter__content-']")
+  const indexName = 'on_the_radar'
+  const searchParameters = {
+    hitsPerPage: 3
+  }
 
-  let urlKeyDivs = [...facetDivs, ...typeDivs].map(d => d.id)
+  searchParameters.filters = dataset.collectionLabel
+    ? `collection_label:'${dataset.collectionLabel}'`
+    : `NOT collection_label:Resources`
 
   const routing = {
     stateMapping: {
@@ -61,8 +34,7 @@ const AlgoliaSearch = function() {
           page: uiState.page
         }
 
-        let keys = mapStatetoKeys(uiState, urlKeyDivs, dataset)
-
+        let keys = mapStateToKeys(uiState, urlKeyDivs, dataset)
         return Object.assign(keys, state)
       },
       routeToState(routeState) {
@@ -77,20 +49,17 @@ const AlgoliaSearch = function() {
     }
   }
 
-  const searchParameters = {
-    hitsPerPage: 3
-  }
-
-  searchParameters.filters = dataset.collectionLabel
-    ? `collection_label:'${dataset.collectionLabel}'`
-    : `NOT collection_label:Resources`
-
   const search = instantsearch({
-    indexName: 'on_the_radar_posts',
+    indexName: indexName,
     searchClient: client,
     searchParameters,
     routing
   })
+
+  let facetDivs = document.querySelectorAll("[id^='filter__details-']")
+  let typeDivs = document.querySelectorAll("[id^='filter__content-']")
+
+  let urlKeyDivs = [...facetDivs, ...typeDivs].map(d => d.id)
 
   ////////// RESULTS
   search.addWidget(
@@ -107,7 +76,7 @@ const AlgoliaSearch = function() {
     })
   )
   if (dataset.filter_entries) {
-    //////////  TOPIC/TYPE REFINEMENT (Search)
+    //////////  TOPIC/TYPE/RELATED BRIEF REFINEMENT (Search)
     search.addWidget(
       refinementList({
         container: '#filter__content-type',
@@ -118,7 +87,6 @@ const AlgoliaSearch = function() {
               ? 'categories'
               : 'collection_title',
         operator: 'or',
-        sortBy: ['name:asc'],
         collapsible: {
           collapsed: true
         },
@@ -135,7 +103,6 @@ const AlgoliaSearch = function() {
         attributeName:
           dataset.collectionLabel === 'resources' ? 'topics' : 'keywords',
         operator: 'or',
-        sortBy: ['name:asc'],
         collapsible: {
           collapsed: true
         },
@@ -145,6 +112,23 @@ const AlgoliaSearch = function() {
         }
       })
     )
+
+    if (dataset.collectionLabel === 'posts') {
+      search.addWidget(
+        refinementList({
+          container: '#filter__content-related',
+          attributeName: 'related_briefs',
+          operator: 'or',
+          collapsible: {
+            collapsed: true
+          },
+          templates: {
+            header: 'Related Briefs<i class="icon-angle-sm-right"></i>',
+            item: '{{ label }} ({{ count }})'
+          }
+        })
+      )
+    }
 
     if (!dataset.collectionLabel) {
       ////////// SEARCH
@@ -225,12 +209,7 @@ const AlgoliaSearch = function() {
           collapsible: {
             collapsed: true
           },
-          transformData: {
-            item: data => {
-              data.customLabel = toTitleCase(data.label)
-              return data
-            }
-          },
+
           templates: {
             header: `${facet.replace(
               /_/g,
@@ -279,12 +258,17 @@ const AlgoliaSearch = function() {
     )
 
     ////////// RESULTS SORT
+    let searchIndex =
+      dataset.collectionLabel === 'workshops'
+        ? 'on_the_radar_workshops'
+        : 'on_the_radar'
+
     search.addWidget({
       init: function({ helper }) {
         document
           .querySelector('#results__sort .sort-oldest')
           .addEventListener('click', function() {
-            helper.setIndex('on_the_radar_asc').search()
+            helper.setIndex(`${searchIndex}_asc`).search()
             this.classList.add('selected')
             document.querySelector('.sort-newest').classList.remove('selected')
           })
@@ -296,7 +280,7 @@ const AlgoliaSearch = function() {
         document
           .querySelector('#results__sort .sort-newest')
           .addEventListener('click', function() {
-            helper.setIndex('on_the_radar_desc').search()
+            helper.setIndex(`${searchIndex}_desc`).search()
             this.classList.add('selected')
             document.querySelector('.sort-oldest').classList.remove('selected')
           })
@@ -373,10 +357,34 @@ function toggleElementsOnNoResults(elements, action) {
   elements.forEach(el => el.classList[action]('pagination--is-hidden'))
 }
 
-function toTitleCase(str) {
-  return str.replace(/\w\S*/g, function(txt) {
-    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+const mapStateToKeys = (uiState, urlKeyDivs, dataset) => {
+  let keyArray = urlKeyDivs
+    .map(f => f.replace('filter__details-', '').replace('filter__content-', ''))
+    .map(f => {
+      let param
+      if (dataset.collectionLabel === 'resources') {
+        param = f === 'type' ? 'type' : f === 'topic' ? 'topics' : f
+      } else if (dataset.collectionLabel === 'posts') {
+        param = f === 'type' ? 'categories' : f === 'topic' ? 'keywords' : f
+      } else if (dataset.refine_results) {
+        param = f === 'brief' ? 'brief_type' : `details.${f}`
+      } else {
+        param = f
+      }
+
+      if (uiState.refinementList) {
+        let queries = uiState.refinementList[param]
+        if (queries) return { [param]: queries.join('~') }
+      }
+    })
+    .filter(k => k)
+
+  let keys = {}
+  keyArray.forEach(k => {
+    let key = Object.keys(k)[0]
+    keys[key] = k[key]
   })
+  return keys
 }
 
 export default AlgoliaSearch
