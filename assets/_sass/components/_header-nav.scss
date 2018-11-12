@@ -13,6 +13,11 @@ $site-nav: '.site-header__nav';
     order: 2;
     max-width: unset;
   }
+
+  .site-header--minimal & {
+    align-self: flex-end;
+    margin-bottom: -6px;
+  }
 }
 
 #{$site-nav}-trigger {
