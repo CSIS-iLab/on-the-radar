@@ -10,6 +10,7 @@
       {%- include authors-list.html authors=post.authors -%}
       {%- include date.html -%}
       {%- include last-updated.html -%}
+      Event date: {{post.details.event_date | date: '%b %-d, %Y'}}<br />
   </header>
   {% if include.hide_excerpt != true %}
     <section class="post-block__content">
