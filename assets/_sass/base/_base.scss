@@ -20,6 +20,10 @@ body {
   background: $color__background-body;
 }
 
+.page-content {
+  margin-top: 2rem;
+}
+
 .wrapper {
   $sizes: ('medium', 'large', 'xlarge');
   max-width: wrapper-width('small');

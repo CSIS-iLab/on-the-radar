@@ -7,6 +7,7 @@
   $header: &;
   position: relative;
   z-index: 10;
+  transition: all 0.2s ease-in-out;
 
   .wrapper--expanded {
     position: relative;
@@ -28,6 +29,7 @@
       height: header-height('full');
       background-color: transparent;
       box-shadow: none;
+      transition: all 0.3s ease-in-out; 
     }
   }
 
@@ -113,11 +115,23 @@
     text-align: right;
   }
 
+  &--hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+
   &--minimal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+
     .wrapper--expanded {
       @include breakpoint('large-3') {
         height: header-height('minimal');
-        background-color: $color__blue; 
+        background-color: $color__blue;
+        @include box-shadow(0, 2px, 4px, 0, rgba($color__black, 0.41));
       }
     }
 
