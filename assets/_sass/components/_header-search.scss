@@ -6,6 +6,7 @@
 %search-btn {
   width: 40px;
   height: 40px;
+  padding: 0;
   @include font-size(20px);
   line-height: 2.5rem;
   border: 0;
@@ -19,30 +20,37 @@
   max-width: fit-content;
   text-align: right;
 
+  @include breakpoint('large-3') {
+    margin-top: 0.75rem;
+  }
+
   &-open {
     flex: 1;
     @extend %search-btn;
     color: $color__gray-lighter;
     background-color: transparent;
 
+    @include breakpoint('large-3') {
+      color: $color__white;
+      background-color: $color__orange;
+      border-radius: 50%;
+    }
+
     &:hover,
     &:focus {
       color: $color__white;
       background-color: $color__blue-dark;
       border-radius: 50%;
-    }
 
-    .icon-close {
-      display: none;
+      @include breakpoint('large-3') {
+        background-color: $color__orange-dark;
+      }
     }
 
     &.is-active {
       display: none;
       visibility: hidden;
       opacity: 0;
-
-      .icon-search { display: none; }
-      .icon-close { display: inline-block; }
     }
   }
 
@@ -69,6 +77,7 @@
       top: 0;
       right: 20px;
       bottom: 0;
+      z-index: 5;
       display: flex;
       align-items: center;
       width: calc(100vw - 40px);
@@ -82,18 +91,26 @@
       opacity: 0;
       transition: visibility 0s, opacity 0s, transform 0.3s 0.3s linear;
 
-      @include breakpoint('medium') {
-        width: calc(100vw - 50px);
+      @include breakpoint($break: 'medium', $until: 'large-3') {
+        top: calc((100% - 55px) / 2);
+        right: -5px;
+        width: calc(100vw - 20px);
+        height: 55px;
+        border-radius: 40px;
+      }
+      
+      @include breakpoint($break: 'large', $until: 'large-3') {
+        width: calc(100vw - (56px - 1rem));
       }
 
-      @include breakpoint('large') {
-        width: calc(100vw / 1.9);
-        max-width: 700px;
+      @include breakpoint('large-3') {
+        width: 675px;
       }
     }
 
     .input--search {
       width: 100%;
+      margin-right: 1rem;
       color: $color__orange-light;
       @include font-size(20px);
       line-height: 1;
@@ -118,13 +135,26 @@
     border-radius: 50%;
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0s;
+    transition: visibility 0s, opacity 0s, color 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: $color__orange;
+      background-color: $color__white;
+    }
   }
 
   &-close {
+    padding: 0;
     color: $color__orange-light;
     @include font-size(30px);
     line-height: 1;
+    background-color: transparent;
+
+    &:hover {
+      color: $color__white;
+      background-color: transparent;
+    }
   }
 }
 
