@@ -1,4 +1,3 @@
-
 /*===============================
 =            Archive            =
 ===============================*/
@@ -19,7 +18,7 @@
     'featured'
     'content'
     'page-footer';
-  
+
   @include breakpoint('medium') {
     grid-template-areas:
       'page-header page-header'
@@ -90,6 +89,10 @@
 
   .page__footer {
     grid-area: page-footer;
+
+    @include breakpoint('medium') {
+      margin-right: 0;
+      margin-left: sidebar-width('large');
+    }
   }
 }
-

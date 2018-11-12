@@ -1,5 +1,10 @@
 <section class="page__header">
-  <h1 class="page__title">{{ page.title | escape }}</h1>
+  {%- if page.permalink == '/search/' -%}
+    <span>Search&mdash;</span><input id="search-input" class="archive__search" placeholder="{{ site.data.language.archive.search_placeholder }}">
+  {%- else -%}
+    <h1 class="page__title" itemprop="name headline">{{ page.title | escape }}</h1>
+  {%- endif -%}
+
   {% assign content = content | strip_newlines %}
   {%- if content != '' -%}
   <div class="page__desc">{{ content }}</div>

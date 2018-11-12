@@ -1,7 +1,7 @@
 ---
 title: Tech Primer Test
 details:
-  Type:
+  type:
   - Platform Control and Information Support
   - Issue briefs
   characteristics:

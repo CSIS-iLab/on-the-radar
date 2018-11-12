@@ -1,27 +1,100 @@
 ---
 layout: default
 ---
-<article class="archive">
+{% assign collection = site.collections | where: "title", page.title | first %}
+{% if page.refine_results %}
+  {% assign refinement = 'data-refine_results="true"' %}
+{% elsif page.filter_entries %}
+  {% assign refinement = 'data-filter_entries="true"' %}
+{% endif %}
+
+<article class="archive archive--{{ page.title | slugify }}" {{ refinement }} data-collection-label="{{ collection.label }}" role="content" itemscope itemtype="http://schema.org/BlogPosting" {{ data_facet }} {{ data_facet_value }}>
 
   {% include page-header.html %}
 
   <section class="archive__filter-type">
-    Filter by Type
+    {% if page.permalink == '/issue-briefs/' %}
+      <div id="filter__content-brief-clear"></div>
+      <div class="all-result-count-placeholder"> </div>
+      <div id="filter__content-brief"></div>
+    {% endif %}
   </section>
   <section class="archive__results">
-    Filter Results<br />
-    Sort
+    {% if page.permalink != '/resources/' %}
+      <div id="results__summary_page"></div>
+    {% endif %}
+      <div id="results__summary_count"></div>
+    {% if page.permalink != '/resources/' %}
+      <div id="results__sort">
+        <span class="sort-oldest">{{ site.data.language.archive.oldest }}</span>
+        <span class="sort-newest selected-sort">{{ site.data.language.archive.newest }}</span>
+      </div>
+    {% endif %}
   </section>
+
   <section class="archive__sidebar">
-    Refine Results
+    {% if page.filter_entries %}
+      <div class="section-title pagination--hide-no-results">{{ site.data.language.archive.filter_entries }}</div>
+
+      {% if page.permalink == '/resources/' %}
+        <div class="ais-header">{{ site.data.language.archive.resource_name }}</div>
+        <div id="filter__name"></div>
+      {% endif %}
+
+      <div id="filter__content-type" class="pagination--hide-no-results"></div>
+      <div id="filter__content-topic" class="pagination--hide-no-results"></div>
+
+      {% if page.permalink == '/analysis/' %}
+        <div id="filter__content-related" class="pagination--hide-no-results"></div>
+      {% endif %}
+    {% endif %}
+
+      {% if page.refine_results %}
+        <div class="pagination--hide-no-results">
+        <div class="section-title">{{ site.data.language.archive.refine_results }}</div>
+
+        {% for detail in site[collection.label][0].details %}
+          {% if detail[0] != "event_date" %}
+            <div id="filter__details-{{ detail[0] }}" class="pagination__details">{{ detail[0] }}</div>
+          {% endif %}
+        {% endfor %}
+
+
+        </div>
+    {% endif %}
+
+    <div id="filter__clear-all" class="pagination--hide-no-results"></div>
   </section>
+
+  {% if page.permalink == '/analysis/' %}
   <section class="archive__featured">
-    Featured Post
+    {{ site.data.language.archive.feature_post }}
   </section>
-  <section class="archive__content">
-    {% for post in site.posts %}
-    {% include post-block.html %}
-    {% endfor %}
-  </section>
-  {% include page-footer.html pagination = true %}
+  {% endif %}
+
+   <section id="hits" class="archive__content">
+     {% if page.post_list_collection == 'all' %}
+       {% assign posts = site.posts | concat: site.workshops | concat: site.briefs %}
+     {% elsif page.post_list_collection == 'resources'  %}
+       {% assign posts = site.resources %}
+     {% else %}
+       {% assign posts = site[collection.label] %}
+     {% endif %}
+
+
+    {% if page.permalink != '/resources/' %}
+      {%- for post in posts -%}
+        {% include post-block.html %}
+      {%- endfor -%}
+    {% else %}
+      {%- for post in site.resources -%}
+        {% include post-block.html %}
+      {%- endfor -%}
+    {% endif %}
+
+   </section>
+
+  {% if page.permalink != '/resources/' %}
+    {% include page-footer.html pagination = true %}
+  {% endif %}
 </article>

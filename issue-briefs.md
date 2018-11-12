@@ -1,9 +1,9 @@
 ---
 layout: archive
-title: Analysis
-permalink: /analysis/
+title: Issue Briefs
+permalink: /issue-briefs/
 use_algolia: true
-filter_entries: true
+refine_results: true
 ---
 
 Read analysis on the changing situational awareness environment and its implications for stability.

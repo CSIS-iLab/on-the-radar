@@ -17,3 +17,11 @@ search_placeholder: Search
 tagline: The future of situational awareness and strategic stability
 published: Published
 last_updated: Last Updated
+archive:
+  search_placeholder: Search
+  oldest: Oldest
+  newest: Newest
+  resource_name: Name
+  filter_entries: Filter Entries
+  refine_results: Refine Results
+  featured_post: Featured Post
