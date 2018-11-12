@@ -1,0 +1,10 @@
+<dl class="{{ class }}__item" id="{{ item.title | slugify }}">
+  <dt class="{{ class }}__item-title">{{ item.title }}</dt>
+  {% if item.acronym.size > 0 %}
+    <dd class="{{ class }}__item-acronym">
+      <span class="label">Acronym</span>
+      {{ item.acronym }}
+    </dd>
+  {% endif %}
+  <dd class="{{ class }}__item-description">{{ item.description }}</dd>
+</dl>

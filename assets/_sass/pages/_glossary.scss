@@ -1,0 +1,192 @@
+/*===============================
+=            Glossary            =
+===============================*/
+.layout-glossary {
+  &__jump-menu {
+    padding: 0 content-padding('small');
+    text-transform: uppercase;
+    background-color: $color__gray-lighter;
+
+    @include breakpoint($break: 'large', $dir: 'max-width') {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @include breakpoint('large') {
+      padding-top: 20px;
+      padding-bottom: 16px;
+    }
+
+    &-trigger {
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+
+      @include breakpoint($break: 'large', $dir: 'max-width') {
+        &:not(:checked) {
+          ~ .layout-glossary__jump-menu {
+            padding-bottom: 0;
+          }
+
+          ~ label .icon-angle-lg-down::before {
+            transform: rotate(-90deg);
+          }
+
+          ~ .layout-glossary__jump-menu-letters {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &-letters {
+      display: grid;
+      flex-basis: 100%;
+      grid-gap: 2vw;
+      grid-template-columns: repeat(auto-fill, minmax(auto, 20px));
+      margin: 20px 0;
+
+      @include breakpoint('large') {
+        display: inline;
+      }
+    }
+
+    &-letters a {
+      @extend %facets__link-item--base;
+      margin-right: 0.2rem;
+
+      &:not(.enabled) {
+        color: $color__gray;
+        cursor: default;
+      }
+
+      &:not(.disabled):hover {
+        color: $color__astral;
+      }
+    }
+  }
+
+  .header-label {
+    display: inline-block;
+    @extend %facets__header-label;
+
+    @include breakpoint($break: 'large', $dir: 'max-width') {
+      display: flex;
+      flex-basis: calc(100% + #{content-padding('small')} * 2);
+      justify-content: space-between;
+      margin: 0 -#{content-padding('small')};
+      padding: 24px content-padding('small') content-padding('small');
+      border-bottom: 1px solid $color__gray;
+      cursor: pointer;
+    }
+
+    @include breakpoint('large') {
+      position: relative;
+      padding-right: 20px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: calc(100% - 10px);
+        height: calc(100% + 20px);
+        border-right: 1px solid $color__gray-light;
+      }
+    }
+
+    i {
+      @include breakpoint('large') {
+        display: none;
+      }
+
+      &::before {
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  &__section-header {
+    background-color: $color__orange;
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      padding-left: content-padding('small');
+    }
+
+    @include breakpoint($break: 'large-2', $dir: 'max-width') {
+      padding-left: content-padding('large');
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: calc(50% + 680px / 2);
+      margin: 0 0 0 auto;
+      padding-right: 20px;
+      background-color: $color__off-white;
+    }
+  }
+
+  &__section-header h2 {
+    position: relative;
+    padding: 0.5rem 1.5rem 0.5rem 0;
+    color: $color__white;
+    background-color: $color__orange;
+    border-radius: 0 50% 50% 0;
+  }
+
+  &__section-header .back-to-top {
+    @include breakpoint($break: 'small', $dir: 'max-width') {
+      display: none;
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin: 0;
+    padding: 1.5rem 0;
+
+    &:not(:last-of-type)::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      width: 96px;
+      border-bottom: 1px solid $color__gray;
+    }
+
+    &:last-of-type {
+      padding-bottom: 2rem;
+
+      @include breakpoint('large') {
+        padding-bottom: 4rem;
+      }
+    }
+  }
+
+  &__item-title {
+    @extend %post-block__title;
+
+    @include breakpoint('medium') {
+      @include font-size(20px);
+    }
+
+    &:hover {
+      color: initial;
+    }
+  }
+
+  &__item-acronym {
+    margin-left: 0;
+    @extend %labeltext__text;
+
+    .label {
+      @extend %labeltext__label;
+      color: $color__gray-dark;
+    }
+  }
+
+  &__item-description {
+    margin-top: 0.5rem;
+    margin-left: 0;
+  }
+}

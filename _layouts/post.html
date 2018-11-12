@@ -9,9 +9,8 @@ layout: default
   </header>
   <section class="post__meta">
     {%- include authors-list.html -%}
-    Published<br />
-    <span class="post__meta-label">Last Updated:</span> {{ page.last-modified-date | date: '%B %d, %Y' }}<br />
-    <span class="post__meta-label">Last Updated:</span> {{ page.last-modified-date }}<br />
+    {%- include date.html -%}
+    {%- include last-updated.html -%}
     Photo Caption
     Social Share
   </section>
