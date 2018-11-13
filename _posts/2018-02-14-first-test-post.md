@@ -8,8 +8,8 @@ excerpt: 'Lorem ipsum dolor sit amet, ante rutrum in, eu ligula sem scelerisque 
   mollis, porttitor integer nam diam pellentesque in, wisi quisque suscipit feugiat
   donec. '
 authors:
-- _authors/ruth-barking-ginsberg.md
-- _authors/author-2.md
+- _authors/jane-doe.md
+- _authors/john-dot.md
 related_briefs:
 - _briefs/country-profile.md
 keywords:

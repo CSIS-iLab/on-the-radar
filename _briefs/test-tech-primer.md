@@ -17,7 +17,7 @@ excerpt: or sit amet, ante rutrum in, eu ligula sem scelerisque eu mollis, portt
   mi imperdiet, in nec proin ullamcorper massa lacus dui. Vel praesent elit porttitor
   ut orci phasellus, sit tristique mauri
 authors:
-- _authors/ruth-barking-ginsberg.md
+- _authors/john-dot.md
 brief_type: Tech Primer
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
 image_caption: ''
