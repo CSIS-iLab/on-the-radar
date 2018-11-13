@@ -3,6 +3,8 @@ title: Country Profile Test
 details:
   Type: []
   characteristics:
+  - Precision
+  - Speed
   - Detectability
   risk_factors:
   - Predictive
