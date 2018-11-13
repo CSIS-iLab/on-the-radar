@@ -10,7 +10,9 @@ authors:
 categories:
 - Category 1
 keywords:
-- Keyword 2
+- Hydrophones
+- Anti-Submarine Warfare (ASW)
+- Synthetic Aperture Sonar
 related_briefs:
 - _briefs/test-tech-primer.md
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
