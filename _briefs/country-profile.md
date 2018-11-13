@@ -1,7 +1,9 @@
 ---
 title: Country Profile Test
 details:
-  type: []
+  type:
+  - Sensors
+  - Cyber
   characteristics:
   - Precision
   - Speed

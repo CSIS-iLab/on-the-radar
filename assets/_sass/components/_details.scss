@@ -1,5 +1,3 @@
-
-
 .details {
   &__title {
     @extend %facets__section-title;
@@ -9,5 +7,9 @@
   &__subtitle {
     @extend %labeltext__subheading;
     text-transform: uppercase;
+  }
+
+  &__type {
+    @extend %labeltext__text;
   }
 }

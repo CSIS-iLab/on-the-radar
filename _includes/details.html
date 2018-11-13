@@ -1,18 +1,17 @@
 {% assign details = page.details %}
-{% unless page.collection == 'posts' %}
-  {% assign details = page.categories %}
-{% endunless %}
+{% if page.collection == 'authors' or page.collection == 'posts' %}
+  {% assign details = null %}
+{% endif %}
 
-
-<div class="details">
-  <span class="details__title">{{ site.data.language.details.title }}</span>
-  <span class="details__subtitle">{{ detail.category }}</span>
-  {{ details }}
-  {{ detail[0] }}
-  <!-- {% for detail in details %} -->
-    <span class="details__subtitle">{{ detail.category }} detail title</span>
-      <span class="details__title">{{ site.data.language.details.title }} detail titlte</span>
-
-    </div>
-  <!-- {% endfor %} -->
-</div>
+{% if details %}
+  <div class="details">
+    <span class="details__title">{{ site.data.language.details.title }}</span>
+    {% for detail in details %}
+      <!-- {% if detail[0] == 'risk_factors' %}
+        {{ assign detail[0] == 'Risk Factors' }}
+      {% endif %} -->
+      <div class="details__subtitle">{{ detail[0] | replace: "_", " " }}</div>
+      <div class="details__type">{{ detail[1] }}</div>
+    {% endfor %}
+  </div>
+{% endif %}
