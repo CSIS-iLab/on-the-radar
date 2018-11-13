@@ -17,7 +17,7 @@
       {% else %}
         {% for detail in details %}
           <div class="details__info">
-            <div class="details__subtitle">{{ detail[0] | replace: "_", " " | title }}</div>
+            <div class="details__subtitle">{{ detail[0] | replace: "_", " " | title | date: site.date_format }}</div>
             {% for sub_detail in detail[1] %}
               <div class="details__type">{{ sub_detail }}</div>
             {% endfor %}
