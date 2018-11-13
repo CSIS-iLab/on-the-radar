@@ -10,13 +10,14 @@
 
     @include breakpoint($break: 'medium', $until: 'large') {
       display: inline-block;
-      width: 33%;
+      width: 32%;
+      vertical-align: top;
     }
   }
 
   &__subtitle {
     @extend %labeltext__subheading;
-    padding-bottom: 0.2em;
+    padding-bottom: 0.3em;
     text-transform: uppercase;
   }
 
