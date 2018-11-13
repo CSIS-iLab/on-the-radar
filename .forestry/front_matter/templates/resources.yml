@@ -31,5 +31,3 @@ fields:
 - type: text
   name: optional
   label: Optional
-pages:
-- _resources/test-resource-still-fixing-front-matter.md
