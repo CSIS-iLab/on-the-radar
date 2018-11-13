@@ -10,6 +10,8 @@ date_format: '%B %-d, %Y'
 
 cloudinary_url: https://res.cloudinary.com/csisideaslab/image/upload/
 
+keyword_url: /search/?dFR[keywords][0]=
+
 # Content types will be defined here
 collections:
   posts:

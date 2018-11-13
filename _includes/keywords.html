@@ -1,0 +1,12 @@
+HELLO
+{{ page.keywords }}
+{% if page.keywords.size > 0 %}
+<div class="tag-list">
+  <span class="tag-list__title">{{ site.data.language.analysis.related_reading }}</span>
+  <ul>
+    {% for tag in page.keywords %}
+    <li class="tag-list__tag"><a href="{{ site.keyword_url | append: tag | relative_url }}">{{ tag }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
