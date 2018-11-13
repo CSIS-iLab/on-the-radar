@@ -1,15 +1,32 @@
+{% if page.layout == 'post' %}
+  {% assign breadcrumb_current = page.title %}
+
+  {% if page.collection == 'resources' or page.collection == 'workshops' %}
+    {% assign breadcrumb_home = page.type %}
+  {% else %}
+    {% assign breadcrumb_home_path = site.collections | where: "label", page.collection | first %}
+    {% assign breadcrumb_home = breadcrumb_home_path.title %}
+  {% endif %}
+
+  {% if page.collection == 'briefs' %}
+    {% assign breadcrumb_past = page.brief_type %}
+  {% else %}
+    {% assign breadcrumb_past = null %}
+  {% endif %}
+{% endif %}
+
 {% if page.layout == 'archive' %}
-  {% assign breadcrumb_past = site.collections | where: "label", page.collection | first %}
-  {% assign breadcrumb_current = site.collections | where: "label", page.collection | first %}
+  {% assign breadcrumb_home == 'home' %}
+  {% assign breadcrumb_past == 'past' %}
+  {% assign breadcrumb_current == 'current' %}
 {% endif %}
 
-{% if page.layout == 'default' %}
-  {% assign breadcrumb_past = site.collections | where: "label", page.collection | first %}
-  {% assign breadcrumb_current = page.collection %}
-{% endif %}
-
+{% if page.breadcrumbs == true or page.layout == 'archive' %}
 <div class="breadcrumbs">
-  <span class="breadcrumbs__past">{{ breadcrumb_past }} Home</span>
-  {{ site.data.language.slash }}
-  <span class="breadcrumbs__present">{{ breadcrumb_current | title }} Title</span>
+  <span class="breadcrumbs__past">{{ breadcrumb_home }}</span>
+  {% if breadcrumb_past %}
+    <span class="breadcrumbs__past">{{ breadcrumb_past }}</span>
+  {% endif %}
+  <span class="breadcrumbs__present">{{ breadcrumb_current | title }}</span>
 </div>
+{% endif %}
