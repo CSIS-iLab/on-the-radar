@@ -21,10 +21,18 @@ $browser-context: 16px;
   @return return-map-value($size__wrapper-max-width, $breakpoint);
 }
 
+@function wrapper-padding($breakpoint) {
+  @return return-map-value($size__wrapper-padding, $breakpoint);
+}
+
 @function sidebar-width($breakpoint) {
   @return return-map-value($size__sidebar-max-width, $breakpoint);
 }
 
 @function content-padding($breakpoint) {
   @return return-map-value($size__content-padding, $breakpoint);
+}
+
+@function header-height($breakpoint) {
+  @return return-map-value($size__header-height, $breakpoint);
 }

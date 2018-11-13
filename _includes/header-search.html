@@ -1,0 +1,17 @@
+<div class="site-header__search">
+  <form class="site-header__search-form" method="get" action="/search/" role="search">
+    <label for="header-search" class="btn site-header__search-open js-search-trigger" aria-label="Search the Site" role="button" tabindex="0">
+      <i class="icon-search"></i>
+    </label>
+    <div class="input-wrapper">
+      <button type="button" class="btn site-header__search-close js-search-trigger-close" aria-label="Close Search">
+        <i class="icon-close"></i>
+      </button>
+      <input type="search" class="input input--search" id="header-search" placeholder="{{ site.data.language.search_placeholder }}"
+          autocomplete="off" name="q" />
+    </div>
+    <button class="btn site-header__search-submit" aria-label="Perform search" type="submit">
+      <i class="icon-search"></i>
+    </button>
+  </form>
+</div>

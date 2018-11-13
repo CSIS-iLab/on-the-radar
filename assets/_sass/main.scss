@@ -12,12 +12,16 @@
 
 @import 'base/typography';
 @import 'base/base';
+@import 'base/helpers';
 
 @import 'components/authors-block';
 @import 'components/back-to-top';
 @import 'components/buttons';
 @import 'components/content-type';
 @import 'components/definition';
+@import 'components/forms';
+@import 'components/header-nav';
+@import 'components/header-search';
 @import 'components/page-footer';
 @import 'components/page-header';
 @import 'components/pagination';
