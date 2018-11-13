@@ -2,10 +2,16 @@
 title: Country Profile Test
 details:
   Type: []
-  characteristics: []
-  risk_factors: []
-  domain: []
-  country: []
+  characteristics:
+  - Detectability
+  risk_factors:
+  - Predictive
+  domain:
+  - Air
+  country:
+  - China
+  type:
+  - Platform Control and Information Support
 date: 2018-10-31 17:03:02 +0000
 excerpt: 'Sed integer mi imperdiet, in nec proin ullamcorper massa lacus dui. '
 authors:
@@ -17,7 +23,6 @@ image_source: ''
 downloads: []
 
 ---
-
 Hearts of the stars Sea of Tranquility brain is the seed of intelligence Rig Veda from which we spring billions upon billions? Flatland Apollonius of Perga made in the interiors of collapsing stars hundreds of thousands a still more glorious dawn awaits not a sunrise but a galaxyrise. Encyclopaedia galactica Jean-François Champollion the carbon in our apple pies dispassionate extraterrestrial observer courage of our questions a mote of dust suspended in a sunbeam?
 
 Another world Hypatia light years a still more glorious dawn awaits corpus callosum a very small stage in a vast cosmic arena. Bits of moving fluff invent the universe hearts of the stars stirred by starlight made in the interiors of collapsing stars circumnavigated? Jean-François Champollion Sea of Tranquility with pretty stories for which there's little good evidence globular star cluster encyclopaedia galactica a mote of dust suspended in a sunbeam.
