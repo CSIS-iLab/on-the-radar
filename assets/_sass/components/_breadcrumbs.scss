@@ -1,0 +1,15 @@
+.breadcrumbs {
+  &__past {
+    @extend %breadcrumbs__past;
+
+    &::before {
+      content: "/";
+      font-size: 1.53em;
+      display: block;
+    }
+  }
+
+  &__present {
+    @extend %breadcrumbs;
+  }
+}

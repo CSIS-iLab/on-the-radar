@@ -1,16 +1,15 @@
-{% if post.collection.size > 0 %}
-  {% assign page = post %}
+{% if page.layout == 'archive' %}
+  {% assign breadcrumb_past = site.collections | where: "label", page.collection | first %}
+  {% assign breadcrumb_current = site.collections | where: "label", page.collection | first %}
 {% endif %}
 
-{% assign breadcrumb_past = site.collections | where: "label", page.collection | first %}
-<!-- {% unless post.layout == 'archive' %}
-  {% assign breadcrumb_past = page.title %}
-{% endunless %} -->
-
-{% assign breadcrumb_present = post.collection | minus: 1 %}
+{% if page.layout == 'default' %}
+  {% assign breadcrumb_past = site.collections | where: "label", page.collection | first %}
+  {% assign breadcrumb_current = page.collection %}
+{% endif %}
 
 <div class="breadcrumbs">
-  <span class="breadcrumb__past">{{}}{{ breadcrumb_past }} {{ site.data.language.slash }} </span>
-  {{ page.collection }}
-  {{ breadcrumb_present | capitalize }}
+  <span class="breadcrumbs__past">{{ breadcrumb_past }} Home</span>
+  {{ site.data.language.slash }}
+  <span class="breadcrumbs__present">{{ breadcrumb_current | title }} Title</span>
 </div>

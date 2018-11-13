@@ -37,6 +37,7 @@ defaults:
     layout: post
     permalink: "/analysis/:slug/"
     view_all_url: "/analysis/"
+    breadcrumbs: true
 - scope:
     path: ''
     type: 'briefs'
@@ -44,6 +45,7 @@ defaults:
     layout: post
     permalink: "/issue-briefs/:slug/"
     view_all_url: "/issue-briefs/"
+    breadcrumbs: true
 - scope:
     path: ''
     type: 'workshops'
@@ -51,12 +53,14 @@ defaults:
     layout: post
     permalink: "/workshops/:slug/"
     view_all_url: "/workshops/"
+    breadcrumbs: true
 - scope:
     path: ''
     type: 'authors'
   values:
     layout: archive
     permalink: "/authors/:slug/"
+    breadcrumbs: true
 
 # Build settings
 markdown: kramdown
