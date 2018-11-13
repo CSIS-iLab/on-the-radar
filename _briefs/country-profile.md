@@ -7,6 +7,7 @@ details:
   risk_factors:
   - Predictive
   domain:
+  - Sea
   - Air
   country:
   - China
