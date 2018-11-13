@@ -1,15 +1,27 @@
 .details {
   &__title {
     @extend %facets__section-title;
+    padding-bottom: 0.6em;
     text-transform: uppercase;
+  }
+
+  &__info {
+    padding-bottom: 0.5em;
+
+    @include breakpoint($break: 'medium', $until: 'large') {
+      display: inline-block;
+      width: 33%;
+    }
   }
 
   &__subtitle {
     @extend %labeltext__subheading;
+    padding-bottom: 0.2em;
     text-transform: uppercase;
   }
 
   &__type {
     @extend %labeltext__text;
+    padding-bottom: 0.2em;
   }
 }

@@ -5,13 +5,14 @@
 
 {% if details %}
   <div class="details">
-    <span class="details__title">{{ site.data.language.details.title }}</span>
-    {% for detail in details %}
-      <!-- {% if detail[0] == 'risk_factors' %}
-        {{ assign detail[0] == 'Risk Factors' }}
-      {% endif %} -->
-      <div class="details__subtitle">{{ detail[0] | replace: "_", " " }}</div>
-      <div class="details__type">{{ detail[1] }}</div>
-    {% endfor %}
+    <div class="details__title">{{ site.data.language.details.title }}</div>
+      {% for detail in details %}
+        <div class="details__info">
+          <div class="details__subtitle">{{ detail[0] | replace: "_", " " | title }}</div>
+          {% for sub_detail in detail[1] %}
+            <div class="details__type">{{ sub_detail }}</div>
+          {% endfor %}
+        </div>
+      {% endfor %}
   </div>
 {% endif %}
