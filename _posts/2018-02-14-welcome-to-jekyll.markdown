@@ -12,8 +12,9 @@ authors:
 related_briefs:
 - _briefs/country-profile.md
 keywords:
-- Keyword 2
-- Keyword 1
+- Anti-Submarine Warfare (ASW)
+- Drone
+- Unmanned
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
 image_source: Getty Images
 image_caption: Test Image
