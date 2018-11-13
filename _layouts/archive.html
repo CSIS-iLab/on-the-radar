@@ -12,58 +12,67 @@ layout: default
 
   {% include page-header.html %}
 
+  {% if page.permalink == '/issue-briefs/' %}
   <section class="archive__filter-type">
-    {% if page.permalink == '/issue-briefs/' %}
-      <div id="filter__content-brief-clear"></div>
-      <div class="all-result-count-placeholder"> </div>
-      <div id="filter__content-brief"></div>
-    {% endif %}
+      <input type="checkbox" class="trigger" id="archive__filter-type">
+      <label for="archive__filter-type" class="section-title">{{site.data.language.archive.filter_by_type}}</label>
+      <div id="filter__content-brief-clear" class="widget"></div>
+      <div id="filter__content-brief-count" class="widget"></div>
+      <div id="filter__content-brief" class="widget"></div>
   </section>
+  {% endif %}
   <section class="archive__results">
-    {% if page.permalink != '/resources/' %}
-      <div id="results__summary_page"></div>
-    {% endif %}
-      <div id="results__summary_count"></div>
-    {% if page.permalink != '/resources/' %}
+      <div id="results__summary">
+        {% if collection.label != 'resources' %}
+          <div id="results__summary_page"></div> |
+        {% endif %}
+          <div id="results__summary_count"></div>
+      </div>
+      {% if collection.label != 'resources' %}
+
       <div id="results__sort">
-        <span class="sort-oldest">{{ site.data.language.archive.oldest }}</span>
-        <span class="sort-newest selected-sort">{{ site.data.language.archive.newest }}</span>
+        <span class="summary-label">Sort by</span>
+        <span class="sort sort-oldest ais-root">{{ site.data.language.archive.oldest }}</span> | <span class="sort sort-newest selected-sort ais-root">{{ site.data.language.archive.newest }}</span>
       </div>
     {% endif %}
   </section>
 
   <section class="archive__sidebar">
     {% if page.filter_entries %}
-      <div class="section-title pagination--hide-no-results">{{ site.data.language.archive.filter_entries }}</div>
+      <input type="checkbox" id="filter_entries" class="trigger" />
+      <label for="filter_entries" class="section-title algolia--hide-no-results">{{ site.data.language.archive.filter_entries }}</label>
 
-      {% if page.permalink == '/resources/' %}
-        <div class="ais-header">{{ site.data.language.archive.resource_name }}</div>
-        <div id="filter__name"></div>
+      {% if collection.label == 'resources' %}
+        <div class="ais-header widget name-search__header">{{ site.data.language.archive.resource_name }}</div>
+        <div id="filter__name" class="widget"></div>
       {% endif %}
 
-      <div id="filter__content-type" class="pagination--hide-no-results"></div>
-      <div id="filter__content-topic" class="pagination--hide-no-results"></div>
+      <div id="filter__content-type" class="widget algolia--hide-no-results"></div>
+      <div id="filter__content-topic" class="widget algolia--hide-no-results"></div>
 
       {% if page.permalink == '/analysis/' %}
-        <div id="filter__content-related" class="pagination--hide-no-results"></div>
+        <div id="filter__content-related" class="widget algolia--hide-no-results"></div>
       {% endif %}
+
+      <div id="filter__clear-all" class="widget algolia--hide-no-results"></div>
     {% endif %}
 
       {% if page.refine_results %}
-        <div class="pagination--hide-no-results">
-        <div class="section-title">{{ site.data.language.archive.refine_results }}</div>
+        <div class="algolia--hide-no-results">
+        <input type="checkbox" id="refine_results" class="trigger" />
+        <label for="refine_results" class="section-title">{{ site.data.language.archive.refine_results }}</label>
 
         {% for detail in site[collection.label][0].details %}
           {% if detail[0] != "event_date" %}
-            <div id="filter__details-{{ detail[0] }}" class="pagination__details">{{ detail[0] }}</div>
+            <div id="filter__details-{{ detail[0] }}" class="widget">{{ detail[0] }}</div>
           {% endif %}
         {% endfor %}
 
 
-        </div>
+        <div id="filter__clear-all" class="widget algolia--hide-no-results"></div>
+      </div>
     {% endif %}
 
-    <div id="filter__clear-all" class="pagination--hide-no-results"></div>
   </section>
 
   {% if page.permalink == '/analysis/' %}
@@ -82,7 +91,7 @@ layout: default
      {% endif %}
 
 
-    {% if page.permalink != '/resources/' %}
+     {% if collection.label != 'resources' %}
       {%- for post in posts -%}
         {% include post-block.html %}
       {%- endfor -%}
@@ -94,7 +103,8 @@ layout: default
 
    </section>
 
-  {% if page.permalink != '/resources/' %}
-    {% include page-footer.html pagination = true %}
+
+   {% if collection.label != 'resources' %}
+    {% include page-footer.html pagination='true' %}
   {% endif %}
 </article>

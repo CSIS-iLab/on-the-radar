@@ -32,6 +32,7 @@ archive:
   oldest: Oldest
   newest: Newest
   resource_name: Name
+  filter_by_type: Filter by Type
   filter_entries: Filter Entries
   refine_results: Refine Results
   featured_post: Featured Post

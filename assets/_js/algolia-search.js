@@ -12,7 +12,7 @@ import {
 const dataset = document.querySelector('.archive').dataset
 
 const elementsToHideNoResults = document.querySelectorAll(
-  '.pagination--hide-no-results'
+  '.algolia--hide-no-results'
 )
 const client = algoliasearch('7UNKAH6RMH', 'b9011cf7f49e60630161fcacf0e37d02')
 
@@ -129,7 +129,7 @@ const AlgoliaSearch = () => {
 }
 
 function toggleElementsOnNoResults(elements, action) {
-  elements.forEach(el => el.classList[action]('pagination--is-hidden'))
+  elements.forEach(el => el.classList[action]('algolia--is-hidden'))
 }
 
 const mapStateToKeys = (uiState, urlKeyDivs, dataset) => {
@@ -181,7 +181,7 @@ const addResults = () => {
         },
         empty: `<h2 class="section-title">Nothing Found</h2>
           <p>Sorry, but nothing matched your search terms. Please try again with different keywords.</p>
-          <a href="" class="btn">Clear All Filters</a>`
+          <a href="." class="btn">Clear All Filters</a>`
       }
     })
   )
@@ -203,8 +203,14 @@ const addTopicTypeRelatedBriefFilter = () => {
       },
       autoHideContainer: false,
       templates: {
-        header: 'Type<i class="icon-angle-sm-right"></i>',
-        item: `{{ label }} ({{ count }})`
+        header: 'Type<i class="icon-angle-lg-right"></i>',
+        item: data => {
+          return `${
+            data.isRefined
+              ? '<i class="icon-checkbox-selected"></i>'
+              : '<i class="icon-checkbox-empty"></i>'
+          }${data.label} (${data.count})`
+        }
       }
     })
   )
@@ -220,8 +226,14 @@ const addTopicTypeRelatedBriefFilter = () => {
       },
       autoHideContainer: false,
       templates: {
-        header: 'Topic<i class="icon-angle-sm-right"></i>',
-        item: '{{ label }} ({{ count }})'
+        header: 'Topic<i class="icon-angle-lg-right"></i>',
+        item: data => {
+          return `${
+            data.isRefined
+              ? '<i class="icon-checkbox-selected"></i>'
+              : '<i class="icon-checkbox-empty"></i>'
+          }${data.label} (${data.count})`
+        }
       }
     })
   )
@@ -235,9 +247,16 @@ const addTopicTypeRelatedBriefFilter = () => {
         collapsible: {
           collapsed: true
         },
+
         templates: {
-          header: 'Related Briefs<i class="icon-angle-sm-right"></i>',
-          item: '{{ label }} ({{ count }})'
+          header: 'Related Briefs<i class="icon-angle-lg-right"></i>',
+          item: data => {
+            return `${
+              data.isRefined
+                ? '<i class="icon-checkbox-selected"></i>'
+                : '<i class="icon-checkbox-empty"></i>'
+            }${data.label} (${data.count})`
+          }
         }
       })
     )
@@ -251,7 +270,8 @@ const addSiteSearchBox = () => {
       queryHook: function(query, search) {
         search(query)
       },
-      magnifier: false
+      magnifier: true,
+      reset: false
     })
   )
 }
@@ -263,7 +283,8 @@ const addResourcesSearchBox = () => {
       queryHook: function(query, search) {
         search(query)
       },
-      magnifier: false
+      magnifier: true,
+      reset: false
     })
   )
 }
@@ -299,11 +320,11 @@ const addBriefTypeRefinement = () => {
 
   search.addWidget(
     stats({
-      container: '.all-result-count-placeholder',
+      container: '#filter__content-brief-count',
       autoHideContainer: false,
       templates: {
         body: data => {
-          return ` (${data.nbHits})`
+          return `&nbsp;(${data.nbHits})`
         }
       }
     })
@@ -327,8 +348,14 @@ const addDetailsRefinement = () => {
           header: `${facet.replace(
             /_/g,
             ' '
-          )}<i class="icon-angle-sm-right"></i>`,
-          item: '{{ label }} ({{ count }})'
+          )}<i class="icon-angle-lg-right"></i>`,
+          item: data => {
+            return `${
+              data.isRefined
+                ? '<i class="icon-checkbox-selected"></i>'
+                : '<i class="icon-checkbox-empty"></i>'
+            }${data.label} (${data.count})`
+          }
         }
       })
     )
@@ -346,7 +373,9 @@ const addItemCountSummary = () => {
             results_text = 'Item'
           }
           return `
-            <span class="items">${data.nbHits} ${results_text}</span>
+            <span class="summary-text">${
+              data.nbHits
+            }</span> <span class="summary-label">${results_text}</span>
           `
         },
         autoHideContainer: false
@@ -363,7 +392,9 @@ const addPageCountSummary = () => {
         body: data => {
           let page = data.page + 1
           return `
-            <span class="pages">Page ${page} of ${data.nbPages}</span>
+            <span class="summary-label">Page</span> <span class="summary-text">${page} of ${
+            data.nbPages
+          }</span>
           `
         },
         autoHideContainer: false
@@ -398,8 +429,10 @@ const addSortWidget = () => {
         .querySelector('#results__sort .sort-newest')
         .addEventListener('click', function() {
           helper.setIndex(`${searchIndex}_desc`).search()
-          this.classList.add('selected')
-          document.querySelector('.sort-oldest').classList.remove('selected')
+          this.classList.add('selected-sort')
+          document
+            .querySelector('.sort-oldest')
+            .classList.remove('selected-sort')
         })
     }
   })

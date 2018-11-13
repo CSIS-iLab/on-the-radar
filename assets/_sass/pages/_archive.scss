@@ -89,10 +89,9 @@
 
   .page__footer {
     grid-area: page-footer;
+  }
 
-    @include breakpoint('medium') {
-      margin-right: 0;
-      margin-left: sidebar-width('large');
-    }
+  &:not(.archive--glossary) .archive__content {
+    padding-top: 2rem;
   }
 }

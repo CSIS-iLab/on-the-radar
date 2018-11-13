@@ -1,5 +1,9 @@
 .input--search {
   text-transform: uppercase;
+}
+
+input[type^='text'],
+input[type^='search'] {
   background-color: transparent;
   border: 0;
 
