@@ -1,7 +1,7 @@
 ---
 title: Country Profile Test
 details:
-  Type: []
+  type: []
   characteristics:
   - Precision
   - Speed

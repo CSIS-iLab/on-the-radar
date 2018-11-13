@@ -7,11 +7,12 @@
 <div class="details">
   <span class="details__title">{{ site.data.language.details.title }}</span>
   <span class="details__subtitle">{{ detail.category }}</span>
+  {{ details }}
+  {{ detail[0] }}
   <!-- {% for detail in details %} -->
     <span class="details__subtitle">{{ detail.category }} detail title</span>
       <span class="details__title">{{ site.data.language.details.title }} detail titlte</span>
-      {{ details }}
-      {{ detail[0] }}
+
     </div>
   <!-- {% endfor %} -->
 </div>
