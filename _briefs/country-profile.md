@@ -8,11 +8,9 @@ details:
   - Predictive
   domain:
   - Sea
-  - Air
   country:
   - China
   type:
-  - Sensors
   - Platform Control and Information Support
 date: 2018-10-31 17:03:02 +0000
 excerpt: 'Sed integer mi imperdiet, in nec proin ullamcorper massa lacus dui. '
