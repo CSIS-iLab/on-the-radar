@@ -22,7 +22,6 @@ const Header = () => {
       offsetScroll = false
 
       if (scrollPos < lastScrollPos) {
-        this.console.log('minimal')
         header.classList.remove(hidden_class)
         header.classList.add(minimal_class)
       } else {
