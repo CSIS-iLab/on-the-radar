@@ -34,18 +34,27 @@ const routing = {
       }
 
       let keys = mapStateToKeys(uiState, urlKeyDivs, dataset)
-      return Object.assign(keys, state)
+      let route = Object.assign(keys, state)
+      return route
     },
     routeToState(routeState) {
-      return {
-        query: routeState.query,
-        refinementList: {
-          keywords: routeState.keywords && routeState.keywords.split('~')
-        },
+      let route = {
+        state: routeState.query,
         page: routeState.page
       }
+      let refinementList = mapRouteToKeys(routeState)
+      let state = Object.assign(refinementList, route)
+      return state
     }
   }
+}
+
+const mapRouteToKeys = routeState => {
+  let refinementList = {}
+  Object.keys(routeState).forEach(k => {
+    refinementList[k] = routeState[k].split('~')
+  })
+  return { refinementList }
 }
 
 const search = instantsearch({
