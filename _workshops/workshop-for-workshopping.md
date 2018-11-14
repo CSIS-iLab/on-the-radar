@@ -12,6 +12,7 @@ details:
   location: Earth
   downloads: []
 downloads:
+- {}
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
   label: Sample Upload for Event
 
