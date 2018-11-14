@@ -20,8 +20,8 @@ authors:
 - _authors/author-2.md
 brief_type: Country Profile
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
-image_caption: ''
-image_source: ''
+image_caption: Halloween caption
+image_source: Getty Images
 downloads: []
 
 ---
