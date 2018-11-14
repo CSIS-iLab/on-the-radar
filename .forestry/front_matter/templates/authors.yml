@@ -10,5 +10,5 @@ fields:
   name: role
   label: Title
 pages:
-- _authors/author-2.md
-- _authors/ruth-barking-ginsberg.md
+- _authors/jane-doe.md
+- _authors/john-dot.md

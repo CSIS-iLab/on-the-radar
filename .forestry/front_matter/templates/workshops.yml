@@ -35,3 +35,4 @@ fields:
     template: download-media
 pages:
 - _workshops/workshop-for-workshopping.md
+- _workshops/workshop-for-workshopping-2.md

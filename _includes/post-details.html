@@ -1,0 +1,26 @@
+{% assign details = page.details %}
+{% if page.collection == 'posts' %}
+  {% assign details = page.categories %}
+{% endif %}
+
+{% if details %}
+<ul class="post__details-list">
+    <li class="post__details-item">{{ site.data.language.details.title }}</li>
+      {% if page.collection == 'posts' %}
+        <ul class="details__subtitle">{{ site.data.language.details.categories }}</ul>
+        {% for detail in details %}
+          <li class="details__type">{{ detail }}</li>
+        {% endfor %}
+      {% else %}
+      <li class="post__details-item">
+        {% for detail in details %}
+          <div class="details__info">
+            <div class="details__subtitle">{{ detail[0] | replace: "_", " " | title }}</div>
+            {% for sub_detail in detail[1] %}
+              <div class="details__type">{{ sub_detail | date: site.date_format }}</div>
+            {% endfor %}
+          </div>
+        {% endfor %}
+      {% endif %}
+</ul>
+{% endif %}

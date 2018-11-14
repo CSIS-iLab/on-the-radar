@@ -39,4 +39,5 @@ fields:
   label: ''
   template: photo
 pages:
-- _posts/2018-10-31-test-jekyll-post.md
+- _posts/2018-02-14-first-test-post.md
+- _posts/2018-10-31-second-test-post.md

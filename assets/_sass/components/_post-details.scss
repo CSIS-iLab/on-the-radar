@@ -1,4 +1,9 @@
 .details {
+
+  ul & {
+    list-style: none;
+  }
+
   &__title {
     @extend %facets__section-title;
     padding-bottom: 0.6em;
