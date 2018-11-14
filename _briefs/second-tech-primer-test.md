@@ -24,5 +24,6 @@ image_caption: US Defense Secretary Robert Gates (2ndL) and Canadian Defense Min
 image_source: Getty Images
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1542205462/on-the-radar/header-sample.jpg
+  label: Sample media upload
 
 ---
