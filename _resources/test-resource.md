@@ -2,7 +2,7 @@
 title: Test Resource
 date: 2018-10-31 17:04:14 +0000
 type: Website
-authors: Carl Sagan, Etc.
+authors: Carl Sagan, Neil deGrasse Tyson, and Theresa May
 topics:
 - Space Domain
 - Capabilities
