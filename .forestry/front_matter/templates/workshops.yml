@@ -17,16 +17,6 @@ fields:
   - type: text
     name: location
     label: Location
-  - type: field_group_list
-    name: downloads
-    label: Downloads
-    fields:
-    - type: file
-      name: media_upload
-      label: Media Upload
-    - type: text
-      name: media_label
-      label: media label
 - type: field_group_list
   label: Downloads
   name: downloads
