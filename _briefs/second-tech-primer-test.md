@@ -1,11 +1,22 @@
 ---
 title: Second Tech Primer Test
 details:
-  type: []
-  characteristics: []
-  risk_factors: []
-  domain: []
-  country: []
+  type:
+  - Electronic Warfare
+  - Cyber
+  characteristics:
+  - Persistence
+  - Resiliency
+  risk_factors:
+  - Destructive
+  - Predictive
+  domain:
+  - Space
+  - Cyberspace
+  country:
+  - China
+  - North Korea
+  - Russia
 date: 2018-11-14 14:14:54 +0000
 excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel quam at
   leo porttitor pulvinar. Donec auctor, elit quis congue semper, tellus erat viverra
