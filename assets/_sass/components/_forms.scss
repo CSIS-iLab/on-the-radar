@@ -2,8 +2,8 @@
   text-transform: uppercase;
 }
 
-input[type^='text'],
-input[type^='search'] {
+.input--search,
+.ais-search-box--input {
   background-color: transparent;
   border: 0;
 

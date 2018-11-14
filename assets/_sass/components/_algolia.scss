@@ -78,16 +78,33 @@
     padding-left: 0;
     line-height: 0;
 
-    &--item {
+    button {
+      padding: 0;
+      color: $color__orange-light;
+      border: 0;
+      @include font-size(24px);
+    }
+
+    &--item,
+    button {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 2rem;
       height: 2rem;
-      margin-right: 0.5rem;
       background-color: $color__orange;
       border-radius: 50%;
-      transition: all 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out;
+
+      &:hover {
+        color: $color__white;
+        font-weight: bold;
+        background-color: $color__orange-dark;
+      }
+    }
+
+    &--item {
+      margin-right: 0.5rem;
 
       &__active {
         color: $color__orange-dark;
@@ -95,26 +112,8 @@
         background-color: $color__white;
       }
 
-      &:hover {
-        color: $color__white;
-        font-weight: bold;
-        background-color: $color__orange-dark;
-      }
-
       &__disabled {
         display: none;
-      }
-
-      button {
-        padding: 0;
-        color: $color__orange-light;
-        background-color: transparent;
-        border: 0;
-        @include font-size(24px);
-
-        &:hover {
-          color: $color__white;
-        }
       }
     }
   }
