@@ -16,7 +16,7 @@ keywords:
 related_briefs:
 - _briefs/second-tech-primer-test.md
 - _briefs/test-tech-primer.md
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1542205462/on-the-radar/header-sample.jpg
 image_caption: Sample caption for image
 image_source: Getty Images
 
