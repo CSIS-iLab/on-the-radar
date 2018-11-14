@@ -16,9 +16,12 @@ layout: default
   <section class="archive__filter-type">
       <input type="checkbox" class="trigger" id="archive__filter-type">
       <label for="archive__filter-type" class="section-title">{{site.data.language.archive.filter_by_type}}</label>
+      <div id="filter__content-brief-clear" class="widget">All Results</div>
+      <div id="filter__content-brief-count" class="widget"></div>
       <div id="filter__content-brief" class="widget"></div>
   </section>
   {% endif %}
+
   <section class="archive__results">
       <div id="results__summary">
         {% if collection.label != 'resources' %}
@@ -26,8 +29,8 @@ layout: default
         {% endif %}
           <div id="results__summary_count"></div>
       </div>
-      {% if collection.label != 'resources' %}
 
+      {% if collection.label != 'resources' %}
       <div id="results__sort">
         <span class="summary-label">Sort by</span>
         <span class="sort sort-oldest ais-root">{{ site.data.language.archive.oldest }}</span> | <span class="sort sort-newest selected-sort ais-root">{{ site.data.language.archive.newest }}</span>
@@ -39,6 +42,9 @@ layout: default
     {% if page.filter_entries %}
       <input type="checkbox" id="filter_entries" class="trigger" />
       <label for="filter_entries" class="section-title algolia--hide-no-results">{{ site.data.language.archive.filter_entries }}</label>
+
+
+      <div id="filter__refinement-count" class="widget"></div>
 
       {% if collection.label == 'resources' %}
         <div class="ais-header widget name-search__header">{{ site.data.language.archive.resource_name }}</div>
@@ -59,6 +65,8 @@ layout: default
         <div class="algolia--hide-no-results">
         <input type="checkbox" id="refine_results" class="trigger" />
         <label for="refine_results" class="section-title">{{ site.data.language.archive.refine_results }}</label>
+
+        <div id="filter__refinement-count" class="widget"></div>
 
         {% for detail in site[collection.label][0].details %}
           {% if detail[0] != "event_date" %}

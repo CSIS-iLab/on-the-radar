@@ -272,6 +272,28 @@ const addTopicTypeRelatedBriefFilter = () => {
       })
     )
   }
+
+  search.addWidget(
+    stats({
+      container: '#filter__refinement-count',
+      templates: {
+        body: () => {
+          let refinements = search.helper.state.disjunctiveFacetsRefinements
+          let refinementCount = Object.keys(refinements).length
+          if (refinementCount) {
+            return `${refinementCount} applied`
+          } else {
+            document.querySelector(
+              '#filter__refinement-count'
+            ).style.paddingBottom = '1.5rem'
+
+            return null
+          }
+        },
+        autoHideContainer: false
+      }
+    })
+  )
 }
 
 const addSiteSearchBox = () => {
@@ -306,51 +328,57 @@ const addBriefTypeRefinement = () => {
       container: '#filter__content-brief',
       attributeName: 'brief_type',
       operator: 'or',
-      transformItems: items => {
-        console.log(items.map(m => m.label))
-
-        let all = [
-          {
-            count: items.map(i => i.count).reduce((a, c) => a + c),
-            cssClasses: {
-              active: 'ais-refinement-list--item__active',
-              body: 'ais-refinement-list--body',
-              checkbox: 'ais-refinement-list--checkbox',
-              count: 'ais-refinement-list--count',
-              footer: 'ais-refinement-list--footer',
-              header: 'ais-refinement-list--header',
-              item: 'ais-refinement-list--item',
-              label: 'ais-refinement-list--label',
-              list: 'ais-refinement-list--list',
-              root: 'ais-refinement-list'
-            },
-            highlighted: 'All Results',
-            label: 'All Results',
-            url: '/issue-briefs/',
-            value: !null
-          }
-        ]
-
-        let data
-
-        if (
-          !items.map(v => v.label).includes('All Results') &&
-          !items.map(v => v.label).includes('')
-        ) {
-          all = all.concat(items)
-          data = all
-        } else {
-          data = items
-        }
-
-        console.log(data.map(m => m.label))
-        return data
-      },
       templates: {
         item: '{{ label }} ({{ count }})'
       },
       autoHideContainer: false,
-      clearsQuery: false
+      sortBy: ['name:desc']
+    })
+  )
+
+  search.addWidget({
+    init: function({ helper }) {
+      let container = document.querySelector('#filter__content-brief-clear')
+      let countWidget = document.querySelector('#filter__content-brief-count')
+
+      for (let i = 0; i < 5; i++) {
+        const parent = container.parentNode
+        const wrapper = document.createElement('div')
+        parent.replaceChild(wrapper, container)
+        wrapper.appendChild(container)
+
+        if (i === 0)
+          wrapper.setAttribute('id', 'filter__content-brief-clear-container')
+      }
+      container.classList.add('ais-root', 'ais-refinement-list--item')
+
+      if (!window.location.search.includes('brief_type'))
+        container.classList.add('ais-refinement-list--item__active')
+
+      container.appendChild(countWidget)
+
+      container.addEventListener('click', function() {
+        let activeItem = document.querySelector(
+          '.archive__filter-type .ais-refinement-list--item__active'
+        )
+        if (activeItem)
+          activeItem.classList.remove('ais-refinement-list--item__active')
+
+        this.classList.add('ais-refinement-list--item__active')
+        helper.clearRefinements('brief_type').search()
+      })
+    }
+  })
+
+  search.addWidget(
+    stats({
+      container: '#filter__content-brief-count',
+      autoHideContainer: false,
+      templates: {
+        body: data => {
+          return `&nbsp;(${data.nbHits})`
+        }
+      }
     })
   )
 }
@@ -383,6 +411,28 @@ const addDetailsRefinement = () => {
       })
     )
   })
+
+  search.addWidget(
+    stats({
+      container: '#filter__refinement-count',
+      templates: {
+        body: () => {
+          let refinements = search.helper.state.disjunctiveFacetsRefinements
+          let refinementCount = Object.keys(refinements).length
+          if (refinementCount) {
+            return `${refinementCount} applied`
+          } else {
+            document.querySelector(
+              '#filter__refinement-count'
+            ).style.paddingBottom = '1.5rem'
+
+            return null
+          }
+        },
+        autoHideContainer: false
+      }
+    })
+  )
 }
 
 const addItemCountSummary = () => {

@@ -11,6 +11,25 @@
     }
   }
 
+  #filter__refinement-count {
+    position: relative;
+    padding-bottom: 1rem;
+    @extend %facets__link-item--base;
+
+    @include breakpoint('medium') {
+      display: none;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: -#{content-padding('small')};
+      width: 100vw;
+      border-bottom: 1px solid $color__gray;
+      content: '';
+    }
+  }
+
   .trigger {
     position: absolute;
     visibility: hidden;
@@ -31,30 +50,29 @@
         }
       }
 
-      &:not(#archive__filter-type) + .section-title {
-        padding-bottom: 1.5rem;
-      }
-
-      &:checked:not(#archive__filter-type) + .section-title {
-        position: relative;
-
-        &::after {
-          position: absolute;
-          bottom: 0;
-          left: -#{content-padding('small')};
-          width: 100vw;
-          border-bottom: 1px solid $color__gray;
-          content: '';
-        }
-      }
-
       &:not(:checked) {
-        ~ [id^='filter__content-brief-'] {
+        ~ div > div > div > div > div > .ais-refinement-list--item__active {
           padding-bottom: 0.8rem;
         }
 
-        ~ .widget:not([id^='filter__content-brief-']) {
+        ~ div > div > div > div > div > div:first-of-type:not(:only-child) {
+          padding-bottom: 0 !important;
+        }
+
+        ~ div
+          > div
+          > div
+          > div
+          > div
+          > div:not(.ais-refinement-list--item__active),
+        ~ .widget:not(#filter__refinement-count) {
           display: none;
+        }
+      }
+
+      &:checked {
+        ~ #filter__content-brief {
+          padding-bottom: 0.8rem;
         }
       }
     }
@@ -173,8 +191,14 @@
     }
   }
 
-  [id^='filter__content-brief-'] {
+  #filter__content-brief-count {
     display: inline-block;
+  }
+
+  @include breakpoint('medium') {
+    [id^='filter__content-brief-'] {
+      display: inline-block;
+    }
   }
 
   .ais-refinement-list--item,
@@ -184,7 +208,9 @@
     text-transform: uppercase;
 
     &__active {
-      color: $color__astral;
+      @include breakpoint('medium') {
+        color: $color__astral;
+      }
     }
   }
 }
@@ -201,11 +227,11 @@
     }
   }
 
-  .widget {
+  .widget:not(#filter__refinement-count) {
     margin-bottom: 0.8rem;
 
     @include breakpoint($break: 'medium', $dir: 'max-width') {
-      &:first-of-type {
+      &:nth-of-type(2) {
         margin-top: 1.5rem;
       }
     }
