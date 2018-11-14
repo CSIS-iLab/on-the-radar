@@ -10,14 +10,22 @@ html {
 
 body {
   /* Fallback for when there is no custom background color defined. */
-  --breakpoint: 'xsmall';
-  $sizes: ('small', 'medium', 'large', 'xlarge');
+  --breakpoint: 'small';
+  $sizes: ('medium', 'large', 'xlarge');
+
+  background-color: $color__background-body;
+  background-image: url('../images/bg/bg-topo_small.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+
   @each $size in $sizes {
     @include breakpoint($size) {
       --breakpoint: '#{$size}';
+      background-image: url('../images/bg/bg-topo_#{$size}.jpg');
     }
   }
-  background: $color__background-body;
 }
 
 .page-content {
