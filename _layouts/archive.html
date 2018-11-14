@@ -16,15 +16,13 @@ layout: default
   <section class="archive__filter-type">
       <input type="checkbox" class="trigger" id="archive__filter-type">
       <label for="archive__filter-type" class="section-title">{{site.data.language.archive.filter_by_type}}</label>
-      <div id="filter__content-brief-clear" class="widget"></div>
-      <div id="filter__content-brief-count" class="widget"></div>
       <div id="filter__content-brief" class="widget"></div>
   </section>
   {% endif %}
   <section class="archive__results">
       <div id="results__summary">
         {% if collection.label != 'resources' %}
-          <div id="results__summary_page"></div> |
+          <div id="results__summary_page"></div>
         {% endif %}
           <div id="results__summary_count"></div>
       </div>

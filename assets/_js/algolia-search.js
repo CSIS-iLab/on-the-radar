@@ -201,6 +201,7 @@ const addTopicTypeRelatedBriefFilter = () => {
       collapsible: {
         collapsed: true
       },
+      sortBy: ['name:asc'],
       autoHideContainer: false,
       templates: {
         header: 'Type<i class="icon-angle-lg-right"></i>',
@@ -224,6 +225,7 @@ const addTopicTypeRelatedBriefFilter = () => {
       collapsible: {
         collapsed: true
       },
+      sortBy: ['name:asc'],
       autoHideContainer: false,
       templates: {
         header: 'Topic<i class="icon-angle-lg-right"></i>',
@@ -247,7 +249,7 @@ const addTopicTypeRelatedBriefFilter = () => {
         collapsible: {
           collapsed: true
         },
-
+        sortBy: ['name:asc'],
         templates: {
           header: 'Related Briefs<i class="icon-angle-lg-right"></i>',
           item: data => {
@@ -295,38 +297,51 @@ const addBriefTypeRefinement = () => {
       container: '#filter__content-brief',
       attributeName: 'brief_type',
       operator: 'or',
+      transformItems: items => {
+        console.log(items.map(m => m.label))
+
+        let all = [
+          {
+            count: items.map(i => i.count).reduce((a, c) => a + c),
+            cssClasses: {
+              active: 'ais-refinement-list--item__active',
+              body: 'ais-refinement-list--body',
+              checkbox: 'ais-refinement-list--checkbox',
+              count: 'ais-refinement-list--count',
+              footer: 'ais-refinement-list--footer',
+              header: 'ais-refinement-list--header',
+              item: 'ais-refinement-list--item',
+              label: 'ais-refinement-list--label',
+              list: 'ais-refinement-list--list',
+              root: 'ais-refinement-list'
+            },
+            highlighted: 'All Results',
+            label: 'All Results',
+            url: '/issue-briefs/',
+            value: !null
+          }
+        ]
+
+        let data
+
+        if (
+          !items.map(v => v.label).includes('All Results') &&
+          !items.map(v => v.label).includes('')
+        ) {
+          all = all.concat(items)
+          data = all
+        } else {
+          data = items
+        }
+
+        console.log(data.map(m => m.label))
+        return data
+      },
       templates: {
         item: '{{ label }} ({{ count }})'
       },
       autoHideContainer: false,
-      sortBy: ['name:desc']
-    })
-  )
-
-  search.addWidget(
-    clearAll({
-      container: '#filter__content-brief-clear',
-      templates: {
-        link: () => {
-          let results_text = 'Results'
-          return `All ${results_text}`
-        }
-      },
-
-      autoHideContainer: false,
       clearsQuery: false
-    })
-  )
-
-  search.addWidget(
-    stats({
-      container: '#filter__content-brief-count',
-      autoHideContainer: false,
-      templates: {
-        body: data => {
-          return `&nbsp;(${data.nbHits})`
-        }
-      }
     })
   )
 }
@@ -343,7 +358,6 @@ const addDetailsRefinement = () => {
         collapsible: {
           collapsed: true
         },
-
         templates: {
           header: `${facet.replace(
             /_/g,
@@ -394,7 +408,7 @@ const addPageCountSummary = () => {
           return `
             <span class="summary-label">Page</span> <span class="summary-text">${page} of ${
             data.nbPages
-          }</span>
+          }</span> |
           `
         },
         autoHideContainer: false
