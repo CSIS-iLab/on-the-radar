@@ -35,6 +35,5 @@ archive:
   filter_entries: Filter Entries
   refine_results: Refine Results
   featured_post: Featured Post
-analysis:
-  related_reading: "Related Reading"
-  more_on: "More On..."
+related_reading: "Related Reading"
+more_on: "More On..."

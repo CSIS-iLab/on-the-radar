@@ -155,4 +155,14 @@
     padding: content-padding('small');
     background-color: $color__off-white;
   }
+
+  &__related-reading {
+    @extend %h2--thin;
+    transform: uppercase;
+  }
+
+  &__more-on {
+    @extend %post__content-h2;
+    transform: uppercase;
+  }
 }
