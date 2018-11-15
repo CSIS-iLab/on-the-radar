@@ -9,6 +9,8 @@ import {
   clearAll
 } from 'instantsearch.js/es/widgets'
 
+let pageTotal
+
 const dataset = document.querySelector('.archive').dataset
 
 const elementsToHideNoResults = document.querySelectorAll(
@@ -47,14 +49,6 @@ const routing = {
       return state
     }
   }
-}
-
-const mapRouteToKeys = routeState => {
-  let refinementList = {}
-  Object.keys(routeState).forEach(k => {
-    refinementList[k] = routeState[k].split('~')
-  })
-  return { refinementList }
 }
 
 const search = instantsearch({
@@ -98,6 +92,10 @@ const AlgoliaSearch = () => {
   addItemCountSummary()
   addResetWidget()
 
+  search.on('init', () => {
+    pageTotal = search.helper.lastResults.nbHits
+  })
+
   search.on('render', () => {
     let title = search.searchParameters.query
 
@@ -137,8 +135,16 @@ const AlgoliaSearch = () => {
   search.start()
 }
 
-function toggleElementsOnNoResults(elements, action) {
+const toggleElementsOnNoResults = (elements, action) => {
   elements.forEach(el => el.classList[action]('algolia--is-hidden'))
+}
+
+const mapRouteToKeys = routeState => {
+  let refinementList = {}
+  Object.keys(routeState).forEach(k => {
+    refinementList[k] = routeState[k].split('~')
+  })
+  return { refinementList }
 }
 
 const mapStateToKeys = (uiState, urlKeyDivs, dataset) => {
@@ -273,19 +279,30 @@ const addTopicTypeRelatedBriefFilter = () => {
     )
   }
 
+  let container =
+    dataset.collectionLabel === 'briefs'
+      ? '.archive__filter-type #filter__count'
+      : '.archive__sidebar #filter__count'
+
   search.addWidget(
     stats({
-      container: '#filter__refinement-count',
+      container: container,
       templates: {
         body: () => {
-          let refinements = search.helper.state.disjunctiveFacetsRefinements
-          let refinementCount = Object.keys(refinements).length
+          let filters = search.helper.state.disjunctiveFacetsRefinements
+
+          let refinements = Object.keys(filters).filter(
+            f => !f.includes('details.')
+          )
+
+          let refinementCount = refinements.length
+
           if (refinementCount) {
+            document.querySelector(container).style.paddingBottom = '0.8rem'
+
             return `${refinementCount} applied`
           } else {
-            document.querySelector(
-              '#filter__refinement-count'
-            ).style.paddingBottom = '1.5rem'
+            document.querySelector(container).style.paddingBottom = '1.5rem'
 
             return null
           }
@@ -352,7 +369,7 @@ const addBriefTypeRefinement = () => {
       }
       container.classList.add('ais-root', 'ais-refinement-list--item')
 
-      if (!window.location.search.includes('brief_type'))
+      if (!window.location.href.includes('brief_type'))
         container.classList.add('ais-refinement-list--item__active')
 
       container.appendChild(countWidget)
@@ -376,7 +393,8 @@ const addBriefTypeRefinement = () => {
       autoHideContainer: false,
       templates: {
         body: data => {
-          return `&nbsp;(${data.nbHits})`
+          pageTotal = pageTotal || data.nbHits
+          return `&nbsp;(${pageTotal})`
         }
       }
     })
@@ -414,16 +432,26 @@ const addDetailsRefinement = () => {
 
   search.addWidget(
     stats({
-      container: '#filter__refinement-count',
+      container: '.archive__sidebar #filter__count',
       templates: {
         body: () => {
-          let refinements = search.helper.state.disjunctiveFacetsRefinements
-          let refinementCount = Object.keys(refinements).length
+          let filters = search.helper.state.disjunctiveFacetsRefinements
+
+          let refinements = Object.keys(filters).filter(f =>
+            f.includes('details.')
+          )
+
+          let refinementCount = refinements.length
+
           if (refinementCount) {
+            document.querySelector(
+              '.archive__sidebar #filter__count'
+            ).style.paddingBottom = '0.8rem'
+
             return `${refinementCount} applied`
           } else {
             document.querySelector(
-              '#filter__refinement-count'
+              '.archive__sidebar #filter__count'
             ).style.paddingBottom = '1.5rem'
 
             return null

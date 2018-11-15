@@ -44,16 +44,111 @@
     grid-area: filter-type;
     @include archive-padding;
     background-color: $color__gray-lighter;
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      border-bottom: 1px solid $color__gray;
+    }
+
+    @include breakpoint('medium') {
+      display: flex;
+      padding-top: 20px;
+      padding-bottom: 16px;
+
+      .ais-refinement-list {
+        &--list {
+          display: flex;
+        }
+
+        &--item {
+          padding-left: 20px;
+        }
+      }
+    }
+
+    .section-title {
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        padding-top: 0.8rem;
+      }
+
+      @include breakpoint('medium') {
+        position: relative;
+        padding-right: 20px;
+      }
+
+      &::after {
+        @include breakpoint('medium') {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: calc(100% - 10px);
+          height: calc(100% + 20px);
+          border-right: 1px solid $color__gray-light;
+        }
+      }
+    }
+
+    #filter__content-brief-count {
+      display: inline-block;
+    }
+
+    @include breakpoint('medium') {
+      [id^='filter__content-brief-'] {
+        display: inline-block;
+      }
+    }
+
+    .ais-refinement-list--item,
+    .ais-clear-all--body {
+      @extend %facets__link-item--base;
+      white-space: nowrap;
+      text-transform: uppercase;
+
+      &__active {
+        @include breakpoint('medium') {
+          color: $color__astral;
+        }
+      }
+    }
   }
 
   &__results {
+    display: flex;
     grid-area: results;
+    justify-content: space-between;
+    color: $color__orange-lighter;
     @extend %orange-top-bar;
     @include archive-padding;
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      flex-wrap: wrap;
+    }
 
     &::before {
       @include breakpoint('medium') {
         @include orange-side-bar($direction: left, $height: 100px);
+      }
+    }
+
+    .summary-text {
+      color: $color__white;
+    }
+
+    .summary-label {
+      font-style: italic;
+    }
+
+    #results__summary > div {
+      display: inline-block;
+    }
+
+    #results__sort {
+      .sort {
+        text-transform: uppercase;
+      }
+
+      .selected-sort {
+        font-weight: bold;
+        cursor: default;
       }
     }
   }
@@ -62,6 +157,66 @@
     grid-area: sidebar;
     @include archive-padding;
     background-color: $color__gray-lighter;
+
+    @include breakpoint('medium') {
+      padding-top: 2rem;
+    }
+
+    .section-title {
+      @include breakpoint('medium') {
+        margin-bottom: 0.5rem;
+        @include font-size(16px);
+      }
+    }
+
+    .widget:not(#filter__count) {
+      margin-bottom: 0.8rem;
+
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        &:nth-of-type(2) {
+          margin-top: 1.5rem;
+        }
+      }
+    }
+
+    .ais-header {
+      @extend %facets__group-label--base;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      i::before {
+        font-weight: normal;
+      }
+    }
+
+    .ais-root__collapsed .ais-body {
+      display: none;
+    }
+
+    .ais-root {
+      .icon-angle-sm-right::before {
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:not(.ais-root__collapsed) .icon-angle-sm-right::before {
+        transform: rotate(90deg);
+      }
+    }
+
+    .ais-refinement-list--item {
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        margin: 0.3rem 0;
+        line-height: 1.2;
+      }
+    }
+
+    .ais-clear-all {
+      @extend %facets__clear;
+
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        text-align: center;
+      }
+    }
   }
 
   &__featured {
@@ -93,5 +248,53 @@
 
   &:not(.archive--glossary) .archive__content {
     padding-top: 2rem;
+  }
+
+  .section-title {
+    display: flex;
+    line-height: 1.4;
+    white-space: nowrap;
+    text-transform: uppercase;
+    @extend %facets__header-label;
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      padding-top: 1.5rem;
+    }
+  }
+
+  #filter__count {
+    position: relative;
+    padding-bottom: 1rem;
+    @extend %facets__link-item--base;
+
+    @include breakpoint('medium') {
+      display: none;
+    }
+
+    &:hover {
+      color: $color__gray-darker;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: -#{content-padding('small')};
+      width: 100vw;
+      border-bottom: 1px solid $color__gray;
+      content: '';
+    }
+  }
+
+  .ais-root {
+    cursor: pointer;
+  }
+
+  .algolia--is-hidden {
+    display: none;
+  }
+
+  .ais-search-box--reset {
+    max-width: 30px;
+    background-color: transparent;
   }
 }

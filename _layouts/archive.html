@@ -14,7 +14,7 @@ layout: default
 
   {% if page.permalink == '/issue-briefs/' %}
   <section class="archive__filter-type">
-      <input type="checkbox" class="trigger" id="archive__filter-type">
+      <input type="checkbox" class="facet-trigger" id="archive__filter-type">
       <label for="archive__filter-type" class="section-title">{{site.data.language.archive.filter_by_type}}</label>
       <div id="filter__content-brief-clear" class="widget">All Results</div>
       <div id="filter__content-brief-count" class="widget"></div>
@@ -40,11 +40,11 @@ layout: default
 
   <section class="archive__sidebar">
     {% if page.filter_entries %}
-      <input type="checkbox" id="filter_entries" class="trigger" />
+      <input type="checkbox" id="filter_entries" class="facet-trigger" />
       <label for="filter_entries" class="section-title algolia--hide-no-results">{{ site.data.language.archive.filter_entries }}</label>
 
 
-      <div id="filter__refinement-count" class="widget"></div>
+      <div id="filter__count" class="widget"></div>
 
       {% if collection.label == 'resources' %}
         <div class="ais-header widget name-search__header">{{ site.data.language.archive.resource_name }}</div>
@@ -63,10 +63,10 @@ layout: default
 
       {% if page.refine_results %}
         <div class="algolia--hide-no-results">
-        <input type="checkbox" id="refine_results" class="trigger" />
+        <input type="checkbox" id="refine_results" class="facet-trigger" />
         <label for="refine_results" class="section-title">{{ site.data.language.archive.refine_results }}</label>
 
-        <div id="filter__refinement-count" class="widget"></div>
+        <div id="filter__count" class="widget"></div>
 
         {% for detail in site[collection.label][0].details %}
           {% if detail[0] != "event_date" %}

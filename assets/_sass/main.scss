@@ -14,17 +14,18 @@
 @import 'base/base';
 @import 'base/helpers';
 
-@import 'components/algolia';
 @import 'components/authors-block';
 @import 'components/back-to-top';
 @import 'components/buttons';
 @import 'components/content-type';
 @import 'components/definition';
+@import 'components/facet-trigger';
 @import 'components/forms';
 @import 'components/header-nav';
 @import 'components/header-search';
 @import 'components/page-footer';
 @import 'components/page-header';
+@import 'components/pagination';
 @import 'components/post-meta';
 
 @import 'layout/footer';

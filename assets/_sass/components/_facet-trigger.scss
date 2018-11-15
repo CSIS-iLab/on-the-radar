@@ -1,0 +1,42 @@
+.facet-trigger {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+
+  @include breakpoint($break: 'medium', $dir: 'max-width') {
+    + .section-title {
+      position: relative;
+      justify-content: space-between;
+      cursor: pointer;
+
+      &::after {
+        position: absolute;
+        right: 0;
+        content: '\f006';
+        display: inline-block;
+        font-family: 'radar';
+      }
+    }
+
+    &:not(:checked) {
+      ~ div .ais-refinement-list--item__active {
+        padding-bottom: 0.8rem;
+      }
+
+      ~ div .ais-refinement-list--item:first-of-type:not(:only-child) {
+        padding-bottom: 0 !important;
+      }
+
+      ~ div .ais-refinement-list--item:not(.ais-refinement-list--item__active),
+      ~ .widget:not(#filter__count):not(#filter__content-brief) {
+        display: none;
+      }
+    }
+
+    &:checked {
+      ~ #filter__content-brief {
+        padding-bottom: 0.8rem;
+      }
+    }
+  }
+}
