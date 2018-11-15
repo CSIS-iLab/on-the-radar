@@ -12,15 +12,17 @@
       &::after {
         position: absolute;
         right: 0;
-        content: '\f006';
+        content: '\f004';
         display: inline-block;
         font-family: 'radar';
+        transition: all 0.3s ease-in-out;
       }
     }
 
     &:not(:checked) {
       ~ div .ais-refinement-list--item__active {
         padding-bottom: 0.8rem;
+        @include font-size(15px);
       }
 
       ~ div .ais-refinement-list--item:first-of-type:not(:only-child) {
@@ -30,6 +32,10 @@
       ~ div .ais-refinement-list--item:not(.ais-refinement-list--item__active),
       ~ .widget:not(#filter__count):not(#filter__content-brief) {
         display: none;
+      }
+
+      + .section-title::after {
+        transform: rotate(-90deg);
       }
     }
 

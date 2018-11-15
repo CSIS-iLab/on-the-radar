@@ -66,6 +66,9 @@
     }
 
     .section-title {
+      @extend %facets__header-label;
+      line-height: 1.4;
+
       @include breakpoint($break: 'medium', $dir: 'max-width') {
         padding-top: 0.8rem;
       }
@@ -130,11 +133,11 @@
     }
 
     .summary-text {
-      color: $color__white;
+      @extend %labeltext__text--white;
     }
 
     .summary-label {
-      font-style: italic;
+      @extend %labeltext__label;
     }
 
     #results__summary > div {
@@ -143,10 +146,12 @@
 
     #results__sort {
       .sort {
+        color: $color__orange-light;
         text-transform: uppercase;
       }
 
       .selected-sort {
+        @extend %labeltext__text--white;
         font-weight: bold;
         cursor: default;
       }
@@ -163,9 +168,10 @@
     }
 
     .section-title {
+      @extend %facets__section-title;
+
       @include breakpoint('medium') {
         margin-bottom: 0.5rem;
-        @include font-size(16px);
       }
     }
 
@@ -204,9 +210,10 @@
     }
 
     .ais-refinement-list--item {
-      @include breakpoint($break: 'medium', $dir: 'max-width') {
+      @extend %facets__checkbox-label;
+
+      @include breakpoint('medium') {
         margin: 0.3rem 0;
-        line-height: 1.2;
       }
     }
 
@@ -252,10 +259,8 @@
 
   .section-title {
     display: flex;
-    line-height: 1.4;
     white-space: nowrap;
     text-transform: uppercase;
-    @extend %facets__header-label;
 
     @include breakpoint($break: 'medium', $dir: 'max-width') {
       padding-top: 1.5rem;
@@ -266,6 +271,7 @@
     position: relative;
     padding-bottom: 1rem;
     @extend %facets__link-item--base;
+    @include font-size(15px);
 
     @include breakpoint('medium') {
       display: none;

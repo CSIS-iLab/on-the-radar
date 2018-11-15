@@ -41,7 +41,7 @@
         position: absolute;
         right: 100%;
         display: block;
-        color: $color__gray-light;
+        color: $color__gray;
         font-family: 'radar';
         transition: all 0.3s ease-in-out;
         content: '\ed2f';
@@ -52,6 +52,10 @@
       width: calc(100% - 1.5rem);
       color: $color__white;
       @extend %page__title;
+
+      &::placeholder {
+        color: $color__white;
+      }
     }
   }
 }
