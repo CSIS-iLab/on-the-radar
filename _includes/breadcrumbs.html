@@ -1,7 +1,7 @@
 {% assign breadcrumb_home = 'Home' %}
-{% unless page.collection == 'authors' %}
+{% if page.collection == 'authors' %}
   {% assign breadcrumb_home = 'Analysis' %}
-{% endunless %}
+{% endif %}
 {% assign breadcrumb_past = null %}
 {% assign breadcrumb_current = page.title %}
 
