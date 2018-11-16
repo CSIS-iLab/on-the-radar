@@ -189,6 +189,14 @@
   letter-spacing: 1px;
 }
 
+%h5--thin {
+  @include font-size(14px);
+  font-family: $font__lato;
+  font-weight: 300;
+  line-height: 1.89;
+  letter-spacing: 1px;
+}
+
 %labeltext__label {
   @include font-size(13px);
   font-family: $font__ptsans;

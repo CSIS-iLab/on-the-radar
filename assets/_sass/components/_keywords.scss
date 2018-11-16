@@ -1,19 +1,25 @@
 .keywords {
   ul {
-    list-style-type: none;
-    color: $color__white;
-    margin: 0;
     display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    color: $color__white;
+    list-style-type: none;
+    padding-bottom: 0.5em;
+
+    @include breakpoint('large') {
+      flex-direction: row;
+    }
   }
 
   li {
+    margin-bottom: 1em;
+    padding: 0.3em 0.6em;
+    justify-content: space-between;
+    text-transform: lowercase;
     background-color: $color__blue;
-    border-radius: 15px;
-    padding: 0.3em 0.6em 0.3em 0.6em;
-    margin-right: 1.5em;
-  }
-
-  &__single {
     list-style-type: none;
+    border-radius: 15px;
   }
 }

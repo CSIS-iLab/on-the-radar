@@ -158,11 +158,11 @@
 
   &__related-reading {
     @extend %h2--thin;
-    transform: uppercase;
+    text-transform: uppercase;
   }
 
   &__more-on {
-    @extend %post__content-h2;
-    transform: uppercase;
+    @extend %h5--thin;
+    text-transform: uppercase;
   }
 }
