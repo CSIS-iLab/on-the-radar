@@ -1,25 +1,24 @@
 ul.keywords {
   @extend %tag;
-  // display: inline;
   margin: 0;
+  margin-top: 0.75em;
   padding: 0;
   padding-bottom: 0.5em;
-  list-style-type: none;
-  margin-top: 0.75em;
   text-align: left;
+  list-style-type: none;
 
   li {
     justify-content: space-between;
+    margin-right: 1em;
+    margin-bottom: 1.2em;
     text-transform: lowercase;
     list-style-type: none;
-    margin-bottom: 1.2em;
-    margin-right: 1.2em;
   }
 
   a {
-    padding: 0.3em 0.7em;
-    border-radius: 15px;
+    padding: 0.4em 0.7em;
     background-color: $color__blue;
+    border-radius: 15px;
 
     &:hover {
       background-color: $color__astral-dark;
@@ -27,8 +26,9 @@ ul.keywords {
     }
   }
 
-  @include breakpoint('small') {
+  @include breakpoint('medium') {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
   }
 }
