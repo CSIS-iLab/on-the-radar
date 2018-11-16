@@ -8,6 +8,8 @@ twitter_username:
 
 date_format: '%B %-d, %Y'
 
+search_briefs_url: issue-briefs/?brief_type=
+
 cloudinary_url: https://res.cloudinary.com/csisideaslab/image/upload/
 
 # Content types will be defined here
