@@ -13,6 +13,7 @@
   grid-template-areas:
     'page-header'
     'filter-type'
+    'filter-description'
     'sidebar'
     'results'
     'featured'
@@ -23,6 +24,7 @@
     grid-template-areas:
       'page-header page-header'
       'filter-type filter-type'
+      'filter-description filter-description'
       'results results'
       'featured featured'
       'sidebar content'
@@ -37,6 +39,20 @@
     @include breakpoint('large') {
       padding-right: 0;
       padding-left: 0;
+    }
+  }
+
+  &__filter-description {
+    grid-area: filter-description;
+    padding: 0.8rem $size__archive-content-padding 1rem 4rem;
+    background-color: $color__gray-lighter;
+
+    @include breakpoint('medium') {
+      border-top: 1px solid $color__gray;
+    }
+
+    h5 {
+      @extend %post__content-h5;
     }
   }
 
@@ -84,7 +100,7 @@
           position: absolute;
           top: 0;
           left: calc(100% - 10px);
-          height: calc(100% + 20px);
+          height: calc(100% + 15px);
           border-right: 1px solid $color__gray-light;
         }
       }

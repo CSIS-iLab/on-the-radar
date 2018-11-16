@@ -14,12 +14,24 @@ layout: default
 
   {% if page.permalink == '/issue-briefs/' %}
   <section class="archive__filter-type">
-      <input type="checkbox" class="facet-trigger" id="archive__filter-type">
+      <input type="checkbox" class="facet-trigger">
       <label for="archive__filter-type" class="section-title">{{site.data.language.archive.filter_by_type}}</label>
       <div id="filter__content-brief-clear" class="widget">All Results</div>
       <div id="filter__content-brief-count" class="widget"></div>
       <div id="filter__content-brief" class="widget"></div>
   </section>
+  <section class="archive__filter-description">
+    <div class="tech-primer">
+      <h5>{{ site.data.language.archive.tech_primer }}</h5>
+      <p>{{ site.data.language.archive.tech_primer_description }}</p>
+    </div>
+
+    <div class="country-profile">
+      <h5>{{ site.data.language.archive.country_profile }}</h5>
+      <p>{{ site.data.language.archive.country_profile_description }}</p>
+    </div>
+  </section>
+
   {% endif %}
 
   <section class="archive__results">
