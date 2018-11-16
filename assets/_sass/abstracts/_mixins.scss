@@ -129,10 +129,3 @@
     padding-left: $size__archive-content-padding;
   }
 }
-
-// Calculates margin-right of keywords depending on screen size
-@mixin keyword-padding($direction: right, $width: 100px) {
-  content: '';
-  display: flex;
-  width: $width;
-};

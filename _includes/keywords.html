@@ -1,9 +1,7 @@
 {% if page.keywords.size > 0 %}
-<div class="keywords">
-  <ul>
-    {% for keyword in page.keywords %}
-    <li><a href="{{ site.keyword_url | append: keyword | relative_url }}">{{ keyword }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<ul class="keywords">
+  {% for keyword in page.keywords %}
+  <li><a href="{{ site.keyword_url | append: keyword | relative_url }}">{{ keyword }}</a></li>
+  {% endfor %}
+</ul>
 {% endif %}
