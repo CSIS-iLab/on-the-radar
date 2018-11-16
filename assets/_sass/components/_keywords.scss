@@ -1,25 +1,22 @@
 .keywords {
   ul {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    flex-direction: column;
+    padding-bottom: 0.5em;
     color: $color__white;
     list-style-type: none;
-    padding-bottom: 0.5em;
-
-    @include breakpoint('large') {
-      flex-direction: row;
-    }
   }
 
   li {
+    justify-content: space-between;
+    margin-right: 1em;
     margin-bottom: 1em;
     padding: 0.3em 0.6em;
-    justify-content: space-between;
     text-transform: lowercase;
-    background-color: $color__blue;
     list-style-type: none;
+    background-color: $color__blue;
     border-radius: 15px;
   }
 }
