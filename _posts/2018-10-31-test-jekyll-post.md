@@ -10,6 +10,14 @@ authors:
 categories:
 - Category 1
 keywords:
+- Synthetic Aperture Sonar
+- Keyword 1
+- Drone
+- Hydrophones
+- Synthetic Aperture Sonar
+- Anti-Submarine Warfare (ASW)
+- Keyword 2
+- Unmanned
 - Hydrophones
 - Anti-Submarine Warfare (ASW)
 - Synthetic Aperture Sonar
