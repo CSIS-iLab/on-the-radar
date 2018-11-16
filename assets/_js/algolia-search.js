@@ -41,7 +41,7 @@ const routing = {
     },
     routeToState(routeState) {
       let route = {
-        state: routeState.query,
+        query: routeState.query,
         page: routeState.page
       }
       let refinementList = mapRouteToKeys(routeState)
@@ -97,26 +97,12 @@ const AlgoliaSearch = () => {
   })
 
   search.on('render', () => {
-    let title = search.searchParameters.query
-
-    if (
-      !title &&
-      search.searchParameters.hasOwnProperty('disjunctiveFacetsRefinements')
-    ) {
-      let facets = Object.keys(
-        search.searchParameters.disjunctiveFacetsRefinements
-      )
-
-      facets.forEach(
-        facet =>
-          (title =
-            search.searchParameters.disjunctiveFacetsRefinements[facet][0])
-      )
-    }
+    let title = search.helper.state.query
 
     if (!title) {
       return
     }
+    updateSearchTitle(title)
 
     if (search.helper.lastResults.nbHits == 0) {
       toggleElementsOnNoResults(elementsToHideNoResults, 'add')
@@ -133,6 +119,16 @@ const AlgoliaSearch = () => {
   })
 
   search.start()
+}
+
+const updateSearchTitle = query => {
+  const queryText = document.querySelector('#search-input')
+
+  if (!query) {
+    queryText.value = ''
+    return
+  }
+  queryText.value = query
 }
 
 const toggleElementsOnNoResults = (elements, action) => {

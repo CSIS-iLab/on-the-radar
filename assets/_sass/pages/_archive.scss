@@ -200,11 +200,11 @@
     }
 
     .ais-root {
-      .icon-angle-sm-right::before {
+      .icon-angle-lg-right::before {
         transition: all 0.3s ease-in-out;
       }
 
-      &:not(.ais-root__collapsed) .icon-angle-sm-right::before {
+      &:not(.ais-root__collapsed) .icon-angle-lg-right::before {
         transform: rotate(90deg);
       }
     }
