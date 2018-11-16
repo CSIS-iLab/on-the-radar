@@ -1,4 +1,6 @@
 import algoliasearch from 'algoliasearch'
+import algoliasearchHelper from 'algoliasearch-helper'
+
 import instantsearch from 'instantsearch.js/es'
 import {
   searchBox,
@@ -20,7 +22,8 @@ const client = algoliasearch('7UNKAH6RMH', 'b9011cf7f49e60630161fcacf0e37d02')
 
 const indexName = 'on_the_radar'
 const searchParameters = {
-  hitsPerPage: 3
+  hitsPerPage: 3,
+  disjunctiveFacets: ['brief_type']
 }
 
 searchParameters.filters = dataset.collectionLabel
@@ -34,7 +37,6 @@ const routing = {
         query: uiState.query,
         page: uiState.page
       }
-
       let keys = mapStateToKeys(uiState, urlKeyDivs, dataset)
       let route = Object.assign(keys, state)
       return route
@@ -44,7 +46,7 @@ const routing = {
         query: routeState.query,
         page: routeState.page
       }
-      let refinementList = mapRouteToKeys(routeState)
+      let refinementList = mapRouteToKeys(routeState, dataset)
       let state = Object.assign(refinementList, route)
       return state
     }
@@ -135,15 +137,22 @@ const toggleElementsOnNoResults = (elements, action) => {
   elements.forEach(el => el.classList[action]('algolia--is-hidden'))
 }
 
-const mapRouteToKeys = routeState => {
+const mapRouteToKeys = (routeState, dataset) => {
+  // console.log(routeState)
   let refinementList = {}
   Object.keys(routeState).forEach(k => {
     refinementList[k] = routeState[k].split('~')
   })
+
+  if (dataset.collectionLabel === 'briefs') {
+    routeState['brief_type'] = ['Tech Primer']
+  }
+  // console.log('refinementList', refinementList)
   return { refinementList }
 }
 
 const mapStateToKeys = (uiState, urlKeyDivs, dataset) => {
+  // console.log('uistate', uiState)
   let keyArray = urlKeyDivs
     .map(f => f.replace('filter__details-', '').replace('filter__content-', ''))
     .map(f => {
@@ -160,6 +169,9 @@ const mapStateToKeys = (uiState, urlKeyDivs, dataset) => {
                 ? 'related_briefs'
                 : f
       } else if (dataset.refine_results) {
+        if (uiState && dataset.collectionLabel === 'briefs') {
+          uiState.refinementList['brief_type'] = ['Tech Primer']
+        }
         param = f === 'brief' ? 'brief_type' : `details.${f}`
       } else if (!dataset.collectionLabel) {
         param =
@@ -180,6 +192,7 @@ const mapStateToKeys = (uiState, urlKeyDivs, dataset) => {
     let key = Object.keys(k)[0]
     keys[key] = k[key]
   })
+  // console.log('keys', keys)
   return keys
 }
 const addResults = () => {
@@ -335,34 +348,102 @@ const addResourcesSearchBox = () => {
   )
 }
 
+const helper = algoliasearchHelper(client, indexName, {
+  disjunctiveFacets: ['brief_type']
+})
+
+helper.on('result', function(data) {
+  console.log(data.hits)
+})
+
 const addBriefTypeRefinement = () => {
-  search.addWidget(
-    refinementList({
-      container: '#filter__content-brief',
-      attributeName: 'brief_type',
-      operator: 'or',
-      templates: {
-        item: '{{ label }} ({{ count }})'
-      },
-      autoHideContainer: false,
-      sortBy: ['name:desc']
-    })
-  )
+  search.addWidget({
+    init: options => {
+      let container = document.querySelector('#filter__content-brief-tech')
+      container.classList.add('ais-root', 'ais-refinement-list--item')
+
+      container.addEventListener('click', function() {
+        let activeItem = document.querySelector(
+          '.archive__filter-type .ais-refinement-list--item__active'
+        )
+        if (activeItem)
+          activeItem.classList.remove('ais-refinement-list--item__active')
+
+        this.classList.add('ais-refinement-list--item__active')
+
+        options.helper
+          .clearRefinements('brief_type')
+          .addDisjunctiveFacetRefinement('brief_type', 'Tech Primer')
+          .search()
+
+        helper
+          .clearRefinements('brief_type')
+          .addDisjunctiveFacetRefinement('brief_type', 'Tech Primer')
+          .search()
+
+        let facetState = helper.getState().disjunctiveFacetsRefinements
+          ? {
+              disjunctiveFacetsRefinements: {
+                brief_type: helper.getState().disjunctiveFacetsRefinements
+                  .brief_type
+                  ? [helper.getState().disjunctiveFacetsRefinements.brief_type]
+                  : []
+              }
+            }
+          : null
+
+        console.log(history.state, '384')
+
+        let params = location.search ? `${location.search}&` : '?'
+        if (
+          !history.state ||
+          (history.state && !history.state.disjunctiveFacetsRefinements) ||
+          (history.state &&
+            history.state.disjunctiveFacetsRefinements &&
+            !history.state.disjunctiveFacetsRefinements.brief_type ==
+              'Tech Primer')
+        ) {
+          history.pushState(facetState, '', params + 'brief_type=Tech Primer')
+        }
+      })
+    }
+  })
 
   search.addWidget({
-    init: function({ helper }) {
-      let container = document.querySelector('#filter__content-brief-clear')
-      let countWidget = document.querySelector('#filter__content-brief-count')
+    init: function(options) {
+      let container = document.querySelector('#filter__content-brief-country')
+      container.classList.add('ais-root', 'ais-refinement-list--item')
 
-      for (let i = 0; i < 5; i++) {
-        const parent = container.parentNode
-        const wrapper = document.createElement('div')
-        parent.replaceChild(wrapper, container)
-        wrapper.appendChild(container)
+      container.addEventListener('click', function() {
+        let activeItem = document.querySelector(
+          '.archive__filter-type .ais-refinement-list--item__active'
+        )
+        if (activeItem)
+          activeItem.classList.remove('ais-refinement-list--item__active')
 
-        if (i === 0)
-          wrapper.setAttribute('id', 'filter__content-brief-clear-container')
-      }
+        this.classList.add('ais-refinement-list--item__active')
+        options.helper
+          .clearRefinements('brief_type')
+          .addDisjunctiveFacetRefinement('brief_type', 'Country Profile')
+          .search()
+      })
+    }
+  })
+
+  search.addWidget({
+    init: () => {
+      let container = document.querySelector('#filter__content-brief-all')
+      let countWidget = document.querySelector(
+        '#filter__content-brief-all-count'
+      )
+
+      const parent = container.parentNode
+      const wrapper = document.createElement('div')
+      parent.replaceChild(wrapper, container)
+      wrapper.appendChild(container)
+
+      wrapper.setAttribute('id', 'filter__content-brief-clear-container')
+
       container.classList.add('ais-root', 'ais-refinement-list--item')
 
       if (!window.location.href.includes('brief_type'))
@@ -378,6 +459,7 @@ const addBriefTypeRefinement = () => {
           activeItem.classList.remove('ais-refinement-list--item__active')
 
         this.classList.add('ais-refinement-list--item__active')
+
         helper.clearRefinements('brief_type').search()
       })
     }
@@ -385,7 +467,7 @@ const addBriefTypeRefinement = () => {
 
   search.addWidget(
     stats({
-      container: '#filter__content-brief-count',
+      container: '#filter__content-brief-all-count',
       autoHideContainer: false,
       templates: {
         body: data => {
