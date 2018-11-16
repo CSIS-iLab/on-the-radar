@@ -1,3 +1,10 @@
+{% assign breadcrumb_home = 'Home' %}
+{% unless page.collection == 'authors' %}
+  {% assign breadcrumb_home = 'Analysis' %}
+{% endunless %}
+{% assign breadcrumb_past = null %}
+{% assign breadcrumb_current = page.title %}
+
 {% if page.layout == 'post' %}
   {% assign breadcrumb_current = page.title %}
 
@@ -13,12 +20,6 @@
   {% else %}
     {% assign breadcrumb_past = null %}
   {% endif %}
-{% endif %}
-
-{% if page.layout == 'archive' %}
-  {% assign breadcrumb_home == 'Home' %}
-  {% assign breadcrumb_past == 'past' %}
-  {% assign breadcrumb_current == 'current' %}
 {% endif %}
 
 {% if page.breadcrumbs == true or page.layout == 'archive' %}
