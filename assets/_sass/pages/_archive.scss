@@ -172,6 +172,7 @@
       .sort {
         color: $color__orange-light;
         text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
       }
 
       .sort:hover {
