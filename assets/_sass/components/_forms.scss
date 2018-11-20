@@ -39,9 +39,10 @@
 
       &::before {
         position: absolute;
+        top: -0.5rem;
         right: 100%;
         display: block;
-        color: $color__gray;
+        color: $color__gray-lighter;
         font-family: 'radar';
         transition: all 0.3s ease-in-out;
         content: '\ed2f';
