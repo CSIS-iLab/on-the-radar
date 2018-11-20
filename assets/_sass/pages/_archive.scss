@@ -162,6 +162,10 @@
 
     .summary-label {
       @extend %labeltext__label;
+
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        @include font-size(16px);
+      }
     }
 
     #results__summary > div {
