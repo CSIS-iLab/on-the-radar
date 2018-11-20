@@ -26,7 +26,6 @@ const client = algoliasearch('7UNKAH6RMH', 'b9011cf7f49e60630161fcacf0e37d02')
 const indexName = 'on_the_radar'
 const searchParameters = {
   hitsPerPage: 3,
-  facets: ['brief_type'],
   disjunctiveFacets: ['brief_type']
 }
 
@@ -104,6 +103,25 @@ const AlgoliaSearch = () => {
   addResetWidget()
 
   search.on('render', () => {
+    let refinements = Object.keys(
+      search.helper.state.disjunctiveFacetsRefinements
+    )
+
+    refinements.forEach(r => {
+      let widget
+
+      if (r.includes('details')) {
+        let facet = r.replace('details.', '')
+        console.log(`#filter__details-${facet}`)
+        widget = document.querySelector(`#filter__details-${facet}`)
+      } else if (['collection_title', 'type'].includes(r)) {
+        widget = document.querySelector(`#filter__content-type`)
+      } else if (['keywords', 'topics'].includes(r)) {
+        widget = document.querySelector(`#filter__content-topic`)
+      }
+      widget.querySelector('.ais-root').classList.remove('ais-root__collapsed')
+    })
+
     let title = search.helper.state.query
 
     if (!title) {
