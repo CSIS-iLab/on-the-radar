@@ -45,17 +45,21 @@
   &__filter-description {
     grid-area: filter-description;
 
-    h5 {
-      @extend %post__content-h5;
-    }
-
     > div {
       display: none;
-      padding: 0.8rem $size__archive-content-padding 1rem 4rem;
+      padding: 0.8rem $size__archive-content-padding 0.8rem 4rem;
       background-color: $color__gray-lighter;
 
       @include breakpoint('medium') {
         border-top: 1px solid $color__gray;
+      }
+
+      h5 {
+        @extend %post__content-h5;
+      }
+
+      p {
+        max-width: 720px;
       }
     }
   }
