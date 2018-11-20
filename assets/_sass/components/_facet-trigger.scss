@@ -20,17 +20,12 @@
     }
 
     &:not(:checked) {
-      ~ div .ais-refinement-list--item__active {
+      ~ .ais-refinement-list--item__active {
         padding-bottom: 0.8rem;
         @include font-size(15px);
       }
 
-      ~ div .ais-refinement-list--item:first-of-type:not(:only-child) {
-        padding-bottom: 0 !important;
-      }
-
-      ~ div .ais-refinement-list--item:not(.ais-refinement-list--item__active),
-      ~ .widget:not(#filter__count):not(#filter__content-brief) {
+      ~ .widget:not(.ais-refinement-list--item__active):not(#filter__count) {
         display: none;
       }
 
@@ -40,7 +35,7 @@
     }
 
     &:checked {
-      ~ #filter__content-brief {
+      ~ .ais-refinement-list--item:last-of-type {
         padding-bottom: 0.8rem;
       }
     }

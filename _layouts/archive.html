@@ -17,23 +17,32 @@ layout: default
       <input type="checkbox" class="facet-trigger">
       <label for="archive__filter-type" class="section-title">{{site.data.language.archive.filter_by_type}}</label>
 
-      <div id="filter__content-brief-all" class="widget">All Results</div>
-      <div id="filter__content-brief-all-count" class="widget"></div>
+      <div id="filter__content-brief-all" class="widget ais-root ais-refinement-list--item ais-refinement-list--item__active">
+        All Results
+        <span id="filter__content-brief-all-count"></span>
+      </div>
 
-      <div id="filter__content-brief-tech" class="widget">Tech Primer</div>
-      <div id="filter__content-brief-tech-count" class="widget"></div>
 
-      <div id="filter__content-brief-country" class="widget">Country Profile</div>
-      <div id="filter__content-brief-country-count" class="widget"></div>
-      
+      <div id="filter__content-brief-tech" class="widget ais-root ais-refinement-list--item">
+        Tech Primer
+        <span id="filter__content-brief-tech-count"></span>
+      </div>
+
+
+      <div id="filter__content-brief-country" class="widget ais-root ais-refinement-list--item">
+        Country Profile
+        <span id="filter__content-brief-country-count"></span>
+      </div>
+
+
   </section>
   <section class="archive__filter-description">
-    <div class="tech-primer">
+    <div class="tech">
       <h5>{{ site.data.language.archive.tech_primer }}</h5>
       <p>{{ site.data.language.archive.tech_primer_description }}</p>
     </div>
 
-    <div class="country-profile">
+    <div class="country">
       <h5>{{ site.data.language.archive.country_profile }}</h5>
       <p>{{ site.data.language.archive.country_profile_description }}</p>
     </div>

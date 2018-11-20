@@ -2,6 +2,9 @@ import algoliasearch from 'algoliasearch'
 import algoliasearchHelper from 'algoliasearch-helper'
 
 import instantsearch from 'instantsearch.js/es'
+
+import { connectRefinementList } from 'instantsearch.js/es/connectors'
+
 import {
   searchBox,
   hits,
@@ -11,7 +14,7 @@ import {
   clearAll
 } from 'instantsearch.js/es/widgets'
 
-let pageTotal
+import breakpoints from './breakpoints'
 
 const dataset = document.querySelector('.archive').dataset
 
@@ -23,6 +26,7 @@ const client = algoliasearch('7UNKAH6RMH', 'b9011cf7f49e60630161fcacf0e37d02')
 const indexName = 'on_the_radar'
 const searchParameters = {
   hitsPerPage: 3,
+  facets: ['brief_type'],
   disjunctiveFacets: ['brief_type']
 }
 
@@ -38,7 +42,9 @@ const routing = {
         page: uiState.page
       }
       let keys = mapStateToKeys(uiState, urlKeyDivs, dataset)
+
       let route = Object.assign(keys, state)
+
       return route
     },
     routeToState(routeState) {
@@ -46,8 +52,11 @@ const routing = {
         query: routeState.query,
         page: routeState.page
       }
-      let refinementList = mapRouteToKeys(routeState, dataset)
+      let refinementList = mapRouteToKeys(routeState)
       let state = Object.assign(refinementList, route)
+
+      // state['refinementList'] = {}
+      // state.refinementList['brief_type'] = 'Country Profile'
       return state
     }
   }
@@ -94,10 +103,6 @@ const AlgoliaSearch = () => {
   addItemCountSummary()
   addResetWidget()
 
-  search.on('init', () => {
-    pageTotal = search.helper.lastResults.nbHits
-  })
-
   search.on('render', () => {
     let title = search.helper.state.query
 
@@ -137,22 +142,16 @@ const toggleElementsOnNoResults = (elements, action) => {
   elements.forEach(el => el.classList[action]('algolia--is-hidden'))
 }
 
-const mapRouteToKeys = (routeState, dataset) => {
-  // console.log(routeState)
+const mapRouteToKeys = routeState => {
   let refinementList = {}
   Object.keys(routeState).forEach(k => {
     refinementList[k] = routeState[k].split('~')
   })
 
-  if (dataset.collectionLabel === 'briefs') {
-    routeState['brief_type'] = ['Tech Primer']
-  }
-  // console.log('refinementList', refinementList)
   return { refinementList }
 }
 
 const mapStateToKeys = (uiState, urlKeyDivs, dataset) => {
-  // console.log('uistate', uiState)
   let keyArray = urlKeyDivs
     .map(f => f.replace('filter__details-', '').replace('filter__content-', ''))
     .map(f => {
@@ -169,30 +168,36 @@ const mapStateToKeys = (uiState, urlKeyDivs, dataset) => {
                 ? 'related_briefs'
                 : f
       } else if (dataset.refine_results) {
-        if (uiState && dataset.collectionLabel === 'briefs') {
-          uiState.refinementList['brief_type'] = ['Tech Primer']
-        }
-        param = f === 'brief' ? 'brief_type' : `details.${f}`
+        param =
+          f === 'brief-tech' || f === 'brief-country'
+            ? 'brief_type'
+            : `details.${f}`
       } else if (!dataset.collectionLabel) {
         param =
           f === 'type' ? 'collection_title' : f === 'topic' ? 'keywords' : f
       } else {
         param = f
       }
-
       if (uiState.refinementList) {
         let queries = uiState.refinementList[param]
-        if (queries) return { [param]: queries.join('~') }
+
+        if (queries) {
+          return { [param]: queries.join('~') }
+        } else if (param === 'brief_type') {
+          param
+          // return { [param]: 'Country Profile' }
+        }
       }
     })
     .filter(k => k)
 
   let keys = {}
+
   keyArray.forEach(k => {
     let key = Object.keys(k)[0]
     keys[key] = k[key]
   })
-  // console.log('keys', keys)
+
   return keys
 }
 const addResults = () => {
@@ -348,135 +353,103 @@ const addResourcesSearchBox = () => {
   )
 }
 
-const helper = algoliasearchHelper(client, indexName, {
-  disjunctiveFacets: ['brief_type']
-})
-
-helper.on('result', function(data) {
-  console.log(data.hits)
-})
-
 const addBriefTypeRefinement = () => {
-  search.addWidget({
-    init: options => {
-      let container = document.querySelector('#filter__content-brief-tech')
-      container.classList.add('ais-root', 'ais-refinement-list--item')
+  function renderFn({ instantSearchInstance }, isFirstRendering) {
+    let currentType
 
-      container.addEventListener('click', function() {
-        let activeItem = document.querySelector(
-          '.archive__filter-type .ais-refinement-list--item__active'
-        )
-        if (activeItem)
-          activeItem.classList.remove('ais-refinement-list--item__active')
-
-        this.classList.add('ais-refinement-list--item__active')
-
-        options.helper
-          .clearRefinements('brief_type')
-          .addDisjunctiveFacetRefinement('brief_type', 'Tech Primer')
-          .search()
-
-        helper
-          .clearRefinements('brief_type')
-          .addDisjunctiveFacetRefinement('brief_type', 'Tech Primer')
-          .search()
-
-        let facetState = helper.getState().disjunctiveFacetsRefinements
-          ? {
-              disjunctiveFacetsRefinements: {
-                brief_type: helper.getState().disjunctiveFacetsRefinements
-                  .brief_type
-                  ? [helper.getState().disjunctiveFacetsRefinements.brief_type]
-                  : []
-              }
-            }
-          : null
-
-        console.log(history.state, '384')
-
-        let params = location.search ? `${location.search}&` : '?'
-        if (
-          !history.state ||
-          (history.state && !history.state.disjunctiveFacetsRefinements) ||
-          (history.state &&
-            history.state.disjunctiveFacetsRefinements &&
-            !history.state.disjunctiveFacetsRefinements.brief_type ==
-              'Tech Primer')
-        ) {
-          history.pushState(facetState, '', params + 'brief_type=Tech Primer')
-        }
-      })
-    }
-  })
-
-  search.addWidget({
-    init: function(options) {
-      let container = document.querySelector('#filter__content-brief-country')
-      container.classList.add('ais-root', 'ais-refinement-list--item')
-
-      container.addEventListener('click', function() {
-        let activeItem = document.querySelector(
-          '.archive__filter-type .ais-refinement-list--item__active'
-        )
-        if (activeItem)
-          activeItem.classList.remove('ais-refinement-list--item__active')
-
-        this.classList.add('ais-refinement-list--item__active')
-        options.helper
-          .clearRefinements('brief_type')
-          .addDisjunctiveFacetRefinement('brief_type', 'Country Profile')
-          .search()
-      })
-    }
-  })
-
-  search.addWidget({
-    init: () => {
-      let container = document.querySelector('#filter__content-brief-all')
-      let countWidget = document.querySelector(
-        '#filter__content-brief-all-count'
-      )
-
-      const parent = container.parentNode
-      const wrapper = document.createElement('div')
-      parent.replaceChild(wrapper, container)
-      wrapper.appendChild(container)
-
-      wrapper.setAttribute('id', 'filter__content-brief-clear-container')
-
-      container.classList.add('ais-root', 'ais-refinement-list--item')
-
-      if (!window.location.href.includes('brief_type'))
-        container.classList.add('ais-refinement-list--item__active')
-
-      container.appendChild(countWidget)
-
-      container.addEventListener('click', function() {
-        let activeItem = document.querySelector(
-          '.archive__filter-type .ais-refinement-list--item__active'
-        )
-        if (activeItem)
-          activeItem.classList.remove('ais-refinement-list--item__active')
-
-        this.classList.add('ais-refinement-list--item__active')
-
-        helper.clearRefinements('brief_type').search()
-      })
-    }
-  })
-
-  search.addWidget(
-    stats({
-      container: '#filter__content-brief-all-count',
-      autoHideContainer: false,
-      templates: {
-        body: data => {
-          pageTotal = pageTotal || data.nbHits
-          return `&nbsp;(${pageTotal})`
+    const helpers = {
+      getCurrentType() {
+        return instantSearchInstance.helper.state.disjunctiveFacetsRefinements
+          .brief_type
+      },
+      toggleBriefDescription(currentType, property) {
+        if (!breakpoints.isMobile()) {
+          let type = currentType[0].split(' ')[0].toLowerCase()
+          document.querySelector(
+            `.archive__filter-description > div.${type}`
+          ).style.display = property
         }
       }
+    }
+
+    if (isFirstRendering) {
+      let container = document.querySelector('.archive__filter-type')
+
+      container.addEventListener('click', e => {
+        if (e.target.tagName == 'LABEL') {
+          let trigger = e.target.previousElementSibling
+          trigger.checked = trigger.checked ? false : true
+        }
+
+        let type = e.target.id.replace('filter__content-brief-', '')
+
+        if (type === 'tech' || type === 'country' || type === 'all') {
+          let activeItem = document.querySelector(
+            '.archive__filter-type .ais-refinement-list--item__active'
+          )
+
+          if (activeItem)
+            activeItem.classList.remove('ais-refinement-list--item__active')
+
+          currentType = helpers.getCurrentType()
+
+          if (currentType) helpers.toggleBriefDescription(currentType, 'none')
+
+          if (type === 'all') {
+            instantSearchInstance.helper.clearRefinements('brief_type').search()
+          } else {
+            let brief_type = type === 'tech' ? 'Tech Primer' : 'Country Profile'
+
+            instantSearchInstance.helper
+              .clearRefinements('brief_type')
+              .addDisjunctiveFacetRefinement('brief_type', brief_type)
+              .search()
+          }
+
+          e.target.classList.add('ais-refinement-list--item__active')
+
+          currentType = helpers.getCurrentType()
+
+          if (currentType) helpers.toggleBriefDescription(currentType, 'block')
+        }
+      })
+
+      currentType = helpers.getCurrentType()
+
+      if (currentType) helpers.toggleBriefDescription(currentType, 'block')
+    }
+  }
+
+  let customRefinementList = connectRefinementList(renderFn)
+
+  search.addWidget(
+    customRefinementList({
+      attributeName: 'brief_type'
     })
   )
+
+  const countHelper = algoliasearchHelper(client, indexName, {
+    disjunctiveFacets: ['brief_type']
+  })
+
+  countHelper.search()
+
+  countHelper.on('result', function(data) {
+    let countArray = ['tech', 'country'].map(t => {
+      let count = data.hits.filter(h => {
+        return h.brief_type && h.brief_type.split(' ')[0].toLowerCase() === t
+      }).length
+
+      document.querySelector(
+        `#filter__content-brief-${t}-count`
+      ).innerText = `(${count})`
+      return count
+    })
+
+    document.querySelector(
+      `#filter__content-brief-all-count`
+    ).innerText = `(${countArray.reduce((a, b) => a + b)})`
+  })
 }
 
 const addDetailsRefinement = () => {
