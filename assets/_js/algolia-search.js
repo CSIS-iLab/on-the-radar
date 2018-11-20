@@ -596,10 +596,8 @@ const addPagination = () => {
       container: '#pagination',
       showFirstLast: false,
       labels: {
-        previous:
-          '<button aria-label="previous"><i class="icon-angle-lg-left"></i></button>',
-        next:
-          '<button aria-label="next"><i class="icon-angle-lg-right"></i></button>'
+        previous: '<i class="icon-angle-lg-left"></i>',
+        next: '<i class="icon-angle-lg-right"></i>'
       }
     })
   )

@@ -5,38 +5,47 @@
   padding-left: 0;
   line-height: 0;
 
-  button {
-    padding: 0;
-    color: $color__orange-light;
-    border: 0;
-    @include font-size(24px);
-  }
-
-  &--item,
-  button {
+  &--item {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 2rem;
     height: 2rem;
+    margin-right: 0.5rem;
     background-color: $color__orange;
     border-radius: 50%;
     transition: background-color 0.3s ease-in-out;
-
-    &:hover {
-      color: $color__white;
-      font-weight: bold;
-      background-color: $color__orange-dark;
-    }
-  }
-
-  &--item {
-    margin-right: 0.5rem;
 
     &__active {
       color: $color__orange-dark;
       font-weight: bold;
       background-color: $color__white;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2rem;
+      height: 2rem;
+      font-weight: bold;
+      border-radius: 50%;
+      outline: none;
+      transition: background-color 0.3s ease-in-out;
+
+      &:focus,
+      &:hover {
+        color: $color__white;
+        font-weight: bold;
+        background-color: $color__orange-dark;
+      }
+    }
+
+    i {
+      padding: 0;
+      color: $color__orange-light;
+      border: 0;
+      @include font-size(24px);
     }
 
     &__disabled {
