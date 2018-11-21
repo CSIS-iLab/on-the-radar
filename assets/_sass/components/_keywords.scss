@@ -1,23 +1,19 @@
 .keywords {
-  ul {
-    @extend %tag;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 0.5em;
-    text-align: left;
-    list-style-type: none;
-  }
+  @extend %tag;
+  margin: 0;
+  padding: 0 0 0.5rem 0;
+  text-align: left;
+  list-style-type: none;
 
   li {
     justify-content: space-between;
-    margin-right: 1em;
-    margin-bottom: 1.2em;
+    margin: 0 1rem 1.2rem 0;
     text-transform: lowercase;
     list-style-type: none;
   }
 
   a {
-    padding: 0.4em 0.7em;
+    padding: 0.4rem 0.7rem;
     background-color: $color__blue;
     border-radius: 15px;
 
