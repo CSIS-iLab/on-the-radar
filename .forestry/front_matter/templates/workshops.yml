@@ -24,5 +24,6 @@ fields:
   - type: include
     template: download-media
 pages:
-- _workshops/test.md
 - _workshops/workshop-for-workshopping.md
+- _workshops/workshop-for-workshopping-2.md
+- _workshops/test.md

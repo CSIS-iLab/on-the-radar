@@ -29,6 +29,7 @@
 <div class="breadcrumbs">
   <span class="breadcrumbs__past"><a href="{{ breadcrumb_first_url }}">{{ breadcrumb_first }}</a></span>
   {% if breadcrumb_past %}
+    {{page.collection }}
     <span class="breadcrumbs__past"><a href="{{ breadcrumb_past_url }}">{{ breadcrumb_past }}</a></span>
   {% endif %}
   <span class="breadcrumbs__present">{{ breadcrumb_current | title }}</span>
