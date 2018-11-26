@@ -1,0 +1,46 @@
+.post-block,
+.ais-hits--item {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid $color__gray;
+
+  &:first-of-type {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  &__featured {
+    margin-right: 0.5rem;
+    @extend %post-block__featured;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    @extend %post-block__title;
+
+    &--featured {
+      @extend %post-block__title--featured;
+    }
+
+    i::before {
+      color: $color__gray;
+      @include font-size(18px);
+    }
+  }
+
+  &__img {
+    float: right;
+    max-width: 33%;
+    margin-left: 2rem;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    margin-top: 1rem;
+  }
+}

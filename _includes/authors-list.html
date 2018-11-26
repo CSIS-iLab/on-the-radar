@@ -1,31 +1,35 @@
-{% assign authors = page.authors %}
-{% if post.authors.size > 0 %}
-  {% assign authors = post.authors %}
-{% endif %}
+{% if post.collection == 'resources' %}
+    <span class="post__meta-label">{{ site.data.language.author_list }}</span> {{ post.authors }}
+{% else %}
+  {% assign authors = page.authors %}
+  {% if post.authors.size > 0 %}
+    {% assign authors = post.authors %}
+  {% endif %}
 
-{% if authors.size > 0 %}
-<div class="authors">
-  <span class="post__meta-label">{{ site.data.language.author_list }}</span>
+  {% if authors.size > 0 %}
+  <div class="authors">
+    <span class="post__meta-label">{{ site.data.language.author_list }}</span>
 
-    {% if authors.size == 2 %}
-      {%- assign list_break = ' and ' -%}
-    {% elsif authors.size >= 3 %}
-      {%- assign list_break = ', ' -%}
-      {%- assign end_break = ' and ' -%}
-    {% endif %}
+      {% if authors.size == 2 %}
+        {%- assign list_break = ' and ' -%}
+      {% elsif authors.size >= 3 %}
+        {%- assign list_break = ', ' -%}
+        {%- assign end_break = ' and ' -%}
+      {% endif %}
 
-    {% assign penultimate = authors.size | minus: 1 %}
+      {% assign penultimate = authors.size | minus: 1 %}
 
-      {%- for author in authors -%}
-        {%- assign author_info = site.authors | where: "relative_path", author | first -%}
-        {%- assign author_list = author_info.title -%}
-          {{ author_list }}
-        {%- if forloop.last == false -%}
-          {{- list_break -}}
-        {%- endif -%}
-        {% if forloop.index == penultimate %}
-          {{- end_break -}}
-        {% endif %}
-      {%- endfor -%}
-</div>
+        {%- for author in authors -%}
+          {%- assign author_info = site.authors | where: "relative_path", author | first -%}
+          {%- assign author_list = author_info.title -%}
+            {{ author_list }}
+          {%- if forloop.last == false -%}
+            {{- list_break -}}
+          {%- endif -%}
+          {% if forloop.index == penultimate %}
+            {{- end_break -}}
+          {% endif %}
+        {%- endfor -%}
+  </div>
+  {% endif %}
 {% endif %}

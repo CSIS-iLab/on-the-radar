@@ -1,0 +1,7 @@
+{% assign date = post.details.event_date %}
+<div class="date">
+  <span class="post__meta-label">
+    {{ site.data.language.event_date }}
+  </span>
+  {{ date | date: site.date_format }}
+</div>

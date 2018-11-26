@@ -1,16 +1,18 @@
 <article class="post-block {{ include.class }}" role="article" data-content-type="{{ post.collection | slugify }}">
-  {% if include.show_image and post.image.size > 0 %}
+  {% if post.image.size > 0 %}
   <a href="{{ post.url | relative_url }}" class="post-block__img"><img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}" title="{{ post.title | escape }}" /></a>
   {% endif %}
   <header class="post-block__header" role="header">
+      {%- include featured.html -%}
       {%- include content-type.html -%}
-    <h2 class="post-block__title"><a href="{{ post.url | relative_url }}">
-      {{ post.title | escape }}
-    </a></h2>
+      {%- include post-block-title.html -%}
       {%- include authors-list.html authors=post.authors -%}
-      {%- include date.html -%}
+      {%- if post.collection == 'workshops' -%}
+        {%- include event-date.html -%}
+      {% else %}
+        {%- include date.html -%}
+      {%- endif -%}
       {%- include last-updated.html -%}
-      Event date: {{post.details.event_date | date: '%b %-d, %Y'}}<br />
   </header>
   {% if include.hide_excerpt != true %}
     <section class="post-block__content">

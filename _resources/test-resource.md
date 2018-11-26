@@ -10,7 +10,7 @@ topics:
 - Nuclear Escalation
 - Deterrence
 - Clandestine Capabilities
-optional: Optional Sample
+optional:
 
 ---
 This is [http://saganipsum.com/](http://saganipsum.com/ "http://saganipsum.com/")

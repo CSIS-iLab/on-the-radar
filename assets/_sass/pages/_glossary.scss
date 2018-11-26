@@ -164,11 +164,7 @@
   }
 
   &__item-title {
-    @extend %post-block__title;
-
-    @include breakpoint('medium') {
-      @include font-size(20px);
-    }
+    @extend %post-block__title--glossary;
 
     &:hover {
       color: initial;
