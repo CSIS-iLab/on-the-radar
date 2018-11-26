@@ -95,6 +95,7 @@
 
       @include breakpoint($break: 'medium', $dir: 'max-width') {
         padding-top: 0.8rem;
+        @include font-size(12px);
       }
 
       @include breakpoint('medium') {
@@ -129,6 +130,7 @@
       @extend %facets__link-item--base;
       white-space: nowrap;
       text-transform: uppercase;
+      transition: all 0.3s ease-in-out;
 
       &__active {
         @include breakpoint('medium') {
@@ -222,6 +224,7 @@
       @extend %facets__group-label--base;
       font-weight: bold;
       text-transform: uppercase;
+      transition: all 0.3s ease-in-out;
 
       i::before {
         font-weight: normal;
