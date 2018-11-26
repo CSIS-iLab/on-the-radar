@@ -32,4 +32,5 @@ fields:
   name: optional
   label: Optional
 pages:
+- _resources/tester.md
 - _resources/test-resource-2.md
