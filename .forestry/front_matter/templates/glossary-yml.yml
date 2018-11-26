@@ -1,0 +1,26 @@
+---
+label: glossary.yml
+hide_body: 
+is_partial: 
+fields:
+- name: Glossary
+  label: Glossary
+  type: field_group_list
+  fields:
+  - name: title
+    label: Title
+    type: text
+    hidden: false
+    default: ''
+  - name: acronym
+    label: Acronym
+    type: text
+    hidden: false
+    default: ''
+  - name: description
+    label: Description
+    type: textarea
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
