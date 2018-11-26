@@ -1,10 +1,10 @@
 ---
 label: glossary.yml
-hide_body: false
-is_partial: false
+hide_body: 
+is_partial: 
 fields:
-- name: glossary_terms
-  label: Glossary Terms
+- name: Glossary
+  label: Glossary
   type: field_group_list
   fields:
   - name: title
