@@ -9,6 +9,9 @@ fields:
 - type: text
   name: role
   label: Title
+- type: file
+  name: headshot
+  label: Headshot
 pages:
 - _authors/author-2.md
 - _authors/ruth-barking-ginsberg.md
