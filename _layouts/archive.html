@@ -132,6 +132,9 @@ layout: default
     {% else %}
       {%- for post in site.resources -%}
         {% include post-block.html %}
+        {% if forloop.last and collection.label == 'resources' %}
+          {%- include back-to-top.html -%}
+        {% endif %}
       {%- endfor -%}
     {% endif %}
 
@@ -141,4 +144,7 @@ layout: default
    {% if collection.label != 'resources' %}
     {% include page-footer.html pagination='true' %}
   {% endif %}
+
+  {{collection}}
+
 </article>

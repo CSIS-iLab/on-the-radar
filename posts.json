@@ -1,10 +1,11 @@
 ---
 ---
 [
-  {%- for post in site.resources -%}
+  {%- assign sorted_resources = site.resources | sort: 'date' | reverse -%}
+  {%- for post in sorted_resources -%}
   {%- assign collection = site.collections | where: "label", post.collection | first -%}
   {%- assign collection_title = collection.title -%}
-  {%- capture post_html -%}{%- include post-block.html -%}{%- endcapture -%}
+  {%- capture post_html -%}{%- include post-block.html -%}{%-if forloop.last -%}{%- include back-to-top.html -%}{%- endif -%}{%- endcapture -%}
   {%- capture topics -%}[{%- for topic in post.topics -%}"{{ topic }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
   {
       "objectID": "{{ post.title | slugify }}",
