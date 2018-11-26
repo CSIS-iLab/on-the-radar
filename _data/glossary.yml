@@ -1,14 +1,22 @@
 ---
+- title: asdasd
+  acronym: ''
+  description: ''
 - title: Strategic Situational Awareness
   acronym: SSA
-  description: ssadefinitionLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description: ssadefinitionLorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 - title: Silly Situational Awareness
   acronym: SSA
-  description: ssadefinitionLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description: ssadefinitionLorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 - title: Counterspace Capabilities
   acronym: CTSC
-  description: ctscdefinitionLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquadefinition
+  description: ctscdefinitionLorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliquadefinition
 - title: Sad Situational Awareness
-  description: ssadefinitionLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description: ssadefinitionLorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 - title: Cool Capabilities
-  description: ctscdefinitionLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquadefinition
+  description: ctscdefinitionLorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliquadefinition
