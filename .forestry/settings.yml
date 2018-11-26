@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: "/admin/"
 webhook_url: 
 sections:
-- type: document
-  path: _data/principle_researchers.yml
-  label: About Page Researchers
-  match: "**/*"
 - type: directory
   path: _authors
   label: Authors
@@ -67,6 +63,10 @@ sections:
 - type: document
   path: _data/resources.yml
   label: Resources
+- type: document
+  path: _data/principle_researchers.yml
+  label: About Page Researchers
+  match: "**/*"
 upload_dir: on-the-radar
 public_path: https://res.cloudinary.com/csisideaslab/image/upload
 front_matter_path: https://res.cloudinary.com/csisideaslab/image/upload
