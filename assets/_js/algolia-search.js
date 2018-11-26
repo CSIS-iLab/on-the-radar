@@ -1,5 +1,10 @@
 import algoliasearch from 'algoliasearch'
+import algoliasearchHelper from 'algoliasearch-helper'
+
 import instantsearch from 'instantsearch.js/es'
+
+import { connectRefinementList } from 'instantsearch.js/es/connectors'
+
 import {
   searchBox,
   hits,
@@ -9,16 +14,19 @@ import {
   clearAll
 } from 'instantsearch.js/es/widgets'
 
+import breakpoints from './breakpoints'
+
 const dataset = document.querySelector('.archive').dataset
 
 const elementsToHideNoResults = document.querySelectorAll(
-  '.pagination--hide-no-results'
+  '.algolia--hide-no-results'
 )
 const client = algoliasearch('7UNKAH6RMH', 'b9011cf7f49e60630161fcacf0e37d02')
 
 const indexName = 'on_the_radar'
 const searchParameters = {
-  hitsPerPage: 3
+  hitsPerPage: 3,
+  disjunctiveFacets: ['brief_type']
 }
 
 searchParameters.filters = dataset.collectionLabel
@@ -32,18 +40,23 @@ const routing = {
         query: uiState.query,
         page: uiState.page
       }
-
       let keys = mapStateToKeys(uiState, urlKeyDivs, dataset)
-      return Object.assign(keys, state)
+
+      let route = Object.assign(keys, state)
+
+      return route
     },
     routeToState(routeState) {
-      return {
+      let route = {
         query: routeState.query,
-        refinementList: {
-          keywords: routeState.keywords && routeState.keywords.split('~')
-        },
         page: routeState.page
       }
+      let refinementList = mapRouteToKeys(routeState)
+      let state = Object.assign(refinementList, route)
+
+      // state['refinementList'] = {}
+      // state.refinementList['brief_type'] = 'Country Profile'
+      return state
     }
   }
 }
@@ -90,26 +103,31 @@ const AlgoliaSearch = () => {
   addResetWidget()
 
   search.on('render', () => {
-    let title = search.searchParameters.query
+    let refinements = Object.keys(
+      search.helper.state.disjunctiveFacetsRefinements
+    )
 
-    if (
-      !title &&
-      search.searchParameters.hasOwnProperty('disjunctiveFacetsRefinements')
-    ) {
-      let facets = Object.keys(
-        search.searchParameters.disjunctiveFacetsRefinements
-      )
+    refinements.forEach(r => {
+      let widget
 
-      facets.forEach(
-        facet =>
-          (title =
-            search.searchParameters.disjunctiveFacetsRefinements[facet][0])
-      )
-    }
+      if (r.includes('details')) {
+        let facet = r.replace('details.', '')
+        console.log(`#filter__details-${facet}`)
+        widget = document.querySelector(`#filter__details-${facet}`)
+      } else if (['collection_title', 'type'].includes(r)) {
+        widget = document.querySelector(`#filter__content-type`)
+      } else if (['keywords', 'topics'].includes(r)) {
+        widget = document.querySelector(`#filter__content-topic`)
+      }
+      widget.querySelector('.ais-root').classList.remove('ais-root__collapsed')
+    })
+
+    let title = search.helper.state.query
 
     if (!title) {
       return
     }
+    updateSearchTitle(title)
 
     if (search.helper.lastResults.nbHits == 0) {
       toggleElementsOnNoResults(elementsToHideNoResults, 'add')
@@ -128,8 +146,27 @@ const AlgoliaSearch = () => {
   search.start()
 }
 
-function toggleElementsOnNoResults(elements, action) {
-  elements.forEach(el => el.classList[action]('pagination--is-hidden'))
+const updateSearchTitle = query => {
+  const queryText = document.querySelector('#search-input')
+
+  if (!query) {
+    queryText.value = ''
+    return
+  }
+  queryText.value = query
+}
+
+const toggleElementsOnNoResults = (elements, action) => {
+  elements.forEach(el => el.classList[action]('algolia--is-hidden'))
+}
+
+const mapRouteToKeys = routeState => {
+  let refinementList = {}
+  Object.keys(routeState).forEach(k => {
+    refinementList[k] = routeState[k].split('~')
+  })
+
+  return { refinementList }
 }
 
 const mapStateToKeys = (uiState, urlKeyDivs, dataset) => {
@@ -149,26 +186,36 @@ const mapStateToKeys = (uiState, urlKeyDivs, dataset) => {
                 ? 'related_briefs'
                 : f
       } else if (dataset.refine_results) {
-        param = f === 'brief' ? 'brief_type' : `details.${f}`
+        param =
+          f === 'brief-tech' || f === 'brief-country'
+            ? 'brief_type'
+            : `details.${f}`
       } else if (!dataset.collectionLabel) {
         param =
           f === 'type' ? 'collection_title' : f === 'topic' ? 'keywords' : f
       } else {
         param = f
       }
-
       if (uiState.refinementList) {
         let queries = uiState.refinementList[param]
-        if (queries) return { [param]: queries.join('~') }
+
+        if (queries) {
+          return { [param]: queries.join('~') }
+        } else if (param === 'brief_type') {
+          param
+          // return { [param]: 'Country Profile' }
+        }
       }
     })
     .filter(k => k)
 
   let keys = {}
+
   keyArray.forEach(k => {
     let key = Object.keys(k)[0]
     keys[key] = k[key]
   })
+
   return keys
 }
 const addResults = () => {
@@ -181,7 +228,7 @@ const addResults = () => {
         },
         empty: `<h2 class="section-title">Nothing Found</h2>
           <p>Sorry, but nothing matched your search terms. Please try again with different keywords.</p>
-          <a href="" class="btn">Clear All Filters</a>`
+          <a href="." class="btn">Clear All Filters</a>`
       }
     })
   )
@@ -201,10 +248,17 @@ const addTopicTypeRelatedBriefFilter = () => {
       collapsible: {
         collapsed: true
       },
+      sortBy: ['name:asc'],
       autoHideContainer: false,
       templates: {
-        header: 'Type<i class="icon-angle-sm-right"></i>',
-        item: `{{ label }} ({{ count }})`
+        header: 'Type<i class="icon-angle-lg-right"></i>',
+        item: data => {
+          return `${
+            data.isRefined
+              ? '<i class="icon-checkbox-selected"></i>'
+              : '<i class="icon-checkbox-empty"></i>'
+          }${data.label} (${data.count})`
+        }
       }
     })
   )
@@ -218,10 +272,17 @@ const addTopicTypeRelatedBriefFilter = () => {
       collapsible: {
         collapsed: true
       },
+      sortBy: ['name:asc'],
       autoHideContainer: false,
       templates: {
-        header: 'Topic<i class="icon-angle-sm-right"></i>',
-        item: '{{ label }} ({{ count }})'
+        header: 'Topic<i class="icon-angle-lg-right"></i>',
+        item: data => {
+          return `${
+            data.isRefined
+              ? '<i class="icon-checkbox-selected"></i>'
+              : '<i class="icon-checkbox-empty"></i>'
+          }${data.label} (${data.count})`
+        }
       }
     })
   )
@@ -235,13 +296,53 @@ const addTopicTypeRelatedBriefFilter = () => {
         collapsible: {
           collapsed: true
         },
+        sortBy: ['name:asc'],
         templates: {
-          header: 'Related Briefs<i class="icon-angle-sm-right"></i>',
-          item: '{{ label }} ({{ count }})'
+          header: 'Related Briefs<i class="icon-angle-lg-right"></i>',
+          item: data => {
+            return `${
+              data.isRefined
+                ? '<i class="icon-checkbox-selected"></i>'
+                : '<i class="icon-checkbox-empty"></i>'
+            }${data.label} (${data.count})`
+          }
         }
       })
     )
   }
+
+  let container =
+    dataset.collectionLabel === 'briefs'
+      ? '.archive__filter-type #filter__count'
+      : '.archive__sidebar #filter__count'
+
+  search.addWidget(
+    stats({
+      container: container,
+      templates: {
+        body: () => {
+          let filters = search.helper.state.disjunctiveFacetsRefinements
+
+          let refinements = Object.keys(filters).filter(
+            f => !f.includes('details.')
+          )
+
+          let refinementCount = refinements.length
+
+          if (refinementCount) {
+            document.querySelector(container).style.paddingBottom = '0.8rem'
+
+            return `${refinementCount} applied`
+          } else {
+            document.querySelector(container).style.paddingBottom = '1.5rem'
+
+            return null
+          }
+        },
+        autoHideContainer: false
+      }
+    })
+  )
 }
 
 const addSiteSearchBox = () => {
@@ -251,7 +352,8 @@ const addSiteSearchBox = () => {
       queryHook: function(query, search) {
         search(query)
       },
-      magnifier: false
+      magnifier: true,
+      reset: false
     })
   )
 }
@@ -263,51 +365,109 @@ const addResourcesSearchBox = () => {
       queryHook: function(query, search) {
         search(query)
       },
-      magnifier: false
+      magnifier: true,
+      reset: false
     })
   )
 }
 
 const addBriefTypeRefinement = () => {
-  search.addWidget(
-    refinementList({
-      container: '#filter__content-brief',
-      attributeName: 'brief_type',
-      operator: 'or',
-      templates: {
-        item: '{{ label }} ({{ count }})'
+  function renderFn({ instantSearchInstance }, isFirstRendering) {
+    let currentType
+
+    const helpers = {
+      getCurrentType() {
+        return instantSearchInstance.helper.state.disjunctiveFacetsRefinements
+          .brief_type
       },
-      autoHideContainer: false,
-      sortBy: ['name:desc']
-    })
-  )
-
-  search.addWidget(
-    clearAll({
-      container: '#filter__content-brief-clear',
-      templates: {
-        link: () => {
-          let results_text = 'Results'
-          return `All ${results_text}`
-        }
-      },
-
-      autoHideContainer: false,
-      clearsQuery: false
-    })
-  )
-
-  search.addWidget(
-    stats({
-      container: '.all-result-count-placeholder',
-      autoHideContainer: false,
-      templates: {
-        body: data => {
-          return ` (${data.nbHits})`
+      toggleBriefDescription(currentType, property) {
+        if (!breakpoints.isMobile()) {
+          let type = currentType[0].split(' ')[0].toLowerCase()
+          document.querySelector(
+            `.archive__filter-description > div.${type}`
+          ).style.display = property
         }
       }
+    }
+
+    if (isFirstRendering) {
+      let container = document.querySelector('.archive__filter-type')
+
+      container.addEventListener('click', e => {
+        if (e.target.tagName == 'LABEL') {
+          let trigger = e.target.previousElementSibling
+          trigger.checked = trigger.checked ? false : true
+        }
+
+        let type = e.target.id.replace('filter__content-brief-', '')
+
+        if (type === 'tech' || type === 'country' || type === 'all') {
+          let activeItem = document.querySelector(
+            '.archive__filter-type .ais-refinement-list--item__active'
+          )
+
+          if (activeItem)
+            activeItem.classList.remove('ais-refinement-list--item__active')
+
+          currentType = helpers.getCurrentType()
+
+          if (currentType) helpers.toggleBriefDescription(currentType, 'none')
+
+          if (type === 'all') {
+            instantSearchInstance.helper.clearRefinements('brief_type').search()
+          } else {
+            let brief_type = type === 'tech' ? 'Tech Primer' : 'Country Profile'
+
+            instantSearchInstance.helper
+              .clearRefinements('brief_type')
+              .addDisjunctiveFacetRefinement('brief_type', brief_type)
+              .search()
+          }
+
+          e.target.classList.add('ais-refinement-list--item__active')
+
+          currentType = helpers.getCurrentType()
+
+          if (currentType) helpers.toggleBriefDescription(currentType, 'block')
+        }
+      })
+
+      currentType = helpers.getCurrentType()
+
+      if (currentType) helpers.toggleBriefDescription(currentType, 'block')
+    }
+  }
+
+  let customRefinementList = connectRefinementList(renderFn)
+
+  search.addWidget(
+    customRefinementList({
+      attributeName: 'brief_type'
     })
   )
+
+  const countHelper = algoliasearchHelper(client, indexName, {
+    disjunctiveFacets: ['brief_type']
+  })
+
+  countHelper.search()
+
+  countHelper.on('result', function(data) {
+    let countArray = ['tech', 'country'].map(t => {
+      let count = data.hits.filter(h => {
+        return h.brief_type && h.brief_type.split(' ')[0].toLowerCase() === t
+      }).length
+
+      document.querySelector(
+        `#filter__content-brief-${t}-count`
+      ).innerText = `(${count})`
+      return count
+    })
+
+    document.querySelector(
+      `#filter__content-brief-all-count`
+    ).innerText = `(${countArray.reduce((a, b) => a + b)})`
+  })
 }
 
 const addDetailsRefinement = () => {
@@ -322,17 +482,54 @@ const addDetailsRefinement = () => {
         collapsible: {
           collapsed: true
         },
-
         templates: {
           header: `${facet.replace(
             /_/g,
             ' '
-          )}<i class="icon-angle-sm-right"></i>`,
-          item: '{{ label }} ({{ count }})'
+          )}<i class="icon-angle-lg-right"></i>`,
+          item: data => {
+            return `${
+              data.isRefined
+                ? '<i class="icon-checkbox-selected"></i>'
+                : '<i class="icon-checkbox-empty"></i>'
+            }${data.label} (${data.count})`
+          }
         }
       })
     )
   })
+
+  search.addWidget(
+    stats({
+      container: '.archive__sidebar #filter__count',
+      templates: {
+        body: () => {
+          let filters = search.helper.state.disjunctiveFacetsRefinements
+
+          let refinements = Object.keys(filters).filter(f =>
+            f.includes('details.')
+          )
+
+          let refinementCount = refinements.length
+
+          if (refinementCount) {
+            document.querySelector(
+              '.archive__sidebar #filter__count'
+            ).style.paddingBottom = '0.8rem'
+
+            return `${refinementCount} applied`
+          } else {
+            document.querySelector(
+              '.archive__sidebar #filter__count'
+            ).style.paddingBottom = '1.5rem'
+
+            return null
+          }
+        },
+        autoHideContainer: false
+      }
+    })
+  )
 }
 
 const addItemCountSummary = () => {
@@ -346,7 +543,9 @@ const addItemCountSummary = () => {
             results_text = 'Item'
           }
           return `
-            <span class="items">${data.nbHits} ${results_text}</span>
+            <span class="summary-text">${
+              data.nbHits
+            }</span> <span class="summary-label">${results_text}</span>
           `
         },
         autoHideContainer: false
@@ -363,7 +562,9 @@ const addPageCountSummary = () => {
         body: data => {
           let page = data.page + 1
           return `
-            <span class="pages">Page ${page} of ${data.nbPages}</span>
+            <span class="summary-label">Page</span> <span class="summary-text">${page} of ${
+            data.nbPages
+          }</span> |
           `
         },
         autoHideContainer: false
@@ -398,8 +599,10 @@ const addSortWidget = () => {
         .querySelector('#results__sort .sort-newest')
         .addEventListener('click', function() {
           helper.setIndex(`${searchIndex}_desc`).search()
-          this.classList.add('selected')
-          document.querySelector('.sort-oldest').classList.remove('selected')
+          this.classList.add('selected-sort')
+          document
+            .querySelector('.sort-oldest')
+            .classList.remove('selected-sort')
         })
     }
   })
@@ -411,10 +614,8 @@ const addPagination = () => {
       container: '#pagination',
       showFirstLast: false,
       labels: {
-        previous:
-          '<button aria-label="previous"><i class="icon-angle-lg-left"></i></button>',
-        next:
-          '<button aria-label="next"><i class="icon-angle-lg-right"></i></button>'
+        previous: '<i class="icon-angle-lg-left"></i>',
+        next: '<i class="icon-angle-lg-right"></i>'
       }
     })
   )

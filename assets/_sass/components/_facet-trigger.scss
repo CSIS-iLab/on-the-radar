@@ -1,0 +1,43 @@
+.facet-trigger {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+
+  @include breakpoint($break: 'medium', $dir: 'max-width') {
+    + .section-title {
+      position: relative;
+      justify-content: space-between;
+      cursor: pointer;
+
+      &::after {
+        position: absolute;
+        right: 0;
+        content: '\f004';
+        display: inline-block;
+        font-family: 'radar';
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    &:not(:checked) {
+      ~ .ais-refinement-list--item__active {
+        padding-bottom: 0.8rem;
+        @include font-size(15px);
+      }
+
+      ~ .widget:not(.ais-refinement-list--item__active):not(#filter__count) {
+        display: none;
+      }
+
+      + .section-title::after {
+        transform: rotate(-90deg);
+      }
+    }
+
+    &:checked {
+      ~ .ais-refinement-list--item:last-of-type {
+        padding-bottom: 0.8rem;
+      }
+    }
+  }
+}
