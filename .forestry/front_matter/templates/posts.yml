@@ -38,6 +38,10 @@ fields:
   name: ''
   label: ''
   template: photo
+- type: boolean
+  name: featured
+  label: Featured?
+  description: Should this post be highlighted?
 pages:
 - _posts/tester.md
 - _posts/2018-10-31-test-jekyll-post.md
