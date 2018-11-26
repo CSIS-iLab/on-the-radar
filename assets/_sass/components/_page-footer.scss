@@ -20,7 +20,7 @@
     text-transform: uppercase;
     background-color: $color__orange;
     transition: background-color 0.3s ease-in-out;
-    
+
     @include breakpoint('medium') {
       max-width: $size__page-footer-width;
       margin: 0 0 0 auto;
@@ -30,9 +30,13 @@
     @include breakpoint('large') {
       padding-right: 1rem;
       padding-left: 1rem;
-      
+
       &::after {
-        @include orange-side-bar($direction: right, $height: 150px, $vertical: bottom);
+        @include orange-side-bar(
+          $direction: right,
+          $height: 150px,
+          $vertical: bottom
+        );
         z-index: 1;
       }
     }
@@ -54,3 +58,9 @@
   }
 }
 
+.layout-archive:not(.archive--resources) .page__footer {
+  @include breakpoint('medium') {
+    margin-right: 0;
+    margin-left: sidebar-width('large');
+  }
+}

@@ -32,6 +32,11 @@ archive:
   oldest: Oldest
   newest: Newest
   resource_name: Name
+  filter_by_type: Filter by Type
   filter_entries: Filter Entries
   refine_results: Refine Results
   featured_post: Featured Post
+  tech_primer: Tech Primer
+  tech_primer_description: Learn about different emerging situational-awareness technologies and their potential impacts on stability.
+  country_profile: Country Profile
+  country_profile_description: Improve your understanding of situational awareness capabilities by country.
