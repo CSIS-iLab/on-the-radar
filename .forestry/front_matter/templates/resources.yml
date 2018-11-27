@@ -29,8 +29,8 @@ fields:
       file: _data/resources.yml
       path: topics
 - type: text
-  name: optional
-  label: Optional
+  name: link
+  label: Link (optional)
 pages:
 - _resources/tester.md
 - _resources/test-resource-2.md
