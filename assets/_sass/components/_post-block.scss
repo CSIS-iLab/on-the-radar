@@ -1,10 +1,9 @@
-.post-block,
-.ais-hits--item {
+.post-block {
   margin-top: 2rem;
   padding-top: 2rem;
   border-top: 1px solid $color__gray;
 
-  &:first-of-type {
+  .ais-hits--item:first-of-type & {
     padding-top: 0;
     border-top: 0;
   }
@@ -31,6 +30,7 @@
   &__img {
     float: right;
     max-width: 33%;
+    margin-bottom: 1rem;
     margin-left: 2rem;
 
     img {
