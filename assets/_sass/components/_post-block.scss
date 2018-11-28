@@ -4,6 +4,7 @@
   border-top: 1px solid $color__gray;
 
   .ais-hits--item:first-of-type & {
+    margin-top: 0;
     padding-top: 0;
     border-top: 0;
   }
