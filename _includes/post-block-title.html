@@ -1,0 +1,9 @@
+{%- if post.collection == 'resources' -%}
+  {%- if post.link.size > 0 -%}
+    <h2 class="post-block__title"><a href="{{ post.link }}" target="_blank">{{ post.title | escape }}<i class="icon-eternal-link"></i></a></h2>
+  {%- else -%}
+    <h2 class="post-block__title">{{ post.title | escape }}</h2>
+  {%- endif -%}
+{%- else -%}
+  <h2 class="post-block__title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+{%- endif -%}

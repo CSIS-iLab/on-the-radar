@@ -7,6 +7,6 @@ topics:
 - Capabilities
 - Deterrence
 - Clandestine Capabilities
-optional: http://press.georgetown.edu/book/georgetown/military-strategy-joint-operations-and-airpower
+link: http://press.georgetown.edu/book/georgetown/military-strategy-joint-operations-and-airpower
 
 ---
