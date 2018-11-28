@@ -15,4 +15,3 @@ install:
 script:
   - npm test
   - htmlproofer --assume-extension ./_site
-sudo: false
