@@ -123,9 +123,9 @@
 @mixin archive-padding() {
   padding-right: content-padding('small');
   padding-left: content-padding('small');
-  
+
   @include breakpoint('medium') {
     padding-right: $size__archive-content-padding;
-    padding-left: $size__archive-content-padding; 
+    padding-left: $size__archive-content-padding;
   }
 }

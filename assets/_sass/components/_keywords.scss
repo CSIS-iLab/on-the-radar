@@ -1,0 +1,31 @@
+.keywords {
+  @extend %tag;
+  margin: 0;
+  padding: 0.3rem 0;
+  text-align: left;
+  list-style-type: none;
+
+  li {
+    justify-content: space-between;
+    margin: 0 1rem 1.4rem 0;
+    text-transform: lowercase;
+    list-style-type: none;
+  }
+
+  a {
+    padding: 0.4rem 0.7rem;
+    background-color: $color__blue;
+    border-radius: 15px;
+
+    &:hover {
+      background-color: $color__astral-dark;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  @include breakpoint('medium') {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}

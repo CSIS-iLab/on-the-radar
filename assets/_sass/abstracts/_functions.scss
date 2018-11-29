@@ -14,7 +14,7 @@ $browser-context: 16px;
   }
   @else {
     @return map-get($map, $breakpoint);
-  } 
+  }
 }
 
 @function wrapper-width($breakpoint) {
