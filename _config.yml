@@ -12,6 +12,8 @@ search_briefs_url: issue-briefs/?brief_type=
 
 cloudinary_url: https://res.cloudinary.com/csisideaslab/image/upload/
 
+keyword_url: /search/?keywords=
+
 # Content types will be defined here
 collections:
   posts:
