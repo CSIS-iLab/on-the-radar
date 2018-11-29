@@ -1,0 +1,16 @@
+.breadcrumbs {
+  &__past {
+    @extend %breadcrumbs__past;
+
+    &::after {
+      content: ' /';
+      @extend %breadcrumbs__past;
+      display: inline-block;
+      white-space: pre;
+    }
+  }
+
+  &__present {
+    @extend %breadcrumbs;
+  }
+}

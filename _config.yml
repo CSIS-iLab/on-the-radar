@@ -3,10 +3,12 @@ email: csisideaslab@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   The website for the On the Radar study by the CSIS Project on Nuclear Issues (PONI) program.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ontheradar.csis.org/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 
 date_format: '%B %-d, %Y'
+
+search_briefs_url: issue-briefs/?brief_type=
 
 cloudinary_url: https://res.cloudinary.com/csisideaslab/image/upload/
 
@@ -39,6 +41,7 @@ defaults:
     layout: post
     permalink: "/analysis/:slug/"
     view_all_url: "/analysis/"
+    breadcrumbs: true
 - scope:
     path: ''
     type: 'briefs'
@@ -46,6 +49,7 @@ defaults:
     layout: post
     permalink: "/issue-briefs/:slug/"
     view_all_url: "/issue-briefs/"
+    breadcrumbs: true
 - scope:
     path: ''
     type: 'workshops'
@@ -53,12 +57,14 @@ defaults:
     layout: post
     permalink: "/workshops/:slug/"
     view_all_url: "/workshops/"
+    breadcrumbs: true
 - scope:
     path: ''
     type: 'authors'
   values:
     layout: archive
     permalink: "/authors/:slug/"
+    breadcrumbs: true
 
 # Build settings
 markdown: kramdown

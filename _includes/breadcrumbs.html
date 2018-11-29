@@ -1,0 +1,37 @@
+{% assign breadcrumb_first = 'Home' %}
+{% assign breadcrumb_first_url = '/' %}
+{% if page.collection == 'authors' %}
+  {% assign breadcrumb_first = 'Analysis' %}
+  {% assign breadcrumb_first_url = breadcrumb_first | relative_url %}
+{% endif %}
+{% assign breadcrumb_past = null %}
+{% assign breadcrumb_current = page.title %}
+
+{% if page.layout == 'post' %}
+  {% assign breadcrumb_current = page.title %}
+
+  {% if page.collection == 'resources'%}
+    {% assign breadcrumb_first = page.type %}
+    {% assign breadcrumb_first_url = page.collection | relative_url %}
+  {% else %}
+    {% assign breadcrumb_first_path = site.collections | where: "label", page.collection | first %}
+    {% assign breadcrumb_first = breadcrumb_first_path.title %}
+    {% assign breadcrumb_first_url = breadcrumb_first | slugify | relative_url %}
+  {% endif %}
+
+  {% if page.collection == 'briefs' %}
+    {% assign breadcrumb_past = page.brief_type %}
+    {% assign breadcrumb_past_slug = page.brief_type %}
+    {% assign breadcrumb_past_url = site.search_briefs_url | append: breadcrumb_past_slug | relative_url %}
+  {% endif %}
+{% endif %}
+
+{% if page.breadcrumbs == true or page.layout == 'archive' %}
+<div class="breadcrumbs">
+  <span class="breadcrumbs__past"><a href="{{ breadcrumb_first_url }}">{{ breadcrumb_first }}</a></span>
+  {% if breadcrumb_past %}
+    <span class="breadcrumbs__past"><a href="{{ breadcrumb_past_url }}">{{ breadcrumb_past }}</a></span>
+  {% endif %}
+  <span class="breadcrumbs__present">{{ breadcrumb_current | title }}</span>
+</div>
+{% endif %}
