@@ -21,7 +21,7 @@
 
   {% if page.collection == 'briefs' %}
     {% assign breadcrumb_past = page.brief_type %}
-    {% assign breadcrumb_past_slug = page.brief_type | slugify %}
+    {% assign breadcrumb_past_slug = page.brief_type %}
     {% assign breadcrumb_past_url = site.search_briefs_url | append: breadcrumb_past_slug | relative_url %}
   {% endif %}
 {% endif %}
