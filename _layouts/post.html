@@ -3,19 +3,16 @@ layout: default
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post__header">
-    <h1 class="post__title" itemprop="name headline">{{ page.title | escape }}</h1>
+    <h1 class="post__title" itemprop="name headline">
+      {{ page.title | escape }}
+    </h1>
     <div class="post__content-type">{%- include content-type.html -%}</div>
   </header>
   <section class="post__meta">
-    {%- include authors-list.html -%}
-    {%- include date.html -%}
-    {%- include last-updated.html -%}
-    Photo Caption
-    Social Share
+    {%- include authors-list.html -%} {%- include date.html -%} {%- include
+    last-updated.html -%} Photo Caption Social Share
   </section>
-  <section class="post__img-container">
-    {% include post-image.html %}
-  </section>
+  <section class="post__img-container">{% include post-image.html %}</section>
   <aside class="post__sidebar">
     <section class="post__img-container--large">
       {% include post-image.html %}
@@ -33,10 +30,15 @@ layout: default
 
   <section class="post__footer">
     Social Share<br />
-    {% include authors-block.html %}
-    Related Reading<br />
-    - Tags<br />
-    - Related Posts
+    {% include authors-block.html %} {% if post.collection == 'posts' %}
+    <section class="post__related-block">
+      <h2 class="post__related-reading">
+        {{ site.data.language.related_reading }}
+      </h2>
+      <div class="post__more-on">{{ site.data.language.more_on }}</div>
+      {%- include keywords.html -%} - Related Posts
+    </section>
+    {% endif %}
   </section>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
