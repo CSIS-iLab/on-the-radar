@@ -16,12 +16,13 @@
   {% else %}
     {% assign breadcrumb_first_path = site.collections | where: "label", page.collection | first %}
     {% assign breadcrumb_first = breadcrumb_first_path.title %}
-    {% assign breadcrumb_first_url = breadcrumb_first | relative_url %}
+    {% assign breadcrumb_first_url = breadcrumb_first | slugify | relative_url %}
   {% endif %}
 
   {% if page.collection == 'briefs' %}
     {% assign breadcrumb_past = page.brief_type %}
-    {% assign breadcrumb_past_url = site.search_briefs_url | append: page.brief_type | relative_url %}
+    {% assign breadcrumb_past_slug = page.brief_type | slugify %}
+    {% assign breadcrumb_past_url = site.search_briefs_url | append: breadcrumb_past_slug | relative_url %}
   {% endif %}
 {% endif %}
 
