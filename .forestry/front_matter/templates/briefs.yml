@@ -76,7 +76,7 @@ fields:
   - type: include
     template: download-media
 pages:
+- _briefs/test-tech-primer.md
 - _briefs/tester.md
 - _briefs/second-tech-primer-test.md
 - _briefs/country-profile.md
-- _briefs/test-tech-primer.md
