@@ -3,7 +3,9 @@ title: test training
 categories: []
 date: 2018-11-30 19:09:06 +0000
 excerpt: ''
-authors: []
+authors:
+- _authors/john-dot.md
+- _authors/jane-doe.md
 keywords:
 - Synthetic Aperture Sonar
 - Hydrophones
