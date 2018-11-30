@@ -25,8 +25,8 @@ excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel quam 
   dui, mollis ac venenatis eget, congue id orci. Sed eu lorem lacus. Pellentesque
   viverra ligula id iaculis suscipit.
 authors:
-- _authors/ruth-barking-ginsberg.md
-- _authors/author-2.md
+- _authors/john-dot.md
+- _authors/jane-doe.md
 brief_type: Tech Primer
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1542205462/on-the-radar/header-sample.jpg
 image_caption: US Defense Secretary Robert Gates (2ndL) and Canadian Defense Minister
@@ -34,6 +34,7 @@ image_caption: US Defense Secretary Robert Gates (2ndL) and Canadian Defense Min
   signing on March 10, 2011 at NATO Headquarters in Brussels.
 image_source: Getty Images
 downloads:
+- {}
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1542205462/on-the-radar/header-sample.jpg
   label: Sample media upload
 
