@@ -43,5 +43,6 @@ fields:
   label: Featured?
   description: Should this post be highlighted?
 pages:
+- _posts/test-training.md
 - _posts/tester.md
 - _posts/2018-10-31-test-jekyll-post.md
