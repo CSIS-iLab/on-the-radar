@@ -4,7 +4,7 @@ date: 2018-10-31 16:52:42 +0000
 excerpt: 'Across the centuries muse about shores of the cosmic ocean from which we
   spring made in the interiors of collapsing stars tendrils of gossamer clouds? '
 authors:
-- _authors/ruth-barking-ginsberg.md
+- _authors/john-dot.md
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
 image_caption: Test Caption
 image_source: Test Source
