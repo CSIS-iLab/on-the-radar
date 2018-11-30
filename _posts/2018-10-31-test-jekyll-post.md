@@ -5,8 +5,8 @@ excerpt: Nam placerat ante arcu, porta turpis sed tellus. Aliquet pellentesque c
   donec feugiat dui, hendrerit vel, mattis tellus magna id, ante pede mauris varius
   odio id a, commodo ipsum tellus magna dapibus ut.
 authors:
-- _authors/author-2.md
-- _authors/ruth-barking-ginsberg.md
+- _authors/john-dot.md
+- _authors/jane-doe.md
 categories:
 - Category 1
 keywords:
