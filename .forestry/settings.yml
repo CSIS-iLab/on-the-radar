@@ -4,13 +4,11 @@ auto_deploy: false
 admin_path: "/admin/"
 webhook_url: 
 sections:
-- type: directory
-  path: _authors
-  label: Authors
+- type: jekyll-posts
+  label: Analysis
   create: all
-  match: "**/*"
   templates:
-  - authors
+  - posts
 - type: directory
   path: _briefs
   label: Briefs
@@ -18,11 +16,13 @@ sections:
   match: "**/*"
   templates:
   - briefs
-- type: jekyll-posts
-  label: Posts
+- type: directory
+  path: _workshops
+  label: Workshops
   create: all
+  match: "**/*"
   templates:
-  - posts
+  - workshops
 - type: directory
   path: _resources
   label: Resources
@@ -31,17 +31,32 @@ sections:
   templates:
   - resources
 - type: directory
-  path: _workshops
-  label: Workshops
+  path: _authors
+  label: Authors
   create: all
   match: "**/*"
   templates:
-  - workshops
+  - authors
 - type: jekyll-pages
   label: Pages
   create: all
 - type: heading
   label: DATA
+- type: document
+  path: _data/categories.yml
+  label: Categories
+- type: document
+  path: _data/keywords.yml
+  label: Keywords
+- type: document
+  path: _data/resources.yml
+  label: Resources
+- type: document
+  path: _data/glossary.yml
+  label: Glossary
+- type: document
+  path: _data/principle_researchers.yml
+  label: About Page Researchers
 - type: document
   path: _data/brief-tech.yml
   label: Tech Primer
@@ -49,23 +64,8 @@ sections:
   path: _data/brief-countries.yml
   label: Country Brief
 - type: document
-  path: _data/categories.yml
-  label: Categories
-- type: document
-  path: _data/glossary.yml
-  label: Glossary
-- type: document
-  path: _data/keywords.yml
-  label: Keywords
-- type: document
   path: _data/language.yml
   label: Language
-- type: document
-  path: _data/resources.yml
-  label: Resources
-- type: document
-  path: _data/principle_researchers.yml
-  label: About Page Researchers
 upload_dir: on-the-radar
 public_path: https://res.cloudinary.com/csisideaslab/image/upload
 front_matter_path: https://res.cloudinary.com/csisideaslab/image/upload
