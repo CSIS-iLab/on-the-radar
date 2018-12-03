@@ -44,7 +44,7 @@
     {% for related in related_briefs %}
     {%- assign related_info = site.posts | where: "relative_path", related | first -%}
       <ul class="post__details-title related">{{ site.data.language.details.related_briefs }}</ul>
-        <li class="post__details-item related-list"><a href="{{ related_info.url | relative_url }}" class="authors-block__name">{{ related_info.title }} <i class="icon icon-arrow-right"></i></a></li>
+        <li class="post__details-item related-list"><a href="{{ related_info.url | relative_url }}" class="authors-block__name">{{ related_info.title }} <i class="icon icon-arrow-left"></i></a></li>
     {% endfor %}
   </ul>
 {% endif %}
