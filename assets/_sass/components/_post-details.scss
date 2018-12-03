@@ -1,0 +1,63 @@
+.post__details {
+  margin: 0;
+  padding: 0;
+
+  ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul,
+  li {
+    list-style: none;
+  }
+
+  &-title {
+    @extend %facets__section-title;
+    padding: 0.6rem 0;
+    text-transform: uppercase;
+  }
+
+  &-subtitle {
+    @extend %labeltext__subheading;
+    padding: 0.3rem 0 0.5rem 0;
+    text-align: left;
+    text-transform: uppercase;
+    display: block;
+  }
+
+  &-item {
+    @extend %labeltext__text;
+    display: block;
+    padding: 0 0 0.2rem 0;
+  }
+
+  i {
+    color: $color__orange;
+  }
+
+  .download {
+    &-list {
+
+      &:hover {
+        color: $color__orange;
+      }
+
+      i:hover {
+        color: $color__orange-dark;
+        transition: inherit;
+      }
+    }
+  }
+
+  @include breakpoint($break: 'medium', $until: 'large') {
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+
+    ul {
+      display: flex;
+    }
+  }
+}
