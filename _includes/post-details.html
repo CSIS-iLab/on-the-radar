@@ -15,9 +15,9 @@
 
 {% if details %}
   <ul class="post__details">
-    <ul class="post__details-title">{{ site.data.language.details.title }}</ul>
+    <ul class="post__details-title detail">{{ site.data.language.details.title }}</ul>
       {% if page.collection == 'posts' %}
-        <ul class="post__details-subtitle">{{ site.data.language.details.categories }}</ul>
+        <ul class="post__details-subtitle detail-list">{{ site.data.language.details.categories }}</ul>
         {% for detail in details %}
           <li class="post__details-item detail-list">{{ detail }}</li>
         {% endfor %}
@@ -34,7 +34,7 @@
 {% if downloads %}
   <ul class="post__downloads">
     {% for download in downloads %}
-      <ul class="post__details-title download">{{ site.data.language.details.downloads }}<</ul>
+      <ul class="post__details-title download">{{ site.data.language.details.downloads }}</ul>
         <li class="post__details-item download-list"><a href={{ download.media_upload }}>{{ download.label }} <i class="icon icon-download"></i></a></li>
     {% endfor %}
   </ul>
