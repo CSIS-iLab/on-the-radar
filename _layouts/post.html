@@ -17,8 +17,10 @@ layout: default
     <section class="post__img-container--large">
       {% include post-image.html %}
     </section>
-    <section class="post__details">
+    <section class="post__details-wrapper">
       {%- include post-details.html -%}
+      {%- include post-downloads.html -%}
+      {%- include post-related.html -%}
     </section>
   </aside>
 

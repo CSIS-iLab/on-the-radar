@@ -1,63 +1,74 @@
-.post__details {
-  margin: 0;
-  padding: 0;
+/*============================
+=       Post Details         =
+=      Post Downloads        =
+=        Post Related        =
+============================*/
 
-  ul {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-  }
+.post__details-wrapper {
+  padding: 0.3rem 0.5rem;
 
-  ul,
   li {
     list-style: none;
+    padding: 0.1rem 0;
   }
 
-  &-title {
-    @extend %facets__section-title;
-    padding: 0.6rem 0;
-    text-transform: uppercase;
-  }
-
-  &-subtitle {
-    @extend %labeltext__subheading;
-    padding: 0.3rem 0 0.5rem 0;
-    text-align: left;
-    text-transform: uppercase;
-    display: block;
-  }
-
-  &-item {
-    @extend %labeltext__text;
-    display: block;
-    padding: 0 0 0.2rem 0;
+  ul {
+    margin: 0;
+    padding: 0.3rem 0 0 0;
   }
 
   i {
     color: $color__orange;
   }
 
-  .download {
-    &-list {
+  @include breakpoint($break: 'medium', $until: 'large') {
+    display: flex;
+    vertical-align: top;
 
-      &:hover {
-        color: $color__orange;
-      }
-
-      i:hover {
-        color: $color__orange-dark;
-        transition: inherit;
-      }
+    .post__details {
+      display: flex;
+      padding: 0.3rem 0.1rem;
     }
+  }
+}
+
+.post__details,
+.post__downloads,
+.post__related {
+  padding: 1rem 0;
+
+  &-title {
+    @extend %facets__section-title;
+    margin: 0.6rem 0;
+    text-transform: uppercase;
+    clear: both;
+  }
+
+  &-subtitle {
+    @extend %labeltext__subheading;
+    margin: 0.2rem 0 0 0;
+    text-transform: uppercase;
+  }
+
+  &-item {
+    @extend %labeltext__list;
+    margin: 0.1rem 0 0 0;
   }
 
   @include breakpoint($break: 'medium', $until: 'large') {
-    vertical-align: top;
-    margin: 0;
-    padding: 0;
+    flex-grow: 1;
+  }
+}
 
-    ul {
-      display: flex;
+.post__downloads-item,
+.post__related-item {
+  &:hover {
+    color: $color__orange;
+    transition: inherit;
+
+    i {
+      color: $color__orange-dark;
+      transition: inherit;
     }
   }
 }

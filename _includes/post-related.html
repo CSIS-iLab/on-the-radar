@@ -1,0 +1,14 @@
+{% assign related_briefs = page.related_briefs %}
+{% if page.collection == 'resources' %}
+  {% assign related_briefs = null %}
+{% endif %}
+
+{% if related_briefs %}
+  <ul class="post__related">
+      <ul class="post__related-title">{{ site.data.language.details.related_briefs }}</ul>
+    {% for related in related_briefs %}
+    {%- assign related_info = site.briefs | where: "relative_path", related | first -%}
+      <li class="post__related-item"><a href="{{ related_info.url | relative_url }}">{{ related_info.title }} <i class="icon icon-angle-sm-right"></i></a></li>
+    {% endfor %}
+  </ul>
+{% endif %}
