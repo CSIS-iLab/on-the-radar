@@ -3,20 +3,24 @@
   {% assign details = page.categories %}
 {% endif %}
 
-{% if details %}
+{% if details.size > 0 %}
   <ul class="post__details">
     <ul class="post__details-title">{{ site.data.language.details.title }}</ul>
       {% if page.collection == 'posts' %}
-        <ul class="post__details-subtitle">{{ site.data.language.details.categories }}</ul>
-        {% for detail in details %}
-          <li class="post__details-item">{{ detail }}</li>
-        {% endfor %}
+        <ul class="post__details-group">
+          <ul class="post__details-subtitle">{{ site.data.language.details.categories }}</ul>
+          {% for detail in details %}
+            <li class="post__details-item">{{ detail }}</li>
+          {% endfor %}
+        </ul>
       {% else %}
         {% for detail in details %}
+          <ul class="post__details-group">
             <ul class="post__details-subtitle">{{ detail[0] | replace: "_", " " | title }}</ul>
             {% for sub_detail in detail[1] %}
               <li class="post__details-item">{{ sub_detail | date: site.date_format }}</li>
             {% endfor %}
+          </ul>
         {% endfor %}
       {% endif %}
   </ul>

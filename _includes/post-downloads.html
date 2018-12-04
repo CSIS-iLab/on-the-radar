@@ -3,7 +3,7 @@
   {% assign downloads = null %}
 {% endif %}
 
-{% if downloads %}
+{% if downloads.size > 0 %}
   <ul class="post__downloads">
     <ul class="post__downloads-title">{{ site.data.language.details.downloads }}</ul>
     {% for download in downloads %}

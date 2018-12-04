@@ -8,8 +8,8 @@
   padding: 0.3rem 0.5rem;
 
   li {
-    list-style: none;
     padding: 0.1rem 0;
+    list-style: none;
   }
 
   ul {
@@ -20,14 +20,15 @@
   i {
     color: $color__orange;
   }
+}
 
-  @include breakpoint($break: 'medium', $until: 'large') {
+@include breakpoint($break: 'medium', $until: 'large') {
+  .post__details {
     display: flex;
-    vertical-align: top;
 
-    .post__details {
-      display: flex;
-      padding: 0.3rem 0.1rem;
+    &-group {
+      flex: 1;
+      flex-direction: column;
     }
   }
 }
@@ -41,7 +42,7 @@
     @extend %facets__section-title;
     margin: 0.6rem 0;
     text-transform: uppercase;
-    clear: both;
+    // clear: both;
   }
 
   &-subtitle {
