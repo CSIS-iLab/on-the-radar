@@ -4,30 +4,30 @@
 {% endif %}
 
 {% if details.size > 0 %}
-  <ul class="post__details">
-    <ul class="post__details-title">{{ site.data.language.details.title }}</ul>
-      {% if page.collection == 'posts' %}
-        <ul class="post__details-group">
-          <ul class="post__details-subtitle">{{ site.data.language.details.categories }}</ul>
-          {% for detail in details %}
-            <li class="post__details-item">{{ detail }}</li>
-          {% endfor %}
-        </ul>
-      {% else %}
+  <li class="post__details-item">
+  {{ site.data.language.details.title }}
+    {% if page.collection == 'posts' %}
+      <ul class="post-details">
+        {{ site.data.language.details.categories }}
         {% for detail in details %}
-          {% if detail[1].size > 0 %}
-            {% if page.collection == 'workshops' %}
-              <ul class="post__details-group">
-                <ul class="post__details-subtitle">{{ site.data.language.event_date | replace: "_", " " }}</ul>
-                  <li class="post__details-item">{{ page.details.event_date | date: site.date_format }}</li>
-              </ul>
-            {% endif %}
-              <ul class="post__details-group">
-                <ul class="post__details-subtitle">{{ detail[0] | replace: "_", " " }}</ul>
-                  <li class="post__details-item">{{ detail[1] }}</li>
-              </ul>
-          {% endif %}
+          <li>{{ detail }}</li>
         {% endfor %}
-      {% endif %}
-  </ul>
+      </ul>
+    {% else %}
+      {% for detail in details %}
+        {% if detail[1].size > 0 %}
+          {% if page.collection == 'workshops' %}
+            <ul class="post-details">
+              {{ site.data.language.event_date | replace: "_", " " }}
+              <li>{{ page.details.event_date | date: site.date_format }}</li>
+            </ul>
+          {% endif %}
+          <ul class="post-details">
+            {{ detail[0] | replace: "_", " " }}
+            <li>{{ detail[1] }}</li>
+          </ul>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </li>
 {% endif %}

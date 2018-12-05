@@ -4,10 +4,12 @@
 {% endif %}
 
 {% if downloads.size > 0 %}
-  <ul class="post__downloads">
-    <ul class="post__downloads-title">{{ site.data.language.details.downloads }}</ul>
-    {% for download in downloads %}
-      <li class="post__downloads-item"><a href={{ download.media_upload }}>{{ download.label }} <i class="icon icon-download"></i></a></li>
-    {% endfor %}
-  </ul>
+  <li class="post__details-item">
+  {{ site.data.language.details.downloads }}
+    <ul class="post-details">
+      {% for download in downloads %}
+        <li class="post-downloads"><a href={{ download.media_upload }}>{{ download.label }} <i class="icon icon-download"></i></a></li>
+      {% endfor %}
+    </ul>
+  </li>
 {% endif %}
