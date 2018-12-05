@@ -75,22 +75,6 @@
         padding: 1rem content-padding($size);
       }
     }
-  }
-
-  &__details {
-    $sizes: ('medium');
-    padding: content-padding('small');
-
-    @each $size in $sizes {
-      @include breakpoint($size) {
-        padding: 0 content-padding($size) 1rem content-padding($size);
-      }
-    }
-
-    @include breakpoint('large') {
-      padding: 0 0.8rem 0.8rem 0.8rem;
-    }
-  }
 
   &__img-container {
     grid-area: image;
