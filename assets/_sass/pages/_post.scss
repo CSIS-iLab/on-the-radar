@@ -77,6 +77,21 @@
     }
   }
 
+  &__details-container {
+    $sizes: ('medium');
+    padding: content-padding('small');
+
+    @each $size in $sizes {
+      @include breakpoint($size) {
+        padding: 0.5rem content-padding($size) 1rem content-padding($size);
+      }
+    }
+
+    @include breakpoint('large') {
+      padding: 0.3rem 0.5rem 1rem 0.5rem;
+    }
+  }
+
   &__img-container {
     grid-area: image;
     padding: 0;
