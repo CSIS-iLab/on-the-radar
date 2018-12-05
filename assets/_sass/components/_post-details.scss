@@ -5,8 +5,6 @@
 ============================*/
 
 .post__details-container {
-  padding: 0.3rem 0.5rem;
-
   li {
     padding: 0.1rem 0;
     list-style: none;
@@ -28,8 +26,9 @@
     flex-flow: row wrap;
 
     &-group {
-      flex: 1;
+      flex: 0 0 33%;
       flex-direction: column;
+      width: 30%;
     }
 
     &-title {

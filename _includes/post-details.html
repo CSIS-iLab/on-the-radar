@@ -15,12 +15,18 @@
         </ul>
       {% else %}
         {% for detail in details %}
+        {% if detail[1].size > 0 %}
           <ul class="post__details-group">
             <ul class="post__details-subtitle">{{ detail[0] | replace: "_", " " | title }}</ul>
             {% for sub_detail in detail[1] %}
-              <li class="post__details-item">{{ sub_detail | date: site.date_format }}</li>
+              {% if sub_detail == page.details.event_date %}
+                <li class="post__details-item">{{ page.details.event_date | date: site.date_format }}</li>
+              {% else %}
+                <li class="post__details-item">{{ sub_detail }}</li>
+              {% endif %}
             {% endfor %}
           </ul>
+        {% endif %}
         {% endfor %}
       {% endif %}
   </ul>
