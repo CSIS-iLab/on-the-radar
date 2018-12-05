@@ -4,7 +4,7 @@
 =        Post Related        =
 ============================*/
 
-.post__details-wrapper {
+.post__details-container {
   padding: 0.3rem 0.5rem;
 
   li {
@@ -14,7 +14,7 @@
 
   ul {
     margin: 0;
-    padding: 0.3rem 0 0 0;
+    padding: 0.3rem 0.5rem 0 0;
   }
 
   i {
@@ -25,10 +25,16 @@
 @include breakpoint($break: 'medium', $until: 'large') {
   .post__details {
     display: flex;
+    flex-flow: row wrap;
 
     &-group {
       flex: 1;
       flex-direction: column;
+    }
+
+    &-title {
+      flex: 0 0 100%;
+      line-height: normal;
     }
   }
 }
@@ -42,7 +48,6 @@
     @extend %facets__section-title;
     margin: 0.6rem 0;
     text-transform: uppercase;
-    // clear: both;
   }
 
   &-subtitle {
@@ -54,10 +59,6 @@
   &-item {
     @extend %labeltext__list;
     margin: 0.1rem 0 0 0;
-  }
-
-  @include breakpoint($break: 'medium', $until: 'large') {
-    flex-grow: 1;
   }
 }
 
