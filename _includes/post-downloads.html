@@ -4,11 +4,11 @@
 {% endif %}
 
 {% if downloads.size > 0 %}
-  <li class="post__details-item">
   {{ site.data.language.details.downloads }}
+  <li class="post__details-item">
     <ul class="post-details">
       {% for download in downloads %}
-        <li class="post-downloads"><a href={{ download.media_upload }}>{{ download.label }} <i class="icon icon-download"></i></a></li>
+        <li class="post__details-downloads"><a href={{ download.media_upload }}>{{ download.label }} <i class="icon icon-download"></i></a></li>
       {% endfor %}
     </ul>
   </li>

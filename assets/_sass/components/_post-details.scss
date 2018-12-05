@@ -4,67 +4,70 @@
 =       Post Related         =
 ============================*/
 
-.post__details-list {
-  list-style: none;
-  padding-left: 0;
-
-  ul, li {
-    padding-left: 0;
-    list-style: none;
-  }
-
-  i {
-    color: $color__orange;
-  }
-}
-
-.post__details-item {
-  @extend %facets__section-title;
-  margin: 0.8rem 0 0 0;
-  text-transform: uppercase;
-}
-
-.post-details {
-  ul & {
-    @extend %labeltext__subheading;
-    margin: 0.5rem 0 0 0;
+.post__details {
+  &-list {
+    @extend %facets__section-title;
+    margin: 0;
+    padding: 0;
     text-transform: uppercase;
+    list-style: none;
 
-    li & {
-      @extend %labeltext__list;
-      margin: 0.3rem 0 0 0;
+    ul,
+    li {
+      padding: 0;
+      list-style: none;
     }
-  }
-}
-
-.post-downloads,
-.post-related {
-  &:hover {
-    color: $color__orange;
-    transition: inherit;
 
     i {
-      color: $color__orange-dark;
-      transition: inherit;
+      color: $color__orange;
     }
   }
-}
 
-@include breakpoint($break: 'medium', $until: 'large') {
-  .post__details-item .flex {
-    display: flex;
-    flex-flow: row wrap;
+  &-item {
+    @extend %labeltext__subheading;
+    margin: 0 0 0.5rem 0;
 
-    &-group {
-      flex: 0 0 33%;
-      flex-direction: column;
-      width: 30%;
-      padding: inherit;
+    .post-details {
+      margin: 0.5rem 0 0 0;
     }
 
-    &-title {
-      flex: 0 0 100%;
-      line-height: normal;
+    li {
+      @extend %labeltext__list;
+      margin: 0.1rem 0;
+      text-transform: none;
+      font-weight: 300;
+    }
+  }
+
+  &-downloads,
+  &-post-related {
+    &:hover {
+      color: $color__orange;
+      transition: inherit;
+
+      i {
+        color: $color__orange-dark;
+        transition: inherit;
+      }
+    }
+  }
+
+  @include breakpoint($break: 'medium', $until: 'large') {
+    &-item.flex {
+      display: flex;
+      flex-flow: row wrap;
+
+      .post-details {
+        flex: 0 0 33%;
+        flex-direction: column;
+        width: 30%;
+        padding: inherit;
+      }
+
+      li {
+        flex: 0 0 100%;
+        width: 100%;
+      }
     }
   }
 }

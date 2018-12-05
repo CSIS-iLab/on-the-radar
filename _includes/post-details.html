@@ -4,13 +4,13 @@
 {% endif %}
 
 {% if details.size > 0 %}
-  <li class="post__details-item">
   {{ site.data.language.details.title }}
+  <li class="post__details-item flex">
     {% if page.collection == 'posts' %}
       <ul class="post-details">
         {{ site.data.language.details.categories }}
         {% for detail in details %}
-          <li>{{ detail }}</li>
+          <li>{{ detail }} hello</li>
         {% endfor %}
       </ul>
     {% else %}
@@ -24,7 +24,9 @@
           {% endif %}
           <ul class="post-details">
             {{ detail[0] | replace: "_", " " }}
-            <li>{{ detail[1] }}</li>
+            {% for subdetail in detail[1] %}
+              <li>{{ subdetail }}</li>
+            {% endfor %}
           </ul>
         {% endif %}
       {% endfor %}
