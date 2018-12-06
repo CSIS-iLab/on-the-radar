@@ -25,10 +25,10 @@
 
   &-item {
     @extend %labeltext__subheading;
-    margin: 0 0 0.5rem 0;
+    margin-bottom: 0.5rem;
 
     .post-details {
-      margin: 0.5rem 0 0 0;
+      margin-top: 0.5rem;
     }
 
     li {
