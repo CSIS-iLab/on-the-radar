@@ -4,6 +4,7 @@
 {% endif %}
 
 {% if related_briefs.size > 0 %}
+<ul class="post__details-list">
   {{ site.data.language.details.related_briefs }}
   <li class="post__details-item">
     <ul class="post-details">
@@ -13,4 +14,5 @@
       {% endfor %}
     </ul>
   </li>
+</ul>
 {% endif %}

@@ -8,13 +8,13 @@
   &-list {
     @extend %facets__section-title;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0.5rem 0;
     text-transform: uppercase;
     list-style: none;
 
     ul,
     li {
-      padding: 0;
+      padding: 0.2rem 0;
       list-style: none;
     }
 
@@ -25,15 +25,15 @@
 
   &-item {
     @extend %labeltext__subheading;
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
 
     .post-details {
-      margin-top: 0.5rem;
+      // padding-top: 0.5rem;
     }
 
     li {
       @extend %labeltext__list;
-      margin: 0.1rem 0;
+      // padding: 0.1rem 0;
       font-weight: 300;
       text-transform: none;
     }

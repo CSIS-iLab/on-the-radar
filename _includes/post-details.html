@@ -4,6 +4,7 @@
 {% endif %}
 
 {% if details.size > 0 %}
+<ul class="post__details-list">
   {{ site.data.language.details.title }}
   <li class="post__details-item flex">
     {% if page.collection == 'posts' %}
@@ -32,4 +33,5 @@
       {% endfor %}
     {% endif %}
   </li>
+</ul>
 {% endif %}
