@@ -1,0 +1,33 @@
+/*===============================
+=         Photo Caption         =
+===============================*/
+
+.photo-caption {
+  @extend %labeltext__label;
+
+  i {
+    padding: 0;
+    color: $color__orange;
+  }
+
+  .icon-arrow-down {
+    display: inline;
+    @include breakpoint('medium') {
+      display: none;
+    }
+  }
+
+  .icon-arrow-left {
+    display: none;
+    @include breakpoint('large') {
+      display: inline;
+    }
+  }
+
+  .icon-arrow-right {
+    display: none;
+    @include breakpoint($break: 'medium', $until: 'large') {
+      display: inline;
+    }
+  }
+}
