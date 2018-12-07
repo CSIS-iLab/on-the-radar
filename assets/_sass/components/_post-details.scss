@@ -14,7 +14,8 @@
     text-transform: uppercase;
     list-style: none;
 
-    ul, li {
+    li,
+    ul {
       padding-left: 0;
       list-style: none;
     }
@@ -30,15 +31,16 @@
 
   &-item {
     @extend %labeltext__subheading;
-    padding: 0.2rem 0 0 0;
+    padding: 0.5rem 0 0;
 
-    #{$details}, #{$details}__styled {
-      padding: 1rem 0 0.2rem 0;
+    #{$details}:not(:first-child),
+    #{$details}__styled:not(:first-child) {
+      padding: 1rem 0 0.2rem;
     }
 
     li {
       @extend %labeltext__list;
-      padding: 0.2rem 0 0.1rem 0;
+      padding: 0.2rem 0 0.1rem;
       font-weight: 300;
       text-transform: none;
     }
@@ -55,17 +57,17 @@
       }
     }
   }
-
   @include breakpoint($break: 'medium', $until: 'large') {
     &-item.flex {
       display: flex;
       flex-flow: row wrap;
+      padding: 0;
 
       #{$details} {
         flex: 0 0 33%;
         flex-direction: column;
         width: 30%;
-        padding: inherit;
+        padding: 1rem 0 0.2rem;
       }
 
       li {
