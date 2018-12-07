@@ -4,6 +4,7 @@
 
 .photo-caption {
   @extend %labeltext__label;
+  padding-top: 1rem;
 
   i {
     padding: 0;
