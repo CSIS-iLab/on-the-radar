@@ -33,6 +33,10 @@
   }
 
   #{$details} {
+    &:first-child {
+      padding-top: 0.1rem;
+    }
+
     &:not(:first-child),
     &__styled:not(:first-child) {
       padding: 1rem 0 0.2rem;
