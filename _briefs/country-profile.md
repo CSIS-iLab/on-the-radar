@@ -2,18 +2,8 @@
 title: Country Profile Test
 details:
   Type: []
-  characteristics:
-  - Precision
-  - Speed
-  - Detectability
-  risk_factors:
-  - Predictive
-  domain:
-  - Sea
   country:
   - China
-  type:
-  - Platform Control and Information Support
 date: 2018-10-31 17:03:02 +0000
 excerpt: 'Sed integer mi imperdiet, in nec proin ullamcorper massa lacus dui. '
 authors:

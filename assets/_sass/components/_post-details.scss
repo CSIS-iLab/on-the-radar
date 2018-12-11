@@ -7,89 +7,84 @@
 .post__details {
   $details: '.post-details';
 
+  li,
+  ul {
+    padding-left: 0;
+    list-style: none;
+  }
+
   &-list {
     margin: 0;
     padding: 0;
     list-style: none;
 
-    li,
-    ul {
-      padding-left: 0;
-      list-style: none;
-    }
-
-    i {
-      color: $color__orange;
-    }
-
     &:not(:last-child) {
-      padding-bottom: 1.2rem;
-    }
-  }
-
-  &-item {
-    @extend %facets__section-title;
-    text-transform: uppercase;
-  }
-
-  #{$details} {
-    &:first-child {
-      padding-top: 0.3rem;
+      margin-bottom: 1.6rem;
     }
 
-    &:not(:first-child) {
-      padding: 1rem 0 0.2rem;
+    li {
+      @extend %labeltext__list;
+      margin: 0.2rem 0 0.1rem;
+      font-weight: 300;
+      text-transform: none;
+
+      i {
+        color: $color__orange;
+        transition: all 0.3s ease-in-out;
+
+        &::before {
+          width: unset;
+          margin-left: unset;
+        }
+      }
+    }
+
+    &.downloads,
+    &.related {
+      a:hover {
+        color: $color__orange;
+
+        i {
+          color: $color__orange-dark;
+        }
+      }
+    }
+
+    .post__details-item {
+      @extend %facets__section-title;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
     }
 
     .subtitle {
       @extend %labeltext__subheading;
       text-transform: uppercase;
     }
+  }
 
-    .styled {
-      padding: 0.3rem 0;
+  &-item:not(:first-child) {
+    @include breakpoint($break: 'medium', $until: 'large') {
+      display: flex;
+      flex-wrap: wrap;
 
-      &:hover {
-        color: $color__orange;
-        transition: inherit;
+      .post-details {
+        flex-basis: calc(33% - 1rem);
 
-        i {
-          color: $color__orange-dark;
-          transition: inherit;
+        &:nth-child(n + 2):not(:nth-child(4)) {
+          margin-left: 1rem;
         }
       }
-    }
-
-    li {
-      @extend %labeltext__list;
-      padding: 0.2rem 0 0.1rem;
-      font-weight: 300;
-      text-transform: none;
     }
   }
 
-  @include breakpoint($break: 'medium', $until: 'large') {
-    &-item.flex {
-      display: flex;
-      flex-flow: row wrap;
-      padding: 0;
+  &-list:not(.downloads) &-item {
+    > #{$details}:not(:last-child) {
+      margin-bottom: 1rem;
+    }
 
-      #{$details} {
-        flex: 0 0 33%;
-        flex-direction: column;
-        width: 30%;
-        padding: 1rem 0 0.2rem;
-      }
-
-      .styled {
-        &:first-child {
-          padding-top: 1rem;
-        }
-      }
-
-      li {
-        flex: 0 0 100%;
-        width: 100%;
+    > #{$details}:first-child {
+      @include breakpoint($break: 'medium', $until: 'large') {
+        margin-bottom: 1.2rem;
       }
     }
   }
