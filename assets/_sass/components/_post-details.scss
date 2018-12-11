@@ -8,10 +8,8 @@
   $details: '.post-details';
 
   &-list {
-    @extend %facets__section-title;
     margin: 0;
     padding: 0;
-    text-transform: uppercase;
     list-style: none;
 
     li,
@@ -30,12 +28,20 @@
   }
 
   &-item {
-    @extend %labeltext__subheading;
-    padding: 0.5rem 0 0;
+    @extend %facets__section-title;
+    text-transform: uppercase;
+  }
 
-    #{$details}:not(:first-child),
-    #{$details}__styled:not(:first-child) {
+  #{$details} {
+    &:not(:first-child),
+    &__styled:not(:first-child) {
       padding: 1rem 0 0.2rem;
+    }
+
+    .subtitle {
+      @extend %labeltext__subheading;
+      padding: 0.5rem 0 0;
+      text-transform: uppercase;
     }
 
     li {
@@ -57,6 +63,7 @@
       }
     }
   }
+
   @include breakpoint($break: 'medium', $until: 'large') {
     &-item.flex {
       display: flex;

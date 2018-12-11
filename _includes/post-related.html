@@ -5,8 +5,8 @@
 
 {% if related_briefs.size > 0 %}
 <ul class="post__details-list">
-  {{ site.data.language.details.related_briefs }}
-  <li class="post__details-item">
+  <li class="post__details-item">{{ site.data.language.details.related_briefs }}</li>
+  <li>
     <ul class="post-details">
       {% for related in related_briefs %}
       {%- assign related_info = site.briefs | where: "relative_path", related | first -%}
