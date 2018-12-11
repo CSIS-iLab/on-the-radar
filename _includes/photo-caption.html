@@ -1,8 +1,5 @@
 {% if page.image.size > 0 and page.image_caption %}
 <div class="photo-caption">
-  <i class="icon icon-arrow-down"></i>
-  <i class="icon icon-arrow-right"></i>
-  <i class="icon icon-arrow-left"></i>
-  {{ page.image_caption }}
+{{ page.image_caption | markdownify }}
 </div>
 {% endif %}
