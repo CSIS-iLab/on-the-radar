@@ -6,9 +6,14 @@ fields:
 - type: file
   name: image
   label: Image
-- type: text
+- type: textarea
   name: image_caption
   label: Image Caption
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
 - type: text
   name: image_source
   label: Image Source
+  hidden: true
