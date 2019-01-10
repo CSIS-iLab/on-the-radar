@@ -152,7 +152,31 @@
 
   &__footer {
     grid-area: footer;
-    padding: content-padding('small');
+    padding-top: 2rem;
+    background-color: $color__white;
+
+    > *:not(.post__related-block) {
+      padding: content-padding('small');
+      
+      @include breakpoint('medium') {
+        padding-right: content-padding('medium');
+        padding-left: content-padding('medium');
+      }
+
+      @include breakpoint('large') {
+        padding-right: content-padding('large');
+        padding-left: content-padding('large');
+      }
+
+      @include breakpoint('xlarge') {
+        padding-right: content-padding('xlarge');
+        padding-left: content-padding('xlarge');
+      }
+    }
+  }
+
+  &__related-block {
+    padding: 2rem;
     background-color: $color__off-white;
   }
 
