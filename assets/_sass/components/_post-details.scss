@@ -27,37 +27,35 @@
       margin: 0.2rem 0 0.1rem;
       font-weight: 300;
       text-transform: none;
+    }
 
-      i {
-        color: $color__orange;
-        transition: all 0.3s ease-in-out;
+    i {
+      color: $color__orange;
+      transition: all 0.3s ease-in-out;
 
-        &::before {
-          width: unset;
-          margin-left: unset;
-        }
+      &::before {
+        width: unset;
+        margin-left: unset;
       }
     }
 
-    &.downloads,
-    &.related {
-      a:hover {
-        color: $color__orange;
+    a:hover {
+      color: $color__orange;
 
-        i {
-          color: $color__orange-dark;
-        }
+      i {
+        color: $color__orange-dark;
       }
     }
 
     .post__details-item {
       @extend %facets__section-title;
-      text-transform: uppercase;
       margin-bottom: 0.5rem;
+      text-transform: uppercase;
     }
 
     .subtitle {
       @extend %labeltext__subheading;
+      margin-top: 0.3rem;
       text-transform: uppercase;
     }
   }
