@@ -37,6 +37,7 @@
     @extend %labeltext__label;
     display: inline;
     margin: 0;
+    color: $color__gray-darker;
 
     @include breakpoint($break: 'medium', $dir: 'max-width') {
       @include font-size(14px);
