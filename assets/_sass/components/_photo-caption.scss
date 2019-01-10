@@ -3,52 +3,44 @@
 ===============================*/
 
 .photo-caption {
-  @extend %labeltext__label;
-  $caption: &;
-  padding-top: 1rem;
+  margin-top: 0.5rem;
 
-  i {
+  @include breakpoint($break: 'medium', $dir: 'max-width') {
+    line-height: 1.53;
+  }
+
+  &::before {
+    position: relative;
+    top: 0.1rem;
+    display: inline-block;
+    color: $color__orange;
+    font-family: 'radar';
+    font-style: normal;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    @include font-size(20px);
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      content: '\e88e';
+    }
+
+    @include breakpoint($break: 'medium', $until: 'large') {
+      content: '\e890';
+    }
+
+    @include breakpoint('large') {
+      content: '\e88f';
+    }
+  }
+
+  > * {
+    @extend %labeltext__label;
     display: inline;
     margin: 0;
-    padding: 0;
-  }
 
-  @include breakpoint('medium') {
-    #{$caption}::before {
-      content: '\e88e';
-      position: relative;
-      color: $color__orange;
-      font-family: 'radar';
-      @include font-size(12px);
-      word-break: normal;
-      visibility: visible;
-      -webkit-font-smoothing: antialiased;
-    }
-  }
-
-  @include breakpoint($break: 'medium', $until: 'large') {
-    #{$caption}::before {
-      content: '\e890';
-      position: relative;
-      color: $color__orange;
-      font-family: 'radar';
-      @include font-size(12px);
-      word-break: normal;
-      visibility: visible;
-      -webkit-font-smoothing: antialiased;
-    }
-  }
-
-  @include breakpoint('large') {
-    #{$caption}::before {
-      content: '\e88f';
-      position: relative;
-      color: $color__orange;
-      font-family: 'radar';
-      @include font-size(12px);
-      word-break: normal;
-      visibility: visible;
-      -webkit-font-smoothing: antialiased;
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      @include font-size(14px);
+      line-height: 1.53;
     }
   }
 }

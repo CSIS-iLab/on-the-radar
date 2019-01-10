@@ -25,7 +25,7 @@ related_briefs:
 - _briefs/second-tech-primer-test.md
 - _briefs/test-tech-primer.md
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1542205462/on-the-radar/header-sample.jpg
-image_caption: Sample caption for image
+image_caption: 'Sample caption with a [link](https://fas.org/irp/nic/fishing.pdf). Sample caption with a [link](https://fas.org/irp/nic/fishing.pdf). Sample caption with a [link](https://fas.org/irp/nic/fishing.pdf). Sample caption with a [link](https://fas.org/irp/nic/fishing.pdf)'
 image_source: Getty Images
 featured: true
 
