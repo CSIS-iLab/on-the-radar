@@ -33,3 +33,9 @@ PONI works to achieve this mission through several objectives:
 ### About the Nuclear Policy Working Group
 
 The Nuclear Policy Working Group (NPWG) is a research-based educational programming effort that provides opportunities for students from a variety of fields to conduct multidisciplinary research on topics in nonproliferation and nuclear security. The NPWG has a three-fold mission: (1) to educate students on contemporary issues in nuclear security, (2) to foster collaboration across the technical and social science fields, and (3) to generate original policy-relevant publications. The group strives to minimizes knowledge gaps across disciplines by providing relevant material to participants through interactive seminars and events hosted throughout the academic year.
+
+### Principle Researchers
+
+### Development Team
+
+The On the Radar Project is a product of the [**Andreas C. Dracopoulos iDeas Lab**](https://www.csis.org/programs/dracopoulos-ideas-lab), the in-house digital, multimedia, and design agency at the Center for Strategic and International Studies.
