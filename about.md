@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: "/about/"
 social_in_header: true
+researchers: []
 
 ---
 ### About The Project
