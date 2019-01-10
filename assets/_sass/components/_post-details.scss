@@ -1,0 +1,89 @@
+/*============================
+=       Post Details         =
+=      Post Downloads        =
+=       Post Related         =
+============================*/
+
+.post__details {
+  $details: '.post-details';
+
+  li,
+  ul {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+
+    li {
+      @extend %labeltext__list;
+      margin: 0.2rem 0 0.1rem;
+      font-weight: 300;
+      text-transform: none;
+    }
+
+    i {
+      color: $color__orange;
+      transition: all 0.3s ease-in-out;
+
+      &::before {
+        width: unset;
+        margin-left: unset;
+      }
+    }
+
+    a:hover {
+      color: $color__orange;
+
+      i {
+        color: $color__orange-dark;
+      }
+    }
+
+    .post__details-item {
+      @extend %facets__section-title;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    .subtitle {
+      @extend %labeltext__subheading;
+      margin-top: 0.3rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &-item:not(:first-child) {
+    @include breakpoint($break: 'medium', $until: 'large') {
+      display: flex;
+      flex-wrap: wrap;
+
+      .post-details {
+        flex-basis: calc(33% - 1rem);
+
+        &:nth-child(n + 2):not(:nth-child(4)) {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+
+  &-list:not(.downloads) &-item {
+    > #{$details}:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    > #{$details}:first-child {
+      @include breakpoint($break: 'medium', $until: 'large') {
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+}

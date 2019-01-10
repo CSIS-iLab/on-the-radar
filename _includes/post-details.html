@@ -1,0 +1,37 @@
+{% assign details = page.details %}
+{% if page.collection == 'posts' %}
+  {% assign details = page.categories %}
+{% endif %}
+
+{% if details.size > 0 %}
+<ul class="post__details-list">
+  <li class="post__details-item">{{ site.data.language.details.title }}</li>
+  <li class="post__details-item">
+  {% if page.collection == 'posts' %}
+    <ul class="post-details">
+      <li class="post-details subtitle">{{ site.data.language.details.categories }}</li>
+      {% for detail in details %}
+        <li>{{ detail }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    {% for detail in details %}
+      {% if detail[1].size > 0 %}
+        {% if page.collection == 'workshops' %}
+          <ul class="post-details">
+            <li class="post-details subtitle">{{ site.data.language.event_date | replace: "_", " " }}</li>
+            <li>{{ page.details.event_date | date: site.date_format }}</li>
+          </ul>
+        {% endif %}
+        <ul class="post-details">
+          <li class="post-details subtitle">{{ detail[0] | replace: "_", " " }}</li>
+          {% for subdetail in detail[1] %}
+            <li>{{ subdetail }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+  </li>
+</ul>
+{% endif %}

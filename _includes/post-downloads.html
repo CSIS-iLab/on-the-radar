@@ -1,0 +1,17 @@
+{% assign downloads = page.downloads %}
+{% if page.collection == 'posts' or page.collection == 'resources' %}
+  {% assign downloads = null %}
+{% endif %}
+
+{% if downloads.size > 0 %}
+<ul class="post__details-list downloads">
+  <li class="post__details-item">{{ site.data.language.details.downloads }}</li>
+  <li class="post__details-item">
+    <ul class="post-details">
+      {% for download in downloads %}
+        <li><a href="{{ download.media_upload }}">{{ download.label }} <i class="icon icon-download"></i></a></li>
+      {% endfor %}
+    </ul>
+  </li>
+</ul>
+{% endif %}
