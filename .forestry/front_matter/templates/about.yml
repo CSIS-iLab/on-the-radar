@@ -23,6 +23,6 @@ fields:
   type: boolean
   hidden: false
   default: ''
-- type: field_group
+- type: field_group_list
   name: researchers
   label: Principle Researchers
