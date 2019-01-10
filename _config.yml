@@ -14,6 +14,8 @@ cloudinary_url: https://res.cloudinary.com/csisideaslab/image/upload/
 
 keyword_url: /search/?keywords=
 
+search_url: /search/?query=
+
 # Content types will be defined here
 collections:
   posts:
