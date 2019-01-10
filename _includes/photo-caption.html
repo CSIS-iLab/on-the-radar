@@ -1,0 +1,5 @@
+{% if page.image.size > 0 and page.image_caption %}
+<div class="photo-caption">
+{{ page.image_caption | markdownify }}
+</div>
+{% endif %}
