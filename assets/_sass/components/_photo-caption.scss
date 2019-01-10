@@ -4,32 +4,51 @@
 
 .photo-caption {
   @extend %labeltext__label;
+  $caption: &;
   padding-top: 1rem;
 
   i {
+    display: inline;
     margin: 0;
     padding: 0;
-    color: $color__orange;
   }
 
-  .icon-arrow-down {
-    display: inline;
-    @include breakpoint('medium') {
-      display: none;
+  @include breakpoint('medium') {
+    #{$caption}::before {
+      content: '\e88e';
+      position: relative;
+      color: $color__orange;
+      font-family: 'radar';
+      @include font-size(12px);
+      word-break: normal;
+      visibility: visible;
+      -webkit-font-smoothing: antialiased;
     }
   }
 
-  .icon-arrow-left {
-    display: none;
-    @include breakpoint('large') {
-      display: inline;
+  @include breakpoint($break: 'medium', $until: 'large') {
+    #{$caption}::before {
+      content: '\e890';
+      position: relative;
+      color: $color__orange;
+      font-family: 'radar';
+      @include font-size(12px);
+      word-break: normal;
+      visibility: visible;
+      -webkit-font-smoothing: antialiased;
     }
   }
 
-  .icon-arrow-right {
-    display: none;
-    @include breakpoint($break: 'medium', $until: 'large') {
-      display: inline;
+  @include breakpoint('large') {
+    #{$caption}::before {
+      content: '\e88f';
+      position: relative;
+      color: $color__orange;
+      font-family: 'radar';
+      @include font-size(12px);
+      word-break: normal;
+      visibility: visible;
+      -webkit-font-smoothing: antialiased;
     }
   }
 }
