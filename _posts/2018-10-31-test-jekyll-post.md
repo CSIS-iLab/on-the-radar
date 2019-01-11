@@ -9,6 +9,7 @@ authors:
 - _authors/jane-doe.md
 categories:
 - Category 1
+- Category 2
 keywords:
 - Synthetic Aperture Sonar
 - Keyword 1

@@ -26,7 +26,7 @@
         <ul class="post-details">
           <li class="post-details subtitle">{{ detail[0] | replace: "_", " " }}</li>
           {% for subdetail in detail[1] %}
-            <li><a href="{{ site.search_url | append: subdetail | relative_url }}">{{ subdetail }}</a></li>
+            <li>{{ subdetail }}</li>
           {% endfor %}
         </ul>
       {% endif %}
