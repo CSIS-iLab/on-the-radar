@@ -94,4 +94,4 @@ Write clear and concise commit messages describing the changes you are making an
 
 ## Copyright / License
 
-Copyright © 2018 CSIS iDeas Lab under the [MIT License](https://github.com/CSIS-iLab/on-the-radar/blob/master/LICENSE).
+Copyright © 2019 CSIS iDeas Lab under the [MIT License](https://github.com/CSIS-iLab/on-the-radar/blob/master/LICENSE).
