@@ -7,7 +7,7 @@
   {%- endif -%}
 
   {% assign content = content | strip_newlines %}
-  {%- if content != '' and page.permalink !== '/about/'-%}
+  {%- if content != '' and page.layout != 'page'-%}
     <div class="page__desc">{{ content }}</div>
   {%- endif -%}
   {%- if page.social_in_header -%}
