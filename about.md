@@ -17,10 +17,10 @@ researchers:
     Working Group
 - name: Bernadette Stadler
   title: Program Coordinator and Research Assistant, Project on Nuclear Issues
+team:
+- {}
 
 ---
-### About The Project
-
 Improvements to strategic situational awareness (SSA) – the ability to characterize the operating environment, detect and respond to threats, and discern actual attacks from false alarms across the spectrum of conflict – have long been assumed to reduce the risk of conflict and allow for the more successful management of crisis and conflict when they occur. In nuclear policy jargon such impacts are considered “stabilizing” because they reduce the risk of escalation to higher levels of violence. However, with the rapid development of increasingly capable SSA-related technology, the growing co-mingling of conventional and strategic SSA requirements and capabilities, and an increasing risk of conventional conflict between nuclear armed adversaries, this may no longer be the case.
 
 Emerging technology may be transforming the SSA space from a relatively passive and secure realm with clear firebreaks between conventional and nuclear systems to an ecosystem that is much more active, dual-use, and crowded. The emerging SSA ecosystem may be dramatically more capable, but potentially more vulnerable and disruptive as well.
