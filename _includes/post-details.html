@@ -11,7 +11,7 @@
     <ul class="post-details">
       <li class="post-details subtitle">{{ site.data.language.details.categories }}</li>
       {% for detail in details %}
-        <li><a href="{{ site.search_url | append: detail | relative_url }}">{{ detail }}</a></li>
+        <li><a href="{{ site.search_analysis_url | append: detail | relative_url }}">{{ detail }}</a></li>
       {% endfor %}
     </ul>
   {% else %}
@@ -26,7 +26,8 @@
         <ul class="post-details">
           <li class="post-details subtitle">{{ detail[0] | replace: "_", " " }}</li>
           {% for subdetail in detail[1] %}
-            <li>{{ subdetail }}</li>
+            {% assign brief_search_slug = detail[0] | append: "=" | append: subdetail %}
+            <li><a href="{{ site.search_briefs_details_url | append: brief_search_slug }}">{{ subdetail }}</a></li>
           {% endfor %}
         </ul>
       {% endif %}
