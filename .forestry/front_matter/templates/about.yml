@@ -24,7 +24,7 @@ fields:
   hidden: false
   default: ''
 - type: field_group_list
-  name: researchers
+  name: team
   label: Principle Researchers
   fields:
   - type: text
