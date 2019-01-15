@@ -1,0 +1,23 @@
+.about {
+  display: flex;
+
+  &__title {
+    @extend %h2--thin;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: $color__black;
+  }
+
+  &__person {
+    padding: 1rem;
+    flex: 0 1;
+
+    &-name {
+      @extend %about-person__name--base;
+    }
+
+    &-title {
+      @extend %about-person__title;
+    }
+  }
+}
