@@ -1,7 +1,8 @@
 .about {
   padding-bottom: 2rem;
 
-  &__title {
+  &__title,
+  h2 {
     @extend %h2--thin;
     flex: 1;
     width: 100%;
@@ -45,6 +46,7 @@
 
     p {
       @extend %about-person__title;
+      margin: 0;
       color: $color__gray-darker;
       @include font-size(15px);
     }
