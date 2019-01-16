@@ -10,6 +10,10 @@ date_format: '%B %-d, %Y'
 
 search_briefs_url: issue-briefs/?brief_type=
 
+search_briefs_details_url: /issue-briefs/?details.
+
+search_categories_url: /analysis/?categories=
+
 cloudinary_url: https://res.cloudinary.com/csisideaslab/image/upload/
 
 keyword_url: /search/?keywords=
