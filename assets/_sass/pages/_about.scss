@@ -1,32 +1,31 @@
 .about {
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 
   &__title {
     @extend %h2--thin;
-    padding-top: 2rem;
-    color: $color__black;
     flex: 1;
     width: 100%;
+    padding-top: 2rem;
+    color: $color__black;
     text-transform: uppercase;
 
-    &::before {
-      content: '';
+    &:not(first-child) {
       width: 100%;
-      color: $color__black;
-      border-top: 15px;
+      margin: 2rem 0;
+      border-top: 1px solid $color__gray-light;
     }
   }
 
   &__team {
     display: block;
 
-    & > div {
-      flex: 0 50%;
-    }
-
     @include breakpoint('medium') {
       display: flex;
       flex-wrap: wrap;
+    }
+
+    > div {
+      flex: 0 50%;
     }
   }
 
