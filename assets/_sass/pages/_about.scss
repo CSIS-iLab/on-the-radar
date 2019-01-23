@@ -1,9 +1,13 @@
+/*===============================
+=           About Page          =
+===============================*/
+
 .about {
   padding-bottom: 1rem;
 
   &__title {
-    flex: 1;
-    width: 100%;
+    @extend %h2--thin;
+    color: $color__black;
   }
 
   &__team {
@@ -48,8 +52,6 @@
 
 .about__title {
   padding-top: 2rem;
-  @extend %h2--thin;
-  color: $color__black;
   text-transform: uppercase;
 
   .about & {

@@ -1,8 +1,18 @@
+/*===============================
+=         Aside Heading         =
+===============================*/
+
 .aside-heading {
+  display: none;
   float: right;
-  width: 200px;
+  width: 230px;
+  margin: 0 1em 1em 1em;
   padding: 1em;
   background-color: $color__off-white;
+
+  @include breakpoint('medium') {
+    display: inline;
+  }
 
   li,
   ul {
