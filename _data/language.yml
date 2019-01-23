@@ -1,5 +1,7 @@
 ---
 email: poni@csis.org
+url: ontheradar.csis.org
+phone_number: 202-775-3132
 author_list: 'By '
 jump_to: Jump to
 dash: '&mdash;'
@@ -51,3 +53,7 @@ about:
   team: Principle Researchers
   dev_team: Development Team
 ilab: _On the Radar_ is a product of the [**Andreas C. Dracopoulos iDeas Lab**](https://www.csis.org/programs/dracopoulos-ideas-lab), the in-house digital, multimedia, and design agency at the Center for Strategic and International Studies.
+heading_aside:
+  website: website
+  email: email
+  phone: phone

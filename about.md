@@ -31,6 +31,8 @@ _This project was made possible by the Carnegie Corporation of New York. All vie
 
 ### About PONI
 
+{% include aside-heading.html %}
+
 The core mission of PONI is to develop the next generation of policy, technical, and operational nuclear professionals by fostering, sustaining, and convening a networked community of young professionals prepared to meet the nuclear challenges of the future.
 
 PONI works to achieve this mission through several objectives:
