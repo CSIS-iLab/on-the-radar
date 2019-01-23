@@ -5,7 +5,9 @@ layout: default
   {% include page-header.html %}
   <div class="page__content post-content">
     {%- if page.name == "about.md" -%}
-      <h2 class="about__title">{{ site.data.language.about.title }}</h2>
+      <div class="about">
+        <h2>{{ site.data.language.about.title }}</h2>
+      </div>
     {%- endif -%}
 
     {{ content }}

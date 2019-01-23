@@ -5,9 +5,16 @@
 .about {
   padding-bottom: 1rem;
 
-  &__title {
+  h2 {
     @extend %h2--thin;
+    padding-top: 2rem;
     color: $color__black;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin: 2rem 0 1rem;
+    border-top: 1px solid $color__gray-light;
   }
 
   &__team {
@@ -47,19 +54,5 @@
       color: $color__gray-darker;
       @include font-size(15px);
     }
-  }
-}
-
-.about__title {
-  padding-top: 2rem;
-  text-transform: uppercase;
-
-  .about & {
-    margin: 2rem 0 1rem;
-    border-top: 1px solid $color__gray-light;
-  }
-
-  &:first-of-type {
-    padding-bottom: 1rem;
   }
 }
