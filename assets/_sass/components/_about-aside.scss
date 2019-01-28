@@ -1,41 +1,27 @@
 /*===============================
-=         Aside Heading         =
+=          About Aside          =
 ===============================*/
 
-.aside-heading {
-  display: none;
+.about-aside {
   float: right;
-  width: 230px;
+  width: 250px;
   margin: 0 1em 1em;
   padding: 1em;
   background-color: $color__off-white;
 
-  @include breakpoint('medium') {
-    display: inline;
-  }
-
   li,
   ul {
+    @extend %facets__link-item--base;
     padding-left: 0;
+    font-weight: normal;
     list-style: none;
-  }
 
-  &__list {
-    ul {
+    span {
       @extend %labeltext__subheading;
       @include font-size(12px);
+      display: block;
       color: $color__astral;
       text-transform: uppercase;
-    }
-  }
-
-  &__detail {
-    li,
-    a {
-      @extend %facets__link-item--base;
-      font-weight: normal;
-      text-transform: none;
-      box-shadow: none;
     }
   }
 }
