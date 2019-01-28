@@ -6,8 +6,8 @@
   display: block;
   float: right;
   width: 300px;
-  margin: 0 1em 1em;
-  padding: 1em;
+  margin: 0 1rem 1rem 1rem;
+  padding: 1rem;
   background-color: $color__off-white;
 
   @include breakpoint('medium') {
