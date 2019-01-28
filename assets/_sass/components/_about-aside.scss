@@ -3,11 +3,16 @@
 ===============================*/
 
 .about-aside {
+  display: block;
   float: right;
-  width: 250px;
+  width: 300px;
   margin: 0 1em 1em;
   padding: 1em;
   background-color: $color__off-white;
+
+  @include breakpoint('medium') {
+    width: 250px;
+  }
 
   li,
   ul {
@@ -22,10 +27,6 @@
       display: block;
       color: $color__astral;
       text-transform: uppercase;
-    }
-
-    a {
-      box-shadow: none;
     }
   }
 }
