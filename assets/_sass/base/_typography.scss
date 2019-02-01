@@ -209,7 +209,7 @@ a {
     outline: 0;
   }
 
-  .post-content &:not(.btn) {
+  .post-content &:not(.btn) &:not(.about-aside__link) {
     @include box-shadow(0, -2px, 0, 0, $color__astral, true);
     color: inherit;
 
