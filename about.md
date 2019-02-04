@@ -3,20 +3,6 @@ layout: page
 title: About
 permalink: "/about/"
 social_in_header: true
-researchers:
-- name: Rebecca Hersman
-  title: Director, Project on Nuclear Issues and Senior Advisor, International Security
-    Program
-- name: Bethany Goldblum
-  title: Member of the research faculty in the Department of Nuclear Engineering at
-    the University of California, Berkeley, and Founder and Director, Nuclear Policy
-    Working Group
-- name: Andrew Reddie
-  title: Ph.D. candidate in the Charles and Louise Travers Department of Political
-    Science, University of California, Berkeley, and researcher with the Nuclear Policy
-    Working Group
-- name: Bernadette Stadler
-  title: Program Coordinator and Research Assistant, Project on Nuclear Issues
 team:
 - name: Rebecca Hersman
   title: Director, Project on Nuclear Issues and Senior Advisor, International Security
@@ -44,6 +30,8 @@ The site, On the Radar, serves as a platform to report analysis and findings, sh
 _This project was made possible by the Carnegie Corporation of New York. All views expressed on the website should be understood to be solely those of the authors._
 
 ### About PONI
+
+{% include about-aside.html %}
 
 The core mission of PONI is to develop the next generation of policy, technical, and operational nuclear professionals by fostering, sustaining, and convening a networked community of young professionals prepared to meet the nuclear challenges of the future.
 

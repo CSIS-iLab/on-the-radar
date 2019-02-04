@@ -69,6 +69,13 @@ defaults:
     layout: archive
     permalink: "/authors/:slug/"
     breadcrumbs: true
+- scope:
+    path: ''
+    type: 'about'
+  values:
+    layout: post
+    permalink: "/about/"
+    breadcrumbs: true
 
 # Build settings
 markdown: kramdown

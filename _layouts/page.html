@@ -4,6 +4,28 @@ layout: default
 <article class="page">
   {% include page-header.html %}
   <div class="page__content post-content">
+    {%- if page.name == "about.md" -%}
+      <div class="about">
+        <h2>{{ site.data.language.about.title }}</h2>
+      </div>
+    {%- endif -%}
+
     {{ content }}
+
+    {%- if page.name=="about.md" -%}
+    <div class="about">
+      <h2 class="about__title">{{ site.data.language.about.team }}</h2>
+      <div class="about__team">
+        {%- for person in page.team -%}
+          <div class="about__person">
+            <h3>{{ person.name }}</h3>
+            <p>{{ person.title }}</p>
+          </div>
+        {%- endfor -%}
+      </div>
+      <h2 class="about__title">{{ site.data.language.about.dev_team }}</h2>
+      <p>{{ site.data.language.ilab | markdownify }}</p>
+      </div>
+    {%- endif -%}
   </div>
 </article>

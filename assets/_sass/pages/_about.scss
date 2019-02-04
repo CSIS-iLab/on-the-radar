@@ -1,0 +1,58 @@
+/*===============================
+=           About Page          =
+===============================*/
+
+.about {
+  padding-bottom: 1rem;
+
+  h2 {
+    @extend %h2--thin;
+    padding-top: 2rem;
+    color: $color__black;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin: 2rem 0 1rem;
+    border-top: 1px solid $color__gray-light;
+  }
+
+  &__team {
+    display: block;
+
+    @include breakpoint('large') {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    > div {
+      flex: 0 50%;
+    }
+  }
+
+  &__person {
+    flex: 1;
+    padding-bottom: 1.5rem;
+
+    @include breakpoint('large') {
+      padding: 1.5rem 2rem 1.5rem 0;
+    }
+
+    h3 {
+      @extend %about-person__name--base;
+      color: $color__astral;
+      @include font-size(20px);
+
+      &:hover {
+        color: $color__astral;
+      }
+    }
+
+    p {
+      @extend %about-person__title;
+      margin: 0;
+      color: $color__gray-darker;
+      @include font-size(15px);
+    }
+  }
+}

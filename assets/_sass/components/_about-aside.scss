@@ -1,0 +1,41 @@
+/*===============================
+=          About Aside          =
+===============================*/
+
+.about-aside {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: $color__off-white;
+
+  @include breakpoint('medium') {
+    float: right;
+    width: 250px;
+    margin: 0 1rem 1rem;
+  }
+
+  ul {
+    @extend %facets__link-item--base;
+    padding-left: 0;
+    font-weight: normal;
+    list-style: none;
+
+    span {
+      @extend %labeltext__subheading;
+      @include font-size(12px);
+      display: block;
+      color: $color__astral;
+      text-transform: uppercase;
+    }
+  }
+
+  li {
+    margin-bottom: 1.5rem;
+    list-style: none;
+
+    a {
+      box-shadow: none;
+    }
+  }
+}
