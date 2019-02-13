@@ -11,8 +11,8 @@
         {%- include event-date.html -%}
       {% else %}
         {%- include date.html -%}
+        {%- include last-updated.html -%}
       {%- endif -%}
-      {%- include last-updated.html -%}
   </header>
   {% if include.hide_excerpt != true %}
     <section class="post-block__content">

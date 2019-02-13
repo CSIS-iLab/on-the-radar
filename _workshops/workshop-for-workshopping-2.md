@@ -8,7 +8,7 @@ image: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-r
 image_caption: Test Caption
 image_source: Test Source
 details:
-  event_date: ''
+  event_date: 2019-3-31 16:52:42 +0000
   location: earth
   downloads: []
 downloads: []
