@@ -112,13 +112,28 @@ const AlgoliaSearch = () => {
 
       if (r.includes('details')) {
         let facet = r.replace('details.', '')
-        console.log(`#filter__details-${facet}`)
         widget = document.querySelector(`#filter__details-${facet}`)
       } else if (['collection_title', 'type'].includes(r)) {
         widget = document.querySelector(`#filter__content-type`)
       } else if (['keywords', 'topics'].includes(r)) {
         widget = document.querySelector(`#filter__content-topic`)
+      } else if (r === 'brief_type') {
+        let label = document.querySelectorAll(
+          '.archive__filter-type .ais-refinement-list--item'
+        )
+
+        Array.from(label).forEach(label => {
+          let type = search.helper.state.disjunctiveFacetsRefinements[r][0]
+
+          if (label.innerText.toLowerCase().indexOf(type.toLowerCase()) < 0) {
+            label.classList.remove('ais-refinement-list--item__active')
+          } else {
+            label.classList.add('ais-refinement-list--item__active')
+          }
+        })
       }
+
+      if (!widget) return
       widget.querySelector('.ais-root').classList.remove('ais-root__collapsed')
     })
 
@@ -201,9 +216,6 @@ const mapStateToKeys = (uiState, urlKeyDivs, dataset) => {
 
         if (queries) {
           return { [param]: queries.join('~') }
-        } else if (param === 'brief_type') {
-          param
-          // return { [param]: 'Country Profile' }
         }
       }
     })
