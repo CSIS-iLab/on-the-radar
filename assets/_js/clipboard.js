@@ -14,12 +14,11 @@ const Clipboard = () => {
   })
 
   clip.on('success', () => {
-    console.log('success')
-    tippy('.icon-link', {
-      arrow: 'true',
-      trigger: 'click',
-      content: 'Copied!'
-    })
+    console.log('ello');
+  }).tippy('.icon-link', {
+    arrow: 'true',
+    trigger: 'click',
+    content: '<span style="padding: 2px">Copied!</span>'
   })
 }
 export default Clipboard
