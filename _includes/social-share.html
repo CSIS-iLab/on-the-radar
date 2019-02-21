@@ -1,0 +1,23 @@
+{% if site.url.size > 0 %}
+  {% assign shareLink = site.url | append: page.url %}
+{% endif %}
+
+<div class="share">
+  <ul>
+    <li>
+      <a href="https://www.facebook.com/sharer.php?u={{ shareLink }}" rel="nofollow" target="_blank" aria-label="Share on Facebook" rel="noopener"><i class="icon icon-facebook"></i></a>
+    </li>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text={{ page.title | escape }}&url={{ shareLink }}&via=CSIS&related=CSIS" rel="nofollow" target="_blank" aria-label="Share on Twitter" rel="noopener"><i class="icon icon-twitter"></i></a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ shareLink }}&summary={{ page.title | escape }}&source=CSIS" rel="nofollow" target="_blank" aria-label="Share on LinkedIn" rel="noopener"><i class="icon icon-linkedin"></i></a>
+    </li>
+    <li>
+      <a href="mailto:?subject={{ site.title | escape }}: {{ page.title | escape }}&amp;body={{ shareLink }}" aria-label="Email link to {{ page.title | escape }}"><i class="icon icon-email-plane"></i></a>
+    </li>
+    <li>
+      <i class="icon icon-link" aria-label="Copied!"></i>
+    </li>
+  </ul>
+</div>

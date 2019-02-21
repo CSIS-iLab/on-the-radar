@@ -1,0 +1,76 @@
+/*==================================
+=          Social Share            =
+==================================*/
+
+.share {
+  margin: 0;
+  padding: 0;
+
+  ul {
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inherit;
+    margin: 0;
+  }
+
+  i {
+    font-size: 1rem;
+    transition: inherit;
+  }
+
+  .post__meta & {
+    display: none;
+
+    @include breakpoint('large') {
+      position: absolute;
+      right: 5rem;
+      display: inline;
+      float: right;
+    }
+
+    li {
+      line-height: 1.5;
+    }
+
+    i {
+      color: $color__blue;
+
+      &:hover {
+        color: $color__blue-dark;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .post__footer & {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5em;
+    border-bottom: 0.1em solid $color__gray-light;
+
+    @include breakpoint('large') {
+      justify-content: left;
+      align-items: left;
+    }
+
+    li {
+      display: inline-block;
+      padding-right: 0.5rem;
+    }
+
+    i {
+      color: $color__orange;
+
+      &:hover {
+        color: $color__orange-light;
+        cursor: pointer;
+      }
+    }
+  }
+}
