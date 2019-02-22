@@ -41,17 +41,19 @@
   }
 
   .post__footer & {
-
     ul {
       display: flex;
+      justify-content: center;
       width: 100%;
       padding-bottom: 0.5em;
       border-bottom: 0.1em solid $color__gray-light;
+
+      @include breakpoint('large') {
+        justify-content: left;
+      }
     }
 
     li {
-      justify-content: center;
-      align-items: center;
       margin-right: 0.5rem;
     }
 
@@ -62,10 +64,6 @@
         color: $color__orange-dark;
         cursor: pointer;
       }
-    }
-
-    @include breakpoint('large') {
-      justify-content: left;
     }
   }
 }
