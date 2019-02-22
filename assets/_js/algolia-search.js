@@ -118,11 +118,11 @@ const AlgoliaSearch = () => {
       } else if (['keywords', 'topics'].includes(r)) {
         widget = document.querySelector(`#filter__content-topic`)
       } else if (r === 'brief_type') {
-        let label = document.querySelectorAll(
+        let labels = document.querySelectorAll(
           '.archive__filter-type .ais-refinement-list--item'
         )
 
-        Array.from(label).forEach(label => {
+        Array.from(labels).forEach(label => {
           let type = search.helper.state.disjunctiveFacetsRefinements[r][0]
 
           if (label.innerText.toLowerCase().indexOf(type.toLowerCase()) < 0) {
