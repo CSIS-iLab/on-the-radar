@@ -7,20 +7,17 @@ const Clipboard = () => {
 
   if (!linkIcon) return
 
-  let tooltip = tippy('.icon-link', {
-    arrow: 'true',
-    trigger: 'click',
-    content: '<span style="padding: 3px">Copied!</span>'
-  })
-
-  let clip = new ClipboardJS(linkIcon, {
+  new ClipboardJS(linkIcon, {
     text: function() {
       return url
     }
   })
 
-  clip.on('success', () => {
-    tooltip.show()
+  tippy('.icon-link', {
+    arrow: 'true',
+    trigger: 'click',
+    interactive: true,
+    content: '<span style="padding: 3px">Copied!</span>'
   })
 }
 export default Clipboard

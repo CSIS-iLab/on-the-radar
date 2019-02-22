@@ -2,10 +2,6 @@
 =          Social Share            =
 ==================================*/
 
-.post__meta {
-  position: relative;
-}
-
 .share {
   margin: 0;
   padding: 0;
@@ -27,7 +23,7 @@
     @include breakpoint('large') {
       position: absolute;
       right: 1rem;
-      display: inline;
+      display: block;
     }
 
     li {
