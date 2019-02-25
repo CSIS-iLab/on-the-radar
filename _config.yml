@@ -52,7 +52,7 @@ defaults:
   values:
     layout: post
     permalink: "/issue-briefs/:slug/"
-    view_all_url: "/issue-briefs/"
+    view_all_url: "/issue-briefs/?brief_type="
     breadcrumbs: true
 - scope:
     path: ''
