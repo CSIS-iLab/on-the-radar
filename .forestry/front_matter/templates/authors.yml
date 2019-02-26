@@ -10,6 +10,6 @@ fields:
   name: role
   label: Title
 pages:
-- _authors/tester.md
-- _authors/jane-doe.md
 - _authors/john-dot.md
+- _authors/jane-doe.md
+- _authors/tester.md
