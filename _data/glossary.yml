@@ -15,9 +15,12 @@
 - title: Vantage
   acronym: ''
   description: The position from which information can be ascertained.
-- title: Sad Situational Awareness
-  description: ssadefinitionLorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+- title: Vulnerability
+  description: The characteristic of a system that causes it to suffer a definite
+    degradation (loss or reduction of capability to perform its designated mission)
+    as a result of having been subjected to a certain (defined) level of effects in
+    an unnatural (man-made) hostile environment leading to a chance that a technological
+    system may fail due to outside impacts.
 - title: Cool Capabilities
   description: ctscdefinitionLorem ipsum dolor sit amet, consectetur adipiscing elit,
     sed do eiusmod tempor incididunt ut labore et dolore magna aliquadefinition
