@@ -1,7 +1,7 @@
 ---
-- title: ''
+- title: Range
   acronym: ''
-  description: ''
+  description: The distance over which a technology can be deployed and/or is operational
 - title: Resiliency
   acronym: ''
   description: The ability of an architecture to support the functions necessary for
