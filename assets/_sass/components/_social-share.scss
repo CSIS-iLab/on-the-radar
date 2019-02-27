@@ -46,7 +46,7 @@
       justify-content: center;
       width: 100%;
       padding-bottom: 0.5em;
-      border-bottom: 0.1em solid $color__gray-light;
+      border-bottom: 1px solid $color__gray-light;
 
       @include breakpoint('large') {
         justify-content: left;
