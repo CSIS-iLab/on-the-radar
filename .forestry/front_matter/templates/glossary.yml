@@ -1,7 +1,6 @@
 ---
 label: glossary.yml
 hide_body: false
-is_partial: false
 fields:
 - name: glossary_terms
   label: Glossary Terms

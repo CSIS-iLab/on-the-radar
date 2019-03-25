@@ -1,7 +1,6 @@
 ---
 label: Briefs
 hide_body: false
-is_partial: false
 fields:
 - type: include
   template: post-meta-info
@@ -76,6 +75,7 @@ fields:
   - type: include
     template: download-media
 pages:
+- _briefs/unmanned-underwater-vehicle-uuv-systems-for-submarine-detection-a-technology-primer.md
 - _briefs/test-tech-primer.md
 - _briefs/tester.md
 - _briefs/second-tech-primer-test.md

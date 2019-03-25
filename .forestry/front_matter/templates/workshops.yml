@@ -1,7 +1,6 @@
 ---
 label: Workshops
 hide_body: false
-is_partial: false
 fields:
 - type: include
   template: post-meta-info

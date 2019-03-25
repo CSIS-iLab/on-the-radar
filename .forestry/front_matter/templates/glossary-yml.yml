@@ -1,7 +1,6 @@
 ---
 label: principle_researchers.yml
 hide_body: false
-is_partial: false
 fields:
 - name: Researcher
   label: Researcher

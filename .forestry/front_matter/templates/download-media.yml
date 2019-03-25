@@ -1,7 +1,6 @@
 ---
 label: Download Media
 hide_body: false
-is_partial: true
 fields:
 - type: file
   label: Media Upload
