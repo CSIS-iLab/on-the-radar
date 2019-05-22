@@ -75,8 +75,8 @@ fields:
   - type: include
     template: download-media
 pages:
+- _briefs/second-tech-primer-test.md
 - _briefs/unmanned-underwater-vehicle-uuv-systems-for-submarine-detection-a-technology-primer.md
 - _briefs/test-tech-primer.md
-- _briefs/tester.md
-- _briefs/second-tech-primer-test.md
 - _briefs/country-profile.md
+- _briefs/tester.md

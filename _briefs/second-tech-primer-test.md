@@ -17,7 +17,7 @@ details:
   - China
   - North Korea
   - Russia
-date: 2018-11-14 14:14:54 +0000
+date: 2018-11-14T14:14:54.000+00:00
 excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel quam at
   leo porttitor pulvinar. Donec auctor, elit quis congue semper, tellus erat viverra
   lacus, sed facilisis felis tortor a dui. Sed sit amet dignissim ex. Curabitur lacinia
@@ -36,7 +36,7 @@ image_source: Getty Images
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1542205462/on-the-radar/header-sample.jpg
   label: Photo for Download Sample
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1542205462/on-the-radar/header-sample.jpg
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1558542450/on-the-radar/HSI%20Primer.pdf
   label: Sample media upload
 
 ---
