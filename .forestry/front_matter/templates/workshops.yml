@@ -4,8 +4,12 @@ hide_body: false
 fields:
 - type: include
   template: post-meta-info
+  name: post_met_info
+  label: post met info
 - type: include
   template: photo
+  name: upload_image
+  label: upload image
 - type: field_group
   name: details
   label: Details
@@ -22,6 +26,8 @@ fields:
   fields:
   - type: include
     template: download-media
+    name: download_media
+    label: download media
 pages:
 - _workshops/workshop-for-workshopping.md
 - _workshops/workshop-for-workshopping-2.md
