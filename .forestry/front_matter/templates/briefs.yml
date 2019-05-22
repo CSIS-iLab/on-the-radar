@@ -4,6 +4,8 @@ hide_body: false
 fields:
 - type: include
   template: post-meta-info
+  name: post_meta_info
+  label: post meta info
 - type: select
   name: brief_type
   config:
@@ -14,8 +16,8 @@ fields:
     - Country Profile
   label: Brief Type
 - type: include
-  name: ''
-  label: ''
+  name: upload_image
+  label: upload image
   template: photo
 - type: field_group
   name: details
@@ -74,6 +76,10 @@ fields:
   fields:
   - type: include
     template: download-media
+    name: download_media
+    label: download media
+  config:
+    labelField: label
 pages:
 - _briefs/second-tech-primer-test.md
 - _briefs/unmanned-underwater-vehicle-uuv-systems-for-submarine-detection-a-technology-primer.md
