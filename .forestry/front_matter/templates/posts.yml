@@ -4,6 +4,8 @@ hide_body: false
 fields:
 - type: include
   template: post-meta-info
+  name: post_meta_info
+  label: post meta info
 - type: list
   name: categories
   label: Categories
@@ -34,8 +36,8 @@ fields:
       type: pages
       section: briefs
 - type: include
-  name: ''
-  label: ''
+  name: upload_image
+  label: upload image
   template: photo
 - type: boolean
   name: featured
