@@ -9,6 +9,7 @@ fields:
   name: role
   label: Title
 pages:
+- _authors/pedro-vicente-valdez.md
 - _authors/margaret-williams.md
 - _authors/andrew-reddie.md
 - _authors/bethany-goldblum.md
