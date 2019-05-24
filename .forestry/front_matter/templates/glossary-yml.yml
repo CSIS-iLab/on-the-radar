@@ -1,17 +1,24 @@
 ---
-label: principle_researchers.yml
+label: glossary.yml
 hide_body: false
 fields:
-- name: Researcher
-  label: Researcher
+- name: Glossary
+  label: Glossary
   type: field_group_list
   fields:
-  - type: text
-    name: name
-    label: Name
   - name: title
     label: Title
     type: text
+    hidden: false
+    default: ''
+  - name: acronym
+    label: Acronym
+    type: text
+    hidden: false
+    default: ''
+  - name: description
+    label: Description
+    type: textarea
     hidden: false
     default: ''
   hidden: false
