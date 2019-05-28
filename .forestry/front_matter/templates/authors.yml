@@ -10,10 +10,11 @@ fields:
   label: Title
 pages:
 - _authors/andrew-reddie.md
-- _authors/bethany-goldblum.md
 - _authors/meyer-thalheimer.md
-- _authors/margaret-williams.md
 - _authors/pedro-vicente-valdez.md
 - _authors/nate-frierson.md
 - _authors/paulina-wheeler.md
 - _authors/elsa-kania.md
+- _authors/margaret-williams.md
+- _authors/bethany-goldblum.md
+- _authors/bernadette-stadler.md
