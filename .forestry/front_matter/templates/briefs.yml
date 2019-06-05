@@ -81,6 +81,5 @@ fields:
   config:
     labelField: label
 pages:
-- _briefs/HSI Primer.md
 - _briefs/unmanned-underwater-vehicle-uuv-systems-for-submarine-detection-a-technology-primer.md
 - _briefs/country-profile.md
