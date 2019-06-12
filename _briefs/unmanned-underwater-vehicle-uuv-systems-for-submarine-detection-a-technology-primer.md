@@ -17,12 +17,15 @@ excerpt: |-
 
   · Their small size and stealthy deployment may allow for reconnaissance in a contested environment that—when integrated into sensor networks and existing tailing capabilities—might increase the fidelity of information available to decision-makers.
 authors:
-- _authors/tester.md
+- _authors/andrew-reddie.md
+- _authors/bethany-goldblum.md
 brief_type: ''
 image: ''
 image_caption: ''
 image_source: ''
-downloads: []
+downloads:
+- media_upload: ''
+  label: ''
 published: false
 
 ---

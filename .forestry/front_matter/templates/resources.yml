@@ -31,6 +31,6 @@ fields:
   name: link
   label: Link (optional)
 pages:
-- _resources/tester.md
-- _resources/test-resource.md
 - _resources/test-resource-2.md
+- _resources/test-resource.md
+- _resources/tester.md
