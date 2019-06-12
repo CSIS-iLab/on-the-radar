@@ -20,7 +20,7 @@ authors:
 - _authors/andrew-reddie.md
 - _authors/bethany-goldblum.md
 brief_type: ''
-image: ''
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1560366688/on-the-radar/UUV%20Primer-1.pdf
 image_caption: ''
 image_source: ''
 downloads:
