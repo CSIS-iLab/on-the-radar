@@ -108,5 +108,3 @@ Increased detection and tracking capabilities may also contribute to a _percepti
 [\[10\]](#_ftnref10) This type of logic train has already been explored in the case of ICBMs at the outset of a great power war.
 
 ***
-
-[\[JL1\]](#_msoanchor_1)I’m assuming it’s common to treat research and development as a compound single noun. Is that correct?
