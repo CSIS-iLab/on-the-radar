@@ -93,6 +93,6 @@ Write clear and concise commit messages describing the changes you are making an
 - This project uses the [BEM](http://getbem.com/introduction/) naming convention.
 - This project uses [Stylelint](https://stylelint.io) to maintain a consistent code style. Errors are flagged in the console during development and can be automatically fixed by running `npm run stylelint-fix`.
 
-## Copyright / License
+## Copyright / License Info
 
 Copyright © 2018 CSIS iDeas Lab under the [MIT License](https://github.com/CSIS-iLab/on-the-radar/blob/master/LICENSE).
