@@ -15,9 +15,10 @@ The website for the On the Radar study by the CSIS Project on Nuclear Issues (PO
 ## Quick-start Instructions
 
 ```shell
-$ git clone https://github.com/CSIS-iLab/health-commission.git
-$ cd csis-jekyll-starter
+$ git clone https://github.com/CSIS-iLab/on-the-radar.git
+$ cd on-the-radar
 $ npm install
+$ bundle install --path vendor/bundle
 $ npm start
 ```
 
