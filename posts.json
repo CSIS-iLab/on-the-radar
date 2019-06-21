@@ -101,7 +101,7 @@
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
   }{%- unless forloop.last -%},{%- endunless -%}
 {%- endfor -%}
-,
+
 {%- for post in site.workshops -%}
 {%- assign collection = site.collections | where: "label", post.collection | first -%}
 {%- assign collection_title = collection.title -%}
