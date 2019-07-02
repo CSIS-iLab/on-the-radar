@@ -7,15 +7,11 @@ details:
   country: []
 title: 'Unmanned Underwater Vehicle (UUV) Systems for Submarine Detection: A Technology
   Primer'
-date: 2019-03-25 04:00:00 +0000
+date: 2019-03-25T04:00:00.000+00:00
 excerpt: |-
-  ### _Overview_
-
-  · Unmanned underwater vehicles (UUVs) are an emerging class of unmanned maritime vehicles (UMVs) with the potential to transform anti-submarine warfare (ASW) through new capabilities for sensing in the sea domain.
-
-  · UUV systems integrated into frontier submarine sensing technologies offer new positions (_increased vantage_) from which information can be ascertained. UUV systems exemplify new tactical-level systems for detection and tracking given new adversary capabilities.
-
-  · Their small size and stealthy deployment may allow for reconnaissance in a contested environment that—when integrated into sensor networks and existing tailing capabilities—might increase the fidelity of information available to decision-makers.
+  * Unmanned underwater vehicles (UUVs) are an emerging class of unmanned maritime vehicles (UMVs) with the potential to transform anti-submarine warfare (ASW) through new capabilities for sensing in the sea domain.
+  * UUV systems integrated into frontier submarine sensing technologies offer new positions (_increased vantage_) from which information can be ascertained. UUV systems exemplify new tactical-level systems for detection and tracking given new adversary capabilities.
+  * Their small size and stealthy deployment may allow for reconnaissance in a contested environment that—when integrated into sensor networks and existing tailing capabilities—might increase the fidelity of information available to decision-makers.
 authors:
 - _authors/andrew-reddie.md
 - _authors/bethany-goldblum.md
@@ -23,9 +19,7 @@ brief_type: ''
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1560366688/on-the-radar/UUV%20Primer-1.pdf
 image_caption: ''
 image_source: ''
-downloads:
-- media_upload: ''
-  label: ''
+downloads: []
 published: false
 
 ---
