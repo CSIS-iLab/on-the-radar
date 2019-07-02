@@ -1,10 +1,21 @@
 ---
 details:
-  type: []
-  characteristics: []
-  risk_factors: []
-  domain: []
-  country: []
+  type:
+  - Unmanned Vehicles
+  characteristics:
+  - Speed
+  - Persistence
+  - Vantage/range
+  risk_factors:
+  - Action-enabling
+  - Dual-use
+  - Intrusive
+  domain:
+  - Sea
+  country:
+  - China
+  - Russia
+  - United States
 title: 'Unmanned Underwater Vehicle (UUV) Systems for Submarine Detection: A Technology
   Primer'
 date: 2019-03-25T04:00:00.000+00:00
@@ -15,12 +26,11 @@ excerpt: |-
 authors:
 - _authors/andrew-reddie.md
 - _authors/bethany-goldblum.md
-brief_type: ''
+brief_type: Tech Primer
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1560366688/on-the-radar/UUV%20Primer-1.pdf
 image_caption: ''
 image_source: ''
 downloads: []
-published: false
 
 ---
 **_Introduction_**
@@ -45,7 +55,7 @@ The major challenge associated with the use of UUVs stems from the limitations o
 
 The other major R&D challenges concern the limited power available to operate sensors on UUVs—as most power is used for propulsion—and fitting active sonar systems to existing UUV prototypes given their relatively small size.
 
-_Cost:_ The SHARK UUV system—and the broader DASH program of which it is a constituent technology—is designed to offer a relatively low-cost alternative to existing detection and tracking tools such as “tailing” adversary submarines with other craft. For example, the SHARK system uses commercial-off-the-shelf (COTS) parts as part of a cost reduction strategy. The use of COTS technology may subsequently increase the proliferation of UUV technology across multiple countries. There are, however, trade-offs associated with developing UUV systems rather than stand-alone active sonar nodes due to the added complexity associated with developing both a UUV vehicle and sensing components. The research and development associated with UUVs is [\[JL1\]](#_msocom_1) marginal and builds on existing advances in autonomous technology and remote sensing. DARPA, for example, provided a $4.6M grant to BAE Systems targeting the creation of a miniaturized active sonar system for UUVs deployed from a traditional submarine.
+_Cost:_ The SHARK UUV system—and the broader DASH program of which it is a constituent technology—is designed to offer a relatively low-cost alternative to existing detection and tracking tools such as “tailing” adversary submarines with other craft. For example, the SHARK system uses commercial-off-the-shelf (COTS) parts as part of a cost reduction strategy. The use of COTS technology may subsequently increase the proliferation of UUV technology across multiple countries. There are, however, trade-offs associated with developing UUV systems rather than stand-alone active sonar nodes due to the added complexity associated with developing both a UUV vehicle and sensing components. The research and development associated with UUVs is marginal and builds on existing advances in autonomous technology and remote sensing. DARPA, for example, provided a $4.6M grant to BAE Systems targeting the creation of a miniaturized active sonar system for UUVs deployed from a traditional submarine.
 
 **_Effects on Situational Awareness_**
 
