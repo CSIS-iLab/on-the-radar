@@ -1,10 +1,19 @@
 ---
 details:
-  type: []
-  characteristics: []
-  risk_factors: []
-  domain: []
-  country: []
+  type:
+  - Platform Control and Information Support
+  characteristics:
+  - Speed
+  - Precision
+  - Detectability
+  risk_factors:
+  - Dual-use
+  - Clandestine
+  - Vulnerable
+  domain:
+  - Multidomain
+  country:
+  - United States
 title: 'Artificial Intelligence Analysis Applications: A Technology Primer'
 date: 2019-04-03 04:00:00 +0000
 excerpt: "* Artificial intelligence (AI) applications have the potential to significantly
@@ -26,7 +35,8 @@ excerpt: "* Artificial intelligence (AI) applications have the potential to sign
   The clandestine, vulnerable, and dual-use nature of AI analysis applications could
   further undermine strategic stability by increasing the chance of misperception,
   miscalculation, and inadvertent escalation."
-authors: []
+authors:
+- _authors/lizamaria-aria.md
 brief_type: Tech Primer
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1559065307/on-the-radar/AIAnalysisPrimer%20Formatted.pdf
 image_caption: ''
