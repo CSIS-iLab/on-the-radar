@@ -18,7 +18,7 @@ details:
   - United States
 title: 'Hyperspectral Imaging: A Technology Primer'
 date: 2019-04-03 04:00:00 +0000
-excerpt: "* "
+excerpt: ''
 authors:
 - _authors/bernadette-stadler.md
 brief_type: Tech Primer
