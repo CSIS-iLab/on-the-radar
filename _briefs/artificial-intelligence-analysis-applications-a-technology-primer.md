@@ -28,7 +28,7 @@ excerpt: "* Artificial intelligence (AI) applications have the potential to sign
   miscalculation, and inadvertent escalation."
 authors: []
 brief_type: Tech Primer
-image: ''
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1559065307/on-the-radar/AIAnalysisPrimer%20Formatted.pdf
 image_caption: ''
 image_source: ''
 downloads: []
