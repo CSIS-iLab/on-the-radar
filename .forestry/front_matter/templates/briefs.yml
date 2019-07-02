@@ -81,7 +81,7 @@ fields:
   config:
     labelField: label
 pages:
+- _briefs/country-profile.md
 - _briefs/artificial-intelligence-analysis-applications-a-technology-primer.md
 - _briefs/unmanned-underwater-vehicle-uuv-systems-for-submarine-detection-a-technology-primer.md
 - _briefs/smallsats-a-technology-primer.md
-- _briefs/country-profile.md

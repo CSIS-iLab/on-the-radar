@@ -8,8 +8,16 @@ details:
   characteristics: []
   risk_factors: []
   domain: []
-date: 2018-10-31T17:03:02.000+00:00
-excerpt: ''
+date: 2019-04-19 04:00:00 +0000
+excerpt: 'The United States has extensive and mature strategic situational awareness
+  capabilities across all domains (air, land, maritime, space, and cyber) that help
+  to characterize the operating environment, detect and respond to attacks, and discern
+  actual attacks from false alarms across the spectrum of conflict, both conventional
+  and nuclear. The U.S. military has always relied on these capabilities at the strategic
+  level, but over the last thirty to forty years these capabilities have increasingly
+  become more important at the tactical and operational level as technological advances
+  have enabled more granular tracking and detection of enemy forces and communications
+  and coordination between different sensors and shooters to devastating effect. '
 authors:
 - _authors/rhys-mccormick.md
 brief_type: Country Profile
