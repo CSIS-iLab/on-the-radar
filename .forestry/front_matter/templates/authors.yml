@@ -9,6 +9,7 @@ fields:
   name: role
   label: Title
 pages:
+- _authors/lizamaria-aria.md
 - _authors/rhys-mccormick.md
 - _authors/evan-lisman.md
 - _authors/oscar-guerrero.md
