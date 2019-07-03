@@ -8,21 +8,21 @@
   {%- capture post_html -%}{%- include post-block.html -%}{%-if forloop.last -%}{%- include back-to-top.html -%}{%- endif -%}{%- endcapture -%}
   {%- capture topics -%}[{%- for topic in post.topics -%}"{{ topic }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
   {
-      "objectID": "{{ post.title | slugify }}",
-      "title": "{{ post.title | escape }}",
-      "url": "{{ post.url }}",
-      "collection_title": "Resources",
-      "collection_label": "{{ post.collection }}",
-      "type": "{{ post.type }}",
-      "topics": {{ topics }},
-      "authors": "{{post.authors }}",
-      "date": "{{ post.date | date: site.date_format | date: '%s' }}",
-      "updated_at": "{{ post.last-modified-date | date: '%s' }}",
-      "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
-      "post_html": {{ post_html | jsonify | normalize_whitespace }}
-      }{%- unless forloop.last -%},{%- endunless -%}
-    {%- endfor -%}
-,
+    "objectID": "{{ post.title | slugify }}",
+    "title": "{{ post.title | escape }}",
+    "url": "{{ post.url }}",
+    "collection_title": "Resources",
+    "collection_label": "{{ post.collection }}",
+    "type": "{{ post.type }}",
+    "topics": {{ topics }},
+    "authors": "{{post.authors }}",
+    "date": "{{ post.date | date: site.date_format | date: '%s' }}",
+    "updated_at": "{{ post.last-modified-date | date: '%s' }}",
+    "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
+    "post_html": {{ post_html | jsonify | normalize_whitespace }}
+    },
+  {%- endfor -%}
+
 {%- for post in site.posts -%}
 {%- assign collection = site.collections | where: "label", post.collection | first -%}
 {%- assign collection_title = collection.title -%}
@@ -45,9 +45,9 @@
     "updated_at": "{{ post.last-modified-date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
-  }{%- unless forloop.last -%},{%- endunless -%}
+  },
 {%- endfor -%}
-,
+
 {%- assign country_profiles = site.briefs | where: 'brief_type','Country Profile' -%}
 {%- for post in country_profiles -%}
 {%- assign collection = site.collections | where: "label", post.collection | first -%}
@@ -66,9 +66,9 @@
     "updated_at": "{{ post.last-modified-date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
-  }{%- unless forloop.last -%},{%- endunless -%}
+  },
 {%- endfor -%}
-,
+
 {%- assign tech_primers = site.briefs | where: 'brief_type','Tech Primer' -%}
 {%- for post in tech_primers -%}
 {%- assign collection = site.collections | where: "label", post.collection | first -%}
@@ -99,7 +99,7 @@
     "updated_at": "{{ post.last-modified-date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
-  }{%- unless forloop.last -%},{%- endunless -%}
+  },
 {%- endfor -%}
 
 {%- for post in site.workshops -%}
