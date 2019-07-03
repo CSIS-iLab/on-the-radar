@@ -15,7 +15,7 @@ details:
   country:
   - United States
 title: 'Artificial Intelligence Analysis Applications: A Technology Primer'
-date: 2019-04-03 04:00:00 +0000
+date: 2019-04-03T04:00:00.000+00:00
 excerpt: Artificial intelligence (AI) applications have the potential to significantly
   impact the strategic situational awareness (strategic SA) mission in two key areas—operations
   and analysis. AI analysis applications can enhance the strategic SA mission by employing
@@ -28,7 +28,6 @@ image: ''
 image_caption: ''
 image_source: ''
 downloads: []
-published: false
 
 ---
 * Artificial intelligence (AI) applications have the potential to significantly impact the strategic situational awareness (strategic SA) mission in two key areas—operations and analysis. While autonomous operations of platforms, sensors, and cyber strategic SA collection assets have their own sets of risks and benefits, which this project addresses in other primers, this primer focuses on the AI applications that enhance the strategic SA mission through improving analysis.
