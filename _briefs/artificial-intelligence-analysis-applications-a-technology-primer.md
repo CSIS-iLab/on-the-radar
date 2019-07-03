@@ -24,7 +24,7 @@ authors:
 - _authors/nate-frierson.md
 - _authors/lizamaria-aria.md
 brief_type: Tech Primer
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1559065307/on-the-radar/AIAnalysisPrimer%20Formatted.pdf
+image: ''
 image_caption: ''
 image_source: ''
 downloads: []
