@@ -21,6 +21,7 @@ excerpt: Artificial intelligence (AI) applications have the potential to signifi
   and analysis. AI analysis applications can enhance the strategic SA mission by employing
   data mining, data fusion methods, front-line analysis, and predictive analytics.
 authors:
+- _authors/nate-frierson.md
 - _authors/lizamaria-aria.md
 brief_type: Tech Primer
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1559065307/on-the-radar/AIAnalysisPrimer%20Formatted.pdf
