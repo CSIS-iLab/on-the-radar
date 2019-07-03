@@ -8,7 +8,7 @@ details:
   characteristics: []
   risk_factors: []
   domain: []
-date: 2019-04-19 04:00:00 +0000
+date: 2019-04-19T04:00:00.000+00:00
 excerpt: 'The United States has extensive and mature strategic situational awareness
   capabilities across all domains (air, land, maritime, space, and cyber) that help
   to characterize the operating environment, detect and respond to attacks, and discern
@@ -25,7 +25,6 @@ image: ''
 image_caption: ''
 image_source: ''
 downloads: []
-published: false
 
 ---
 ### Introduction
