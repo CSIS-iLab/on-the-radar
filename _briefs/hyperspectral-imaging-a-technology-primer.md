@@ -22,7 +22,7 @@ excerpt: ''
 authors:
 - _authors/bernadette-stadler.md
 brief_type: Tech Primer
-image: ''
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1558542450/on-the-radar/HSI%20Primer.pdf
 image_caption: ''
 image_source: ''
 downloads: []
