@@ -3,7 +3,7 @@ title: United States Strategic Situational Awareness Capabilities
 details:
   Type: []
   country:
-  - China
+  - United States
   type: []
   characteristics: []
   risk_factors: []
