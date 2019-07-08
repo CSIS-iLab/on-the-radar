@@ -29,6 +29,6 @@ image_caption: ''
 image_source: ''
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1559065307/on-the-radar/AIAnalysisPrimer%20Formatted.pdf
-  label: ''
+  label: AI Analysis Primer
 
 ---
