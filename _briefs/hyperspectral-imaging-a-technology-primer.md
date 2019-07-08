@@ -27,7 +27,7 @@ authors:
 - _authors/meyer-thalheimer.md
 - _authors/bernadette-stadler.md
 brief_type: Tech Primer
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1558542450/on-the-radar/HSI%20Primer.pdf
+image: ''
 image_caption: ''
 image_source: ''
 downloads:
