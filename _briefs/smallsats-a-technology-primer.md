@@ -29,10 +29,12 @@ authors:
 - _authors/andrew-reddie.md
 - _authors/bethany-goldblum.md
 brief_type: Tech Primer
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1562599637/on-the-radar/Smallsats%20Final%20Primer%20Formatted%2007-02-29-1.pdf
+image: ''
 image_caption: ''
 image_source: ''
-downloads: []
+downloads:
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562599509/on-the-radar/Smallsats%20Final%20Primer%20Formatted%2007-02-29.pdf
+  label: ''
 
 ---
 Small satellites (smallsats) are miniaturized artificial satellites with a mass less than 500 kg used for communication, imaging, and other space applications.[\[1\]](#_ftn1) Recent advances in microtechnology have facilitated the development of smallsats equipped with compact, low mass, low-power-consumption sensors, which enable high-performance platforms with significant cost reductions compared to traditional satellite systems. The reduced payload of smallsats further decreases vehicle launch costs, which allows for deployment in constellations, where a group of satellites works in concert under shared control to achieve a particular mission.[\[2\]](#_ftn2) A constellation of satellites improves the resiliency of the overall system to degradation due to natural causes—such as radiation damage—or adversary attacks. They also allow for trade-offs in individual sensor performance (e.g., lower imaging resolution) in return for broader coverage and gap reduction.
