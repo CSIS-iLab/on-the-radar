@@ -12,7 +12,7 @@ authors:
 - _authors/andrew-reddie.md
 - _authors/bethany-goldblum.md
 brief_type: Tech Primer
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1562599509/on-the-radar/Smallsats%20Final%20Primer%20Formatted%2007-02-29.pdf
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1562599637/on-the-radar/Smallsats%20Final%20Primer%20Formatted%2007-02-29-1.pdf
 image_caption: ''
 image_source: ''
 downloads: []
