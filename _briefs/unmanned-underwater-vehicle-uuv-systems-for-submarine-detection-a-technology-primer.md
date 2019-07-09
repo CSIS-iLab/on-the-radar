@@ -28,24 +28,13 @@ authors:
 - _authors/andrew-reddie.md
 - _authors/bethany-goldblum.md
 brief_type: Tech Primer
-keywords:
-- Synthetic Aperture Sonar
-- Keyword 1
-- Drone
-- Hydrophones
-- Synthetic Aperture Sonar
-- Anti-Submarine Warfare (ASW)
-- Keyword 2
-- Unmanned
-- Hydrophones
-- Anti-Submarine Warfare (ASW)
-- Synthetic Aperture Sonar
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1542205462/on-the-radar/header-sample.jpg
+image: ''
 image_caption: ''
 image_source: ''
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1560351430/on-the-radar/UUV%20Final%20Primer%20Formatted.pdf
   label: UUV primer
+keywords: []
 
 ---
 The oceans have long represented a challenging environment for sensing technologies. Onboard passive sensors have historically faced technological limitations due to low signal-to-noise and inhospitable sensing environments. Additionally, the vantage restrictions posed by static positioning of sea-based sensors, whether active or passive, has allowed submarines to travel vast swathes of the oceans largely undetected. As a result, sea-launched ballistic missiles have been important to ensuring a second-strike capability and maintaining the strategic balance between nuclear adversaries. New, mobile, and active sensing technologies, however, are changing this status quo and leaving submarine forces increasingly vulnerable to detection. These new sensing systems combined with smart data processing techniques for decision support have the potential to substantially impact strategic situational awareness.
@@ -60,7 +49,7 @@ UUV platforms are also a part of the broader Distributed Agile Submarine Hunting
 
 ***
 
-[^1]: In contrast to manned systems that require a link to an operator for directions, unmanned vehicles are being developed to operate autonomously—decreasing the likelihood of detection. UUV “swarms” may also be able to trade the destruction of individual vehicles for the advantage of persistent observation.
+[In contrast to manned systems that require a link to an operator for directions, unmanned vehicles are being developed to operate autonomously—decreasing the likelihood of detection. UUV “swarms” may also be able to trade the destruction of individual vehicles for the advantage of persistent observation.
 
 [^2]: An example of advanced sensors for ASW systems is Raytheon’s PROSAS PS60-6000 Synthetic Aperture Sonar.
 

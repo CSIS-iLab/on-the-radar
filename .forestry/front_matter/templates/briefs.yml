@@ -91,8 +91,8 @@ fields:
   config:
     labelField: label
 pages:
-- _briefs/resilient-communications-for-command-and-control-of-nuclear-forces.md
 - _briefs/unmanned-underwater-vehicle-uuv-systems-for-submarine-detection-a-technology-primer.md
+- _briefs/resilient-communications-for-command-and-control-of-nuclear-forces.md
 - _briefs/country-profile.md
 - _briefs/smallsats-a-technology-primer.md
 - _briefs/plant-based-sensors-a-technology-primer.md
