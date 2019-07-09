@@ -31,7 +31,7 @@ image: ''
 image_caption: ''
 image_source: ''
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562603822/on-the-radar/HSI%20Final%20Primer%20Formatted.pdf
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562682076/on-the-radar/Hyperspectral%20Imaging%20Primer.pdf
   label: Hyperspectral Imaging Primer
 
 ---
