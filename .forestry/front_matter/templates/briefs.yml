@@ -81,10 +81,10 @@ fields:
   config:
     labelField: label
 pages:
+- _briefs/plant-based-sensors-a-technology-primer.md
 - _briefs/artificial-intelligence-analysis-applications-a-technology-primer.md
 - _briefs/unmanned-underwater-vehicle-uuv-systems-for-submarine-detection-a-technology-primer.md
 - _briefs/resilient-communications.md
-- _briefs/plant-based-sensors-a-technology-primer.md
 - _briefs/hyperspectral-imaging-a-technology-primer.md
 - _briefs/country-profile.md
 - _briefs/smallsats-a-technology-primer.md

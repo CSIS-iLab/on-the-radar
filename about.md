@@ -4,19 +4,26 @@ title: About
 permalink: "/about/"
 social_in_header: true
 team:
+- name: Philip Reiner
+  title: Director, Technology for Global Security
+  headshot: ''
 - name: Rebecca Hersman
   title: Director, Project on Nuclear Issues and Senior Advisor, International Security
     Program
+  headshot: ''
 - name: Bethany Goldblum
   title: Member of the research faculty in the Department of Nuclear Engineering at
     the University of California, Berkeley, and Founder and Director, Nuclear Policy
     Working Group
+  headshot: ''
 - name: Andrew Reddie
   title: Ph.D. candidate in the Charles and Louise Travers Department of Political
     Science, University of California, Berkeley, and researcher with the Nuclear Policy
     Working Group
+  headshot: ''
 - name: Bernadette Stadler
   title: Program Coordinator and Research Assistant, Project on Nuclear Issues
+  headshot: ''
 consultants:
 - name: Rebecca Hersman
   title: Director, Project on Nuclear Issues and Senior Advisor, International Security
