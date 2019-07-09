@@ -23,7 +23,7 @@ keywords:
 - Hydrophones
 - Anti-Submarine Warfare (ASW)
 - Synthetic Aperture Sonar
-image: ''
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1542205462/on-the-radar/header-sample.jpg
 image_caption: ''
 image_source: ''
 downloads: []

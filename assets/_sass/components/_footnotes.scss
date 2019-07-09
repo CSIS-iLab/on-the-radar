@@ -2,15 +2,15 @@
   ol {
     margin-top: 1.5rem;
     padding-left: 1rem;
+  }
 
-    .post-content & p {
-      @extend %footnotes;
-    }
+  .post-content & p {
+    @extend %footnotes;
+  }
 
-    li {
-      @include font-size(16px);
-      color: $color__orange;
-    }
+  li {
+    @include font-size(16px);
+    color: $color__orange;
   }
 }
 

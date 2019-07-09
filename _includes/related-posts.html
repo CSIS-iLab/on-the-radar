@@ -1,0 +1,44 @@
+{% assign maxRelated = 3 %}
+{% assign minCommonKeywords = 1 %}
+{% assign maxRelatedCounter = 0 %}
+
+<section class="related-posts">
+{% if post.collection == 'posts' %}
+
+  {% for post in site[post.collection] reversed %}
+    {% assign sameKeywordCount = 0 %}
+
+    {% for keywords in post.keywords %}
+      {% if post.url != page.url %}
+        {% if page.keywords contains keywords %}
+          {% assign sameKeywordCount = sameKeywordCount | plus: 1 %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% if sameKeywordCount >= minCommonKeywords %}
+      {%- include related-posts-block.html -%}
+      {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+      {% if maxRelatedCounter >= maxRelated %}
+        {% break %}
+      {% endif %}
+    {% endif %}
+
+  {% endfor %}
+
+
+  {% if maxRelatedCounter == 0 %}
+    <p class="noResults">There are no related posts.</p>
+  {% endif %}
+
+{% elsif post.collection == 'briefs'  %}
+
+  {%- assign related_posts = site.posts | where_exp:"analysis", "analysis.related_briefs contains post.relative_path" -%}
+  {% for post in related_posts reversed %}
+    {%- include related-posts-block.html -%}
+  {% endfor %}
+
+
+{% endif %}
+
+</section>

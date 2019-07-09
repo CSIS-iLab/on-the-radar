@@ -12,7 +12,9 @@ authors:
   - _authors/john-dot.md
   - _authors/jane-doe.md
 related_briefs:
-  - _briefs/country-profile.md
+  - _briefs/unmanned-underwater-vehicle-uuv-systems-for-submarine-detection-a-technology-primer.md
+  - _briefs/resilient-communications.md
+  - _briefs/hyperspectral-imaging-a-technology-primer.md
 keywords:
   - Anti-Submarine Warfare (ASW)
   - Drone
