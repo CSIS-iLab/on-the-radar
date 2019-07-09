@@ -15,7 +15,7 @@ details:
   - Land
   country:
   - United States
-title: 'Plant-based Sensors: A Technology Primer'
+title: Plant-based Sensors
 date: 2018-10-12 17:53:00 +0000
 excerpt: Plant-based sensors are physiology-based mechanisms—either already present
   or artificially engineered to create “smart” plants—capable of reporting the presence
