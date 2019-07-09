@@ -35,5 +35,18 @@ fields:
   - type: text
     name: headshot
     label: headshot
+- type: field_group_list
+  name: consultants
+  label: Consultants
+  fields:
+  - type: text
+    name: name
+    label: Name
+  - type: text
+    name: title
+    label: Title
+  - type: text
+    name: headshot
+    label: headshot
 pages:
 - about.md

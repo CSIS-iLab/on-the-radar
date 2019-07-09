@@ -19,6 +19,16 @@ fields:
   name: upload_image
   label: upload image
   template: photo
+- type: list
+  name: keywords
+  label: Keywords
+  config:
+    use_select: true
+    source:
+      type: documents
+      section: keywords
+      file: _data/keywords.yml
+      path: Keywords
 - type: field_group
   name: details
   label: Details
