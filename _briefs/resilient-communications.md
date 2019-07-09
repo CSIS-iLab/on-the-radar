@@ -11,6 +11,18 @@ excerpt: ''
 authors:
 - _authors/oscar-guerrero.md
 brief_type: Tech Primer
+keywords:
+- Synthetic Aperture Sonar
+- Keyword 1
+- Drone
+- Hydrophones
+- Synthetic Aperture Sonar
+- Anti-Submarine Warfare (ASW)
+- Keyword 2
+- Unmanned
+- Hydrophones
+- Anti-Submarine Warfare (ASW)
+- Synthetic Aperture Sonar
 image: ''
 image_caption: ''
 image_source: ''

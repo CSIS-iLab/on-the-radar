@@ -24,6 +24,10 @@ authors:
 - _authors/nate-frierson.md
 - _authors/lizamaria-aria.md
 brief_type: Tech Primer
+keywords:
+  - Anti-Submarine Warfare (ASW)
+  - Drone
+  - Unmanned
 image: ''
 image_caption: ''
 image_source: ''

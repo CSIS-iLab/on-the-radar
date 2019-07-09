@@ -29,6 +29,10 @@ authors:
 - _authors/bethany-goldblum.md
 - _authors/andrew-reddie.md
 brief_type: Tech Primer
+keywords:
+  - Anti-Submarine Warfare (ASW)
+  - Drone
+  - Unmanned
 image: ''
 image_caption: ''
 image_source: ''

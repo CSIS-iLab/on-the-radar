@@ -28,6 +28,18 @@ authors:
 - _authors/andrew-reddie.md
 - _authors/bethany-goldblum.md
 brief_type: Tech Primer
+keywords:
+- Synthetic Aperture Sonar
+- Keyword 1
+- Drone
+- Hydrophones
+- Synthetic Aperture Sonar
+- Anti-Submarine Warfare (ASW)
+- Keyword 2
+- Unmanned
+- Hydrophones
+- Anti-Submarine Warfare (ASW)
+- Synthetic Aperture Sonar
 image: ''
 image_caption: ''
 image_source: ''
