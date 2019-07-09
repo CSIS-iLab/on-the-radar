@@ -17,6 +17,20 @@ team:
     Working Group
 - name: Bernadette Stadler
   title: Program Coordinator and Research Assistant, Project on Nuclear Issues
+consultants:
+- name: Rebecca Hersman
+  title: Director, Project on Nuclear Issues and Senior Advisor, International Security
+    Program
+- name: Bethany Goldblum
+  title: Member of the research faculty in the Department of Nuclear Engineering at
+    the University of California, Berkeley, and Founder and Director, Nuclear Policy
+    Working Group
+- name: Andrew Reddie
+  title: Ph.D. candidate in the Charles and Louise Travers Department of Political
+    Science, University of California, Berkeley, and researcher with the Nuclear Policy
+    Working Group
+- name: Bernadette Stadler
+  title: Program Coordinator and Research Assistant, Project on Nuclear Issues
 
 ---
 Improvements to strategic situational awareness (SSA) – the ability to characterize the operating environment, detect and respond to threats, and discern actual attacks from false alarms across the spectrum of conflict – have long been assumed to reduce the risk of conflict and allow for the more successful management of crisis and conflict when they occur. In nuclear policy jargon such impacts are considered “stabilizing” because they reduce the risk of escalation to higher levels of violence. However, with the rapid development of increasingly capable SSA-related technology, the growing co-mingling of conventional and strategic SSA requirements and capabilities, and an increasing risk of conventional conflict between nuclear armed adversaries, this may no longer be the case.
