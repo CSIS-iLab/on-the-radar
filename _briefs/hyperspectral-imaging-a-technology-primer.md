@@ -24,8 +24,8 @@ excerpt: Hyperspectral imaging (HSI) is a type of remote sensing that is particu
   strategic sites, for example, WMD production facilities or camouflaged military
   assets.
 authors:
-- _authors/meyer-thalheimer.md
 - _authors/bernadette-stadler.md
+- _authors/meyer-thalheimer.md
 brief_type: Tech Primer
 image: ''
 image_caption: ''
