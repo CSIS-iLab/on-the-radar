@@ -15,7 +15,7 @@ details:
   country:
   - United States
 title: Artificial Intelligence Analysis Applications
-date: 2019-04-03T04:00:00.000+00:00
+date: 2019-04-03 04:00:00 +0000
 excerpt: Artificial intelligence (AI) applications have the potential to significantly
   impact the strategic situational awareness (strategic SA) mission in two key areas—operations
   and analysis. AI analysis applications can enhance the strategic SA mission by employing
@@ -25,9 +25,9 @@ authors:
 - _authors/lizamaria-aria.md
 brief_type: Tech Primer
 keywords:
-  - Anti-Submarine Warfare (ASW)
-  - Drone
-  - Unmanned
+- Anti-Submarine Warfare (ASW)
+- Drone
+- Unmanned
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
 image_caption: ''
 image_source: ''
