@@ -22,9 +22,24 @@ team:
   title: Program Coordinator and Research Assistant, Project on Nuclear Issues
   headshot: ''
 consultants:
-- name: Rebecca Hersman
-  title: Director, Project on Nuclear Issues and Senior Advisor, International Security
-    Program
+- name: 'Jarred Dunnmon '
+  title: ''
+  headshot: ''
+- name: Paul Scharre
+  title: ''
+  headshot: ''
+- name: 'Michael Horowitz '
+  title: ''
+  headshot: ''
+- name: Elsa Kania
+  headshot: ''
+  title: ''
+- name: Philip Reiner
+  title: 'CEO, Technology for Global Security '
+  headshot: ''
+- name: Kate Charlet
+  title: 'Director, Technology and International Affairs Program, Carnegie Endowment
+    for International Peace '
   headshot: ''
 
 ---
