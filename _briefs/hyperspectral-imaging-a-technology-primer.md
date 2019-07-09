@@ -65,4 +65,4 @@ Hyperspectral sensors can be deployed on a variety of platforms, including satel
 
 [^8]: “Hyperspectral analysis set to expand in coming decade,” 5.
 
-[^9]: “Underwater Hyperspectral Imaging reveals the secrets of the sea,” Specim_,_ March 4, 2016, [http://www.specim.fi/revealing-the-secrets-of-the-sea/](http://www.janes.com/images/assets/127/72127/Hyperspectral_analysis_set_to_expand_in_coming_decade.pdf "http://www.janes.com/images/assets/127/72127/Hyperspectral_analysis_set_to_expand_in_coming_decade.pdf").
+[^9]: “Underwater Hyperspectral Imaging reveals the secrets of the sea,” Specim, March 4, 2016, [http://www.specim.fi/revealing-the-secrets-of-the-sea/](http://www.janes.com/images/assets/127/72127/Hyperspectral_analysis_set_to_expand_in_coming_decade.pdf "http://www.janes.com/images/assets/127/72127/Hyperspectral_analysis_set_to_expand_in_coming_decade.pdf").
