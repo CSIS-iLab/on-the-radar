@@ -16,7 +16,7 @@ details:
   - Russia
   - China
   - United States
-title: 'Smallsats: A Technology Primer'
+title: Smallsats
 date: 2019-04-03T04:00:00.000+00:00
 excerpt: Small satellites (smallsats) are miniaturized artificial satellites with
   a mass less than 500 kg used for communication, imaging, and other space applications.
