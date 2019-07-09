@@ -14,7 +14,7 @@ details:
   - Multidomain
   country:
   - United States
-title: 'Artificial Intelligence Analysis Applications: A Technology Primer'
+title: Artificial Intelligence Analysis Applications
 date: 2019-04-03T04:00:00.000+00:00
 excerpt: Artificial intelligence (AI) applications have the potential to significantly
   impact the strategic situational awareness (strategic SA) mission in two key areas—operations
