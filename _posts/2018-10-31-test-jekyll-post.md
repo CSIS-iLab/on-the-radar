@@ -1,6 +1,6 @@
 ---
 title: Second Test Post
-date: 2018-10-31 16:10:05 +0000
+date: 2018-10-31T16:10:05.000+00:00
 excerpt: Nam placerat ante arcu, porta turpis sed tellus. Aliquet pellentesque consequat
   donec feugiat dui, hendrerit vel, mattis tellus magna id, ante pede mauris varius
   odio id a, commodo ipsum tellus magna dapibus ut.
@@ -26,7 +26,9 @@ related_briefs:
 - _briefs/second-tech-primer-test.md
 - _briefs/test-tech-primer.md
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1542205462/on-the-radar/header-sample.jpg
-image_caption: 'Sample caption with a [link](https://fas.org/irp/nic/fishing.pdf). Sample caption with a [link](https://fas.org/irp/nic/fishing.pdf). Sample caption with a [link](https://fas.org/irp/nic/fishing.pdf). Sample caption with a [link](https://fas.org/irp/nic/fishing.pdf)'
+image_caption: Sample caption with a [link](https://fas.org/irp/nic/fishing.pdf).
+  Sample caption with a [link](https://fas.org/irp/nic/fishing.pdf). Sample caption
+  with a [link](https://fas.org/irp/nic/fishing.pdf). Sample caption with a [link](https://fas.org/irp/nic/fishing.pdf)
 image_source: Getty Images
 featured: true
 
@@ -34,6 +36,8 @@ featured: true
 ## Erat nibh ut, tortor in
 
 <define>Strategic Situational Awareness</define> Lorem ipsum dolor sit amet, ante rutrum in, eu ligula sem scelerisque eu mollis, porttitor integer nam diam pellentesque in, wisi quisque suscipit feugiat donec. Sed integer mi imperdiet, in nec proin ullamcorper massa lacus dui. Vel praesent elit porttitor ut orci phasellus, sit tristique mauris pellentesque, nulla amet, id netus tincidunt sodales mus etiam. Nulla consectetuer sit arcu tellus metus. Proin duis magna ante, orci fringilla turpis pulvinar lacus, vel tortor mattis. Ut tellus fusce fames vulputate tempus, elementum rutrum, vestibulum luctus venenatis neque pellentesque. Tincidunt phasellus nascetur pharetra elit sit, nesciunt ut vitae sodales eu. Ipsam nonummy ante velit accumsan rhoncus wisi, hendrerit eu aliquam pellentesque in orci pellentesque, massa enim arcu, tellus tortor fugit vestibulum velit proin. Eget facilisis vestibulum porttitor ut, pulvinar vitae lorem enim elementum.<define>CTSC</define>
+
+![testest](https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg "test")
 
 > #### Nam placerat ante arcu, porta turpis sed tellus. Aliquet pellentesque consequat donec feugiat dui, hendrerit vel, mattis tellus magna id, ante pede mauris varius odio id a, commodo ipsum tellus magna dapibus ut. Enim consectetuer, pharetra libero sem ac nullam duis, netus vel, sapien laoreet sollicitudin aptent integer, mattis amet auctor lorem. Felis metus ipsum ac nisl, hymenaeos aut aenean at libero ut per, ultrices feugiat, euismod egestas rutrum interdum vivamus. Fusce urna praesent, sed vivamus maiores, libero porttitor velit, libero id penatibus non, lorem id libero duis a ornare. A sed est scelerisque quis, erat interdum, sem officiis nec.
 
