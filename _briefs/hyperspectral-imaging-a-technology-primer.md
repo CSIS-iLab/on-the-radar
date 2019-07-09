@@ -16,7 +16,7 @@ details:
   country:
   - China
   - United States
-title: 'Hyperspectral Imaging: A Technology Primer'
+title: Hyperspectral Imaging
 date: 2019-04-03T04:00:00.000+00:00
 excerpt: Hyperspectral imaging (HSI) is a type of remote sensing that is particularly
   useful for determining the composition of an object. In conjunction with other remote
