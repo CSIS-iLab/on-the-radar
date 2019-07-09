@@ -269,6 +269,15 @@
 
   &__content {
     grid-area: content;
+    padding-bottom: 0.777rem;
+
+    @include breakpoint($break: 'medium') {
+      padding-bottom: 2rem;
+    }
+
+    @include breakpoint($break: 'large-3') {
+      padding-bottom: 3.444rem;
+    }
   }
 
   &__featured,
