@@ -36,6 +36,13 @@
   line-height: 1.4;
 }
 
+%footnotes {
+  @include font-size(16px);
+  color: $color__off-black;
+  font-family: $font__ptsans;
+  line-height: 1.4;
+}
+
 %breadcrumbs {
   @include font-size(14px);
   color: $color__off-white;
