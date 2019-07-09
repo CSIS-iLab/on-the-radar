@@ -96,7 +96,6 @@
       @include breakpoint('xlarge') {
         margin-right: -96px;
       }
-
     }
   }
 
@@ -157,7 +156,7 @@
 
     > *:not(.post__related-block) {
       padding: content-padding('small');
-      
+
       @include breakpoint('medium') {
         padding-right: content-padding('medium');
         padding-left: content-padding('medium');
@@ -183,11 +182,13 @@
   &__related-reading {
     @extend %h2--thin;
     text-transform: uppercase;
+    color: $color__black;
   }
 
   &__more-on {
     @extend %h5--thin;
     padding-bottom: 0.75em;
     text-transform: uppercase;
+    color: $color__black;
   }
 }

@@ -1,0 +1,40 @@
+{% assign maxRelated = 3 %}
+{% assign minCommonKeywords = 1 %}
+{% assign maxRelatedCounter = 0 %}
+
+<section class="related-posts">
+
+  {% for post in site[post.collection] reversed %}
+    {% assign sameKeywordCount = 0 %}
+
+    {% for keywords in post.keywords %}
+      {% if post.url != page.url %}
+        {% if page.keywords contains keywords %}
+          {% assign sameKeywordCount = sameKeywordCount | plus: 1 %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% if sameKeywordCount >= minCommonKeywords %}
+    <article class="related-posts__block" role="article" style="background-image: url({{ post.image }});">
+      <header class="related-posts__block__header">
+        <h2 class="related-posts__block__title">
+          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+          <a href="{{ post.url | relative_url }}">{%- include last-updated.html -%}</a>
+      </header>
+    </article>
+
+      {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+      {% if maxRelatedCounter >= maxRelated %}
+        {% break %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+
+{% if maxRelatedCounter == 0 %}
+  <p class="noResults">There are no related posts.</p>
+{% endif %}
+
+</section>

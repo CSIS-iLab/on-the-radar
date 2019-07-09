@@ -30,14 +30,16 @@ layout: default
 
   <section class="post__footer">
     Social Share<br />
-    {% include authors-block.html %} {% if post.collection == 'posts' %}
-    <section class="post__related-block">
-      <h2 class="post__related-reading">
-        {{ site.data.language.related_reading }}
-      </h2>
-      <div class="post__more-on">{{ site.data.language.more_on }}</div>
-      {%- include keywords.html -%} - Related Posts
-    </section>
+    {% include authors-block.html %}
+    {% if post.collection == 'posts' or post.collection == 'briefs' %}
+      <section class="post__related-block">
+        <h2 class="post__related-reading">
+          {{ site.data.language.related_reading }}
+        </h2>
+        <div class="post__more-on">{{ site.data.language.more_on }}</div>
+        {%- include keywords.html -%}
+        {%- include related-posts.html -%}
+      </section>
     {% endif %}
   </section>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>

@@ -1,19 +1,19 @@
 .keywords {
   @extend %tag;
-  margin: 0;
-  padding: 0.3rem 0;
+  margin: 0 0 0.5625rem 0;
+  padding: 0;
   text-align: left;
   list-style-type: none;
 
   li {
     justify-content: space-between;
-    margin: 0 1rem 1.4rem 0;
+    margin: 0 0.88rem 1.15rem 0;
     text-transform: lowercase;
     list-style-type: none;
   }
 
   a {
-    padding: 0.4rem 0.7rem;
+    padding: 0.1rem 0.7rem 0.25rem;
     background-color: $color__blue;
     border-radius: 15px;
 
