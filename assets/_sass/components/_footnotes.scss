@@ -1,0 +1,48 @@
+.footnotes {
+  ol {
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+  }
+
+  .post-content & p {
+    @extend %footnotes;
+  }
+
+  li {
+    @include font-size(16px);
+    color: $color__orange;
+  }
+
+  .reversefootnote {
+    a {
+      &,
+      &:visited {
+        color: $color__orange;
+      }
+
+      &:hover {
+        color: $color__orange-dark;
+      }
+    }
+  }
+}
+
+[id^='fn'] {
+  a {
+    padding-left: 0.125rem;
+    font-weight: bold;
+
+    &,
+    &:visited {
+      color: $color__orange;
+    }
+
+    &:hover {
+      color: $color__orange-dark;
+    }
+  }
+}
+
+.post__content > p:last-of-type + hr {
+  display: none;
+}
