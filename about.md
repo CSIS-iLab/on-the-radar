@@ -13,13 +13,13 @@ team:
     the University of California, Berkeley, and Founder and Director, Nuclear Policy
     Working Group
   headshot: ''
+- name: Bernadette Stadler
+  title: Program Coordinator and Research Assistant, Project on Nuclear Issues
+  headshot: ''
 - name: Andrew Reddie
   title: Ph.D. candidate in the Charles and Louise Travers Department of Political
     Science, University of California, Berkeley, and researcher with the Nuclear Policy
     Working Group
-  headshot: ''
-- name: Bernadette Stadler
-  title: Program Coordinator and Research Assistant, Project on Nuclear Issues
   headshot: ''
 consultants:
 - name: 'Jarred Dunnmon '
