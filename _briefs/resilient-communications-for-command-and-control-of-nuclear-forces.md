@@ -25,7 +25,7 @@ image_source: ''
 keywords: []
 downloads:
 - label: Datalink Resiliency Primer
-  media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562773793/on-the-radar/Resilient%20command%20and%20control%20primer.pdf
+  media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562774058/on-the-radar/Resilient%20command%20and%20control%20primer.pdf
 
 ---
 Communications for Command and Control (C2) of nuclear forces is the component of the U.S. Nuclear Command and Control System (NCCS) that provides the transport of leadership decisions to nuclear forces via a survivable communications system.[\[1\]](#_ftn1) To support the credible deterrent against nuclear attack, the NCCS Communications System of Systems (SoS) must be resilient against a myriad of environmental conditions and hostile environments and function through the nuclear trans attack and post attack stressing scenarios.[\[2\]](#_ftn2) The communications system must have a high availability to support operations of nuclear forces, be able to function through the effects of nuclear attack, have sufficient redundancy to transport data through the loss of several nodes from kinetic effects, and resist Electronic Counter Measures (ECM), all while ensuring the integrity and maintaining the confidentiality of the messages. [\[3\]](#_ftn3)
