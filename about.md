@@ -29,7 +29,8 @@ consultants:
   title: ''
   headshot: ''
 - name: 'Michael Horowitz '
-  title: ''
+  title: Professor of Political Science and Associate Director at Perry World House,
+    University of Pennsylvania
   headshot: ''
 - name: Elsa Kania
   headshot: ''
