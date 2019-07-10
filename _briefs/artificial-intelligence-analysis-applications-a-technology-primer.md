@@ -15,7 +15,7 @@ details:
   country:
   - United States
 title: Artificial Intelligence Analysis Applications
-date: 2019-04-03 04:00:00 +0000
+date: 2019-04-03T04:00:00.000+00:00
 excerpt: Artificial intelligence (AI) applications have the potential to significantly
   impact the strategic situational awareness (strategic SA) mission in two key areas—operations
   and analysis. AI analysis applications can enhance the strategic SA mission by employing
@@ -32,7 +32,7 @@ image: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-r
 image_caption: ''
 image_source: ''
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562682147/on-the-radar/Artificial%20Intelligence%20Analysis%20Primer.pdf
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562791382/on-the-radar/Artificial%20Intelligence%20Analysis%20Primer.pdf
   label: AI Analysis Primer
 
 ---
