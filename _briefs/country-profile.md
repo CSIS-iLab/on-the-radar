@@ -39,6 +39,7 @@ image_source: ''
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562604429/on-the-radar/US%20strategic%20SA.pdf
   label: US Strategic SA
+published: false
 
 ---
 The United States has extensive and mature strategic situational awareness capabilities across all domains (air, land, maritime, space, and cyber) that help to characterize the operating environment, detect and respond to attacks, and discern actual attacks from false alarms across the spectrum of conflict, both conventional and nuclear. The U.S. military has always relied on these capabilities at the strategic level, but over the last thirty to forty years these capabilities have increasingly become more important at the tactical and operational level as technological advances have enabled more granular tracking and detection of enemy forces and communications and coordination between different sensors and shooters to devastating effect. This combination of situational awareness capabilities across all three levels of war and all domains has provided the United States unrivaled strategic situational awareness and has become a lynchpin of U.S. military doctrine and planning. However, the enemy gets a vote, and potential adversaries like China and Russia have focused on enhancing their own strategic situational awareness capabilities and developing ways to disrupt, degrade, and destroy U.S. strategic situational awareness.
