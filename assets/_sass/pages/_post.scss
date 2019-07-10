@@ -181,13 +181,15 @@
 
   &__related-reading {
     @extend %h2--thin;
+    margin-bottom: 1rem;
     text-transform: uppercase;
     color: $color__black;
   }
 
   &__more-on {
     @extend %h5--thin;
-    padding-bottom: 0.75em;
+    line-height: 0;
+    padding-bottom: 1.2rem;
     text-transform: uppercase;
     color: $color__black;
   }

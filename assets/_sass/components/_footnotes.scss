@@ -6,11 +6,11 @@
 
   .post-content & p {
     @extend %footnotes;
+  }
 
-    a:not([class]) {
-      overflow-wrap: break-word;
-      word-wrap: break-word;
-    }
+  a:not([class]) {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   li {
