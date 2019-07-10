@@ -25,7 +25,7 @@ image_source: ''
 keywords:
 - Communications, Command and Control
 downloads:
-- label: Datalink Resiliency Primer
+- label: Resilient Communication Primer
   media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562774719/on-the-radar/Resilient%20command%20and%20control%20primer.pdf
 
 ---
