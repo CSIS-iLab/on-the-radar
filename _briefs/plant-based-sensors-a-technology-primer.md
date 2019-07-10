@@ -16,7 +16,7 @@ details:
   country:
   - United States
 title: Plant-based Sensors
-date: 2018-10-12 17:53:00 +0000
+date: 2018-10-12T17:53:00.000+00:00
 excerpt: Plant-based sensors are physiology-based mechanisms—either already present
   or artificially engineered to create “smart” plants—capable of reporting the presence
   of specific chemical, pathogen, and radiation stimuli on land. Plant-based sensors
@@ -41,7 +41,7 @@ image: https://res.cloudinary.com/csisideaslab/image/upload/v1542205462/on-the-r
 image_caption: ''
 image_source: ''
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562609756/on-the-radar/Plant%20based%20sensor%20primer%20formatted.pdf
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562790603/on-the-radar/Plant%20based%20sensor%20primer%20formatted.pdf
   label: Plant-based sensors primer
 
 ---
