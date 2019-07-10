@@ -28,14 +28,14 @@ authors:
 - _authors/meyer-thalheimer.md
 brief_type: Tech Primer
 keywords:
-  - Anti-Submarine Warfare (ASW)
-  - Drone
-  - Unmanned
+- Anti-Submarine Warfare (ASW)
+- Drone
+- Unmanned
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
 image_caption: ''
 image_source: ''
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562682076/on-the-radar/Hyperspectral%20Imaging%20Primer.pdf
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562790495/on-the-radar/Hyperspectral%20Imaging%20Primer.pdf
   label: Hyperspectral Imaging Primer
 
 ---
