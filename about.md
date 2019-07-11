@@ -18,7 +18,7 @@ team:
   headshot: ''
 - name: Andrew Reddie
   title: Ph.D. candidate in the Charles and Louise Travers Department of Political
-    Science, University of California, Berkeley, and researcher with the Nuclear Policy
+    Science, University of California, Berkeley, and Deputy Director, Nuclear Policy
     Working Group
   headshot: ''
 consultants:
