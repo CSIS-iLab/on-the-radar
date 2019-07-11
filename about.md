@@ -26,7 +26,8 @@ consultants:
   title: Postdoctoral Fellow, Computer Science, Stanford University
   headshot: ''
 - name: Paul Scharre
-  title: ''
+  title: Senior Fellow and Director, Technology and National Security Program, Center
+    for a New American Security
   headshot: ''
 - name: 'Michael Horowitz '
   title: Professor of Political Science and Associate Director, Perry World House,
