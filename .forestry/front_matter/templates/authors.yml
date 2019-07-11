@@ -9,6 +9,7 @@ fields:
   name: role
   label: Title
 pages:
+- _authors/bethany-goldblum.md
 - _authors/jake-hecla.md
 - _authors/anthony-benjamin.md
 - _authors/lizamaria-aria.md
@@ -16,7 +17,6 @@ pages:
 - _authors/evan-lisman.md
 - _authors/oscar-guerrero.md
 - _authors/bernadette-stadler.md
-- _authors/bethany-goldblum.md
 - _authors/margaret-williams.md
 - _authors/elsa-kania.md
 - _authors/paulina-wheeler.md
