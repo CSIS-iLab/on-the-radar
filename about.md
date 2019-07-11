@@ -22,12 +22,12 @@ team:
     Working Group
   headshot: ''
 consultants:
+- name: Kate Charlet
+  title: 'Director, Technology and International Affairs Program, Carnegie Endowment
+    for International Peace '
+  headshot: ''
 - name: 'Jarred Dunnmon '
   title: Postdoctoral Fellow, Computer Science, Stanford University
-  headshot: ''
-- name: Paul Scharre
-  title: Senior Fellow and Director, Technology and National Security Program, Center
-    for a New American Security
   headshot: ''
 - name: 'Michael Horowitz '
   title: Professor of Political Science and Associate Director, Perry World House,
@@ -40,9 +40,9 @@ consultants:
 - name: Philip Reiner
   title: 'CEO, Technology for Global Security '
   headshot: ''
-- name: Kate Charlet
-  title: 'Director, Technology and International Affairs Program, Carnegie Endowment
-    for International Peace '
+- name: Paul Scharre
+  title: Senior Fellow and Director, Technology and National Security Program, Center
+    for a New American Security
   headshot: ''
 
 ---
