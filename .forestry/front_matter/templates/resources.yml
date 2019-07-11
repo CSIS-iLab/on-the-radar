@@ -31,6 +31,7 @@ fields:
   name: link
   label: Link (optional)
 pages:
+- _resources/space-threat-assessment-2019.md
 - _resources/global-counterspace-capabilities-an-open-source-assessment.md
 - _resources/spies-lies-and-algorithms-why-u-s-intelligence-agencies-must-adapt-or-fail.md
 - _resources/stalking-the-secure-second-strike-intelligence-counterforce-and-nuclear-strategy.md
