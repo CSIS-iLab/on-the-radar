@@ -32,7 +32,7 @@ image: ''
 image_caption: ''
 image_source: ''
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562791284/on-the-radar/UUV%20Final%20Primer%20Formatted.pdf
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865066/on-the-radar/UUV%20Final%20Primer%20Formatted.pdf
   label: UUV primer
 keywords:
 - Unmanned underwater vehicle
