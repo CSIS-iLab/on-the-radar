@@ -1,5 +1,6 @@
 ---
 types:
+- Commentary
 - Website
 - Book
 - Paper
@@ -7,6 +8,8 @@ types:
 - Article
 - Report
 topics:
+- Nuclear Strategy
+- Information Operations
 - Nuclear Command and Control
 - Inadvertent Escalation
 - Remote Sensing
