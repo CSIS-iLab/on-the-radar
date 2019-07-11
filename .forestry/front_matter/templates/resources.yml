@@ -31,7 +31,6 @@ fields:
   name: link
   label: Link (optional)
 pages:
-- _resources/escalation-through-entanglement-how-the-vulnerability-of-command-and-control-systems-raises-the-risks-of-an-inadvertent-nuclear-war-1.md
 - _resources/escalation-through-entanglement-how-the-vulnerability-of-command-and-control-systems-raises-the-risks-of-an-inadvertent-nuclear-war.md
 - _resources/how-to-think-about-nuclear-crises.md
 - _resources/invisible-doomsday-machines-the-challenge-of-clandestine-capabilities-and-deterrence.md
