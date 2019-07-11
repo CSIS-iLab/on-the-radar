@@ -28,6 +28,8 @@ authors:
 - _authors/meyer-thalheimer.md
 brief_type: Tech Primer
 keywords:
+- Sensors
+- Hyperspectral
 - Artificial Intelligence
 - Unmanned aerial vehicle
 - Unmanned underwater vehicle
