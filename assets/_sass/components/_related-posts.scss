@@ -65,10 +65,11 @@
     }
 
     .last-modified {
+      color: $color__white;
+
       .post__meta-label {
         color: $color__bluegray-light;
       }
-      color: $color__white;
     }
   }
 }

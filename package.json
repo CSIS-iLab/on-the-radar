@@ -14,8 +14,8 @@
     "production": "gulp --jekyllEnv='production'",
     "sass": "gulp sass",
     "watch": "gulp watch",
-    "stylelint": "gulp styleLint",
-    "stylelint-fix": "gulp styleLint --fix",
+    "stylelint": "gulp stylelint",
+    "stylelint-fix": "gulp stylelint --fix",
     "forestry:preview": "gulp --jekyllEnv='production' --forestry --preview --port 8080 --host 0.0.0.0",
     "forestry:publish": "gulp build --jekyllEnv='production' --forestry --port 8080 --host 0.0.0.0"
   },
