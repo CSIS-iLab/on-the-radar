@@ -31,6 +31,7 @@ fields:
   name: link
   label: Link (optional)
 pages:
+- _resources/stalking-the-secure-second-strike-intelligence-counterforce-and-nuclear-strategy.md
 - _resources/would-china-go-nuclear-assessing-the-risk-of-chinese-nuclear-escalation-in-a-conventional-war-with-the-united-states.md
 - _resources/entanglement-chinese-and-russian-perspectives-on-non-nuclear-weapons-and-nuclear-risks.md
 - _resources/escalation-through-entanglement-how-the-vulnerability-of-command-and-control-systems-raises-the-risks-of-an-inadvertent-nuclear-war.md
