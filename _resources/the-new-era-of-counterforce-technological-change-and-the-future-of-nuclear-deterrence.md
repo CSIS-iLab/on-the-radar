@@ -3,9 +3,11 @@ title: 'The New Era of Counterforce: Technological Change and the Future of Nucl
   Deterrence'
 type: Article
 authors: Keir A. Lieber and Daryl G. Press
-topics: []
+topics:
+- Escalation Dynamics
+- Remote Sensing
+- Deterrence
 link: https://www.belfercenter.org/sites/default/files/files/publication/isec_a_00273_LieberPress.pdf
-published: false
 
 ---
 Abstract
