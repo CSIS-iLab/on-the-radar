@@ -30,9 +30,10 @@ authors:
 - _authors/andrew-reddie.md
 brief_type: Tech Primer
 keywords:
-- Anti-Submarine Warfare (ASW)
-- Drone
-- Unmanned
+- Synthetic Aperture Sonar
+- Hyperspectral
+- Satellites
+- Sensors
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1542205462/on-the-radar/header-sample.jpg
 image_caption: ''
 image_source: ''
