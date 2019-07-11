@@ -87,14 +87,10 @@
 - title: Range
   acronym: ''
   description: 'The distance from which new information can be ascertained. '
-- title: Resiliency
+- title: Resiliency/reliability
   acronym: ''
-  description: 'The ability of an architecture to support the functions necessary
-    for mission success with higher probability, shorter periods of reduced capability,
-    and across a wider range of scenarios, conditions, and threats, in spite of hostile
-    action or adverse conditions. Resilience may leverage cross-domain or alternative
-    government, commercial, or international capabilities. (Source: U.S. Department
-    of Defense Space Policy, 2012) '
+  description: 'The extent to which a strategic situational awareness capability can
+    operate in a contested environment. '
 - title: Strategic Situational Awareness
   acronym: Strategic SA
   description: 'The ability to characterize the operating environment including adversary
