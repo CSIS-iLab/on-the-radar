@@ -3,8 +3,10 @@ title: 'Stalking the Secure Second Strike: Intelligence, Counterforce and Nuclea
   Strategy'
 type: Article
 authors: Austin Long and Brendan Rittenhouse Green
-topics: []
+topics:
+- Remote Sensing
+- Information Operations
+- Counterforce
 link: ''
-published: false
 
 ---
