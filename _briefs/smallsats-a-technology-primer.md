@@ -30,7 +30,7 @@ authors:
 - _authors/andrew-reddie.md
 brief_type: Tech Primer
 keywords:
-- Synthetic Aperture Sonar
+- Synthetic Aperture Radar
 - Hyperspectral
 - Satellites
 - Sensors
