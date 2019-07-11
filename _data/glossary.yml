@@ -86,7 +86,7 @@
     Dictionary)'
 - title: Range
   acronym: ''
-  description: The distance over which a technology can be deployed and/or is operational.
+  description: 'The distance from which new information can be ascertained. '
 - title: Resiliency
   acronym: ''
   description: 'The ability of an architecture to support the functions necessary
