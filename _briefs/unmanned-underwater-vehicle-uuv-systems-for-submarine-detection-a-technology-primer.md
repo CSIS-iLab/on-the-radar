@@ -34,10 +34,13 @@ image_source: ''
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562791284/on-the-radar/UUV%20Final%20Primer%20Formatted.pdf
   label: UUV primer
-keywords: []
+keywords:
+- Unmanned underwater vehicle
+- Anti-Submarine Warfare (ASW)
+- Artificial Intelligence
 
 ---
-The oceans have long represented a challenging environment for sensing technologies. Onboard passive sensors have historically faced technological limitations due to low signal-to-noise and inhospitable sensing environments. Additionally, the vantage restrictions posed by static positioning of sea-based sensors, whether active or passive, has allowed submarines to travel vast swathes of the oceans largely undetected. As a result, sea-launched ballistic missiles have been important to ensuring a second-strike capability and maintaining the strategic balance between nuclear adversaries. New, mobile, and active sensing technologies, however, are changing this status quo and leaving submarine forces increasingly vulnerable to detection. These new sensing systems combined with smart data processing techniques for decision support have the potential to substantially impact strategic situational awareness.
+The oceans have long represented a challenging environment for sensing technologies. Onboard passive sensors have historically faced technological limitations due to low signal-to-noise and inhospitable sensing environments. Additionally, the <define>vantage</define> restrictions posed by static positioning of sea-based sensors, whether active or passive, has allowed submarines to travel vast swathes of the oceans largely undetected. As a result, sea-launched ballistic missiles have been important to ensuring a second-strike capability and maintaining the strategic balance between nuclear adversaries. New, mobile, and active sensing technologies, however, are changing this status quo and leaving submarine forces increasingly vulnerable to detection. These new sensing systems combined with smart data processing techniques for decision support have the potential to substantially impact <define>strategic situational awareness</define>.
 
 Unmanned underwater vehicles (UUVs) are an emerging class of unmanned maritime vehicles (UMVs) with the potential to transform anti-submarine warfare (ASW) through new capabilities for sensing in the sea domain. These technologies—also known as "submarine drones"— employ active sonar to detect, characterize, and track adversary submarines via an unmanned mobile platform under the sea. The UUV system allows access to shallow or previously difficult-to-penetrate waters and provides a dynamic platform for observation and detection. UUV vehicles augment existing platforms used to track adversary submarines including the airborne Poseidon 8-A, surface-based submarine hunters, and manned submarines. The unmanned characteristic of UUVs and potential for autonomous use (as well as their relatively small size) separate them from existing ASW technologies.[^1] UUVs are also designed to deploy cutting-edge sensing tools.
 
@@ -49,7 +52,7 @@ UUV platforms are also a part of the broader Distributed Agile Submarine Hunting
 
 ***
 
-[In contrast to manned systems that require a link to an operator for directions, unmanned vehicles are being developed to operate autonomously—decreasing the likelihood of detection. UUV “swarms” may also be able to trade the destruction of individual vehicles for the advantage of persistent observation.
+[^1]: In contrast to manned systems that require a link to an operator for directions, unmanned vehicles are being developed to operate autonomously—decreasing the likelihood of detection. UUV “swarms” may also be able to trade the destruction of individual vehicles for the advantage of persistent observation.
 
 [^2]: An example of advanced sensors for ASW systems is Raytheon’s PROSAS PS60-6000 Synthetic Aperture Sonar.
 
