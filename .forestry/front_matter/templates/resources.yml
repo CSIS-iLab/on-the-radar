@@ -31,6 +31,7 @@ fields:
   name: link
   label: Link (optional)
 pages:
+- _resources/escalation-through-entanglement-how-the-vulnerability-of-command-and-control-systems-raises-the-risks-of-an-inadvertent-nuclear-war.md
 - _resources/the-new-era-of-counterforce-technological-change-and-the-future-of-nuclear-deterrence.md
 - _resources/test-resource-2.md
 - _resources/test-resource.md
