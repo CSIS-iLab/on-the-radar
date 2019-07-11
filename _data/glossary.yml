@@ -1,8 +1,52 @@
 ---
-- title: Speed
+- title: Action-enabling
   acronym: ''
-  description: 'A shortening in the time between an adversary''s decision to act and
-    the surveilling party detection of it (including the ability to act on that information). '
+  description: 'The degree to which a strategic situational awareness capability enables
+    new military options. '
+- title: Arms Race Stability
+  acronym: ''
+  description: 'A phenomenon in which there is no quantitative or qualitative arms
+    race between two or more states and no situations in which the numbers of weapons
+    or state capabilities spiral to higher and higher levels without reaching an equilibrium.
+    (Source: Intriligator and Brito, "Arms races and instability," 1986). '
+- title: Clandestine
+  acronym: ''
+  description: 'A technology or element of military power that depends on secrecy
+    for its battlefield effectiveness. Once used, an adversary is able to develop
+    countermeasures that negate the advantage conferred to the user of the technology.
+    (Source: Long and Green, "Invisible Doomsday Machines: The Challenge of Clandestine
+    Capabilities and Deterrence," 2017) '
+- title: Crisis Stability
+  acronym: ''
+  description: 'The condition under which relations among states are conducive to
+    a reductions in incentives to escalate conflict and minimize the dangers posed
+    by emotion, uncertainty, miscalculation, misperception of adversary capabilities
+    and intentions. (Source: "Strategic Defenses: Two Reports by the Office of Technology
+    Assessment," 1986) '
+- title: Destructiveness
+  acronym: ''
+  description: 'The extent to which a capability destroys/degrades an enemy system,
+    either temporarily or permanently, in achieving its objective. '
+- title: Dual-use
+  acronym: ''
+  description: "1. Situational awareness capabilities that can be used for both conventional
+    and nuclear purposes, and in fact cannot be used exclusively for one or the other.\n\n2.
+    Situational awareness capabilities that can be used for both civilian and military
+    purposes. \n"
+- title: First-mover Incentive
+  acronym: ''
+  description: 'The notion that the first state to pursue an opportunity—an innovative
+    weapon system or doctrine—enjoys an associated long-term competitive advantage.
+    (Source: Sarin, "First-Mover Advantage," 2010) '
+- title: First-strike stability
+  acronym: ''
+  description: 'The absence of incentives to use a weapon first. This term is usually
+    used in relation to the incentive to use a nuclear weapon first. (Source: Acton,
+    "Reclaiming Strategic Stability," 2013)'
+- title: Intrusiveness
+  acronym: ''
+  description: 'The extent to which a strategic situational awareness capability must
+    enter into an adversary’s territory, airspace or networks. '
 - title: Predictiveness
   acronym: ''
   description: 'The degree to which a strategic situational awareness capability allows
@@ -31,58 +75,10 @@
     to one’s policies concerning the intentions of potential adversaries, adversary
     capabilities, the chances of favorable diplomatic settlement, and anticipated
     consequences of conflict. (Source: Jervis, "War and misperception," 1988)'
-- title: Intrusiveness
+- title: Speed
   acronym: ''
-  description: 'The extent to which a strategic situational awareness capability must
-    enter into an adversary’s territory, airspace or networks. '
-- title: First-strike stability
-  acronym: ''
-  description: 'The absence of incentives to use a weapon first. This term is usually
-    used in relation to the incentive to use a nuclear weapon first. (Source: Acton,
-    "Reclaiming Strategic Stability," 2013)'
-- title: First-mover Incentive
-  acronym: ''
-  description: 'The notion that the first state to pursue an opportunity—an innovative
-    weapon system or doctrine—enjoys an associated long-term competitive advantage.
-    (Source: Sarin, "First-Mover Advantage," 2010) '
-- title: Dual-use
-  acronym: ''
-  description: "1. Situational awareness capabilities that can be used for both conventional
-    and nuclear purposes, and in fact cannot be used exclusively for one or the other.\n\n2.
-    Situational awareness capabilities that can be used for both civilian and military
-    purposes. \n"
-- title: "(Un)detectability"
-  acronym: ''
-  description: 'Describes the degree to which an adversary can ascertain that information
-    is being collected by a strategic situational awareness capability. '
-- title: Destructiveness
-  acronym: ''
-  description: 'The extent to which a capability destroys/degrades an enemy system,
-    either temporarily or permanently, in achieving its objective. '
-- title: Crisis Stability
-  acronym: ''
-  description: 'The condition under which relations among states are conducive to
-    a reductions in incentives to escalate conflict and minimize the dangers posed
-    by emotion, uncertainty, miscalculation, misperception of adversary capabilities
-    and intentions. (Source: "Strategic Defenses: Two Reports by the Office of Technology
-    Assessment," 1986) '
-- title: Clandestine
-  acronym: ''
-  description: 'A technology or element of military power that depends on secrecy
-    for its battlefield effectiveness. Once used, an adversary is able to develop
-    countermeasures that negate the advantage conferred to the user of the technology.
-    (Source: Long and Green, "Invisible Doomsday Machines: The Challenge of Clandestine
-    Capabilities and Deterrence," 2017) '
-- title: Arms Race Stability
-  acronym: ''
-  description: 'A phenomenon in which there is no quantitative or qualitative arms
-    race between two or more states and no situations in which the numbers of weapons
-    or state capabilities spiral to higher and higher levels without reaching an equilibrium.
-    (Source: Intriligator and Brito, "Arms races and instability," 1986). '
-- title: Action-enabling
-  acronym: ''
-  description: 'The degree to which a strategic situational awareness capability enables
-    new military options. '
+  description: 'A shortening in the time between an adversary''s decision to act and
+    the surveilling party detection of it (including the ability to act on that information). '
 - title: Range
   acronym: ''
   description: 'The distance from which new information can be ascertained. '
@@ -100,11 +96,13 @@
   description: 'A combination of the absence of incentives to use nuclear weapons
     first (crisis stability) and the absence of incentives to build up a nuclear force
     (arms race stability). (Source: Acton, "Reclaiming Strategic Stability," 2013)'
+- title: "(Un)detectability"
+  acronym: ''
+  description: 'Describes the degree to which an adversary can ascertain that information
+    is being collected by a strategic situational awareness capability. '
 - title: Vantage
   acronym: ''
   description: The position from which information can be ascertained.
 - title: Vulnerability
   description: 'The extent to which an adversary can easily deny the use of a strategic
     situational awareness capability. '
-- title: 'Speed '
-  description: The rate at which a player can mobilize, respond, and act.
