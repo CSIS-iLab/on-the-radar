@@ -13,7 +13,7 @@
   }
 
   i {
-    font-size: 1rem;
+    @include font-size(16px);
     transition: inherit;
   }
 
@@ -31,7 +31,7 @@
     }
 
     li {
-      line-height: 2;
+      margin-bottom: 1rem;
     }
 
     i {
@@ -52,16 +52,17 @@
       padding-bottom: 0.5em;
       border-bottom: 1px solid $color__gray-light;
 
-      @include breakpoint('large') {
+      @include breakpoint('medium') {
         justify-content: left;
       }
     }
 
     li {
-      margin-right: 0.5rem;
+      margin-right: 1rem;
     }
 
     i {
+      @include font-size(18px);
       color: $color__blue;
 
       &:hover {
