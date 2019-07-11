@@ -34,7 +34,8 @@ consultants:
   headshot: ''
 - name: Elsa Kania
   headshot: ''
-  title: ''
+  title: Adjunct Senior Fellow, Technology and National Security Program, Center for
+    a New American Security
 - name: Philip Reiner
   title: 'CEO, Technology for Global Security '
   headshot: ''
