@@ -23,7 +23,7 @@ team:
   headshot: ''
 consultants:
 - name: 'Jarred Dunnmon '
-  title: ''
+  title: Postdoctoral Fellow, Computer Science, Stanford University
   headshot: ''
 - name: Paul Scharre
   title: ''
