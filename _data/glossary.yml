@@ -1,4 +1,11 @@
 ---
+- title: Predictiveness
+  acronym: ''
+  description: 'The degree to which a strategic situational awareness capability allows
+    a state to anticipate adversary actions as opposed to merely reacting to them. '
+- title: ''
+  acronym: ''
+  description: ''
 - title: Precision
   acronym: ''
   description: "1. The level of detail and quality of the information collected.\n2.
@@ -72,10 +79,6 @@
     with associated technologies—provide the means to generate significant leaps in
     performance and capabilities and, thus actions, of the user. (Source: Business
     Dictionary)'
-- title: Preemption
-  acronym: ''
-  description: To strike first (or attempt to do so) in the face of an attack that
-    is either already underway or is imminent
 - title: Range
   acronym: ''
   description: The distance over which a technology can be deployed and/or is operational
