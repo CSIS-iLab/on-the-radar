@@ -2,7 +2,8 @@
 {% assign has_content = '' | split: ',' %}
 
 {% for letter in alphabet %}
-  {% if glossary_letters contains letter %}
+  {% assign downcased = letter | downcase %}
+  {% if glossary_letters contains letter or glossary_letters contains downcased %}
     {% assign has_content = has_content | push: "enabled" %}
   {% else %}
     {% assign has_content = has_content | push: "disabled" %}
