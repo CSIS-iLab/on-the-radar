@@ -9,6 +9,7 @@ fields:
   name: role
   label: Title
 pages:
+- _authors/meyer-thalheimer.md
 - _authors/bethany-goldblum.md
 - _authors/jake-hecla.md
 - _authors/anthony-benjamin.md
@@ -23,4 +24,3 @@ pages:
 - _authors/nate-frierson.md
 - _authors/pedro-vicente-valdez.md
 - _authors/andrew-reddie.md
-- _authors/meyer-thalheimer.md
