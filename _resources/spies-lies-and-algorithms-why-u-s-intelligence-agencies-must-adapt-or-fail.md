@@ -8,6 +8,5 @@ topics:
 - Artificial Intelligence
 - Information Operations
 link: https://www.foreignaffairs.com/articles/2019-04-16/spies-lies-and-algorithms
-published: false
 
 ---
