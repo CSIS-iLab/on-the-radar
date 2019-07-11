@@ -9,9 +9,9 @@ team:
     Program
   headshot: ''
 - name: Bethany Goldblum
-  title: Member of the research faculty in the Department of Nuclear Engineering at
-    the University of California, Berkeley, and Founder and Director, Nuclear Policy
-    Working Group
+  title: Associate Research Engineer in the Department of Nuclear Engineering at the
+    University of California, Berkeley, and Founder and Director, Nuclear Policy Working
+    Group
   headshot: ''
 - name: Bernadette Stadler
   title: Program Coordinator and Research Assistant, Project on Nuclear Issues
