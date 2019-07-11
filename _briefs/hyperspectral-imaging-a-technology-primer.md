@@ -36,7 +36,7 @@ image: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-r
 image_caption: ''
 image_source: ''
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562790495/on-the-radar/Hyperspectral%20Imaging%20Primer.pdf
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865065/on-the-radar/Hyperspectral%20Imaging%20Primer.pdf
   label: Hyperspectral Imaging Primer
 
 ---
