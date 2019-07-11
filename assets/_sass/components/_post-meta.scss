@@ -4,6 +4,7 @@
 
 .post__meta {
   @extend %labeltext__text;
+  position: relative;
 
   &-label {
     @extend %labeltext__label;

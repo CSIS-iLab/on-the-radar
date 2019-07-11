@@ -9,8 +9,8 @@
   }
 
   a:not([class]) {
-    overflow-wrap: break-word;
     word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   li {

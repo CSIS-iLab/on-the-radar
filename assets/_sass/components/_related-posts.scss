@@ -6,13 +6,13 @@
   }
 
   &__block {
-    max-width: 300px;
     position: relative;
+    flex-grow: 1;
+    max-width: 300px;
     min-height: 200px;
     padding: 1.33rem;
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
-    flex-grow: 1;
 
     @include breakpoint('small') {
       flex-basis: 0;
@@ -28,14 +28,14 @@
     }
 
     &::before {
-      content: '';
-      background-color: rgba($color__blue, 0.72);
-      height: 100%;
-      width: 100%;
       position: absolute;
       top: 0;
       left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color__blue, 0.72);
       transition: background-color 0.3s ease-in-out;
+      content: '';
     }
 
     &:hover::before {
@@ -65,10 +65,11 @@
     }
 
     .last-modified {
+      color: $color__white;
+
       .post__meta-label {
         color: $color__bluegray-light;
       }
-      color: $color__white;
     }
   }
 }
