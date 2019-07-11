@@ -1,4 +1,8 @@
 ---
+- title: "(Un)detectability"
+  acronym: ''
+  description: 'Describes the degree to which an adversary can ascertain that information
+    is being collected by a strategic situational awareness capability. '
 - title: Destructiveness
   acronym: ''
   description: 'The extent to which a capability destroys/degrades an enemy system,
