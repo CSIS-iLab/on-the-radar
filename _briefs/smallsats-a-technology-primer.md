@@ -37,7 +37,7 @@ image: https://res.cloudinary.com/csisideaslab/image/upload/v1542205462/on-the-r
 image_caption: ''
 image_source: ''
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562790412/on-the-radar/Smallsats%20Final%20Primer%20Formatted%2007-02-29.pdf
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865065/on-the-radar/Smallsats%20Final%20Primer%20Formatted%2007-02-29.pdf
   label: Smallsats primer
 
 ---
