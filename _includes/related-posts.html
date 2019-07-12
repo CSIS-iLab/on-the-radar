@@ -3,7 +3,7 @@
 {% assign maxRelatedCounter = 0 %}
 
 {% if post.collection == 'posts' %}
-<section class="related-posts">
+<div class="related-posts">
 
   {% for post in site[post.collection] reversed %}
     {% assign sameKeywordCount = 0 %}
@@ -25,18 +25,23 @@
     {% endif %}
 
   {% endfor %}
-</section>
+</div>
+
 {% elsif post.collection == 'briefs'  %}
 
-  <section class="post__related-block">
-    <h2 class="post__related-reading">
-      {{ site.data.language.related_reading }}
-    </h2>
-
   {%- assign related_posts = site.posts | where_exp:"analysis", "analysis.related_briefs contains post.relative_path" -%}
-  {% for post in related_posts reversed %}
-    {%- include related-posts-block.html -%}
-  {% endfor %}
-  </section>
+  {% if related_posts.size > 0 %}
+    <section class="post__related-block">
+      <h2 class="post__related-reading">
+        {{ site.data.language.related_reading }}
+      </h2>
+      
+      <div class="related-posts">
+      {% for post in related_posts reversed %}
+        {%- include related-posts-block.html -%}
+      {% endfor %}
+      </div>
+    </section>
+  {% endif %}
 
 {% endif %}
