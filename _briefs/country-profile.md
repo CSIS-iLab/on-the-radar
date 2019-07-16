@@ -35,7 +35,8 @@ keywords:
 - Synthetic Aperture Sonar
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1563295169/on-the-radar/EW3.jpg
 image_caption: ''
-image_source: ''
+image_source: Photo by Heide Couch, 60th Air Mobility Wing Public Affairs, U.S. Air
+  Force
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562604429/on-the-radar/US%20strategic%20SA.pdf
   label: US Strategic SA
