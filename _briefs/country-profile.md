@@ -34,7 +34,8 @@ keywords:
 - Anti-Submarine Warfare (ASW)
 - Synthetic Aperture Sonar
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1563295169/on-the-radar/EW3.jpg
-image_caption: ''
+image_caption: An E-3 Sentry Airborne Warning and Control System aircraft departs
+  July 11, 2019, at Travis Air Force Base, California.
 image_source: Photo by Heide Couch, 60th Air Mobility Wing Public Affairs, U.S. Air
   Force
 downloads:
