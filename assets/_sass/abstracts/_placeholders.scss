@@ -216,6 +216,13 @@
   letter-spacing: 1px;
 }
 
+%home__paragraph {
+  @include font-size(18px);
+  color: $color__off-white;
+  font-family: $font__ptsans;
+  line-height: 1.8;
+}
+
 %labeltext__label {
   @include font-size(13px);
   font-family: $font__ptsans;

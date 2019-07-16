@@ -1,0 +1,284 @@
+/*=============================
+=           Home Page         =
+=============================*/
+@charset "utf-8";
+
+// Import Styles
+@import '../abstracts/abstracts';
+
+%homebg {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc((100vw - 100%) / -2);
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+}
+
+.home {
+  max-width: $home__max-width;
+  margin-top: 4.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  color: $color__white;
+
+  @each $size, $value in $home__padding {
+    @if $size != 'small' {
+      @include breakpoint($size) {
+        padding-right: $value;
+        padding-left: $value;
+      }
+    } @else {
+      padding-right: $value;
+      padding-left: $value;
+    }
+  }
+
+  @include breakpoint('large') {
+    margin-top: 2rem;
+  }
+}
+
+.home__intro {
+  position: relative;
+  padding-bottom: 4rem;
+
+  @include breakpoint('large') {
+    display: grid;
+    grid-column-gap: 10%;
+    grid-template-areas: 'header .' 'desc featured';
+    grid-template-columns: auto 33%;
+  }
+
+  &::before {
+    @extend %homebg;
+    /* prettier-ignore */
+    background-image: linear-gradient(to bottom, rgba(22, 58, 89, 0), $color__home-navy-grad);
+  }
+
+  .page__title {
+    position: relative;
+    grid-area: header;
+    margin-bottom: 3rem;
+    @include font-size(40px);
+    color: $color__white;
+    font-family: $font__lato;
+    font-weight: 600;
+    line-height: 1.2;
+
+    @include breakpoint('medium') {
+      @include font-size(48px);
+      line-height: 1.33;
+    }
+
+    @include breakpoint('xlarge') {
+      @include font-size(70px);
+      line-height: 1.21;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1rem;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: $color__white;
+      opacity: 0.45;
+
+      @include breakpoint('medium') {
+        max-width: 282px;
+      }
+    }
+  }
+
+  .page__subtitle {
+    display: block;
+    @include font-size(18px);
+    color: rgba($color__white, 0.71);
+    font-family: $font__lato;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    @include breakpoint('medium') {
+      @include font-size(20px);
+    }
+
+    @include breakpoint('xlarge') {
+      @include font-size(24px);
+      line-height: 1.3;
+    }
+  }
+
+  &-desc {
+    grid-area: desc;
+    margin-bottom: 5rem;
+  }
+
+  p {
+    @extend %home__paragraph;
+  }
+}
+
+.home__featured {
+  --margin: 1rem;
+  --cap-width: 34px;
+  --cap-half: var(--cap-width) / 2;
+  grid-area: featured;
+  margin-left: var(--margin);
+
+  @include breakpoint('medium') {
+    --margin: calc(10vw + var(--cap-half));
+  }
+
+  @include breakpoint('large') {
+    --margin: var(--cap-half);
+  }
+
+  &-title {
+    position: relative;
+    z-index: 10;
+    height: var(--cap-width);
+    margin-bottom: 2rem;
+    padding: 5px 0 6px;
+    @include font-size(18px);
+    font-weight: bold;
+    line-height: 1.28;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: $color__orange;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: calc(var(--cap-half) * -1);
+      z-index: -1;
+      display: block;
+      width: var(--cap-width);
+      height: 100%;
+      background-color: $color__orange;
+      border-radius: 50% 0 0 50%;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 100%;
+      display: block;
+      height: 100%;
+      background-color: $color__orange;
+
+      @each $size, $value in $home__padding {
+        @if $size != 'small' {
+          @include breakpoint($size) {
+            width: $value;
+          }
+        } @else {
+          width: $value;
+        }
+      }
+
+      @include breakpoint($home__max-width) {
+        width: var(--cap-width);
+        border-radius: 0 50% 50% 0;
+      }
+    }
+  }
+}
+
+.home__ssa {
+  position: relative;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+
+  &::before {
+    $sizes: ('medium', 'large', 'xlarge');
+    @extend %homebg;
+    background-color: $color__home-navy-grad;
+    background-image: url('../../images/home/earth-bg_small.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @each $size in $sizes {
+      @include breakpoint($size) {
+        background-image: url('../../images/home/earth-bg_#{$size}.jpg');
+      }
+    }
+  }
+}
+
+.home__ecosystem {
+  position: relative;
+  padding-top: 2.5rem;
+
+  &::before {
+    @extend %homebg;
+    /* prettier-ignore */
+    background-image: linear-gradient(to bottom, #000001, $color__blue-dark);
+  }
+}
+
+.home__space {
+  position: relative;
+  padding-top: 6.25rem;
+
+  &::before {
+    $sizes: ('medium', 'large', 'xlarge');
+    @extend %homebg;
+    background-color: #001a28;
+    background-image: url('../../images/home/earth-bg_small.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @each $size in $sizes {
+      @include breakpoint($size) {
+        background-image: url('../../images/home/earth-bg_#{$size}.jpg');
+      }
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc((100vw - 100%) / -2);
+    width: 100vw;
+    height: 100%;
+    /* prettier-ignore */
+    background-image: linear-gradient(180deg, #001a28 0%, rgba(22, 58, 89, 0) 50%, #0e273c 100%);
+  }
+}
+
+.home__matter {
+  position: relative;
+
+  &::before {
+    @extend %homebg;
+    background-color: $color__home-navy-grad;
+    background-image: linear-gradient(to bottom, #0e273c, $color__navy);
+  }
+}
+
+.home__proj-nav {
+  position: relative;
+  padding-top: 9.375rem;
+  padding-bottom: 5rem;
+
+  &::before {
+    @extend %homebg;
+    background-image: linear-gradient(to bottom, $color__navy, #0e273c);
+  }
+}
+
+.home__recent {
+  position: relative;
+
+  &::before {
+    @extend %homebg;
+    /* prettier-ignore */
+    background-image: linear-gradient(to bottom, #0e273c, rgba(14, 39, 60, 0));
+  }
+}

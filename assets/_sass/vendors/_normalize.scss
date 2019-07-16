@@ -4,7 +4,9 @@
 /* stylelint-disable */
 button,
 hr,
-input {overflow: visible;}progress,
+input {overflow: visible;}
+
+progress,
 sub,
 sup {vertical-align: baseline;}
 
@@ -33,7 +35,9 @@ samp {
 abbr[title] {
   text-decoration: underline;
   text-decoration: underline dotted;
-  border-bottom: none;}b,
+  border-bottom: none;}
+
+b,
 strong {font-weight: bolder;}small {font-size: 80%;}
 
 sub,
@@ -50,8 +54,12 @@ textarea {
   margin: 0;
   font-family: inherit;
   font-size: 100%;
-  line-height: 1.15;}button,
-select {text-transform: none;}[type=button],
+  line-height: 1.15;}
+
+button,
+select {text-transform: none;}
+
+[type=button],
 [type=reset],
 [type=submit],
 button {-webkit-appearance: button;}
@@ -61,7 +69,9 @@ button {-webkit-appearance: button;}
 [type=submit]::-moz-focus-inner,
 button::-moz-focus-inner {
   padding: 0;
-  border-style: none;}[type=button]:-moz-focusring,
+  border-style: none;}
+
+[type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
 [type=submit]:-moz-focusring,
 button:-moz-focusring {outline: ButtonText dotted 1px;}fieldset {padding: 0.35em 0.75em 0.625em;}
@@ -70,7 +80,9 @@ legend {
   display: table;
   max-width: 100%;
   color: inherit;
-  white-space: normal;}textarea {overflow: auto;}[type=number]::-webkit-inner-spin-button,
+  white-space: normal;}textarea {overflow: auto;}
+
+[type=number]::-webkit-inner-spin-button,
 [type=number]::-webkit-outer-spin-button {height: auto;}
 
 [type=search] {
@@ -79,5 +91,7 @@ legend {
 
 ::-webkit-file-upload-button {
   font: inherit;
-  -webkit-appearance: button;}details {display: block;}summary {display: list-item;}[hidden],
+  -webkit-appearance: button;}details {display: block;}summary {display: list-item;}
+
+[hidden],
 template {display: none;}

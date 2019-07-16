@@ -3,34 +3,28 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
-
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- include content-type.html -%}
-        {%- include authors-list.html -%}
-        {%- include date.html -%}
-        {%- include last-updated.html -%}
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
-
-</div>
+  <section class="home__intro">
+    <h1 class="page__title">
+      <span class="page__subtitle">{{
+        site.data.language.home.subtitle | escape
+      }}</span>
+      {{ site.data.language.home.title | escape }}
+    </h1>
+    <div class="home__intro-desc">
+    {{ content }}
+    </div>
+    <section class="home__featured">
+      <h2 class="home__featured-title">Featured Posts</h2>
+    </section>
+  </section>
+  <section class="home__ssa">
+    Strategic Situational Awareness
+  </section>
+  <section class="home__ecosystem">
+    Situational Awareness Ecosystem
+  </section>
+  <section class="home__space">SpaceX</section>
+  <section class="home__matter">Does it matter</section>
+  <section class="home__proj-nav">How to navigate this project</section>
+  <section class="home__recent">Recent posts</section>
+</section>
