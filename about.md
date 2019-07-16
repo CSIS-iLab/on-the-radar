@@ -4,6 +4,10 @@ title: About
 permalink: "/about/"
 social_in_header: true
 team:
+- name: Eric Brewer
+  title: Deputy Director, Project on Nuclear Issues, and Fellow, International Security
+    Program, Center for Strategic and International Studies
+  headshot: ''
 - name: Rebecca Hersman
   title: Director, Project on Nuclear Issues and Senior Advisor, International Security
     Program
