@@ -25,6 +25,9 @@ team:
 - name: Bernadette Stadler
   title: Program Coordinator and Research Assistant, Project on Nuclear Issues
   headshot: ''
+- name: Reja Younis
+  title: Program Manager and Research Associate, Project on Nuclear Issues
+  headshot: ''
 consultants:
 - name: Kate Charlet
   title: 'Director, Technology and International Affairs Program, Carnegie Endowment
