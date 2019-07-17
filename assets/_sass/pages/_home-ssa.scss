@@ -1,0 +1,20 @@
+.home__ssa {
+  position: relative;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+
+  &::before {
+    $sizes: ('medium', 'large', 'xlarge');
+    @extend %homebg;
+    background-color: $color__home-navy-grad;
+    background-image: url('../../images/home/earth-bg_small.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @each $size in $sizes {
+      @include breakpoint($size) {
+        background-image: url('../../images/home/earth-bg_#{$size}.jpg');
+      }
+    }
+  }
+}

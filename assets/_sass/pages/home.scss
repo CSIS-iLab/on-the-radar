@@ -42,26 +42,7 @@
 
 @import 'home-intro';
 
-.home__ssa {
-  position: relative;
-  padding-top: 20vh;
-  padding-bottom: 20vh;
-
-  &::before {
-    $sizes: ('medium', 'large', 'xlarge');
-    @extend %homebg;
-    background-color: $color__home-navy-grad;
-    background-image: url('../../images/home/earth-bg_small.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @each $size in $sizes {
-      @include breakpoint($size) {
-        background-image: url('../../images/home/earth-bg_#{$size}.jpg');
-      }
-    }
-  }
-}
+@import 'home-ssa';
 
 .home__ecosystem {
   position: relative;
@@ -82,13 +63,13 @@
     $sizes: ('medium', 'large', 'xlarge');
     @extend %homebg;
     background-color: #001a28;
-    background-image: url('../../images/home/earth-bg_small.jpg');
+    background-image: url('../../images/home/spacex-bg_small.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
     @each $size in $sizes {
       @include breakpoint($size) {
-        background-image: url('../../images/home/earth-bg_#{$size}.jpg');
+        background-image: url('../../images/home/spacex-bg_#{$size}.jpg');
       }
     }
   }
