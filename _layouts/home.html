@@ -13,9 +13,15 @@ layout: default
     <div class="home__intro-desc">
     {{ content }}
     </div>
+    {% assign featured_posts = site.posts | concat: site.workshops | concat: site.briefs | where: 'featured_on_home', true | sort: 'date', 'last' %}
+    {%- if featured_posts.size > 0 -%}
     <section class="home__featured">
       <h2 class="home__featured-title">Featured Posts</h2>
+      {%- for post in featured_posts limit:2 -%}
+      {%- include post-block.html hide_excerpt=true hide_image=false -%}
+      {%- endfor -%}
     </section>
+    {%- endif -%}
   </section>
   <section class="home__ssa">
     Strategic Situational Awareness
