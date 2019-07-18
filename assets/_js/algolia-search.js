@@ -492,7 +492,7 @@ const addDetailsRefinement = () => {
         attributeName: `details.${facet}`,
         operator: 'or',
         collapsible: {
-          collapsed: true
+          collapsed: facet === 'type' && !breakpoints.isMobile() ? false : true
         },
         templates: {
           header: `${facet.replace(
