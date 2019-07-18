@@ -75,6 +75,14 @@
         padding: 1rem content-padding($size);
       }
     }
+
+    .authors,
+    .date,
+    .last-modified {
+      @include breakpoint('large') {
+        max-width: 75%;
+      }
+    }
   }
 
   &__img-container {
