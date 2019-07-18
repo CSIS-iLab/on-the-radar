@@ -250,6 +250,7 @@
       }
     }
 
+    // TODO: Move hover to title only, but trigger year transition as well
     &:hover {
       &::after {
         border-color: transparent;
