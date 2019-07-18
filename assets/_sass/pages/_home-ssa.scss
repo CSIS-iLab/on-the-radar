@@ -3,6 +3,16 @@
   padding-top: 20vh;
   padding-bottom: 20vh;
 
+  @include breakpoint('medium') {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    min-height: 80vh;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   &::before {
     $sizes: ('medium', 'large', 'xlarge');
     @extend %homebg;
@@ -15,6 +25,60 @@
       @include breakpoint($size) {
         background-image: url('../../images/home/earth-bg_#{$size}.jpg');
       }
+    }
+  }
+
+  .section__title {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 80%;
+      height: 1px;
+      margin: 1rem auto;
+      background-color: $color__white;
+      opacity: 0.6;
+
+      @include breakpoint('medium') {
+        width: 280px;
+      }
+    }
+  }
+
+  .home__ssa-desc {
+    color: $color__white;
+    font-family: $font__lato;
+    @include font-size(22px);
+    line-height: 3;
+    text-align: center;
+
+    @include breakpoint('medium') {
+      max-width: 680px;
+      margin: 0 auto;
+      @include font-size(26px);
+    }
+  }
+
+  .vocab {
+    position: relative;
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0 16px 2px;
+    color: $color__white;
+    font-weight: bold;
+    @include font-size(20px);
+    line-height: 1.6;
+    text-align: center;
+    background-color: $color__orange;
+    border: 0;
+    border-radius: 50vh;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    @include breakpoint('medium') {
+      @include font-size(26px);
+      line-height: 1.81;
     }
   }
 }

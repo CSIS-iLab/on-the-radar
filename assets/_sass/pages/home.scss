@@ -38,6 +38,18 @@
   @include breakpoint('large') {
     margin-top: 2rem;
   }
+
+  .section__title {
+    @extend %home__section-title;
+    text-align: center;
+  }
+
+  .section__subtitle {
+    display: block;
+    @extend %home__section-subtitle;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 @import 'home-intro';

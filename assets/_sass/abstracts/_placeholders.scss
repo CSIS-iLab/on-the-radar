@@ -223,6 +223,43 @@
   line-height: 1.8;
 }
 
+%home__section-title {
+  color: $color__white;
+  font-family: $font__lato;
+  font-weight: bold;
+  @include font-size(28px);
+  line-height: 1.29;
+
+  @include breakpoint('medium') {
+    @include font-size(36px);
+    line-height: 1.3;
+  }
+
+  @include breakpoint('large') {
+    @include font-size(44px);
+    line-height: 1.2;
+  }
+}
+
+%home__section-subtitle {
+  color: $color__white;
+  font-family: $font__lato;
+  font-weight: 300;
+  @include font-size(24px);
+  line-height: 1;
+  letter-spacing: 2px;
+
+  @include breakpoint('medium') {
+    @include font-size(28px);
+    letter-spacing: 2.33px;
+  }
+
+  @include breakpoint('large') {
+    @include font-size(34px);
+    letter-spacing: 2.83px;
+  }
+}
+
 %labeltext__label {
   @include font-size(13px);
   font-family: $font__ptsans;
