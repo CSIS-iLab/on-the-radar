@@ -212,6 +212,7 @@
     }
 
     .widget:not(#filter__count) {
+      transition: all 0.3s ease-in-out;
       margin-bottom: 0.8rem;
 
       @include breakpoint($break: 'medium', $dir: 'max-width') {
@@ -221,11 +222,26 @@
       }
     }
 
+    .section-title.refinement-label {
+      transition: font-size 0.3s ease-in-out;
+      padding-bottom: 1.5rem;
+
+      &--is-refined {
+        @include font-size(12px);
+        padding-bottom: 0;
+      }
+    }
+
+    .refinement-count {
+      &--is-refined {
+        padding-bottom: 1rem;
+      }
+    }
+
     .ais-header {
       @extend %facets__group-label--base;
       font-weight: bold;
       text-transform: uppercase;
-      transition: all 0.3s ease-in-out;
 
       i::before {
         font-weight: normal;
@@ -321,7 +337,6 @@
 
   #filter__count {
     position: relative;
-    padding-bottom: 1rem;
     @extend %facets__link-item--base;
     @include font-size(15px);
 

@@ -92,9 +92,9 @@ layout: default
       {% if page.refine_results %}
         <div class="algolia--hide-no-results">
         <input type="checkbox" id="refine_results" class="facet-trigger" />
-        <label for="refine_results" class="section-title">{{ site.data.language.archive.refine_results }}</label>
+        <label for="refine_results" class="section-title refinement-label">{{ site.data.language.archive.refine_results }}</label>
 
-        <div id="filter__count" class="widget"></div>
+        <div id="filter__count" class="widget refinement-count"></div>
 
         {% for detail in site[collection.label][0].details %}
           {% if detail[0] != "event_date" %}
