@@ -145,6 +145,8 @@
   }
 
   &-close {
+    display: flex;
+    align-items: center;
     padding: 0;
     color: $color__orange-light;
     @include font-size(30px);
