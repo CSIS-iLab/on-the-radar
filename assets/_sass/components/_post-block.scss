@@ -21,11 +21,6 @@
     &--featured {
       @extend %post-block__title--featured;
     }
-
-    i::before {
-      color: $color__gray;
-      @include font-size(18px);
-    }
   }
 
   &__img {
