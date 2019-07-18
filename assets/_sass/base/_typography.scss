@@ -55,15 +55,18 @@ h5 {
 
   h2 {
     @extend %post__content-h2;
+    margin-bottom: 0.5rem;
   }
 
   h3 {
     @extend %post__content-h3;
     margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   h4 {
     @extend %post__content-h4;
+    margin-bottom: 0.5rem;
   }
 
   h5 {
@@ -72,7 +75,7 @@ h5 {
 }
 
 p {
-  margin: 0 0 1rem;
+  margin: 0 0 2rem;
 }
 
 @for $i from 2 through 6 {
@@ -108,10 +111,10 @@ blockquote {
   p {
     margin-bottom: 0;
     color: inherit;
-    font-family: inherit;
+    font-family: inherit !important;
     font-weight: inherit;
-    font-size: inherit;
-    line-height: inherit;
+    font-size: inherit !important;
+    line-height: inherit !important;
   }
 
   // cite {}

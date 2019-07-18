@@ -15,8 +15,16 @@
     text-transform: uppercase;
   }
 
+  &__header {
+    @include font-size(14px);
+    @include breakpoint('medium') {
+      @include font-size(16px);
+    }
+  }
+
   &__title {
     @extend %post-block__title;
+    margin-bottom: 0.5rem;
 
     &--featured {
       @extend %post-block__title--featured;
