@@ -125,6 +125,12 @@
       }
     }
 
+    .ais-refinement-list--item {
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        padding: 0.2rem 0;
+      }
+    }
+
     .ais-refinement-list--item,
     .ais-clear-all--body {
       @extend %facets__link-item--base;
@@ -275,10 +281,19 @@
       @extend %facets__checkbox-label;
 
       &:last-of-type {
-        margin-bottom: 1.25rem;
+        @include breakpoint($break: 'medium', $dir: 'max-width') {
+          padding: 0.2rem 0 0.6rem;
+        }
+        @include breakpoint('medium') {
+          margin-bottom: 1.25rem;
+        }
       }
 
       &:not(:last-of-type) {
+        @include breakpoint($break: 'medium', $dir: 'max-width') {
+          padding: 0.2rem 0;
+        }
+
         @include breakpoint('medium') {
           margin: 0.3rem 0;
         }
