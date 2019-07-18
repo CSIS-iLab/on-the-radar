@@ -59,7 +59,36 @@ layout: default
         <div class="ecosystem__desc">
           {{ ecosystem.content | markdownify }}
         </div>
-        <div class="ecosystem__timeline">Timeline</div>
+        {%- assign events = site.data.timelines | where: 'ecosystem', ecosystem.id -%}
+        {%- if events.size > 0 -%}
+        <div class="ecosystem__timeline">
+          {%- for event in events -%}
+          <div class="timeline__row timeline__row--{{ event.category }}">
+            <div class="timeline__year">{{ event.year }}</div>
+            <div class="timeline__content">
+              {%- if event.category == 'general' -%}
+               <span class="timeline__title">{{ event.title }}</span>
+              {%- else -%}
+              <button class="timeline__title">
+                {{ event.title }}
+              </button>
+              <div class="timeline__details">
+                {%- if event.year_description -%}
+                <p class="timeline__year-desc">{{ event.year_description }}</p>
+                {%- endif -%}
+                <p class="timeline__desc"><span class="timeline__type">{{ event.type }} &mdash; </span> {{ event.description }}</p>
+
+                {%- if event.primer -%}
+                  {%- assign primer = site.briefs | where: "relative_path", event.primer | first -%}
+                  <a href="{{ primer.url | relative_url }}"><i class="icon icon-docs"></i>{{ primer.title }}</a>
+                {%- endif -%}
+              </div>
+              {%- endif -%}
+            </div>
+          </div>
+          {%- endfor -%}
+        </div>
+        {%- endif -%}
       </div>
     </section>
     {%- endfor -%}

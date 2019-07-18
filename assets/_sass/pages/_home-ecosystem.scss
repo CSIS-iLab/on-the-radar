@@ -142,6 +142,21 @@
   }
 
   &__content {
+    display: grid;
+    grid-gap: 2.5rem;
+
+    @include breakpoint('large') {
+      grid-gap: 4rem;
+      grid-template-columns: auto 25%;
+    }
+
+    @include breakpoint('xlarge') {
+      grid-gap: 10rem;
+      grid-template-columns: auto 33%;
+    }
+  }
+
+  &__desc {
     p {
       margin-bottom: 0;
       @extend %home__paragraph;
@@ -175,5 +190,163 @@
         border-left: 8px solid $color__orange;
       }
     }
+  }
+
+  &__timeline {
+    @include breakpoint('medium') {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.timeline {
+  position: relative;
+
+  &::before {
+  }
+
+  &__row {
+    $gap: 2.25rem;
+    $gap-half: $gap / 2;
+    position: relative;
+    display: grid;
+    grid-gap: $gap;
+    grid-template-columns: 15% auto;
+    align-content: start;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: calc(15% + #{$gap-half});
+      width: 1px;
+      height: 100%;
+      background-color: $color__white;
+      opacity: 0.7;
+    }
+
+    &::after {
+      $bubble: 0.8125rem;
+      $bubble-half: $bubble / 2;
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: calc(15% + #{$gap-half} - #{$bubble-half} + 1px);
+      width: $bubble;
+      height: $bubble;
+      padding: 1px;
+      background-color: $color__white;
+      background-clip: content-box;
+      border: 1px solid $color__white;
+      border-radius: 50%;
+      // box-shadow: 0 0 0 1px transparent, 0 0 0 1px $color__white;
+      transition: border 0.3s ease-in-out;
+    }
+
+    @each $type, $color in $home__event-types {
+      &--#{$type}::after {
+        background-color: $color;
+      }
+    }
+
+    &:hover {
+      &::after {
+        border-color: transparent;
+      }
+
+      .timeline__year {
+        transform: translateX(4px);
+      }
+
+      .timeline__content {
+        transform: translateX(-4px);
+      }
+    }
+
+    &.js-details-visible {
+      .timeline__title {
+        font-weight: bold;
+      }
+
+      .timeline__year {
+        color: $color__white;
+      }
+    }
+
+    a {
+      color: $color__orange;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $color__white;
+      }
+
+      &::after {
+        content: '\f105';
+        margin-left: 0.25rem;
+        color: $color__orange !important;
+        font-family: 'radar';
+      }
+
+      .icon-docs {
+        display: block;
+        float: left;
+        margin-right: 0.25rem;
+        margin-bottom: 3rem;
+      }
+
+      .icon-docs::before {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__year,
+  &__content {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &__year {
+    color: #88929a;
+    font-family: $font__lato;
+    font-weight: 600;
+    @include font-size(14px);
+    line-height: 1.29;
+    text-align: right;
+  }
+
+  &__content {
+    margin-bottom: 1.5rem;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    color: $color__white;
+    font-family: $font__lato;
+    font-weight: 300;
+    @include font-size(16px);
+    line-height: 1.13;
+    text-align: left;
+    background: transparent;
+    border: 0;
+    appearance: none;
+  }
+
+  &__details {
+    margin-top: 0.75rem;
+    color: #bec3c6;
+    @include font-size(16px);
+  }
+
+  &__year-desc {
+    font-style: italic;
+  }
+
+  &__type {
+    @include font-size(13px);
+    font-weight: bold;
+    text-transform: uppercase;
   }
 }

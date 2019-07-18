@@ -131,3 +131,10 @@ $home__padding: (
   'medium': 2rem,
   'large': 3.5rem
 );
+
+$home__event-types: (
+  'general': $color__gray-medium,
+  'nuclear': $color__azul-lighter,
+  'conventional': $color__orange,
+  'both': $color__purple
+);
