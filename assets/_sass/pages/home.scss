@@ -51,6 +51,12 @@
     text-transform: uppercase;
     opacity: 0.71;
   }
+
+  .subsection__title {
+    @extend %home__subsection-title;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 @import 'home-intro';

@@ -48,6 +48,21 @@ layout: default
         adversary nuclear weapons, delivery on command and control systems.</p>
       </div>
     </section>
+    {%- for ecosystem in site.data.ecosystems -%}
+    <section class="ecosystem__subsection ecosystem__subsection--{{ecosystem.id}}">
+      <h3 class="subsection__title">
+        <span class="subsection__num">{{ ecosystem.num }}</span>
+        {{ ecosystem.title }}
+      </h3>
+      <img src="{{ '/assets/images/home/ecosystem-' | append: ecosystem.id | append: '.png' | relative_url }}" class="ecosystem__subsection-img" title="{{ ecosystem.title }}" alt="" />
+      <div class="ecosystem__content">
+        <div class="ecosystem__desc">
+          {{ ecosystem.content | markdownify }}
+        </div>
+        <div class="ecosystem__timeline">Timeline</div>
+      </div>
+    </section>
+    {%- endfor -%}
   </section>
   <section class="home__space">SpaceX</section>
   <section class="home__matter">Does it matter</section>

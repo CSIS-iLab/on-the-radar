@@ -26,6 +26,12 @@
       }
     }
   }
+
+  .subsection__num {
+    display: block;
+    margin-bottom: 1rem;
+    color: $color__orange;
+  }
 }
 
 .ecosystem {
@@ -59,8 +65,7 @@
 
     p {
       margin-bottom: 0;
-      @extend %home__paragraph;
-      opacity: 0.6;
+      @extend %home__subparagraph;
     }
   }
 
@@ -120,6 +125,55 @@
   &__nuclear {
     &::before {
       background-color: $color__orange-med;
+    }
+  }
+
+  &__subsection {
+    margin-bottom: 5rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__subsection-img {
+    display: block;
+    margin: 2rem auto;
+  }
+
+  &__content {
+    p {
+      margin-bottom: 0;
+      @extend %home__paragraph;
+    }
+
+    ul {
+      margin: 0.5rem 0 2rem;
+      padding-left: 2.5rem;
+      @extend %home__subparagraph;
+      list-style: none;
+    }
+
+    li {
+      position: relative;
+      margin-bottom: 0.5rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: -1.25rem;
+        width: 0;
+        height: 0;
+        border: 0 solid transparent;
+        border-top-width: 4px;
+        border-bottom-width: 4px;
+        border-left: 8px solid $color__orange;
+      }
     }
   }
 }

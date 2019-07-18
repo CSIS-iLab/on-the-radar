@@ -223,6 +223,13 @@
   line-height: 1.8;
 }
 
+%home__subparagraph {
+  @include font-size(18px);
+  color: rgba($color__white, 0.6);
+  font-family: $font__ptsans;
+  line-height: 1.5;
+}
+
 %home__section-title {
   color: $color__white;
   font-family: $font__lato;
@@ -250,6 +257,25 @@
 
   @include breakpoint('medium') {
     @include font-size(20px);
+  }
+}
+
+%home__subsection-title {
+  color: $color__white;
+  font-family: $font__lato;
+  font-weight: 300;
+  @include font-size(24px);
+  line-height: 1;
+  letter-spacing: 2px;
+
+  @include breakpoint('medium') {
+    @include font-size(28px);
+    letter-spacing: 2.33px;
+  }
+
+  @include breakpoint('large') {
+    @include font-size(34px);
+    letter-spacing: 2.83px;
   }
 }
 

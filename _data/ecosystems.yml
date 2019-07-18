@@ -1,0 +1,28 @@
+- id: traditional
+  num: '01'
+  title: Traditional
+  content: |
+    The traditional strategic SA environment featured **stratified and largely isolated** capabilities.
+      *  This enabled nuclear and conventional strategic SA to operate independently.
+
+    The **passive** nature of the ecosystem was designed to detect attacks, not anticipate or interfere with them.
+      * Traditional strategic SA-enhancing technologies operated fully outside of adversary territories and systems at long stand-off range.
+      * These systems could only detect actions once they had occurred, not anticipate future action, and existed largely out of range of adversary attack.
+
+    The bright line between strategic SA systems used for conventional and nuclear missions meant strategic SA assets could be fairly **secure and compartmentalized**. 
+
+      * This dynamic made it harder for misinterpretation to occur between conventional and nuclear events.
+      * Systems such as command and control were considered sufficiently redundant and invulnerable to attack.
+      * SA assets were unlikely to be targeted in conventional conflict because the risks of nuclear escalation were clear and the benefits in the conventional battlespace were limited.
+
+- id: transitional
+  num: '02'
+  title: Transitional
+  content: |
+    The rapid nature of technological advancement is complicating the ability to sustain a strategic SA ecosystem that remains stratified and passive; compartmentalized and secure. Technological developments in the conventional SA ecosystem have outpaced developments in the nuclear SA space, leading countries to increasingly rely on conventional SA capabilities for nuclear SA missions. At the same time, nuclear SA assets have begun to slowly take on some conventional missions. As a result, we are witnessing the collapse of the organized, stratified traditional SA ecosystem.
+
+- id: emerging
+  num: '03'
+  title: Emerging
+  content: |
+    The emerging SA ecosystem is highly networked, real-time, and dual use, creating a landscape that is highly capable but also murkier and more complex. The rapid pace of technological advancement along with the dual-use (nuclear and conventional) applicability of emerging capabilities and the blurring of lines between nuclear and conventional command and control are all reshaping the emerging landscape.  Combined with an increasingly competitive security environment characterized by the use of grey zone or hybrid tactics designed to challenge and coerce at the sub-conventional level, this emerging SA ecosystem can provide vast amounts of information, more quickly and more precisely than ever before, including about new forms of strategic attack that may prove elusive to traditional warning systems.
