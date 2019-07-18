@@ -129,9 +129,11 @@
     .ais-clear-all--body {
       @extend %facets__link-item--base;
       white-space: nowrap;
-      text-transform: uppercase;
       transition: all 0.3s ease-in-out;
 
+      @include breakpoint('medium') {
+        text-transform: uppercase;
+      }
       &__active {
         @include breakpoint('medium') {
           color: $color__astral;
