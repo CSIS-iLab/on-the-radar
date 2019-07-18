@@ -244,19 +244,12 @@
 %home__section-subtitle {
   color: $color__white;
   font-family: $font__lato;
-  font-weight: 300;
-  @include font-size(24px);
+  font-weight: normal;
+  @include font-size(18px);
   line-height: 1;
-  letter-spacing: 2px;
 
   @include breakpoint('medium') {
-    @include font-size(28px);
-    letter-spacing: 2.33px;
-  }
-
-  @include breakpoint('large') {
-    @include font-size(34px);
-    letter-spacing: 2.83px;
+    @include font-size(20px);
   }
 }
 

@@ -49,6 +49,7 @@
     @extend %home__section-subtitle;
     text-align: center;
     text-transform: uppercase;
+    opacity: 0.71;
   }
 }
 
@@ -56,16 +57,7 @@
 
 @import 'home-ssa';
 
-.home__ecosystem {
-  position: relative;
-  padding-top: 2.5rem;
-
-  &::before {
-    @extend %homebg;
-    /* prettier-ignore */
-    background-image: linear-gradient(to bottom, #000001, $color__blue-dark);
-  }
-}
+@import 'home-ecosystem';
 
 .home__space {
   position: relative;

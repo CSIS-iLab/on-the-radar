@@ -54,7 +54,7 @@
     text-align: center;
 
     @include breakpoint('medium') {
-      max-width: 680px;
+      max-width: $home__content-width;
       margin: 0 auto;
       @include font-size(26px);
     }

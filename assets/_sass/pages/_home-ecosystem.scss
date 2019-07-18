@@ -1,0 +1,125 @@
+.home__ecosystem {
+  position: relative;
+  padding-top: 2.5rem;
+
+  &::before {
+    @extend %homebg;
+    /* prettier-ignore */
+    background-image: linear-gradient(to bottom, #000001, $color__blue-dark);
+  }
+
+  .section__title {
+    position: relative;
+    margin-bottom: 3rem;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 80%;
+      height: 1px;
+      margin: 1rem auto;
+      background-color: $color__white;
+      opacity: 0.6;
+
+      @include breakpoint('medium') {
+        width: 280px;
+      }
+    }
+  }
+}
+
+.ecosystem {
+  /* prettier-ignore */
+  // $width: map-get($map: $home__padding, $key: 'small');
+  $width: 1rem;
+
+  @include breakpoint('medium') {
+    $width: 1.25rem;
+  }
+
+  &__definitions {
+    display: grid;
+    grid-gap: 3rem;
+    margin: 0 auto 5rem;
+
+    @include breakpoint('medium') {
+      grid-gap: 8rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+    }
+
+    @include breakpoint('large') {
+      grid-gap: 20%;
+      margin-bottom: 6rem;
+    }
+
+    @include breakpoint('xlarge') {
+      margin-bottom: 8rem;
+    }
+
+    p {
+      margin-bottom: 0;
+      @extend %home__paragraph;
+      opacity: 0.6;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 1rem;
+    color: $color__white;
+    font-family: $font__lato;
+    font-weight: bold;
+    @include font-size(20px);
+    line-height: 1;
+    letter-spacing: 1.67px;
+    text-transform: uppercase;
+
+    @include breakpoint('medium') {
+      @include font-size(22px);
+      letter-spacing: 1.83px;
+    }
+
+    @include breakpoint('large') {
+      @include font-size(24px);
+      letter-spacing: 2px;
+    }
+  }
+
+  &__conventional,
+  &__nuclear {
+    position: relative;
+    padding-left: $width;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -$width;
+      width: $width;
+      height: 100%;
+    }
+  }
+
+  &__conventional {
+    @include breakpoint('medium') {
+      padding-right: $width;
+      padding-left: 0;
+      text-align: right;
+    }
+
+    &::before {
+      background-color: $color__azul;
+
+      @include breakpoint('medium') {
+        right: -$width;
+        left: unset;
+      }
+    }
+  }
+
+  &__nuclear {
+    &::before {
+      background-color: $color__orange-med;
+    }
+  }
+}
