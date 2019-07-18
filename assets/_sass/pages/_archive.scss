@@ -224,17 +224,24 @@
 
     .section-title.refinement-label {
       transition: font-size 0.3s ease-in-out;
-      padding-bottom: 1.5rem;
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        padding-bottom: 1.5rem;
+      }
 
       &--is-refined {
-        @include font-size(12px);
         padding-bottom: 0;
+
+        @include breakpoint($break: 'medium', $dir: 'max-width') {
+          @include font-size(12px);
+        }
       }
     }
 
     .refinement-count {
       &--is-refined {
-        padding-bottom: 1rem;
+        @include breakpoint($break: 'medium', $dir: 'max-width') {
+          padding-bottom: 1rem;
+        }
       }
     }
 
