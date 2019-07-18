@@ -249,8 +249,14 @@
     .ais-refinement-list--item {
       @extend %facets__checkbox-label;
 
-      @include breakpoint('medium') {
-        margin: 0.3rem 0;
+      &:last-of-type {
+        margin-bottom: 1.25rem;
+      }
+
+      &:not(:last-of-type) {
+        @include breakpoint('medium') {
+          margin: 0.3rem 0;
+        }
       }
     }
 
