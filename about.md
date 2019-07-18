@@ -2,7 +2,6 @@
 layout: page
 title: About
 permalink: "/about/"
-social_in_header: true
 team:
 - name: Rebecca Hersman
   title: Director, Project on Nuclear Issues and Senior Advisor, International Security
