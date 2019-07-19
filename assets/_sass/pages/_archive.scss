@@ -140,6 +140,7 @@
       @include breakpoint('medium') {
         text-transform: uppercase;
       }
+
       &__active {
         @include breakpoint('medium') {
           color: $color__astral;
@@ -220,8 +221,8 @@
     }
 
     .widget:not(#filter__count) {
-      transition: all 0.3s ease-in-out;
       margin-bottom: 0.8rem;
+      transition: all 0.3s ease-in-out;
 
       @include breakpoint($break: 'medium', $dir: 'max-width') {
         &:nth-of-type(2) {

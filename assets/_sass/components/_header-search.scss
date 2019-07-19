@@ -116,8 +116,8 @@
       border-bottom: 1px solid $color__orange-light;
 
       &:focus {
-        outline-color: $color__orange-light;
         color: $color__white;
+        outline-color: $color__orange-light;
       }
 
       &::placeholder {

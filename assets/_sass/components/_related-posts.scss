@@ -8,11 +8,11 @@
   &__block {
     position: relative;
     flex-grow: 1;
+    flex-basis: 100%;
     min-height: 200px;
     padding: 1.33rem;
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
-    flex-basis: 100%;
 
     @include breakpoint('medium') {
       flex-basis: 0;
