@@ -23,7 +23,7 @@ keywords:
 - Sensors
 downloads:
 - label: China strategic SA
-  media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1563555452/on-the-radar/China%20strategic%20SA.pdf
+  media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1563556865/on-the-radar/China%20strategic%20SA.pdf
 featured_on_home: false
 
 ---
