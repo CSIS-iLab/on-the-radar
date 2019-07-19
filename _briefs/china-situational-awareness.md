@@ -4,7 +4,8 @@ details:
   characteristics: []
   risk_factors: []
   domain: []
-  country: []
+  country:
+  - China
 title: 'China Situational Awareness '
 date: 2019-05-31 04:00:00 +0000
 excerpt: ''
