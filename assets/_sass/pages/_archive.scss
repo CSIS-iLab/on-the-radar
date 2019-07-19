@@ -360,6 +360,14 @@
     }
   }
 
+  &:not(.archive--issue-briefs) .section-title.refinement-label {
+    padding-bottom: 1.2rem;
+
+    &--is-refined {
+      padding-bottom: 0;
+    }
+  }
+
   #filter__count {
     position: relative;
     @extend %facets__link-item--base;
