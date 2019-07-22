@@ -46,7 +46,10 @@
     #{$post}__title {
       @extend %page__title;
       margin: 0 0 0.5rem;
-
+      margin: 0 0 1rem;
+      @include breakpoint('large') {
+        margin: 0 0 2rem;
+      }
       @include breakpoint($break: 'medium', $until: 'large') {
         padding: 0;
       }
@@ -64,7 +67,7 @@
   }
 
   &__meta {
-    $sizes: ('medium', 'large', 'xlarge');
+    $sizes: ('medium', 'large', 'large-3', 'xlarge');
     grid-area: meta;
     padding: content-padding('small');
     color: $color__off-black;
@@ -133,19 +136,28 @@
     width: 100%;
     margin: 0 auto;
     padding: content-padding('small');
+    padding-top: 3rem;
     background-color: $color__white;
 
     @include breakpoint('medium') {
+      padding-top: 3rem;
       padding-right: content-padding('medium');
       padding-left: content-padding('medium');
     }
 
     @include breakpoint('large') {
       padding: 0 content-padding('large');
+      padding-top: 2rem;
+    }
+
+    @include breakpoint('large-3') {
+      padding: 0 content-padding('large-3');
+      padding-top: 2rem;
     }
 
     @include breakpoint('xlarge') {
       padding: 0 content-padding('xlarge');
+      padding-top: 2rem;
     }
   }
 
