@@ -8,7 +8,6 @@
   &__block {
     position: relative;
     flex-grow: 1;
-    max-width: 300px;
     min-height: 200px;
     padding: 1.33rem;
     background-repeat: no-repeat, no-repeat;
@@ -16,6 +15,10 @@
 
     @include breakpoint('small') {
       flex-basis: 0;
+    }
+
+    @include breakpoint('medium') {
+      max-width: 300px;
     }
 
     &:not(:last-child) {

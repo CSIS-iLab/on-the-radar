@@ -71,12 +71,4 @@
 
 @import 'home-proj-nav';
 
-.home__recent {
-  position: relative;
-
-  &::before {
-    @extend %homebg;
-    /* prettier-ignore */
-    background-image: linear-gradient(to bottom, #0e273c, rgba(14, 39, 60, 0));
-  }
-}
+@import 'home-recent';
