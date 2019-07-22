@@ -1,0 +1,7 @@
+---
+title: Rebecca Hersman
+role: Director, Project on Nuclear Issues
+published: false
+
+---
+Rebecca Hersman is director of the Project on Nuclear Issues and senior adviser for the International Security Program. Ms. Hersman joined CSIS in April 2015 from the Department of Defense (DOD), where she served as deputy assistant secretary of defense for countering weapons of mass destruction (WMD) since 2009. In this capacity, she led DOD policy and strategy to prevent WMD proliferation and use, reduce and eliminate WMD risks and respond to WMD dangers. Prior to joining DOD, Ms. Hersman was a senior research fellow with the Center for the Study of Weapons of Mass Destruction at the National Defense University from 1998 to 2009. Her primary projects focused on the role of DOD in mitigating the effects of chemical and biological weapons attack, concepts and strategies for eliminating an adversary’s WMD programs, as well as proliferation issues facing the United States. Ms. Hersman also founded and directed the WMD Center’s Program for Emerging Leaders, an initiative designed to shape and support the next generation of leaders from across the U.S. government with interest in countering weapons of mass destruction. Ms. Hersman previously held positions as an international affairs fellow at the Council on Foreign Relations, a special assistant to the undersecretary of defense for policy, and a member of the House Armed Services Committee professional staff. She holds an M.A. in Arab studies from Georgetown University and a B.A. from Duke University.
