@@ -7,9 +7,16 @@ layout: default
 {% elsif page.filter_entries %}
   {% assign refinement = 'data-filter_entries="true"' %}
 {% endif %}
+{% if page.collection == 'authors' %}
+  {% assign collectionLabel = 'authors' %}
+{% else %}
+{% assign collectionLabel = collection.label %}
+{% endif %}
 
-<article class="archive archive--{{ page.title | slugify }}" {{ refinement }} data-collection-label="{{ collection.label }}" role="content" itemscope itemtype="http://schema.org/BlogPosting" {{ data_facet }} {{ data_facet_value }}>
 
+
+
+<article class="archive archive--{{ page.title | slugify }}" {{ refinement }} data-collection-label="{{ collectionLabel }}" role="content" itemscope itemtype="http://schema.org/BlogPosting" {{ data_facet }} {{ data_facet_value }}>
   {% include page-header.html %}
 
   {% if page.permalink == '/issue-briefs/' %}
@@ -115,28 +122,36 @@ layout: default
   </section>
   {% endif %}
 
-   <section id="hits" class="archive__content">
-     {% if page.post_list_collection == 'all' %}
-       {% assign posts = site.posts | concat: site.workshops | concat: site.briefs %}
-     {% elsif page.post_list_collection == 'resources'  %}
-       {% assign posts = site.resources %}
-     {% else %}
-       {% assign posts = site[collection.label] %}
+   <section class="archive__content">
+     {%- if page.collection == 'authors' -%}
+       {{ page.content }}
      {% endif %}
 
+     <div id="hits">
 
-     {% if collection.label != 'resources' %}
-      {%- for post in posts -%}
-        {% include post-block.html %}
-      {%- endfor -%}
-    {% else %}
-      {%- for post in site.resources -%}
-        {% include post-block.html %}
-        {% if forloop.last and collection.label == 'resources' %}
-          {%- include back-to-top.html -%}
-        {% endif %}
-      {%- endfor -%}
-    {% endif %}
+       {% if page.post_list_collection == 'all' %}
+         {% assign posts = site.posts | concat: site.workshops | concat: site.briefs %}
+       {% elsif page.post_list_collection == 'resources'  %}
+         {% assign posts = site.resources %}
+       {% else %}
+         {% assign posts = site[collection.label] %}
+       {% endif %}
+
+
+       {% if collection.label != 'resources' %}
+        {%- for post in posts -%}
+          {% include post-block.html %}
+        {%- endfor -%}
+      {% else %}
+        {%- for post in site.resources -%}
+          {% include post-block.html %}
+          {% if forloop.last and collection.label == 'resources' %}
+            {%- include back-to-top.html -%}
+          {% endif %}
+        {%- endfor -%}
+      {% endif %}
+
+     </div>
 
    </section>
 
