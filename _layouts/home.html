@@ -127,9 +127,7 @@ layout: default
     <ul class="proj-nav__menu">
       {%- for item in submenu -%}
       <li class="proj-nav__menu-item">
-        <img src="{{
-  '/assets/images/home/icon-' | append: item.identifier | append: '.svg' | relative_url
-}}" alt="" class="proj-nav__menu-icon" />
+        <img src="{{ '/assets/images/home/icon-' | append: item.identifier | append: '.svg' | relative_url }}" alt="" class="proj-nav__menu-icon" />
         {%- if item.url == null -%}
         <div class="proj-nav__menu-title">{{ item.title }}</div>
         {%- else -%}
