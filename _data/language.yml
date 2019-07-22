@@ -51,8 +51,10 @@ about:
   title: About the Project
   team: Principle Researchers
   consultants: Consultants
-  dev_team: Development Team
-ilab: _On the Radar_ is a product of the [**Andreas C. Dracopoulos iDeas Lab**](https://www.csis.org/programs/dracopoulos-ideas-lab), the in-house digital, multimedia, and design agency at the Center for Strategic and International Studies.
+  dev_team-heading: Development Team
+  csis-heading: About CSIS
+  dev_team: _On the Radar_ is a product of the [**Andreas C. Dracopoulos iDeas Lab**](https://www.csis.org/programs/dracopoulos-ideas-lab), the in-house digital, multimedia, and design agency at the Center for Strategic and International Studies.
+  csis: Established in Washington, D.C., over 50 years ago, the Center for Strategic and International Studies (CSIS) is a bipartisan, nonprofit policy research organization dedicated to providing strategic insights and policy solutions to help decisionmakers chart a course toward a better world. To learn more about CSIS, visit [www.CSIS.org](www.CSIS.org).
 heading_aside:
   website: website
   email: email
