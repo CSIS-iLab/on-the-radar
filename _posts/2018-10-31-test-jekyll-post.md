@@ -6,13 +6,8 @@ excerpt:
   donec feugiat dui, hendrerit vel, mattis tellus magna id, ante pede mauris varius
   odio id a, commodo ipsum tellus magna dapibus ut.
 authors:
-<<<<<<< HEAD
 - _authors/margaret-williams.md
 - _authors/jake-hecla.md
-=======
-  - _authors/john-dot.md
-  - _authors/jane-doe.md
->>>>>>> Add featured posts to home page
 categories:
   - Category 1
   - Category 2
@@ -29,14 +24,9 @@ keywords:
   - Anti-Submarine Warfare (ASW)
   - Synthetic Aperture Sonar
 related_briefs:
-<<<<<<< HEAD
-- _briefs/unmanned-underwater-vehicle-uuv-systems-for-submarine-detection-a-technology-primer.md
-- _briefs/smallsats-a-technology-primer.md
-=======
   - _briefs/unmanned-underwater-vehicle-uuv-systems-for-submarine-detection-a-technology-primer.md
   - _briefs/resilient-communications.md
   - _briefs/smallsats-a-technology-primer.md
->>>>>>> Add featured posts to home page
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1542205462/on-the-radar/header-sample.jpg
 image_caption:
   Sample caption with a [link](https://fas.org/irp/nic/fishing.pdf).
@@ -44,12 +34,7 @@ image_caption:
   with a [link](https://fas.org/irp/nic/fishing.pdf). Sample caption with a [link](https://fas.org/irp/nic/fishing.pdf)
 image_source: Getty Images
 featured: true
-<<<<<<< HEAD
-featured_on_home: false
-
-=======
 featured_on_home: true
->>>>>>> Add featured posts to home page
 ---
 
 ## Erat nibh ut, tortor in
