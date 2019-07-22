@@ -12,7 +12,7 @@ _site
 /vendor
 
 # Compiled Files
-/assets/css/*.css
+/assets/css/**/*.css
 /assets/js/*.js
 
 # Node.js
