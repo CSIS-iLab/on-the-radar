@@ -69,16 +69,7 @@
 
 @import 'home-matter';
 
-.home__proj-nav {
-  position: relative;
-  padding-top: 9.375rem;
-  padding-bottom: 5rem;
-
-  &::before {
-    @extend %homebg;
-    background-image: linear-gradient(to bottom, $color__navy, #0e273c);
-  }
-}
+@import 'home-proj-nav';
 
 .home__recent {
   position: relative;

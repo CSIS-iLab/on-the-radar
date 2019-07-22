@@ -113,6 +113,40 @@ layout: default
       {%- endfor -%}
     </div>
   </section>
-  <section class="home__proj-nav">How to navigate this project</section>
+  <section class="home__proj-nav">
+    <h2 class="section__title">{{ site.data.language.home.proj_nav.title }}</h2>
+    {{ site.data.language.home.proj_nav.desc | markdownify }}
+    {%- assign submenu = site.data.menus | where_exp: "item", "item.inHomeSub == true" -%}
+    <ul class="proj-nav__submenu">
+      <li class="proj-nav__subtitle">{{ site.data.language.home.proj_nav.more }}</li>
+      {%- for item in submenu -%}
+      <li class="proj-nav__submenu-item"><a href="{{ item.url | relative_url }}" title="{{ item.identifier }}">{{ item.title }}</a></li>
+      {%- endfor -%}
+    </ul>
+    <div class="proj-nav__img">
+      <picture>
+        <source srcset="{{ '/assets/images/home/underwater-bg_xlarge.jpg' | relative_url }}" media="(min-width: 82em)">
+        <source srcset="{{ '/assets/images/home/underwater-bg_large.jpg' | relative_url }}" media="(min-width: 48.063em)">
+        <source srcset="{{ '/assets/images/home/underwater-bg_medium.jpg' | relative_url }}" media="(min-width: 33.75em)">
+        <img src="{{ '/assets/images/home/underwater-bg_small.jpg' | relative_url }}" alt="" />
+      </picture>
+    </div>
+    {%- assign submenu = site.data.menus | where_exp: "item", "item.inHomeMain == true" -%}
+    <ul class="proj-nav__menu">
+      {%- for item in submenu -%}
+      <li class="proj-nav__menu-item">
+        <img src="{{
+  '/assets/images/home/icon-' | append: item.identifier | append: '.svg' | relative_url
+}}" alt="" class="proj-nav__menu-icon" />
+        {%- if item.url == null -%}
+        <div class="proj-nav__menu-title">{{ item.title }}</div>
+        {%- else -%}
+        <a href="{{ item.url | relative_url }}" title="{{ item.identifier }}" class="proj-nav__menu-title">{{ item.title }}</a>
+        {%- endif -%}
+        <p>{{ item.desc }}</p>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </section>
   <section class="home__recent">Recent posts</section>
 </section>

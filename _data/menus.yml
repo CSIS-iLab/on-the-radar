@@ -3,28 +3,52 @@
   identifier: briefs
   inHeader: true
   inFooter: true
+  inHomeMain: true
+  inHomeSub: false
+  desc: A number of emerging technologies are reshaping the situational awareness space, with some countries developing these technologies at a faster rate than others. To learn more about these technologies and their state of play, click here.
 - url: /analysis/
   title: Analysis
   identifier: analysis
   inHeader: true
   inFooter: true
+  inHomeMain: true
+  inHomeSub: false
+  desc: These analysis pieces, written by a number of current and rising experts consider a wide-range of issues affecting the situational awareness space and strategic stability.
 - url: /resources
   title: Resources
   identifier: resources
   inHeader: true
   inFooter: true
+  inHomeMain: true
+  inHomeSub: false
+  desc: The research and studies that have informed this project can be found here.
 - url: /workshops/
   title: Workshops
   identifier: workshops
   inHeader: true
   inFooter: true
+  inHomeMain: true
+  inHomeSub: false
+  desc: Analysis from the various workshops hosted throughout the course of the project provides insight into the way in which experts are thinking about the potential impacts of these technologies.
 - url: /about/
   title: About
   identifier: about
   inHeader: true
   inFooter: true
+  inHomeMain: false
+  inHomeSub: true
+- url: null
+  title: Final Paper
+  identifier: final
+  inHeader: false
+  inFooter: false
+  inHomeMain: true
+  inHomeSub: false
+  desc: The results of this study will be published in a final paper to be released in 2020.
 - url: /glossary/
   title: Glossary
   identifier: glossary
   inHeader: false
   inFooter: true
+  inHomeMain: false
+  inHomeSub: true
