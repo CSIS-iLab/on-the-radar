@@ -1,5 +1,5 @@
 ---
-title: Lizamaria Aria
+title: Lizamaria Arias
 role: Scoville Fellow, Project on Nuclear Issues
 
 ---
