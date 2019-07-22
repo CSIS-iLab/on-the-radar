@@ -64,3 +64,16 @@ home:
   space:
     quote: I think we've got to have a balance between optimism about what we can do with this technology but also realism about the dark side.
     citation: SAM NUNN, Former U.S. Senator and Chairman Emeritus, CSIS Board of Trustees
+  matter:
+    title: Does this matter?
+    desc: |
+      The emerging ecosystem defies previous limitations on speed, precision, and resiliency, as well as the quantify and quality of highly detailed information. It can improve confidence, increase insights, and expand warning times.
+
+      However, this new ecosystem may also introduce new risks, potentially undermining crisis stability by increasing the chance of first-mover incentive and miscalculation.
+    sections:
+      - title: First-Mover incentive
+        desc: The quantity and quality of information as well as its predictive nature can create increased pressure for offensive action.
+      - title: Miscalculation
+        desc: The fast pace at which large volumes of information can be relayed, the networked and **blended*** nature of the systems, and the method of collection can increase the risk that intentions can be misunderstood and responses unnecessarily escalatory.
+        footnote: "* same strategic SA capabilities used to support both convention and nuclear capabilities"
+

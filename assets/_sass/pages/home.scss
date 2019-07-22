@@ -67,15 +67,7 @@
 
 @import 'home-space';
 
-.home__matter {
-  position: relative;
-
-  &::before {
-    @extend %homebg;
-    background-color: $color__home-navy-grad;
-    background-image: linear-gradient(to bottom, #0e273c, $color__navy);
-  }
-}
+@import 'home-matter';
 
 .home__proj-nav {
   position: relative;

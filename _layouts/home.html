@@ -97,7 +97,22 @@ layout: default
     <p class="home__space-desc">{{ site.data.language.home.space.quote | prepend: '"' | append: '"' }}</p>
     <p class="home__space-cite">{{ site.data.language.home.space.citation | prepend: '&mdash;' }}</p>
   </section>
-  <section class="home__matter">Does it matter</section>
+  <section class="home__matter">
+    <h2 class="section__title">{{ site.data.language.home.matter.title }}</h2>
+    {{ site.data.language.home.matter.desc | markdownify }}
+    <div class="matter__divider">DIVIDER HERE</div>
+    <div class="matter__subsections">
+      {%- for subsection in site.data.language.home.matter.sections -%}
+      <div class="matter__subsection">
+        <h3 class="subsection__title">{{ subsection.title }}</h3>
+        {{ subsection.desc | markdownify }}
+        {%- if subsection.footnote -%}
+        <p class="matter__footnote">{{ subsection.footnote }}</p>
+        {%- endif -%}
+      </div>
+      {%- endfor -%}
+    </div>
+  </section>
   <section class="home__proj-nav">How to navigate this project</section>
   <section class="home__recent">Recent posts</section>
 </section>
