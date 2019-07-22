@@ -57,5 +57,3 @@ UUV platforms are also a part of the broader Distributed Agile Submarine Hunting
 [^3]: Limited information is available in the open literature regarding sensor range and resolution for advanced ASW systems, but the detection range is expected to be 10s to 1000s of km, depending on ocean conditions and other factors. See for example E.V. Miasnikov, _The Future of Russia's Strategic Nuclear Forces: Discussions and Arguments,_ Published by the Center for Arms Control, Energy, and Environmental Studies at MPTI, Dolgoprudny, 1995.
 
 [^4]: More nascent detection technologies including ACTUV—an unmanned surface UMV—and Superconducting Quantum Interference Devices (SQUID) for magnetic anomaly detection (MAD) also seek to increase existing detection capabilities.
-
-***
