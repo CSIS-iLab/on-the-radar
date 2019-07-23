@@ -6,7 +6,7 @@ details:
   domain: []
   country:
   - China
-title: 'China Situational Awareness '
+title: China's Strategic Situational Awareness Capabilities
 date: 2019-05-31T04:00:00.000+00:00
 excerpt: ''
 authors:
