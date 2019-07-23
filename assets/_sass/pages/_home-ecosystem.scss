@@ -4,8 +4,9 @@
 
   &::before {
     @extend %homebg;
+    background: rgb(15, 40, 62);
     /* prettier-ignore */
-    background-image: linear-gradient(to bottom, #000001, $color__blue-dark);
+    background: linear-gradient(0deg, rgba(15, 40, 62, 1) 0%, rgba(10, 17, 23, 1) 100%);
   }
 
   .section__title {

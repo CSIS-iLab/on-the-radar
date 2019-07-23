@@ -24,11 +24,26 @@ layout: default
     {%- endif -%}
   </section>
   <section class="home__ssa">
-    <h2 class="section__title">
-      <span class="section__subtitle">What is</span>
-      Strategic Situational Awareness (SSA)?
-    </h2>
-    <div class="home__ssa-desc">Strategic situational awareness is the ability to <button class="vocab">observe</button> the operating environment, <button class="vocab">detect attacks,</button> and <button class="vocab">discern</button> actual attacks from false alarms across the <button class="vocab">spectrum of conflict.</button></div>
+    <div class="section__bg">
+      <img srcset="
+        {{ '/assets/images/home/earth-bg_small.jpg' | relative_url }} 700w,
+        {{ '/assets/images/home/earth-bg_medium.jpg' | relative_url }} 950w,
+        {{ '/assets/images/home/earth-bg_large.jpg' | relative_url }} 1150w,
+        {{ '/assets/images/home/earth-bg_xlarge.jpg' | relative_url }} 1600w
+      " sizes="
+        (max-width: 700px) 700px,
+        (max-width: 950px) 950px,
+        (max-width: 1150px) 1150px,
+        1600px
+      " src="{{ '/assets/images/home/earth-bg_large.jpg' | relative_url }}" alt="" />
+    </div>
+    <div class="section__content">
+      <h2 class="section__title">
+        <span class="section__subtitle">What is</span>
+        Strategic Situational Awareness (SSA)?
+      </h2>
+      <div class="home__ssa-desc">Strategic situational awareness is the ability to <button class="vocab">observe</button> the operating environment, <button class="vocab">detect attacks,</button> and <button class="vocab">discern</button> actual attacks from false alarms across the <button class="vocab">spectrum of conflict.</button></div>
+    </div>
   </section>
   <section class="home__ecosystem">
     <h2 class="section__title">
