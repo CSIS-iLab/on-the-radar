@@ -60,7 +60,7 @@ Theoretically, HAPS platforms will require fewer system operators and cost less 
 
 [^3]: Anthony Colozza, “Initial Feasibility Assessment of a High Altitude Long Endurance Airship,” NASA Cent. Aerosp. Inf. 2003.
 
-[^4]: David Grace and Mihael Mohoric, “Broadband Communications via High-Altitude Platforms,” 2010.
+[^4]: David Grace and Mihael Mohoric,“Broadband Communications via High-Altitude Platforms," 2010.
 
 [^5]: Mark Altaweel, "High Altitude Pseudo-Satellites," GIS Lounge, February 22, 2018. [https://www.gislounge.com/high-altitude-pseudo-satellites/](https://doi.org/10.1016/j.microrel.2018.03.032 "https://doi.org/10.1016/j.microrel.2018.03.032"); J. Gonzalo, D. López, D. Domínguez, A. García & A. Escapa, “On the capabilities and limitations of high-altitude pseudo-satellites,” Prog. Aerosp. Sci. 1–20 (2018). doi:10.1016/j.paerosci.2018.03.006
 
