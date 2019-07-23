@@ -54,26 +54,26 @@ Theoretically, HAPS platforms will require fewer system operators and cost less 
 
 ***
 
-\[^1\]: The launching of USSR’s Sputnik 1 in 1957 marked the start of the Space Age.
+[^1]: The launching of USSR’s Sputnik 1 in 1957 marked the start of the Space Age.
 
-\[^2\]: Benkuan Wang, Datong Liu, Wenjuan Wang, & Xiyuan Peng, “A hybrid approach for UAV flight data estimation and prediction based on flight mode recognition,” _Microelectronics Reliability_, Vol. 84, March 2018, 253–262, [https://doi.org/10.1016/j.microrel.2018.03.032](https://doi.org/10.1016/j.microrel.2018.03.032 "https://doi.org/10.1016/j.microrel.2018.03.032")
+[^2]: Benkuan Wang, Datong Liu, Wenjuan Wang, & Xiyuan Peng, “A hybrid approach for UAV flight data estimation and prediction based on flight mode recognition,” _Microelectronics Reliability_, Vol. 84, March 2018, 253–262, [https://doi.org/10.1016/j.microrel.2018.03.032](https://doi.org/10.1016/j.microrel.2018.03.032 "https://doi.org/10.1016/j.microrel.2018.03.032")
 
-\[^3\]: Anthony Colozza, “Initial Feasibility Assessment of a High Altitude Long Endurance Airship,” NASA Cent. Aerosp. Inf. 2003.
+[^3]: Anthony Colozza, “Initial Feasibility Assessment of a High Altitude Long Endurance Airship,” NASA Cent. Aerosp. Inf. 2003.
 
-\[^4\]: David Grace and Mihael Mohoric, “Broadband Communications via High-Altitude Platforms,” 2010.
+[^4]: David Grace and Mihael Mohoric, “Broadband Communications via High-Altitude Platforms,” 2010.
 
-\[^5\]: Mark Altaweel, "High Altitude Pseudo-Satellites," GIS Lounge, February 22, 2018. [https://www.gislounge.com/high-altitude-pseudo-satellites/](https://doi.org/10.1016/j.microrel.2018.03.032 "https://doi.org/10.1016/j.microrel.2018.03.032"); J. Gonzalo, D. López, D. Domínguez, A. García & A. Escapa, “On the capabilities and limitations of high-altitude pseudo-satellites,” Prog. Aerosp. Sci. 1–20 (2018). doi:10.1016/j.paerosci.2018.03.006
+[^5]: Mark Altaweel, "High Altitude Pseudo-Satellites," GIS Lounge, February 22, 2018. [https://www.gislounge.com/high-altitude-pseudo-satellites/](https://doi.org/10.1016/j.microrel.2018.03.032 "https://doi.org/10.1016/j.microrel.2018.03.032"); J. Gonzalo, D. López, D. Domínguez, A. García & A. Escapa, “On the capabilities and limitations of high-altitude pseudo-satellites,” Prog. Aerosp. Sci. 1–20 (2018). doi:10.1016/j.paerosci.2018.03.006
 
-\[^6\]: Ibid. 
+[^6]: Ibid. 
 
-\[^7\]: Airbus Defense and Space, "Airbus Zephyr Solar High Altitude Pseudo-Satellite Flies for Longer than Any Other Air-craft during Its Successful Maiden Flight," _Airbus_, August 8, 2018. [https://www.airbus.com/newsroom/press-releases/en/2018/08/Airbus-Zephyr-Solar-High-Altitude-Pseudo-Satellite-flies-for-longer-than-any-other-aircraft.html.](https://doi.org/10.1016/j.microrel.2018.03.032 "https://doi.org/10.1016/j.microrel.2018.03.032")
+[^7]: Airbus Defense and Space, "Airbus Zephyr Solar High Altitude Pseudo-Satellite Flies for Longer than Any Other Air-craft during Its Successful Maiden Flight," _Airbus_, August 8, 2018. [https://www.airbus.com/newsroom/press-releases/en/2018/08/Airbus-Zephyr-Solar-High-Altitude-Pseudo-Satellite-flies-for-longer-than-any-other-aircraft.html.](https://doi.org/10.1016/j.microrel.2018.03.032 "https://doi.org/10.1016/j.microrel.2018.03.032")
 
-\[^8\]: "High-flying Bird: Zephyr Remains in the Vanguard of Solar-powered Flight," _Jane's International Defense Review_, 2017, [https://www.janes.com/images/assets/459/72459/High-flying_bird_Zephyr_remains_in_the_vanguard_of_solar-powered_flight.pdf.](https://doi.org/10.1016/j.microrel.2018.03.032 "https://doi.org/10.1016/j.microrel.2018.03.032")
+[^8]: "High-flying Bird: Zephyr Remains in the Vanguard of Solar-powered Flight," _Jane's International Defense Review_, 2017, [https://www.janes.com/images/assets/459/72459/High-flying_bird_Zephyr_remains_in_the_vanguard_of_solar-powered_flight.pdf.](https://doi.org/10.1016/j.microrel.2018.03.032 "https://doi.org/10.1016/j.microrel.2018.03.032")
 
-\[^9\]: Airbus Defense and Space, "Airbus Zephyr Solar High Altitude Pseudo-Satellite Flies for Longer than Any Other Air-craft during Its Successful Maiden Flight," August 8, 2018. [https://www.airbus.com/newsroom/press-releases/en/2018/08/Airbus-Zephyr-Solar-High-Altitude-Pseudo-Satellite-flies-for-longer-than-any-other-aircraft.html.](https://doi.org/10.1016/j.microrel.2018.03.032 "https://doi.org/10.1016/j.microrel.2018.03.032")
+[^9]: Airbus Defense and Space, "Airbus Zephyr Solar High Altitude Pseudo-Satellite Flies for Longer than Any Other Air-craft during Its Successful Maiden Flight," August 8, 2018. [https://www.airbus.com/newsroom/press-releases/en/2018/08/Airbus-Zephyr-Solar-High-Altitude-Pseudo-Satellite-flies-for-longer-than-any-other-aircraft.html.](https://doi.org/10.1016/j.microrel.2018.03.032 "https://doi.org/10.1016/j.microrel.2018.03.032")
 
-\[^10\]: Kendall Russell, "High-Altitude Pseudo Satellite Market to Grow 15% Over 5 Years," _Via Satellite_, October 09 2017, [https://www.satellitetoday.com/innovation/2017/10/09/high-altitude-pseudo-satellite-market-grow-15-5-years/.](https://doi.org/10.1016/j.microrel.2018.03.032 "https://doi.org/10.1016/j.microrel.2018.03.032")
+[^10]: Kendall Russell, "High-Altitude Pseudo Satellite Market to Grow 15% Over 5 Years," _Via Satellite_, October 09 2017, [https://www.satellitetoday.com/innovation/2017/10/09/high-altitude-pseudo-satellite-market-grow-15-5-years/.](https://doi.org/10.1016/j.microrel.2018.03.032 "https://doi.org/10.1016/j.microrel.2018.03.032")
 
-\[^11\]: Classification according to: Jesús Gonzalo, Deibi López, Diego Domínguez, Adrían García, and Alberto Escapa, “On the capabilities and limitations of high altitude pseudo-satellites.” Progress in Aerospace Sciences, 98 (2018): 37-56.
+[^11]: Classification according to: Jesús Gonzalo, Deibi López, Diego Domínguez, Adrían García, and Alberto Escapa, “On the capabilities and limitations of high altitude pseudo-satellites.” Progress in Aerospace Sciences, 98 (2018): 37-56.
 
-\[^12\]: For a definition of latency, see: Margaret Rouse, “Latency,” [WhatIs.com](http://WhatIs.com), [https://whatis.techtarget.com/definition/latency](https://doi.org/10.1016/j.microrel.2018.03.032 "https://doi.org/10.1016/j.microrel.2018.03.032"); Phillip Olla (ed.), _Space technologies for the benefit of human society and earth_. Springer Science & Business Media, 2009.
+[^12]: For a definition of latency, see: Margaret Rouse, “Latency,” [WhatIs.com](http://WhatIs.com), [https://whatis.techtarget.com/definition/latency](https://doi.org/10.1016/j.microrel.2018.03.032 "https://doi.org/10.1016/j.microrel.2018.03.032"); Phillip Olla (ed.), _Space technologies for the benefit of human society and earth_. Springer Science & Business Media, 2009.
