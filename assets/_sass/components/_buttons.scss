@@ -23,7 +23,17 @@
   }
 
   &-download {
-    display: table;
-    margin: auto;
+    display: block;
+    width: fit-content;
+    margin: 1rem auto;
+
+    &:hover {
+      color: $color__white;
+      background-color: $color__orange;
+    }
+
+    span {
+      font-style: italic;
+    }
   }
 }

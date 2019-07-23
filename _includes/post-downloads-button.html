@@ -5,6 +5,6 @@
 
 {% if downloads.size > 0 %}
   {% for download in downloads %}
-    <a class="btn btn-download" href="{{ download.media_upload }}">{{ download.label }} <i class="icon icon-download"></i></a>
+    <a class="btn btn-download" href="{{ download.media_upload }}">{{ site.data.language.details.download }} <span>{{ download.label }}</span> <i class="icon icon-download"></i></a>
   {% endfor %}
 {% endif %}
