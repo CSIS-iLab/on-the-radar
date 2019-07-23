@@ -9,15 +9,15 @@ details:
 title: China's Strategic Situational Awareness Capabilities
 date: 2019-05-31T04:00:00.000+00:00
 excerpt: China has invested considerably in advancing its capabilities for strategic
-  situational awareness.\[^1\] Although traditional shortcomings in strategic early
-  warning have been a serious concern for China, the People’s Liberation Army (PLA)
-  today is developing a more mature architecture that could enhance its capability
-  to undertake nuclear counterattack and conventional operations. Although the improvement
-  of capabilities for early warning and situational awareness will remain a challenge
-  for the PLA,\[^2\] these capabilities today encompass a growing number of satellites
-  for remote sensing and electronic intelligence (ELINT), large, phased array radars
-  and a range of other radars that are increasingly sophisticated, and early warning
-  aircraft, as well as unmanned systems.
+  situational awareness.Although traditional shortcomings in strategic early warning
+  have been a serious concern for China, the People’s Liberation Army (PLA) today
+  is developing a more mature architecture that could enhance its capability to undertake
+  nuclear counterattack and conventional operations. Although the improvement of capabilities
+  for early warning and situational awareness will remain a challenge for the PLA,
+  these capabilities today encompass a growing number of satellites for remote sensing
+  and electronic intelligence (ELINT), large, phased array radars and a range of other
+  radars that are increasingly sophisticated, and early warning aircraft, as well
+  as unmanned systems.
 authors:
 - _authors/elsa-kania.md
 brief_type: Country Profile
