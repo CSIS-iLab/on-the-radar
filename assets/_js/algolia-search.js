@@ -342,11 +342,25 @@ const addTopicTypeRelatedBriefFilter = () => {
           let refinementCount = refinements.length
 
           if (refinementCount) {
-            document.querySelector(container).style.paddingBottom = '0.8rem'
+            document
+              .querySelector(container)
+              .previousElementSibling.classList.add(
+                'refinement-label--is-refined'
+              )
+            document
+              .querySelector(container)
+              .classList.add('refinement-count--is-refined')
 
             return `${refinementCount} applied`
           } else {
-            document.querySelector(container).style.paddingBottom = '1.5rem'
+            document
+              .querySelector(container)
+              .previousElementSibling.classList.remove(
+                'refinement-label--is-refined'
+              )
+            document
+              .querySelector(container)
+              .classList.remove('refinement-count--is-refined')
 
             return null
           }
@@ -492,7 +506,7 @@ const addDetailsRefinement = () => {
         attributeName: `details.${facet}`,
         operator: 'or',
         collapsible: {
-          collapsed: true
+          collapsed: facet === 'type' && !breakpoints.isMobile() ? false : true
         },
         templates: {
           header: `${facet.replace(
@@ -525,15 +539,25 @@ const addDetailsRefinement = () => {
           let refinementCount = refinements.length
 
           if (refinementCount) {
-            document.querySelector(
-              '.archive__sidebar #filter__count'
-            ).style.paddingBottom = '0.8rem'
+            document
+              .querySelector('.archive__sidebar #filter__count')
+              .previousElementSibling.classList.add(
+                'refinement-label--is-refined'
+              )
+            document
+              .querySelector('.archive__sidebar #filter__count')
+              .classList.add('refinement-count--is-refined')
 
             return `${refinementCount} applied`
           } else {
-            document.querySelector(
-              '.archive__sidebar #filter__count'
-            ).style.paddingBottom = '1.5rem'
+            document
+              .querySelector('.archive__sidebar #filter__count')
+              .previousElementSibling.classList.remove(
+                'refinement-label--is-refined'
+              )
+            document
+              .querySelector('.archive__sidebar #filter__count')
+              .classList.remove('refinement-count--is-refined')
 
             return null
           }

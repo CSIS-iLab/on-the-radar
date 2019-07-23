@@ -83,6 +83,10 @@
   color: $color__black;
   font-family: $font__lato;
   line-height: 1.43;
+
+  @include breakpoint($break: 'medium', $dir: 'max-width') {
+    @include font-size(15px);
+  }
 }
 
 %facets__clear {
@@ -464,8 +468,22 @@
     line-height: 1.33;
   }
 
-  a:hover {
-    color: $color__orange;
+  a {
+    &,
+    &:visited {
+      &::after {
+        color: $color__gray;
+        @include font-size(18px);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    &:hover {
+      &,
+      &::after {
+        color: $color__orange;
+      }
+    }
   }
 }
 

@@ -61,6 +61,7 @@
 .layout-archive:not(.archive--resources) .page__footer {
   @include breakpoint('medium') {
     margin-right: 0;
-    margin-left: sidebar-width('large');
+    margin-left: 0;
+    // margin-left: sidebar-width('large');
   }
 }

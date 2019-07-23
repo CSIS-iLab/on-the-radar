@@ -16,7 +16,7 @@
   </header>
   {% if include.hide_excerpt != true %}
     <section class="post-block__content">
-      <p>{{ post.excerpt }}</p>
+      <p>{{ post.excerpt | truncate: 340 }}</p>
     </section>
   {% endif %}
 </article>
