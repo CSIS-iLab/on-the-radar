@@ -30,7 +30,6 @@ downloads:
 - label: Quantum Computing Primer
   media_upload: ''
 featured_on_home: false
-published: false
 
 ---
 ##### Introduction
