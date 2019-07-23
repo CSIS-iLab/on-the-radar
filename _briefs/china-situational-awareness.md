@@ -8,11 +8,11 @@ details:
   - China
 title: China's Strategic Situational Awareness Capabilities
 date: 2019-05-31T04:00:00.000+00:00
-excerpt: China has invested considerably in advancing its capabilities for strategic
-  situational awareness. Although traditional shortcomings in strategic early warning
-  have been a serious concern for China, the People’s Liberation Army (PLA) today
-  is developing a more mature architecture that could enhance its capability to undertake
-  nuclear counterattack and conventional operations.
+excerpt: 'China has invested considerably in advancing its strategic situational awareness
+  capabilities. Although shortcomings in strategic early warning have been a serious
+  concern for China, the People''s Liberation Army is developing a more mature architecture
+  that could enhance its capability to undertake nuclear counterattack and conventional
+  operations. '
 authors:
 - _authors/elsa-kania.md
 brief_type: Country Profile
