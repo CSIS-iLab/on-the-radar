@@ -25,17 +25,12 @@ layout: default
   </section>
   <section class="home__ssa">
     <div class="section__bg">
-      <img srcset="
-        {{ '/assets/images/home/earth-bg_small.jpg' | relative_url }} 700w,
-        {{ '/assets/images/home/earth-bg_medium.jpg' | relative_url }} 950w,
-        {{ '/assets/images/home/earth-bg_large.jpg' | relative_url }} 1150w,
-        {{ '/assets/images/home/earth-bg_xlarge.jpg' | relative_url }} 1600w
-      " sizes="
-        (max-width: 700px) 700px,
-        (max-width: 950px) 950px,
-        (max-width: 1150px) 1150px,
-        1600px
-      " src="{{ '/assets/images/home/earth-bg_large.jpg' | relative_url }}" alt="" />
+      <picture>
+        <source media="(max-width: 700px)" srcset="{{ '/assets/images/home/earth-bg_small.jpg' | relative_url }}">
+        <source media="(max-width: 950px)" srcset="{{ '/assets/images/home/earth-bg_medium.jpg' | relative_url }}">
+        <source media="(max-width: 1150px)" srcset="{{ '/assets/images/home/earth-bg_large.jpg' | relative_url }}">
+        <img src="{{ '/assets/images/home/earth-bg_xlarge.jpg' | relative_url }}" alt="" />
+      </picture>
     </div>
     <div class="section__content">
       <h2 class="section__title">
@@ -110,17 +105,12 @@ layout: default
   </section>
   <section class="home__space">
     <div class="section__bg">
-      <img srcset="
-        {{ '/assets/images/home/spacex-bg_small.jpg' | relative_url }} 700w,
-        {{ '/assets/images/home/spacex-bg_medium.jpg' | relative_url }} 950w,
-        {{ '/assets/images/home/spacex-bg_large.jpg' | relative_url }} 1150w,
-        {{ '/assets/images/home/spacex-bg_xlarge.jpg' | relative_url }} 1600w
-      " sizes="
-        (max-width: 700px) 700px,
-        (max-width: 950px) 950px,
-        (max-width: 1150px) 1150px,
-        1600px
-      " src="{{ '/assets/images/home/spacex-bg_large.jpg' | relative_url }}" alt="" />
+      <picture>
+        <source media="(max-width: 700px)" srcset="{{ '/assets/images/home/spacex-bg_small.jpg' | relative_url }}">
+        <source media="(max-width: 950px)" srcset="{{ '/assets/images/home/spacex-bg_medium.jpg' | relative_url }}">
+        <source media="(max-width: 1150px)" srcset="{{ '/assets/images/home/spacex-bg_large.jpg' | relative_url }}">
+        <img src="{{ '/assets/images/home/spacex-bg_xlarge.jpg' | relative_url }}" alt="" />
+      </picture>
     </div>
     <div class="section__content">
       <p class="home__space-desc">{{ site.data.language.home.space.quote | prepend: '"' | append: '"' }}</p>
