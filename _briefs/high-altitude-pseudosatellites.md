@@ -17,7 +17,7 @@ details:
   country:
   - United States
 title: High Altitude Pseudosatellites
-date: 2019-07-11T04:00:00.000+00:00
+date: 2019-06-06 04:00:00 +0000
 excerpt: This primer focuses on multi-mission military unmanned High Altitude Pseudo-Satellites
   (HAPS). HAPS fill an existing gap between lower-altitude Unmanned Aerial Vehicles
   (UAVs) and conventional satellites that are unable to loiter in place, and have
