@@ -193,19 +193,40 @@
   }
 
   &__timeline {
+    position: relative;
+    align-self: start;
+    width: 100%;
+
     @include breakpoint('medium') {
       max-width: 400px;
       margin: 0 auto;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: calc(15% + (2.25rem / 2));
+      width: 1px;
+      height: 2rem;
+      opacity: 0.7;
+    }
+
+    &::before {
+      top: -2rem;
+      /* prettier-ignore */
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), $color__white);
+    }
+
+    &::after {
+      top: 100%;
+      /* prettier-ignore */
+      background-image: linear-gradient(to bottom, $color__white, rgba(255, 255, 255, 0));
     }
   }
 }
 
 .timeline {
-  position: relative;
-
-  // &::before {
-  // }
-
   &__row {
     $gap: 2.25rem;
     $gap-half: $gap / 2;
@@ -214,6 +235,11 @@
     grid-gap: $gap;
     grid-template-columns: 15% auto;
     align-content: start;
+    padding-bottom: 1.5rem;
+
+    &:last-of-type() {
+      padding-bottom: 0;
+    }
 
     &::before {
       content: '';
@@ -240,7 +266,6 @@
       background-clip: content-box;
       border: 1px solid $color__white;
       border-radius: 50%;
-      // box-shadow: 0 0 0 1px transparent, 0 0 0 1px $color__white;
       transition: border 0.3s ease-in-out;
     }
 
@@ -250,8 +275,8 @@
       }
     }
 
-    // TODO: Move hover to title only, but trigger year transition as well
-    &:hover {
+    // Hover effects triggered via JS
+    &.js-event-hover {
       &::after {
         border-color: transparent;
       }
@@ -272,6 +297,10 @@
 
       .timeline__year {
         color: $color__white;
+      }
+
+      .timeline__details {
+        display: block;
       }
     }
 
@@ -317,10 +346,6 @@
     text-align: right;
   }
 
-  &__content {
-    margin-bottom: 1.5rem;
-  }
-
   &__title {
     margin: 0;
     padding: 0;
@@ -333,12 +358,23 @@
     background: transparent;
     border: 0;
     appearance: none;
+
+    /* stylelint-disable */
+    &.js-toggle_timeline_details {
+      cursor: pointer;
+    }
+    /* stylelint-enable */
   }
 
   &__details {
+    display: none;
     margin-top: 0.75rem;
     color: #bec3c6;
     @include font-size(16px);
+
+    p {
+      margin-bottom: 1rem;
+    }
   }
 
   &__year-desc {

@@ -69,7 +69,7 @@ layout: default
               {%- if event.category == 'general' -%}
                <span class="timeline__title">{{ event.title }}</span>
               {%- else -%}
-              <button class="timeline__title">
+              <button class="timeline__title js-toggle_timeline_details" aria-pressed="false" aria-label="More details about {{ event.title }}">
                 {{ event.title }}
               </button>
               <div class="timeline__details">
