@@ -3,8 +3,7 @@
 
   &::before {
     @extend %homebg;
-    background-color: $color__home-navy-grad;
-    background-image: linear-gradient(to bottom, #0e273c, $color__navy);
+    background: #001a28;
   }
 
   .section__title {
