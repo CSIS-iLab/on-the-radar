@@ -19,7 +19,7 @@ featured: false
 featured_on_home: true
 
 ---
-Introduction
+##### Introduction
 
 For most of the nuclear age, enhanced strategic situational awareness (SA)—the ability to characterize the operating environment, detect attacks of strategic significance (whether conventional or nuclear), and discern real attacks from false alarms—has been viewed as an unqualified benefit to strategic stability.[^1] By improving the accuracy and timeliness of warning, increasing visibility and clarity as to adversary actions, and extending decision time in crisis, enhanced situational awareness reduces the risk of miscalculation and alleviates use or lose pressure that could incentivize a nuclear first strike. Moreover, for the conventional war fight information dominance had no imaginable downsides. But can there be too much of a good thing?
 
@@ -27,7 +27,7 @@ Today, potential and existing technology offers the prospect of previously unima
 
 The transformational nature of this emerging strategic SA landscape suggests a re-look is necessary to consider the risks and challenges of these emerging capabilities, especially when employed between nuclear-armed states in crisis or conflict. To effectively manage crisis escalation, decisionmakers must understand the changing relationship between mechanistic improvements to strategic SA and crisis stability.
 
-**The Traditional Strategic Situational Awareness Environment (1950-1990)**
+##### The Traditional Strategic Situational Awareness Environment (1950-1990)
 
 The traditional strategic SA environment was first developed during the Cold War and was focused on understanding an adversary’s nuclear systems and nuclear force posture. It consisted of early warning radars and satellites, as well as hydrophones to detect ballistic missile submarines. Specific systems in the traditional environment included the Defense Support Program (DSP) Satellites, the Ballistic Missile Early Warning System (BMEWS), and the Navy’s sound surveillance system, or SOSUS.[^2] Together, these systems were central to providing situational awareness in the nuclear domain.
 
@@ -39,7 +39,7 @@ The clear line between SA systems used for conventional and nuclear missions als
 
 Generally speaking, the secure and compartmentalized nature of the traditional SA environment led to high confidence in the information these systems provided, limited their vulnerability to attack and manipulation, and reduced the chances of miscalculation. As a result, these systems came to be viewed as contributing positively to strategic stability by ensuring confidence in the durability of the overall nuclear deterrent and reducing risks of premature or miscalculated nuclear use.
 
-**The Transitional Strategic SA Environment (1990-2020)**
+##### The Transitional Strategic SA Environment (1990-2020)
 
 In the traditional SA environment, critical warning-related information could be obtained without incurring significant escalatory risk, specifically, without driving parties closer to the nuclear brink. However, the security and strategic SA environments have changed dramatically in the last two decades, potentially upsetting past assumptions about the compartmentalization of nuclear and conventional SA systems and the stabilizing nature of transparency.
 
@@ -53,7 +53,7 @@ At the same time, countries have invested in SA capabilities that were designed 
 
 The blurring between the nuclear and conventional SA spaces is particularly dangerous because the likelihood of both conventional conflict and sub-conventional activities between nuclear-armed adversaries is growing. Nuclear-armed states are relying more on gray zone tactics such as economic coercion, cyber techniques, proxy forces, terrorism and information operations to achieve their geopolitical goals. At the same time, conflict dynamics in Syria, Ukraine, Kashmir, the Korean Peninsula, the Baltics, Taiwan, the South China Sea, and Doklam all demonstrate the potential for conventional conflict between nuclear-armed states. In both sub-conventional and conventional conflicts, nuclear armed states will rely on SA tools to gain an advantage. However, the increasingly interdependent, dual-use nature of the SA ecosystem means that the SA space may provide an unrecognized or unexpected pathway to nuclear escalation.
 
-**The Emerging Strategic Situational Awareness Environment (2020 forward)**
+##### The Emerging Strategic Situational Awareness Environment (2020 forward)
 
 The emerging strategic SA environment will be even more networked, dual-use and codependent than the transitional one. Distinctions or firebreaks between conventional and strategic situational awareness will all but disappear, creating a highly networked, real-time, dual-use landscape that is both murkier and more complex across all levels of conflict—sub-conventional, conventional, and strategic.
 
