@@ -9,12 +9,11 @@ details:
   risk_factors: []
   domain: []
 date: 2019-04-19T04:00:00.000+00:00
-excerpt: The United States has advanced strategic situational awareness capabilities
-  across all domains of conflict that help to characterize the operating environment,
-  detect and respond to attacks, and discern actual attacks from false alarms. Over
-  the last thirty to forty years, technological advances have made these capabilities
-  more important at the tactical and operational levels, and situational awareness
-  has become critical to U.S. military doctrine and planning.
+excerpt: 'The United States has extensive and mature strategic situational awareness
+  capabilities across all domains (air, land, maritime, space, and cyber) that help
+  to characterize the operating environment, detect and respond to attacks, and discern
+  actual attacks from false alarms across the spectrum of conflict, both conventional
+  and nuclear. '
 authors:
 - _authors/rhys-mccormick.md
 brief_type: Country Profile
