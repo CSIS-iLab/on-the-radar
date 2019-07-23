@@ -34,6 +34,7 @@ image_source: ''
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865065/on-the-radar/Artificial%20Intelligence%20Analysis%20Primer.pdf
   label: AI Analysis Primer
+featured_on_home: false
 
 ---
 Political, military, and corporate leaders from around the world continue to highlight the significance of artificial intelligence (AI). After Canada became the first country to release its AI strategy in 2017, 18 countries have followed suit in some capacity—nine have fully funded strategies, and nine have produced guiding documents.[^1] The United States recently joined this group with the president signing an executive order that details a coordinated federal strategy regarding AI.[^2] Despite substantial discussion and attention to the topic, there is no universal agreement on the definition of “artificial intelligence”; however, commentators broadly agree that AI is the scientific field concerned with algorithms and that it consists of several sub-disciplines. Since AI has applications for an incredibly large and diverse amount of commercial, military, and intelligence missions, some researchers have narrowed their analysis of AI by categorizing it as an enabling technology and comparing it to the steam engine or electricity.[^3] 
