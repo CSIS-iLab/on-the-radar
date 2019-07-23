@@ -67,6 +67,14 @@
       width: 100%;
     }
   }
+
+  .js-parallax {
+    --scrollparallax: 0;
+
+    @include breakpoint('medium') {
+      transform: translateY(calc(var(--scrollparallax) * 1px));
+    }
+  }
 }
 
 @import 'home-intro';

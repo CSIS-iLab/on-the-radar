@@ -28,6 +28,11 @@
     @include breakpoint('medium') {
       padding-top: 9.375rem;
     }
+
+    @include breakpoint('large') {
+      margin-top: -8rem; // Offset parallax effect
+      padding-top: 0;
+    }
   }
 
   .section__bg {
