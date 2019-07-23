@@ -1,16 +1,15 @@
 ---
-title: United States Strategic Situational Awareness Capabilities
+title: United States' Strategic Situational Awareness Capabilities
 details:
   Type: []
   country:
-    - United States
+  - United States
   type: []
   characteristics: []
   risk_factors: []
   domain: []
 date: 2019-04-19T04:00:00.000+00:00
-excerpt:
-  'The United States has extensive and mature strategic situational awareness
+excerpt: 'The United States has extensive and mature strategic situational awareness
   capabilities across all domains (air, land, maritime, space, and cyber) that help
   to characterize the operating environment, detect and respond to attacks, and discern
   actual attacks from false alarms across the spectrum of conflict, both conventional
@@ -20,33 +19,32 @@ excerpt:
   have enabled more granular tracking and detection of enemy forces and communications
   and coordination between different sensors and shooters to devastating effect. '
 authors:
-  - _authors/rhys-mccormick.md
+- _authors/rhys-mccormick.md
 brief_type: Country Profile
 keywords:
-  - Synthetic Aperture Sonar
-  - Keyword 1
-  - Drone
-  - Hydrophones
-  - Synthetic Aperture Sonar
-  - Anti-Submarine Warfare (ASW)
-  - Keyword 2
-  - Unmanned
-  - Hydrophones
-  - Anti-Submarine Warfare (ASW)
-  - Synthetic Aperture Sonar
+- Synthetic Aperture Sonar
+- Keyword 1
+- Drone
+- Hydrophones
+- Synthetic Aperture Sonar
+- Anti-Submarine Warfare (ASW)
+- Keyword 2
+- Unmanned
+- Hydrophones
+- Anti-Submarine Warfare (ASW)
+- Synthetic Aperture Sonar
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1563295169/on-the-radar/EW3.jpg
-image_caption:
-  An E-3 Sentry Airborne Warning and Control System aircraft departs
-  July 11, 2019, at Travis Air Force Base, California.
-image_source:
-  Photo by Heide Couch, 60th Air Mobility Wing Public Affairs, U.S. Air
+image_caption: An E-3 Sentry Airborne Warning and Control System aircraft departs
+  July 11, 2019, at Travis Air Force Base, California. (Photo by Heide Couch, 60th
+  Air Mobility Wing Public Affairs, U.S. Air Force)
+image_source: Photo by Heide Couch, 60th Air Mobility Wing Public Affairs, U.S. Air
   Force
 downloads:
-  - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562604429/on-the-radar/US%20strategic%20SA.pdf
-    label: US Strategic SA
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562604429/on-the-radar/US%20strategic%20SA.pdf
+  label: US Strategic SA
 featured_on_home: true
----
 
+---
 The United States has extensive and mature strategic situational awareness capabilities across all domains (air, land, maritime, space, and cyber) that help to characterize the operating environment, detect and respond to attacks, and discern actual attacks from false alarms across the spectrum of conflict, both conventional and nuclear. The U.S. military has always relied on these capabilities at the strategic level, but over the last thirty to forty years these capabilities have increasingly become more important at the tactical and operational level as technological advances have enabled more granular tracking and detection of enemy forces and communications and coordination between different sensors and shooters to devastating effect. This combination of situational awareness capabilities across all three levels of war and all domains has provided the United States unrivaled strategic situational awareness and has become a lynchpin of U.S. military doctrine and planning. However, the enemy gets a vote, and potential adversaries like China and Russia have focused on enhancing their own strategic situational awareness capabilities and developing ways to disrupt, degrade, and destroy U.S. strategic situational awareness.
 
 ##### Historical Developments
