@@ -9,6 +9,20 @@
     border-top: 0;
   }
 
+  &[data-content-type='resources'] {
+    position: relative;
+    border-top: 0;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2rem;
+      width: 100px;
+      height: 1px;
+      background-color: $color__gray;
+    }
+  }
+
   &__featured {
     margin-right: 0.5rem;
     @extend %post-block__featured;

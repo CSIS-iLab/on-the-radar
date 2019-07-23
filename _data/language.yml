@@ -27,6 +27,7 @@ published: Published
 last_updated: Last Updated
 event_date: Event Date
 featured: Featured
+topic: Topics
 archive:
   search_placeholder: Search
   oldest: Oldest
