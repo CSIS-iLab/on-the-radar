@@ -13,8 +13,8 @@ excerpt: The United States has advanced strategic situational awareness capabili
   across all domains of conflict that help to characterize the operating environment,
   detect and respond to attacks, and discern actual attacks from false alarms. Over
   the last thirty to forty years, technological advances have made these capabilities
-  more important at the tactical and operational levels, and has become critical to
-  U.S. military doctrine and planning.
+  more important at the tactical and operational levels, and situational awareness
+  has become critical to U.S. military doctrine and planning.
 authors:
 - _authors/rhys-mccormick.md
 brief_type: Country Profile
