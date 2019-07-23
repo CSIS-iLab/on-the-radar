@@ -117,8 +117,11 @@
   &--hidden {
     visibility: hidden;
     opacity: 0;
+
     .wrapper--expanded {
-      height: header-height('minimal');
+      @include breakpoint('large-3') {
+        height: header-height('minimal');
+      }
     }
   }
 
