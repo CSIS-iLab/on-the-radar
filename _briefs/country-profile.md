@@ -52,14 +52,8 @@ At the end of the Cold War, the success of the Second Offset’s reconnaissance-
 
 ---
 
-[^1]:
+[^1]:  David Alan Rosenberg*,* “U.S. Nuclear War Planning, 1945-1960” in _Strategic Nuclear Targeting,_ ed. Desmond Ball and Jeffery Richelson (Ithaca, New York: 1986), p. 65.
 
-  David Alan Rosenberg*,* “U.S. Nuclear War Planning, 1945-1960” in _Strategic Nuclear Targeting,_ ed. Desmond Ball and Jeffery Richelson (Ithaca, New York: 1986), p. 65.
+[^2]:  The effectiveness of the Arab armies’ usage of precision-guided munitions and surface-to-air missile systems to destroy Israeli tanks and aircrafts during the 1973 Yom Kippur War forced military planners to re-think fundamental assumptions such as tanks only being capable of killing tanks, and the viability of air-delivered tactical nuclear weapons.
 
-[^2]:
-
-  The effectiveness of the Arab armies’ usage of precision-guided munitions and surface-to-air missile systems to destroy Israeli tanks and aircrafts during the 1973 Yom Kippur War forced military planners to re-think fundamental assumptions such as tanks only being capable of killing tanks, and the viability of air-delivered tactical nuclear weapons.
-
-[^3]:
-
-  William J. Perry, “Desert Storm and Deterrence”, _Foreign Affairs,_ Vol. 70, No. 4 (Fall, 1991), p. 68.
+[^3]:  William J. Perry, “Desert Storm and Deterrence”, _Foreign Affairs,_ Vol. 70, No. 4 (Fall, 1991), p. 68.
