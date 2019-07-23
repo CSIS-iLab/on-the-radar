@@ -28,7 +28,7 @@ keywords:
 - Anti-Submarine Warfare (ASW)
 - Drone
 - Unmanned
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1563908719/on-the-radar/OnTheRadar_illustration_AI_analysis.jpg
 image_caption: ''
 image_source: ''
 downloads:
