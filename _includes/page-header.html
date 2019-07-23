@@ -7,8 +7,12 @@
   {%- endif -%}
 
   {% assign content = content | strip_newlines %}
-  {%- if content != '' and page.layout != 'page'-%}
-    <div class="page__desc">{{ content }}</div>
+  {%- if content != '' and page.layout != 'page' -%}
+    {%- if page.collection == 'authors' -%}
+      <div class="page__desc">{{ page.role }}</div>
+    {%- else -%}
+      <div class="page__desc">{{ content }}</div>
+    {%- endif -%}
   {%- endif -%}
   {%- if page.social_in_header -%}
     {%- include social-share.html -%}

@@ -326,6 +326,10 @@
     @include breakpoint($break: 'large-3') {
       padding-bottom: 3.444rem;
     }
+
+    > p {
+      margin-bottom: 3.5rem;
+    }
   }
 
   &__featured,
