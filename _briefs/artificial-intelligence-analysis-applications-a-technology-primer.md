@@ -22,7 +22,7 @@ excerpt: Artificial intelligence (AI) applications have the potential to signifi
   data mining, data fusion methods, front-line analysis, and predictive analytics.
 authors:
 - _authors/nate-frierson.md
-- _authors/lizamaria-aria.md
+- _authors/lizamaria-arias.md
 brief_type: Tech Primer
 keywords:
 - Anti-Submarine Warfare (ASW)
