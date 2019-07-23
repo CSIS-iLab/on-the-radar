@@ -25,7 +25,7 @@ const client = algoliasearch('7UNKAH6RMH', 'b9011cf7f49e60630161fcacf0e37d02')
 
 const indexName = 'on_the_radar'
 const searchParameters = {
-  hitsPerPage: 3,
+  hitsPerPage: dataset.collectionLabel === 'resources' ? 1000 : 10,
   disjunctiveFacets: ['brief_type']
 }
 
