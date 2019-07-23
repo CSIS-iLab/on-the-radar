@@ -1,5 +1,5 @@
 ---
-title: Second Test Post
+title: Second Test Post of the analysis type
 date: 2018-10-31T16:10:05.000+00:00
 excerpt:
   Nam placerat ante arcu, porta turpis sed tellus. Aliquet pellentesque consequat
@@ -24,8 +24,9 @@ keywords:
   - Anti-Submarine Warfare (ASW)
   - Synthetic Aperture Sonar
 related_briefs:
-- _briefs/unmanned-underwater-vehicle-uuv-systems-for-submarine-detection-a-technology-primer.md
-- _briefs/smallsats-a-technology-primer.md
+  - _briefs/unmanned-underwater-vehicle-uuv-systems-for-submarine-detection-a-technology-primer.md
+  - _briefs/resilient-communications.md
+  - _briefs/smallsats-a-technology-primer.md
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1542205462/on-the-radar/header-sample.jpg
 image_caption:
   Sample caption with a [link](https://fas.org/irp/nic/fishing.pdf).
@@ -33,8 +34,7 @@ image_caption:
   with a [link](https://fas.org/irp/nic/fishing.pdf). Sample caption with a [link](https://fas.org/irp/nic/fishing.pdf)
 image_source: Getty Images
 featured: true
-featured_on_home: false
-
+featured_on_home: true
 ---
 
 ## Erat nibh ut, tortor in

@@ -1,0 +1,32 @@
+.home__recent {
+  position: relative;
+  right: 50%;
+  left: 50%;
+  width: 100vw;
+  margin-right: -50vw;
+  margin-bottom: 5rem;
+  margin-left: -50vw;
+
+  @include breakpoint('medium') {
+    right: unset;
+    left: unset;
+    display: flex;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &::before {
+    @extend %homebg;
+    /* prettier-ignore */
+    background-image: linear-gradient(to bottom, #0e273c, rgba(14, 39, 60, 0));
+  }
+
+  .related-posts__block {
+    max-width: unset;
+
+    &:not(:last-child) {
+      margin-right: 0.75rem;
+    }
+  }
+}

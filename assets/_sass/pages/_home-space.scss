@@ -1,0 +1,56 @@
+.home__space {
+  position: relative;
+  padding-top: 6.25rem;
+  color: $color__white;
+  text-align: center;
+
+  &::before {
+    $sizes: ('medium', 'large', 'xlarge');
+    @extend %homebg;
+    background-color: #001a28;
+    background-image: url('../../images/home/spacex-bg_small.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @each $size in $sizes {
+      @include breakpoint($size) {
+        background-image: url('../../images/home/spacex-bg_#{$size}.jpg');
+      }
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc((100vw - 100%) / -2);
+    width: 100vw;
+    height: 100%;
+    /* prettier-ignore */
+    background-image: linear-gradient(180deg, #001a28 0%, rgba(22, 58, 89, 0) 50%, #0e273c 100%);
+  }
+
+  &-desc {
+    max-width: $home__content-width;
+    margin: 0 auto 1.5rem;
+    @include font-size(22px);
+    line-height: 1.36;
+
+    @include breakpoint('medium') {
+      @include font-size(24px);
+      line-height: 1.25;
+    }
+
+    @include breakpoint('medium') {
+      @include font-size(26px);
+    }
+
+  }
+
+  &-cite {
+    max-width: $home__content-width;
+    margin: 0 auto;
+    @include font-size(16px);
+    line-height: 1.4;
+  }
+}

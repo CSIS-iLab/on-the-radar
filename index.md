@@ -5,9 +5,8 @@
 layout: home
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Modern technologies have the potential to provide significant operational advantages by allowing unprecedented insight into adversary capabilities, activities, and potentially even intentions.
+
+These advanced capabilities can greatly enhance our situational awareness, but they can also introduce new risks, especially in crises or conflicts between nuclear-armed states.
+
+To make sound, strategic decisions, it is imperative to understand how these modern situational awareness systems and technologies could impact risk perceptions and crisis pathways by either creating incentives to escalate a crisis or heightening the potential for dangerous miscalculation. 

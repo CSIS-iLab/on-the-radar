@@ -1,0 +1,74 @@
+/*=============================
+=           Home Page         =
+=============================*/
+@charset "utf-8";
+
+// Import Styles
+@import '../abstracts/abstracts';
+
+%homebg {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc((100vw - 100%) / -2);
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+}
+
+.home {
+  max-width: $home__max-width;
+  margin-top: 4.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  color: $color__white;
+
+  @each $size, $value in $home__padding {
+    @if $size != 'small' {
+      @include breakpoint($size) {
+        padding-right: $value;
+        padding-left: $value;
+      }
+    } @else {
+      padding-right: $value;
+      padding-left: $value;
+    }
+  }
+
+  @include breakpoint('large') {
+    margin-top: 2rem;
+  }
+
+  .section__title {
+    @extend %home__section-title;
+    text-align: center;
+  }
+
+  .section__subtitle {
+    display: block;
+    @extend %home__section-subtitle;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.71;
+  }
+
+  .subsection__title {
+    @extend %home__subsection-title;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@import 'home-intro';
+
+@import 'home-ssa';
+
+@import 'home-ecosystem';
+
+@import 'home-space';
+
+@import 'home-matter';
+
+@import 'home-proj-nav';
+
+@import 'home-recent';

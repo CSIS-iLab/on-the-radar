@@ -9,7 +9,11 @@ $color__white: #fff;
 $color__orange: #f05e39;
 $color__orange-lighter: #fff1ed;
 $color__orange-light: #ffbfaf;
+$color__orange-med: #cf5132;
 $color__orange-dark: #ca3813;
+$color__orange-bright: #f50;
+$color__azul: #1761cf;
+$color__azul-lighter: #1a6de8;
 $color__blue: #163a59;
 $color__blue-dark: #0f283e;
 $color__astral: #247590;
@@ -22,9 +26,14 @@ $color__off-white: #f2f2f2;
 $color__gray-lighter: #e5e5e5;
 $color__gray-light: #ccc;
 $color__gray: #b2b2b2;
+$color__gray-medium: #656b60;
 $color__gray-dark: #6d6d6d;
 $color__gray-darker: #555;
 $color__off-black: #333;
+$color__purple: #7b3a90;
+$color__navy: #001a28;
+$color__yellow-34: rgba(245, 166, 35, 0.34);
+$color__home-navy-grad: #121212;
 
 $color__background-body: $color__blue-dark;
 $color__background-screen: $color__white;
@@ -111,4 +120,21 @@ $size__header-height: (
   'mobile': 60px,
   'minimal': 72px,
   'full': 160px
+);
+
+$home__max-width: 1312px;
+
+$home__content-width: 680px;
+
+$home__padding: (
+  'small': 1rem,
+  'medium': 2rem,
+  'large': 3.5rem
+);
+
+$home__event-types: (
+  'general': $color__gray-medium,
+  'nuclear': $color__azul-lighter,
+  'conventional': $color__orange,
+  'both': $color__purple
 );
