@@ -21,8 +21,7 @@
 
         {%- for author in authors -%}
           {%- assign author_info = site.authors | where: "relative_path", author | first -%}
-          {%- assign author_list = author_info.title -%}
-            <a href="{{ author_info.url }}">{{ author_list }}</a>
+            <a href="{{ author_info.url }}">{{ author_info.title }}</a>
           {%- if forloop.last == false -%}
             {{- list_break -}}
           {%- endif -%}
