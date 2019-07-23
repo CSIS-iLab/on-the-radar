@@ -18,7 +18,9 @@ details:
   - United States
 title: Remote Radiation Detection by Electromagnetic Air Breakdown
 date: 2018-09-15 04:00:00 +0000
-excerpt: ''
+excerpt: Emerging radiation sensing techniques that measure changes in the dielectric
+  properties of air may offer ultra-long-range radiation detection capabilities with
+  potential applications in counterforce targeting and counterproliferation.
 authors:
 - _authors/jake-hecla.md
 brief_type: Tech Primer
