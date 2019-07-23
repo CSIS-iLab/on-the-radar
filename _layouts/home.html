@@ -120,7 +120,15 @@ layout: default
   <section class="home__matter">
     <h2 class="section__title">{{ site.data.language.home.matter.title }}</h2>
     {{ site.data.language.home.matter.desc | markdownify }}
-    <div class="matter__divider">DIVIDER HERE</div>
+    <div class="matter__divider">
+      <svg viewBox="0 0 507 59" id="bracket" xmlns="http://www.w3.org/2000/svg">
+        <g id="bracket" stroke="#F05E39" fill="none" fill-rule="evenodd" stroke-linecap="square">
+          <path d="M0 59c5.932-14.333 15.749-21.5 29.45-21.5H217c19.5 0 31.333-12.5 35.5-37.5" />
+          <path d="M252.5 59c5.932-14.333 15.749-21.5 29.45-21.5H469.5C489 37.5 500.833 25 505 0"
+            transform="matrix(-1 0 0 1 757.5 0)" />
+        </g>
+      </svg>
+    </div>
     <div class="matter__subsections">
       {%- for subsection in site.data.language.home.matter.sections -%}
       <div class="matter__subsection">

@@ -71,7 +71,7 @@
   .js-parallax {
     --scrollparallax: 0;
 
-    @include breakpoint('medium') {
+    @include breakpoint('large') {
       transform: translateY(calc(var(--scrollparallax) * 1px));
     }
   }
