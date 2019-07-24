@@ -27,6 +27,8 @@ authors:
 - _authors/andrew-reddie.md
 brief_type: Tech Primer
 keywords:
+- Miscalculation
+- First-mover incentive
 - Information Complexity
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1542205462/on-the-radar/header-sample.jpg
 image_caption: ''
