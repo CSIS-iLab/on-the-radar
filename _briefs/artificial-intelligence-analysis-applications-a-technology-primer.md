@@ -34,7 +34,7 @@ downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865065/on-the-radar/Artificial%20Intelligence%20Analysis%20Primer.pdf
   label: AI Analysis Primer
 featured_on_home: false
-last-modified-date: 
+last-modified-date: 2019-04-03 04:00:00 +0000
 
 ---
 ##### Introduction
