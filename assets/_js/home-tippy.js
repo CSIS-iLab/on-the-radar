@@ -55,7 +55,6 @@ const formatContent = tip => {
   let tipRef = tip.reference
   let content = tipRef.dataset.vocab
   let splitcontent = content.split('')
-  console.log(splitcontent.length)
   let spans = '<span>' + splitcontent.join('</span><span>') + '</span>'
   let textContent =
     `<div class="definition"><div class="def-text"><div class="def-text-inner">` +
