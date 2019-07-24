@@ -65,8 +65,6 @@
   }
 
   &__filter-type {
-    display: flex;
-    flex-wrap: wrap;
     grid-area: filter-type;
     @include archive-padding;
     background-color: $color__gray-lighter;
@@ -76,9 +74,12 @@
     }
 
     @include breakpoint('medium') {
+      display: flex;
+      flex-wrap: wrap;
       padding-top: 20px;
       padding-bottom: 16px;
     }
+
     .ais-refinement-list--list {
       @include breakpoint('medium') {
         display: flex;
@@ -105,7 +106,7 @@
         @include font-size(12px);
       }
 
-      @include breakpoint($break: 'medium-2', $dir: 'max-width') {
+      @include breakpoint($break: 'medium', $until: 'large-2') {
         flex: 1 0 100%;
       }
 
@@ -115,7 +116,7 @@
       }
 
       &::after {
-        @include breakpoint('medium-2') {
+        @include breakpoint('large-2') {
           content: '';
           position: absolute;
           top: 0;
