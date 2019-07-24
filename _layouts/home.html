@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="home">
-  <section class="home__intro">
+  <section id="introduction" class="home__intro js-include-in-toc">
     <h1 class="page__title">
       <span class="page__subtitle">{{
         site.data.language.home.subtitle | escape
@@ -23,7 +23,7 @@ layout: default
     </section>
     {%- endif -%}
   </section>
-  <section class="home__ssa">
+  <section id="ssa" class="home__ssa js-include-in-toc">
     <div class="section__bg">
       <picture>
         <source media="(max-width: 700px)" srcset="{{ '/assets/images/home/earth-bg_small.jpg' | relative_url }}">
@@ -40,7 +40,7 @@ layout: default
       <div class="home__ssa-desc">Strategic situational awareness is the ability to <button class="vocab">observe</button> the operating environment, <button class="vocab">detect attacks,</button> and <button class="vocab">discern</button> actual attacks from false alarms across the <button class="vocab">spectrum of conflict.</button></div>
     </div>
   </section>
-  <section class="home__ecosystem">
+  <section id="ecosystem" class="home__ecosystem js-include-in-toc">
     <h2 class="section__title">
       <span class="section__subtitle">The Changing</span>
       Situational Awareness Ecosystem
@@ -117,7 +117,7 @@ layout: default
       <p class="home__space-cite">{{ site.data.language.home.space.citation | prepend: '&mdash;' }}</p>
     </div>
   </section>
-  <section class="home__matter">
+  <section id="matter" class="home__matter js-include-in-toc">
     <h2 class="section__title">{{ site.data.language.home.matter.title }}</h2>
     {{ site.data.language.home.matter.desc | markdownify }}
     <div class="matter__divider">
@@ -141,7 +141,7 @@ layout: default
       {%- endfor -%}
     </div>
   </section>
-  <section class="home__proj-nav">
+  <section id="projnav" class="home__proj-nav js-include-in-toc">
     <h2 class="section__title">{{ site.data.language.home.proj_nav.title }}</h2>
     {{ site.data.language.home.proj_nav.desc | markdownify }}
     {%- assign submenu = site.data.menus | where_exp: "item", "item.inHomeSub == true" -%}
@@ -175,3 +175,13 @@ layout: default
     {%- endif -%}
   </section>
 </section>
+
+<div id="toc" class="home__toc">
+  <button id="toc-open" class="toc__btn toc__btn--open" aria-pressed="false" aria-label="Open Table of Contents">On This Page</button>
+  <button id="toc-close" class="toc__btn toc__btn--close" aria-pressed="false" aria-label="Close Table of Contents"><i class="icon-close"></i></button>
+  <ul class="toc__menu">
+    {%- for item in site.data.home_toc -%}
+    <li class="toc__menu-item" data-hash="{{ item.id }}"><a href="#{{ item.id }}">{{ item.title }}</a></li>
+    {%- endfor -%}
+  </ul>
+</div>
