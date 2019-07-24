@@ -67,7 +67,6 @@
     padding: 0 16px 2px;
     color: $color__white;
     font-weight: bold;
-    //@include font-size(20px);
     line-height: 1.6;
     text-align: center;
     background-color: $color__orange;
@@ -76,15 +75,10 @@
     box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    @include breakpoint('medium') {
-      //@include font-size(26px);
-
-    }
   }
 }
 
 @for $i from 1 through 4 {
-  // :nth-child(1-9)
   .vocab:nth-of-type(#{$i}) {
     // Delay the animation. Delay increases as items loop.
     background-color: transparent;
@@ -123,7 +117,6 @@
 }
 
 @for $i from 1 through 50 {
-  // :nth-child(1-9)
   .def-text span:nth-of-type(#{$i}) {
     // Delay the animation. Delay increases as items loop.
     opacity: 0;
