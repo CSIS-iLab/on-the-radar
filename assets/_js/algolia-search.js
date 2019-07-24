@@ -675,7 +675,7 @@ const addResetWidget = () => {
       templates: {
         link: 'Clear All'
       },
-      autoHideContainer: false,
+      autoHideContainer: true,
       clearsQuery: false
     })
   )
