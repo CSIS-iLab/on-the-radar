@@ -154,7 +154,7 @@ layout: default
     {%- assign submenu = site.data.menus | where_exp: "item", "item.inHomeMain == true" -%}
     <ul class="proj-nav__menu">
       {%- for item in submenu -%}
-      <li class="proj-nav__menu-item">
+      <li class="proj-nav__menu-item js-fade-in">
         <img src="{{ '/assets/images/home/icon-' | append: item.identifier | append: '.svg' | relative_url }}" alt="" class="proj-nav__menu-icon" />
         {%- if item.url == null -%}
         <div class="proj-nav__menu-title">{{ item.title }}</div>
