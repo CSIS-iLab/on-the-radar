@@ -104,6 +104,15 @@
       @include breakpoint($break: 'medium', $dir: 'max-width') {
         padding-top: 0.8rem;
         @include font-size(12px);
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -1.2rem;
+          height: calc(2.4rem + 100%);
+          width: calc(2.4rem + 100%);
+        }
       }
 
       @include breakpoint($break: 'medium', $until: 'large-2') {
