@@ -6,6 +6,9 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   {%- seo -%}
   <link rel="stylesheet" href="https://use.typekit.net/jrm7lzh.css" />
+  <link rel="stylesheet" href="{{
+    '/assets/css/main.css' | relative_url
+  }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   {%- if page.layout == 'home' -%}
   <link rel="stylesheet" href="{{ '/assets/css/pages/home.css' | relative_url }}">
@@ -13,6 +16,9 @@
   {%- if page.title == '404' -%}
   <link rel="stylesheet" href="{{ '/assets/css/pages/404.css' | relative_url }}">
   {%- endif -%}
+  <link rel="stylesheet" media="print" href="{{
+    '/assets/css/print.css' | relative_url}}" />
+  
   {%- feed_meta -%}
   {%- include google-analytics.html -%}
 </head>
