@@ -17,10 +17,9 @@ details:
   - United States
 title: Plant-based Sensors
 date: 2018-10-12T17:53:00.000+00:00
-excerpt: Plant-based sensors are physiology-based mechanisms—either already present
-  or artificially engineered—capable of reporting the presence of specific stimuli
-  on land. Plant-based sensors are an unobtrusive platform for monitoring weapons
-  development and presence.
+excerpt: Plant-based sensors are physiology-based mechanisms capable of reporting
+  the presence of specific stimuli on land. Plant-based sensors are an unobtrusive
+  platform for monitoring weapons development and presence.
 authors:
 - _authors/anthony-benjamin.md
 brief_type: Tech Primer
