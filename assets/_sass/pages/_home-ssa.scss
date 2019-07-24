@@ -50,7 +50,7 @@
     color: $color__white;
     font-family: $font__lato;
     @include font-size(22px);
-    line-height: 3;
+    line-height: 2;
     text-align: center;
 
     @include breakpoint('medium') {
@@ -81,4 +81,93 @@
       line-height: 1.81;
     }
   }
+}
+
+.tippy-tooltip.tomato-theme {
+  color: #000;
+  line-height: 1;
+  background-color: #fff;
+
+  @include breakpoint('medium') {
+    color: #fff;
+    background-color: transparent;
+  }
+}
+
+.tippy-tooltip .definition {
+  line-height: 1.4;
+  @include font-size(16px);
+}
+
+.tippy-tooltip.tomato-theme[data-animatefill] {
+  background-color: transparent;
+}
+
+.tippy-tooltip.tomato-theme .tippy-backdrop {
+  background-color: transparent;
+}
+
+@for $i from 1 through 50 {
+  // :nth-child(1-9)
+  .def-text span:nth-of-type(#{$i}) {
+    // Delay the animation. Delay increases as items loop.
+    opacity: 0;
+    animation: reveal 100ms linear alternate 1 forwards;
+    animation-delay: 500ms + ($i * (50ms));
+  }
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+  }
+}
+
+$tippybg: #ddd;
+
+@keyframes grow {
+  0% {
+    width: 16px;
+    background-color: $tippybg;
+  }
+
+  70% {
+    width: 16px;
+    background-color: $tippybg;
+  }
+
+  100% {
+    width: 170px;
+    background-color: rgba($tippybg, 0.85);
+  }
+}
+
+.definition {
+  width: 200px;
+  padding: 1rem;
+}
+
+.def-text {
+  width: 170px;
+  min-height: 16px;
+  overflow-x: hidden;
+  background-color: rgba($tippybg, 0.85);
+  background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff),
+    linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
+
+  background-repeat: no-repeat;
+  // ^^^ This value should be equal to width of left OR right border.
+  background-position: top left, top right, bottom left, bottom right;
+  background-size: 8px 3px;
+  border: solid #fff;
+  border-width: 0 3px;
+  animation: grow 500ms linear alternate 1 forwards;
+}
+
+.def-text-inner {
+  position: relative;
+  display: block;
+  width: 170px;
+  padding: 12px;
+  color: #000;
 }
