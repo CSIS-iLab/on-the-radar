@@ -15,7 +15,7 @@ details:
   - China
   - United States
 title: Quantum Computing
-date: 2018-10-01 04:00:00 +0000
+date: 2018-10-01T04:00:00.000+00:00
 excerpt: ''
 authors:
 - _authors/kelly-swanson.md
@@ -30,6 +30,7 @@ downloads:
 - label: Quantum Computing Primer
   media_upload: ''
 featured_on_home: false
+last-modified-date: 2018-10-01 04:00:00 +0000
 
 ---
 ##### Introduction
