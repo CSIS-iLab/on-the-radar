@@ -71,6 +71,7 @@ defaults:
     layout: archive
     permalink: "/authors/:slug/"
     breadcrumbs: true
+    use_algolia: true
 - scope:
     path: ''
     type: 'about'

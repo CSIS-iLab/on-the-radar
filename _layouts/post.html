@@ -25,7 +25,9 @@ layout: default
   </aside>
 
   <section class="post__content post-content e-content" itemprop="articleBody">
-    {{ content }}
+    {{ content }}     
+
+    {%- include post-downloads-button.html -%}
   </section>
 
   <section class="post__footer">

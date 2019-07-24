@@ -7,9 +7,16 @@ layout: default
 {% elsif page.filter_entries %}
   {% assign refinement = 'data-filter_entries="true"' %}
 {% endif %}
+{% if page.collection == 'authors' %}
+  {% assign collectionLabel = 'authors' %}
+{% else %}
+{% assign collectionLabel = collection.label %}
+{% endif %}
 
-<article class="archive archive--{{ page.title | slugify }}" {{ refinement }} data-collection-label="{{ collection.label }}" role="content" itemscope itemtype="http://schema.org/BlogPosting" {{ data_facet }} {{ data_facet_value }}>
 
+
+
+<article class="archive archive--{{ page.title | slugify }}" {{ refinement }} data-collection-label="{{ collectionLabel }}" role="content" itemscope itemtype="http://schema.org/BlogPosting" {{ data_facet }} {{ data_facet_value }}>
   {% include page-header.html %}
 
   {% if page.permalink == '/issue-briefs/' %}
@@ -69,7 +76,7 @@ layout: default
   <section class="archive__sidebar">
     {% if page.filter_entries %}
       <input type="checkbox" id="filter_entries" class="facet-trigger" />
-      <label for="filter_entries" class="section-title algolia--hide-no-results">{{ site.data.language.archive.filter_entries }}</label>
+      <label for="filter_entries" class="section-title algolia--hide-no-results refinement-label">{{ site.data.language.archive.filter_entries }}</label>
 
 
       <div id="filter__count" class="widget"></div>
@@ -92,9 +99,9 @@ layout: default
       {% if page.refine_results %}
         <div class="algolia--hide-no-results">
         <input type="checkbox" id="refine_results" class="facet-trigger" />
-        <label for="refine_results" class="section-title">{{ site.data.language.archive.refine_results }}</label>
+        <label for="refine_results" class="section-title refinement-label">{{ site.data.language.archive.refine_results }}</label>
 
-        <div id="filter__count" class="widget"></div>
+        <div id="filter__count" class="widget refinement-count"></div>
 
         {% for detail in site[collection.label][0].details %}
           {% if detail[0] != "event_date" %}
@@ -115,28 +122,36 @@ layout: default
   </section>
   {% endif %}
 
-   <section id="hits" class="archive__content">
-     {% if page.post_list_collection == 'all' %}
-       {% assign posts = site.posts | concat: site.workshops | concat: site.briefs %}
-     {% elsif page.post_list_collection == 'resources'  %}
-       {% assign posts = site.resources %}
-     {% else %}
-       {% assign posts = site[collection.label] %}
+   <section class="archive__content">
+     {%- if page.collection == 'authors' -%}
+       {{ page.content }}
      {% endif %}
 
+     <div id="hits">
 
-     {% if collection.label != 'resources' %}
-      {%- for post in posts -%}
-        {% include post-block.html %}
-      {%- endfor -%}
-    {% else %}
-      {%- for post in site.resources -%}
-        {% include post-block.html %}
-        {% if forloop.last and collection.label == 'resources' %}
-          {%- include back-to-top.html -%}
-        {% endif %}
-      {%- endfor -%}
-    {% endif %}
+       {% if page.post_list_collection == 'all' %}
+         {% assign posts = site.posts | concat: site.workshops | concat: site.briefs %}
+       {% elsif page.post_list_collection == 'resources'  %}
+         {% assign posts = site.resources %}
+       {% else %}
+         {% assign posts = site[collection.label] %}
+       {% endif %}
+
+
+       {% if collection.label != 'resources' %}
+        {%- for post in posts -%}
+          {% include post-block.html %}
+        {%- endfor -%}
+      {% else %}
+        {%- for post in site.resources -%}
+          {% include post-block.html %}
+          {% if forloop.last and collection.label == 'resources' %}
+            {%- include back-to-top.html -%}
+          {% endif %}
+        {%- endfor -%}
+      {% endif %}
+
+     </div>
 
    </section>
 

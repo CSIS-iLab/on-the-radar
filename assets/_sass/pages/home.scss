@@ -57,6 +57,24 @@
     text-align: center;
     text-transform: uppercase;
   }
+
+  .section__bg {
+    min-width: 100vw;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .js-parallax {
+    --scrollparallax: 0;
+
+    @include breakpoint('large') {
+      transform: translateY(calc(var(--scrollparallax) * 1px));
+    }
+  }
 }
 
 @import 'home-intro';
@@ -72,3 +90,5 @@
 @import 'home-proj-nav';
 
 @import 'home-recent';
+
+@import 'home-toc';

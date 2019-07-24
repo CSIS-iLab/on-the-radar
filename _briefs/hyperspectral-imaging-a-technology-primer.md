@@ -40,8 +40,10 @@ image_source: ''
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865065/on-the-radar/Hyperspectral%20Imaging%20Primer.pdf
   label: Hyperspectral Imaging Primer
+featured_on_home: false
 
 ---
+##### Introduction
 Hyperspectral imaging (HSI) is a type of remote sensing that takes a series of hundreds or thousands of contiguous images in narrow wavebands across the visible and infrared regions of the electromagnetic spectrum. This allows hyperspectral imaging to capture more data about its target than conventional color photography, which only takes images in the red, green and blue segments of the visible light spectrum. The series of images captured by hyperspectral sensors forms a “hyperspectral cube” that contains detailed spectral information about each pixel in the image. HSI can take advantage of differences in the way that materials reflect light (forming unique spectral signatures) to identify the materials present in an image, aiding in the detection of decoys and other camouflaged targets.[^1]
 
 Successfully using HSI to find and identify items of interest requires the ability to process an extremely large amount of gathered spectral information to locate the small number of pixels possessing characteristics of interest and subject them to further scrutiny.[^2] Effectively carrying out this analysis relies on the possession of a large library of the spectral signatures of materials ranging from leaves in various stages of health to vehicles, camo-patterns, and countermeasures.[^3]

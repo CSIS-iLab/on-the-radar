@@ -9,11 +9,13 @@ fields:
   name: role
   label: Title
 pages:
+- _authors/kelly-swanson.md
+- _authors/rebecca-hersman.md
 - _authors/meyer-thalheimer.md
 - _authors/bethany-goldblum.md
 - _authors/jake-hecla.md
 - _authors/anthony-benjamin.md
-- _authors/lizamaria-aria.md
+- _authors/lizamaria-arias.md
 - _authors/rhys-mccormick.md
 - _authors/evan-lisman.md
 - _authors/oscar-guerrero.md
