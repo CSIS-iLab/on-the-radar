@@ -10,5 +10,6 @@ window.addEventListener('DOMContentLoaded', () => {
   HeaderSearch()
   TippyHome()
   Navigation()
+  Definitions()
   objectFitImages()
 })

@@ -2,45 +2,49 @@ import tippy from 'tippy.js'
 
 const Tippy = () => {
   tippy('#t1', {
-    theme: 'tomato',
+    theme: 'otr',
     arrow: false,
     arrowTransform: 'scale(1,4)',
     hideOnClick: true,
     placement: 'left',
     flipBehavior: ['left', 'top'],
+    followCursor: true,
     onMount(tip) {
       formatContent(tip)
     }
   }),
     tippy('#t2', {
-      theme: 'tomato',
+      theme: 'otr',
       arrow: false,
       hideOnClick: true,
       interactive: false,
       flipBehavior: ['left', 'top'],
       placement: 'left',
+      followCursor: true,
       onMount(tip) {
         formatContent(tip)
       }
     }),
     tippy('#t3', {
-      theme: 'tomato',
+      theme: 'otr',
       arrow: false,
       hideOnClick: true,
       interactive: false,
       flipBehavior: ['right', 'top'],
       placement: 'right',
+      followCursor: true,
       onMount(tip) {
         formatContent(tip)
       }
     }),
     tippy('#t4', {
-      theme: 'tomato',
+      theme: 'otr',
       arrow: false,
       hideOnClick: true,
       interactive: false,
       placement: 'right',
       flipBehavior: ['right', 'bottom'],
+      followCursor: true,
       onMount(tip) {
         formatContent(tip)
       }
