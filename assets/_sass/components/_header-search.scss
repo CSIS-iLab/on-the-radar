@@ -19,9 +19,9 @@
   max-width: fit-content;
   text-align: right;
 
-  @include breakpoint('large-3') {
-    margin-top: 0.75rem;
-  }
+  // @include breakpoint('large-3') {
+  //   margin-top: 0.75rem;
+  // }
 
   &-open {
     flex: 1;
