@@ -65,6 +65,8 @@
   }
 
   &__filter-type {
+    display: flex;
+    flex-wrap: wrap;
     grid-area: filter-type;
     @include archive-padding;
     background-color: $color__gray-lighter;
@@ -74,16 +76,21 @@
     }
 
     @include breakpoint('medium') {
-      display: flex;
       padding-top: 20px;
       padding-bottom: 16px;
+    }
+    .ais-refinement-list--list {
+      @include breakpoint('medium') {
+        display: flex;
+      }
+    }
 
-      .ais-refinement-list {
-        &--list {
-          display: flex;
+    .ais-refinement-list--item {
+      &:not(:first-of-type) {
+        @include breakpoint('medium') {
+          padding-left: 20px;
         }
-
-        &--item {
+        @include breakpoint('medium-2') {
           padding-left: 20px;
         }
       }
@@ -98,13 +105,17 @@
         @include font-size(12px);
       }
 
+      @include breakpoint($break: 'medium-2', $dir: 'max-width') {
+        flex: 1 0 100%;
+      }
+
       @include breakpoint('medium') {
         position: relative;
         padding-right: 20px;
       }
 
       &::after {
-        @include breakpoint('medium') {
+        @include breakpoint('medium-2') {
           content: '';
           position: absolute;
           top: 0;
