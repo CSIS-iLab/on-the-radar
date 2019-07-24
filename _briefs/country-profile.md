@@ -8,13 +8,11 @@ details:
   characteristics: []
   risk_factors: []
   domain: []
-date: 2019-04-19 04:00:00 +0000
-excerpt: The United States has extensive strategic situational awareness capabilities
-  across all domains that help to characterize the operating environment, detect and
-  respond to attacks, and discern actual attacks from false alarms across the spectrum
-  of conflict. Over the last thirty to forty years, these capabilities have become
-  increasingly important at the tactical and operational levels, and are integral
-  to U.S. military doctrine and planning.
+date: 2019-04-19T04:00:00.000+00:00
+excerpt: The United States has advanced strategic situational awareness capabilities
+  across all domains.  In recent decades, these capabilities have become increasingly
+  important at the tactical and operational levels, and are integral to U.S. doctrine
+  and planning.
 authors:
 - _authors/rhys-mccormick.md
 brief_type: Country Profile
@@ -40,7 +38,7 @@ downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1563897486/on-the-radar/US%20strategic%20SA.pdf
   label: US Strategic SA
 featured_on_home: true
-last-modified-date: 2019-04-19 04:00:00 +0000
+last-modified-date: 2019-04-19T04:00:00.000+00:00
 
 ---
 The United States has extensive and mature strategic situational awareness capabilities across all domains (air, land, maritime, space, and cyber) that help to characterize the operating environment, detect and respond to attacks, and discern actual attacks from false alarms across the spectrum of conflict, both conventional and nuclear. The U.S. military has always relied on these capabilities at the strategic level, but over the last thirty to forty years these capabilities have increasingly become more important at the tactical and operational level as technological advances have enabled more granular tracking and detection of enemy forces and communications and coordination between different sensors and shooters to devastating effect. This combination of situational awareness capabilities across all three levels of war and all domains has provided the United States unrivaled strategic situational awareness and has become a lynchpin of U.S. military doctrine and planning. However, the enemy gets a vote, and potential adversaries like China and Russia have focused on enhancing their own strategic situational awareness capabilities and developing ways to disrupt, degrade, and destroy U.S. strategic situational awareness.
