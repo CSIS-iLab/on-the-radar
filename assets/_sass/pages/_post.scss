@@ -37,7 +37,6 @@
 
       @each $size in $sizes {
         @include breakpoint($size) {
-          padding-right: content-padding($size);
           padding-left: content-padding($size);
         }
       }
