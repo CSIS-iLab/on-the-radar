@@ -24,7 +24,8 @@ authors:
 - _authors/nate-frierson.md
 - _authors/lizamaria-arias.md
 brief_type: Tech Primer
-keywords: []
+keywords:
+- Information Complexity
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1563908719/on-the-radar/OnTheRadar_illustration_AI_analysis.jpg
 image_caption: ''
 image_source: ''
@@ -43,7 +44,7 @@ Thinking about AI as an enabling technology is especially useful for assessing A
 
 Due to the rapidly changing nature of the field, the meaning of the blanket term “artificial intelligence” is constantly evolving. Broadly speaking, AI is a field of study that encompasses several disciplines including machine learning, automated reasoning, natural language processing, knowledge representation, computer vision, and robotics.[^4]
 
-Much of AI’s impact on strategic SA occurs through advances in a subset of machine learning known as “deep learning,” Broadly speaking, any AI software application is comprised of a set of rules known as an algorithm. The software subsequently “runs” or employs the algorithm to process data. Advances in AI technology have moved beyond hardcoded “frozen” software to produce AI programs that can engage in deep learning with Artificial Neural Networks (ANNs) loosely inspired by mammalian neural networks.[^5] Frozen software is limited by human knowledge. For example, although the IBM computer Deep Blue defeated chess master Gary Kasparov in a 1997 match, the IBM computer’s software was hardcoded, and thus its victory occurred through “brute force.” Today, AI research focuses on deep learning and the ability to learn and evolve without the constraints of human knowledge. Deep learning is a type of machine learning that employs “deep” neural networks. These networks have many hidden layers that operate between the input and output layers of the network.[^6] They are a series of connections among artificial “neurons” that learn by adjusting the strength of the connections between the artificial neurons to “optimize the paths through the network to achieve a certain output.”[^7](Ibid.)
+Much of AI’s impact on strategic SA occurs through advances in a subset of machine learning known as “deep learning,” Broadly speaking, any AI software application is comprised of a set of rules known as an algorithm. The software subsequently “runs” or employs the algorithm to process data. Advances in AI technology have moved beyond hardcoded “frozen” software to produce AI programs that can engage in deep learning with Artificial Neural Networks (ANNs) loosely inspired by mammalian neural networks.[^5] Frozen software is limited by human knowledge. For example, although the IBM computer Deep Blue defeated chess master Gary Kasparov in a 1997 match, the IBM computer’s software was hardcoded, and thus its victory occurred through “brute force.” Today, AI research focuses on deep learning and the ability to learn and evolve without the constraints of human knowledge. Deep learning is a type of machine learning that employs “deep” neural networks. These networks have many hidden layers that operate between the input and output layers of the network.[^6] They are a series of connections among artificial “neurons” that learn by adjusting the strength of the connections between the artificial neurons to “optimize the paths through the network to achieve a certain output.”[^7]
 
 ***
 
@@ -58,3 +59,5 @@ Much of AI’s impact on strategic SA occurs through advances in a subset of mac
 [^5]: Robert Warren, “Artificial Intelligence and the Military,” _RAND Corporation_, September 7, 2017, [www.rand.org/blog/2017/09/artificial-intelligence-and-the-military.html](http://www.rand.org/blog/2017/09/artificial-intelligence-and-the-military.html).
 
 [^6]: Paul Scharre and Michael C. Horowitz, _Artificial Intelligence: What Every Policymaker Needs to Know_ (Washington, DC: Center for a New American Security, 2018), [https://s3.amazonaws.com/files.cnas.org/documents/CNAS_AI_FINAL-v2.pdf?mtime=20180619100112](https://www.cifar.ca/docs/default-source/ai-society/buildinganaiworld_eng.pdf?sfvrsn=fb18d129_4 "https://www.cifar.ca/docs/default-source/ai-society/buildinganaiworld_eng.pdf?sfvrsn=fb18d129_4").
+
+[^7]: Ibid. 
