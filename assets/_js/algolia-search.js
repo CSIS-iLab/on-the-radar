@@ -424,6 +424,14 @@ const addBriefTypeRefinement = () => {
             `.archive__filter-description > div.${type}`
           ).style.display = property
         }
+
+        if (currentType[0] === 'Country Profile') {
+          document.querySelector('.archive__sidebar > div').style.display =
+            'none'
+        } else {
+          document.querySelector('.archive__sidebar > div').style.display =
+            'block'
+        }
       }
     }
 
