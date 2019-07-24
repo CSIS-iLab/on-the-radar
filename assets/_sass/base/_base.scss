@@ -19,12 +19,15 @@ body {
   background-size: cover;
   background-attachment: fixed;
 
-
   @each $size in $sizes {
     @include breakpoint($size) {
       --breakpoint: '#{$size}';
       background-image: url('../images/bg/bg-topo_#{$size}.jpg');
     }
+  }
+
+  @include breakpoint('large') {
+    overflow-x: hidden;
   }
 }
 
