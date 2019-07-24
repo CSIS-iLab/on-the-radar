@@ -424,7 +424,7 @@ const addBriefTypeRefinement = () => {
             `.archive__filter-description > div.${type}`
           ).style.display = property
         }
-
+        console.log(currentType)
         if (currentType[0] === 'Country Profile') {
           document.querySelector('.archive__sidebar > div').style.display =
             'none'
@@ -684,7 +684,8 @@ const addResetWidget = () => {
         link: 'Clear All'
       },
       autoHideContainer: true,
-      clearsQuery: false
+      clearsQuery: false,
+      excludeAttributes: ['brief_type']
     })
   )
 }
