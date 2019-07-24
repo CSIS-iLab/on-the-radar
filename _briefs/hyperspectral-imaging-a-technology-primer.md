@@ -41,6 +41,7 @@ downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865065/on-the-radar/Hyperspectral%20Imaging%20Primer.pdf
   label: Hyperspectral Imaging Primer
 featured_on_home: false
+last-modified-date: 2019-04-03 04:00:00 +0000
 
 ---
 ##### Introduction
