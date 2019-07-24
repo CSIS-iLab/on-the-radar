@@ -17,7 +17,7 @@ details:
   - Russia
   - United States
 title: Remote Radiation Detection by Electromagnetic Air Breakdown
-date: 2018-09-15 04:00:00 +0000
+date: 2018-09-15T04:00:00.000+00:00
 excerpt: Emerging radiation sensing techniques that measure changes in the dielectric
   properties of air may offer ultra-long-range radiation detection capabilities with
   potential applications in counterforce targeting and counterproliferation.
@@ -27,12 +27,13 @@ brief_type: Tech Primer
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
 image_caption: ''
 image_source: ''
-keywords: []
+keywords:
+- Miscalculation
 downloads:
 - label: Remote Radiation Detection
   media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1563906432/on-the-radar/Remote%20radiation%20detection%20primer-MS%20clean.pdf
 featured_on_home: false
-last-modified-date: 2018-09-15 04:00:00 +0000
+last-modified-date: 2018-09-15T04:00:00.000+00:00
 
 ---
 ##### Introduction
