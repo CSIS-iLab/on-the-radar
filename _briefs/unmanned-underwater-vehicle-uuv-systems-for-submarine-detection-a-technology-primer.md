@@ -36,7 +36,6 @@ keywords:
 - First-mover incentive
 - Provocation
 - Entanglement
-- Artificial Intelligence
 featured_on_home: false
 last-modified-date: 2019-05-05T04:00:00.000+00:00
 
