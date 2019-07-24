@@ -32,6 +32,7 @@ downloads:
 - label: Remote Radiation Detection
   media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1563906432/on-the-radar/Remote%20radiation%20detection%20primer-MS%20clean.pdf
 featured_on_home: false
+last-modified-date: 2018-09-15 04:00:00 +0000
 
 ---
 ##### Introduction
