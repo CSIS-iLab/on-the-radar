@@ -31,10 +31,10 @@ image: https://res.cloudinary.com/csisideaslab/image/upload/v1563908719/on-the-r
 image_caption: ''
 image_source: ''
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865065/on-the-radar/Artificial%20Intelligence%20Analysis%20Primer.pdf
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1563997197/on-the-radar/Artificial%20Intelligence%20Analysis%20Primer.pdf
   label: AI Analysis Primer
 featured_on_home: false
-last-modified-date: 2019-04-03 04:00:00 +0000
+last-modified-date: 2019-04-03T04:00:00.000+00:00
 
 ---
 ##### Introduction
@@ -61,4 +61,4 @@ Much of AI’s impact on strategic SA occurs through advances in a subset of mac
 
 [^6]: Paul Scharre and Michael C. Horowitz, _Artificial Intelligence: What Every Policymaker Needs to Know_ (Washington, DC: Center for a New American Security, 2018), [https://s3.amazonaws.com/files.cnas.org/documents/CNAS_AI_FINAL-v2.pdf?mtime=20180619100112](https://www.cifar.ca/docs/default-source/ai-society/buildinganaiworld_eng.pdf?sfvrsn=fb18d129_4 "https://www.cifar.ca/docs/default-source/ai-society/buildinganaiworld_eng.pdf?sfvrsn=fb18d129_4").
 
-[^7]: Ibid. 
+[^7]: Ibid.
