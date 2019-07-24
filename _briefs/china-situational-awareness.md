@@ -8,11 +8,9 @@ details:
   - China
 title: China's Strategic Situational Awareness Capabilities
 date: 2019-05-31T04:00:00.000+00:00
-excerpt: 'China has invested considerably in advancing its strategic situational awareness
-  capabilities. Although shortcomings in strategic early warning have been a serious
-  concern for China, the People''s Liberation Army is developing a more mature architecture
-  that could enhance its capability to undertake nuclear counterattack and conventional
-  operations. '
+excerpt: China has invested considerably in advancing its strategic situational awareness
+  capabilities. The People's Liberation Army is developing a more mature architecture
+  to enhance its ability to conduct nuclear counterattack and conventional operations.
 authors:
 - _authors/elsa-kania.md
 brief_type: Country Profile
@@ -32,7 +30,7 @@ downloads:
 - label: China strategic SA
   media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1563556865/on-the-radar/China%20strategic%20SA.pdf
 featured_on_home: true
-last-modified-date: 2019-05-31 04:00:00 +0000
+last-modified-date: 2019-05-31T04:00:00.000+00:00
 
 ---
 China has invested considerably in advancing its capabilities for strategic situational awareness. [^1] Although traditional shortcomings in strategic early warning have been a serious concern for China, the People’s Liberation Army (PLA) today is developing a more mature architecture that could enhance its capability to undertake nuclear counterattack and conventional operations. Although the improvement of capabilities for early warning and situational awareness will remain a challenge for the PLA, [^2] these capabilities today encompass a growing number of satellites for remote sensing and electronic intelligence (ELINT), large, phased array radars and a range of other radars that are increasingly sophisticated, and early warning aircraft, as well as unmanned systems. The expansion and maturation of these varied systems will continue to be a priority for the PLA, pursuant to new missions and operational requirements in the region and worldwide.
