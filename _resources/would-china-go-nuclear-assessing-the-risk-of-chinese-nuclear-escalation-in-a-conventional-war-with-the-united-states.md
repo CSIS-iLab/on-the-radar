@@ -4,11 +4,9 @@ title: Would China Go Nuclear? Assessing the Risk of Chinese Nuclear Escalation 
 type: Article
 authors: Caitlin Talmadge
 topics:
+- Crisis and Escalation
+- Nuclear Strategy and Doctrine
 - China
-- Escalation Dynamics
-- Nuclear Escalation
-- Nuclear Crisis
-- Nuclear Command and Control
 link: https://www.mitpressjournals.org/doi/abs/10.1162/ISEC_a_00274
 
 ---
