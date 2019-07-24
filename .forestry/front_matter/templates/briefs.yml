@@ -95,12 +95,14 @@ fields:
   label: Featured on Home Page?
   description: Do you want to feature this post on the home page?
 pages:
-- _briefs/country-profile.md
-- _briefs/artificial-intelligence-analysis-applications-a-technology-primer.md
+- _briefs/remote-radiation-detection-by-electromagnetic-air-breakdown.md
 - _briefs/china-situational-awareness.md
+- _briefs/quantum-computing.md
+- _briefs/artificial-intelligence-analysis-applications-a-technology-primer.md
+- _briefs/resilient-communications-for-command-and-control-of-nuclear-forces.md
+- _briefs/hyperspectral-imaging-a-technology-primer.md
+- _briefs/country-profile.md
 - _briefs/unmanned-underwater-vehicle-uuv-systems-for-submarine-detection-a-technology-primer.md
 - _briefs/high-altitude-pseudosatellites.md
 - _briefs/plant-based-sensors-a-technology-primer.md
-- _briefs/resilient-communications-for-command-and-control-of-nuclear-forces.md
 - _briefs/smallsats-a-technology-primer.md
-- _briefs/hyperspectral-imaging-a-technology-primer.md

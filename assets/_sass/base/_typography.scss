@@ -51,6 +51,10 @@ h5 {
 .post-content {
   p {
     @extend %post__content-paragraph;
+
+    &:last-of-type() {
+      margin-bottom: 0;
+    }
   }
 
   h2 {
@@ -211,7 +215,7 @@ a {
   }
 
   .post-content
-  &:not(.btn):not([href^='#']):not(.reversefootnote):not(.about-aside__link) {
+    &:not(.btn):not([href^='#']):not(.reversefootnote):not(.about-aside__link) {
     @include box-shadow(0, -2px, 0, 0, $color__astral, true);
     color: inherit;
 

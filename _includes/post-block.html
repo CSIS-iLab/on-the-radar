@@ -12,10 +12,23 @@
   /></a>
   {% endif %}
   <header class="post-block__header" role="header">
-    {%- include featured.html -%} {%- include content-type.html -%} {%- include
-    post-block-title.html -%} {%- include authors-list.html authors=post.authors
-    -%} {%- if post.collection == 'workshops' -%} {%- include event-date.html
-    -%} {% else %} {%- include date.html -%} {%- include last-updated.html -%}
+    {%- include featured.html -%} {%- include content-type.html -%}
+    {%- include post-block-title.html -%}
+    {%- include authors-list.html authors=post.authors
+    -%}
+    {%- if post.collection == 'workshops' -%}
+      {%- include event-date.html
+    -%}
+    {% elsif post.collection == 'resources' %}
+      <div class="topic">
+        <span class="post__meta-label">
+          {{ site.data.language.topic }}
+        </span>
+        {{ post.topics | join: ', ' }}
+      </div>
+    {% else %}
+      {%- include date.html -%}
+      {%- include last-updated.html -%}
     {%- endif -%}
   </header>
   {% if include.hide_excerpt != true %}
