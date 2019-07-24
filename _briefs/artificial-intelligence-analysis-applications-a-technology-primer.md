@@ -25,6 +25,7 @@ authors:
 - _authors/lizamaria-arias.md
 brief_type: Tech Primer
 keywords:
+- Artificial Intelligence
 - Information Complexity
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1563908719/on-the-radar/OnTheRadar_illustration_AI_analysis.jpg
 image_caption: ''
