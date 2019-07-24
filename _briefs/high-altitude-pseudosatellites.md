@@ -30,6 +30,8 @@ image: ''
 image_caption: ''
 image_source: ''
 keywords:
+- First-mover incentive
+- Miscalculation
 - Provocation
 downloads:
 - media_upload: ''
