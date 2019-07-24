@@ -28,12 +28,9 @@ authors:
 - _authors/meyer-thalheimer.md
 brief_type: Tech Primer
 keywords:
-- Sensors
-- Hyperspectral
+- Information Complexity
+- First-mover incentive
 - Artificial Intelligence
-- Unmanned aerial vehicle
-- Unmanned underwater vehicle
-- Satellites
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
 image_caption: ''
 image_source: ''
@@ -41,7 +38,7 @@ downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865065/on-the-radar/Hyperspectral%20Imaging%20Primer.pdf
   label: Hyperspectral Imaging Primer
 featured_on_home: false
-last-modified-date: 2019-04-03 04:00:00 +0000
+last-modified-date: 2019-04-03T04:00:00.000+00:00
 
 ---
 ##### Introduction
