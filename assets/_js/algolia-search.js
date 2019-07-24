@@ -419,13 +419,13 @@ const addBriefTypeRefinement = () => {
       },
       toggleBriefDescription(currentType, property) {
         if (!breakpoints.isMobile()) {
-          let type = currentType[0].split(' ')[0].toLowerCase()
+          let type = currentType.split(' ')[0].toLowerCase()
           document.querySelector(
             `.archive__filter-description > div.${type}`
           ).style.display = property
         }
-        console.log(currentType)
-        if (currentType[0] === 'Country Profile') {
+
+        if (currentType === 'Country Profile') {
           document.querySelector('.archive__sidebar > div').style.display =
             'none'
         } else {
@@ -437,14 +437,14 @@ const addBriefTypeRefinement = () => {
 
     if (isFirstRendering) {
       let container = document.querySelector('.archive__filter-type')
-
+      let type
       container.addEventListener('click', e => {
         if (e.target.tagName == 'LABEL') {
           let trigger = e.target.previousElementSibling
           trigger.checked = trigger.checked ? false : true
         }
 
-        let type = e.target.id.replace('filter__content-brief-', '')
+        type = e.target.id.replace('filter__content-brief-', '')
 
         if (type === 'tech' || type === 'country' || type === 'all') {
           let activeItem = document.querySelector(
@@ -455,6 +455,8 @@ const addBriefTypeRefinement = () => {
             activeItem.classList.remove('ais-refinement-list--item__active')
 
           currentType = helpers.getCurrentType()
+            ? helpers.getCurrentType()[0]
+            : null
 
           if (currentType) helpers.toggleBriefDescription(currentType, 'none')
 
@@ -472,12 +474,19 @@ const addBriefTypeRefinement = () => {
           e.target.classList.add('ais-refinement-list--item__active')
 
           currentType = helpers.getCurrentType()
+            ? helpers.getCurrentType()[0]
+            : null
 
           if (currentType) helpers.toggleBriefDescription(currentType, 'block')
         }
       })
 
-      currentType = helpers.getCurrentType()
+      currentType =
+        type && type === 'all'
+          ? type
+          : helpers.getCurrentType()
+            ? helpers.getCurrentType()[0]
+            : null
 
       if (currentType) helpers.toggleBriefDescription(currentType, 'block')
     }
