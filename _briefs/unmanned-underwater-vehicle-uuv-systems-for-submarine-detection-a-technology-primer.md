@@ -17,7 +17,7 @@ details:
   - Russia
   - United States
 title: Unmanned Underwater Vehicle (UUV) Systems for Submarine Detection
-date: 2019-05-05 04:00:00 +0000
+date: 2019-05-05T04:00:00.000+00:00
 excerpt: Unmanned underwater vehicles (UUVs) are an emerging class of unmanned maritime
   vehicles (UMVs) with the potential to transform anti-submarine warfare. Their small
   size and stealthy deployment may allow for reconnaissance in a contested environment
@@ -33,11 +33,12 @@ downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865066/on-the-radar/UUV%20Final%20Primer%20Formatted.pdf
   label: UUV primer
 keywords:
-- Unmanned underwater vehicle
-- Anti-Submarine Warfare (ASW)
+- First-mover incentive
+- Provocation
+- Entanglement
 - Artificial Intelligence
 featured_on_home: false
-last-modified-date: 2019-05-05 04:00:00 +0000
+last-modified-date: 2019-05-05T04:00:00.000+00:00
 
 ---
 The oceans have long represented a challenging environment for sensing technologies. Onboard passive sensors have historically faced technological limitations due to low signal-to-noise and inhospitable sensing environments. Additionally, the <define>vantage</define> restrictions posed by static positioning of sea-based sensors, whether active or passive, has allowed submarines to travel vast swathes of the oceans largely undetected. As a result, sea-launched ballistic missiles have been important to ensuring a second-strike capability and maintaining the strategic balance between nuclear adversaries. New, mobile, and active sensing technologies, however, are changing this status quo and leaving submarine forces increasingly vulnerable to detection. These new sensing systems combined with smart data processing techniques for decision support have the potential to substantially impact <define>strategic situational awareness</define>.
