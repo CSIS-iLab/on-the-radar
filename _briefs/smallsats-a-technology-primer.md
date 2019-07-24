@@ -17,7 +17,7 @@ details:
   - China
   - United States
 title: Smallsats
-date: 2019-04-03T04:00:00.000+00:00
+date: 2019-04-03 04:00:00 +0000
 excerpt: Small satellites (smallsats) are miniaturized artificial satellites that
   can enhance situational awareness (SA) by providing advanced, low-cost sensing of
   in-orbit space objects, and by delivering persistent broad-coverage Earth imaging
@@ -38,6 +38,7 @@ downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865065/on-the-radar/Smallsats%20Final%20Primer%20Formatted%2007-02-29.pdf
   label: Smallsats primer
 featured_on_home: false
+last-modified-date: 2019-04-03 04:00:00 +0000
 
 ---
 Small satellites (smallsats) are miniaturized artificial satellites with a mass less than 500 kg used for communication, imaging, and other space applications.[^1] Recent advances in microtechnology have facilitated the development of smallsats equipped with compact, low mass, low-power-consumption sensors, which enable high-performance platforms with significant cost reductions compared to traditional satellite systems. The reduced payload of smallsats further decreases vehicle launch costs, which allows for deployment in constellations, where a group of satellites works in concert under shared control to achieve a particular mission.[^2] A constellation of satellites improves the <define>resiliency/reliability</define> of the overall system to degradation due to natural causes—such as radiation damage—or adversary attacks. They also allow for trade-offs in individual sensor performance (e.g., lower imaging resolution) in return for broader coverage and gap reduction.
