@@ -12,6 +12,16 @@ fields:
   label: Date
   config:
     required: true
+- name: last-modified-date
+  type: datetime
+  label: Last Updated
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  description: Last date this post was modified
+  default: now
 - type: textarea
   config:
     wysiwyg: true
