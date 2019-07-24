@@ -28,6 +28,7 @@ authors:
 - _authors/meyer-thalheimer.md
 brief_type: Tech Primer
 keywords:
+- Provocation
 - Information Complexity
 - First-mover incentive
 - Artificial Intelligence
