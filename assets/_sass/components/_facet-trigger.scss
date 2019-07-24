@@ -10,12 +10,19 @@
       cursor: pointer;
 
       &::after {
+        @include font-size(13px);
         position: absolute;
         right: 0;
         content: '\f004';
         display: inline-block;
         font-family: 'radar';
         transition: all 0.3s ease-in-out;
+      }
+
+      &.refinement-label {
+        &--is-refined::after {
+          top: calc(100% - 13px / 2);
+        }
       }
     }
 

@@ -1,23 +1,24 @@
 .related-posts {
   display: flex;
 
-  @include breakpoint('medium', 'max-width') {
+  @include breakpoint('large', 'max-width') {
     flex-wrap: wrap;
   }
 
   &__block {
     position: relative;
     flex-grow: 1;
+    flex-basis: 100%;
     min-height: 200px;
     padding: 1.33rem;
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
 
-    @include breakpoint('small') {
+    @include breakpoint('medium') {
       flex-basis: 0;
     }
 
-    @include breakpoint('medium') {
+    @include breakpoint('large') {
       max-width: 300px;
     }
 

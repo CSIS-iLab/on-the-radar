@@ -18,6 +18,8 @@ import breakpoints from './breakpoints'
 
 const dataset = document.querySelector('.archive').dataset
 
+let location = window.location.pathname.split('/').filter(f => f)
+
 const elementsToHideNoResults = document.querySelectorAll(
   '.algolia--hide-no-results'
 )
@@ -25,13 +27,17 @@ const client = algoliasearch('7UNKAH6RMH', 'b9011cf7f49e60630161fcacf0e37d02')
 
 const indexName = 'on_the_radar'
 const searchParameters = {
-  hitsPerPage: 3,
+  hitsPerPage: dataset.collectionLabel === 'resources' ? 1000 : 10,
   disjunctiveFacets: ['brief_type']
 }
 
-searchParameters.filters = dataset.collectionLabel
-  ? `collection_label:'${dataset.collectionLabel}'`
-  : `NOT collection_label:Resources`
+if (dataset.collectionLabel !== 'authors') {
+  searchParameters.filters = dataset.collectionLabel
+    ? `collection_label:'${dataset.collectionLabel}'`
+    : `NOT collection_label:Resources`
+} else {
+  searchParameters.filters = `authors: ${location[1]}`
+}
 
 const routing = {
   stateMapping: {
@@ -41,7 +47,6 @@ const routing = {
         page: uiState.page
       }
       let keys = mapStateToKeys(uiState, urlKeyDivs, dataset)
-
       let route = Object.assign(keys, state)
 
       return route
@@ -54,8 +59,6 @@ const routing = {
       let refinementList = mapRouteToKeys(routeState)
       let state = Object.assign(refinementList, route)
 
-      // state['refinementList'] = {}
-      // state.refinementList['brief_type'] = 'Country Profile'
       return state
     }
   }
@@ -99,8 +102,11 @@ const AlgoliaSearch = () => {
     addPagination()
   }
 
+  if (dataset.collectionLabel !== 'authors') {
+    addResetWidget()
+  }
+
   addItemCountSummary()
-  addResetWidget()
 
   search.on('render', () => {
     let refinements = Object.keys(
@@ -176,12 +182,16 @@ const toggleElementsOnNoResults = (elements, action) => {
 }
 
 const mapRouteToKeys = routeState => {
+  let author
+  if (location[0] === 'authors') {
+    author = { name: location[1] }
+  }
   let refinementList = {}
   Object.keys(routeState).forEach(k => {
     refinementList[k] = routeState[k].split('~')
   })
 
-  return { refinementList }
+  return author ? { refinementList, author } : { refinementList }
 }
 
 const mapStateToKeys = (uiState, urlKeyDivs, dataset) => {
@@ -230,6 +240,7 @@ const mapStateToKeys = (uiState, urlKeyDivs, dataset) => {
 
   return keys
 }
+
 const addResults = () => {
   search.addWidget(
     hits({
@@ -342,11 +353,25 @@ const addTopicTypeRelatedBriefFilter = () => {
           let refinementCount = refinements.length
 
           if (refinementCount) {
-            document.querySelector(container).style.paddingBottom = '0.8rem'
+            document
+              .querySelector(container)
+              .previousElementSibling.classList.add(
+                'refinement-label--is-refined'
+              )
+            document
+              .querySelector(container)
+              .classList.add('refinement-count--is-refined')
 
             return `${refinementCount} applied`
           } else {
-            document.querySelector(container).style.paddingBottom = '1.5rem'
+            document
+              .querySelector(container)
+              .previousElementSibling.classList.remove(
+                'refinement-label--is-refined'
+              )
+            document
+              .querySelector(container)
+              .classList.remove('refinement-count--is-refined')
 
             return null
           }
@@ -492,7 +517,7 @@ const addDetailsRefinement = () => {
         attributeName: `details.${facet}`,
         operator: 'or',
         collapsible: {
-          collapsed: true
+          collapsed: facet === 'type' && !breakpoints.isMobile() ? false : true
         },
         templates: {
           header: `${facet.replace(
@@ -525,15 +550,25 @@ const addDetailsRefinement = () => {
           let refinementCount = refinements.length
 
           if (refinementCount) {
-            document.querySelector(
-              '.archive__sidebar #filter__count'
-            ).style.paddingBottom = '0.8rem'
+            document
+              .querySelector('.archive__sidebar #filter__count')
+              .previousElementSibling.classList.add(
+                'refinement-label--is-refined'
+              )
+            document
+              .querySelector('.archive__sidebar #filter__count')
+              .classList.add('refinement-count--is-refined')
 
             return `${refinementCount} applied`
           } else {
-            document.querySelector(
-              '.archive__sidebar #filter__count'
-            ).style.paddingBottom = '1.5rem'
+            document
+              .querySelector('.archive__sidebar #filter__count')
+              .previousElementSibling.classList.remove(
+                'refinement-label--is-refined'
+              )
+            document
+              .querySelector('.archive__sidebar #filter__count')
+              .classList.remove('refinement-count--is-refined')
 
             return null
           }

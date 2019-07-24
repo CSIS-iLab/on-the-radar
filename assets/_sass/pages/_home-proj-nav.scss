@@ -122,12 +122,20 @@
       display: grid;
       grid-gap: 1rem;
       margin-bottom: 2.5rem;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s 0.25s, opacity 0.3s 0.25s ease-in-out;
 
       @include breakpoint('medium') {
         grid-column-gap: 1.5rem;
         grid-row-gap: 0;
         grid-template-columns: min-content auto;
       }
+    }
+
+    .js-is-visible {
+      visibility: visible;
+      opacity: 1;
     }
 
     .proj-nav__menu-icon {

@@ -3,11 +3,15 @@
 ===============================*/
 
 .about {
+  padding-top: 2rem;
   padding-bottom: 1rem;
+
+  @include breakpoint('large') {
+    padding-top: 4.5rem;
+  }
 
   h2 {
     @extend %h2--thin;
-    padding-top: 2rem;
     color: $color__black;
     text-transform: uppercase;
   }

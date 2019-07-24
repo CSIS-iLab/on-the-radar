@@ -1,4 +1,3 @@
-
 /*======================================
 =            Header: Search            =
 ======================================*/
@@ -98,7 +97,7 @@
         height: 55px;
         border-radius: 40px;
       }
-      
+
       @include breakpoint($break: 'large', $until: 'large-3') {
         width: calc(100vw - (56px - 1rem));
       }
@@ -117,6 +116,7 @@
       border-bottom: 1px solid $color__orange-light;
 
       &:focus {
+        color: $color__white;
         outline-color: $color__orange-light;
       }
 
@@ -145,6 +145,8 @@
   }
 
   &-close {
+    display: flex;
+    align-items: center;
     padding: 0;
     color: $color__orange-light;
     @include font-size(30px);
@@ -157,4 +159,3 @@
     }
   }
 }
-

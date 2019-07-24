@@ -125,12 +125,21 @@
       }
     }
 
+    .ais-refinement-list--item {
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        padding: 0.2rem 0;
+      }
+    }
+
     .ais-refinement-list--item,
     .ais-clear-all--body {
       @extend %facets__link-item--base;
       white-space: nowrap;
-      text-transform: uppercase;
       transition: all 0.3s ease-in-out;
+
+      @include breakpoint('medium') {
+        text-transform: uppercase;
+      }
 
       &__active {
         @include breakpoint('medium') {
@@ -200,6 +209,7 @@
 
     @include breakpoint('medium') {
       padding-top: 2rem;
+      padding-bottom: 3.5rem;
     }
 
     .section-title {
@@ -212,6 +222,7 @@
 
     .widget:not(#filter__count) {
       margin-bottom: 0.8rem;
+      transition: all 0.3s ease-in-out;
 
       @include breakpoint($break: 'medium', $dir: 'max-width') {
         &:nth-of-type(2) {
@@ -220,11 +231,33 @@
       }
     }
 
+    .section-title.refinement-label {
+      transition: font-size 0.3s ease-in-out;
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        padding-bottom: 1.5rem;
+      }
+
+      &--is-refined {
+        padding-bottom: 0;
+
+        @include breakpoint($break: 'medium', $dir: 'max-width') {
+          @include font-size(12px);
+        }
+      }
+    }
+
+    .refinement-count {
+      &--is-refined {
+        @include breakpoint($break: 'medium', $dir: 'max-width') {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+
     .ais-header {
       @extend %facets__group-label--base;
       font-weight: bold;
       text-transform: uppercase;
-      transition: all 0.3s ease-in-out;
 
       i::before {
         font-weight: normal;
@@ -248,8 +281,23 @@
     .ais-refinement-list--item {
       @extend %facets__checkbox-label;
 
-      @include breakpoint('medium') {
-        margin: 0.3rem 0;
+      &:last-of-type {
+        @include breakpoint($break: 'medium', $dir: 'max-width') {
+          padding: 0.2rem 0 0.6rem;
+        }
+        @include breakpoint('medium') {
+          margin-bottom: 1.25rem;
+        }
+      }
+
+      &:not(:last-of-type) {
+        @include breakpoint($break: 'medium', $dir: 'max-width') {
+          padding: 0.2rem 0;
+        }
+
+        @include breakpoint('medium') {
+          margin: 0.3rem 0;
+        }
       }
     }
 
@@ -277,6 +325,10 @@
 
     @include breakpoint($break: 'large-3') {
       padding-bottom: 3.444rem;
+    }
+
+    > p {
+      margin-bottom: 3.5rem;
     }
   }
 
@@ -308,13 +360,20 @@
     text-transform: uppercase;
 
     @include breakpoint($break: 'medium', $dir: 'max-width') {
-      padding-top: 1.5rem;
+      padding-top: 1.2rem;
+    }
+  }
+
+  &:not(.archive--issue-briefs) .section-title.refinement-label {
+    padding-bottom: 1.2rem;
+
+    &--is-refined {
+      padding-bottom: 0;
     }
   }
 
   #filter__count {
     position: relative;
-    padding-bottom: 1rem;
     @extend %facets__link-item--base;
     @include font-size(15px);
 

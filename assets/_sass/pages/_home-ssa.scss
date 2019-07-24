@@ -1,31 +1,32 @@
 .home__ssa {
   position: relative;
+  right: 50%;
+  left: 50%;
+  display: grid;
+  width: 100vw;
+  margin-right: -50vw;
+  margin-left: -50vw;
   padding-top: 20vh;
   padding-bottom: 20vh;
+  background: rgb(10, 17, 23);
+  /* prettier-ignore */
+  background: linear-gradient(0deg, rgba(10, 17, 23, 1) 50%, rgba(17, 17, 17, 1) 60%);
 
   @include breakpoint('medium') {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
     min-height: 80vh;
-    padding-top: 0;
-    padding-bottom: 0;
   }
 
-  &::before {
-    $sizes: ('medium', 'large', 'xlarge');
-    @extend %homebg;
-    background-color: $color__home-navy-grad;
-    background-image: url('../../images/home/earth-bg_small.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  .section__content {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    align-self: center;
+    max-width: 80%;
+    margin: 0 auto;
+  }
 
-    @each $size in $sizes {
-      @include breakpoint($size) {
-        background-image: url('../../images/home/earth-bg_#{$size}.jpg');
-      }
-    }
+  .section__bg {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
   }
 
   .section__title {
