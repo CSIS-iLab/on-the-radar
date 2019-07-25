@@ -30,10 +30,9 @@ keywords:
 - Synthetic Aperture Sonar
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1564063749/on-the-radar/EW3.jpg
 image_caption: An E-3 Sentry Airborne Warning and Control System aircraft departs
-  July 11, 2019, at Travis Air Force Base, California. (Photo by Heide Couch, 60th
-  Air Mobility Wing Public Affairs, U.S. Air Force)
-image_source: Photo by Heide Couch, 60th Air Mobility Wing Public Affairs, U.S. Air
-  Force
+  July 11, 2019, at Travis Air Force Base, California. ([Photo](https://www.dvidshub.net/image/5583712/busy-flight-line)
+  by Heide Couch, 60th Air Mobility Wing Public Affairs, U.S. Air Force)
+image_source: https://www.dvidshub.net/image/5583712/busy-flight-line
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1563897486/on-the-radar/US%20strategic%20SA.pdf
   label: US Strategic SA
