@@ -33,6 +33,7 @@ end
 
 Algolia.init :application_id => ENV['ALGOLIA_APP_KEY'], :api_key => ENV['ALGOLIA_API_KEY']
 index = Algolia::Index.new(ENV['ALGOLIA_INDEX'])
-index.add_objects(update_records)
+index.save_objects(update_records)
 index.delete_objects(delete_records)
-puts "fix algolia search sync..."
+puts update_records
+puts "finish algolia search sync..."
