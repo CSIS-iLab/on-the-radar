@@ -17,6 +17,7 @@ authors:
 - _authors/rhys-mccormick.md
 brief_type: Country Profile
 keywords:
+- Early Warning
 - Synthetic Aperture Sonar
 - Keyword 1
 - Drone
