@@ -8,6 +8,25 @@
   }
 }
 
+// Makes filter by type & refine results entire block labels clickable on mobile
+%clickable-area {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.2rem;
+    z-index: 5;
+    width: calc(2.4rem + 100%);
+    height: calc(2.4rem + 100%);
+    /* prettier-ignore */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 35% 100%, 35% 50%, 0% 50%);
+
+    @include breakpoint('medium') {
+      display: none;
+    }
+  }
+}
+
 .archive {
   display: grid;
   grid-template-areas:
@@ -75,15 +94,23 @@
 
     @include breakpoint('medium') {
       display: flex;
+      flex-wrap: wrap;
       padding-top: 20px;
       padding-bottom: 16px;
+    }
 
-      .ais-refinement-list {
-        &--list {
-          display: flex;
+    .ais-refinement-list--list {
+      @include breakpoint('medium') {
+        display: flex;
+      }
+    }
+
+    .ais-refinement-list--item {
+      &:not(:first-of-type) {
+        @include breakpoint('medium') {
+          padding-left: 20px;
         }
-
-        &--item {
+        @include breakpoint('medium-2') {
           padding-left: 20px;
         }
       }
@@ -92,10 +119,15 @@
     .section-title {
       @extend %facets__header-label;
       line-height: 1.4;
+      @extend %clickable-area;
 
       @include breakpoint($break: 'medium', $dir: 'max-width') {
         padding-top: 0.8rem;
         @include font-size(12px);
+      }
+
+      @include breakpoint($break: 'medium', $until: 'large-2') {
+        flex: 1 0 100%;
       }
 
       @include breakpoint('medium') {
@@ -104,7 +136,7 @@
       }
 
       &::after {
-        @include breakpoint('medium') {
+        @include breakpoint('large-2') {
           content: '';
           position: absolute;
           top: 0;
@@ -214,9 +246,14 @@
 
     .section-title {
       @extend %facets__section-title;
+      @extend %clickable-area;
 
       @include breakpoint('medium') {
         margin-bottom: 0.5rem;
+      }
+
+      &::before {
+        clip-path: none;
       }
     }
 
