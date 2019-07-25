@@ -259,8 +259,9 @@
       padding: 0.5rem 0;
       font-weight: bold;
       text-transform: uppercase;
+
       @include breakpoint('medium') {
-        padding: unset;
+        padding: 0;
       }
 
       i::before {
