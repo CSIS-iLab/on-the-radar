@@ -1,5 +1,5 @@
 ---
-last-modified-date: 2019-07-25 17:30:08 +0000
+last-modified-date: 2019-07-25T17:30:08.000+00:00
 details:
   type:
   - Sensors
@@ -16,7 +16,7 @@ details:
   country:
   - United States
 title: Light Detection and Ranging (LIDAR)
-date: 2019-01-19 05:00:00 +0000
+date: 2019-01-19T05:00:00.000+00:00
 excerpt: Light detection and ranging (LIDAR) is an active-sensor technique that generates
   spatial data from the reflection of laser pulses from objects. The technique is
   useful for rapidly mapping terrain, chemical/biological weapons detection, demining,
@@ -38,7 +38,7 @@ featured_on_home: false
 ---
 ##### Introduction
 
-Light detection and ranging (LIDAR) is an active-sensor technique that generates spatial data from the reflection of laser pulses from objects. Though the technique is best known for its use in rapidly mapping terrain, it has applications in chemical/biological weapons detection, demining, anti-submarine warfare, and scene-data-based navigation. Because of a robust private sector demand for unmanned aerial vehicle (UAV) and autonomous vehicle mapping and navigation capabilities based on LIDAR, the technology has advanced rapidly over the last decade. The strategic situational awareness (SA) improvements conferred by the addition of these technologies to existing platforms are wide-ranging. LIDAR based navigation presents significant improvements in persistence, whereas mapping and imaging applications offer improvements in precision, speed, and vantage. Because of the rapid commercialization of LIDAR devices, the availability, performance, and cost of these systems is rapidly improving. Therefore, these systems are likely to become increasingly relevant technologies for strategic SA.
+Light detection and ranging (LIDAR) is an active-sensor technique that generates spatial data from the reflection of laser pulses from objects. Though the technique is best known for its use in rapidly mapping terrain, it has applications in chemical/biological weapons detection, demining, anti-submarine warfare, and scene-data-based navigation. Because of a robust private sector demand for unmanned aerial vehicle (UAV) and autonomous vehicle mapping and navigation capabilities based on LIDAR, the technology has advanced rapidly over the last decade. The strategic situational awareness (SA) improvements conferred by the addition of these technologies to existing platforms are wide-ranging. LIDAR based navigation presents significant improvements in <define/>persistence<define/>, whereas mapping and imaging applications offer improvements in <define>precision</define>, <define>speed</define>, and <define>vantage</define>. Because of the rapid commercialization of LIDAR devices, the availability, performance, and cost of these systems is rapidly improving. Therefore, these systems are likely to become increasingly relevant technologies for strategic SA.
 
 ##### Theory of Operation
 
