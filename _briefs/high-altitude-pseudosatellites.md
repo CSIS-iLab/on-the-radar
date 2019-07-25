@@ -26,7 +26,7 @@ authors:
 - _authors/pedro-vicente-valdez.md
 - _authors/paulina-wheeler.md
 brief_type: Tech Primer
-image: ''
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1564059374/on-the-radar/PONI_illustration_COLOR_unmanned_platforms.jpg
 image_caption: ''
 image_source: ''
 keywords:
