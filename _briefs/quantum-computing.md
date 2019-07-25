@@ -16,7 +16,10 @@ details:
   - United States
 title: Quantum Computing
 date: 2018-10-01T04:00:00.000+00:00
-excerpt: ''
+excerpt: 'Quantum computers have capabilities that exceed those of classical computers,
+  processing information in a fundamentally different way by taking advantage of physics
+  that occurs only on the quantum level. With these characteristics, quantum computers
+  can solve problems that are not feasible on a classical computer. '
 authors:
 - _authors/kelly-swanson.md
 brief_type: Tech Primer
