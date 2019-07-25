@@ -8,6 +8,25 @@
   }
 }
 
+// Makes filter by type & refine results entire block labels clickable on mobile
+%clickable-area {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.2rem;
+    z-index: 5;
+    width: calc(2.4rem + 100%);
+    height: calc(2.4rem + 100%);
+    /* prettier-ignore */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 35% 100%, 35% 50%, 0% 50%);
+
+    @include breakpoint('medium') {
+      display: none;
+    }
+  }
+}
+
 .archive {
   display: grid;
   grid-template-areas:
@@ -100,19 +119,11 @@
     .section-title {
       @extend %facets__header-label;
       line-height: 1.4;
+      @extend %clickable-area;
 
       @include breakpoint($break: 'medium', $dir: 'max-width') {
         padding-top: 0.8rem;
         @include font-size(12px);
-
-        &::before {
-          position: absolute;
-          top: 0;
-          left: -1.2rem;
-          width: calc(2.4rem + 100%);
-          height: calc(2.4rem + 100%);
-          content: '';
-        }
       }
 
       @include breakpoint($break: 'medium', $until: 'large-2') {
@@ -235,9 +246,14 @@
 
     .section-title {
       @extend %facets__section-title;
+      @extend %clickable-area;
 
       @include breakpoint('medium') {
         margin-bottom: 0.5rem;
+      }
+
+      &::before {
+        clip-path: none;
       }
     }
 
