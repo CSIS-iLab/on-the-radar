@@ -26,7 +26,7 @@ brief_type: Tech Primer
 keywords:
 - Miscalculation
 - Provocation
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1542205462/on-the-radar/header-sample.jpg
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1564060962/on-the-radar/Sensors.jpg
 image_caption: ''
 image_source: ''
 downloads:
