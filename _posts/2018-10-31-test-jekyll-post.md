@@ -1,42 +1,33 @@
 ---
 title: Second Test Post of the analysis type
 date: 2018-10-31T16:10:05.000+00:00
-excerpt:
-  Nam placerat ante arcu, porta turpis sed tellus. Aliquet pellentesque consequat
+excerpt: Nam placerat ante arcu, porta turpis sed tellus. Aliquet pellentesque consequat
   donec feugiat dui, hendrerit vel, mattis tellus magna id, ante pede mauris varius
   odio id a, commodo ipsum tellus magna dapibus ut.
 authors:
 - _authors/margaret-williams.md
 - _authors/jake-hecla.md
 categories:
-  - Category 1
-  - Category 2
+- Category 1
+- Category 2
 keywords:
-  - Synthetic Aperture Sonar
-  - Keyword 1
-  - Drone
-  - Hydrophones
-  - Synthetic Aperture Sonar
-  - Anti-Submarine Warfare (ASW)
-  - Keyword 2
-  - Unmanned
-  - Hydrophones
-  - Anti-Submarine Warfare (ASW)
-  - Synthetic Aperture Sonar
+- Artificial Intelligence
+- Entanglement
+- First-mover incentive
 related_briefs:
-  - _briefs/unmanned-underwater-vehicle-uuv-systems-for-submarine-detection-a-technology-primer.md
-  - _briefs/resilient-communications.md
-  - _briefs/smallsats-a-technology-primer.md
+- _briefs/unmanned-underwater-vehicle-uuv-systems-for-submarine-detection-a-technology-primer.md
+- _briefs/resilient-communications.md
+- _briefs/smallsats-a-technology-primer.md
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1542205462/on-the-radar/header-sample.jpg
-image_caption:
-  Sample caption with a [link](https://fas.org/irp/nic/fishing.pdf).
+image_caption: Sample caption with a [link](https://fas.org/irp/nic/fishing.pdf).
   Sample caption with a [link](https://fas.org/irp/nic/fishing.pdf). Sample caption
   with a [link](https://fas.org/irp/nic/fishing.pdf). Sample caption with a [link](https://fas.org/irp/nic/fishing.pdf)
 image_source: Getty Images
 featured: true
 featured_on_home: true
----
+last-modified-date: 
 
+---
 ## Erat nibh ut, tortor in
 
 <define>Strategic Situational Awareness</define> Lorem ipsum dolor sit amet, ante rutrum in, eu ligula sem scelerisque eu mollis, porttitor integer nam diam pellentesque in, wisi quisque suscipit feugiat donec. Sed integer mi imperdiet, in nec proin ullamcorper massa lacus dui. Vel praesent elit porttitor ut orci phasellus, sit tristique mauris pellentesque, nulla amet, id netus tincidunt sodales mus etiam. Nulla consectetuer sit arcu tellus metus. Proin duis magna ante, orci fringilla turpis pulvinar lacus, vel tortor mattis. Ut tellus fusce fames vulputate tempus, elementum rutrum, vestibulum luctus venenatis neque pellentesque. Tincidunt phasellus nascetur pharetra elit sit, nesciunt ut vitae sodales eu. Ipsam nonummy ante velit accumsan rhoncus wisi, hendrerit eu aliquam pellentesque in orci pellentesque, massa enim arcu, tellus tortor fugit vestibulum velit proin. Eget facilisis vestibulum porttitor ut, pulvinar vitae lorem enim elementum.<define>CTSC</define>

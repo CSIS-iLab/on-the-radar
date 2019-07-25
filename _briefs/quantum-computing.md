@@ -20,7 +20,7 @@ excerpt: ''
 authors:
 - _authors/kelly-swanson.md
 brief_type: Tech Primer
-image: ''
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1564062298/on-the-radar/PONI_illustration_COLOR_cyber.jpg
 image_caption: ''
 image_source: ''
 keywords:
@@ -30,7 +30,7 @@ downloads:
 - label: Quantum Computing Primer
   media_upload: ''
 featured_on_home: false
-last-modified-date: 2018-10-01 04:00:00 +0000
+last-modified-date: 2018-10-01T04:00:00.000+00:00
 
 ---
 ##### Introduction

@@ -29,7 +29,7 @@ excerpt: The current United States Nuclear Command, Control, and Communications 
 authors:
 - _authors/oscar-guerrero.md
 brief_type: Tech Primer
-image: ''
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1564062730/on-the-radar/PONI_illustration_COLOR_cyber-1.jpg
 image_caption: ''
 image_source: ''
 keywords:

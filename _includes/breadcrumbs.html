@@ -32,6 +32,6 @@
   {% if breadcrumb_past %}
     <span class="breadcrumbs__past"><a href="{{ breadcrumb_past_url }}">{{ breadcrumb_past }}</a></span>
   {% endif %}
-  <span class="breadcrumbs__present">{{ breadcrumb_current | title }}</span>
+  <span class="breadcrumbs__present">{{ breadcrumb_current | title | truncate: 60 }}</span>
 </div>
 {% endif %}

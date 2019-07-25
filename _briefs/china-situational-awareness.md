@@ -14,7 +14,7 @@ excerpt: China has invested considerably in advancing its strategic situational 
 authors:
 - _authors/elsa-kania.md
 brief_type: Country Profile
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1563890259/on-the-radar/Chinese%20drones.jpg
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1564063831/on-the-radar/Chinese%20UAV.jpg
 image_caption: This photo taken on May 30, 2019 shows personnel around a surveillance
   drone on the runway of the airport in Hotan in China's western Xinjiang region.
   (GREG BAKER/AFP/Getty Images)
