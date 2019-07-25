@@ -1,20 +1,31 @@
 ---
 last-modified-date: 2019-07-25 17:30:08 +0000
 details:
-  type: []
-  characteristics: []
-  risk_factors: []
-  domain: []
-  country: []
+  type:
+  - Sensors
+  characteristics:
+  - Persistence
+  - Precision
+  - Vantage/range
+  risk_factors:
+  - Vulnerable
+  domain:
+  - Sea
+  - Air
+  country:
+  - United States
 title: Light Detection and Ranging (LIDAR)
 date: 2019-01-19 05:00:00 +0000
 excerpt: ''
-authors: []
-brief_type: ''
+authors:
+- _authors/jake-hecla.md
+brief_type: Tech Primer
 image: ''
 image_caption: ''
 image_source: ''
-keywords: []
+keywords:
+- First-mover incentive
+- Information Complexity
 downloads:
 - label: LIDAR primer
   media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564077677/on-the-radar/LIDAR%20primer%207-25-19.pdf
