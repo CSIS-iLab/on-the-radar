@@ -2,6 +2,7 @@
 last-modified-date: 2019-07-25 17:30:08 +0000
 details:
   type:
+  - Platform Control and Information Support
   - Sensors
   characteristics:
   - Persistence
