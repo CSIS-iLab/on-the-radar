@@ -538,6 +538,7 @@ const addDetailsRefinement = () => {
         container: `#${f}`,
         attributeName: `details.${facet}`,
         operator: 'or',
+        sortBy: ['name:asc', 'count:desc'],
         collapsible: {
           collapsed: facet === 'type' && !breakpoints.isMobile() ? false : true
         },
