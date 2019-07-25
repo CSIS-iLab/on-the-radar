@@ -36,7 +36,7 @@ featured_on_home: false
 last-modified-date: 2018-10-01T04:00:00.000+00:00
 
 ---
-##### Introduction
+## Introduction
 
 Quantum computers have capabilities that exceed those of classical computers, processing information in a fundamentally different way by taking advantage of physics that occurs only on the quantum level. Classical computers use bits, strings of 0s and 1s, to encode information, and they process each bit one at a time. Quantum computers, however, use quantum bits, or qubits, which can be simultaneously 0 and 1. When created, qubits are correlated and not treated independently, as in the case of classical bits. These properties allow qubits to be operated on in parallel, increasing information capacity and processing power.
 
