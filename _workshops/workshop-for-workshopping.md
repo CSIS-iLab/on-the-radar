@@ -5,7 +5,7 @@ excerpt: 'Across the centuries muse about shores of the cosmic ocean from which 
   spring made in the interiors of collapsing stars tendrils of gossamer clouds? '
 authors:
 - _authors/bernadette-stadler.md
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1564060974/on-the-radar/AI.jpg
 image_caption: Test Caption
 image_source: Test Source
 details:
@@ -15,7 +15,7 @@ details:
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
   label: Sample Upload for Event
-last-modified-date: 2019-07-24 04:00:00 +0000
+last-modified-date: 2019-07-24T04:00:00.000+00:00
 featured_on_home: false
 
 ---
