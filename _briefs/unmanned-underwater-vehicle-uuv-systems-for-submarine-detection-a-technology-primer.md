@@ -26,7 +26,7 @@ authors:
 - _authors/andrew-reddie.md
 - _authors/bethany-goldblum.md
 brief_type: Tech Primer
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1564059374/on-the-radar/PONI_illustration_COLOR_unmanned_platforms.jpg
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1564060995/on-the-radar/UUV.jpg
 image_caption: ''
 image_source: ''
 downloads:
