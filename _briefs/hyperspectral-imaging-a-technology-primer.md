@@ -31,7 +31,7 @@ keywords:
 - Provocation
 - Information Complexity
 - First-mover incentive
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1564061861/on-the-radar/Sensors-1.jpg
 image_caption: ''
 image_source: ''
 downloads:
