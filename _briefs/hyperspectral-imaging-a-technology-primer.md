@@ -39,6 +39,7 @@ downloads:
   label: Hyperspectral Imaging Primer
 featured_on_home: false
 last-modified-date: 2019-04-03T04:00:00.000+00:00
+published: false
 
 ---
 ##### Introduction
