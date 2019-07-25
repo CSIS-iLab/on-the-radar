@@ -16,7 +16,10 @@ details:
   - United States
 title: Light Detection and Ranging (LIDAR)
 date: 2019-01-19 05:00:00 +0000
-excerpt: ''
+excerpt: Light detection and ranging (LIDAR) is an active-sensor technique that generates
+  spatial data from the reflection of laser pulses from objects. The technique is
+  useful for rapidly mapping terrain, chemical/biological weapons detection, demining,
+  anti-submarine warfare, and scene-data-based navigation.
 authors:
 - _authors/jake-hecla.md
 brief_type: Tech Primer
