@@ -36,11 +36,11 @@ downloads:
 featured_on_home: false
 
 ---
-##### Introduction
+## Introduction
 
 Light detection and ranging (LIDAR) is an active-sensor technique that generates spatial data from the reflection of laser pulses from objects. Though the technique is best known for its use in rapidly mapping terrain, it has applications in chemical/biological weapons detection, demining, anti-submarine warfare, and scene-data-based navigation. Because of a robust private sector demand for unmanned aerial vehicle (UAV) and autonomous vehicle mapping and navigation capabilities based on LIDAR, the technology has advanced rapidly over the last decade. The <define>strategic situational awareness</define> (SA) improvements conferred by the addition of these technologies to existing platforms are wide-ranging. LIDAR based navigation presents significant improvements in <define>persistence<define/>, whereas mapping and imaging applications offer improvements in <define>precision</define>, <define>speed</define>, and <define>vantage</define>. Because of the rapid commercialization of LIDAR devices, the availability, performance, and cost of these systems is rapidly improving. Therefore, these systems are likely to become increasingly relevant technologies for strategic SA.
 
-##### Theory of Operation
+## Theory of Operation
 
 LIDAR systems are based on time-of-flight optical <define>range</define> finding technology. Traditional LIDAR systems measure the timing of the reflection of microsecond-length laser pulses emitted from a rotating or scanning optical assembly (excepting phased-array LIDAR systems, which steer beams through purely optoelectronic methods). The time difference between the emission and the receipt of the reflected pulses then is used to determine the distance to the reflecting object. These systems typically use infrared (IR) emitters pulsed at tens to hundreds of kilohertz and have range capabilities of 100m to several km. Commercial systems range from narrow-beam <define>speed</define> detection systems to 360-degree mapping LIDAR devices for automated vehicle navigation. Specialized variants may use frequency ranges that are tailored for specific detector missions such as underwater sensing, through-cloud imaging, or aerosol detection.
 
