@@ -20,9 +20,9 @@
     "updated_at": "{{ post.last-modified-date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
-    },
+    }{%- unless forloop.last -%},{%- endunless -%}
   {%- endfor -%}
-
+{%- if site.posts.size > 0 -%},{%- endif -%}
 {%- for post in site.posts -%}
 {%- assign collection = site.collections | where: "label", post.collection | first -%}
 {%- assign collection_title = collection.title -%}
@@ -45,10 +45,11 @@
     "updated_at": "{{ post.last-modified-date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
-  },
+  }{%- unless forloop.last -%},{%- endunless -%}
 {%- endfor -%}
 
 {%- assign country_profiles = site.briefs | where: 'brief_type','Country Profile' -%}
+{%- if country_profiles.size > 0 -%},{%- endif -%}
 {%- for post in country_profiles -%}
 {%- assign collection = site.collections | where: "label", post.collection | first -%}
 {%- assign collection_title = collection.title -%}
@@ -78,10 +79,11 @@
     "updated_at": "{{ post.last-modified-date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
-  },
+  }{%- unless forloop.last -%},{%- endunless -%}
 {%- endfor -%}
 
 {%- assign tech_primers = site.briefs | where: 'brief_type','Tech Primer' -%}
+{%- if tech_primers.size > 0 -%},{%- endif -%}
 {%- for post in tech_primers -%}
 {%- assign collection = site.collections | where: "label", post.collection | first -%}
 {%- assign collection_title = collection.title -%}
@@ -111,9 +113,12 @@
     "updated_at": "{{ post.last-modified-date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
-  },
+  }{%- unless forloop.last -%},{%- endunless -%}
 {%- endfor -%}
 
+{%- if site.workshops.size > 0 -%}
+,
+{%- endif -%}
 {%- for post in site.workshops -%}
 {%- assign collection = site.collections | where: "label", post.collection | first -%}
 {%- assign collection_title = collection.title -%}
