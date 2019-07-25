@@ -54,6 +54,11 @@
 {%- assign collection_title = collection.title -%}
 {%- capture authors_list -%}[{%- for author in post.authors -%}{%- assign author_info = site.authors | where: 'relative_path', author | first -%}"{{author_info.title | slugify}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
 {%- capture post_html -%}{%- include post-block.html -%}{%- endcapture -%}
+{%- capture types -%}[{%- for type in post.details.type -%}"{{ type }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{%- capture characteristics -%}[{%- for characteristic in post.details.characteristics -%}"{{ characteristic }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{%- capture risk_factors -%}[{%- for risk_factor in post.details.risk_factors -%}"{{ risk_factor }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{%- capture domain -%}[{%- for domain in post.details.domain -%}"{{ domain }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{%- capture country -%}[{%- for country in post.details.country -%}"{{ country }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
 {
     "objectID": "{{ post.title | slugify }}",
     "title": "{{ post.title | escape }}",
@@ -61,6 +66,13 @@
     "collection_title": "{{ collection_title }}",
     "collection_label": "{{ post.collection }}",
     "brief_type": "{{ post.brief_type }}",
+    "details": {
+      "type": {{ types }},
+      "characteristics": {{ characteristics }},
+      "risk_factors": {{ risk_factors }},
+      "domain": {{ domain }},
+      "country": {{ country }}
+    },
     "authors": {{ authors_list }},
     "date": "{{ post.date | date: site.date_format | date: '%s' }}",
     "updated_at": "{{ post.last-modified-date | date: '%s' }}",
