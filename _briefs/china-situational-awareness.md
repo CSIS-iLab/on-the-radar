@@ -20,6 +20,7 @@ image_caption: This photo taken on May 30, 2019 shows personnel around a surveil
   (GREG BAKER/AFP/Getty Images)
 image_source: GREG BAKER/AFP/Getty Images
 keywords:
+- Early Warning
 - Communications, Command and Control
 - Artificial Intelligence
 - Unmanned aerial vehicle
