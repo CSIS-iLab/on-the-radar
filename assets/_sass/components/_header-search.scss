@@ -88,7 +88,7 @@
       transform-origin: 100% 50%;
       visibility: hidden;
       opacity: 0;
-      transition: visibility 0s, opacity 0s, transform 0.3s 0.3s linear;
+      transition: visibility 0s, opacity 0s, transform 300ms ease-in-out;
 
       @include breakpoint($break: 'medium', $until: 'large-3') {
         top: calc((100% - 55px) / 2);
@@ -135,7 +135,7 @@
     border-radius: 50%;
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0s, color 0.3s ease-in-out;
+    transition: visibility 0s, opacity 0s, color 300ms ease-in-out;
 
     &:hover,
     &:focus {

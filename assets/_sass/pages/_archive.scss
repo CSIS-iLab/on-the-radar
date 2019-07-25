@@ -293,8 +293,13 @@
 
     .ais-header {
       @extend %facets__group-label--base;
+      padding: 0.5rem 0;
       font-weight: bold;
       text-transform: uppercase;
+
+      @include breakpoint('medium') {
+        padding: 0;
+      }
 
       i::before {
         font-weight: normal;

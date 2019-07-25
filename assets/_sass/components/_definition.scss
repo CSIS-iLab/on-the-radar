@@ -1,13 +1,17 @@
 .definition {
-  padding: 1.4rem 1rem 1rem;
+  padding: 1.4rem 1.2rem 1rem;
 
   .icon-close {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 4px;
+    right: 4px;
     color: $color__bluegray;
-    font-size: 1rem;
+    font-size: 1.5rem;
     cursor: pointer;
+
+    &:hover {
+      color: $color__gray-darker;
+    }
   }
 
   &__title {
@@ -29,12 +33,16 @@
     line-height: 1.53;
     text-align: right;
     box-shadow: none;
+
+    &:hover {
+      color: $color__astral;
+    }
   }
 }
 
 .define {
   border-bottom: 2px dotted $color__astral;
-  cursor: pointer;
+  cursor: url('../images/questionmark.png'), auto;
   transition: all 0.3s ease-in-out;
 
   &:hover {

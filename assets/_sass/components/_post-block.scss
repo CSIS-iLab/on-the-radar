@@ -61,4 +61,8 @@
   &__content {
     margin-top: 1rem;
   }
+
+  &[data-content-type='resources'] .post-block__content {
+    margin-top: 0;
+  }
 }
