@@ -490,6 +490,11 @@ const addBriefTypeRefinement = () => {
 
       if (currentType) helpers.toggleBriefDescription(currentType, 'block')
     }
+
+    /* Fixes bug where clicking from "Country Profile" back to "All Results" was resulting in a hidden sidebar because `helpers.toggleBriefDescription` isn't called. */
+    if (!helpers.getCurrentType()) {
+      document.querySelector('.archive__sidebar > div').style.display = 'block'
+    }
   }
 
   let customRefinementList = connectRefinementList(renderFn)
