@@ -27,6 +27,7 @@ authors:
 - _authors/andrew-reddie.md
 brief_type: Tech Primer
 keywords:
+- Early Warning
 - Miscalculation
 - First-mover incentive
 - Information Complexity
