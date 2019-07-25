@@ -20,7 +20,7 @@ excerpt: ''
 authors:
 - _authors/jake-hecla.md
 brief_type: Tech Primer
-image: ''
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1564062656/on-the-radar/Sensors-2.jpg
 image_caption: ''
 image_source: ''
 keywords:
@@ -30,7 +30,6 @@ downloads:
 - label: LIDAR primer
   media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564077677/on-the-radar/LIDAR%20primer%207-25-19.pdf
 featured_on_home: false
-published: false
 
 ---
 ##### Introduction
