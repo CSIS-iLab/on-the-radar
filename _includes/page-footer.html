@@ -3,8 +3,9 @@
   {%- assign class = 'pagination' %}
 {%- elsif page.layout == 'post' -%}
   {% assign view_all_url = page.view_all_url %}
+  
   {% if page.collection == 'briefs' %}
-    {% assign view_all_url = page.view_all_url | append: page.brief_type %}
+    {% assign view_all_url = page.view_all_url | append: page.title %}
   {% endif %}
 
   {%- capture footer_content -%}<a href="{{ view_all_url | relative_url }}" class="page__footer-link"><i class="icon-docs"></i> {{

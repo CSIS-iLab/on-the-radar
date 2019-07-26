@@ -28,22 +28,20 @@ authors:
 - _authors/meyer-thalheimer.md
 brief_type: Tech Primer
 keywords:
-- Sensors
-- Hyperspectral
-- Artificial Intelligence
-- Unmanned aerial vehicle
-- Unmanned underwater vehicle
-- Satellites
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
+- Provocation
+- Information Complexity
+- First-mover incentive
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1564061861/on-the-radar/Sensors-1.jpg
 image_caption: ''
 image_source: ''
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865065/on-the-radar/Hyperspectral%20Imaging%20Primer.pdf
   label: Hyperspectral Imaging Primer
 featured_on_home: false
+last-modified-date: 2019-04-03T04:00:00.000+00:00
 
 ---
-##### Introduction
+## Introduction
 Hyperspectral imaging (HSI) is a type of remote sensing that takes a series of hundreds or thousands of contiguous images in narrow wavebands across the visible and infrared regions of the electromagnetic spectrum. This allows hyperspectral imaging to capture more data about its target than conventional color photography, which only takes images in the red, green and blue segments of the visible light spectrum. The series of images captured by hyperspectral sensors forms a “hyperspectral cube” that contains detailed spectral information about each pixel in the image. HSI can take advantage of differences in the way that materials reflect light (forming unique spectral signatures) to identify the materials present in an image, aiding in the detection of decoys and other camouflaged targets.[^1]
 
 Successfully using HSI to find and identify items of interest requires the ability to process an extremely large amount of gathered spectral information to locate the small number of pixels possessing characteristics of interest and subject them to further scrutiny.[^2] Effectively carrying out this analysis relies on the possession of a large library of the spectral signatures of materials ranging from leaves in various stages of health to vehicles, camo-patterns, and countermeasures.[^3]
@@ -52,7 +50,7 @@ HSI data can be processed in two ways: anomaly detection and signature-based det
 
 Finally, significant complication arises from the interplay between the spatial resolution of the sensor (the amount of space represented in one pixel) and the spatial variability of the ground area being imaged.[^6]  The sensor integrates the spectral information from all materials in the ground area defined by the spatial resolution into a single image pixel. If the spatial resolution is low and the target ground area is highly variable in composition, the resulting images will contain a high number of mixed pixels, which can present an additional challenge to analysis because their spectral signature will not correspond to any single well-defined material.
 
-As HSI sensors become more powerful, their increasing spatial and spectral resolution will help to overcome these problems, enabling more effective material discrimination and thus target identification at an increasing range. However, increases in the precision of the sensor are accompanied by increases in the volume of the data generated, resulting in increased bandwidth and computing power requirements to transfer and effectively analyze it. As a rule of thumb, commercial HSI generated about 1TB of data per hour of footage.[^7] Recent advances in the theoretical and algorithmic approaches to target identification, spectral unmixing, and anomaly detection, coupled with developments in machine learning, have increased the speed and efficiency of sorting and interpreting the massive quantities of data, increasingly allowing HSI to provide time-sensitive intelligence analysis.[^8]
+As HSI sensors become more powerful, their increasing spatial and spectral resolution will help to overcome these problems, enabling more effective material discrimination and thus target identification at an increasing <define>range</define>. However, increases in the precision of the sensor are accompanied by increases in the volume of the data generated, resulting in increased bandwidth and computing power requirements to transfer and effectively analyze it. As a rule of thumb, commercial HSI generated about 1TB of data per hour of footage.[^7] Recent advances in the theoretical and algorithmic approaches to target identification, spectral unmixing, and anomaly detection, coupled with developments in machine learning, have increased the speed and efficiency of sorting and interpreting the massive quantities of data, increasingly allowing HSI to provide time-sensitive intelligence analysis.[^8]
 
 Hyperspectral sensors can be deployed on a variety of platforms, including satellites, unmanned aerial vehicles (UAVs), and unmanned underwater vehicles (UUVs). Hyperspectral sensors deployed on satellites and UAVs are typically passive sensors that rely on reflected sunlight to take images. Sensors deployed on UUVs that operate in the deep-sea need to actively illuminate their subject in order to take images.[^9] Both passive and active sensors have drawbacks. Passive hyperspectral sensors’ operations may be hindered by bad weather and darkness. Active hyperspectral sensors can operate in darkness, but their light source may give away their presence to adversaries.
 

@@ -17,23 +17,23 @@ details:
   - United States
 title: Plant-based Sensors
 date: 2018-10-12T17:53:00.000+00:00
-excerpt: Plant-based sensors are physiology-based mechanisms—either already present
-  or artificially engineered to create “smart” plants—capable of reporting the presence
-  of specific chemical, pathogen, and radiation stimuli on land. Plant-based sensors
-  are a highly unobtrusive solution compared to alternate means of monitoring conventional
-  and non-conventional weapons development and presence.
+excerpt: Plant-based sensors are physiology-based mechanisms capable of reporting
+  the presence of specific stimuli on land. Plant-based sensors are an unobtrusive
+  platform for monitoring weapons development and presence.
 authors:
 - _authors/anthony-benjamin.md
 brief_type: Tech Primer
 keywords:
-- Anti-Submarine Warfare (ASW)
-- Unmanned aerial vehicle
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1542205462/on-the-radar/header-sample.jpg
+- Miscalculation
+- Provocation
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1564060962/on-the-radar/Sensors.jpg
 image_caption: ''
 image_source: ''
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865066/on-the-radar/Plant%20based%20sensor%20primer%20formatted.pdf
   label: Plant-based sensors primer
+last-modified-date: 2018-10-12T04:00:00.000+00:00
+featured_on_home: false
 
 ---
 Plant-based sensors are physiology-based mechanisms—either already present or artificially engineered to create “smart” plants—capable of reporting the presence of specific chemical, pathogen, and radiation stimuli on land. Physiology-based mechanisms that are artificially integrated into plants by gene-editing techniques are a part of a broader effort to create bio-sensors. Plant-based sensors are comprised of two elements. The first includes the plant’s physiological mechanisms and physical responses that are either genetically modified or left untouched (“natural”) and react to a specific compound or environmental condition. These smart plant physical reactions must then be remotely measured to determine the presence or lack of stimuli. The second element is comprised of remote, man-made technology that monitors the smart plants' reactions and provides data that is interpretable to an operator.

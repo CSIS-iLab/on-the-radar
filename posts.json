@@ -20,9 +20,9 @@
     "updated_at": "{{ post.last-modified-date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
-    },
+    }{%- unless forloop.last -%},{%- endunless -%}
   {%- endfor -%}
-
+{%- if site.posts.size > 0 -%},{%- endif -%}
 {%- for post in site.posts -%}
 {%- assign collection = site.collections | where: "label", post.collection | first -%}
 {%- assign collection_title = collection.title -%}
@@ -45,15 +45,21 @@
     "updated_at": "{{ post.last-modified-date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
-  },
+  }{%- unless forloop.last -%},{%- endunless -%}
 {%- endfor -%}
 
 {%- assign country_profiles = site.briefs | where: 'brief_type','Country Profile' -%}
+{%- if country_profiles.size > 0 -%},{%- endif -%}
 {%- for post in country_profiles -%}
 {%- assign collection = site.collections | where: "label", post.collection | first -%}
 {%- assign collection_title = collection.title -%}
 {%- capture authors_list -%}[{%- for author in post.authors -%}{%- assign author_info = site.authors | where: 'relative_path', author | first -%}"{{author_info.title | slugify}}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
 {%- capture post_html -%}{%- include post-block.html -%}{%- endcapture -%}
+{%- capture types -%}[{%- for type in post.details.type -%}"{{ type }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{%- capture characteristics -%}[{%- for characteristic in post.details.characteristics -%}"{{ characteristic }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{%- capture risk_factors -%}[{%- for risk_factor in post.details.risk_factors -%}"{{ risk_factor }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{%- capture domain -%}[{%- for domain in post.details.domain -%}"{{ domain }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+{%- capture country -%}[{%- for country in post.details.country -%}"{{ country }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
 {
     "objectID": "{{ post.title | slugify }}",
     "title": "{{ post.title | escape }}",
@@ -61,15 +67,23 @@
     "collection_title": "{{ collection_title }}",
     "collection_label": "{{ post.collection }}",
     "brief_type": "{{ post.brief_type }}",
+    "details": {
+      "type": {{ types }},
+      "characteristics": {{ characteristics }},
+      "risk_factors": {{ risk_factors }},
+      "domain": {{ domain }},
+      "country": {{ country }}
+    },
     "authors": {{ authors_list }},
     "date": "{{ post.date | date: site.date_format | date: '%s' }}",
     "updated_at": "{{ post.last-modified-date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
-  },
+  }{%- unless forloop.last -%},{%- endunless -%}
 {%- endfor -%}
 
 {%- assign tech_primers = site.briefs | where: 'brief_type','Tech Primer' -%}
+{%- if tech_primers.size > 0 -%},{%- endif -%}
 {%- for post in tech_primers -%}
 {%- assign collection = site.collections | where: "label", post.collection | first -%}
 {%- assign collection_title = collection.title -%}
@@ -99,9 +113,12 @@
     "updated_at": "{{ post.last-modified-date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
-  },
+  }{%- unless forloop.last -%},{%- endunless -%}
 {%- endfor -%}
 
+{%- if site.workshops.size > 0 -%}
+,
+{%- endif -%}
 {%- for post in site.workshops -%}
 {%- assign collection = site.collections | where: "label", post.collection | first -%}
 {%- assign collection_title = collection.title -%}

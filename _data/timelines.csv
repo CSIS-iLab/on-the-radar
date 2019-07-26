@@ -1,7 +1,7 @@
 ecosystem,year,category,title,year_description,type,description,primer
 traditional,1945,general,End of WWII,,,,
 traditional,1950,general,Korean War begins,,,,
-traditional,1952,nuclear,Sound Surveillance System (SOSU),First deployed 1952,Sensors,A system of hydrophones used for tracking submarines.,
+traditional,1952,nuclear,Sound Surveillance System (SOSUS),First deployed 1952,Sensors,A system of hydrophones used for tracking submarines.,
 traditional,1960,nuclear,Ballistic Missile Early Warning System (BMEWS) ,Three radars became operational from 1960-1963; still in use today ,Sensors,System of three ultra-high frequency radars that can track inter-continental ballistic missiles and provide space situational awareness. Upgraded in the 2000s to support missile defense.  ,
 traditional,1964,conventional,RC-135 ,RC-135A first deployed in 1964; since then 14 variants of the RC-135 have been deployed. Some remain in use today.   ,Sensors,"Can collect and disseminate intelligence to characterize the operational environment. Two variants of the RC-135 were equipped to monitor ballistic missile launches, but the remainder only had a conventional mission.  ",_briefs/china-situational-awareness.md
 traditional,1962,general,Cuban Missile Crisis,,,,

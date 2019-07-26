@@ -17,7 +17,7 @@ details:
   country:
   - United States
 title: High Altitude Pseudosatellites
-date: 2019-06-06 04:00:00 +0000
+date: 2019-06-06T04:00:00.000+00:00
 excerpt: This primer focuses on multi-mission military unmanned High Altitude Pseudo-Satellites
   (HAPS). HAPS fill an existing gap between lower-altitude Unmanned Aerial Vehicles
   (UAVs) and conventional satellites that are unable to loiter in place, and have
@@ -26,20 +26,19 @@ authors:
 - _authors/pedro-vicente-valdez.md
 - _authors/paulina-wheeler.md
 brief_type: Tech Primer
-image: ''
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1564059374/on-the-radar/PONI_illustration_COLOR_unmanned_platforms.jpg
 image_caption: ''
 image_source: ''
 keywords:
-- Unmanned aerial vehicle
-- Satellites
-- Communications, Command and Control
-- Synthetic Aperture Radar
-- Hyperspectral
-- Sensors
+- First-mover incentive
+- Miscalculation
+- Provocation
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1563909342/on-the-radar/HAPS%20Primer-1.pdf
+- media_upload: ''
   label: HAPS Primer
 featured_on_home: false
+last-modified-date: 2019-06-06T04:00:00.000+00:00
+published: false
 
 ---
 Over the last 60 years,[^1] both the government and private sector have made significant progress in different types of aerospace technologies, including the areas of operation, payloads, and capabilities. This primer focuses on multi-mission military unmanned High Altitude Pseudo-Satellites (HAPS). HAPS fill an existing gap between lower-altitude Unmanned Aerial Vehicles (UAVs) and conventional satellites that are unable to loiter in place, and have applications that include reconnaissance, damage assessment, and remote sensing.[^2] Pseudo-satellites are high altitude air vehicles or airships characterized by their ability to both maintain a fixed position over a single area of interest for extended periods of time (with time horizons in the days and weeks). HAPS provide multiple payload capabilities (within the size, weight, and power limitations of the platform).[^3] Long endurance and fixed positioning mean that pseudo-satellites provide flexible and persistent intelligence, surveillance and reconnaisance (ISR) capabilities that satellite systems cannot provide. HAPS are designed to fly above commercial air traffic at altitudes of approximately 65,000 feet, or 20km. This altitude, referred to as the stratosphere, is high enough for sensor payloads to cover areas of interest without interfering with commercial aviation.[^4]

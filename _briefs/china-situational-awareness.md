@@ -8,20 +8,19 @@ details:
   - China
 title: China's Strategic Situational Awareness Capabilities
 date: 2019-05-31T04:00:00.000+00:00
-excerpt: 'China has invested considerably in advancing its strategic situational awareness
-  capabilities. Although shortcomings in strategic early warning have been a serious
-  concern for China, the People''s Liberation Army is developing a more mature architecture
-  that could enhance its capability to undertake nuclear counterattack and conventional
-  operations. '
+excerpt: China has invested considerably in advancing its strategic situational awareness
+  capabilities. The People's Liberation Army is developing a more mature architecture
+  to enhance its ability to conduct nuclear counterattack and conventional operations.
 authors:
 - _authors/elsa-kania.md
 brief_type: Country Profile
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1563890259/on-the-radar/Chinese%20drones.jpg
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1564063831/on-the-radar/Chinese%20UAV.jpg
 image_caption: This photo taken on May 30, 2019 shows personnel around a surveillance
   drone on the runway of the airport in Hotan in China's western Xinjiang region.
   (GREG BAKER/AFP/Getty Images)
 image_source: GREG BAKER/AFP/Getty Images
 keywords:
+- Early Warning
 - Communications, Command and Control
 - Artificial Intelligence
 - Unmanned aerial vehicle
@@ -32,17 +31,18 @@ downloads:
 - label: China strategic SA
   media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1563556865/on-the-radar/China%20strategic%20SA.pdf
 featured_on_home: true
+last-modified-date: 2019-05-31T04:00:00.000+00:00
 
 ---
-China has invested considerably in advancing its capabilities for strategic situational awareness. [^1] Although traditional shortcomings in strategic early warning have been a serious concern for China, the People’s Liberation Army (PLA) today is developing a more mature architecture that could enhance its capability to undertake nuclear counterattack and conventional operations. Although the improvement of capabilities for early warning and situational awareness will remain a challenge for the PLA, [^2] these capabilities today encompass a growing number of satellites for remote sensing and electronic intelligence (ELINT), large, phased array radars and a range of other radars that are increasingly sophisticated, and early warning aircraft, as well as unmanned systems. The expansion and maturation of these varied systems will continue to be a priority for the PLA, pursuant to new missions and operational requirements in the region and worldwide.
+China has invested considerably in advancing its capabilities for <define>strategic situational awareness</define>.[^1] Although traditional shortcomings in strategic early warning have been a serious concern for China, the People’s Liberation Army (PLA) today is developing a more mature architecture that could enhance its capability to undertake nuclear counterattack and conventional operations. Although the improvement of capabilities for early warning and situational awareness will remain a challenge for the PLA,[^2] these capabilities today encompass a growing number of satellites for remote sensing and electronic intelligence (ELINT), large, phased array radars and a range of other radars that are increasingly sophisticated, and early warning aircraft, as well as unmanned systems. The expansion and maturation of these varied systems will continue to be a priority for the PLA, pursuant to new missions and operational requirements in the region and worldwide.
 
-China will likely redouble these efforts in response to new strategic requirements in coming years. According to the 2015 Ministry of National Defense white paper on “China’s Military Strategy,” “China will optimize its nuclear force structure, improve strategic early warning, command and control, missile penetration, rapid reaction, and survivability and protection.” [^3] This focus on improving strategic early warning reflects persistent concerns that the PLA has been lacking and lagging in these capabilities, which may exacerbate the risks of a "false negative" if a nuclear attack were to occur undetected.[^4] Meanwhile, the new focus in some authoritative writings on options for “rapid reaction” (快速反应) to an attack appears to imply the capability for a rapid second strike. There has been some speculation that China's posture could evolve toward that of "launch on warning," which would demand much more reliable early warning systems.[^5] Such a posture could be consistent with China’s traditional commitment to a "no first use" policy.[^6] The PLA also intends to expand its construction of a space-based system for strategic surveillance that could detect indicators of a potential nuclear attack, including warning of a surprise attack against China’s missiles.[^7] These trends will continue to merit analytic attention.
+China will likely redouble these efforts in response to new strategic requirements in coming years. According to the 2015 Ministry of National Defense white paper on “China’s Military Strategy,” “China will optimize its nuclear force structure, improve strategic early warning, command and control, missile penetration, rapid reaction, and survivability and protection.”[^3] This focus on improving strategic early warning reflects persistent concerns that the PLA has been lacking and lagging in these capabilities, which may exacerbate the risks of a "false negative" if a nuclear attack were to occur undetected.[^4] Meanwhile, the new focus in some authoritative writings on options for “rapid reaction” (快速反应) to an attack appears to imply the capability for a rapid second strike. There has been some speculation that China's posture could evolve toward that of "launch on warning," which would demand much more reliable early warning systems.[^5] Such a posture could be consistent with China’s traditional commitment to a "no first use" policy.[^6] The PLA also intends to expand its construction of a space-based system for strategic surveillance that could detect indicators of a potential nuclear attack, including warning of a surprise attack against China’s missiles.[^7] These trends will continue to merit analytic attention.
 
 ##### Historical Developments
 
 The origins of China’s early warning capabilities can be traced back to the 640 Project (640工程).[^8] This initiative was launched in 1964 to advance the development of anti-missile systems under the orders of Mao Zedong, who declared at the time in response to concerns over nuclear threats, “If there is a spear, there must be a shield” (有矛必有盾).[^9] Before the program was discontinued in 1982, its various projects had enabled advances in foundational technologies and capabilities that set the stage for some of China’s modern advances.[^10]
 
-In particular, China’s first anti-ballistic missile system, HQ (红旗)-18 was linked to the CK (长空)-1 ELINT satellite, which was intended to provide early warning of any attack from the Soviet Union.[^11] It operated in conjunction with the Type 110 and Type 7010 radars, developed through Project 640-4.[^12] The Type 7010 passive electronically scanned array radar, located at Huangyang Mountain in Hebei Province, first entered operation in 1974.[^13] The Type 110 mono-pulse radar, capable of long-range precision tracking, which is located in Yunnan, entered service in 1977.[^14]
+In particular, China’s first anti-ballistic missile system, HQ (红旗)-18 was linked to the CK (长空)-1 ELINT satellite, which was intended to provide early warning of any attack from the Soviet Union.[^11] It operated in conjunction with the Type 110 and Type 7010 radars, developed through Project 640-4.[^12] The Type 7010 passive electronically scanned array radar, located at Huangyang Mountain in Hebei Province, first entered operation in 1974.[^13] The Type 110 mono-pulse radar, capable of long-range <define>precision</define> tracking, which is located in Yunnan, entered service in 1977.[^14]
 
 ***
 

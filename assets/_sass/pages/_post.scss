@@ -33,11 +33,11 @@
     #{$post}__content-type {
       $sizes: ('large', 'xlarge');
       padding-right: content-padding('small');
+      padding-bottom: 0.6rem;
       padding-left: content-padding('small');
 
       @each $size in $sizes {
         @include breakpoint($size) {
-          padding-right: content-padding($size);
           padding-left: content-padding($size);
         }
       }

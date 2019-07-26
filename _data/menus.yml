@@ -22,11 +22,11 @@
   inHomeMain: true
   inHomeSub: false
   desc: The research and studies that have informed this project can be found here.
-- url: /workshops/
+- url: null
   title: Workshops
   identifier: workshops
-  inHeader: true
-  inFooter: true
+  inHeader: false
+  inFooter: false
   inHomeMain: true
   inHomeSub: false
   desc: Analysis from the various workshops hosted throughout the course of the project provides insight into the way in which experts are thinking about the potential impacts of these technologies.

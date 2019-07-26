@@ -15,12 +15,15 @@ details:
   - China
   - United States
 title: Quantum Computing
-date: 2018-10-01 04:00:00 +0000
-excerpt: ''
+date: 2018-10-01T04:00:00.000+00:00
+excerpt: 'Quantum computers have capabilities that exceed those of classical computers,
+  processing information in a fundamentally different way by taking advantage of physics
+  that occurs only on the quantum level. With these characteristics, quantum computers
+  can solve problems that are not feasible on a classical computer. '
 authors:
 - _authors/kelly-swanson.md
 brief_type: Tech Primer
-image: ''
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1564062298/on-the-radar/PONI_illustration_COLOR_cyber.jpg
 image_caption: ''
 image_source: ''
 keywords:
@@ -28,11 +31,12 @@ keywords:
 - Communications, Command and Control
 downloads:
 - label: Quantum Computing Primer
-  media_upload: ''
+  media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564151484/on-the-radar/Quantum%20Computing%20Formatted%20Primer_AL_Clean.pdf
 featured_on_home: false
+last-modified-date: 2018-10-01T04:00:00.000+00:00
 
 ---
-##### Introduction
+## Introduction
 
 Quantum computers have capabilities that exceed those of classical computers, processing information in a fundamentally different way by taking advantage of physics that occurs only on the quantum level. Classical computers use bits, strings of 0s and 1s, to encode information, and they process each bit one at a time. Quantum computers, however, use quantum bits, or qubits, which can be simultaneously 0 and 1. When created, qubits are correlated and not treated independently, as in the case of classical bits. These properties allow qubits to be operated on in parallel, increasing information capacity and processing power.
 

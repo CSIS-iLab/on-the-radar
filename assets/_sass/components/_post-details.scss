@@ -49,7 +49,8 @@
 
     .post__details-item {
       @extend %facets__section-title;
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0;
       text-transform: uppercase;
     }
 
@@ -72,6 +73,12 @@
           margin-left: 1rem;
         }
       }
+    }
+  }
+
+  &-list.downloads .post__details-item ul {
+    @include breakpoint($break: 'medium', $until: 'large') {
+      flex-basis: unset;
     }
   }
 

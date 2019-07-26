@@ -19,10 +19,9 @@
         transition: all 0.3s ease-in-out;
       }
 
-      &.refinement-label {
-        &--is-refined::after {
-          top: calc(100% - 13px / 2);
-        }
+      &.refinement-label--is-refined::after,
+      .archive__filter-type &::after {
+        top: calc(100% - 13px / 2);
       }
     }
 
