@@ -1,6 +1,7 @@
 .home__ecosystem {
   position: relative;
   padding-top: 2.5rem;
+  padding-bottom: 3rem;
 
   &::before {
     @extend %homebg;
