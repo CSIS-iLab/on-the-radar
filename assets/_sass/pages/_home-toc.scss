@@ -1,0 +1,233 @@
+.home__toc {
+  position: fixed;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  z-index: 20;
+  max-width: 300px;
+  padding: 1rem 1rem 0.75rem;
+  background-color: $color__blue-dark;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+  @include breakpoint('medium') {
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  @include breakpoint('large') {
+    top: 50%;
+    bottom: unset;
+    left: 0;
+    max-width: unset;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  @include breakpoint('xlarge') {
+    left: 1rem;
+  }
+}
+
+.toc {
+  &__menu {
+    position: absolute;
+    margin: 1.5rem 1.5rem 0 0;
+    padding: 0;
+    list-style: none;
+    transform: scaleY(0);
+    transform-origin: center bottom;
+    transition: transform 0.2s ease-in-out;
+
+    @include breakpoint('large') {
+      position: relative;
+      margin-top: 0.5rem;
+      transform: none;
+    }
+
+    * {
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out 0.2s;
+      @include breakpoint('large') {
+        opacity: 1;
+      }
+    }
+
+    .js-menu-open & {
+      position: relative;
+      transform: scaleY(1);
+
+      * {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__menu-item {
+    display: flex;
+    margin-bottom: 1rem;
+
+    @include breakpoint('large') {
+      margin-bottom: 0.75rem;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      flex: 0 0 auto;
+      width: 0.75rem;
+      height: 1rem;
+      margin-top: 2px;
+      margin-right: 0.75rem;
+      background-color: rgba(230, 230, 230, 0.8);
+      transition: background-color 0.2s ease-in-out, width 0.2s ease-in-out;
+
+      @include breakpoint('large') {
+        width: 1.5rem;
+      }
+    }
+
+    &:last-of-type() {
+      margin-bottom: 0.5rem;
+    }
+
+    &:hover {
+      a {
+        @include breakpoint('large') {
+          color: rgba($color__white, 0.8);
+          visibility: visible;
+          opacity: 1;
+          transition: visibility 0.2s ease-in-out, opacity 1s ease-in-out,
+            color 0.2s ease-in-out;
+        }
+      }
+
+      &::before {
+        @include breakpoint('large') {
+          width: 2rem;
+          background-color: rgba($color__white, 0.9);
+        }
+      }
+    }
+
+    a {
+      position: relative;
+      display: block;
+      margin-left: -2rem;
+      padding-left: 2rem;
+      color: rgba(242, 242, 242, 0.8);
+      font-family: $font__lato;
+      font-weight: 600;
+      @include font-size(16px);
+      line-height: 1.25;
+      transition: visibility 0.2s ease-in-out, opacity 1s ease-in-out,
+        color 0.2s ease-in-out;
+
+      @include breakpoint('large') {
+        margin-left: -4rem;
+        padding: 2px 4px 2px calc(4rem + 4px);
+        line-height: 1;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.2s ease-in-out, opacity 1s ease-in-out;
+      }
+
+      &::after {
+        @include breakpoint('large') {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 4rem;
+          z-index: -1;
+          background-color: $color__navy;
+        }
+      }
+    }
+
+    &.toc__menu-item--active {
+      &::before {
+        background-color: $color__orange;
+
+        @include breakpoint('large') {
+          width: 2rem;
+        }
+      }
+
+      a {
+        color: $color__off-white;
+      }
+    }
+  }
+
+  &__btn {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    appearance: none;
+
+    @include breakpoint('large') {
+      cursor: default;
+    }
+  }
+
+  &__btn--open {
+    position: relative;
+    color: rgba($color__white, 0.8);
+    font-family: $font__lato;
+    font-weight: 600;
+    @include font-size(14px);
+    line-height: 1;
+    text-transform: uppercase;
+
+    @include breakpoint('large') {
+      margin-left: 2px;
+      color: rgba(242, 242, 242, 0.8);
+      @include font-size(14px);
+      line-height: 1.71;
+      transform: rotate(-90deg);
+      transform-origin: 10%;
+    }
+
+    .js-menu-open & {
+      opacity: 0.5;
+
+      @include breakpoint('large') {
+        opacity: 1;
+      }
+
+      &::after {
+        content: '...';
+
+        @include breakpoint('large') {
+          content: '';
+        }
+      }
+    }
+  }
+
+  &__btn--close {
+    display: none;
+    float: right;
+    margin-top: -6px;
+    color: $color__orange;
+    @include font-size(28px);
+
+    .icon-close::before {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .js-menu-open & {
+      display: block;
+
+      @include breakpoint('large') {
+        display: none;
+      }
+    }
+  }
+}

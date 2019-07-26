@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="home">
-  <section class="home__intro">
+  <section id="introduction" class="home__intro js-include-in-toc">
     <h1 class="page__title">
       <span class="page__subtitle">{{
         site.data.language.home.subtitle | escape
@@ -13,7 +13,7 @@ layout: default
     <div class="home__intro-desc">
     {{ content }}
     </div>
-    {% assign featured_posts = site.posts | concat: site.workshops | concat: site.briefs | where: 'featured_on_home', true | sort: 'date', 'first' %}
+    {% assign featured_posts = site.posts | concat: site.workshops | concat: site.briefs | where: 'featured_on_home', true | sort: 'date' | reverse %}
     {%- if featured_posts.size > 0 -%}
     <section class="home__featured">
       <h2 class="home__featured-title">Featured Posts</h2>
@@ -23,14 +23,28 @@ layout: default
     </section>
     {%- endif -%}
   </section>
-  <section class="home__ssa">
-    <h2 class="section__title">
-      <span class="section__subtitle">What is</span>
-      Strategic Situational Awareness (SA)?
-    </h2>
-    <div class="home__ssa-desc">Strategic situational awareness is the ability to <button class="vocab">observe</button> the operating environment, <button class="vocab">detect attacks,</button> and <button class="vocab">discern</button> actual attacks from false alarms across the <button class="vocab">spectrum of conflict.</button></div>
+  <section id="ssa" class="home__ssa js-include-in-toc">
+    <div class="section__bg">
+      <picture>
+        <source media="(max-width: 700px)" srcset="{{ '/assets/images/home/earth-bg_small.jpg' | relative_url }}">
+        <source media="(max-width: 950px)" srcset="{{ '/assets/images/home/earth-bg_medium.jpg' | relative_url }}">
+        <source media="(max-width: 1150px)" srcset="{{ '/assets/images/home/earth-bg_large.jpg' | relative_url }}">
+        <img src="{{ '/assets/images/home/earth-bg_xlarge.jpg' | relative_url }}" alt="" />
+      </picture>
+    </div>
+    <div class="section__content js-parallax">
+      <h2 class="section__title">
+        <span class="section__subtitle">What is</span>
+        Strategic Situational Awareness (SSA)?
+      </h2>
+      <div class="home__ssa-desc js-fade-in">Strategic situational awareness is the ability to <br/>
+      <button id="t1" class="vocab" data-vocab="gather data">observe</button> the operating environment, <br/>
+      <button id="t2" class="vocab" data-vocab="recognize and monitor threats">detect attacks,</button> and <button  id="t3" class="vocab" data-vocab="evaluate">discern</button> <br/>
+      actual attacks from false alarms across the <br/>
+      <button class="vocab"  id="t4" data-vocab="nuclear, conventional, and sub-conventional">spectrum of conflict.</button></div>
+    </div>
   </section>
-  <section class="home__ecosystem">
+  <section id="ecosystem" class="home__ecosystem js-include-in-toc">
     <h2 class="section__title">
       <span class="section__subtitle">The Changing</span>
       Situational Awareness Ecosystem
@@ -69,7 +83,7 @@ layout: default
               {%- if event.category == 'general' -%}
                <span class="timeline__title">{{ event.title }}</span>
               {%- else -%}
-              <button class="timeline__title">
+              <button class="timeline__title js-toggle_timeline_details" aria-pressed="false" aria-label="More details about {{ event.title }}">
                 {{ event.title }}
               </button>
               <div class="timeline__details">
@@ -94,13 +108,31 @@ layout: default
     {%- endfor -%}
   </section>
   <section class="home__space">
-    <p class="home__space-desc">{{ site.data.language.home.space.quote | prepend: '"' | append: '"' }}</p>
-    <p class="home__space-cite">{{ site.data.language.home.space.citation | prepend: '&mdash;' }}</p>
+    <div class="section__bg">
+      <picture>
+        <source media="(max-width: 700px)" srcset="{{ '/assets/images/home/spacex-bg_small.jpg' | relative_url }}">
+        <source media="(max-width: 950px)" srcset="{{ '/assets/images/home/spacex-bg_medium.jpg' | relative_url }}">
+        <source media="(max-width: 1150px)" srcset="{{ '/assets/images/home/spacex-bg_large.jpg' | relative_url }}">
+        <img src="{{ '/assets/images/home/spacex-bg_xlarge.jpg' | relative_url }}" alt="" />
+      </picture>
+    </div>
+    <div class="section__content js-parallax">
+      <p class="home__space-desc">{{ site.data.language.home.space.quote | prepend: '"' | append: '"' }}</p>
+      <p class="home__space-cite">{{ site.data.language.home.space.citation | prepend: '&mdash;' }}</p>
+    </div>
   </section>
-  <section class="home__matter">
+  <section id="matter" class="home__matter js-include-in-toc">
     <h2 class="section__title">{{ site.data.language.home.matter.title }}</h2>
     {{ site.data.language.home.matter.desc | markdownify }}
-    <div class="matter__divider">DIVIDER HERE</div>
+    <div class="matter__divider">
+      <svg viewBox="0 0 507 59" id="bracket" xmlns="http://www.w3.org/2000/svg">
+        <g id="bracket" stroke="#F05E39" fill="none" fill-rule="evenodd" stroke-linecap="square">
+          <path d="M0 59c5.932-14.333 15.749-21.5 29.45-21.5H217c19.5 0 31.333-12.5 35.5-37.5" />
+          <path d="M252.5 59c5.932-14.333 15.749-21.5 29.45-21.5H469.5C489 37.5 500.833 25 505 0"
+            transform="matrix(-1 0 0 1 757.5 0)" />
+        </g>
+      </svg>
+    </div>
     <div class="matter__subsections">
       {%- for subsection in site.data.language.home.matter.sections -%}
       <div class="matter__subsection">
@@ -113,7 +145,7 @@ layout: default
       {%- endfor -%}
     </div>
   </section>
-  <section class="home__proj-nav">
+  <section id="projnav" class="home__proj-nav js-include-in-toc">
     <h2 class="section__title">{{ site.data.language.home.proj_nav.title }}</h2>
     {{ site.data.language.home.proj_nav.desc | markdownify }}
     {%- assign submenu = site.data.menus | where_exp: "item", "item.inHomeSub == true" -%}
@@ -126,7 +158,7 @@ layout: default
     {%- assign submenu = site.data.menus | where_exp: "item", "item.inHomeMain == true" -%}
     <ul class="proj-nav__menu">
       {%- for item in submenu -%}
-      <li class="proj-nav__menu-item">
+      <li class="proj-nav__menu-item js-fade-in">
         <img src="{{ '/assets/images/home/icon-' | append: item.identifier | append: '.svg' | relative_url }}" alt="" class="proj-nav__menu-icon" />
         {%- if item.url == null -%}
         <div class="proj-nav__menu-title">{{ item.title }}</div>
@@ -139,7 +171,7 @@ layout: default
     </ul>
   </section>
   <section class="home__recent">
-    {% assign recent_posts = site.posts | concat: site.workshops | concat: site.briefs | where_exp: "item", "item.featured_on_home != true" | sort: 'date', 'first' %}
+    {% assign recent_posts = site.posts | concat: site.workshops | concat: site.briefs | where_exp: "item", "item.featured_on_home != true" | sort: 'date' | reverse %}
     {%- if recent_posts.size > 0 -%}
       {%- for post in recent_posts limit:3 -%}
       {%- include related-posts-block.html -%}
@@ -147,3 +179,13 @@ layout: default
     {%- endif -%}
   </section>
 </section>
+
+<div id="toc" class="home__toc">
+  <button id="toc-open" class="toc__btn toc__btn--open" aria-pressed="false" aria-label="Open Table of Contents">On This Page</button>
+  <button id="toc-close" class="toc__btn toc__btn--close" aria-pressed="false" aria-label="Close Table of Contents"><i class="icon-close"></i></button>
+  <ul class="toc__menu">
+    {%- for item in site.data.home_toc -%}
+    <li class="toc__menu-item" data-hash="{{ item.id }}"><a href="#{{ item.id }}">{{ item.title }}</a></li>
+    {%- endfor -%}
+  </ul>
+</div>
