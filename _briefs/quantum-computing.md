@@ -31,7 +31,7 @@ keywords:
 - Communications, Command and Control
 downloads:
 - label: Quantum Computing Primer
-  media_upload: ''
+  media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564151484/on-the-radar/Quantum%20Computing%20Formatted%20Primer_AL_Clean.pdf
 featured_on_home: false
 last-modified-date: 2018-10-01T04:00:00.000+00:00
 
