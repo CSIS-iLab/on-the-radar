@@ -17,18 +17,8 @@ authors:
 - _authors/rhys-mccormick.md
 brief_type: Country Profile
 keywords:
+- Communications, Command and Control
 - Early Warning
-- Synthetic Aperture Sonar
-- Keyword 1
-- Drone
-- Hydrophones
-- Synthetic Aperture Sonar
-- Anti-Submarine Warfare (ASW)
-- Keyword 2
-- Unmanned
-- Hydrophones
-- Anti-Submarine Warfare (ASW)
-- Synthetic Aperture Sonar
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1564063749/on-the-radar/EW3.jpg
 image_caption: An E-3 Sentry Airborne Warning and Control System aircraft departs
   July 11, 2019, at Travis Air Force Base, California. ([Photo](https://www.dvidshub.net/image/5583712/busy-flight-line)
