@@ -82,10 +82,10 @@
 - title: range
   acronym: ''
   description: 'The distance from which new information can be ascertained. '
-- title: resiliency or reliability
+- title: resiliency
   acronym: ''
-  description: 'The extent to which a strategic situational awareness capability can
-    operate in a contested environment. '
+  description: "(Alternatively, reliability) The extent to which a strategic situational
+    awareness capability can operate in a contested environment."
 - title: strategic situational awareness
   acronym: Strategic SA
   description: 'The ability to characterize the operating environment including adversary
