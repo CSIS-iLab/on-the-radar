@@ -1,7 +1,4 @@
 ---
-- title: 'reliability '
-  acronym: ''
-  description: "(Alternatively, resiliency). "
 - title: action-enabling
   acronym: ''
   description: 'The degree to which a strategic situational awareness capability enables
@@ -50,6 +47,18 @@
   acronym: ''
   description: 'The extent to which a strategic situational awareness capability must
     enter into an adversary’s territory, airspace or networks. '
+- title: miscalculation
+  acronym: ''
+  description: 'Inaccurate inferences and misjudgments of consequences and reactions
+    to one’s policies concerning the intentions of potential adversaries, adversary
+    capabilities, the chances of favorable diplomatic settlement, and anticipated
+    consequences of conflict. (Source: Jervis, "War and misperception," 1988)'
+- title: nuclear deterrence
+  acronym: ''
+  description: 'Forcing an adversary not to act by threatening the use of nuclear
+    force. This can be achieved through the threat of retaliation (deterrence by punishment)
+    or by denying the opponent’s war aims (deterrence by denial). (Source: Ruhle,
+    "Deterrence: what it can (and cannot) do," 2015) '
 - title: predictiveness
   acronym: ''
   description: 'The degree to which a strategic situational awareness capability allows
@@ -66,29 +75,21 @@
   acronym: ''
   description: The extent to which a strategic situational awareness capability to
     continuously collect information.
-- title: nuclear deterrence
-  acronym: ''
-  description: 'Forcing an adversary not to act by threatening the use of nuclear
-    force. This can be achieved through the threat of retaliation (deterrence by punishment)
-    or by denying the opponent’s war aims (deterrence by denial). (Source: Ruhle,
-    "Deterrence: what it can (and cannot) do," 2015) '
-- title: miscalculation
-  acronym: ''
-  description: 'Inaccurate inferences and misjudgments of consequences and reactions
-    to one’s policies concerning the intentions of potential adversaries, adversary
-    capabilities, the chances of favorable diplomatic settlement, and anticipated
-    consequences of conflict. (Source: Jervis, "War and misperception," 1988)'
-- title: speed
-  acronym: ''
-  description: 'A shortening in the time between an adversary''s decision to act and
-    the surveilling party detection of it (including the ability to act on that information). '
 - title: range
   acronym: ''
   description: 'The distance from which new information can be ascertained. '
+- title: 'reliability '
+  acronym: ''
+  description: "(Alternatively, resiliency). The extent to which a strategic situational
+    awareness capability can operate in a contested environment."
 - title: resiliency
   acronym: ''
   description: "(Alternatively, reliability) The extent to which a strategic situational
     awareness capability can operate in a contested environment."
+- title: speed
+  acronym: ''
+  description: 'A shortening in the time between an adversary''s decision to act and
+    the surveilling party detection of it (including the ability to act on that information). '
 - title: strategic situational awareness
   acronym: Strategic SA
   description: 'The ability to characterize the operating environment including adversary
