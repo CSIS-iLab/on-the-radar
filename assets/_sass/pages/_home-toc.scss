@@ -95,7 +95,6 @@
     &:hover {
       a {
         @include breakpoint('large') {
-          display: block;
           color: rgba($color__white, 0.8);
           visibility: visible;
           opacity: 1;
@@ -113,24 +112,38 @@
     }
 
     a {
+      position: relative;
       display: block;
+      margin-left: -2rem;
+      padding-left: 2rem;
       color: rgba(242, 242, 242, 0.8);
       font-family: $font__lato;
       font-weight: 600;
+      @include font-size(16px);
       line-height: 1.25;
-
       transition: visibility 0.2s ease-in-out, opacity 1s ease-in-out,
         color 0.2s ease-in-out;
-      @include font-size(16px);
 
       @include breakpoint('large') {
-        display: none;
-        padding: 2px 4px;
+        margin-left: -4rem;
+        padding: 2px 4px 2px calc(4rem + 4px);
         line-height: 1;
-        background-color: $color__navy;
         visibility: hidden;
         opacity: 0;
         transition: visibility 0.2s ease-in-out, opacity 1s ease-in-out;
+      }
+
+      &::after {
+        @include breakpoint('large') {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 4rem;
+          z-index: -1;
+          background-color: $color__navy;
+        }
       }
     }
 
@@ -145,9 +158,6 @@
 
       a {
         color: $color__off-white;
-        @include breakpoint('large') {
-          opacity: 1;
-        }
       }
     }
   }
