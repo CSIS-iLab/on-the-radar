@@ -20,14 +20,18 @@
     grid-area: header;
     margin-bottom: 3rem;
     @include font-size(40px);
+
     color: $color__white;
     font-family: $font__lato;
     font-weight: 600;
     line-height: 1.2;
 
     @include breakpoint('medium') {
-      @include font-size(48px);
+      @include font-size(50px);
       line-height: 1.33;
+    }
+    @include breakpoint('large') {
+      @include font-size(60px);
     }
 
     @include breakpoint('xlarge') {

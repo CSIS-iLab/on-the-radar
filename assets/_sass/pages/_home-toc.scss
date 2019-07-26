@@ -46,9 +46,21 @@
       transform: none;
     }
 
+    * {
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out 0.2s;
+      @include breakpoint('large') {
+        opacity: 1;
+      }
+    }
+
     .js-menu-open & {
       position: relative;
       transform: scaleY(1);
+
+      * {
+        opacity: 1;
+      }
     }
   }
 
@@ -68,7 +80,7 @@
       height: 1rem;
       margin-top: 2px;
       margin-right: 0.75rem;
-      background-color: rgba(242, 242, 242, 0.8);
+      background-color: rgba(230, 230, 230, 0.8);
       transition: background-color 0.2s ease-in-out, width 0.2s ease-in-out;
 
       @include breakpoint('large') {
@@ -87,6 +99,8 @@
           color: rgba($color__white, 0.8);
           visibility: visible;
           opacity: 1;
+          transition: visibility 0.2s ease-in-out, opacity 1s ease-in-out,
+            color 0.2s ease-in-out;
         }
       }
 
@@ -103,16 +117,20 @@
       color: rgba(242, 242, 242, 0.8);
       font-family: $font__lato;
       font-weight: 600;
-      @include font-size(16px);
       line-height: 1.25;
-      transition: visibility 0.2s ease-in-out, opacity 0.2s ease-in-out,
+
+      transition: visibility 0.2s ease-in-out, opacity 1s ease-in-out,
         color 0.2s ease-in-out;
+      @include font-size(16px);
 
       @include breakpoint('large') {
         display: none;
+        padding: 2px 4px;
         line-height: 1;
+        background-color: $color__navy;
         visibility: hidden;
         opacity: 0;
+        transition: visibility 0.2s ease-in-out, opacity 1s ease-in-out;
       }
     }
 
@@ -127,6 +145,9 @@
 
       a {
         color: $color__off-white;
+        @include breakpoint('large') {
+          opacity: 1;
+        }
       }
     }
   }
@@ -149,7 +170,7 @@
     color: rgba($color__white, 0.8);
     font-family: $font__lato;
     font-weight: 600;
-    @include font-size(18px);
+    @include font-size(14px);
     line-height: 1;
     text-transform: uppercase;
 

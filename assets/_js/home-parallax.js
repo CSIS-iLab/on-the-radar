@@ -1,5 +1,5 @@
 const ParallaxBg = () => {
-  const speed = 0.08
+  const speed = 0.1
   const backgrounds = Array.from(document.querySelectorAll('.js-parallax'))
   let lastScrollY = 0
   let ticking = false
