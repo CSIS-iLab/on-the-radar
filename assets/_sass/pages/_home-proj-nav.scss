@@ -1,6 +1,6 @@
 .home__proj-nav {
   position: relative;
-  padding-top: 9.375rem;
+  padding-top: 12rem;
   padding-bottom: 5rem;
 
   @include breakpoint('large') {
@@ -12,6 +12,7 @@
       'submenu menu';
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto max-content;
+    padding-top: 15rem;
   }
 
   @include breakpoint('xlarge') {
