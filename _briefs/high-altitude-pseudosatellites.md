@@ -28,7 +28,7 @@ authors:
 brief_type: Tech Primer
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1564059374/on-the-radar/PONI_illustration_COLOR_unmanned_platforms.jpg
 image_caption: ''
-image_source: ''
+image_source: CSIS
 keywords:
 - First-mover incentive
 - Miscalculation
