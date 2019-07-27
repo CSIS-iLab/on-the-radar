@@ -28,7 +28,7 @@ authors:
 brief_type: Tech Primer
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1564060995/on-the-radar/UUV.jpg
 image_caption: ''
-image_source: ''
+image_source: CSIS
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865066/on-the-radar/UUV%20Final%20Primer%20Formatted.pdf
   label: UUV primer
