@@ -17,7 +17,7 @@ details:
   - China
   - United States
 title: Smallsats
-date: 2019-04-03T04:00:00.000+00:00
+date: 2019-07-30 13:00:00 +0000
 excerpt: Small satellites (smallsats) are miniaturized artificial satellites that
   can enhance situational awareness (SA) by providing advanced, low-cost sensing of
   in-orbit space objects, and by delivering persistent broad-coverage Earth imaging
@@ -38,7 +38,7 @@ downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865065/on-the-radar/Smallsats%20Final%20Primer%20Formatted%2007-02-29.pdf
   label: Smallsats primer
 featured_on_home: false
-last-modified-date: 2019-04-03T04:00:00.000+00:00
+last-modified-date: 2019-07-30 13:00:00 +0000
 
 ---
 ## Introduction
