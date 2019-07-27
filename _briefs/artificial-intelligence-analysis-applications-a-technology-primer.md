@@ -31,7 +31,7 @@ image: https://res.cloudinary.com/csisideaslab/image/upload/v1564060974/on-the-r
 image_caption: ''
 image_source: ''
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1563997197/on-the-radar/Artificial%20Intelligence%20Analysis%20Primer.pdf
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564247093/on-the-radar/Artificial%20Intelligence%20Analysis%20Primer.pdf
   label: AI Analysis Primer
 featured_on_home: false
 last-modified-date: 2019-04-03T04:00:00.000+00:00
