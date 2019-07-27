@@ -33,7 +33,7 @@ keywords:
 - Information Complexity
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1564059413/on-the-radar/PONI_illustration_COLOR_space_platforms.jpg
 image_caption: ''
-image_source: ''
+image_source: CSIS
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865065/on-the-radar/Smallsats%20Final%20Primer%20Formatted%2007-02-29.pdf
   label: Smallsats primer
