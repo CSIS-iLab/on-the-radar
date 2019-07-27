@@ -95,8 +95,8 @@ fields:
   label: Featured on Home Page?
   description: Do you want to feature this post on the home page?
 pages:
-- _briefs/artificial-intelligence-analysis-applications-a-technology-primer.md
 - _briefs/unmanned-underwater-vehicle-uuv-systems-for-submarine-detection-a-technology-primer.md
+- _briefs/artificial-intelligence-analysis-applications-a-technology-primer.md
 - _briefs/quantum-computing.md
 - _briefs/high-altitude-pseudosatellites.md
 - _briefs/plant-based-sensors-a-technology-primer.md
