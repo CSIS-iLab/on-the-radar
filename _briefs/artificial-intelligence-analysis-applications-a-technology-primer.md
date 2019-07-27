@@ -29,7 +29,7 @@ keywords:
 - Information Complexity
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1564060974/on-the-radar/AI.jpg
 image_caption: ''
-image_source: ''
+image_source: CSIS
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564247093/on-the-radar/Artificial%20Intelligence%20Analysis%20Primer.pdf
   label: AI Analysis Primer
