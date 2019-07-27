@@ -25,7 +25,7 @@ image_caption: An E-3 Sentry Airborne Warning and Control System aircraft depart
   by Heide Couch, 60th Air Mobility Wing Public Affairs, U.S. Air Force)
 image_source: https://www.dvidshub.net/image/5583712/busy-flight-line
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1563897486/on-the-radar/US%20strategic%20SA.pdf
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564245369/on-the-radar/US%20strategic%20SA.pdf
   label: US Strategic SA Primer
 featured_on_home: true
 last-modified-date: 2019-04-19T04:00:00.000+00:00
