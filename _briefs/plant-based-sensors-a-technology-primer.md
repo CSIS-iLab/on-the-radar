@@ -28,7 +28,7 @@ keywords:
 - Provocation
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1564060962/on-the-radar/Sensors.jpg
 image_caption: ''
-image_source: ''
+image_source: CSIS
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865066/on-the-radar/Plant%20based%20sensor%20primer%20formatted.pdf
   label: Plant-based sensors primer
