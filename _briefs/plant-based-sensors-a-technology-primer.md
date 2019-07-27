@@ -16,7 +16,7 @@ details:
   country:
   - United States
 title: Plant-based Sensors
-date: 2018-10-12T17:53:00.000+00:00
+date: 2019-07-30 13:00:00 +0000
 excerpt: Plant-based sensors are physiology-based mechanisms capable of reporting
   the presence of specific stimuli on land. Plant-based sensors are an unobtrusive
   platform for monitoring weapons development and presence.
@@ -32,7 +32,7 @@ image_source: ''
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865066/on-the-radar/Plant%20based%20sensor%20primer%20formatted.pdf
   label: Plant-based sensors primer
-last-modified-date: 2018-10-12T04:00:00.000+00:00
+last-modified-date: 2019-07-30 13:00:00 +0000
 featured_on_home: false
 
 ---
