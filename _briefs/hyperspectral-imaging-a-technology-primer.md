@@ -33,7 +33,7 @@ keywords:
 - First-mover incentive
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1564061861/on-the-radar/Sensors-1.jpg
 image_caption: ''
-image_source: ''
+image_source: CSIS
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865065/on-the-radar/Hyperspectral%20Imaging%20Primer.pdf
   label: Hyperspectral Imaging Primer
