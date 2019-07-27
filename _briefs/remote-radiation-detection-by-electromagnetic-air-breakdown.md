@@ -32,7 +32,7 @@ keywords:
 - Miscalculation
 downloads:
 - label: Remote Radiation Detection
-  media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564088862/on-the-radar/Remote%20radiation%20detection%20primer-MS%20clean.pdf
+  media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564247316/on-the-radar/Remote%20radiation%20detection%20primer-MS%20clean.pdf
 featured_on_home: false
 last-modified-date: 2018-09-15T04:00:00.000+00:00
 
