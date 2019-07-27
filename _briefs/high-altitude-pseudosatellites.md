@@ -34,7 +34,7 @@ keywords:
 - Miscalculation
 - Provocation
 downloads:
-- media_upload: ''
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564248168/on-the-radar/HAPS.pdf
   label: HAPS Primer
 featured_on_home: false
 last-modified-date: 2019-06-06T04:00:00.000+00:00
