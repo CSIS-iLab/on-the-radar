@@ -14,7 +14,7 @@ details:
   - Russia
   - United States
 title: 'Resilient Communications for Command and Control of Nuclear Forces '
-date: 2019-07-30 13:00:00 +0000
+date: 2019-07-27 13:00:00 +0000
 excerpt: The current United States Nuclear Command, Control, and Communications (NC3)
   enable the transport of situation monitoring from Intelligence, Surveillance, and
   Reconnaissance (ISR) data, nuclear force management, nuclear force direction in
@@ -40,7 +40,7 @@ downloads:
 - label: Resilient Communications Primer
   media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865065/on-the-radar/Resilient%20command%20and%20control%20primer.pdf
 featured_on_home: false
-last-modified-date: 2019-07-30 13:00:00 +0000
+last-modified-date: 2019-07-27 13:00:00 +0000
 
 ---
 ## Introduction
