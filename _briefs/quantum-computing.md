@@ -25,7 +25,7 @@ authors:
 brief_type: Tech Primer
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1564062298/on-the-radar/PONI_illustration_COLOR_cyber.jpg
 image_caption: ''
-image_source: ''
+image_source: CSIS
 keywords:
 - First-mover incentive
 - Communications, Command and Control
