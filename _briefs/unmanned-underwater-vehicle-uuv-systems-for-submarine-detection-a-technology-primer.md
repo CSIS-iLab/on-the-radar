@@ -17,7 +17,7 @@ details:
   - Russia
   - United States
 title: Unmanned Underwater Vehicle (UUV) Systems for Submarine Detection
-date: 2019-05-05T04:00:00.000+00:00
+date: 2019-07-30 13:00:00 +0000
 excerpt: Unmanned underwater vehicles (UUVs) are an emerging class of unmanned maritime
   vehicles (UMVs) with the potential to transform anti-submarine warfare. Their small
   size and stealthy deployment may allow for reconnaissance in a contested environment
@@ -37,7 +37,7 @@ keywords:
 - Provocation
 - Entanglement
 featured_on_home: false
-last-modified-date: 2019-05-05T04:00:00.000+00:00
+last-modified-date: 2019-07-30 13:00:00 +0000
 
 ---
 ## Introduction
