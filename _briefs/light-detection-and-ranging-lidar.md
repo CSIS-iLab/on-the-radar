@@ -26,7 +26,7 @@ authors:
 brief_type: Tech Primer
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1564062656/on-the-radar/Sensors-2.jpg
 image_caption: ''
-image_source: ''
+image_source: CSIS
 keywords:
 - First-mover incentive
 - Information Complexity
