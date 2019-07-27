@@ -38,9 +38,10 @@ downloads:
   label: HAPS Primer
 featured_on_home: false
 last-modified-date: 2019-06-06T04:00:00.000+00:00
-published: false
 
 ---
+## Introduction
+
 Over the last 60 years,[^1] both the government and private sector have made significant progress in different types of aerospace technologies, including the areas of operation, payloads, and capabilities. This primer focuses on multi-mission military unmanned High Altitude Pseudo-Satellites (HAPS). HAPS fill an existing gap between lower-altitude Unmanned Aerial Vehicles (UAVs) and conventional satellites that are unable to loiter in place, and have applications that include reconnaissance, damage assessment, and remote sensing.[^2] Pseudo-satellites are high altitude air vehicles or airships characterized by their ability to both maintain a fixed position over a single area of interest for extended periods of time (with time horizons in the days and weeks). HAPS provide multiple payload capabilities (within the size, weight, and power limitations of the platform).[^3] Long endurance and fixed positioning mean that pseudo-satellites provide flexible and persistent intelligence, surveillance and reconnaisance (ISR) capabilities that satellite systems cannot provide. HAPS are designed to fly above commercial air traffic at altitudes of approximately 65,000 feet, or 20km. This altitude, referred to as the stratosphere, is high enough for sensor payloads to cover areas of interest without interfering with commercial aviation.[^4]
 
 The most common type of HAPS platforms are forms of unmanned airplanes, airships and balloons, and as such have low mass and high surface area.\[^5] These characteristics make it possible for a single HAPS, depending on model and type, to carry up to several hundred kilograms of equipment and provide up to eight hundred watts of constant power.[^6] This means that it is possible for HAPS to carry anything from imagers, voice and data communications, to radio detection and ranging (RADAR), light imaging detection and ranging (LIDAR), and electronic support measure/electronic intelligence (ESM/ELINT) payloads.[^7] These technologies, leveraged on a high-altitude platform, enable monitoring of an area without putting the platform directly over it – allowing for less intrusive spying.
