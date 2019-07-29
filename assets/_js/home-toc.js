@@ -21,23 +21,31 @@ const TOC = () => {
   )
   let current
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.intersectionRatio > 0) {
-        if (current) {
-          links[current].classList.remove('toc__menu-item--active')
+  if (
+    !('IntersectionObserver' in window) ||
+    !('IntersectionObserverEntry' in window) ||
+    !('intersectionRatio' in window.IntersectionObserverEntry.prototype)
+  ) {
+    return false
+  } else {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.intersectionRatio > 0) {
+          if (current) {
+            links[current].classList.remove('toc__menu-item--active')
+          }
+          current = entry.target.id
+          links[current].classList.add('toc__menu-item--active')
+        } else {
+          links[entry.target.id].classList.remove('toc__menu-item--active')
         }
-        current = entry.target.id
-        links[current].classList.add('toc__menu-item--active')
-      } else {
-        links[entry.target.id].classList.remove('toc__menu-item--active')
-      }
+      })
     })
-  })
 
-  sections.forEach(section => {
-    observer.observe(section)
-  })
+    sections.forEach(section => {
+      observer.observe(section)
+    })
+  }
 }
 
 export default TOC

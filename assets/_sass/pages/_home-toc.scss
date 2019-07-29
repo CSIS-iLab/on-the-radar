@@ -103,6 +103,12 @@
         }
       }
 
+      span {
+        @include breakpoint('large') {
+          display: inline;
+        }
+      }
+
       &::before {
         @include breakpoint('large') {
           width: 2rem;
@@ -143,6 +149,12 @@
           left: 4rem;
           z-index: -1;
           background-color: $color__navy;
+        }
+      }
+
+      span {
+        @include breakpoint('large') {
+          display: none;
         }
       }
     }

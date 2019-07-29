@@ -184,7 +184,7 @@ layout: default
   <button id="toc-close" class="toc__btn toc__btn--close" aria-pressed="false" aria-label="Close Table of Contents"><i class="icon-close"></i></button>
   <ul class="toc__menu">
     {%- for item in site.data.home_toc -%}
-    <li class="toc__menu-item" data-hash="{{ item.id }}"><a href="#{{ item.id }}">{{ item.title }}</a></li>
+    <li class="toc__menu-item" data-hash="{{ item.id }}"><a href="#{{ item.id }}"><span>{{ item.title }}</span></a></li>
     {%- endfor -%}
   </ul>
 </div>

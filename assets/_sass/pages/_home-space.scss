@@ -30,7 +30,7 @@
     }
 
     @include breakpoint('large') {
-      margin-top: -15rem; // Offset parallax effect
+      margin-top: -20rem; // Offset parallax effect
       padding-top: 0;
     }
   }
