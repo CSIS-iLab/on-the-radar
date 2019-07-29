@@ -35,7 +35,7 @@ layout: default
     <div class="section__content js-parallax">
       <h2 class="section__title">
         <span class="section__subtitle">What is</span>
-        Strategic Situational Awareness (SSA)?
+        Strategic Situational Awareness (Strategic SA)?
       </h2>
       <div class="home__ssa-desc js-fade-in">Strategic situational awareness is the ability to <br/>
       <button id="t1" class="vocab" data-vocab="gather data">observe</button> the operating environment, <br/>
@@ -65,7 +65,6 @@ layout: default
     {%- for ecosystem in site.data.ecosystems -%}
     <section class="ecosystem__subsection ecosystem__subsection--{{ecosystem.id}}">
       <h3 class="subsection__title">
-        <span class="subsection__num">{{ ecosystem.num }}</span>
         {{ ecosystem.title }}
       </h3>
       <img src="{{ '/assets/images/home/ecosystem-' | append: ecosystem.id | append: '.png' | relative_url }}" class="ecosystem__subsection-img" title="{{ ecosystem.title }}" alt="" />
