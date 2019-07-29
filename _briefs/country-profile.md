@@ -8,7 +8,7 @@ details:
   characteristics: []
   risk_factors: []
   domain: []
-date: 2019-07-27 13:00:00 +0000
+date: 2019-07-29 13:00:00 +0000
 excerpt: The United States has advanced strategic situational awareness capabilities
   across all domains.  In recent decades, these capabilities have become increasingly
   important at the tactical and operational levels, and are integral to U.S. doctrine
@@ -28,7 +28,7 @@ downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564245369/on-the-radar/US%20strategic%20SA.pdf
   label: US Strategic SA Primer
 featured_on_home: true
-last-modified-date: 2019-07-27 13:00:00 +0000
+last-modified-date: 2019-07-29 13:00:00 +0000
 
 ---
 ## Introduction
