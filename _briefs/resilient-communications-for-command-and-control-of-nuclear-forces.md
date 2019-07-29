@@ -14,7 +14,7 @@ details:
   - Russia
   - United States
 title: 'Resilient Communications for Command and Control of Nuclear Forces '
-date: 2019-07-27 13:00:00 +0000
+date: 2019-07-29 13:00:00 +0000
 excerpt: Outside of the current United States Nuclear Command, Control, and Communications
   (NC3) realm, tactical commercial communications systems have been advancing the
   state of the technological innovation with the developments of Mobile Ad Hoc Network
@@ -36,7 +36,7 @@ downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564408960/on-the-radar/Resilient%20command%20and%20control%20primer.pdf
   label: Resilient Command and Control Primer
 featured_on_home: false
-last-modified-date: 2019-07-27 13:00:00 +0000
+last-modified-date: 2019-07-29 13:00:00 +0000
 
 ---
 ## Introduction
