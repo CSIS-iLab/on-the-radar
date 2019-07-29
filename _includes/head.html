@@ -5,6 +5,9 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   {%- seo -%}
+  {% unless page.image.size > 0 %}
+  <meta property="og:image" content="{{ site.logo | relative_url }}" />
+  {% endunless %}
   <link rel="stylesheet" href="https://use.typekit.net/jrm7lzh.css" />
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
   {%- if page.layout == 'home' -%}
@@ -24,5 +27,6 @@
     href="{{ '/assets/css/print.css' | relative_url }}"
   />
 
-  {%- feed_meta -%} {%- include google-analytics.html -%}
+  {%- feed_meta -%}
+  {%- include google-analytics.html -%}
 </head>
