@@ -15,7 +15,7 @@ details:
   - China
   - United States
 title: Quantum Computing
-date: 2019-07-27 13:00:00 +0000
+date: 2019-07-29 13:00:00 +0000
 excerpt: 'Quantum computers have capabilities that exceed those of classical computers,
   processing information in a fundamentally different way by taking advantage of physics
   that occurs only on the quantum level. With these characteristics, quantum computers
@@ -33,7 +33,7 @@ downloads:
 - label: Quantum Computing Primer
   media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564151484/on-the-radar/Quantum%20Computing%20Formatted%20Primer_AL_Clean.pdf
 featured_on_home: false
-last-modified-date: 2019-07-27 13:00:00 +0000
+last-modified-date: 2019-07-29 13:00:00 +0000
 
 ---
 ## Introduction
