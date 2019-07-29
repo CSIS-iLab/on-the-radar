@@ -63,7 +63,7 @@ heading_aside:
   phone: phone
   ngnn_url: nuclearnetwork.csis.org
 home:
-  title: Emerging Technologies
+  title: Situational Awareness and Strategic Stability
   subtitle: A study on
   space:
     quote: I think we've got to have a balance between optimism about what we can do with this technology but also realism about the dark side.
@@ -84,4 +84,3 @@ home:
     title: How to navigate this project
     desc: This project examines how emerging technologies are rapidly reshaping U.S. strategic situational awareness and the implications of these technologies for strategic stability during crises between nuclear-armed states.
     more: Find out more
-
