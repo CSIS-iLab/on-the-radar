@@ -15,15 +15,11 @@ details:
   - United States
 title: 'Resilient Communications for Command and Control of Nuclear Forces '
 date: 2019-07-27 13:00:00 +0000
-excerpt: The current United States Nuclear Command, Control, and Communications (NC3)
-  enable the transport of situation monitoring from Intelligence, Surveillance, and
-  Reconnaissance (ISR) data, nuclear force management, nuclear force direction in
-  a communications system that uses multiple redundant, diverse, and resilient datalinks
-  as part of the Nuclear Command and Control System (NCCS). Outside of the NC3 realm
-  tactical commercial communications systems have been advancing the state of the
-  technological innovation with the developments of Mobile Ad Hoc Network (MANET)
-  capabilities, Spectrum Sensing Cognitive Radios, and data encryption schemes for
-  a post-quantum world. These capabilities have the potential to augment the resiliency
+excerpt: Outside of the current United States Nuclear Command, Control, and Communications
+  (NC3) realm, tactical commercial communications systems have been advancing the
+  state of the technological innovation with the developments of Mobile Ad Hoc Network
+  (MANET) capabilities, Spectrum Sensing Cognitive Radios, and data encryption schemes
+  for a post-quantum world. These capabilities have the potential to augment the resiliency
   and flexibility of NC3; however, countries could find it difficult to signal that
   they are using them for NC3.
 authors:
@@ -37,8 +33,8 @@ keywords:
 - Entanglement
 - Communications, Command and Control
 downloads:
-- label: Resilient Communications Primer
-  media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865065/on-the-radar/Resilient%20command%20and%20control%20primer.pdf
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564408960/on-the-radar/Resilient%20command%20and%20control%20primer.pdf
+  label: Resilient Command and Control Primer
 featured_on_home: false
 last-modified-date: 2019-07-27 13:00:00 +0000
 
