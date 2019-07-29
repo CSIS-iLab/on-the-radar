@@ -7,7 +7,7 @@ details:
   country:
   - China
 title: China's Strategic Situational Awareness Capabilities
-date: 2019-07-27 13:00:00 +0000
+date: 2019-07-29 13:00:00 +0000
 excerpt: China has invested considerably in advancing its strategic situational awareness
   capabilities. The People's Liberation Army is developing a more mature architecture
   to enhance its ability to conduct nuclear counterattack and conventional operations.
@@ -31,7 +31,7 @@ downloads:
 - label: China strategic SA
   media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564246946/on-the-radar/China%20strategic%20SA.pdf
 featured_on_home: true
-last-modified-date: 2019-07-27 13:00:00 +0000
+last-modified-date: 2019-07-29 13:00:00 +0000
 
 ---
 ## Introduction
