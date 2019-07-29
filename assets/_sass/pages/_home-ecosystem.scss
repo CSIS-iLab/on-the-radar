@@ -115,7 +115,7 @@
     }
 
     &::before {
-      background-color: $color__azul;
+      background-color: $color__orange-med;
 
       @include breakpoint('medium') {
         right: -$width;
@@ -126,7 +126,7 @@
 
   &__nuclear {
     &::before {
-      background-color: $color__orange-med;
+      background-color: $color__azul;
     }
   }
 
