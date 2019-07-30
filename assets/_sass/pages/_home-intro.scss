@@ -96,11 +96,19 @@
   @include breakpoint('medium') {
     --margin: calc(10vw + var(--cap-half));
     grid-column-gap: 4rem;
+    grid-template-areas:
+      'title title'
+      'first second';
     grid-template-columns: repeat(2, 1fr);
   }
 
   @include breakpoint('large') {
     --margin: var(--cap-half);
+    grid-row-gap: 2rem;
+    grid-template-areas:
+      'title'
+      'first'
+      'second';
     grid-template-columns: 1fr;
   }
 
@@ -117,7 +125,7 @@
     background-color: $color__orange;
 
     @include breakpoint('medium') {
-      grid-column: 1 / -1;
+      grid-area: title;
     }
 
     &::before {
@@ -177,8 +185,18 @@
       font-weight: normal;
     }
 
+    &:first-of-type {
+      @include breakpoint('medium') {
+        grid-area: first;
+      }
+    }
+
     &:nth-of-type(2) {
       position: relative;
+
+      @include breakpoint('medium') {
+        grid-area: second;
+      }
 
       &::before {
         content: '';

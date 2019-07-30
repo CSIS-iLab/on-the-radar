@@ -81,7 +81,9 @@
 
     @include breakpoint('large') {
       grid-gap: 4rem;
+      grid-template-areas: 'first second';
       grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
       max-width: 100%;
     }
 
@@ -102,6 +104,18 @@
       + p {
         margin-top: 1rem;
       }
+    }
+  }
+
+  &__subsection--1 {
+    @include breakpoint('large') {
+      grid-area: first;
+    }
+  }
+
+  &__subsection--2 {
+    @include breakpoint('large') {
+      grid-area: second;
     }
   }
 

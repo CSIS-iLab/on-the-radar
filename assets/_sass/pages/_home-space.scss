@@ -30,8 +30,10 @@
     }
 
     @include breakpoint('large') {
-      margin-top: -20rem; // Offset parallax effect
-      padding-top: 0;
+      @supports (--css: variables) {
+        margin-top: -20rem; // Offset parallax effect
+        padding-top: 0;
+      }
     }
   }
 
