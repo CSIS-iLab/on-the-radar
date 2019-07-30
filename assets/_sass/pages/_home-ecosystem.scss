@@ -52,6 +52,7 @@
 
     @include breakpoint('medium') {
       grid-gap: 12%;
+      grid-template-areas: 'conventional nuclear';
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr;
     }
@@ -109,6 +110,7 @@
 
   &__conventional {
     @include breakpoint('medium') {
+      grid-area: conventional;
       padding-right: $width;
       padding-left: 0;
       text-align: right;
@@ -125,6 +127,10 @@
   }
 
   &__nuclear {
+    @include breakpoint('medium') {
+      grid-area: nuclear;
+    }
+
     &::before {
       background-color: $color__azul;
     }
@@ -150,8 +156,8 @@
 
     @include breakpoint('large') {
       grid-gap: 4rem;
+      grid-template-areas: 'desc timeline';
       grid-template-columns: auto 25%;
-
       margin: 0 auto;
     }
 
@@ -162,6 +168,8 @@
   }
 
   &__desc {
+    grid-area: desc;
+
     p {
       margin-bottom: 0;
       @extend %home__paragraph;
@@ -199,6 +207,7 @@
 
   &__timeline {
     position: relative;
+    grid-area: timeline;
     align-self: start;
     width: 100%;
 
@@ -238,6 +247,7 @@
     position: relative;
     display: grid;
     grid-gap: $gap;
+    grid-template-areas: 'year content';
     grid-template-columns: 15% auto;
     align-content: start;
     padding-bottom: 1.5rem;
@@ -343,12 +353,17 @@
   }
 
   &__year {
+    grid-area: year;
     color: #88929a;
     font-family: $font__lato;
     font-weight: 600;
     @include font-size(14px);
     line-height: 1.29;
     text-align: right;
+  }
+
+  &__content {
+    grid-area: content;
   }
 
   &__title {

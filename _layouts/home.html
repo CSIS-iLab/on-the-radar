@@ -133,7 +133,7 @@ layout: default
     </div>
     <div class="matter__subsections">
       {%- for subsection in site.data.language.home.matter.sections -%}
-      <div class="matter__subsection">
+      <div class="matter__subsection matter__subsection--{{ forloop.index }}">
         <h3 class="subsection__title">{{ subsection.title }}</h3>
         {{ subsection.desc | markdownify }}
         {%- if subsection.footnote -%}
