@@ -2,8 +2,9 @@
 .sass-cache
 *.scssc
 
-# Sublime Text
+# Editors
 sftp-config.json
+.vscode
 
 # Jekyll
 _site
