@@ -9,7 +9,6 @@ fields:
   name: role
   label: Title
 pages:
-- _authors/maxwell.md
 - _authors/rebecca-hersman.md
 - _authors/evan-lisman.md
 - _authors/elsa-kania.md
