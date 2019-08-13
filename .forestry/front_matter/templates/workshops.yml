@@ -32,3 +32,5 @@ fields:
   type: boolean
   label: Featured on Home Page?
   description: Do you want to feature this post on the home page?
+pages:
+- _workshops/tech-team.md
