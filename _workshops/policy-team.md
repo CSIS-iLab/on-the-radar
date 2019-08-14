@@ -2,7 +2,8 @@
 last-modified-date: 2019-08-14 15:16:55 +0000
 title: Policy Team
 date: 2019-08-14 04:00:00 +0000
-excerpt: ''
+excerpt: This section of the website houses resources for the policy team. Please
+  carefully go through all material before the tabletop exercise.
 authors: []
 image: ''
 image_caption: ''
