@@ -11,7 +11,15 @@ image_source: ''
 details:
   event_date: 
   location: ''
-downloads: []
+downloads:
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1565795205/on-the-radar/Risky_Business_Player_Guide_June_2019_no3ate.pdf
+  label: Player Guide
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1565795361/on-the-radar/Sample_Agenda_ovjzly.pdf
+  label: Sample Agenda
+- label: Participant List
+  media_upload: ''
+- label: Capabilities Glossary
+  media_upload: ''
 featured_on_home: false
 published: false
 
@@ -38,7 +46,7 @@ North Korea maintains a military of about 1.2 million active-duty troops with 7.
 
 North Korea has a longstanding chemical weapons program with the capability to produce nerve, blister, blood, and choking agents and likely possesses a CW stockpile. North Korea can employ CW agents by modifying a variety of conventional munitions, including artillery and ballistic missiles. North Korean forces are also trained to operate in a contaminated environment. North Korea continues to research bacterial and viral biological agents that could support an offensive biological weapons program. North Korea poses a challenge to the U.S. intelligence community. Not only are North Korean military facilities geographically dispersed, the majority of North Korea’s soldiers and army equipment is moved through underground tunnels, making it difficult to monitor movement.
 
-**_U.S. Strategic Situational Awareness Capabilities_**[^1]
+**_U.S. Strategic Situational Awareness Capabilities_**\[^1\]
 
 The United States has extensive and mature strategic situational awareness capabilities across all domains (air, land, maritime, space, and cyber) that help to characterize the operating environment, detect and responds to attacks, and discern actual attacks from false alarms across the spectrum of conflict, both conventional and nuclear. The U.S. military has always relied on these capabilities at the strategic level, but over the last thirty to forty years these capabilities have increasingly become more important at the tactical and operational level as technological advances have enabled more granular tracking and detection of enemy forces and communications and coordination between different sensors and shooters to devastating effect. This combination of situational awareness capabilities across all three levels of war and all domains has provided the United States unrivaled strategic situational awareness and has become a lynchpin of U.S. military doctrine and planning.
 
@@ -46,42 +54,66 @@ The United States’ military superiority does not come from any singular weapon
 
 Military capabilities do not develop in a vacuum and just as U.S. military planners recognized the value of integrating multiple systems, sensors, and platforms into a reconnaissance-strike complex, so too have American competitors. The Chinese and Russians in particular have developed sophisticated A2/AD capabilities that threaten to disrupt, degrade, or destroy essential U.S. C4ISR enabling capabilities. These advances have forced military planners to re-think fundamental assumptions from the last thirty years about the near-guaranteed availability of C4ISR capabilities. Instead of establishing theatre-wide strategic situational awareness superiority (i.e. U.S. operations in the 1991 Gulf War or Afghanistan and Iraq), the United States might only be capable of establishing temporary windows of C4ISR superiority for U.S. forces to operate from. U.S. military forces would work within these temporary windows of superiority to dis-integrate enemy A2/AD systems and eventually re-establish theatre-wide strategic situational awareness superiority, but this requires fundamental changes in the way U.S. training, doctrine, and force structures.
 
-**_North Korea’s Strategic Situational Awareness Capabilities_**[^2]
+**_North Korea’s Strategic Situational Awareness Capabilities_**\[^2\]
 
-Unclassified sources contain little information on North Korea’s C4ISR capabilities or strategic thinking. According to Joseph S. Bermudez Jr., an internationally recognized North Korea analyst, the country’s leadership has expressed interest in SIGINT, EW, and asymmetric warfare since at least the armistice of the Korean War, in which Kim Il Sung constituted SIGINT and COMINT abilities within the Ministry of Internal Affairs and the Reconnaissance Bureau for use against both foreign and domestic enemies.[^3]
+Unclassified sources contain little information on North Korea’s C4ISR capabilities or strategic thinking. According to Joseph S. Bermudez Jr., an internationally recognized North Korea analyst, the country’s leadership has expressed interest in SIGINT, EW, and asymmetric warfare since at least the armistice of the Korean War, in which Kim Il Sung constituted SIGINT and COMINT abilities within the Ministry of Internal Affairs and the Reconnaissance Bureau for use against both foreign and domestic enemies.\[^3\]
 
-North Korean-origin cyber-attacks have also grown in sophistication over the last decade. According to South Korean intelligence agencies, North Korean cyber operations between 2005 and 2007 mainly stole data and documents from South Korean government agencies through individual email accounts or agency websites.[^4] In 2005, South Korean National Intelligence Agency found North Korean documents that ordered Lab 110 to “develop a hacking program to destroy the South’s communication network and disguise the source of attack.”[^5] These attacks were generally seen as rudimentary and simple.[^6]
+North Korean-origin cyber-attacks have also grown in sophistication over the last decade. According to South Korean intelligence agencies, North Korean cyber operations between 2005 and 2007 mainly stole data and documents from South Korean government agencies through individual email accounts or agency websites.\[^4\] In 2005, South Korean National Intelligence Agency found North Korean documents that ordered Lab 110 to “develop a hacking program to destroy the South’s communication network and disguise the source of attack.”\[^5\] These attacks were generally seen as rudimentary and simple.\[^6\]
 
-Since 2008, around the time that Kim Jong Un was seen as heir apparent, North Korea’s cyber-attack capabilities developed drastically.[^7] North Korea’s cyber-attacks started to focus around large-scale operations using various complex malware.[^8] As North Korea’s capabilities expanded, so did the range of targets: North Korean hackers have targeted government employees and institutions, researchers, cryptocurrency exchanges, banks, and media worldwide.[^9] Until 2015, North Korean cyber-attacks focused primarily on US and South Korean government and financial organizations.[^10] However, in early 2016, North Korean hackers attempted to transfer $951 million from the Bangladesh Central Bank, the first of several subsequent attacks on banks around the world in 2017.[^11] American cybersecurity firm CrowdStrike assesses the speed of the North Korean hackers to be second only to Russian intrusion groups and superior to the Chinese.[^12]
+Since 2008, around the time that Kim Jong Un was seen as heir apparent, North Korea’s cyber-attack capabilities developed drastically.\[^7\] North Korea’s cyber-attacks started to focus around large-scale operations using various complex malware.\[^8\] As North Korea’s capabilities expanded, so did the range of targets: North Korean hackers have targeted government employees and institutions, researchers, cryptocurrency exchanges, banks, and media worldwide.\[^9\] Until 2015, North Korean cyber-attacks focused primarily on US and South Korean government and financial organizations.\[^10\] However, in early 2016, North Korean hackers attempted to transfer $951 million from the Bangladesh Central Bank, the first of several subsequent attacks on banks around the world in 2017.\[^11\] American cybersecurity firm CrowdStrike assesses the speed of the North Korean hackers to be second only to Russian intrusion groups and superior to the Chinese.\[^12\]
 
 Academic publications by North Korean universities can provide helpful, if incomplete, insights into R&D activities at North Korean educational institutions. The challenge with reviewing academic literature, however, is that it is not clear how the knowledge possessed in these papers are being used within North Korea. Research on reforestation, for example, might be applied to mitigate flood damage often experienced in North Korea, or it might be applied to camouflaging missile bases.
 
-Open source reports have detailed alleged incidents of North Korean GPS jamming and spoofing dating back to 2010. In particular, North Korea is known to use its GPS jamming capabilities against South Korea, disrupting air traffic at Incheon and Gimpo International Airports. According to a report the South Korean National Assembly’s Science, Technology, Broadcasting and Communications Committee received from the Central Radio Management Agency, there were four GPS jamming and spoofing attacks tied to North Korea between 2010 to 2016.[^13]
+Open source reports have detailed alleged incidents of North Korean GPS jamming and spoofing dating back to 2010. In particular, North Korea is known to use its GPS jamming capabilities against South Korea, disrupting air traffic at Incheon and Gimpo International Airports. According to a report the South Korean National Assembly’s Science, Technology, Broadcasting and Communications Committee received from the Central Radio Management Agency, there were four GPS jamming and spoofing attacks tied to North Korea between 2010 to 2016.[^13](www.ddaily.co.kr/news/article/?no=160576)
+
+**Scenario**
+
+**_Recent Events_**
+
+Ten days ago, North Korea seized several South Korean fishing vessels that it claimed were operating in North Korean waters. Three days later, North Korean forces attacked Baengnyeong Island, establishing _de facto_ control of the island. South Korean Forces defended the island long enough to evacuate most personnel, however 50 South Korean Marines were taken hostage.
+
+A North Korean communique accused the new ROK government of “betraying the principals of the ROK-DPRK agreements of the last five years” and issued four demands:
+
+· The immediate lifting of sanctions
+
+· Cash transfers to North Korea
+
+· Recognition of the more southerly Inter-Korean Maritime Demarcation Line in place of the internationally recognized Northern Limit Line
+
+· The signing of a peace treaty and removal of U.S. forces from South Korea
+
+**Your Role and Task**
+
+**_Technology Team_**
+
+You are a government official in an interagency group representing technical and operational expertise including that of DOD and the IC community. There are no individual roles within the group. The National Security Advisor has convened this group of technical experts to provide options to improve U.S. situational awareness of the developing North Korea crisis.
+
+You will review a series of options to improve situational awareness (“a collection plan”) prepared by your staff and decide, unanimously if possible, which actions should be taken immediately. You may add some options that you feel are missing, but due to time constraints, you will not be able to overhaul the entire collection plan. You will brief the policy team on what actions you have taken to improve situational awareness.
+
+There may be options in the collection plan that introduce high levels of operational, technical or political risk. You should brief these options to the policy team and seek guidance on whether, and how, these options should be used. While you should be prepared to discuss the risks associated with these options, it is the policymakers’ job to approve/disapprove the options based on the perceived risk.
 
 ***
 
-[^1]: Excerpt from a paper by Rhys McCormick. The full paper will be made available separately.
+\[^1\]: Excerpt from a paper by Rhys McCormick. The full paper will be made available separately.
 
-[^2]: Excerpt from a paper by Jason Arterburn.
+\[^2\]: Excerpt from a paper by Jason Arterburn.
 
-[^3]: [https://apps.dtic.mil/dtic/tr/fulltext/u2/1032407.pdf](https://apps.dtic.mil/dtic/tr/fulltext/u2/1032407.pdf "https://apps.dtic.mil/dtic/tr/fulltext/u2/1032407.pdf") page 237
+\[^3\]: [https://apps.dtic.mil/dtic/tr/fulltext/u2/1032407.pdf](https://apps.dtic.mil/dtic/tr/fulltext/u2/1032407.pdf "https://apps.dtic.mil/dtic/tr/fulltext/u2/1032407.pdf") page 237
 
-[^4]: [http://monthly.chosun.com/client/news/viw.asp?ctcd=G&nNewsNumb=201509100013&page=8](http://monthly.chosun.com/client/news/viw.asp?ctcd=G&nNewsNumb=201509100013&page=8 "http://monthly.chosun.com/client/news/viw.asp?ctcd=G&nNewsNumb=201509100013&page=8")
+\[^4\]: [http://monthly.chosun.com/client/news/viw.asp?ctcd=G&nNewsNumb=201509100013&page=8](http://monthly.chosun.com/client/news/viw.asp?ctcd=G&nNewsNumb=201509100013&page=8 "http://monthly.chosun.com/client/news/viw.asp?ctcd=G&nNewsNumb=201509100013&page=8")
 
-[^5]: [https://news.joins.com/article/3684439](https://news.joins.com/article/3684439 "https://news.joins.com/article/3684439")
+\[^5\]: [https://news.joins.com/article/3684439](https://news.joins.com/article/3684439 "https://news.joins.com/article/3684439")
 
-[^6]: [http://monthly.chosun.com/client/news/viw.asp?ctcd=G&nNewsNumb=201509100013&page=8](http://monthly.chosun.com/client/news/viw.asp?ctcd=G&nNewsNumb=201509100013&page=8 "http://monthly.chosun.com/client/news/viw.asp?ctcd=G&nNewsNumb=201509100013&page=8")
+\[^6\]: [http://monthly.chosun.com/client/news/viw.asp?ctcd=G&nNewsNumb=201509100013&page=8](http://monthly.chosun.com/client/news/viw.asp?ctcd=G&nNewsNumb=201509100013&page=8 "http://monthly.chosun.com/client/news/viw.asp?ctcd=G&nNewsNumb=201509100013&page=8")
 
-[^7]: [http://www.nars.go.kr/fileDownload2.do?doc_id=1LDwXrEZnLn&fileName=Report%201127](http://www.nars.go.kr/fileDownload2.do?doc_id=1LDwXrEZnLn&fileName=Report%201127 "http://www.nars.go.kr/fileDownload2.do?doc_id=1LDwXrEZnLn&fileName=Report%201127")(Study%20on%20Increased%20Cyber-Terrorism%20Threats%20from%20North%20Korea%20and%20its%20Countermeasures).pdf
+\[^7\]: [http://www.nars.go.kr/fileDownload2.do?doc_id=1LDwXrEZnLn&fileName=Report%201127](http://www.nars.go.kr/fileDownload2.do?doc_id=1LDwXrEZnLn&fileName=Report%201127 "http://www.nars.go.kr/fileDownload2.do?doc_id=1LDwXrEZnLn&fileName=Report%201127")(Study%20on%20Increased%20Cyber-Terrorism%20Threats%20from%20North%20Korea%20and%20its%20Countermeasures).pdf
 
-[^8]: [https://www.hankyung.com/politics/article/201710166314Y](https://www.hankyung.com/politics/article/201710166314Y "https://www.hankyung.com/politics/article/201710166314Y")
+\[^8\]: [https://www.hankyung.com/politics/article/201710166314Y](https://www.hankyung.com/politics/article/201710166314Y "https://www.hankyung.com/politics/article/201710166314Y")
 
-[^9]: [https://www.hankyung.com/politics/article/201710166314Y](https://www.hankyung.com/politics/article/201710166314Y "https://www.hankyung.com/politics/article/201710166314Y")
+\[^9\]: [https://www.hankyung.com/politics/article/201710166314Y](https://www.hankyung.com/politics/article/201710166314Y "https://www.hankyung.com/politics/article/201710166314Y")
 
-[^10]: [https://www.recordedfuture.com/north-korea-cyber-activity/](https://www.recordedfuture.com/north-korea-cyber-activity/ "https://www.recordedfuture.com/north-korea-cyber-activity/")
+\[^10\]: [https://www.recordedfuture.com/north-korea-cyber-activity/](https://www.recordedfuture.com/north-korea-cyber-activity/ "https://www.recordedfuture.com/north-korea-cyber-activity/")
 
-[^11]: [https://www.recordedfuture.com/north-korea-cyber-activity/](https://www.recordedfuture.com/north-korea-cyber-activity/ "https://www.recordedfuture.com/north-korea-cyber-activity/")
+\[^11\]: [https://www.recordedfuture.com/north-korea-cyber-activity/](https://www.recordedfuture.com/north-korea-cyber-activity/ "https://www.recordedfuture.com/north-korea-cyber-activity/")
 
-[^12]: [https://www.scmp.com/week-asia/geopolitics/article/2187363/north-korean-cyberwarfare-big-threat-its-nuclear-weapons](https://www.scmp.com/week-asia/geopolitics/article/2187363/north-korean-cyberwarfare-big-threat-its-nuclear-weapons "https://www.scmp.com/week-asia/geopolitics/article/2187363/north-korean-cyberwarfare-big-threat-its-nuclear-weapons")
-
-[^13]: www.ddaily.co.kr/news/article/?no=160576
+\[^12\]: [https://www.scmp.com/week-asia/geopolitics/article/2187363/north-korean-cyberwarfare-big-threat-its-nuclear-weapons](https://www.scmp.com/week-asia/geopolitics/article/2187363/north-korean-cyberwarfare-big-threat-its-nuclear-weapons "https://www.scmp.com/week-asia/geopolitics/article/2187363/north-korean-cyberwarfare-big-threat-its-nuclear-weapons")
