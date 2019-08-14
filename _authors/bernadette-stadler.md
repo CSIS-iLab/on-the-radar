@@ -1,6 +1,6 @@
 ---
 title: Bernadette Stadler
-role: Program Coordinate and Research Assistant, Project on Nuclear Issues
+role: Graduate Student, Harvard University
 
 ---
-Bernadette Stadler is a program coordinator and research assistant with the Project on Nuclear Issues (PONI) at CSIS. Prior to joining CSIS, she worked at the Center for Arms Control and Non-Proliferation as a Herbert Scoville Jr. Peace Fellow. Her work on nuclear issues has been published in the _Bulletin of the Atomic Scientists_, _Defense One_, and _Politico._ She holds a B.A. in international relations from Brown University.
+Bernadette Stadler is a graduate student in Russian, Eastern European, and Central Asian studies at Harvard University. Previously, she was a Program Coordinator and Research Assistant at the Project on Nuclear Issues, where she led the program's research on emerging technology, situational awareness, and strategic stability.

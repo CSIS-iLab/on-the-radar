@@ -9,6 +9,7 @@ fields:
   name: role
   label: Title
 pages:
+- _authors/bernadette-stadler.md
 - _authors/rebecca-hersman.md
 - _authors/evan-lisman.md
 - _authors/elsa-kania.md
@@ -21,7 +22,6 @@ pages:
 - _authors/lizamaria-arias.md
 - _authors/rhys-mccormick.md
 - _authors/oscar-guerrero.md
-- _authors/bernadette-stadler.md
 - _authors/paulina-wheeler.md
 - _authors/nate-frierson.md
 - _authors/pedro-vicente-valdez.md
