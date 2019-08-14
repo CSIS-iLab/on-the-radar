@@ -9,8 +9,8 @@ image: ''
 image_caption: ''
 image_source: ''
 details:
-  event_date: 
-  location: ''
+  event_date: 2019-10-16 04:00:00 +0000
+  location: 'Naval Submarine Base King''s Bay, Georgia '
 downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1565795205/on-the-radar/Risky_Business_Player_Guide_June_2019_no3ate.pdf
   label: Player Guide
