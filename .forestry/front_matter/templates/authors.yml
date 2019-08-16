@@ -9,6 +9,7 @@ fields:
   name: role
   label: Title
 pages:
+- _authors/maxwell-simon.md
 - _authors/bernadette-stadler.md
 - _authors/rebecca-hersman.md
 - _authors/evan-lisman.md
