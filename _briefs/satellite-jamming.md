@@ -25,7 +25,9 @@ excerpt: Satellite jamming is a form of electronic anti-satellite attack that in
   with communications traveling to and from a satellite. Satellite jamming capabilities
   decrease certainty surrounding adversary force posture and by consequence have the
   capacity to decrease strategic stability.
-authors: []
+authors:
+- _authors/janani-mohan.md
+- _authors/maxwell-simon.md
 brief_type: Tech Primer
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1565982249/on-the-radar/EW_illustration_vuqyez.jpg
 image_caption: ''
