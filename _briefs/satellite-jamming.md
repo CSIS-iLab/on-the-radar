@@ -39,6 +39,7 @@ downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1565982911/on-the-radar/Satellite_Jamming_Primer_FINAL_pdf_bdzxwn.pdf
   label: Satellite Jamming Primer
 featured_on_home: false
+published: false
 
 ---
 # Introduction
