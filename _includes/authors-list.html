@@ -15,7 +15,7 @@
       {%- assign list_break = '&nbsp;and&nbsp;' -%}
       {% elsif authors.size >= 3 %}
       {%- assign list_break = ',&nbsp;' -%}
-      {%- assign end_break = '&nbsp;and&nbsp;' -%}
+      {%- assign end_break = 'and&nbsp;' -%}
       {% endif %}
 
       {% assign penultimate = authors.size | minus: 1 %}
