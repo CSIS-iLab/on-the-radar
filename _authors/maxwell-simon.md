@@ -1,5 +1,5 @@
 ---
-title: 'Maxwell Simon '
+title: Maxwell Simon
 role: Research Intern, Project on Nuclear Issues
 
 ---
