@@ -1,5 +1,5 @@
 ---
-title: 'Pavel Velkovsky '
+title: Pavel Velkovsky
 role: Legal Assistant, Sanford Heisler Sharp, LLP
 
 ---
