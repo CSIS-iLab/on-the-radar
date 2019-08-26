@@ -1,5 +1,5 @@
 ---
-title: 'Janani Mohan '
+title: Janani Mohan
 role: Researcher and Policy Analyst
 
 ---
