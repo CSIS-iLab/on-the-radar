@@ -9,6 +9,7 @@ fields:
   name: role
   label: Title
 pages:
+- _authors/andrew-reddie.md
 - _authors/janani-mohan.md
 - _authors/pavel-velkovsky.md
 - _authors/maxwell-simon.md
@@ -28,4 +29,3 @@ pages:
 - _authors/paulina-wheeler.md
 - _authors/nate-frierson.md
 - _authors/pedro-vicente-valdez.md
-- _authors/andrew-reddie.md
