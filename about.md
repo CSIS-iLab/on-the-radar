@@ -17,9 +17,8 @@ team:
     Program, Center for Strategic and International Studies
   headshot: ''
 - name: Andrew Reddie
-  title: Ph.D. candidate in the Charles and Louise Travers Department of Political
-    Science, University of California, Berkeley, and Deputy Director, Nuclear Policy
-    Working Group
+  title: Postdoctoral Research Fellow at the University of California, Berkeley, and
+    Deputy Director, Nuclear Policy Working Group
   headshot: ''
 - name: Bernadette Stadler
   title: Graduate Student, Harvard University
