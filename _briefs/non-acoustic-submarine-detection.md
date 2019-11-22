@@ -37,7 +37,6 @@ downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1574455202/on-the-radar/Non-acoustic_Sub_Detection_Primer_c7ntof.pdf
   label: Non-acoustic Sub Detection Primer
 featured_on_home: false
-published: false
 
 ---
 # Introduction
