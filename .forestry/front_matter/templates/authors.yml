@@ -9,13 +9,13 @@ fields:
   name: role
   label: Title
 pages:
+- _authors/evan-lisman.md
 - _authors/andrew-reddie.md
 - _authors/janani-mohan.md
 - _authors/pavel-velkovsky.md
 - _authors/maxwell-simon.md
 - _authors/bernadette-stadler.md
 - _authors/rebecca-hersman.md
-- _authors/evan-lisman.md
 - _authors/elsa-kania.md
 - _authors/margaret-williams.md
 - _authors/bethany-goldblum.md
