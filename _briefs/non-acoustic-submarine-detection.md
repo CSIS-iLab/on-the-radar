@@ -19,7 +19,7 @@ details:
   - Russia
   - China
   - United States
-title: 'Non-acoustic Submarine Detection:'
+title: Non-acoustic Submarine Detection
 date: 2019-11-05 05:00:00 +0000
 excerpt: Non-acoustic submarine detection technologies are those that do not rely
   on the collection of soundwaves emitted or reflected by a submerged vehicle for
