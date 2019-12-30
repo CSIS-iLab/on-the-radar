@@ -12,10 +12,9 @@
   /></a>
   {% endif %}
   <header class="post-block__header" role="header">
-    {%- include featured.html -%} {%- include content-type.html -%}
+    {%- include featured.html -%} {%- include content-type.html postInfo=post -%}
     {%- include post-block-title.html -%}
-    {%- include authors-list.html authors=post.authors
-    -%}
+    {%- include authors-list.html authors=post.authors collection=post.collection -%}
     {%- if post.collection == 'workshops' -%}
       {%- include event-date.html
     -%}

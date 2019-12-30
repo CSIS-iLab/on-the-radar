@@ -1,16 +1,12 @@
-{% if post.collection.size > 0 %}
-  {% assign page = post %}
-{% endif %}
-
-{% if page.collection == 'resources' %}
-  {% assign content_type_primary = page.type %}
+{% if include.postInfo.collection == 'resources' %}
+  {% assign content_type_primary = include.postInfo.type %}
 {% else %}
-  {% assign content_type_path = site.collections | where: "label", page.collection | first %}
+  {% assign content_type_path = site.collections | where: "label", include.postInfo.collection | first %}
   {% assign content_type_primary = content_type_path.title %}
 {% endif %}
 
-{% if page.collection == 'briefs' %}
-  {% assign content_type_secondary = page.brief_type %}
+{% if include.postInfo.collection == 'briefs' %}
+  {% assign content_type_secondary = include.postInfo.brief_type %}
 {% else %}
   {% assign content_type_secondary = null %}
 {% endif %}

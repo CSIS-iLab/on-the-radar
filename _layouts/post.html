@@ -6,10 +6,10 @@ layout: default
     <h1 class="post__title" itemprop="name headline">
       {{ page.title | escape }}
     </h1>
-    <div class="post__content-type">{%- include content-type.html -%}</div>
+    <div class="post__content-type">{%- include content-type.html postInfo=page -%}</div>
   </header>
   <section class="post__meta">
-    {%- include social-share.html -%} {%- include authors-list.html -%} {%- include date.html -%} {%- include
+    {%- include social-share.html -%} {%- include authors-list.html authors=page.authors collection=page.collection -%} {%- include date.html -%} {%- include
     last-updated.html -%} {%- include photo-caption.html -%}
   </section>
   <section class="post__img-container">{% include post-image.html %}</section>
