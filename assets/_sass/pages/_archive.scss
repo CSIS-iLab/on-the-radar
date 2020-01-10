@@ -449,4 +449,8 @@
     max-width: 30px;
     background-color: transparent;
   }
+
+  &--analysis .archive__sidebar > * {
+    display: none;
+  }
 }
