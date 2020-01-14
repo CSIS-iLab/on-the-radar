@@ -1,10 +1,9 @@
 <article class="related-posts__block" role="article" style="background-image: url({{ post.image }});">
   <header class="related-posts__block__header">
     <a href="{{ post.url | relative_url }}">
-    <h2 class="related-posts__block__title">
-      {{ post.title | escape }}
-    </h2>
-    {%- include last-updated.html -%}
+      <h2 class="related-posts__block__title">
+        {{ post.title | escape }}
+      </h2>
     </a>
   </header>
 </article>

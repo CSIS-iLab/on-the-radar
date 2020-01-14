@@ -1,38 +1,29 @@
-<article
-  class="post-block {{ include.class }}"
-  role="article"
-  data-content-type="{{ post.collection | slugify }}"
->
+<article class="post-block {{ include.class }}" role="article" data-content-type="{{ post.collection | slugify }}">
   {% if post.image.size > 0 and include.hide_image != false %}
-  <a href="{{ post.url | relative_url }}" class="post-block__img"
-    ><img
-      src="{{ post.image | relative_url }}"
-      alt="{{ post.title | escape }}"
-      title="{{ post.title | escape }}"
-  /></a>
+  <a href="{{ post.url | relative_url }}" class="post-block__img"><img src="{{ post.image | relative_url }}"
+      alt="{{ post.title | escape }}" title="{{ post.title | escape }}" /></a>
   {% endif %}
   <header class="post-block__header" role="header">
     {%- include featured.html -%} {%- include content-type.html postInfo=post -%}
     {%- include post-block-title.html -%}
     {%- include authors-list.html authors=post.authors collection=post.collection -%}
     {%- if post.collection == 'workshops' -%}
-      {%- include event-date.html
+    {%- include event-date.html
     -%}
     {% elsif post.collection == 'resources' %}
-      <div class="topic">
-        <span class="post__meta-label">
-          {{ site.data.language.topic }}
-        </span>
-        {{ post.topics | join: ', ' }}
-      </div>
+    <div class="topic">
+      <span class="post__meta-label">
+        {{ site.data.language.topic }}
+      </span>
+      {{ post.topics | join: ', ' }}
+    </div>
     {% else %}
-      {%- include date.html -%}
-      {%- include last-updated.html -%}
+    {%- include date.html -%}
     {%- endif -%}
   </header>
   {% if include.hide_excerpt != true %}
-    <section class="post-block__content">
-      <p>{{ post.excerpt | truncate: 340 }}</p>
-    </section>
+  <section class="post-block__content">
+    <p>{{ post.excerpt | truncate: 340 }}</p>
+  </section>
   {% endif %}
 </article>

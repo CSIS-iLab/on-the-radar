@@ -3,12 +3,12 @@ layout: default
 ---
 {% assign collection = site.collections | where: "title", page.title | first %}
 {% if page.refine_results %}
-  {% assign refinement = 'data-refine_results="true"' %}
+{% assign refinement = 'data-refine_results="true"' %}
 {% elsif page.filter_entries %}
-  {% assign refinement = 'data-filter_entries="true"' %}
+{% assign refinement = 'data-filter_entries="true"' %}
 {% endif %}
 {% if page.collection == 'authors' %}
-  {% assign collectionLabel = 'authors' %}
+{% assign collectionLabel = 'authors' %}
 {% else %}
 {% assign collectionLabel = collection.label %}
 {% endif %}
@@ -16,30 +16,33 @@ layout: default
 
 
 
-<article class="archive archive--{{ page.title | slugify }}" {{ refinement }} data-collection-label="{{ collectionLabel }}" role="content" itemscope itemtype="http://schema.org/BlogPosting" {{ data_facet }} {{ data_facet_value }}>
+<article class="archive archive--{{ page.title | slugify }}" {{ refinement }}
+  data-collection-label="{{ collectionLabel }}" role="content" itemscope itemtype="http://schema.org/BlogPosting"
+  {{ data_facet }} {{ data_facet_value }}>
   {% include page-header.html %}
 
   {% if page.permalink == '/issue-briefs/' %}
   <section class="archive__filter-type">
-      <input type="checkbox" class="facet-trigger">
-      <label for="archive__filter-type" class="section-title">{{site.data.language.archive.filter_by_type}}</label>
+    <input type="checkbox" class="facet-trigger">
+    <label for="archive__filter-type" class="section-title">{{site.data.language.archive.filter_by_type}}</label>
 
-      <div id="filter__content-brief-all" class="widget ais-root ais-refinement-list--item ais-refinement-list--item__active">
-        All Results
-        <span id="filter__content-brief-all-count"></span>
-      </div>
-
-
-      <div id="filter__content-brief-tech" class="widget ais-root ais-refinement-list--item">
-        Tech Primer
-        <span id="filter__content-brief-tech-count"></span>
-      </div>
+    <div id="filter__content-brief-all"
+      class="widget ais-root ais-refinement-list--item ais-refinement-list--item__active">
+      All Results
+      <span id="filter__content-brief-all-count"></span>
+    </div>
 
 
-      <div id="filter__content-brief-country" class="widget ais-root ais-refinement-list--item">
-        Country Profile
-        <span id="filter__content-brief-country-count"></span>
-      </div>
+    <div id="filter__content-brief-tech" class="widget ais-root ais-refinement-list--item">
+      Tech Primer
+      <span id="filter__content-brief-tech-count"></span>
+    </div>
+
+
+    <div id="filter__content-brief-country" class="widget ais-root ais-refinement-list--item">
+      Country Profile
+      <span id="filter__content-brief-country-count"></span>
+    </div>
 
 
   </section>
@@ -58,60 +61,63 @@ layout: default
   {% endif %}
 
   <section class="archive__results">
-      <div id="results__summary">
-        {% if collection.label != 'resources' %}
-          <div id="results__summary_page"></div>
-        {% endif %}
-          <div id="results__summary_count"></div>
-      </div>
-
+    <div id="results__summary">
       {% if collection.label != 'resources' %}
-      <div id="results__sort">
-        <span class="summary-label">Sort by</span>
-        <span class="sort sort-oldest ais-root">{{ site.data.language.archive.oldest }}</span> | <span class="sort sort-newest selected-sort ais-root">{{ site.data.language.archive.newest }}</span>
-      </div>
+      <div id="results__summary_page"></div>
+      {% endif %}
+      <div id="results__summary_count"></div>
+    </div>
+
+    {% if collection.label != 'resources' %}
+    <div id="results__sort">
+      <span class="summary-label">Sort by</span>
+      <span class="sort sort-oldest ais-root">{{ site.data.language.archive.oldest }}</span> | <span
+        class="sort sort-newest selected-sort ais-root">{{ site.data.language.archive.newest }}</span>
+    </div>
     {% endif %}
   </section>
 
   <section class="archive__sidebar">
     {% if page.filter_entries %}
-      <input type="checkbox" id="filter_entries" class="facet-trigger" />
-      <label for="filter_entries" class="section-title algolia--hide-no-results refinement-label">{{ site.data.language.archive.filter_entries }}</label>
+    <input type="checkbox" id="filter_entries" class="facet-trigger" />
+    <label for="filter_entries"
+      class="section-title algolia--hide-no-results refinement-label">{{ site.data.language.archive.filter_entries }}</label>
 
 
-      <div id="filter__count" class="widget"></div>
+    <div id="filter__count" class="widget"></div>
 
-      {% if collection.label == 'resources' %}
-        <div class="ais-header widget name-search__header">{{ site.data.language.archive.resource_name }}</div>
-        <div id="filter__name" class="widget"></div>
-      {% endif %}
-
-      <div id="filter__content-type" class="widget algolia--hide-no-results"></div>
-      <div id="filter__content-topic" class="widget algolia--hide-no-results"></div>
-
-      {% if page.permalink == '/analysis/' %}
-        <div id="filter__content-related" class="widget algolia--hide-no-results"></div>
-      {% endif %}
-
-      <div id="filter__clear-all" class="widget algolia--hide-no-results"></div>
+    {% if collection.label == 'resources' %}
+    <div class="ais-header widget name-search__header">{{ site.data.language.archive.resource_name }}</div>
+    <div id="filter__name" class="widget"></div>
     {% endif %}
 
-      {% if page.refine_results %}
-        <div class="algolia--hide-no-results">
-        <input type="checkbox" id="refine_results" class="facet-trigger" />
-        <label for="refine_results" class="section-title refinement-label">{{ site.data.language.archive.refine_results }}</label>
+    <div id="filter__content-type" class="widget algolia--hide-no-results"></div>
+    <div id="filter__content-topic" class="widget algolia--hide-no-results"></div>
 
-        <div id="filter__count" class="widget refinement-count"></div>
+    {% if page.permalink == '/analysis/' %}
+    <div id="filter__content-related" class="widget algolia--hide-no-results"></div>
+    {% endif %}
 
-        {% for detail in site[collection.label][0].details %}
-          {% if detail[0] != "event_date" %}
-            <div id="filter__details-{{ detail[0] }}" class="widget">{{ detail[0] }}</div>
-          {% endif %}
-        {% endfor %}
+    <div id="filter__clear-all" class="widget algolia--hide-no-results"></div>
+    {% endif %}
+
+    {% if page.refine_results %}
+    <div class="algolia--hide-no-results">
+      <input type="checkbox" id="refine_results" class="facet-trigger" />
+      <label for="refine_results"
+        class="section-title refinement-label">{{ site.data.language.archive.refine_results }}</label>
+
+      <div id="filter__count" class="widget refinement-count"></div>
+
+      {% for detail in site[collection.label][0].details %}
+      {% if detail[0] != "event_date" %}
+      <div id="filter__details-{{ detail[0] }}" class="widget">{{ detail[0] }}</div>
+      {% endif %}
+      {% endfor %}
 
 
-        <div id="filter__clear-all" class="widget algolia--hide-no-results"></div>
-      </div>
+      <div id="filter__clear-all" class="widget algolia--hide-no-results"></div>
+    </div>
     {% endif %}
 
   </section>
@@ -122,42 +128,42 @@ layout: default
   </section>
   {% endif %}
 
-   <section class="archive__content">
-     {%- if page.collection == 'authors' -%}
-       {{ page.content }}
-     {% endif %}
+  <section class="archive__content">
+    {%- if page.collection == 'authors' -%}
+    {{ page.content }}
+    {% endif %}
 
-     <div id="hits">
+    <div id="hits">
 
-       {% if page.post_list_collection == 'all' %}
-         {% assign posts = site.posts | concat: site.workshops | concat: site.briefs %}
-       {% elsif page.post_list_collection == 'resources'  %}
-         {% assign posts = site.resources %}
-       {% else %}
-         {% assign posts = site[collection.label] %}
-       {% endif %}
-
-
-       {% if collection.label != 'resources' %}
-        {%- for post in posts -%}
-          {% include post-block.html %}
-        {%- endfor -%}
+      {% if page.post_list_collection == 'all' %}
+      {% assign posts = site.posts | concat: site.workshops | concat: site.briefs %}
+      {% elsif page.post_list_collection == 'resources'  %}
+      {% assign posts = site.resources %}
       {% else %}
-        {%- for post in site.resources -%}
-          {% include post-block.html %}
-          {% if forloop.last and collection.label == 'resources' %}
-            {%- include back-to-top.html -%}
-          {% endif %}
-        {%- endfor -%}
+      {% assign posts = site[collection.label] %}
       {% endif %}
 
-     </div>
 
-   </section>
+      {% if collection.label != 'resources' %}
+      {%- for post in posts -%}
+      {% include post-block.html %}
+      {%- endfor -%}
+      {% else %}
+      {%- for post in site.resources -%}
+      {% include post-block.html %}
+      {% if forloop.last and collection.label == 'resources' %}
+      {%- include back-to-top.html -%}
+      {% endif %}
+      {%- endfor -%}
+      {% endif %}
+
+    </div>
+
+  </section>
 
 
-   {% if collection.label != 'resources' %}
-    {% include page-footer.html pagination='true' %}
+  {% if collection.label != 'resources' %}
+  {% include page-footer.html pagination='true' %}
   {% endif %}
 
 

@@ -449,4 +449,9 @@
     max-width: 30px;
     background-color: transparent;
   }
+
+  // Until more analysis content is added to the site, the filter selection has been visually hidden
+  &--analysis .archive__sidebar > * {
+    display: none;
+  }
 }

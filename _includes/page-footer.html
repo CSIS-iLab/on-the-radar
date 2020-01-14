@@ -1,17 +1,14 @@
 {%- if include.pagination -%}
-  {%- assign footer_content = 'Pagination' -%}
-  {%- assign class = 'pagination' %}
+{%- assign footer_content = 'Pagination' -%}
+{%- assign class = 'pagination' %}
 {%- elsif page.layout == 'post' -%}
-  {% assign view_all_url = page.view_all_url %}
-  
-  {% if page.collection == 'briefs' %}
-    {% assign view_all_url = page.view_all_url | append: page.title %}
-  {% endif %}
+{% assign view_all_url = page.view_all_url %}
 
-  {%- capture footer_content -%}<a href="{{ view_all_url | relative_url }}" class="page__footer-link"><i class="icon-docs"></i> {{
+{%- capture footer_content -%}<a href="{{ view_all_url | relative_url }}" class="page__footer-link"><i
+    class="icon-docs"></i> {{
     site.data.language.page_footer[page.collection] }}</a>{%- endcapture -%}
 {% else %}
-  {% assign class = 'page__footer--empty' %}
+{% assign class = 'page__footer--empty' %}
 {%- endif -%}
 
 <section class="page__footer {{ class }}">
