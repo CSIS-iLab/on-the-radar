@@ -26,6 +26,8 @@ featured: false
 featured_on_home: true
 
 ---
+Download Key Takeaways [here](OTR_UnderNuclearShadow_Booklet_WEB_kr1t0r.pdf "Visual Policy Brief"). 
+
 Improvements to strategic situational awareness (SA)—the ability to characterize the operating environment, detect and respond to threats, and discern actual attacks from false alarms across the spectrum of conflict—have long been assumed to reduce the risk of conflict and help manage crises more successfully when they occur. However, with the development of increasingly capable strategic SA-related technology, growing comingling of conventional and nuclear SA requirements and capabilities, and the increasing risk of conventional conflict between nuclear-armed adversaries, this may no longer be the case.
 
 **_Information dominance has been essential to ensuring U.S. military effectiveness, sustaining the credibility and assurance of military alliances, and stabilizing or reducing the risks of miscalculation or collateral damage. But can there be too much of a good thing?_**
