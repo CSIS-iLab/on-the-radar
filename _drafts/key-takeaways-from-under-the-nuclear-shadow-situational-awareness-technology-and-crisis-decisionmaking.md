@@ -11,8 +11,16 @@ excerpt: With the support of the Carnegie Corporation of New York, the Project o
   for managing crises between nuclear armed adversaries. This visual booklet provides
   an overview of key concepts, conclusions, and recommendations from our study on
   the impact of emerging technologies for situational awareness on strategic stability.
-authors: []
-keywords: []
+authors:
+- _authors/rebecca-hersman.md
+- _authors/reja-younis.md
+- _authors/bryce-farabaugh.md
+- _authors/bethany-goldblum.md
+- _authors/andrew-reddie.md
+keywords:
+- Entanglement
+- Provocation
+- Information Complexity
 related_briefs: []
 image: ''
 image_caption: ''
