@@ -19,7 +19,7 @@ authors:
 - _authors/andrew-reddie.md
 keywords: []
 related_briefs: []
-image: ''
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1582039787/on-the-radar/OTR_Booklet_Cover_f8q1mp.jpg
 image_caption: ''
 image_source: ''
 featured: false
