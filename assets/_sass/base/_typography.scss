@@ -183,6 +183,12 @@ big {
   li {
     margin-bottom: 0.75rem;
   }
+
+  .download__link {
+    @extend %post__content-h4;
+    font-weight: 600;
+    box-shadow: none;
+  }
 }
 
 /*=============================
