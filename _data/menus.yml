@@ -1,3 +1,10 @@
+- url: /analysis/key-takeaways-from-under-the-nuclear-shadow-situational-awareness-technology-and-crisis-decisionmaking/
+  title: Key Takeaways
+  identifier: takeaways
+  inHeader: true
+  inFooter: true
+  inHomeMain: false
+  inHomeSub: false
 - url: /issue-briefs/
   title: Issue Briefs
   identifier: briefs
