@@ -19,7 +19,7 @@ authors:
 - _authors/andrew-reddie.md
 keywords: []
 related_briefs: []
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1582661139/on-the-radar/key_takaways_cover_tsvdoc.png
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1582664692/on-the-radar/key_takaways_cover_v2_txyzco.jpg
 image_caption: ''
 image_source: ''
 featured: false
