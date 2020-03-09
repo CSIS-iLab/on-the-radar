@@ -1,0 +1,95 @@
+/*============================
+=       Final Report         =
+============================*/
+
+@charset "utf-8";
+
+// Import Styles
+@import '../abstracts/abstracts';
+
+// max-width: 1200px, 900px, 680px
+
+.final-report {
+  $page: &;
+  $color__bg: #0b1722;
+
+  max-width: 900px;
+  margin: 0 auto;
+
+  &__header {
+    color: $color__white;
+
+    #{$page}__title {
+      @extend %page__title;
+    }
+  }
+
+  &__meta {
+    grid-area: meta;
+    padding: content-padding('small');
+  }
+
+  &__content {
+    padding: content-padding('small');
+    background: $color__bg;
+    @include full-width-background($color__bg);
+
+    p {
+      @extend %post__content-paragraph;
+      color: $color__off-white;
+
+      &:last-of-type() {
+        margin-bottom: 0;
+      }
+    }
+
+    h2 {
+      @extend %post__content-h2;
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      @extend %post__content-h3;
+      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h4 {
+      @extend %post__content-h4;
+      margin-bottom: 0.5rem;
+    }
+
+    h5 {
+      @extend %post__content-h5;
+    }
+  }
+
+  &__footer {
+    $width_forumula: calc((100vw - 100%) / 2);
+    $gradient: linear-gradient(180deg, $color__bg - 2.14%, transparent 100%);
+
+    position: relative;
+    margin: 0 auto;
+    color: $color__white;
+    background: $gradient;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      display: block;
+      width: $width_forumula;
+      height: 100%;
+      background: $gradient;
+    }
+
+    &::before {
+      right: 100%;
+    }
+
+    &::after {
+      left: 100%;
+    }
+  }
+}

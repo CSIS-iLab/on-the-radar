@@ -481,10 +481,8 @@
   line-height: 1.33;
 }
 
-%post__content-paragraph,
-%post__content-link {
+%post__content-paragraph {
   @include font-size(18px);
-  color: $color__black;
   font-family: $font__ptsans;
   line-height: 1.8;
 }

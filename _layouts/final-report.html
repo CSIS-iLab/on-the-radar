@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<article class="final-report h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="final-report__header">
+    <h1 class="post__title" itemprop="name headline">
+      {{ page.title | escape }}
+    </h1>
+    <div class="final-report__meta">
+      {%- include social-share.html -%}
+      {%- include authors-list.html authors=page.authors collection=page.collection -%}
+      {%- include date.html -%}
+    </div>
+    <div class="final-report__downloads final-report__downloads--header">
+      Download full report & key takeaways
+    </div>
+  </header>
+
+  <section class="final-report__content e-content" itemprop="articleBody">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nam officia accusamus inventore
+      asperiores nihil perferendis praesentium qui repellendus. Ad fugiat quaerat praesentium, adipisci nihil voluptas?
+      Id provident obcaecati inventore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nam officia accusamus inventore
+      asperiores
+      nihil perferendis praesentium qui repellendus. Ad fugiat quaerat praesentium, adipisci nihil voluptas? Id
+      provident
+      obcaecati inventore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nam officia accusamus inventore
+      asperiores
+      nihil perferendis praesentium qui repellendus. Ad fugiat quaerat praesentium, adipisci nihil voluptas? Id
+      provident
+      obcaecati inventore!</p>
+  </section>
+
+  <section class="final-report__footer">
+    Download full report & key takeaways
+    {%- include social-share.html -%}
+    {%- include authors-block.html -%}
+  </section>
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
