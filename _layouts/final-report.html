@@ -3,16 +3,18 @@ layout: default
 ---
 <article class="final-report h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="final-report__header">
-    <h1 class="post__title" itemprop="name headline">
-      {{ page.title | escape }}
+    <h1 class="final-report__title" itemprop="name headline">
+      Under the <span class="final-report__title--bold">Nuclear Shadow</span>
+      <span class="final-report__subtitle">Situational Awareness Technology and Crisis Decisionmaking</span>
     </h1>
     <div class="final-report__meta">
       {%- include social-share.html -%}
+      <p class="final-report__excerpt">{{ page.excerpt }}</p>
       {%- include authors-list.html authors=page.authors collection=page.collection -%}
       {%- include date.html -%}
     </div>
     <div class="final-report__downloads final-report__downloads--header">
-      Download full report & key takeaways
+      <p>Download <em>Under the Nuclear Shadow</em></p>
     </div>
   </header>
 

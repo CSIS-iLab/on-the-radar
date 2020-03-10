@@ -71,4 +71,36 @@
       }
     }
   }
+
+  .final-report & {
+    ul {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 0.5rem;
+
+      @include breakpoint('medium') {
+        justify-content: left;
+      }
+    }
+
+    li {
+      margin-right: 0.75rem;
+
+      &:first-of-type {
+        margin-right: 0.5rem;
+        margin-left: -0.4em;
+      }
+    }
+
+    i {
+      @include font-size(18px);
+      color: $color__orange;
+
+      &:hover {
+        color: $color__white;
+        cursor: pointer;
+      }
+    }
+  }
 }
