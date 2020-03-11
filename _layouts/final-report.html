@@ -15,29 +15,90 @@ layout: default
     </div>
     <div class="final-report__downloads final-report__downloads--header">
       <p>Download <em>Under the Nuclear Shadow</em></p>
+      {% include final-report-downloads.html %}
     </div>
   </header>
 
   <section class="final-report__content e-content" itemprop="articleBody">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nam officia accusamus inventore
-      asperiores nihil perferendis praesentium qui repellendus. Ad fugiat quaerat praesentium, adipisci nihil voluptas?
-      Id provident obcaecati inventore!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nam officia accusamus inventore
-      asperiores
-      nihil perferendis praesentium qui repellendus. Ad fugiat quaerat praesentium, adipisci nihil voluptas? Id
-      provident
-      obcaecati inventore!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nam officia accusamus inventore
-      asperiores
-      nihil perferendis praesentium qui repellendus. Ad fugiat quaerat praesentium, adipisci nihil voluptas? Id
-      provident
-      obcaecati inventore!</p>
+    <section class="final-report__section final-report__intro">
+      <div class="final-report__img-full">
+        <blockquote class="blockquote--full">
+          <p>Information dominance has been essential to ensuring U.S. military effectiveness, sustaining the
+            credibility
+            and assurance of military alliances, and stabilizing or reducing the risks of miscalculation or collateral
+            damage. <strong>But can there be too much of a good thing?</strong></p>
+          <footer>&mdash; From <cite>Under the Nuclear Shadow</cite> Full Report</footer>
+        </blockquote>
+      </div>
+      <div class="final-report__intro-header">
+        <div class="video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/KagLB1zYrTU" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="final-report__toc">
+          <h2>On this Page:</h2>
+          <ul>
+            <li><a href="#ecosystem">What is the emerging strategic SA ecosystem?</a></li>
+            <li><a href="#technologies">What technologies were explored during <i>On the Radar</i>?</a></li>
+            <li><a href="#escalation">How Could These Capabilities Contribute to Escalation?</a></li>
+            <li><a href="#exercises">Tabletop Exercises</a></li>
+            <li><a href="#wayahead">The Way Ahead</a></li>
+          </ul>
+        </div>
+      </div>
+      <p>Improvements to strategic situational awareness (SA)—the ability to characterize the operating environment,
+        detect and respond to threats, and discern actual attacks from false alarms across the spectrum of conflict—have
+        long been assumed to reduce the risk of conflict and help manage crises more successfully when they occur.</p>
+      <p>However, with the development of increasingly capable strategic SA-related technology, growing comingling of
+        conventional and nuclear SA requirements and capabilities, and the increasing risk of conventional conflict
+        between nuclear-armed adversaries, this may no longer be the case.</p>
+    </section>
+    <section class="final-report__section final-report__ecosystem">
+      <h2 id="ecosystem">What is the emerging strategic SA ecosystem?</h2>
+      <div class="final-report__ecosystem-capabilities">
+        <h3 class="final-report__small-title">Capability Classifications</h3>
+        <dl>
+          <dt class="definition--conventional">Conventional</dt>
+          <dd>Capabilities that provide theater and battlefield-level situational awareness, to include related
+            indications, warning
+            or other operational information as well as information on the status, location, and condition of
+            conventional assets
+            and capabilities.</dd>
+          <dt class="definition--nuclear">Nuclear</dt>
+          <dd>Capabilities that provide indications, warning or other operational information on the status, location,
+            or condition of
+            adversary nuclear weapons, delivery or command and control systems.</dd>
+        </dl>
+      </div>
+      <p>The emerging SA ecosystem is highly networked, real-time, and dual-use, creating a landscape that is highly
+        capable but also murkier and more complex. The rapid pace of technological advancement, dual-use (conventional
+        and nuclear) applicability of emerging capabilities and blurring of lines between nuclear and conventional
+        command and control are reshaping the emerging landscape. This emerging SA ecosystem can provide vast amounts of
+        information, more quickly and more precisely than ever before, including about new forms of strategic attack
+        that may prove elusive to traditional warning systems.</p>
+      <h3>Why Does this Matter?</h3>
+      <ol>
+        <li>The risk of crisis or conflict between nuclear-armed states—some of which integrate conventional and nuclear
+          forces in their military strategies or employ dual-use (nuclear and conventional) delivery systems—is
+          increasing.</li>
+        <li>Nuclear-armed states are increasingly reliant on a single strategic SA-enabled ecosystem for both nuclear
+          and conventional crisis and conflict, raising new escalation challenges and promoting reconsideration of the
+          value and stabilizing nature of information dominance in a crisis.</li>
+        <li>New technologies provide more information quicker and with greater precision than ever before, challenging
+          descionmakers’ ability to effectively manage risk and adjudicate the high stakes involved.</li>
+      </ol>
+    </section>
   </section>
 
   <section class="final-report__footer">
-    Download full report & key takeaways
+    <div class="final-report__downloads final-report__downloads--footer">
+      <p>For more information, download<br /><span class="final-report__downloads-title">Under the Nuclear Shadow</span>
+      </p>
+      {% include final-report-downloads.html %}
+    </div>
     {%- include social-share.html -%}
     {%- include authors-block.html -%}
+    <a href="/analysis/" class="btn btn--orange btn--analysis">View All Analysis</a>
   </section>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

@@ -75,13 +75,9 @@
   .final-report & {
     ul {
       display: flex;
-      justify-content: center;
+      justify-content: left;
       width: 100%;
       margin-bottom: 0.5rem;
-
-      @include breakpoint('medium') {
-        justify-content: left;
-      }
     }
 
     li {
@@ -102,5 +98,11 @@
         cursor: pointer;
       }
     }
+  }
+
+  .final-report__footer & ul {
+    margin-bottom: 0.875rem;
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgba($color__gray-light, 0.45);
   }
 }

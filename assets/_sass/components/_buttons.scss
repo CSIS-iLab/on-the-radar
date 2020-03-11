@@ -22,6 +22,18 @@
     background-color: transparent;
   }
 
+  &.btn--orange {
+    display: block;
+    width: fit-content;
+    margin: 1rem auto;
+    color: $color__white;
+    background-color: $color__orange-dark;
+
+    &:hover {
+      background-color: $color__orange;
+    }
+  }
+
   &-download {
     display: block;
     width: fit-content;
