@@ -11,7 +11,7 @@
 
 .final-report {
   $page: &;
-  $color__bg: #0b1722;
+  $color__bg: #091520;
   $color__orange--100: #f56a47;
   $max-width--small: 680px;
   $max-width: 900px;
@@ -21,8 +21,9 @@
   margin: 0 auto;
 
   &__header {
+    $gradient: linear-gradient(180deg, transparent 0%, #3a4957 100%);
     position: relative;
-    padding-bottom: 2.25rem;
+    padding-bottom: 8rem;
     color: $color__white;
 
     @include breakpoint('medium') {
@@ -35,10 +36,22 @@
       grid-template-rows: auto auto;
     }
 
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: calc((100vw - 100%) / -2);
+      z-index: -1;
+      display: block;
+      width: 100vw;
+      height: 100%;
+      background: $gradient;
+    }
+
     &::after {
       content: '';
       position: absolute;
-      bottom: 0;
+      bottom: 5.5rem;
       left: 0;
       display: block;
       width: 33%;
@@ -117,6 +130,11 @@
     background: $color__bg;
     @include full-width-background($color__bg);
 
+    &::before,
+    &::after {
+      z-index: -1;
+    }
+
     h2 {
       position: relative;
       max-width: $max-width--small;
@@ -194,14 +212,17 @@
       margin-left: auto;
       text-align: center;
     }
+
+    #{$page}__caption {
+      color: $color__bluegray-light;
+      @include font-size(14px);
+      line-height: 1.4;
+      text-align: right;
+    }
   }
 
   &__section {
     padding-bottom: 9.5rem;
-  }
-
-  &__img-full {
-    height: 450px;
   }
 
   &__small-title {
@@ -219,12 +240,42 @@
       display: grid;
       grid-gap: 2.25rem;
       grid-template-columns: 2fr 1fr;
+      padding-top: 5rem;
     }
 
     p {
       max-width: $max-width--small;
       margin-right: auto;
       margin-left: auto;
+    }
+
+    #{$page}__img-full {
+      position: relative;
+      min-height: 450px;
+      padding-top: 2.625rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: calc((100vw - 100%) / -2);
+        width: 100vw;
+        height: 100%;
+        background-image: url('../../images/final-report/plane.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+
+      blockquote {
+        position: relative;
+      }
+
+      #{$page}__caption {
+        position: absolute;
+        right: 0;
+        bottom: -1rem;
+      }
     }
   }
 
@@ -289,13 +340,19 @@
   &__toc {
     h2 {
       margin-bottom: 0.75rem;
+      padding-bottom: 0;
       color: $color__orange;
       font-family: $font__lato;
       font-weight: bold;
       @include font-size(18px);
       line-height: 1.2;
-      letter-spacing: 1.6;
+      letter-spacing: 1.6px;
+      text-align: left;
       text-transform: uppercase;
+
+      &::after {
+        display: none;
+      }
     }
 
     ul {
