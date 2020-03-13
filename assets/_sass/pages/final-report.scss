@@ -25,21 +25,33 @@
 
   max-width: $max-width;
   margin: 0 auto;
+  padding: 0 1rem;
+
+  @include breakpoint('medium') {
+    padding: 0;
+  }
 
   &__header {
     $gradient: linear-gradient(180deg, transparent 0%, #3a4957 100%);
     position: relative;
-    padding-bottom: 8rem;
+    display: grid;
+    grid-gap: 2.25rem;
+    grid-template-areas:
+      'title'
+      'meta'
+      'downloads';
+    grid-template-columns: 1fr;
+    padding-bottom: 5rem;
     color: $color__white;
 
     @include breakpoint('medium') {
-      display: grid;
       grid-gap: 2.5rem;
       grid-template-areas:
         'title title'
         'meta downloads';
       grid-template-columns: 3fr 2fr;
       grid-template-rows: auto auto;
+      padding-bottom: 8rem;
     }
 
     &::before {
@@ -57,21 +69,31 @@
     &::after {
       content: '';
       position: absolute;
-      bottom: 5.5rem;
+      bottom: 2.5rem;
       left: 0;
       display: block;
-      width: 33%;
+      width: 66%;
       height: 1px;
       background: rgba($color__white, 0.5);
+
+      @include breakpoint('medium') {
+        bottom: 5.5rem;
+        width: 33%;
+      }
     }
 
     #{$page}__title {
       grid-area: title;
       font-family: $font__lato;
       font-weight: 300;
-      @include font-size(50px);
-      line-height: 1.1;
+      @include font-size(34px);
+      line-height: 1.2;
       text-transform: uppercase;
+
+      @include breakpoint('medium') {
+        @include font-size(50px);
+        line-height: 1.1;
+      }
 
       &--bold {
         display: block;
@@ -81,10 +103,16 @@
 
     #{$page}__subtitle {
       display: block;
+      margin-top: 1rem;
       color: $color__bluegray-light;
-      @include font-size(24px);
+      @include font-size(23px);
       line-height: 1.3;
       text-transform: none;
+
+      @include breakpoint('medium') {
+        margin-top: 0;
+        @include font-size(24px);
+      }
     }
   }
 
@@ -93,9 +121,14 @@
   }
 
   &__excerpt {
+    margin-bottom: 1.25rem;
     color: $color__off-white;
-    @include font-size(20px);
+    @include font-size(18px);
     line-height: 1.4;
+
+    @include breakpoint('medium') {
+      @include font-size(20px);
+    }
   }
 
   &__downloads {
@@ -110,8 +143,12 @@
       margin-bottom: 0.75rem;
       font-family: $font__lato;
       font-weight: 300;
-      @include font-size(20px);
+      @include font-size(18px);
       line-height: 1.4;
+
+      @include breakpoint('medium') {
+        @include font-size(20px);
+      }
     }
 
     p {
@@ -149,18 +186,27 @@
       color: $color__white;
       font-family: $font__lato;
       font-weight: bold;
-      @include font-size(40px);
+      @include font-size(28px);
       line-height: 1.3;
       text-align: center;
+
+      @include breakpoint('medium') {
+        @include font-size(40px);
+      }
 
       &::after {
         content: '';
         position: absolute;
         bottom: 0;
-        left: 30%;
-        width: 40%;
+        left: 10%;
+        width: 80%;
         height: 1px;
         background: rgba($color__white, 0.45);
+
+        @include breakpoint('medium') {
+          left: 30%;
+          width: 40%;
+        }
       }
     }
 
@@ -169,10 +215,14 @@
       color: $color__orange--100;
       font-family: $font__lato;
       font-weight: 300;
-      @include font-size(28px);
+      @include font-size(26px);
       line-height: 1;
       letter-spacing: 2.3px;
       text-transform: uppercase;
+
+      @include breakpoint('medium') {
+        @include font-size(28px);
+      }
     }
 
     p,
@@ -229,7 +279,9 @@
     }
 
     .blockquote--short {
-      max-width: 275px;
+      @include breakpoint('medium') {
+        max-width: 275px;
+      }
     }
 
     .blockquote--full {
@@ -244,12 +296,20 @@
       color: $color__bluegray-light;
       @include font-size(14px);
       line-height: 1.4;
-      text-align: right;
+      opacity: 0.6;
+
+      @include breakpoint('medium') {
+        text-align: right;
+      }
     }
   }
 
   &__section {
-    padding-bottom: 9.5rem;
+    padding-bottom: 8.25rem;
+
+    @include breakpoint('medium') {
+      padding-bottom: 9.5rem;
+    }
   }
 
   &__small-title {
@@ -266,9 +326,18 @@
     &-header {
       display: grid;
       grid-gap: 2.25rem;
-      grid-template-columns: 2fr 1fr;
+      grid-template-areas:
+        'toc'
+        'video';
+      grid-template-columns: 1fr;
       margin-bottom: 3rem;
-      padding-top: 5rem;
+      padding-top: 4rem;
+
+      @include breakpoint('medium') {
+        grid-template-areas: 'video toc';
+        grid-template-columns: 2fr 1fr;
+        padding-top: 5rem;
+      }
     }
 
     p {
@@ -301,71 +370,33 @@
 
       #{$page}__caption {
         position: absolute;
-        right: 0;
-        bottom: -2rem;
-      }
-    }
-  }
+        bottom: -2.5rem;
+        left: 0;
 
-  &__ecosystem {
-    ol {
-      max-width: $max-width--small;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      counter-reset: ecosystem;
-    }
-
-    li {
-      display: flex;
-      margin-bottom: 1.5rem;
-      counter-increment: ecosystem;
-
-      &::before {
-        content: counter(ecosystem);
-        margin-right: 1rem;
-        color: $color__orange;
-        font-family: $font__lato;
-        font-weight: bold;
+        @include breakpoint('medium') {
+          right: 0;
+          bottom: -2rem;
+          left: unset;
+        }
       }
     }
 
-    &-capabilities {
-      float: right;
-      max-width: 275px;
-      margin-left: 2rem;
-    }
-
-    dl {
-      margin: 0;
-    }
-
-    dt {
-      margin-bottom: 5px;
-      padding: 0 5px;
-      color: $color__white;
-      font-family: $font__lato;
-      font-weight: bold;
-      @include font-size(16px);
-      line-height: 1.4;
-    }
-
-    dd {
-      margin: 0 0 1.5rem;
-      color: $color__bluegray-light;
-      line-height: 1.2;
-    }
-
-    .definition--conventional {
-      background: $color__orange;
-    }
-
-    .definition--nuclear {
-      background: $color__azul;
+    .video-wrapper {
+      grid-area: video;
+      margin-bottom: 0;
     }
   }
 
   &__toc {
+    grid-area: toc;
+    margin-right: 2rem;
+    margin-left: 2rem;
+
+    @include breakpoint('medium') {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
     h2 {
       margin-bottom: 0.75rem;
       padding-bottom: 0;
@@ -405,11 +436,80 @@
     }
   }
 
+  &__ecosystem {
+    ol {
+      max-width: $max-width--small;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: ecosystem;
+    }
+
+    li {
+      display: flex;
+      margin-bottom: 1.5rem;
+      counter-increment: ecosystem;
+
+      &::before {
+        content: counter(ecosystem);
+        margin-right: 1rem;
+        color: $color__orange;
+        font-family: $font__lato;
+        font-weight: bold;
+      }
+    }
+
+    &-capabilities {
+      margin-right: 1rem;
+      margin-left: 1rem;
+
+      @include breakpoint('medium') {
+        float: right;
+        max-width: 275px;
+        margin-right: 0;
+        margin-left: 2rem;
+      }
+    }
+
+    dl {
+      margin: 0;
+    }
+
+    dt {
+      margin-bottom: 5px;
+      padding: 0 5px;
+      color: $color__white;
+      font-family: $font__lato;
+      font-weight: bold;
+      @include font-size(16px);
+      line-height: 1.4;
+    }
+
+    dd {
+      margin: 0 0 1.5rem;
+      color: $color__bluegray-light;
+      line-height: 1.2;
+    }
+
+    .definition--conventional {
+      background: $color__orange;
+    }
+
+    .definition--nuclear {
+      background: $color__azul;
+    }
+  }
+
   &__technologies {
     &-header {
       display: grid;
-      grid-column-gap: 2rem;
-      grid-template-columns: 2fr 1fr;
+      grid-gap: 2rem;
+      grid-template-columns: 1fr;
+
+      @include breakpoint('medium') {
+        grid-gap: 2rem;
+        grid-template-columns: 2fr 1fr;
+      }
     }
   }
 
@@ -443,12 +543,33 @@
       .capabilities__content {
         display: grid;
         grid-gap: 2rem;
-        grid-template-columns: auto auto;
+        grid-template-areas:
+          'text'
+          'quote'
+          'image';
+        grid-template-columns: 1fr;
+
+        @include breakpoint('medium') {
+          grid-template-areas:
+            'text quote'
+            'image image';
+          grid-template-columns: repeat(2, auto);
+        }
+      }
+
+      p {
+        grid-area: text;
+      }
+
+      blockquote {
+        grid-area: quote;
       }
 
       img {
-        grid-column: -1 / 1;
+        grid-area: image;
         justify-self: center;
+        max-width: 100%;
+        height: auto;
       }
     }
 
@@ -456,6 +577,7 @@
     .capabilities--info {
       .capabilities__content {
         display: grid;
+        grid-gap: 2rem;
 
         @include breakpoint('medium') {
           grid-column-gap: 2rem;
@@ -466,6 +588,8 @@
 
       img {
         grid-row: span 2;
+        max-width: 100%;
+        height: auto;
       }
     }
 
@@ -506,10 +630,10 @@
 
     &-header {
       display: grid;
+      grid-gap: 2rem;
       margin-bottom: 4rem;
 
       @include breakpoint('medium') {
-        grid-gap: 2rem;
         grid-template-columns: auto auto;
       }
 
@@ -538,7 +662,12 @@
         display: flex;
         flex: 1 1 auto;
         align-items: center;
+        margin-bottom: 1rem;
         @extend %final-report-subtitle;
+
+        @include breakpoint('medium') {
+          margin-bottom: 0;
+        }
 
         /* stylelint-disable-next-line */
         &:nth-of-type(2) {
@@ -580,7 +709,11 @@
       z-index: 1;
       max-width: $max-width--small;
       margin: 0 auto 2.25rem;
-      padding-top: 5rem;
+      padding-top: 6rem;
+
+      @include breakpoint('medium') {
+        padding-top: 5rem;
+      }
 
       &::before {
         content: '';
@@ -590,7 +723,8 @@
         width: 100%;
         height: 100%;
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: center top;
+        background-size: contain;
         opacity: 0.15;
       }
 
@@ -616,11 +750,22 @@
     margin-left: auto;
     padding-bottom: 8rem;
 
+    & > *:not(.final-report__img-full):not(.final-report__caption) {
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        margin-right: 1rem;
+        margin-left: 1rem;
+      }
+    }
+
     #{$page}__img-full {
       position: relative;
       z-index: 1;
-      min-height: 630px;
-      padding-top: 2.625rem;
+      min-height: 800px;
+
+      @include breakpoint('medium') {
+        min-height: 630px;
+        padding-top: 2.625rem;
+      }
 
       &::before,
       &::after {
@@ -636,8 +781,12 @@
       &::before {
         background-image: url('../../images/final-report/ship-2.jpg');
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: 80% center;
         background-size: cover;
+
+        @include breakpoint('medium') {
+          background-position: center center;
+        }
       }
 
       &::after {
@@ -647,7 +796,11 @@
     }
 
     #{$page}__caption {
-      margin: 1rem -2rem 2rem auto;
+      margin: 1rem auto 3rem auto;
+
+      @include breakpoint('medium') {
+        margin-right: -2rem;
+      }
     }
 
     ul {
@@ -732,6 +885,7 @@
         flex: 1 0 33%;
         justify-content: center;
         align-items: center;
+        margin-bottom: 0.5rem;
         @include font-size(16px);
       }
 
