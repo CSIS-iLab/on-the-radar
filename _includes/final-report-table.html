@@ -1,0 +1,34 @@
+<div class="table__container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Strategic SA Capability</th>
+        <th scope="col">Domain & Type</th>
+        <th scope="col">Definition</th>
+        <th scope="col">Example of Strategic SA Application</th>
+        <th scope="col">Demonstrative Technology</th>
+        <th scope="col">Dominant Attributes</th>
+        <th scope="col">Dominant Risk Factors</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in site.data.capabilities %}
+      <tr>
+        <td scope="row" data-label="Strategic SA Capability"><span>{{ row.capability }}</span></td>
+        <td data-label="Domain & Type"><span>
+            {% assign domains = row.domain | split: ";" %}
+            {% for domain in domains %}
+            <img src="/assets/images/final-report/{{ domain }}.svg" class="icon icon--{{ domain }}" alt="{{ domain }}"
+              title="{{ domain }}" />
+            {% endfor %}
+            {{ row.type }}</span></td>
+        <td data-label="Definition"><span>{{ row.definition }}</span></td>
+        <td data-label="Example of Strategic SA Application"><span>{{ row.application }}</span></td>
+        <td data-label="Demonstrative Technology"><span>{{ row.technology }}</span></td>
+        <td data-label="Dominant Attributes"><span>{{ row.attributes }}</span></td>
+        <td data-label="Dominant Risk Factors"><span>{{ row.risk }}</span></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

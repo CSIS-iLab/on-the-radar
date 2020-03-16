@@ -1,0 +1,156 @@
+%final-report-table-header {
+  font-family: $font__lato;
+  font-weight: bold;
+  @include font-size(16px);
+  line-height: 1.4;
+}
+
+.table {
+  width: 100%;
+  margin: 0 auto;
+  color: rgba($color__white, 0.9);
+  table-layout: fixed;
+  background: #0e2836;
+  border-collapse: collapse;
+
+  @include breakpoint('medium') {
+    max-width: 1200px;
+  }
+
+  &__container {
+    position: relative;
+    right: 50%;
+    left: 50%;
+    width: 100vw;
+    margin-right: -50vw;
+    margin-left: -50vw;
+  }
+
+  &__key {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+
+    li {
+      display: flex;
+      flex: 1 0 33%;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      @include font-size(16px);
+    }
+
+    img {
+      margin-right: 0.5rem;
+    }
+  }
+
+  thead {
+    @include breakpoint($break: 'large', $dir: 'max-width') {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      border: 0;
+      clip: rect(0 0 0 0);
+    }
+  }
+
+  th {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    @extend %final-report-table-header;
+    text-align: left;
+  }
+
+  th,
+  td {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-bottom: 1px solid rgba(36, 117, 143, 0.5);
+  }
+
+  td {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    vertical-align: top;
+
+    @include breakpoint($break: 'large', $dir: 'max-width') {
+      display: flex;
+
+      &::before {
+        content: attr(data-label);
+        display: block;
+        flex: 0 0 50%;
+        padding-right: 1rem;
+        @extend %final-report-table-header;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: calc(50% - 0.5rem);
+        width: 1px;
+        background: rgba(36, 117, 143, 0.5);
+      }
+
+      span {
+        display: block;
+        flex: 0 0 50%;
+        padding-left: 0.5rem;
+      }
+    }
+  }
+
+  tr {
+    @include breakpoint($break: 'large', $dir: 'max-width') {
+      position: relative;
+      padding-bottom: 1.5rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 1.5rem;
+        background: #091520;
+      }
+
+      td:last-of-type {
+        border-bottom: 0;
+      }
+    }
+
+    &:last-of-type td {
+      border-bottom: 0;
+    }
+  }
+
+  .icon {
+    position: relative;
+    top: 2px;
+    margin-right: 0.25rem;
+
+    &--Space {
+      top: 4px;
+    }
+  }
+
+  &,
+  thead,
+  tbody,
+  th,
+  tr {
+    @include breakpoint($break: 'large', $dir: 'max-width') {
+      display: block;
+    }
+  }
+}

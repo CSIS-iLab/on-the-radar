@@ -505,6 +505,7 @@
       display: grid;
       grid-gap: 2rem;
       grid-template-columns: 1fr;
+      margin-bottom: 2rem;
 
       @include breakpoint('medium') {
         grid-gap: 2rem;
@@ -750,7 +751,7 @@
     margin-left: auto;
     padding-bottom: 8rem;
 
-    & > *:not(.final-report__img-full):not(.final-report__caption) {
+    > *:not(.final-report__img-full):not(.final-report__caption) {
       @include breakpoint($break: 'medium', $dir: 'max-width') {
         margin-right: 1rem;
         margin-left: 1rem;
@@ -796,7 +797,7 @@
     }
 
     #{$page}__caption {
-      margin: 1rem auto 3rem auto;
+      margin: 1rem auto 3rem;
 
       @include breakpoint('medium') {
         margin-right: -2rem;
@@ -870,30 +871,6 @@
       text-transform: uppercase;
     }
   }
-
-  .table {
-    &__key {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      list-style: none;
-
-      li {
-        display: flex;
-        flex: 1 0 33%;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 0.5rem;
-        @include font-size(16px);
-      }
-
-      img {
-        margin-right: 0.5rem;
-      }
-    }
-  }
 }
 
 .report-downloads {
@@ -928,3 +905,5 @@
     }
   }
 }
+
+@import 'final-report-table';
