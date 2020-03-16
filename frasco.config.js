@@ -57,7 +57,13 @@ module.exports = {
   js: {
     src: '_js',
     dest: 'js',
-    entry: ['bundle.js', 'archives.js', 'posts.js', 'home.js']
+    entry: [
+      'bundle.js',
+      'archives.js',
+      'posts.js',
+      'home.js',
+      'final-report.js'
+    ]
   },
 
   sass: {

@@ -107,7 +107,7 @@ layout: default
           <li><strong>CE</strong>&nbsp;=&nbsp;Critical Enabler</li>
         </ul>
       </div>
-      {% include final-report-table.html %}
+      {% include final-report-table.html location="page" %}
     </section>
     <section class="final-report__section final-report__capabilities">
       <h2 id="capabilities">How Could These Capabilities Contribute to Escalation?</h2>
@@ -305,5 +305,13 @@ layout: default
     {%- include authors-block.html -%}
     <a href="/analysis/" class="btn btn--orange btn--analysis">View All Analysis</a>
   </section>
+  <div class="table__modal-overlay"></div>
+  <div class="table__modal" role="dialog" aria-labelledby="Modal_Title" aria-describedby="Modal_Description"
+    aria-hidden="true">
+    <div class="table__modal-header">
+      <button id="tableClose" class="btn btn--transparent btn--close"><i class="icon icon-close"></i>Close</button>
+    </div>
+    {% include final-report-table.html location="modal" %}
+  </div>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

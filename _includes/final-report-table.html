@@ -1,4 +1,19 @@
 <div class="table__container">
+  {% if include.location == "modal" %}
+  <div class="table__modal-title">
+    <h2>Technologies explored during <em>On the Radar</em></h2>
+    <ul class="table__key">
+      <li><img src="/assets/images/final-report/Sea.svg" alt="" title="Sea" />Sea</li>
+      <li><img src="/assets/images/final-report/Air.svg" alt="" title="Air" />Air</li>
+      <li><img src="/assets/images/final-report/Land.svg" alt="" title="Land" />Land</li>
+      <li><img src="/assets/images/final-report/Space.svg" alt="" title="Space" />Space</li>
+      <li><img src="/assets/images/final-report/Cyber.svg" alt="" title="Cyber" />Cyber</li>
+      <li><img src="/assets/images/final-report/Defense.svg" alt="" title="Defense" />Defense</li>
+      <li><strong>P</strong>&nbsp;=&nbsp;Platform</li>
+      <li><strong>CE</strong>&nbsp;=&nbsp;Critical Enabler</li>
+    </ul>
+  </div>
+  {% endif %}
   <table class="table">
     <thead>
       <tr>
@@ -12,7 +27,11 @@
       </tr>
     </thead>
     <tbody>
-      {% for row in site.data.capabilities %}
+      {% assign limitNum = site.data.capabilities.length %}
+      {% if include.location == 'page' %}
+      {% assign limitNum = 6 %}
+      {% endif %}
+      {% for row in site.data.capabilities limit: limitNum %}
       <tr>
         <td scope="row" data-label="Strategic SA Capability"><span>{{ row.capability }}</span></td>
         <td data-label="Domain & Type"><span>
@@ -31,4 +50,8 @@
       {% endfor %}
     </tbody>
   </table>
+  {% if include.location == 'page' %}
+  <button id="tableExpand" class="btn btn--orange btn--expand"><img src="/assets/images/final-report/expand.svg" alt=""
+      title="Expand Table" />Expand Table</button>
+  {% endif %}
 </div>
