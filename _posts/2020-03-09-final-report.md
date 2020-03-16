@@ -13,10 +13,10 @@ keywords:
   - Entanglement
   - Provocation
   - Information Complexity
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1563995827/on-the-radar/smallsat.jpg
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1582664692/on-the-radar/key_takaways_cover_v2_txyzco.jpg
 image_caption: ''
 image_source: ''
-featured: false
-featured_on_home: false
+featured: true
+featured_on_home: true
 last-modified-date: 2020-03-18T04:00:00.000+00:00
 ---

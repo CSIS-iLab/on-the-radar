@@ -16,9 +16,9 @@ layout: default
     {% assign featured_posts = site.posts | concat: site.workshops | concat: site.briefs | where: 'featured_on_home', true | sort: 'date' | reverse %}
     {%- if featured_posts.size > 0 -%}
     <section class="home__featured">
-      <h2 class="home__featured-title">Featured Post</h2>
+      <h2 class="home__featured-title">Final Report</h2>
       {%- for post in featured_posts limit:2 -%}
-      {%- include post-block.html hide_excerpt=true hide_image=false -%}
+      {%- include post-block.html hide_excerpt=true -%}
       {%- endfor -%}
     </section>
     {%- endif -%}
