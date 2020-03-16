@@ -185,11 +185,18 @@
 
 .table__modal {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  right: 0;
+  left: 0;
   z-index: 1000;
   display: none;
-  transform: translate(-50%, -50%);
+
+  @include breakpoint('medium') {
+    top: 50%;
+    right: unset;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
   &.is-active {
     display: block;
@@ -237,6 +244,7 @@
   z-index: 1;
   display: flex !important;
   align-items: center;
+  min-width: 200px;
   margin-bottom: 0;
   padding: 4px 16px;
   @include font-size(16px);
@@ -255,6 +263,7 @@
 .btn--close {
   display: flex;
   align-items: center;
+  margin: 0 auto;
   color: $color__bluegray-light;
   text-transform: uppercase;
 
