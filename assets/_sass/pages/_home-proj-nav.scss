@@ -150,12 +150,14 @@
 
     .proj-nav__menu-icon {
       display: block;
-      grid-area: icon;
       margin: 0 auto;
+
+      @include breakpoint('medium') {
+        grid-area: icon;
+      }
     }
 
     .proj-nav__menu-title {
-      grid-area: title;
       color: #eceff2;
       font-family: $font__lato;
       font-weight: 300;
@@ -164,6 +166,7 @@
       text-align: center;
 
       @include breakpoint('medium') {
+        grid-area: title;
         @include font-size(24px);
         line-height: 1.18;
         text-align: left;
