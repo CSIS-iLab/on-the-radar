@@ -8,6 +8,7 @@
 .table {
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 4rem;
   color: rgba($color__white, 0.9);
   table-layout: fixed;
   background: #0e2836;
@@ -41,6 +42,7 @@
     }
 
     .table__modal & {
+      padding-bottom: 1.5rem;
       overflow: scroll;
     }
   }
@@ -191,7 +193,7 @@
   z-index: 1000;
   display: none;
 
-  @include breakpoint('medium') {
+  @media screen and (min-height: 700px) {
     top: 50%;
     right: unset;
     left: 50%;
@@ -204,7 +206,11 @@
 
   &-header {
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
+
+    @include breakpoint('medium') {
+      padding: 1rem;
+    }
   }
 
   &-title {

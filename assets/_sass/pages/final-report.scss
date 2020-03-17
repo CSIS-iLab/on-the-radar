@@ -144,7 +144,7 @@
       font-family: $font__lato;
       font-weight: 300;
       @include font-size(18px);
-      line-height: 1.4;
+      line-height: 1.2;
 
       @include breakpoint('medium') {
         @include font-size(20px);
@@ -182,7 +182,7 @@
       position: relative;
       max-width: $max-width--small;
       margin: 0 auto 2rem;
-      padding-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
       color: $color__white;
       font-family: $font__lato;
       font-weight: bold;
@@ -191,6 +191,7 @@
       text-align: center;
 
       @include breakpoint('medium') {
+        padding-bottom: 1.5rem;
         @include font-size(40px);
       }
 
@@ -389,13 +390,6 @@
 
   &__toc {
     grid-area: toc;
-    margin-right: 2rem;
-    margin-left: 2rem;
-
-    @include breakpoint('medium') {
-      margin-right: 0;
-      margin-left: 0;
-    }
 
     h2 {
       margin-bottom: 0.75rem;
@@ -550,7 +544,7 @@
           'image';
         grid-template-columns: 1fr;
 
-        @include breakpoint('medium') {
+        @include breakpoint('medium-2') {
           grid-template-areas:
             'text quote'
             'image image';
@@ -580,23 +574,30 @@
         display: grid;
         grid-gap: 2rem;
 
-        @include breakpoint('medium') {
+        @include breakpoint('medium-2') {
           grid-column-gap: 2rem;
           grid-row-gap: 1.5rem;
           grid-template-columns: repeat(2, 1fr);
         }
-      }
 
-      img {
-        grid-row: span 2;
-        max-width: 100%;
-        height: auto;
+        /* stylelint-disable-next-line */
+        img {
+          grid-row: span 2;
+          width: 100%;
+          max-width: 400px;
+          height: auto;
+          margin: 0 auto;
+
+          @include breakpoint('medium-2') {
+            max-width: 100%;
+          }
+        }
       }
     }
 
     .capabilities--entanglement {
       blockquote {
-        @include breakpoint('medium') {
+        @include breakpoint('medium-2') {
           grid-column: 2;
         }
       }
@@ -604,20 +605,20 @@
 
     .capabilities--info {
       img {
-        @include breakpoint('medium') {
+        @include breakpoint('medium-2') {
           grid-column: 2;
         }
       }
 
       p {
-        @include breakpoint('medium') {
+        @include breakpoint('medium-2') {
           grid-column: 1;
           grid-row: 1;
         }
       }
 
       blockquote {
-        @include breakpoint('medium') {
+        @include breakpoint('medium-2') {
           grid-column: 1;
         }
       }
@@ -634,12 +635,12 @@
       grid-gap: 2rem;
       margin-bottom: 4rem;
 
-      @include breakpoint('medium') {
+      @include breakpoint('medium-2') {
         grid-template-columns: auto auto;
       }
 
       blockquote {
-        @include breakpoint('medium') {
+        @include breakpoint('medium-2') {
           grid-column: 2;
           grid-row: span 2;
         }
@@ -647,8 +648,13 @@
     }
 
     &-stats {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-areas:
+        'one two'
+        'three three'
+        'four four';
+      grid-template-columns: min-content auto;
       justify-content: space-between;
       margin: 0;
       padding: 0;
@@ -659,26 +665,36 @@
         grid-row: 2;
       }
 
+      @include breakpoint('large-2') {
+        grid-template-areas:
+          'one two three'
+          'four four four';
+        grid-template-columns: min-content auto auto;
+      }
+
       li {
         display: flex;
         flex: 1 1 auto;
         align-items: center;
-        margin-bottom: 1rem;
         @extend %final-report-subtitle;
 
-        @include breakpoint('medium') {
-          margin-bottom: 0;
+        /* stylelint-disable-next-line */
+        &:nth-of-type(1) {
+          grid-area: one;
         }
 
         /* stylelint-disable-next-line */
         &:nth-of-type(2) {
+          grid-area: two;
           padding-left: 1.5rem;
           border-left: 1px solid rgba($color__bluegray-light, 0.2);
         }
 
         /* stylelint-disable-next-line */
         &:nth-of-type(3) {
-          @include breakpoint('medium') {
+          grid-area: three;
+
+          @include breakpoint('large-2') {
             padding-left: 1.5rem;
             border-left: 1px solid rgba($color__bluegray-light, 0.2);
           }
@@ -686,8 +702,9 @@
 
         /* stylelint-disable-next-line */
         &:last-of-type {
-          @include breakpoint('medium') {
-            margin-top: 1rem;
+          grid-area: four;
+
+          @include breakpoint('large-2') {
             padding-top: 1rem;
             border-top: 1px solid rgba($color__bluegray-light, 0.2);
           }
@@ -712,7 +729,7 @@
       margin: 0 auto 2.25rem;
       padding-top: 6rem;
 
-      @include breakpoint('medium') {
+      @include breakpoint('medium-2') {
         padding-top: 5rem;
       }
 
@@ -790,8 +807,8 @@
 
         @include breakpoint($break: 'medium', $dir: 'max-width') {
           top: 100%;
-          height: 250px;
           z-index: 1;
+          height: 250px;
         }
 
         @include breakpoint('medium') {
