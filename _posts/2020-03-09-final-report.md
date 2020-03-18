@@ -13,7 +13,7 @@ keywords:
   - Entanglement
   - Provocation
   - Information Complexity
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1582664692/on-the-radar/final-report_mockup_bcg0py.jpg
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1582664692/on-the-radar/OTR-final-report_rvqzio.jpg
 image_caption: ''
 image_source: ''
 featured: true
