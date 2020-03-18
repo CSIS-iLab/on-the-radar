@@ -42,7 +42,6 @@ downloads:
 - label: Sensor Networks
   media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1584537418/on-the-radar/Sensor_Networks_be91wp.pdf
 featured_on_home: false
-published: false
 
 ---
 # Introduction
