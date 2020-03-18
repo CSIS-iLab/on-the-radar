@@ -1,11 +1,29 @@
 ---
 last-modified-date: 2020-03-05T18:54:24.000+00:00
 details:
-  type: []
-  characteristics: []
-  risk_factors: []
-  domain: []
-  country: []
+  type:
+  - Sensors
+  characteristics:
+  - Vantage/range
+  - Speed
+  - Resiliency
+  - Persistence
+  - Precision
+  - Detectability
+  risk_factors:
+  - Vulnerable
+  - Preemptive
+  - Intrusive
+  - Action-enabling
+  domain:
+  - Sea
+  - Land
+  - Air
+  - Space
+  country:
+  - China
+  - Russia
+  - United States
 title: 'Sensor Networks '
 date: 2020-03-02T05:00:00.000+00:00
 excerpt: Sensor networks offer great potential to improve situational awareness by
@@ -15,12 +33,14 @@ excerpt: Sensor networks offer great potential to improve situational awareness 
 authors:
 - _authors/janani-mohan.md
 - _authors/maxwell-simon.md
-brief_type: ''
-image: ''
+brief_type: Tech Primer
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1564060962/on-the-radar/Sensors.jpg
 image_caption: ''
 image_source: ''
 keywords: []
-downloads: []
+downloads:
+- label: Sensor Networks
+  media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1584537418/on-the-radar/Sensor_Networks_be91wp.pdf
 featured_on_home: false
 published: false
 
