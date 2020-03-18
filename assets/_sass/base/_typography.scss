@@ -51,6 +51,7 @@ h5 {
 .post-content {
   p {
     @extend %post__content-paragraph;
+    color: $color__black;
 
     &:last-of-type() {
       margin-bottom: 0;

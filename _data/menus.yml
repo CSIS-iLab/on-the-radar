@@ -1,7 +1,15 @@
+- url: /analysis/final-report/
+  title: Final Report
+  identifier: final
+  inHeader: true
+  inFooter: true
+  inHomeMain: true
+  inHomeSub: false
+  desc: Informed by research and eight tabletop exercises conducted with nearly 150 participants overall, this two-year study examines implications of the emerging strategic situational awareness ecosystem and its impact on crisis decisionmaking.
 - url: /analysis/key-takeaways-from-under-the-nuclear-shadow-situational-awareness-technology-and-crisis-decisionmaking/
   title: Key Takeaways
   identifier: takeaways
-  inHeader: true
+  inHeader: false
   inFooter: true
   inHomeMain: false
   inHomeSub: false
@@ -36,14 +44,6 @@
   inFooter: true
   inHomeMain: false
   inHomeSub: true
-- url: null
-  title: Final Paper
-  identifier: final
-  inHeader: false
-  inFooter: false
-  inHomeMain: true
-  inHomeSub: false
-  desc: The results of this study will be published in a final paper to be released in 2020.
 - url: /glossary/
   title: Glossary
   identifier: glossary

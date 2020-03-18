@@ -1,0 +1,57 @@
+<div class="table__container">
+  {% if include.location == "modal" %}
+  <div class="table__modal-title">
+    <h2>Technologies explored during <em>On the Radar</em></h2>
+    <ul class="table__key">
+      <li><img src="/assets/images/final-report/Sea.svg" alt="" title="Sea" />Sea</li>
+      <li><img src="/assets/images/final-report/Air.svg" alt="" title="Air" />Air</li>
+      <li><img src="/assets/images/final-report/Land.svg" alt="" title="Land" />Land</li>
+      <li><img src="/assets/images/final-report/Space.svg" alt="" title="Space" />Space</li>
+      <li><img src="/assets/images/final-report/Cyber.svg" alt="" title="Cyber" />Cyber</li>
+      <li><img src="/assets/images/final-report/Defense.svg" alt="" title="Defense" />Defense</li>
+      <li><strong>P</strong>&nbsp;=&nbsp;Platform</li>
+      <li><strong>CE</strong>&nbsp;=&nbsp;Critical Enabler</li>
+    </ul>
+  </div>
+  {% endif %}
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Strategic SA Capability</th>
+        <th scope="col">Domain & Type</th>
+        <th scope="col">Definition</th>
+        <th scope="col">Example of Strategic SA Application</th>
+        <th scope="col">Demonstrative Technology</th>
+        <th scope="col">Dominant Attributes</th>
+        <th scope="col">Dominant Risk Factors</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% assign limitNum = site.data.capabilities.length %}
+      {% if include.location == 'page' %}
+      {% assign limitNum = 6 %}
+      {% endif %}
+      {% for row in site.data.capabilities limit: limitNum %}
+      <tr>
+        <td scope="row" data-label="Strategic SA Capability"><span>{{ row.capability }}</span></td>
+        <td data-label="Domain & Type"><span>
+            {% assign domains = row.domain | split: ";" %}
+            {% for domain in domains %}
+            <img src="/assets/images/final-report/{{ domain }}.svg" class="icon icon--{{ domain }}" alt="{{ domain }}"
+              title="{{ domain }}" />
+            {% endfor %}
+            {{ row.type }}</span></td>
+        <td data-label="Definition"><span>{{ row.definition }}</span></td>
+        <td data-label="Example of Strategic SA Application"><span>{{ row.application }}</span></td>
+        <td data-label="Demonstrative Technology"><span>{{ row.technology }}</span></td>
+        <td data-label="Dominant Attributes"><span>{{ row.attributes }}</span></td>
+        <td data-label="Dominant Risk Factors"><span>{{ row.risk }}</span></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% if include.location == 'page' %}
+  <button id="tableExpand" class="btn btn--orange btn--expand"><img src="/assets/images/final-report/expand.svg" alt=""
+      title="Expand Table" />Expand Table</button>
+  {% endif %}
+</div>

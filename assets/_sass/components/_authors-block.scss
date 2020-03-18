@@ -9,12 +9,22 @@
     @extend %h2--thin;
     padding-bottom: 0.5rem;
     text-transform: uppercase;
+
+    .final-report & {
+      margin-bottom: 0.875rem;
+      padding-bottom: 0;
+      color: $color__orange;
+    }
   }
 
   &__name,
   &__name:visited {
     @extend %about-person__name--base;
     color: $color__astral;
+
+    .final-report & {
+      color: $color__off-white;
+    }
 
     &:hover {
       color: $color__orange;
@@ -25,6 +35,11 @@
     @extend %about-person__title;
     display: block;
     color: $color__gray-darker;
+
+    .final-report & {
+      margin-bottom: 2rem;
+      color: $color__bluegray-light;
+    }
   }
 
   &__bio {

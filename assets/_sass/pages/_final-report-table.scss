@@ -1,0 +1,280 @@
+%final-report-table-header {
+  font-family: $font__lato;
+  font-weight: bold;
+  @include font-size(16px);
+  line-height: 1.4;
+}
+
+.table {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  color: rgba($color__white, 0.9);
+  table-layout: fixed;
+  background: #0e2836;
+  border-collapse: collapse;
+
+  @include breakpoint('medium') {
+    max-width: 1200px;
+  }
+
+  &__container {
+    position: relative;
+    right: 50%;
+    left: 50%;
+    width: 100vw;
+    max-height: 650px;
+    margin-right: -50vw;
+    margin-left: -50vw;
+    overflow: hidden;
+
+    .final-report__technologies & {
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        /* prettier-ignore */
+        background: linear-gradient(180deg, rgba(9, 21, 32, 0) 0%, #091520 100.07%);
+      }
+    }
+
+    .table__modal & {
+      padding-bottom: 1.5rem;
+      overflow: scroll;
+    }
+  }
+
+  &__key {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+
+    .table__modal & {
+      max-width: 400px;
+      margin: 2rem auto;
+    }
+
+    li {
+      display: flex;
+      flex: 1 0 33%;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      color: $color__white;
+      @include font-size(16px);
+    }
+
+    img {
+      margin-right: 0.5rem;
+    }
+  }
+
+  thead {
+    @include breakpoint($break: 'large', $dir: 'max-width') {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      border: 0;
+      clip: rect(0 0 0 0);
+    }
+  }
+
+  th {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    @extend %final-report-table-header;
+    text-align: left;
+  }
+
+  th,
+  td {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-bottom: 1px solid rgba(36, 117, 143, 0.5);
+  }
+
+  td {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    vertical-align: top;
+
+    &::before {
+      @extend %final-report-table-header;
+    }
+
+    @include breakpoint($break: 'large', $dir: 'max-width') {
+      display: flex;
+
+      &::before {
+        content: attr(data-label);
+        display: block;
+        flex: 0 0 50%;
+        padding-right: 1rem;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: calc(50% - 0.5rem);
+        width: 1px;
+        background: rgba(36, 117, 143, 0.5);
+      }
+
+      span {
+        display: block;
+        flex: 0 0 50%;
+        padding-left: 0.5rem;
+      }
+    }
+  }
+
+  tr {
+    @include breakpoint($break: 'large', $dir: 'max-width') {
+      position: relative;
+      padding-bottom: 1.5rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 1.5rem;
+        background: #091520;
+      }
+
+      td:last-of-type {
+        border-bottom: 0;
+      }
+    }
+
+    &:last-of-type td {
+      border-bottom: 0;
+    }
+  }
+
+  .icon {
+    position: relative;
+    top: 2px;
+    margin-right: 0.25rem;
+
+    &--Space {
+      top: 4px;
+    }
+  }
+
+  &,
+  thead,
+  tbody,
+  th,
+  tr {
+    @include breakpoint($break: 'large', $dir: 'max-width') {
+      display: block;
+    }
+  }
+}
+
+.table__modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+
+  @media screen and (min-height: 700px) {
+    top: 50%;
+    right: unset;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &.is-active {
+    display: block;
+  }
+
+  &-header {
+    width: 100%;
+    padding: 0.5rem;
+
+    @include breakpoint('medium') {
+      padding: 1rem;
+    }
+  }
+
+  &-title {
+    padding: 0 1rem;
+  }
+
+  h2 {
+    color: $color__white;
+    font-family: $font__lato;
+    font-weight: bold;
+    @include font-size(28px);
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  &-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    background: #091520;
+    opacity: 0.9;
+
+    &.is-active {
+      display: block;
+    }
+  }
+}
+
+.btn--expand {
+  position: absolute;
+  right: calc(100vw - 100% + 1rem);
+  bottom: 0;
+  z-index: 1;
+  display: flex !important;
+  align-items: center;
+  min-width: 200px;
+  margin-bottom: 0;
+  padding: 4px 16px;
+  @include font-size(16px);
+  line-height: 2.03;
+  text-transform: uppercase;
+
+  @include breakpoint($break: '1200px') {
+    right: calc((100vw - 1200px) / 2);
+  }
+
+  img {
+    margin-right: 0.5rem;
+  }
+}
+
+.btn--close {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  color: $color__bluegray-light;
+  text-transform: uppercase;
+
+  .icon {
+    margin-top: -1px;
+    @include font-size(22px);
+  }
+}
