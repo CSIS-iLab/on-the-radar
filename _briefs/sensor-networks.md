@@ -27,18 +27,18 @@ published: false
 ---
 # Introduction
 
-Today, several technologies are going “smart,” from homes to cars to medical supplies. Networks of sensors enable these technologies, using remote data collection to increase consumer situational awareness. While sensor networks are common in civilian life, they are also used by militaries to detect conventional and nuclear deployment.[\[^1\]](#_ftn1)
+Today, several technologies are going “smart,” from homes to cars to medical supplies. Networks of sensors enable these technologies, using remote data collection to increase consumer situational awareness. While sensor networks are common in civilian life, they are also used by militaries to detect conventional and nuclear deployment.[^1]
 
-Sensor networks involve complex technological systems based on autonomous nodes that monitor environmental conditions such as light, heat, and radiation.[\[^2\]](#_ftn2) Nodes consist of sensors, data processors, communication devices, and power sources such as batteries.[\[^3\]](#_ftn3) They are interconnected through a network and can transmit data to other nodes or directly to the end user. Sensor networks are different from non-networked sensors because they transmit the data they collect back to the decision-maker instead of requiring in-person data access.[\[^4\]](#_ftn4) Many sensors utilize delay tolerant communications, where data is transmitted and stored from node to node until the data is within the network range of the main transmission device.[\[^5\]](#_ftn5) Others rely on wireless mesh network connectivity, where data is constantly transmitted over the network, for more persistent observation.
+Sensor networks involve complex technological systems based on autonomous nodes that monitor environmental conditions such as light, heat, and radiation.[^2] Nodes consist of sensors, data processors, communication devices, and power sources such as batteries.[^3] They are interconnected through a network and can transmit data to other nodes or directly to the end user. Sensor networks are different from non-networked sensors because they transmit the data they collect back to the decision-maker instead of requiring in-person data access.[\[^4] Many sensors utilize delay tolerant communications, where data is transmitted and stored from node to node until the data is within the network range of the main transmission device.[\[^5] Others rely on wireless mesh network connectivity, where data is constantly transmitted over the network, for more persistent observation.
 
 ***
 
-[\[1\]](#_ftnref1) Chee-Yee Chong and Srikanta Kumar, “Sensor Networks: Evolution, Opportunities, and Challenges,” _Proceedings of the IEEE_ 91, no. 8 (2003): 1247–56.
+[^1]: Chee-Yee Chong and Srikanta Kumar, “Sensor Networks: Evolution, Opportunities, and Challenges,” _Proceedings of the IEEE_ 91, no. 8 (2003): 1247–56.
 
-[\[2\]](#_ftnref2) Wireless Sensor Networks Project Team, “Internet of Things: Wireless Sensor Networks” (Geneva, Switzerland: International Electrotechnical Commission, 2014), [http://www.iec.ch/whitepaper/pdf/iecWP-internetofthings-LR-en.pdf.](http://www.iec.ch/whitepaper/pdf/iecWP-internetofthings-LR-en.pdf. "http://www.iec.ch/whitepaper/pdf/iecWP-internetofthings-LR-en.pdf.")
+[^2]: Wireless Sensor Networks Project Team, “Internet of Things: Wireless Sensor Networks” (Geneva, Switzerland: International Electrotechnical Commission, 2014), [http://www.iec.ch/whitepaper/pdf/iecWP-internetofthings-LR-en.pdf.](http://www.iec.ch/whitepaper/pdf/iecWP-internetofthings-LR-en.pdf. "http://www.iec.ch/whitepaper/pdf/iecWP-internetofthings-LR-en.pdf.")
 
-[\[3\]](#_ftnref3) Vidyasagar Potdar, Atif Sharif, and Elizabeth Chang, “Wireless Sensor Networks: A Survey” (2009 International Conference on Advanced Information Networking and Applications Workshops, Perth, Australia: Digital Ecosystems and Business Intelligence Institute, 2009).
+[^3]: Vidyasagar Potdar, Atif Sharif, and Elizabeth Chang, “Wireless Sensor Networks: A Survey” (2009 International Conference on Advanced Information Networking and Applications Workshops, Perth, Australia: Digital Ecosystems and Business Intelligence Institute, 2009).
 
-[\[4\]](#_ftnref4) Chong and Kumar, “Sensor Networks: Evolution, Opportunities, and Challenges.”
+[^4]: Chong and Kumar, “Sensor Networks: Evolution, Opportunities, and Challenges.”
 
-[\[5\]](#_ftnref5) “Disruption Tolerant Networking,” Analysis, _National Aeronautics and Space Administration_ (blog), May 25, 2018, [https://www.nasa.gov/content/dtn.](https://www.nasa.gov/content/dtn. "https://www.nasa.gov/content/dtn.")
+[^5]: “Disruption Tolerant Networking,” Analysis, _National Aeronautics and Space Administration_ (blog), May 25, 2018, [https://www.nasa.gov/content/dtn.](https://www.nasa.gov/content/dtn. "https://www.nasa.gov/content/dtn.")
