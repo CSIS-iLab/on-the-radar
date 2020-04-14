@@ -1,12 +1,10 @@
 ---
 last-modified-date: 2020-02-18T15:11:19.000+00:00
 categories: []
-title:
-  'Key Takeaways from "Under the Nuclear Shadow: Situational Awareness Technology
+title: 'Key Takeaways from "Under the Nuclear Shadow: Situational Awareness Technology
   and Crisis Decisionmaking"'
 date: 2020-02-18T05:00:00.000+00:00
-excerpt:
-  With the support of the Carnegie Corporation of New York, the Project on
+excerpt: With the support of the Carnegie Corporation of New York, the Project on
   Nuclear Issues (PONI) at the Center for Strategic and International Studies (CSIS)
   and the University of California, Berkeley’s Nuclear Policy Working Group undertook
   a two year study to examine the implications of emerging situational awareness technologies
@@ -14,23 +12,23 @@ excerpt:
   an overview of key concepts, conclusions, and recommendations from our study on
   the impact of emerging technologies for situational awareness on strategic stability.
 authors:
-  - _authors/rebecca-hersman.md
-  - _authors/reja-younis.md
-  - _authors/bryce-farabaugh.md
-  - _authors/bethany-goldblum.md
-  - _authors/andrew-reddie.md
+- _authors/rebecca-hersman.md
+- _authors/reja-younis.md
+- _authors/bryce-farabaugh.md
+- _authors/bethany-goldblum.md
+- _authors/andrew-reddie.md
 keywords: []
 related_briefs: []
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1582664692/on-the-radar/key_takaways_cover_v2_txyzco.jpg
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1582661139/on-the-radar/key_takaways_cover_tsvdoc.png
 image_caption: ''
 image_source: ''
 featured: false
 featured_on_home: false
 downloads:
-  - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1582040418/on-the-radar/OTR_UnderNuclearShadow_Booklet_WEB_kr1t0r.pdf
-    label: Key Takeaways
----
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1582040418/on-the-radar/OTR_UnderNuclearShadow_Booklet_WEB_kr1t0r.pdf
+  label: Key Takeaways
 
+---
 **[Download Key Takeaways from "Under the Nuclear Shadow: Situational Awareness Technology and Crisis Decisionmaking" here.](https://res.cloudinary.com/csisideaslab/image/upload/v1582040418/on-the-radar/OTR_UnderNuclearShadow_Booklet_WEB_kr1t0r.pdf)**
 
 Improvements to strategic situational awareness (SA)—the ability to characterize the operating environment, detect and respond to threats, and discern actual attacks from false alarms across the spectrum of conflict—have long been assumed to reduce the risk of conflict and help manage crises more successfully when they occur. However, with the development of increasingly capable strategic SA-related technology, growing comingling of conventional and nuclear SA requirements and capabilities, and the increasing risk of conventional conflict between nuclear-armed adversaries, this may no longer be the case.
