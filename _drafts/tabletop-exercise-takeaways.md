@@ -21,7 +21,9 @@ image_caption: ''
 image_source: ''
 featured: false
 featured_on_home: false
-downloads: []
+downloads:
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1586903218/on-the-radar/OnTheRadar_Chapter_5_p5zzhi.pdf
+  label: Tabletop Exercise Takeaways_5
 
 ---
 An analysis of strategic SA capabilities according to the attributes and risk factors they could introduce in a crisis suggests some of the ways these technologies could pose escalatory risk, complicate decisionmaking, and challenge traditional notions of information dominance in the strategic SA ecosystem. And yet, real-world case studies or other experiential sources of information to evaluate these assessments are highly limited or overly dated. To evaluate some of the risk assessments identified in research and explore the decisionmaking process of policymakers and technical experts in the throes of crises under a nuclear shadow, the Project on Nuclear Issues (PONI) developed and conducted a series of tabletop exercises on two fictitious regional scenarios. These exercises provided insight regarding both the decisionmaking calculus involved in deploying emerging SA technologies and how their use could potentially impact strategic stability.
