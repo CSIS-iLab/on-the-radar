@@ -21,8 +21,8 @@ image_source: ''
 featured: false
 featured_on_home: false
 downloads:
-- media_upload: ''
-  label: ''
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1586897748/on-the-radar/OnTheRadar_Chapter_4_zersew.pdf
+  label: Pathways to Escalation_4
 
 ---
 Of particular concern are three potential escalation pathways—provocation, entanglement, and information complexity—that may be triggered or exacerbated by the use of emerging strategic SA-enhancing capabilities. Although multiple pathways may be activated during an actual crisis, either simultaneously or sequentially, examining each of these escalatory pathways individually provides insight into the interplay of strategic SA technologies and stability risks.
