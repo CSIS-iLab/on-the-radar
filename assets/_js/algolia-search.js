@@ -206,10 +206,10 @@ const mapStateToKeys = (uiState, urlKeyDivs, dataset) => {
           f === 'type'
             ? 'categories'
             : f === 'topic'
-              ? 'keywords'
-              : f === 'related'
-                ? 'related_briefs'
-                : f
+            ? 'keywords'
+            : f === 'related'
+            ? 'related_briefs'
+            : f
       } else if (dataset.refine_results) {
         param =
           f === 'brief-tech' || f === 'brief-country'
@@ -265,8 +265,8 @@ const addTopicTypeRelatedBriefFilter = () => {
         dataset.collectionLabel === 'resources'
           ? 'type'
           : dataset.collectionLabel === 'posts'
-            ? 'categories'
-            : 'collection_title',
+          ? 'categories'
+          : 'collection_title',
       operator: 'or',
       collapsible: {
         collapsed: true
@@ -485,8 +485,8 @@ const addBriefTypeRefinement = () => {
         type && type === 'all'
           ? type
           : helpers.getCurrentType()
-            ? helpers.getCurrentType()[0]
-            : null
+          ? helpers.getCurrentType()[0]
+          : null
 
       if (currentType) helpers.toggleBriefDescription(currentType, 'block')
     }
@@ -613,9 +613,7 @@ const addItemCountSummary = () => {
             results_text = 'Item'
           }
           return `
-            <span class="summary-text">${
-              data.nbHits
-            }</span> <span class="summary-label">${results_text}</span>
+            <span class="summary-text">${data.nbHits}</span> <span class="summary-label">${results_text}</span>
           `
         },
         autoHideContainer: false
@@ -632,9 +630,7 @@ const addPageCountSummary = () => {
         body: data => {
           let page = data.page + 1
           return `
-            <span class="summary-label">Page</span> <span class="summary-text">${page} of ${
-            data.nbPages
-          }</span> |
+            <span class="summary-label">Page</span> <span class="summary-text">${page} of ${data.nbPages}</span> |
           `
         },
         autoHideContainer: false
