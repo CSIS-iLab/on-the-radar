@@ -24,7 +24,6 @@ downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1591050856/on-the-radar/North_Korea_Primer-_Jason_Arterbun_yq1xvx.pdf
   label: North Korea SA
 featured_on_home: false
-published: false
 
 ---
 North Korea’s developing strategic situational awareness (SA) capabilities incorporate technologies that could introduce new risks in a conflict or crisis on the Korean Peninsula. North Korea possesses multifaceted command, control, communications, computers, intelligence, surveillance, and reconnaissance (C4ISR) systems that support a range of provocative asymmetric operations, including but not limited to GPS jamming, communications spoofing, cyberespionage, and cyberattacks.[^1] While North Korea has rapidly developed its domestic telecommunications infrastructure and advanced computing capability in recent years, its systems continue to face technical and operational limitations that may constrain North Korea’s SA in engagements across the spectrum of conflict.
