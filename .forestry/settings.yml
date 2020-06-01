@@ -75,7 +75,6 @@ public_path: https://res.cloudinary.com/csisideaslab/image/upload
 front_matter_path: https://res.cloudinary.com/csisideaslab/image/upload
 use_front_matter_path: true
 file_template: ":filename:"
-instant_preview: false
 build:
   preview_env:
   - JEKYLL_ENV=staging
@@ -84,4 +83,3 @@ build:
   preview_docker_image: forestryio/build:latest
   mount_path: "/opt/buildhome/repo"
   instant_preview_command: npm forestry:preview --port 8080 --host 0.0.0.0 -d _site
-  preview_command: bundle exec jekyll build --drafts --unpublished --future -d _site
