@@ -13,13 +13,16 @@ excerpt: This report attempts to leverage publicly available information to (a) 
   the context of its historical development; and (b) detail the capabilities, military
   assets, and battlefield systems that North Korea currently uses to achieve and develop
   strategic situational awareness.
-authors: []
+authors:
+- _authors/jason-arterburn.md
 brief_type: Country Profile
-image: ''
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1591050772/on-the-radar/North_Korea_pic_ielkce.png
 image_caption: ''
 image_source: ''
 keywords: []
-downloads: []
+downloads:
+- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1591050856/on-the-radar/North_Korea_Primer-_Jason_Arterbun_yq1xvx.pdf
+  label: North Korea SA
 featured_on_home: false
 published: false
 
