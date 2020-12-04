@@ -24,7 +24,7 @@ details:
   - China
   - Russia
   - United States
-title: Sensor Networks -(copy)
+title: 'Sensor Networks '
 date: 2020-03-02T05:00:00.000+00:00
 excerpt: Sensor networks offer great potential to improve situational awareness by
   enhancing vantage, precision, and persistence. With relatively low development and
