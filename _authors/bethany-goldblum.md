@@ -1,7 +1,9 @@
 ---
 title: Bethany Goldblum
-role: Associate Research Engineer, University of California Berkeley and Director,
+role: >-
+  Associate Research Engineer, University of California Berkeley and Director,
   Nuclear Policy Working Group
-
+_template: authors
 ---
+
 Bethany L. Goldblum is an Associate Research Engineer in the Department of Nuclear Engineering at the University of California, Berkeley. Goldblum also serves as Executive Director for the Nuclear Science and Security Consortium, a multi-institution initiative established by the Department of Energy’s National Nuclear Security Administration to conduct research and development supporting the nation’s nonproliferation mission while expanding the talent pipeline. Her research explores fundamental and applied nuclear physics, scintillator characterization, multi-source analytics, experimental wargaming, and nuclear security policy. Goldblum leads the Bay Area Neutron Group, a research team focused on applied neutron physics for nuclear security applications, and founded and directs the Nuclear Policy Working Group, an interdisciplinary team of scholars developing policy solutions to strengthen global nuclear security. She has been involved with the Public Policy and Nuclear Threats Boot Camp nearly since its inception, and acted as director of the program since 2014. Goldblum maintains active collaborations with the US DOE National Laboratories, and is an affiliate at Lawrence Berkeley, Lawrence Livermore, and Sandia National Laboratories. She is author or co-author of more than 60 scientific publications. Goldblum received a Ph.D. in Nuclear Engineering from the University of California, Berkeley.

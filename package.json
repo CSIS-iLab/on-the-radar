@@ -4,11 +4,11 @@
   "description": "The website for the On the Radar study by the CSIS Project on Nuclear Issues (PONI) program.",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp",
+    "start": "npx tinacms dev -c \"gulp\"",
     "browsersync": "gulp browsersync",
     "browsersync-production": "gulp browsersync --jekyllEnv='production'",
-    "build": "gulp build --jekyllEnv='production'",
-    "netlify:build": "gulp build --jekyllEnv='production'",
+    "build": "npx tinacms build && gulp build --jekyllEnv='production'",
+    "netlify:build": "npx tinacms build && gulp build --jekyllEnv='production'",
     "eslint": "gulp eslint",
     "imagemin": "gulp imagemin",
     "production": "gulp --jekyllEnv='production'",
@@ -70,12 +70,14 @@
     "yargs": "^12.0.5"
   },
   "dependencies": {
+    "@tinacms/cli": "^1.5.3",
     "algoliasearch": "^3.35.1",
     "algoliasearch-helper": "^3.6.2",
     "clipboard": "^2.0.6",
     "instantsearch.js": "^2.10.5",
     "node-sass": "^4.14.1",
     "object-fit-images": "^3.2.4",
+    "tinacms": "^1.4.3",
     "tippy.js": "^3.4.1"
   }
 }

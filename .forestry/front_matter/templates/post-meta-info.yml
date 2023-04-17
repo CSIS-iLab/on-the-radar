@@ -12,7 +12,7 @@ fields:
   label: Date
   config:
     required: true
-- name: last-modified-date
+- name: last_modified_date
   type: datetime
   label: Last Updated
   config:

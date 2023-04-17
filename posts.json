@@ -17,7 +17,7 @@
     "topics": {{ topics }},
     "authors": "{{post.authors }}",
     "date": "{{ post.date | date: site.date_format | date: '%s' }}",
-    "updated_at": "{{ post.last-modified-date | date: '%s' }}",
+    "updated_at": "{{ post.last_modified_date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
     }{%- unless forloop.last -%},{%- endunless -%}
@@ -42,7 +42,7 @@
     "keywords": {{ keywords }},
     "related_briefs": {{ related }},
     "date": "{{ post.date | date: site.date_format | date: '%s' }}",
-    "updated_at": "{{ post.last-modified-date | date: '%s' }}",
+    "updated_at": "{{ post.last_modified_date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
   }{%- unless forloop.last -%},{%- endunless -%}
@@ -76,7 +76,7 @@
     },
     "authors": {{ authors_list }},
     "date": "{{ post.date | date: site.date_format | date: '%s' }}",
-    "updated_at": "{{ post.last-modified-date | date: '%s' }}",
+    "updated_at": "{{ post.last_modified_date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
   }{%- unless forloop.last -%},{%- endunless -%}
@@ -110,7 +110,7 @@
     },
     "authors": {{ authors_list }},
     "date": "{{ post.date | date: site.date_format | date: '%s' }}",
-    "updated_at": "{{ post.last-modified-date | date: '%s' }}",
+    "updated_at": "{{ post.last_modified_date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
   }{%- unless forloop.last -%},{%- endunless -%}
@@ -136,7 +136,7 @@
     },
     "authors": {{ authors_list }},
     "date": "{{ post.date | date: site.date_format | date: '%s' }}",
-    "updated_at": "{{ post.last-modified-date | date: '%s' }}",
+    "updated_at": "{{ post.last_modified_date | date: '%s' }}",
     "excerpt": {{post.excerpt | jsonify | normalize_whitespace }},
     "post_html": {{ post_html | jsonify | normalize_whitespace }}
   }{%- unless forloop.last -%},{%- endunless -%}

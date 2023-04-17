@@ -1,44 +1,49 @@
 ---
-last-modified-date: 2019-11-05 15:42:10 +0000
+last_modified_date: '2019-11-05 15:42:10 +0000'
 details:
   type:
-  - Sensors
+    - Sensors
   characteristics:
-  - Persistence
-  - Precision
-  - Vantage/range
+    - Persistence
+    - Precision
+    - Vantage/range
   risk_factors:
-  - Action-enabling
-  - Clandestine
-  - Intrusive
+    - Action-enabling
+    - Clandestine
+    - Intrusive
   domain:
-  - Space
-  - Air
-  - Sea
+    - Space
+    - Air
+    - Sea
   country:
-  - Russia
-  - China
-  - United States
+    - Russia
+    - China
+    - United States
 title: Non-Acoustic Submarine Detection
-date: 2019-11-05 05:00:00 +0000
-excerpt: Non-acoustic submarine detection technologies are those that do not rely
-  on the collection of soundwaves emitted or reflected by a submerged vehicle for
-  location and tracking. · The act of deploying advanced detection technology is unlikely
-  to disrupt current strategic stability unless an adversary becomes aware of the
-  presence of enhanced sensors and accurate tracking of their vehicles.
+date: '2019-11-05 05:00:00 +0000'
+excerpt: >-
+  Non-acoustic submarine detection technologies are those that do not rely on
+  the collection of soundwaves emitted or reflected by a submerged vehicle for
+  location and tracking. · The act of deploying advanced detection technology is
+  unlikely to disrupt current strategic stability unless an adversary becomes
+  aware of the presence of enhanced sensors and accurate tracking of their
+  vehicles.
 authors:
-- _authors/evan-lisman.md
+  - _authors/evan-lisman.md
 brief_type: Tech Primer
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1564062656/on-the-radar/Sensors-2.jpg
+image: >-
+  https://res.cloudinary.com/csisideaslab/image/upload/v1564062656/on-the-radar/Sensors-2.jpg
 image_caption: ''
 image_source: ''
 keywords: []
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1574455202/on-the-radar/Non-acoustic_Sub_Detection_Primer_c7ntof.pdf
-  label: Non-acoustic Sub Detection Primer
+  - media_upload: >-
+      https://res.cloudinary.com/csisideaslab/image/upload/v1574455202/on-the-radar/Non-acoustic_Sub_Detection_Primer_c7ntof.pdf
+    label: Non-acoustic Sub Detection Primer
 featured_on_home: false
-
+_template: briefs
 ---
+
 # Introduction
 
 Emerging non-acoustic detection technologies have the potential to expose the location of ballistic missile submarines (SSBNs)—assets which derive strategic significance from their ability to covertly maintain second-strike capability.[^1] Submarines equipped with nuclear missiles, when undetected, can survive an adversary attack and ensure retaliation. Due to advances in stealth submarine technology—including ultra-quiet diesel and nuclear engines, sound-dampening mounts, and stealth paint—most active and passive acoustic methods are incapable of detecting the presence of modern vessels. However, advances in non-acoustic detection tools have the potential to reveal the location of SSBNs. This may enable preemptive action against an adversary’s second-strike capabilities and erode confidence in mutually assured destruction. At the same time, significant technological barriers remain to accurately tracking and executing an attack on a submerged target at great depth.

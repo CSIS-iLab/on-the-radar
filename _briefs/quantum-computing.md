@@ -1,41 +1,46 @@
 ---
 details:
   type:
-  - Cyber
+    - Cyber
   characteristics:
-  - Speed
-  - Detectability
+    - Speed
+    - Detectability
   risk_factors:
-  - Action-enabling
-  - Predictive
-  - Vulnerable
+    - Action-enabling
+    - Predictive
+    - Vulnerable
   domain:
-  - Cyberspace
+    - Cyberspace
   country:
-  - China
-  - United States
+    - China
+    - United States
 title: Quantum Computing
-date: 2019-07-29 13:00:00 +0000
-excerpt: 'Quantum computers have capabilities that exceed those of classical computers,
-  processing information in a fundamentally different way by taking advantage of physics
-  that occurs only on the quantum level. With these characteristics, quantum computers
-  can solve problems that are not feasible on a classical computer. '
+date: '2019-07-29 13:00:00 +0000'
+excerpt: >-
+  Quantum computers have capabilities that exceed those of classical computers,
+  processing information in a fundamentally different way by taking advantage of
+  physics that occurs only on the quantum level. With these characteristics,
+  quantum computers can solve problems that are not feasible on a classical
+  computer. 
 authors:
-- _authors/kelly-swanson.md
+  - _authors/kelly-swanson.md
 brief_type: Tech Primer
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1564062298/on-the-radar/PONI_illustration_COLOR_cyber.jpg
+image: >-
+  https://res.cloudinary.com/csisideaslab/image/upload/v1564062298/on-the-radar/PONI_illustration_COLOR_cyber.jpg
 image_caption: ''
 image_source: CSIS
 keywords:
-- First-mover incentive
-- Communications, Command and Control
+  - First-mover incentive
+  - 'Communications, Command and Control'
 downloads:
-- label: Quantum Computing Primer
-  media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564151484/on-the-radar/Quantum%20Computing%20Formatted%20Primer_AL_Clean.pdf
+  - label: Quantum Computing Primer
+    media_upload: >-
+      https://res.cloudinary.com/csisideaslab/image/upload/v1564151484/on-the-radar/Quantum%20Computing%20Formatted%20Primer_AL_Clean.pdf
 featured_on_home: false
-last-modified-date: 2019-07-29 13:00:00 +0000
-
+last_modified_date: '2019-07-29 13:00:00 +0000'
+_template: briefs
 ---
+
 ## Introduction
 
 Quantum computers have capabilities that exceed those of classical computers, processing information in a fundamentally different way by taking advantage of physics that occurs only on the quantum level. Classical computers use bits, strings of 0s and 1s, to encode information, and they process each bit one at a time. Quantum computers, however, use quantum bits, or qubits, which can be simultaneously 0 and 1. When created, qubits are correlated and not treated independently, as in the case of classical bits. These properties allow qubits to be operated on in parallel, increasing information capacity and processing power.

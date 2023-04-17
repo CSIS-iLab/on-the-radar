@@ -34,3 +34,5 @@ doc/
 .DS_Store
 .idea
 .secret
+
+node_modules

@@ -1,45 +1,50 @@
 ---
 details:
   type:
-  - Unmanned Vehicles
+    - Unmanned Vehicles
   characteristics:
-  - Resiliency
-  - Precision
-  - Persistence
-  - Vantage/range
-  - Speed
+    - Resiliency
+    - Precision
+    - Persistence
+    - Vantage/range
+    - Speed
   risk_factors:
-  - Dual-use
-  - Preemptive
-  - Predictive
+    - Dual-use
+    - Preemptive
+    - Predictive
   domain:
-  - Air
+    - Air
   country:
-  - United States
+    - United States
 title: High Altitude Pseudosatellites
-date: 2019-07-29 13:00:00 +0000
-excerpt: This primer focuses on multi-mission military unmanned High Altitude Pseudo-Satellites
-  (HAPS). HAPS fill an existing gap between lower-altitude Unmanned Aerial Vehicles
-  (UAVs) and conventional satellites that are unable to loiter in place, and have
-  applications that include reconnaissance, damage assessment, and remote sensing.
+date: '2019-07-29 13:00:00 +0000'
+excerpt: >-
+  This primer focuses on multi-mission military unmanned High Altitude
+  Pseudo-Satellites (HAPS). HAPS fill an existing gap between lower-altitude
+  Unmanned Aerial Vehicles (UAVs) and conventional satellites that are unable to
+  loiter in place, and have applications that include reconnaissance, damage
+  assessment, and remote sensing.
 authors:
-- _authors/pedro-vicente-valdez.md
-- _authors/paulina-wheeler.md
+  - _authors/pedro-vicente-valdez.md
+  - _authors/paulina-wheeler.md
 brief_type: Tech Primer
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1564059374/on-the-radar/PONI_illustration_COLOR_unmanned_platforms.jpg
+image: >-
+  https://res.cloudinary.com/csisideaslab/image/upload/v1564059374/on-the-radar/PONI_illustration_COLOR_unmanned_platforms.jpg
 image_caption: ''
 image_source: CSIS
 keywords:
-- First-mover incentive
-- Miscalculation
-- Provocation
+  - First-mover incentive
+  - Miscalculation
+  - Provocation
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564248168/on-the-radar/HAPS.pdf
-  label: HAPS Primer
+  - media_upload: >-
+      https://res.cloudinary.com/csisideaslab/image/upload/v1564248168/on-the-radar/HAPS.pdf
+    label: HAPS Primer
 featured_on_home: false
-last-modified-date: 2019-07-29 13:00:00 +0000
-
+last_modified_date: '2019-07-29 13:00:00 +0000'
+_template: briefs
 ---
+
 ## Introduction
 
 Over the last 60 years,[^1] both the government and private sector have made significant progress in different types of aerospace technologies, including the areas of operation, payloads, and capabilities. This primer focuses on multi-mission military unmanned High Altitude Pseudo-Satellites (HAPS). HAPS fill an existing gap between lower-altitude Unmanned Aerial Vehicles (UAVs) and conventional satellites that are unable to loiter in place, and have applications that include reconnaissance, damage assessment, and remote sensing.[^2] Pseudo-satellites are high altitude air vehicles or airships characterized by their ability to both maintain a fixed position over a single area of interest for extended periods of time (with time horizons in the days and weeks). HAPS provide multiple payload capabilities (within the size, weight, and power limitations of the platform).[^3] Long endurance and fixed positioning mean that pseudo-satellites provide flexible and persistent intelligence, surveillance and reconnaisance (ISR) capabilities that satellite systems cannot provide. HAPS are designed to fly above commercial air traffic at altitudes of approximately 65,000 feet, or 20km. This altitude, referred to as the stratosphere, is high enough for sensor payloads to cover areas of interest without interfering with commercial aviation.[^4]
@@ -62,9 +67,7 @@ Theoretically, HAPS platforms will require fewer system operators and cost less 
 
 [^4]: David Grace and Mihael Mohoric,“Broadband Communications via High-Altitude Platforms," 2010.
 
-[^5]: Mark Altaweel, "High Altitude Pseudo-Satellites," GIS Lounge, February 22, 2018. [https://www.gislounge.com/high-altitude-pseudo-satellites/](https://doi.org/10.1016/j.microrel.2018.03.032 "https://doi.org/10.1016/j.microrel.2018.03.032"); J. Gonzalo, D. López, D. Domínguez, A. García & A. Escapa, “On the capabilities and limitations of high-altitude pseudo-satellites,” Prog. Aerosp. Sci. 1–20 (2018). doi:10.1016/j.paerosci.2018.03.006
-
-[^6]: Ibid. 
+[^6]: Ibid .
 
 [^7]: Airbus Defense and Space, "Airbus Zephyr Solar High Altitude Pseudo-Satellite Flies for Longer than Any Other Air-craft during Its Successful Maiden Flight," _Airbus_, August 8, 2018. [https://www.airbus.com/newsroom/press-releases/en/2018/08/Airbus-Zephyr-Solar-High-Altitude-Pseudo-Satellite-flies-for-longer-than-any-other-aircraft.html.](https://doi.org/10.1016/j.microrel.2018.03.032 "https://doi.org/10.1016/j.microrel.2018.03.032")
 

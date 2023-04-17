@@ -1,47 +1,52 @@
 ---
 details:
   type:
-  - Sensors
+    - Sensors
   characteristics:
-  - Precision
-  - Vantage/range
+    - Precision
+    - Vantage/range
   risk_factors:
-  - Preemptive
-  - Dual-use
-  - Action-enabling
+    - Preemptive
+    - Dual-use
+    - Action-enabling
   domain:
-  - Sea
-  - Air
-  - Space
+    - Sea
+    - Air
+    - Space
   country:
-  - China
-  - United States
+    - China
+    - United States
 title: Hyperspectral Imaging
-date: 2019-07-29 13:00:00 +0000
-excerpt: Hyperspectral imaging (HSI) is a type of remote sensing that is particularly
-  useful for determining the composition of an object. In conjunction with other remote
-  sensing and data collecting techniques, it can be used to identify a country’s fixed
-  strategic sites, for example, WMD production facilities or camouflaged military
-  assets.
+date: '2019-07-29 13:00:00 +0000'
+excerpt: >-
+  Hyperspectral imaging (HSI) is a type of remote sensing that is particularly
+  useful for determining the composition of an object. In conjunction with other
+  remote sensing and data collecting techniques, it can be used to identify a
+  country’s fixed strategic sites, for example, WMD production facilities or
+  camouflaged military assets.
 authors:
-- _authors/bernadette-stadler.md
-- _authors/meyer-thalheimer.md
+  - _authors/bernadette-stadler.md
+  - _authors/meyer-thalheimer.md
 brief_type: Tech Primer
 keywords:
-- Provocation
-- Information Complexity
-- First-mover incentive
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1564061861/on-the-radar/Sensors-1.jpg
+  - Provocation
+  - Information Complexity
+  - First-mover incentive
+image: >-
+  https://res.cloudinary.com/csisideaslab/image/upload/v1564061861/on-the-radar/Sensors-1.jpg
 image_caption: ''
 image_source: CSIS
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865065/on-the-radar/Hyperspectral%20Imaging%20Primer.pdf
-  label: Hyperspectral Imaging Primer
+  - media_upload: >-
+      https://res.cloudinary.com/csisideaslab/image/upload/v1562865065/on-the-radar/Hyperspectral%20Imaging%20Primer.pdf
+    label: Hyperspectral Imaging Primer
 featured_on_home: false
-last-modified-date: 2019-07-29 13:00:00 +0000
-
+last_modified_date: '2019-07-29 13:00:00 +0000'
+_template: briefs
 ---
+
 ## Introduction
+
 Hyperspectral imaging (HSI) is a type of remote sensing that takes a series of hundreds or thousands of contiguous images in narrow wavebands across the visible and infrared regions of the electromagnetic spectrum. This allows hyperspectral imaging to capture more data about its target than conventional color photography, which only takes images in the red, green and blue segments of the visible light spectrum. The series of images captured by hyperspectral sensors forms a “hyperspectral cube” that contains detailed spectral information about each pixel in the image. HSI can take advantage of differences in the way that materials reflect light (forming unique spectral signatures) to identify the materials present in an image, aiding in the detection of decoys and other camouflaged targets.[^1]
 
 Successfully using HSI to find and identify items of interest requires the ability to process an extremely large amount of gathered spectral information to locate the small number of pixels possessing characteristics of interest and subject them to further scrutiny.[^2] Effectively carrying out this analysis relies on the possession of a large library of the spectral signatures of materials ranging from leaves in various stages of health to vehicles, camo-patterns, and countermeasures.[^3]
@@ -60,7 +65,7 @@ Hyperspectral sensors can be deployed on a variety of platforms, including satel
 
 [^2]: “Hyperspectral analysis set to expand in coming decade,” Jane’s Intelligence Review, June 23, 2017, [http://www.janes.com/images/assets/127/72127/Hyperspectral_analysis_set_to_expand_in_coming_decade.pdf](http://www.janes.com/images/assets/127/72127/Hyperspectral_analysis_set_to_expand_in_coming_decade.pdf "http://www.janes.com/images/assets/127/72127/Hyperspectral_analysis_set_to_expand_in_coming_decade.pdf"), 4.
 
-[^3]: Ibid., 249.
+[^3]: Ibid ., 249.
 
 [^4]: Xavier Briottet et al., “Military applications of Hyperspectral Imagery,” Wendell R. Watkind and Dieter Clement, eds., Targets and Backgrounds XII: Characterization and Representation 6239, International Society for Optics and Photonics (2006): 62390B, publications.tno.nl/publication/34617027/4SzPMU/briottet-2006-military.pdf.
 

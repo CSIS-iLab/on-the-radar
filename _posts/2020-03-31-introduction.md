@@ -1,29 +1,33 @@
 ---
-last-modified-date: 2020-03-31 19:43:46 +0000
+last_modified_date: '2020-03-31 19:43:46 +0000'
 categories: []
 title: Introduction
-date: 2020-03-31 04:00:00 +0000
-excerpt: This analysis piece provides an overview of the impetus for the study and
-  the methodology employed. It delineates a historical evolution of the strategic
+date: '2020-03-31 04:00:00 +0000'
+excerpt: >-
+  This analysis piece provides an overview of the impetus for the study and the
+  methodology employed. It delineates a historical evolution of the strategic
   situational awareness ecosystem, and grounds the study in scholarship.
 authors:
-- _authors/rebecca-hersman.md
-- _authors/reja-younis.md
-- _authors/bryce-farabaugh.md
-- _authors/andrew-reddie.md
-- _authors/bethany-goldblum.md
+  - _authors/rebecca-hersman.md
+  - _authors/reja-younis.md
+  - _authors/bryce-farabaugh.md
+  - _authors/andrew-reddie.md
+  - _authors/bethany-goldblum.md
 keywords: []
 related_briefs: []
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1585686816/on-the-radar/OnTheRadar_illustration_space_platforms2_d5cati.jpg
+image: >-
+  https://res.cloudinary.com/csisideaslab/image/upload/v1585686816/on-the-radar/OnTheRadar_illustration_space_platforms2_d5cati.jpg
 image_caption: ''
 image_source: ''
 featured: false
 featured_on_home: false
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1585687272/on-the-radar/OnTheRadar_Chapter_1_nanz2b.pdf
-  label: Introduction
-
+  - media_upload: >-
+      https://res.cloudinary.com/csisideaslab/image/upload/v1585687272/on-the-radar/OnTheRadar_Chapter_1_nanz2b.pdf
+    label: Introduction
+_template: posts
 ---
+
 For most of the nuclear age, enhanced strategic situational awareness (SA)—the ability to characterize the operating environment, detect nuclear and conventional strategic attacks, and discern real attacks from false alarms—has been viewed as a benefit to crisis stability as well as a relatively free good that can be obtained with limited risk. By improving the accuracy and timeliness of warning, increasing visibility and clarity on adversary actions, and extending decision time in crisis, improved SA reduced the risk of miscalculation at the nuclear level and use-or-lose pressures that could incentivize a nuclear first strike. Moreover, the systems that provided this strategic warning operated at long range, from outside of adversary territories, and generally in ways that were not visible or particularly concerning to an adversary because they offered little in terms of first-strike advantage.[^1]
 
 In conventional conflicts with non-nuclear adversaries, the United States has long enjoyed information dominance and suffered few repercussions for the asymmetric advantage it has offered. Information dominance has been essential to ensuring U.S. military effectiveness, sustaining the credibility and assurance of military alliances, and stabilizing or reducing the risks of miscalculation or collateral damage.[^2] But can there be too much of a good thing? As the strategic SA ecosystem evolves, it seems ever more possible that actions taken to improve strategic SA may increase the risk of escalation and upset crisis stability. Conversely, concerns about escalation may cause reluctance among decisionmakers to use capabilities that could better illuminate a crisis and reduce the risk of war.

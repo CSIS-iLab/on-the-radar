@@ -1,57 +1,65 @@
 ---
 layout: page
 title: About
-permalink: "/about/"
+permalink: /about/
 team:
-- name: Rebecca Hersman
-  title: Director, Project on Nuclear Issues and Senior Advisor, International Security
-    Program
-  headshot: ''
-- name: Bethany Goldblum
-  title: Associate Research Engineer in the Department of Nuclear Engineering at the
-    University of California, Berkeley, and Founder and Director, Nuclear Policy Working
-    Group
-  headshot: ''
-- name: Eric Brewer
-  title: Deputy Director, Project on Nuclear Issues, and Fellow, International Security
-    Program, Center for Strategic and International Studies
-  headshot: ''
-- name: Andrew Reddie
-  title: Postdoctoral Research Fellow at the University of California, Berkeley, and
-    Deputy Director, Nuclear Policy Working Group
-  headshot: ''
-- name: Bernadette Stadler
-  title: Graduate Student, Harvard University
-  headshot: ''
-- name: Reja Younis
-  title: Program Manager and Research Associate, Project on Nuclear Issues
-  headshot: ''
+  - name: Rebecca Hersman
+    title: >-
+      Director, Project on Nuclear Issues and Senior Advisor, International
+      Security Program
+    headshot: ''
+  - name: Bethany Goldblum
+    title: >-
+      Associate Research Engineer in the Department of Nuclear Engineering at
+      the University of California, Berkeley, and Founder and Director, Nuclear
+      Policy Working Group
+    headshot: ''
+  - name: Eric Brewer
+    title: >-
+      Deputy Director, Project on Nuclear Issues, and Fellow, International
+      Security Program, Center for Strategic and International Studies
+    headshot: ''
+  - name: Andrew Reddie
+    title: >-
+      Postdoctoral Research Fellow at the University of California, Berkeley,
+      and Deputy Director, Nuclear Policy Working Group
+    headshot: ''
+  - name: Bernadette Stadler
+    title: 'Graduate Student, Harvard University'
+    headshot: ''
+  - name: Reja Younis
+    title: 'Program Manager and Research Associate, Project on Nuclear Issues'
+    headshot: ''
 consultants:
-- name: Kate Charlet
-  title: 'Director, Technology and International Affairs Program, Carnegie Endowment
-    for International Peace '
-  headshot: ''
-- name: 'Jarred Dunnmon '
-  title: Postdoctoral Fellow, Computer Science, Stanford University
-  headshot: ''
-- name: 'Michael Horowitz '
-  title: Professor of Political Science and Associate Director, Perry World House,
-    University of Pennsylvania
-  headshot: ''
-- name: Elsa Kania
-  headshot: ''
-  title: Adjunct Senior Fellow, Technology and National Security Program, Center for
-    a New American Security
-- name: Philip Reiner
-  title: 'CEO, Technology for Global Security '
-  headshot: ''
-- name: Paul Scharre
-  title: Senior Fellow and Director, Technology and National Security Program, Center
-    for a New American Security
-  headshot: ''
+  - name: Kate Charlet
+    title: >-
+      Director, Technology and International Affairs Program, Carnegie Endowment
+      for International Peace 
+    headshot: ''
+  - name: 'Jarred Dunnmon '
+    title: 'Postdoctoral Fellow, Computer Science, Stanford University'
+    headshot: ''
+  - name: 'Michael Horowitz '
+    title: >-
+      Professor of Political Science and Associate Director, Perry World House,
+      University of Pennsylvania
+    headshot: ''
+  - name: Elsa Kania
+    headshot: ''
+    title: >-
+      Adjunct Senior Fellow, Technology and National Security Program, Center
+      for a New American Security
+  - name: Philip Reiner
+    title: 'CEO, Technology for Global Security '
+    headshot: ''
+  - name: Paul Scharre
+    title: >-
+      Senior Fellow and Director, Technology and National Security Program,
+      Center for a New American Security
+    headshot: ''
 social_in_header: false
-
 ---
+
 Improvements to strategic situational awareness (SA) – the ability to characterize the operating environment, detect and respond to threats, and discern actual attacks from false alarms across the spectrum of conflict – have long been assumed to reduce the risk of conflict and allow for the more successful management of crisis and conflict when they occur. In nuclear policy jargon such impacts are considered “stabilizing” because they reduce the risk of escalation to higher levels of violence. However, with the rapid development of increasingly capable strategic SA-related technology, the growing co-mingling of conventional and strategic strategic SA requirements and capabilities, and an increasing risk of conventional conflict between nuclear armed adversaries, this may no longer be the case.
 
 Emerging technology may be transforming the strategic SA space from a relatively passive and secure realm with clear firebreaks between conventional and nuclear systems to an ecosystem that is much more active, dual-use, and crowded. The emerging strategic SA ecosystem may be dramatically more capable, but potentially more vulnerable and disruptive as well.

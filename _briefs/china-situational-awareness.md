@@ -5,35 +5,41 @@ details:
   risk_factors: []
   domain: []
   country:
-  - China
+    - China
 title: China's Strategic Situational Awareness Capabilities
-date: 2019-07-29T13:00:00.000+00:00
-excerpt: China has invested considerably in advancing its strategic situational awareness
-  capabilities. The People's Liberation Army is developing a more mature architecture
-  to enhance its ability to conduct nuclear counterattack and conventional operations.
+date: 2019-07-29T13:00:00.000Z
+excerpt: >-
+  China has invested considerably in advancing its strategic situational
+  awareness capabilities. The People's Liberation Army is developing a more
+  mature architecture to enhance its ability to conduct nuclear counterattack
+  and conventional operations.
 authors:
-- _authors/elsa-kania.md
+  - _authors/elsa-kania.md
 brief_type: Country Profile
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1564063831/on-the-radar/Chinese%20UAV.jpg
-image_caption: This photo taken on May 30, 2019 shows personnel around a surveillance
-  drone on the runway of the airport in Hotan in China's western Xinjiang region.
+image: >-
+  https://res.cloudinary.com/csisideaslab/image/upload/v1564063831/on-the-radar/Chinese%20UAV.jpg
+image_caption: >-
+  This photo taken on May 30, 2019 shows personnel around a surveillance drone
+  on the runway of the airport in Hotan in China's western Xinjiang region.
   (GREG BAKER/AFP/Getty Images)
 image_source: GREG BAKER/AFP/Getty Images
 keywords:
-- Early Warning
-- Communications, Command and Control
-- Artificial Intelligence
-- Unmanned aerial vehicle
-- Anti-Submarine Warfare (ASW)
-- Satellites
-- Sensors
+  - Early Warning
+  - 'Communications, Command and Control'
+  - Artificial Intelligence
+  - Unmanned aerial vehicle
+  - Anti-Submarine Warfare (ASW)
+  - Satellites
+  - Sensors
 downloads:
-- label: China strategic SA
-  media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564246946/on-the-radar/China%20strategic%20SA.pdf
+  - label: China strategic SA
+    media_upload: >-
+      https://res.cloudinary.com/csisideaslab/image/upload/v1564246946/on-the-radar/China%20strategic%20SA.pdf
 featured_on_home: false
-last-modified-date: 2019-07-29T13:00:00.000+00:00
-
+last_modified_date: 2019-07-29T13:00:00.000Z
+_template: briefs
 ---
+
 ## Introduction
 
 China has invested considerably in advancing its capabilities for <define>strategic situational awareness</define>.[^1] Although traditional shortcomings in strategic early warning have been a serious concern for China, the People’s Liberation Army (PLA) today is developing a more mature architecture that could enhance its capability to undertake nuclear counterattack and conventional operations. Although the improvement of capabilities for early warning and situational awareness will remain a challenge for the PLA,[^2] these capabilities today encompass a growing number of satellites for remote sensing and electronic intelligence (ELINT), large, phased array radars and a range of other radars that are increasingly sophisticated, and early warning aircraft, as well as unmanned systems. The expansion and maturation of these varied systems will continue to be a priority for the PLA, pursuant to new missions and operational requirements in the region and worldwide.
@@ -50,7 +56,7 @@ In particular, China’s first anti-ballistic missile system, HQ (红旗)-18 was
 
 [^1]: Please note that I am using the phrasing “strategic situational awareness” in reference to the framework that informs this CSIS PONI project, to characterize not only encompassing strategic early warning capabilities of relevance to China’s nuclear arsenal but also other intelligence, surveillance, and reconnaissance capabilities that might be relevant in a high-end conflict contingency. This paper is not intended to provide a comprehensive assessment but rather attempts to provide an overview of the status of these developments.
 
-[^2]: “Expert: China's People's Liberation Army's Early Warning Capability Construction Confronts Multiple Challenges” \[专家：中国解放军预警能力建设面临多重挑战\], _China Military Online_, August 2, 2013,[ ](http://military.china.com.cn/2013-08/02/content_29602761.htm)[http://military.china.com.cn/2013-08/02/content_29602761.htm.](http://military.china.com.cn/2013-08/02/content_29602761.htm. "http://military.china.com.cn/2013-08/02/content_29602761.htm.") The details included come from an interview with Professor Yan Shiqiang (闫世强), who is the director of an early warning laboratory at the Air Force Early Warning Academy.
+[^2]: “Expert: China's People's Liberation Army's Early Warning Capability Construction Confronts Multiple Challenges” \[专家：中国解放军预警能力建设面临多重挑战\], _China Military Online_, August 2, 2013,[](http://military.china.com.cn/2013-08/02/content_29602761.htm)[http://military.china.com.cn/2013-08/02/content_29602761.htm.](http://military.china.com.cn/2013-08/02/content_29602761.htm. "http://military.china.com.cn/2013-08/02/content_29602761.htm.") The details included come from an interview with Professor Yan Shiqiang (闫世强), who is the director of an early warning laboratory at the Air Force Early Warning Academy.
 
 [^3]: Ministry of National Defense of the People’s Republic of China \[中华人民共和国国防部\], “China’s Military Strategy” \[中国的军事战略\],”The State Council Information Office of the People’s Republic of China, May 26, 2015, [http://www.scio.gov.cn/zfbps/ndhf/2015/document/1435161/1435161.htm](http://www.scio.gov.cn/zfbps/ndhf/2015/document/1435161/1435161.htm "http://www.scio.gov.cn/zfbps/ndhf/2015/document/1435161/1435161.htm").
 
@@ -64,7 +70,7 @@ In particular, China’s first anti-ballistic missile system, HQ (红旗)-18 was
 
 [^8]: See, for example, the history of the project released online: “640 Project – Mao Zedong and Qian Xuesen’s Discussion on “If There’s a Spear, There Must Be a Shield”” \[640工程--毛泽东和钱学森“有矛必有盾”的谈话\], [http://www.cwzg.cn/history/201703/34993.html](http://www.cwzg.cn/history/201703/34993.html "http://www.cwzg.cn/history/201703/34993.html").
 
-[^9]: Ibid. 
+[^9]: Ibid .
 
 [^10]: Reportedly, this discontinuation exempted the development of laser weapons and nuclear electromagnetic pulse technology, the remaining anti-missile projects were all stopped. Certain of these lines of effort appear to have been continued under the auspices of China’s 863 Plan.
 

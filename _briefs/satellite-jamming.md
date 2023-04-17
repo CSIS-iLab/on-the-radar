@@ -1,46 +1,50 @@
 ---
-last-modified-date: 2019-08-15 17:36:47 +0000
+last_modified_date: '2019-08-15 17:36:47 +0000'
 details:
   type:
-  - Electronic Warfare
+    - Electronic Warfare
   characteristics:
-  - Speed
-  - Resiliency
-  - Persistence
-  - Precision
+    - Speed
+    - Resiliency
+    - Persistence
+    - Precision
   risk_factors:
-  - Action-enabling
+    - Action-enabling
   domain:
-  - Space
-  - Land
-  - Air
-  - Sea
+    - Space
+    - Land
+    - Air
+    - Sea
   country:
-  - Russia
-  - China
-  - United States
+    - Russia
+    - China
+    - United States
 title: Satellite Jamming
-date: 2019-04-03 04:00:00 +0000
-excerpt: Satellite jamming is a form of electronic anti-satellite attack that interferes
-  with communications traveling to and from a satellite. Satellite jamming capabilities
-  decrease certainty surrounding adversary force posture and by consequence have the
-  capacity to decrease strategic stability.
+date: '2019-04-03 04:00:00 +0000'
+excerpt: >-
+  Satellite jamming is a form of electronic anti-satellite attack that
+  interferes with communications traveling to and from a satellite. Satellite
+  jamming capabilities decrease certainty surrounding adversary force posture
+  and by consequence have the capacity to decrease strategic stability.
 authors:
-- _authors/pavel-velkovsky.md
-- _authors/janani-mohan.md
-- _authors/maxwell-simon.md
+  - _authors/pavel-velkovsky.md
+  - _authors/janani-mohan.md
+  - _authors/maxwell-simon.md
 brief_type: Tech Primer
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1565982249/on-the-radar/EW_illustration_vuqyez.jpg
+image: >-
+  https://res.cloudinary.com/csisideaslab/image/upload/v1565982249/on-the-radar/EW_illustration_vuqyez.jpg
 image_caption: ''
 image_source: ''
 keywords:
-- First-mover incentive
+  - First-mover incentive
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1565982911/on-the-radar/Satellite_Jamming_Primer_FINAL_pdf_bdzxwn.pdf
-  label: Satellite Jamming Primer
+  - media_upload: >-
+      https://res.cloudinary.com/csisideaslab/image/upload/v1565982911/on-the-radar/Satellite_Jamming_Primer_FINAL_pdf_bdzxwn.pdf
+    label: Satellite Jamming Primer
 featured_on_home: false
-
+_template: briefs
 ---
+
 # Introduction
 
 Satellite jamming is a form of electronic anti-satellite (ASAT) attack that interferes with communications traveling to and from a satellite by emitting noise of the same radio frequency (RF) within the field of view of the satellite’s antennas.[^1] Considered a growing threat by the U.S. intelligence community, jamming equipment operates across multiple domains.
@@ -57,7 +61,7 @@ Jamming can also occur accidentally: in 2015, U.S. military officials noted they
 
 [^1]: Brian Garino and Jane Gibson, “Space System Threats,” AU-18 Space Primer (Maxwell Air Force Base: Air University Press, 2009), p. 274; Todd Harrison, _Future of MILSATCOM_ (Washington, DC: Center for Strategic and Budgetary Assessments, 2013), p. 10; Todd Harrison, Kaitlyn Johnson, and Thomas G. Roberts, _Space Threat Assessment 2019_ (Washington, DC: CSIS, April 2019), 4.
 
-[^2]: Ibid., 4.
+[^2]: Ibid ., 4.
 
 [^3]: Garino and Gibson, “Space System Threats,” 275.
 
@@ -73,4 +77,4 @@ Jamming can also occur accidentally: in 2015, U.S. military officials noted they
 
 [^9]: Sydney J. Freedberg, Jr., “US Jammed Own Satellites 261 Times; What If Enemy Did?” Breaking Defense, December 2, 2015, [http://breakingdefense.com/2015/12/us-jammed-own-satellites-261-times-in-2015-what-if-enemy-tried/.](http://breakingdefense.com/2015/12/us-jammed-own-satellites-261-times-in-2015-what-if-enemy-tried/. "http://breakingdefense.com/2015/12/us-jammed-own-satellites-261-times-in-2015-what-if-enemy-tried/.")
 
-[^10]: Ibid.
+[^10]: Ibid .

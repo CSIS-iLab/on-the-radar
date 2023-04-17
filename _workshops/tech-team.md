@@ -1,29 +1,33 @@
 ---
-last-modified-date: 2019-08-13 20:32:44 +0000
+last_modified_date: '2019-08-13 20:32:44 +0000'
 title: Technology Team
-date: 2019-08-13 04:00:00 +0000
-excerpt: This section of the website houses resources for the technology team. Please
+date: '2019-08-13 04:00:00 +0000'
+excerpt: >-
+  This section of the website houses resources for the technology team. Please
   carefully go through all material before the tabletop exercise.
 authors: []
 image: ''
 image_caption: ''
 image_source: ''
 details:
-  event_date: 2019-10-16 04:00:00 +0000
+  event_date: '2019-10-16 04:00:00 +0000'
   location: 'Naval Submarine Base King''s Bay, Georgia '
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1565795205/on-the-radar/Risky_Business_Player_Guide_June_2019_no3ate.pdf
-  label: Player Guide
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1565795361/on-the-radar/Sample_Agenda_ovjzly.pdf
-  label: Sample Agenda
-- label: Participant List
-  media_upload: ''
-- label: Capabilities Glossary
-  media_upload: ''
+  - media_upload: >-
+      https://res.cloudinary.com/csisideaslab/image/upload/v1565795205/on-the-radar/Risky_Business_Player_Guide_June_2019_no3ate.pdf
+    label: Player Guide
+  - media_upload: >-
+      https://res.cloudinary.com/csisideaslab/image/upload/v1565795361/on-the-radar/Sample_Agenda_ovjzly.pdf
+    label: Sample Agenda
+  - label: Participant List
+    media_upload: ''
+  - label: Capabilities Glossary
+    media_upload: ''
 featured_on_home: false
 published: false
-
+_template: workshops
 ---
+
 **Project Background**
 
 This project provides an assessment of how emerging technologies are rapidly reshaping U.S. strategic situational awareness against a range of potential adversaries and examines the implications of these technologies for strategic stability. For the purposes of this study, strategic situational awareness (strategic SA) is understood to be the ability to characterize the operating environment, detect and respond to attacks, and discern actual attacks from false alarms across the spectrum of conflict, both conventional and nuclear. Strategic stability is understood as the lack of incentive to use nuclear weapons (crisis stability) and the lack of incentives to build up a nuclear arsenal (arms race stability).
