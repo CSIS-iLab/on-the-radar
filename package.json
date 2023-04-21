@@ -5,9 +5,10 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "npx tinacms dev -c \"gulp\"",
+    "dev": "tinacms dev -c \"gulp\"",
     "browsersync": "gulp browsersync",
     "browsersync-production": "gulp browsersync --jekyllEnv='production'",
-    "build": "npm run tinacms build && gulp build --jekyllEnv='production'",
+    "build": "tinacms build && gulp build --jekyllEnv='production'",
     "netlify:build": "npm run tinacms build && gulp build --jekyllEnv='production'",
     "eslint": "gulp eslint",
     "imagemin": "gulp imagemin",
