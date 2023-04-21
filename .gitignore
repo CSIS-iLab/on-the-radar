@@ -37,3 +37,5 @@ doc/
 
 node_modules
 package-lock.json
+.env-example
+.env.local

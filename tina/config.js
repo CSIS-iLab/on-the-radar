@@ -18,12 +18,16 @@ import resources from './collections/resources'
 import workshops from './collections/workshops'
 
 // Your hosting provider likely exposes this as an environment variable
-const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || 'master'
+// const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || 'master'
+const branch =
+  process.env.NEXT_PUBLIC_TINA_BRANCH || // custom branch env override
+  process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF || // Vercel branch env
+  process.env.HEAD // Netlify branch env
 
 export default defineConfig({
   branch,
-  clientId: 'TINA_CLIENT', // Get this from tina.io
-  token: 'TINA_TOKEN', // Get this from tina.io
+  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID, // Get this from tina.io
+  token: process.env.TINA_TOKEN, // Get this from tina.io
   client: { skip: true },
   build: {
     outputFolder: 'admin',
