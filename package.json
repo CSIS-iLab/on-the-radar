@@ -9,7 +9,7 @@
     "browsersync": "gulp browsersync",
     "browsersync-production": "gulp browsersync --jekyllEnv='production'",
     "build": "tinacms build && gulp build --jekyllEnv='production'",
-    "netlify:build": "npm run tinacms build && gulp build --jekyllEnv='production'",
+    "netlify:build": "tinacms build && gulp build --jekyllEnv='production'",
     "eslint": "gulp eslint",
     "imagemin": "gulp imagemin",
     "production": "gulp --jekyllEnv='production'",
