@@ -9,10 +9,10 @@ const posts = {
     filename: {
       readonly: false,
       slugify: values => {
-        return values?.title
+        return `${values?.date?.substr(0, 10)}-${values?.title
           ?.toLowerCase()
           .replace(/\s+/g, '-')
-          .replace(/[^\w\-]+/g, '')
+          .replace(/[^\w\-]+/g, '')}`
       }
     }
   },
@@ -20,12 +20,15 @@ const posts = {
     {
       label: 'Title',
       name: 'title',
-      type: 'string'
+      type: 'string',
+      isTitle: true,
+      required: true
     },
     {
       label: 'Date',
       name: 'date',
-      type: 'datetime'
+      type: 'datetime',
+      required: true
     },
     {
       label: 'Image',
