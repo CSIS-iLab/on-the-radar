@@ -1,42 +1,47 @@
 ---
-details:
-  type:
-  - Platform Control and Information Support
-  characteristics:
-  - Speed
-  - Precision
-  - Detectability
-  risk_factors:
-  - Dual-use
-  - Clandestine
-  - Vulnerable
-  domain:
-  - Multidomain
-  country:
-  - United States
 title: Artificial Intelligence Analysis Applications
-date: 2019-07-29 13:00:00 +0000
-excerpt: Artificial intelligence (AI) applications have the potential to significantly
-  impact the strategic situational awareness (strategic SA) mission in two key areas—operations
-  and analysis. AI analysis applications can enhance the strategic SA mission by employing
-  data mining, data fusion methods, front-line analysis, and predictive analytics.
-authors:
-- _authors/nate-frierson.md
-- _authors/lizamaria-arias.md
+date: '2019-07-29 13:00:00 +0000'
 brief_type: Tech Primer
-keywords:
-- Artificial Intelligence
-- Information Complexity
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1564060974/on-the-radar/AI.jpg
+image: >-
+  https://res.cloudinary.com/csisideaslab/image/upload/v1564060974/on-the-radar/AI.jpg
 image_caption: ''
 image_source: CSIS
-downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564247093/on-the-radar/Artificial%20Intelligence%20Analysis%20Primer.pdf
-  label: AI Analysis Primer
+authors:
+  - _authors/nate-frierson.md
+  - _authors/lizamaria-arias.md
+keywords:
+  - Artificial Intelligence
+  - Information Complexity
+excerpt: >-
+  Artificial intelligence (AI) applications have the potential to significantly
+  impact the strategic situational awareness (strategic SA) mission in two key
+  areas—operations and analysis. AI analysis applications can enhance the
+  strategic SA mission by employing data mining, data fusion methods, front-line
+  analysis, and predictive analytics.
 featured_on_home: false
-last-modified-date: 2019-07-29 13:00:00 +0000
-
+last_modified_date: '2019-07-29 13:00:00 +0000'
+details:
+  type:
+    - Platform Control and Information Support
+  characteristics:
+    - Speed
+    - Precision
+    - Detectability
+  risk_factors:
+    - Dual-use
+    - Clandestine
+    - Vulnerable
+  domain:
+    - Multidomain
+  country:
+    - United States
+downloads:
+  - media_upload: >-
+      https://res.cloudinary.com/csisideaslab/image/upload/v1564247093/on-the-radar/Artificial%20Intelligence%20Analysis%20Primer.pdf
+    label: AI Analysis Primer
+_template: briefs
 ---
+
 ## Introduction
 
 Political, military, and corporate leaders from around the world continue to highlight the significance of artificial intelligence (AI). After Canada became the first country to release its AI strategy in 2017, 18 countries have followed suit in some capacity—nine have fully funded strategies, and nine have produced guiding documents.[^1] The United States recently joined this group with the president signing an executive order that details a coordinated federal strategy regarding AI.[^2] Despite substantial discussion and attention to the topic, there is no universal agreement on the definition of “artificial intelligence”; however, commentators broadly agree that AI is the scientific field concerned with algorithms and that it consists of several sub-disciplines. Since AI has applications for an incredibly large and diverse amount of commercial, military, and intelligence missions, some researchers have narrowed their analysis of AI by categorizing it as an enabling technology and comparing it to the steam engine or electricity.[^3]
@@ -51,7 +56,7 @@ Much of AI’s impact on strategic SA occurs through advances in a subset of mac
 
 [^1]: Tim Dutton, Brent Barron, and Gaga Boskovic, _Building an AI World: Report on National and Regional AI Strategies_ (Toronto: Canadian Institute for Advanced Research, 2018), [https://www.cifar.ca/docs/default-source/ai-society/buildinganaiworld_eng.pdf?sfvrsn=fb18d129_4](https://www.cifar.ca/docs/default-source/ai-society/buildinganaiworld_eng.pdf?sfvrsn=fb18d129_4 "https://www.cifar.ca/docs/default-source/ai-society/buildinganaiworld_eng.pdf?sfvrsn=fb18d129_4").
 
-[^2]: Darrell M. West, “Assessing Trump’s artificial intelligence executive order”, _Brookings Institution_, February 2019,[ ](%20https:/www.brookings.edu/blog/techtank/2019/02/12/assessing-trumps-artificial-intelligence-executive-order/)[https://www.brookings.edu/blog/techtank/2019/02/12/assessing-trumps-artificial-intelligence-executive-order/.](https://www.cifar.ca/docs/default-source/ai-society/buildinganaiworld_eng.pdf?sfvrsn=fb18d129_4 "https://www.cifar.ca/docs/default-source/ai-society/buildinganaiworld_eng.pdf?sfvrsn=fb18d129_4")
+[^2]: Darrell M. West, “Assessing Trump’s artificial intelligence executive order”, _Brookings Institution_, February 2019,[](%20https:/www.brookings.edu/blog/techtank/2019/02/12/assessing-trumps-artificial-intelligence-executive-order/)[https://www.brookings.edu/blog/techtank/2019/02/12/assessing-trumps-artificial-intelligence-executive-order/.](https://www.cifar.ca/docs/default-source/ai-society/buildinganaiworld_eng.pdf?sfvrsn=fb18d129_4 "https://www.cifar.ca/docs/default-source/ai-society/buildinganaiworld_eng.pdf?sfvrsn=fb18d129_4")
 
 [^3]: Michael Horowitz, Artificial Intelligence, International Competition, and the Balance of Power,” _Texas National Security Review_ 1, issue 3 (May 2018): 36-57.
 
@@ -61,4 +66,4 @@ Much of AI’s impact on strategic SA occurs through advances in a subset of mac
 
 [^6]: Paul Scharre and Michael C. Horowitz, _Artificial Intelligence: What Every Policymaker Needs to Know_ (Washington, DC: Center for a New American Security, 2018), [https://s3.amazonaws.com/files.cnas.org/documents/CNAS_AI_FINAL-v2.pdf?mtime=20180619100112](https://www.cifar.ca/docs/default-source/ai-society/buildinganaiworld_eng.pdf?sfvrsn=fb18d129_4 "https://www.cifar.ca/docs/default-source/ai-society/buildinganaiworld_eng.pdf?sfvrsn=fb18d129_4").
 
-[^7]: Ibid.
+[^7]: Ibid .

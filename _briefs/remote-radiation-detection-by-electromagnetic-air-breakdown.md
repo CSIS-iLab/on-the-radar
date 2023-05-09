@@ -1,42 +1,47 @@
 ---
 details:
   type:
-  - Sensors
+    - Sensors
   characteristics:
-  - Vantage/range
-  - Speed
+    - Vantage/range
+    - Speed
   risk_factors:
-  - Preemptive
-  - Predictive
+    - Preemptive
+    - Predictive
   domain:
-  - Sea
-  - Land
-  - Air
+    - Sea
+    - Land
+    - Air
   country:
-  - China
-  - Russia
-  - United States
+    - China
+    - Russia
+    - United States
 title: Remote Radiation Detection by Electromagnetic Air Breakdown
-date: 2019-07-29 13:00:00 +0000
-excerpt: Emerging radiation sensing techniques that measure changes in the dielectric
-  properties of air may offer ultra-long-range radiation detection capabilities with
-  potential applications in counterforce targeting and counterproliferation.
+date: '2019-07-29 13:00:00 +0000'
+excerpt: >-
+  Emerging radiation sensing techniques that measure changes in the dielectric
+  properties of air may offer ultra-long-range radiation detection capabilities
+  with potential applications in counterforce targeting and
+  counterproliferation.
 authors:
-- _authors/jake-hecla.md
+  - _authors/jake-hecla.md
 brief_type: Tech Primer
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1564062656/on-the-radar/Sensors-2.jpg
+image: >-
+  https://res.cloudinary.com/csisideaslab/image/upload/v1564062656/on-the-radar/Sensors-2.jpg
 image_caption: ''
 image_source: CSIS
 keywords:
-- Provocation
-- Miscalculation
+  - Provocation
+  - Miscalculation
 downloads:
-- label: Remote Radiation Detection
-  media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564247316/on-the-radar/Remote%20radiation%20detection%20primer-MS%20clean.pdf
+  - label: Remote Radiation Detection
+    media_upload: >-
+      https://res.cloudinary.com/csisideaslab/image/upload/v1564247316/on-the-radar/Remote%20radiation%20detection%20primer-MS%20clean.pdf
 featured_on_home: false
-last-modified-date: 2019-07-29 13:00:00 +0000
-
+last_modified_date: '2019-07-29 13:00:00 +0000'
+_template: briefs
 ---
+
 ## Introduction
 
 Emerging radiation sensing techniques that measure changes in the dielectric properties of air may offer ultra-long-range radiation detection capabilities with potential applications in counterforce targeting and counterproliferation. These radiation detection systems use the reflection of high-intensity radiofrequency (RF) or infrared (IR) pulses to probe the concentration of charged species produced by radiation-induced ionization in air.[^1] The measurement technique is purely optical, and therefore requires no detection hardware near the radiation source. Although this family of techniques is in its infancy, lab-scale systems have been shown to be sensitive to radiation fields similar to what one would find in the immediate vicinity of a nuclear warhead or near a UF6 storage cylinder.[^2] With sufficient development, this technology could be used to hunt for nuclear warheads on dual-capable systems, determine the location of uranium handling facilities, and find illicit reprocessing facilities without the need for detectors deployed on the ground.
@@ -53,7 +58,6 @@ Calculations performed by Kim et. al show that this method is limited by atmosph
 
 [^2]: Dongsung Kim, Dongho Yu, Ashwini Sawant, Mun Seok Choe, Ingeun Lee, Sung Gug Kim, and EunMi Choi, "Remote detection of radioactive material using high-power pulsed electromagnetic radiation." _Nature communications_ 8 (2017): 15394.
 
-[^3]: Steve Fetter, Thomas B. Cochran, Lee Grodzins, Harvey L. Lynch, and Martin S. Zucker, "Gamma-ray measurements of a Soviet cruise-missile warhead," _Science_ 248, no. 4957 (1990): 828-834.
 
 Note: Dose-rate on contact with a DUF6 tank assumed to be \~5mR/hr (based on measurements taken on a DUF6 –filled 12B cylinder at ORNL using a H3D Polaris detector, unpublished data).
 

@@ -1,45 +1,50 @@
 ---
 details:
   type:
-  - Unmanned Vehicles
+    - Unmanned Vehicles
   characteristics:
-  - Speed
-  - Persistence
-  - Vantage/range
+    - Speed
+    - Persistence
+    - Vantage/range
   risk_factors:
-  - Action-enabling
-  - Dual-use
-  - Intrusive
+    - Action-enabling
+    - Dual-use
+    - Intrusive
   domain:
-  - Sea
+    - Sea
   country:
-  - China
-  - Russia
-  - United States
+    - China
+    - Russia
+    - United States
 title: Unmanned Underwater Vehicle (UUV) Systems for Submarine Detection
-date: 2019-07-29 13:00:00 +0000
-excerpt: Unmanned underwater vehicles (UUVs) are an emerging class of unmanned maritime
-  vehicles (UMVs) with the potential to transform anti-submarine warfare. Their small
-  size and stealthy deployment may allow for reconnaissance in a contested environment
-  that might increase the fidelity of information available to decision-makers.
+date: '2019-07-29 13:00:00 +0000'
+excerpt: >-
+  Unmanned underwater vehicles (UUVs) are an emerging class of unmanned maritime
+  vehicles (UMVs) with the potential to transform anti-submarine warfare. Their
+  small size and stealthy deployment may allow for reconnaissance in a contested
+  environment that might increase the fidelity of information available to
+  decision-makers.
 authors:
-- _authors/andrew-reddie.md
-- _authors/bethany-goldblum.md
+  - _authors/andrew-reddie.md
+  - _authors/bethany-goldblum.md
 brief_type: Tech Primer
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1564060995/on-the-radar/UUV.jpg
+image: >-
+  https://res.cloudinary.com/csisideaslab/image/upload/v1564060995/on-the-radar/UUV.jpg
 image_caption: ''
 image_source: CSIS
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1562865066/on-the-radar/UUV%20Final%20Primer%20Formatted.pdf
-  label: UUV primer
+  - media_upload: >-
+      https://res.cloudinary.com/csisideaslab/image/upload/v1562865066/on-the-radar/UUV%20Final%20Primer%20Formatted.pdf
+    label: UUV primer
 keywords:
-- First-mover incentive
-- Provocation
-- Entanglement
+  - First-mover incentive
+  - Provocation
+  - Entanglement
 featured_on_home: false
-last-modified-date: 2019-07-29 13:00:00 +0000
-
+last_modified_date: '2019-07-29 13:00:00 +0000'
+_template: briefs
 ---
+
 ## Introduction
 
 The oceans have long represented a challenging environment for sensing technologies. Onboard passive sensors have historically faced technological limitations due to low signal-to-noise and inhospitable sensing environments. Additionally, the <define>vantage</define> restrictions posed by static positioning of sea-based sensors, whether active or passive, has allowed submarines to travel vast swathes of the oceans largely undetected. As a result, sea-launched ballistic missiles have been important to ensuring a second-strike capability and maintaining the strategic balance between nuclear adversaries. New, mobile, and active sensing technologies, however, are changing this status quo and leaving submarine forces increasingly vulnerable to detection. These new sensing systems combined with smart data processing techniques for decision support have the potential to substantially impact <define>strategic situational awareness</define>.

@@ -28,7 +28,7 @@ downloads:
 - media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564245369/on-the-radar/US%20strategic%20SA.pdf
   label: US Strategic SA Primer
 featured_on_home: false
-last-modified-date: 2019-07-29T13:00:00.000+00:00
+last_modified_date: 2019-07-29T13:00:00.000+00:00
 
 ---
 ## Introduction

@@ -1,4 +1,3 @@
----
 email: poni@csis.org
 phone_number: 202-775-3132
 author_list: 'By '
@@ -55,8 +54,8 @@ about:
   title: About the Project
   team: Principal Researchers
   consultants: Consultants
-  dev_team-heading: Development Team
-  csis-heading: About CSIS
+  dev_team_heading: Development Team
+  csis_heading: About CSIS
   dev_team: _On the Radar_ is a product of the [**Andreas C. Dracopoulos iDeas Lab**](https://www.csis.org/programs/dracopoulos-ideas-lab),
     the in-house digital, multimedia, and design agency at the Center for Strategic
     and International Studies.

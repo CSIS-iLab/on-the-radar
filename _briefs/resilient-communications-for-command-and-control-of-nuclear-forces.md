@@ -1,45 +1,51 @@
 ---
 details:
   type:
-  - Platform Control and Information Support
+    - Platform Control and Information Support
   characteristics:
-  - Resiliency
-  - Persistence
-  - Speed
+    - Resiliency
+    - Persistence
+    - Speed
   risk_factors:
-  - Dual-use
+    - Dual-use
   domain:
-  - Multidomain
+    - Multidomain
   country:
-  - Russia
-  - United States
+    - Russia
+    - United States
 title: 'Resilient Communications for Command and Control of Nuclear Forces '
-date: 2019-07-29 13:00:00 +0000
-excerpt: Outside of the current United States Nuclear Command, Control, and Communications
-  (NC3) realm, tactical commercial communications systems have been advancing the
-  state of the technological innovation with the developments of Mobile Ad Hoc Network
-  (MANET) capabilities, Spectrum Sensing Cognitive Radios, and data encryption schemes
-  for a post-quantum world. These capabilities have the potential to augment the resiliency
-  and flexibility of NC3; however, countries could find it difficult to signal that
-  they are using them for NC3.
+date: '2019-07-29 13:00:00 +0000'
+excerpt: >-
+  Outside of the current United States Nuclear Command, Control, and
+  Communications (NC3) realm, tactical commercial communications systems have
+  been advancing the state of the technological innovation with the developments
+  of Mobile Ad Hoc Network (MANET) capabilities, Spectrum Sensing Cognitive
+  Radios, and data encryption schemes for a post-quantum world. These
+  capabilities have the potential to augment the resiliency and flexibility of
+  NC3; however, countries could find it difficult to signal that they are using
+  them for NC3.
 authors:
-- _authors/oscar-guerrero.md
+  - _authors/oscar-guerrero.md
 brief_type: Tech Primer
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1564062730/on-the-radar/PONI_illustration_COLOR_cyber-1.jpg
+image: >-
+  https://res.cloudinary.com/csisideaslab/image/upload/v1564062730/on-the-radar/PONI_illustration_COLOR_cyber-1.jpg
 image_caption: ''
 image_source: CSIS
 keywords:
-- Early Warning
-- Entanglement
-- Communications, Command and Control
+  - Early Warning
+  - Entanglement
+  - 'Communications, Command and Control'
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564408960/on-the-radar/Resilient%20command%20and%20control%20primer.pdf
-  label: Resilient Command and Control Primer
+  - media_upload: >-
+      https://res.cloudinary.com/csisideaslab/image/upload/v1564408960/on-the-radar/Resilient%20command%20and%20control%20primer.pdf
+    label: Resilient Command and Control Primer
 featured_on_home: false
-last-modified-date: 2019-07-29 13:00:00 +0000
-
+last_modified_date: '2019-07-29 13:00:00 +0000'
+_template: briefs
 ---
+
 ## Introduction
+
 Communications for Command and Control (C2) of nuclear forces is the component of the U.S. Nuclear Command and Control System (NCCS) that provides the transport of leadership decisions to nuclear forces via a survivable communications system.[^1] To support the credible deterrent against nuclear attack, the NCCS Communications System of Systems (SoS) must be resilient against a myriad of environmental conditions and hostile environments and function through the nuclear trans attack and post attack stressing scenarios.[^2] The communications system must have a high availability to support operations of nuclear forces, be able to function through the effects of nuclear attack, have sufficient redundancy to transport data through the loss of several nodes from kinetic effects, and resist Electronic Counter Measures (ECM), all while ensuring the integrity and maintaining the confidentiality of the messages.[^3]
 
 The NCCS employs several methods to provide a highly available communications systems. The NCCS uses path redundancy and path diversity by incorporating multiple parallel wired and wireless propagations modes to reduce the opportunity for any single points of failure or vulnerability. Wired communications links consist of terrestrial cabling infrastructure that is a hybrid network of twisted pair copper conductor wire bundles near the edge nodes with fiber optic cables at telecommunications aggregation points.[^4] Wireless communications links use (1) direct wave line of sight (LOS) transmissions, (2) ground wave transmissions, (3) sky wave transmissions, and (4) relay transmissions using aircraft or satellites in frequency bands ranging from Very Low frequency (VLF) up through Extremely High Frequency (EHF) as a mitigation against nuclear weapons effects to reach land based, airborne, and undersea nuclear forces as shown below in figure 1.[^5] To maintain the confidentiality and integrity of messages, communications systems use Transmission Security techniques such as Frequency Hopping Spread Spectrum (FHSS) and Communications Security (COMSEC) techniques of data in transit encryption using strong cryptography.[^6]

@@ -1,21 +1,23 @@
 ---
-last-modified-date: 2019-08-14 15:16:55 +0000
+last_modified_date: '2019-08-14 15:16:55 +0000'
 title: Policy Team
-date: 2019-08-14 04:00:00 +0000
-excerpt: This section of the website houses resources for the policy team. Please
+date: '2019-08-14 04:00:00 +0000'
+excerpt: >-
+  This section of the website houses resources for the policy team. Please
   carefully go through all material before the tabletop exercise.
 authors: []
 image: ''
 image_caption: ''
 image_source: ''
 details:
-  event_date: 
+  event_date: null
   location: ''
 downloads: []
 featured_on_home: false
 published: false
-
+_template: workshops
 ---
+
 **Project Background**
 
 This project provides an assessment of how emerging technologies are rapidly reshaping U.S. strategic situational awareness against a range of potential adversaries and examines the implications of these technologies for strategic stability. For the purposes of this study, strategic situational awareness (strategic SA) is understood to be the ability to characterize the operating environment, detect and respond to attacks, and discern actual attacks from false alarms across the spectrum of conflict, both conventional and nuclear. Strategic stability is understood as the lack of incentive to use nuclear weapons (crisis stability) and the lack of incentives to build up a nuclear arsenal (arms race stability).

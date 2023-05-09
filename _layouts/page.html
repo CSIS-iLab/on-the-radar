@@ -1,40 +1,39 @@
 ---
 layout: default
 ---
+
 <article class="page">
   {% include page-header.html %}
   <div class="page__content post-content">
     {%- if page.name == "about.md" -%}
-      <div class="about">
-        <h2>{{ site.data.language.about.title }}</h2>
-      </div>
-    {%- endif -%}
-
-    {{ content }}
-
-    {%- if page.name=="about.md" -%}
+    <div class="about">
+      <h2>{{ site.data.language.about.title }}</h2>
+    </div>
+    {%- endif -%} {{ content }} {%- if page.name=="about.md" -%}
     <div class="about">
       <h2 class="about__title">{{ site.data.language.about.team }}</h2>
       <div class="about__team">
         {%- for person in page.team -%}
-          <div class="about__person">
-            <h3>{{ person.name }}</h3>
-            <p>{{ person.title }}</p>
-          </div>
+        <div class="about__person">
+          <h3>{{ person.name }}</h3>
+          <p>{{ person.title }}</p>
+        </div>
         {%- endfor -%}
       </div>
       <h2 class="about__title">{{ site.data.language.about.consultants }}</h2>
       <div class="about__team">
         {%- for person in page.consultants -%}
-          <div class="about__person">
-            <h3>{{ person.name }}</h3>
-            <p>{{ person.title }}</p>
-          </div>
+        <div class="about__person">
+          <h3>{{ person.name }}</h3>
+          <p>{{ person.title }}</p>
+        </div>
         {%- endfor -%}
       </div>
-      <h2 class="about__title">{{ site.data.language.about.dev_team-heading }}</h2>
+      <h2 class="about__title">
+        {{ site.data.language.about.dev_team_heading }}
+      </h2>
       <p>{{ site.data.language.about.dev_team | markdownify }}</p>
-      <h2 class="about__title">{{ site.data.language.about.csis-heading }}</h2>
+      <h2 class="about__title">{{ site.data.language.about.csis_heading }}</h2>
       <p>{{ site.data.language.about.csis | markdownify }}</p>
     </div>
     {%- endif -%}

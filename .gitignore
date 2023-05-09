@@ -34,3 +34,9 @@ doc/
 .DS_Store
 .idea
 .secret
+
+node_modules
+package-lock.json
+.env-example
+.env.local
+.env

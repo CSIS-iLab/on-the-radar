@@ -1,31 +1,36 @@
 ---
-last-modified-date: 2020-04-11 23:33:20 +0000
+last_modified_date: '2020-04-11 23:33:20 +0000'
 categories: []
-title: Understanding Situational Awareness Technologies and the Emerging Situational
+title: >-
+  Understanding Situational Awareness Technologies and the Emerging Situational
   Awareness Ecosystem
-date: 2020-04-06 04:00:00 +0000
-excerpt: The rapid expansion of new and existing technologies can provide opportunities
-  for major breakthroughs in the ability to detect threats; track hostile actions
-  and forces; process, interpret and communicate vast data sets; and predict and shape
-  the actions and possibly even decisions of adversaries.
+date: '2020-04-06 04:00:00 +0000'
+excerpt: >-
+  The rapid expansion of new and existing technologies can provide opportunities
+  for major breakthroughs in the ability to detect threats; track hostile
+  actions and forces; process, interpret and communicate vast data sets; and
+  predict and shape the actions and possibly even decisions of adversaries.
 authors:
-- _authors/rebecca-hersman.md
-- _authors/reja-younis.md
-- _authors/bryce-farabaugh.md
-- _authors/andrew-reddie.md
-- _authors/bethany-goldblum.md
+  - _authors/rebecca-hersman.md
+  - _authors/reja-younis.md
+  - _authors/bryce-farabaugh.md
+  - _authors/andrew-reddie.md
+  - _authors/bethany-goldblum.md
 keywords: []
 related_briefs: []
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1586648291/on-the-radar/OnTheRadar_illustration_Sensors2_i0r7fm.jpg
+image: >-
+  https://res.cloudinary.com/csisideaslab/image/upload/v1586648291/on-the-radar/OnTheRadar_illustration_Sensors2_i0r7fm.jpg
 image_caption: ''
 image_source: ''
 featured: false
 featured_on_home: false
 downloads:
-- media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1586648315/on-the-radar/OnTheRadar_Chapter_2_a3kirt.pdf
-  label: Understanding SA Tech and Emerging SA Ecosystem_2
-
+  - media_upload: >-
+      https://res.cloudinary.com/csisideaslab/image/upload/v1586648315/on-the-radar/OnTheRadar_Chapter_2_a3kirt.pdf
+    label: Understanding SA Tech and Emerging SA Ecosystem_2
+_template: posts
 ---
+
 The rapid expansion of new and existing technologies can provide opportunities for major breakthroughs in the ability to detect threats; track hostile actions and forces; process, interpret and communicate vast data sets; and predict and shape the actions and possibly even decisions of adversaries. Every technology has costs and benefits associated with its adoption, and the capabilities in the emerging strategic SA ecosystem are no different. Each of the emerging capabilities explored over the course of this project can be described using two separate categories: attributes for increasing strategic SA (discussed in this chapter) and risk factors that decrease strategic stability (addressed in the next chapter).
 
 **Platforms, Critical Enablers, and Defense and Counter Capabilities**

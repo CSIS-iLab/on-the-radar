@@ -1,41 +1,45 @@
 ---
-last-modified-date: 2019-07-29 13:00:08 +0000
+last_modified_date: '2019-07-29 13:00:08 +0000'
 details:
   type:
-  - Sensors
-  - Platform Control and Information Support
+    - Sensors
+    - Platform Control and Information Support
   characteristics:
-  - Persistence
-  - Precision
-  - Vantage/range
+    - Persistence
+    - Precision
+    - Vantage/range
   risk_factors:
-  - Vulnerable
+    - Vulnerable
   domain:
-  - Sea
-  - Air
+    - Sea
+    - Air
   country:
-  - United States
+    - United States
 title: Light Detection and Ranging (LIDAR)
-date: 2019-07-29 13:00:00 +0000
-excerpt: Light detection and ranging (LIDAR) is an active-sensor technique that generates
-  spatial data from the reflection of laser pulses from objects. The technique is
-  useful for rapidly mapping terrain, chemical/biological weapons detection, demining,
-  anti-submarine warfare, and scene-data-based navigation.
+date: '2019-07-29 13:00:00 +0000'
+excerpt: >-
+  Light detection and ranging (LIDAR) is an active-sensor technique that
+  generates spatial data from the reflection of laser pulses from objects. The
+  technique is useful for rapidly mapping terrain, chemical/biological weapons
+  detection, demining, anti-submarine warfare, and scene-data-based navigation.
 authors:
-- _authors/jake-hecla.md
+  - _authors/jake-hecla.md
 brief_type: Tech Primer
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1564062656/on-the-radar/Sensors-2.jpg
+image: >-
+  https://res.cloudinary.com/csisideaslab/image/upload/v1564062656/on-the-radar/Sensors-2.jpg
 image_caption: ''
 image_source: CSIS
 keywords:
-- First-mover incentive
-- Information Complexity
+  - First-mover incentive
+  - Information Complexity
 downloads:
-- label: LIDAR primer
-  media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1564077677/on-the-radar/LIDAR%20primer%207-25-19.pdf
+  - label: LIDAR primer
+    media_upload: >-
+      https://res.cloudinary.com/csisideaslab/image/upload/v1564077677/on-the-radar/LIDAR%20primer%207-25-19.pdf
 featured_on_home: false
-
+_template: briefs
 ---
+
 ## Introduction
 
 Light detection and ranging (LIDAR) is an active-sensor technique that generates spatial data from the reflection of laser pulses from objects. Though the technique is best known for its use in rapidly mapping terrain, it has applications in chemical/biological weapons detection, demining, anti-submarine warfare, and scene-data-based navigation. Because of a robust private sector demand for unmanned aerial vehicle (UAV) and autonomous vehicle mapping and navigation capabilities based on LIDAR, the technology has advanced rapidly over the last decade. The <define>strategic situational awareness</define> (SA) improvements conferred by the addition of these technologies to existing platforms are wide-ranging. LIDAR based navigation presents significant improvements in <define>persistence<define/>, whereas mapping and imaging applications offer improvements in <define>precision</define>, <define>speed</define>, and <define>vantage</define>. Because of the rapid commercialization of LIDAR devices, the availability, performance, and cost of these systems is rapidly improving. Therefore, these systems are likely to become increasingly relevant technologies for strategic SA.

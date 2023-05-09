@@ -1,49 +1,53 @@
 ---
-last-modified-date: 2020-03-05T18:54:24.000+00:00
+last_modified_date: 2020-03-05T18:54:24.000Z
 details:
   type:
-  - Sensors
+    - Sensors
   characteristics:
-  - Vantage/range
-  - Speed
-  - Resiliency
-  - Persistence
-  - Precision
-  - Detectability
+    - Vantage/range
+    - Speed
+    - Resiliency
+    - Persistence
+    - Precision
+    - Detectability
   risk_factors:
-  - Vulnerable
-  - Preemptive
-  - Intrusive
-  - Action-enabling
+    - Vulnerable
+    - Preemptive
+    - Intrusive
+    - Action-enabling
   domain:
-  - Sea
-  - Land
-  - Air
-  - Space
+    - Sea
+    - Land
+    - Air
+    - Space
   country:
-  - China
-  - Russia
-  - United States
+    - China
+    - Russia
+    - United States
 title: 'Sensor Networks '
-date: 2020-03-02T05:00:00.000+00:00
-excerpt: Sensor networks offer great potential to improve situational awareness by
-  enhancing vantage, precision, and persistence. With relatively low development and
-  production costs, they can vastly expand the amount of information received from
-  land, air, sea, and space.
+date: 2020-03-02T05:00:00.000Z
+excerpt: >-
+  Sensor networks offer great potential to improve situational awareness by
+  enhancing vantage, precision, and persistence. With relatively low development
+  and production costs, they can vastly expand the amount of information
+  received from land, air, sea, and space.
 authors:
-- _authors/janani-mohan.md
-- _authors/maxwell-simon.md
+  - _authors/janani-mohan.md
+  - _authors/maxwell-simon.md
 brief_type: Tech Primer
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1564060962/on-the-radar/Sensors.jpg
+image: >-
+  https://res.cloudinary.com/csisideaslab/image/upload/v1564060962/on-the-radar/Sensors.jpg
 image_caption: ''
 image_source: ''
 keywords: []
 downloads:
-- label: Sensor Networks
-  media_upload: https://res.cloudinary.com/csisideaslab/image/upload/v1584537418/on-the-radar/Sensor_Networks_be91wp.pdf
+  - label: Sensor Networks
+    media_upload: >-
+      https://res.cloudinary.com/csisideaslab/image/upload/v1584537418/on-the-radar/Sensor_Networks_be91wp.pdf
 featured_on_home: false
-
+_template: briefs
 ---
+
 # Introduction
 
 Today, several technologies are going “smart,” from homes to cars to medical supplies. Networks of sensors enable these technologies, using remote data collection to increase consumer situational awareness. While sensor networks are common in civilian life, they are also used by militaries to detect conventional and nuclear deployment.[^1]
