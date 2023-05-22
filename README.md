@@ -2,6 +2,15 @@
 
 The website for the On the Radar study by the CSIS Project on Nuclear Issues (PONI) program. It is built on the [CSIS Jekyll Starter](https://github.com/CSIS-iLab/csis-jekyll-starter) that utilizes gulp, Sass, Autoprefixer, PostCSS, Webpack, imagemin, and Browsersync to speed-up development.
 
+## This site is archived
+
+This site has been archived. To unarchive the site, you will need to unarchive it on GitHub and remove the text from the homepage.
+
+
+## Forestry to Tina Migration
+
+This site was built using Forestry as the CMS. However, Forestry was sunsetted in April 2023, so it will need to be migrated to TinaCMS or another CMS if the program wishes to actively use the site again. This process was started in April 2023, but the decision to archive the site was made before the site was migrated. To see the progress of the migration, you can view the `tina-migration` branch.
+
 ## Table of Contents
 
 - [Quick-Start Instructions](#quick-start-instructions)
