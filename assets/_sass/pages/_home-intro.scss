@@ -5,7 +5,7 @@
   @include breakpoint('large') {
     display: grid;
     grid-column-gap: 10%;
-    grid-template-areas: 'header .' 'desc featured';
+    grid-template-areas: 'header archived' 'desc featured';
     grid-template-columns: auto 33%;
   }
 
@@ -80,6 +80,23 @@
 
   p {
     @extend %home__paragraph;
+  }
+}
+
+.home__archived {
+  grid-area: archived;
+  
+  p {
+    @extend %home__paragraph;
+    color: $color__orange;
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      color: rgba($color__white, 0.71);
+    }
   }
 }
 

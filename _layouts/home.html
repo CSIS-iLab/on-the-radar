@@ -13,6 +13,9 @@ layout: default
     <div class="home__intro-desc">
       {{ content }}
     </div>
+    <div class="home__archived">
+      <p>This website is no longer updated. Please note that some content may no longer be accurate, and certain functionalities may not be available. For the latest information and content from CSIS Project on Nuclear Issues, please visit the <a href="https://www.csis.org/programs/international-security-program/project-nuclear-issues">CSIS website</a> or PONI’s microsite the <a href="https://nuclearnetwork.csis.org/">Next Generation Nuclear Network</a>.</p>
+    </div>
     {% assign featured_posts = site.posts | concat: site.workshops | concat: site.briefs | where: 'featured_on_home', true | sort: 'date' | reverse %}
     {%- if featured_posts.size > 0 -%}
     <section class="home__featured">
